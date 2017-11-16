@@ -1,0 +1,10 @@
+#!/bin/sh
+case $1 in
+	debug		) g++ -w *.cpp libeay32.lib -lz -L/usr/local/lib -lgthread-2.0 -g3 -D=_DEBUG -march=i686 -o TownHallDebug && echo success;;
+	release	) g++ *.cpp libeay32.lib -ffast-math -fsingle-precision-constant -lz -L/usr/local/lib -lgthread-2.0 -O3 -maccumulate-outgoing-args -mfpmath=sse -march=pentium4 -o TownHallRelease && echo success;
+			strip TownHallRelease; strip TownHallRelease.exe;;
+	release-svn	) g++ *.cpp libeay32.lib -ffast-math -fsingle-precision-constant -lz -L/usr/local/lib -lgthread-2.0 -O3 -maccumulate-outgoing-args -o TownHallCygwin && echo success;
+			strip TownHallCygwin; strip TownHallCygwin.exe;;
+	profile	) g++ *.cpp libeay32.lib -lz -L/usr/local/lib -lgthread-2.0 -pg -O3 -march=i686 -o TownHallProfile && echo success;;
+	*		) echo "$0: Argument '$1' invalid. Valid options are: debug, release, release-svn, profile";;
+esac

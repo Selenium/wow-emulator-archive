@@ -1,0 +1,4 @@
+bin\Debug\test.exe
+bin\Debug\test.pdb
+obj\Debug\test.exe
+obj\Debug\test.pdb

@@ -1,0 +1,32 @@
+<!--
+
+	MAELSTROM EXAMPLE PACKAGE v1.0
+	
+	This file demonstrates how to construct a script package for use in the Maelstrom World of Warcraft server.
+	
+	Each script package consists of a file named "package.xml" which contains the package definition (ie. the name
+	of the package, the author of the package, the version of the package, etc.), as well as a list of files that
+	make up the package (.cs script files to compile, .xml configuration files, etc.).
+	
+	<packages>
+		<package id="Name">										<- The ID of the package, this must be unique.
+			<name>Name</name>									<- The name of this specific package.
+			<author>Path</author>								<- The author of this specific package.
+			<version>Version</version>							<- The version number of this specific package.
+			
+			<files>
+				<file>scriptfile.cs</file>						<- Indicates a script file which is to be compiled.
+				<file>items.xml</file>							<- Indicates a file containing item definitions.
+				<file>mobiles.xml</file>						<- Indicates a file containing NPC and creature definitions.
+			</files>
+		</config>
+	</packages>
+	
+-->
+<packages>
+	<package id="Example">
+		<name>Example Server Package</name>
+		<author>Tharaxis (Team Maelstrom)</author>
+		<version>1.0</version>
+	</package>
+</packages>

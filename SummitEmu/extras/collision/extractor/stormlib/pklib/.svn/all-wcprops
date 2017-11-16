@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/pklib
+END
+explode.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/pklib/explode.c
+END
+crc32_pk.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/pklib/crc32_pk.c
+END
+pklib.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/pklib/pklib.h
+END
+implode.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/pklib/implode.c
+END
+crc32.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/pklib/crc32.c
+END

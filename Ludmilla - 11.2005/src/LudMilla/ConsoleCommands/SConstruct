@@ -1,0 +1,18 @@
+# !!! USE MAIN SCONSTRUCT-FILE FOR COMPILING !!!
+#
+# --> SConstruct for LudMilla
+#
+# If you want to compile only the executable comment other
+# SConstruct invocations in main SConstruct out
+#
+
+StaticLibrary('../../build/conscomm', [
+		'ConsoleCmds.cpp',
+		'AConsole.cpp',
+	],
+	CPPPATH = [
+		'../../src/LudMilla',
+                '/usr/include/python2.4'		
+	],
+	CCFLAGS = '-fpermissive -w'
+)

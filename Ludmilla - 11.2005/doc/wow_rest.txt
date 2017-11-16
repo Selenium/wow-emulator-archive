@@ -1,0 +1,13 @@
+Whenever you step into an inn or a major city, your level counter is replaced by
+zzz's, your player portrait in the top left corner should flash yellow and you
+will get the message "You feel rested". Basically, the longer you stay in the
+'zzz' mode, the more rested you are. Your xp bar turns blue, and you should see
+a little pointer on the xp bar. All fighting experience you acquire up until you
+reach that pointer will be doubled. Quest XP doesn't count, so if you complete a
+quest, the pointer will go up by the amount received from it, so you can still
+get the double xp from fighting. You can log off while parked in an inn and that
+pointer just keeps on moving, up to a max of 1.5 levels.
+
+8 hours = 1 bubble rested 
+1 level = 20 bubbles 
+Max rested is 30 bubbles (1.5 level) = 10 days resting

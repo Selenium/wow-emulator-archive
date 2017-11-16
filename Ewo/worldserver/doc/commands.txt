@@ -1,0 +1,79 @@
+all comands are entered in client (not client version dependent ) as "say"="/s" and the command
+	user
+
+	gm lvl 1
+inherits user commands
+
+	gm lvl 2
+inherits gm lvl 1 commands
+-modify a variable value on the current char (debug purpuses)
+	.setuint32 <index> <value>
+-modify a variable value on the current char (debug purpuses)
+	.setfloat <index> <value>
+-add a new creature spawn point at the player location and orientation
+	.addspawn_cr <template_id> <respawn_time> <flags>
+-delete creature spawn = targeted creature
+	.delspawn_cr 
+-add a new gameobject spawn point at the player location and orientation
+	.addspawn_go <template_id> <respawn_time>
+-delete gameobject spawn = last used gameobject. !! if you did not use it than it can't be deleted
+	.delspawn_go 
+-teleport player to a new location. Core function can take 4 params -> the lastone is orientation
+	.teleport <map_id> <dest_x> <dest_y> <dest_z>
+-add item to inventory if possible
+	.additem <item_id>
+-cast an instant spell. Targets are aquired automaticaly
+	.castspell <spell_id>
+-print on chat player coordinates
+	.mypos
+-will print out on chat a value from creature data. See updaefields for position values
+	.cr_getuint32 <updatefields_pos>
+-will set a creature value
+	.cr_setuint32 <updatefields_pos>
+-player will cast a specific spell instantly and will cost no mana
+	.castspell <spell_id>
+-get and uint32 value for char
+	.getuint32 <updatefields_pos>
+- get the faction of some creture
+	.cr_faction
+- force creature to cast a spell
+	.cr_cast <spell_id>
+- add xp to char
+	.add_xp <amount>
+- add money to char 
+	.add_money <amount>
+- character learns a spell
+	.learnspell <spell_id>
+
+	gm lvl 3
+inherits user and gm lvl 1 commands
+
+
+=======================================
+		DOTA COMMANDS
+=======================================
+
+- ads your position to a creatures waypoint list (at the end)
+	.cr_add_wp <speed_coef> <seconds_to_wait_at_dest>
+-short version to add waypoint. speed_coef=1 and time to wait=0
+	.awp
+-save waypoint list to db. Don't forget to use this when you are done
+	.cr_save_wp
+- delete waypoint where creture is heading right now
+	.cr_del_wp
+- delete wapoint list of the creature
+	.cr_clear_wp_list
+- teleport creature to my position
+	.cr_teleport_to_me
+- pause movement of a creature
+	.cr_pause_move
+- resume paused movement of a creature
+	.cr_resume_move
+- make creature got to previous waypoint 
+	.cr_prev_wp
+- make creature walk to next waypoint
+	.cr_next_wp
+- creature will follow player like a pet. No pet actionbar is used. Can command up to 8 creatures to follow player.Followed creatures attack enemies
+	.cr_follow
+- creature will exit folowing state and return to his dayly duties
+	.cr_stop_follow

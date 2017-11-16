@@ -1,0 +1,11 @@
+#############################################
+#	Account Creation presented by:	    #
+#		Afinda, Spacey		    #
+#############################################
+
+
+NOTES: The account files only get Created where this script is, make sure to point
+	your Account folder as "httdocs" folder for Apache!
+
+!nneonneo adds: Security concern, users would have to secure their documents folder to not show any other files!
+Therefore it is safer to make this script create an account in accounts/ and lock out that folder instead.

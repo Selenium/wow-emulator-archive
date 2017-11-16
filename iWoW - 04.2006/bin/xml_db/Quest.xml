@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Quest>
+		<Quest_ID>1</Quest_ID>
+		<Title>WoWCraft Test Quest 1</Title>
+		<Description>This is the first test quest</Description>
+		<Objectives>Kill some mobs</Objectives>
+		<CompletedText>You did it! 1</CompletedText>
+		<IncompletedText>You failed...1</IncompletedText>
+		<RequiredLevel>1</RequiredLevel>
+		<RequiredQuest>0</RequiredQuest>
+		<ChooseRewardID>1</ChooseRewardID>
+		<ChooseQuantity>3</ChooseQuantity>
+		<AlwaysRewardID>4</AlwaysRewardID>
+		<AlwaysRewardQuantity>5</AlwaysRewardQuantity>
+		<MoneyReward>333333</MoneyReward>
+		<XPReward>2000</XPReward>
+		<OriginalGUID>0</OriginalGUID>
+		<TargetGUID>0</TargetGUID>
+		<MonsterToKill>1</MonsterToKill>
+		<MonsterQuantity>50</MonsterQuantity>
+		<ItemToCollect>0</ItemToCollect>
+		<ItemQuantity>0</ItemQuantity>
+	</Quest>
+	<Quest>
+		<Quest_ID>2</Quest_ID>
+		<Title>WoWCraft Test Quest 2</Title>
+		<Description>This is the second test quest</Description>
+		<Objectives>Get some itens</Objectives>
+		<CompletedText>You did it! 2</CompletedText>
+		<IncompletedText>You failed...2</IncompletedText>
+		<RequiredLevel>1</RequiredLevel>
+		<RequiredQuest>1</RequiredQuest>
+		<ChooseRewardID>2</ChooseRewardID>
+		<ChooseQuantity>3</ChooseQuantity>
+		<AlwaysRewardID>5</AlwaysRewardID>
+		<AlwaysRewardQuantity>5</AlwaysRewardQuantity>
+		<MoneyReward>666666</MoneyReward>
+		<XPReward>4000</XPReward>
+		<OriginalGUID>0</OriginalGUID>
+		<TargetGUID>0</TargetGUID>
+		<MonsterToKill>0</MonsterToKill>
+		<MonsterQuantity>0</MonsterQuantity>
+		<ItemToCollect>1</ItemToCollect>
+		<ItemQuantity>20</ItemQuantity>
+	</Quest>
+	<Quest>
+		<Quest_ID>3</Quest_ID>
+		<Title>WoWCraft Test Quest 3</Title>
+		<Description>This is the third test quest</Description>
+		<Objectives>Talk to other Quester</Objectives>
+		<CompletedText>You did it! 3</CompletedText>
+		<IncompletedText>You failed...3</IncompletedText>
+		<RequiredLevel>1</RequiredLevel>
+		<RequiredQuest>2</RequiredQuest>
+		<ChooseRewardID>3</ChooseRewardID>
+		<ChooseQuantity>3</ChooseQuantity>
+		<AlwaysRewardID>6</AlwaysRewardID>
+		<AlwaysRewardQuantity>5</AlwaysRewardQuantity>
+		<MoneyReward>999999</MoneyReward>
+		<XPReward>6000</XPReward>
+		<OriginalGUID>0</OriginalGUID>
+		<TargetGUID>0</TargetGUID>
+		<MonsterToKill>0</MonsterToKill>
+		<MonsterQuantity>0</MonsterQuantity>
+		<ItemToCollect>0</ItemToCollect>
+		<ItemQuantity>0</ItemQuantity>
+	</Quest>
+</Quest>

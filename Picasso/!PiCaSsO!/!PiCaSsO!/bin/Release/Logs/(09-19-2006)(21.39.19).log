@@ -1,0 +1,30 @@
+!PiCaSsO! version Alpha 0.01 Copyright (C) 2006 by !PiCaSsO! Developer team
+09/19/2006 21:39:19: Loading account TEST...
+09/19/2006 21:39:19: Loaded all accounts from database!
+09/19/2006 21:39:19: Building external C# scripts, please wait...
+09/19/2006 21:39:19: Global scripts successfully loaded!
+09/19/2006 21:39:20: HTTPServer listening on port 8080
+09/19/2006 21:39:20: Worldserver listening on port 8085
+09/19/2006 21:39:20: AuthServer listening on port 1234
+09/19/2006 21:39:20: Waiting for incoming connections...
+09/19/2006 21:40:15: Incoming connection!
+09/19/2006 21:40:15: Recieved Logon Challenge!
+09/19/2006 21:40:15: Cient version accepted: 2.0.0, ID = 56085!
+09/19/2006 21:40:15: Recieved AUTH_CHALLENGE from user: TEST
+09/19/2006 21:40:16: Logon proof!
+09/19/2006 21:40:19: Incoming connection!
+09/19/2006 21:40:19: Recieved Logon Challenge!
+09/19/2006 21:40:19: Cient version accepted: 2.0.0, ID = 56085!
+09/19/2006 21:40:19: Recieved AUTH_CHALLENGE from user: TEST
+09/19/2006 21:40:19: Logon proof!
+09/19/2006 21:40:19: Client requested realmlist!
+09/19/2006 21:40:19: Client Redirected to Worldserver!
+09/19/2006 21:40:19: Challenged client to auth again.
+09/19/2006 21:40:19: Recieved 2nd auth from client!
+09/19/2006 21:40:19: Account found: TEST
+09/19/2006 21:40:20: Received CMSG_CHAR_ENUM
+09/19/2006 21:40:42: Player entered World.
+09/19/2006 21:40:42: Updated account data.
+09/19/2006 21:40:43: Updated account data.
+09/19/2006 21:40:49: Synchronized to Client...
+09/19/2006 21:40:58: Recieve unknown OPCode: 284

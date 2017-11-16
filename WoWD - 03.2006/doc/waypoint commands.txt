@@ -1,0 +1,46 @@
+start with .waypoint then one of the commands below
+// add a forward emote of 100
+eg .waypoint emote 0 100
+
+commands
+--- Rquires you to click a Creature ---
+show					- Shows the creatures waypoints
+hide					- Hides the creatures visable waypoints
+
+--- Rquires you to click a Creature or a waypoint ---
+add					- adds a wp *look at bottom for advanced mode*
+
+--- Rquires you to click a waypoint ---
+delete					- deletes a wp
+waittime <waittimeinms>			- sets the time to wait at that wp  | Default: 10000
+flags <wpflags> 			- 0 = walk, 256 = run, 768 = fly | Default: 0(walk)
+change <wpnumber> 			- Change a wp to number <wpnumber>
+emote <backwards> <emoteid> <oneshot>	- changes the emote for the selected direction
+skin <backwards> <emoteid>		- changes the skin for the selected direction
+movehere				- moves the selected wp to players current position
+info					- Tells you shit about the selected wp
+
+*NOTES
+yes = 1, no = 0 
+Backwards is a boolean, is it a backwards action
+1  -> -> -> 10 = Forwards
+10 -> -> -> 1  = Backwards 
+
+oneshot is to do the emote once
+any thing with multiple arguments requires the argument before it
+	eg .waypoint emote 1 100 0 	- sets backwards emote to 100 and does it multiple times
+	eg .waypoint emote 0 50 1	- sets forward emote to 50 and does it once
+	eg .waypoint emote 0 50		- sets forward emote to 50 and does it once
+	eg .waypoint emote 0 		- sets forward emote to 0 and does it once
+	eg .waypoint emote 		- sets forward emote to 0 and does it once
+
+skinid of 0 is default skin
+emotes are done when arriving at the waypoint
+skins are changed when leaving previous waypoint and traveling to the current waypoint
+******
+
+* Add Advanced mode *
+add [waittime] [flags] [femoteid] [bemoteid] [fskinid] [bskinid] [foneshot] [boneshot]
+
+where things in [] are optional
+first letter on emote, skin and oneshot is the direction

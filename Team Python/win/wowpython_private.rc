@@ -1,0 +1,32 @@
+// THIS FILE WILL BE OVERWRITTEN BY DEV-C++!
+// DO NOT EDIT!
+
+#include <windows.h> // include for version info constants
+
+
+A ICON MOVEABLE PURE LOADONCALL DISCARDABLE "wowpython.ico"
+
+//
+// TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
+//
+1 VERSIONINFO
+FILEVERSION 0,11,0,5
+PRODUCTVERSION 0,11,0,5
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+	 {
+		 BLOCK "040904E4"
+		 {
+			 VALUE "CompanyName", "WSD Team"
+			 VALUE "FileVersion", ""
+			 VALUE "FileDescription", "World of Warcraft Server Emulation"
+			 VALUE "InternalName", ""
+			 VALUE "LegalCopyright", "WSDTeam Copyright (C) 2004-2005"
+			 VALUE "LegalTrademarks", ""
+			 VALUE "OriginalFilename", "wsdserver.exe"
+			 VALUE "ProductName", "WoWPython"
+			 VALUE "ProductVersion", ""
+		 }
+	 }
+}

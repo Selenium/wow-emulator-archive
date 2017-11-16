@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="Spell" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Spell" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Spell">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Spell_ID" type="xs:unsignedInt" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="CastTime" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="CoolDown" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="PlayerLevel" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="MaxLevel" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Duration" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="PowerType" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="ManaCost" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="ManaCostPerLevel" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Range" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="RandomPercentageDamage" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Speed" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Damage" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Radius" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Rank" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="SpellID" type="xs:unsignedInt" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//Spell" />
+      <xs:field xpath="Spell_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

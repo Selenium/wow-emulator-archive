@@ -1,0 +1,96 @@
+Building on Linux with SCons
+============================
+
+1. Install a recent version of SCons (0.96.1 or later).
+
+Download and install scons-0.96.1-1.noarch.rpm or
+scons-src-0.96.1.tar.gz from http://www.scons.org/.
+
+2. Run SCons in the WSD directory.
+
+    $ cd wsd
+    $ scons
+
+See below for more information about SCons.
+
+
+Building on Win32 with SCons
+============================
+
+1. Install a recent version of Python (2.3 or later).
+
+Download python-2.4.msi from http://www.python.org/2.4/. Install to
+the default location.
+
+2. Install a recent version of SCons (0.96.90 or later).
+
+Download scons-0.96.90.win32.exe from http://www.scons.org/.
+
+3. Install MySQL 4.1.10.
+
+Download mysql-4.1.10-win32.zip from
+http://dev.mysql.com/downloads/mysql/4.1.html. Install to the default
+location (C:\Program Files\MySQL\MySQL Server 4.1).
+
+Also copy C:\Program Files\MySQL\MySQL Server 4.1\bin\libmySQL.dll to
+the bin directory.
+
+4. Install OpenSSL 0.9.7e.
+
+Download Win32OpenSSL-v0.9.7e.exe from
+http://www.slproweb.com/products/Win32OpenSSL.html. Install to the
+default location (C:\OpenSSL).
+
+5. Run SCons in the WSD directory.
+
+    $ cd wsd
+    $ scons
+
+See below for more information about SCons.
+
+After running SCons once you can use the Visual Studio .NET 2003
+solution file wsd-vc7-scons.sln located in the win directory to manage
+the project. When you build, SCons will be used.
+
+You might have problems building from Visual Studio if you use an old
+version of SCons.
+
+
+More about SCons
+================
+
+The SCons build script has a number of options. Run scons --help for a
+complete list.
+
+Some helpful build commands:
+
+    $ scons buildtype=release
+    $ scons buildtype=debug
+    $ scons -k (keep going when a target can't be made)
+    $ scons -j2 (allow 2 jobs at once)
+    $ scons -c (remove default targets and dependencies)
+
+By default, SCons performs a debug build.
+
+The wsdrealmlist and wsdworldsrv executables are installed to the bin
+directory once they have been built. When performing a debug build,
+the character 'd' is appended to the name of an executable.
+
+
+Old README
+==========
+
+Welcome to WoWPython.
+
+WoWPython is free software. Please see the file COPYING for details.
+
+For documentation, please see the files in the doc subdirectory.
+
+For building and installation instructions, please see the INSTALL file.
+
+If you are building on Windows, see project files in the 'win' subdirectory.
+
+If you are building from CVS or have foolishly done make maintainer-clean, 
+then sh ./reconf to generate a configure script.
+
+test

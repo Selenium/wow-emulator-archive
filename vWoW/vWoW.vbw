@@ -1,0 +1,16 @@
+frmCore = 44, 58, 832, 683, , 22, 29, 810, 654, C
+modBasicFunctions = 0, 0, 0, 0, C
+modSockets = 198, 261, 986, 886, C
+modSystem = 44, 58, 832, 683, 
+modOpcodes = 0, 0, 0, 0, C
+modRSPackets = 110, 145, 898, 770, C
+modSHA1 = 176, 232, 964, 857, C
+modAccountSystem = 220, 290, 1008, 915, C
+modBigInt = 0, 0, 0, 0, C
+modSRP6 = 0, 0, 0, 0, C
+modArray = 0, 0, 0, 0, C
+modWSFunctions = 154, 203, 942, 828, C
+modWSPackets = 132, 174, 920, 799, C
+frmAccountManager = 0, 0, 0, 0, C, 66, 87, 764, 712, C
+frmCharacterManager = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+modPlayerLogin = 88, 116, 876, 741, C

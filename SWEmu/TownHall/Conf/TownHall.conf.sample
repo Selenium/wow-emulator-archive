@@ -1,0 +1,91 @@
+#########################################
+# SWEmu - Town Hall Config File         #
+# 2004 StormCraft - All Rights Reserved #
+# Modified for SWEmu                    #
+# (c) 2006 SWEmu Dev Team               #
+# ------------------------------------- #
+
+################################################
+# Account Settings                             #
+# -------------------------------------------- #
+allow_new_accounts = 1
+
+# Password to log in as admin
+admin_password = "*admin_swemu*"
+
+#Allow !GM command
+allow_gm_command = 1
+
+#!admin password - EggoWaffle
+adminpass = "EggoAndWaffles"
+
+#!gm password - Spacey
+gmpass = "SpacedOutAndLost"
+
+################################################
+# Folder Settings & Paths                      #
+# -------------------------------------------- #
+
+dbc_path      = "data/dbc/"
+maps_path     = "data/maps/"
+
+################################################
+# Connection Settings                          #
+# -------------------------------------------- #
+
+# Max connections will allow to server (past this, queuing will occur)
+maxallowconnections = 100
+
+
+################################################
+# Server Info Settings                         #
+# -------------------------------------------- #
+
+server_name            = "SWEmu Official Dev"
+server_owner_name      = "The SWEmu Team"
+server_welcome_message = "Welcome to SWEmu"
+
+#Put your IP here, or 127.0.0.1 for running client & server on same box
+server_address = "127.0.0.1"
+
+#Is this a PvP server? 1=Yes, 0=No (default 1)
+pvp_server = 1
+
+#Port Settings
+# port on which the realmserver itself runs
+port_realmserver = 5926
+# port on which server communicates to realmlist server for sessionkey
+port_sessionkey = 31416
+# port on which server communicates to realmlist server for registering to the realm list
+port_masterlist = 5888
+
+#######################
+# Realm List Settings #
+# ------------------- #
+
+# Add a line like these to appear on realm list servers...
+# You CAN have multiple realm lists! (no artificial limit to how many)
+
+# Public server list
+# realmlist = 66.208.106.16
+# newer public server list.
+# realmlist = 66.98.226.84
+# Example domain..
+# realmlist = realms.wowforge.net
+# Private server list
+realmlist = "127.0.0.1"
+
+################################################
+# GM Level Settings                            #
+# -------------------------------------------- #
+# Userlevels required for certain commands.  User levels are as follows:
+# 100 - admin. 50 - GM. 25 - Half-GM.  10 - "moderator", 0 - Normal
+# Do not try to use userlevels greater than 128 or lower than -127
+
+# %spawn
+gmlevel_spawn = 10
+
+
+################################################
+# DEBUG Settings                               #
+# -------------------------------------------- #

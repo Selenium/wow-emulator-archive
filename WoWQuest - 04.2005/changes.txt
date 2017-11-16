@@ -1,0 +1,94 @@
+April 03 2005 - 
+* Made a slight modification to statmanager. Stat bonuses from items
+should work if they are set correctly in itemtemplate.xml. Stats also
+seem to adjust correctly when equipping and removing items that have 
+stat bonuses.
+
+April 03 2005 - 
+* Emotes are back in
+* Fixed the disapearing items at wp bug
+
+April 02 2005 - 
+* exp bar should now update when you get exp. 
+
+April 02 2005 - 
+* Items now display/move normaly :) /me does a jig
+* Fixed logout bug
+* Added internal Hexdump functions: Hexdump.ToFile(data[,msgid]) 
+
+April 02 2005 - 
+* Fixed basic stats for the time being, more work needs to be done here but waiting until items and spells are more functional.
+
+April 01 2005 - 
+* Fixed WorldPort 
+* Fixed Debug Logs
+
+March 31 2005 - 
+* Fixed channel chat (I think :D)
+
+March 31 2005 -
+* Fixed chat
+* Fixed movement
+* Added a new db (xml_db_complete.rar) for items / spells / spawns
+
+March 29 2005 - 
+* Login server now takes the session key from database and handles the   header encoding / decoding. (you can use the none cracked exe now)     w00t :)
+* Added 1.3.0 update fields
+* Fixed the A9 pkt
+* Can now enter the world with 1.3.0 client
+
+
+March 25 2005 - 
+* Realmlist is now equiped with SRP authentication. 
+  Right now it reads from the db, but it should just store the keys in a hashtable and send them    to the worldserver on its request.
+* Added a simple account creation to the GUI, but its faulty.
+
+
+March 23 2005 -
+* Fixed basic chat
+* Can now enter the world with the 1.2.1 cracked exe
+
+
+March 21 2005 -
+
+* Added update fields for 1.2.1.
+* Added opcodes for 1.2.1.
+* Started SRP in the realmlist, needs a good debug later.
+* Fixed realmlist request response.
+* Fixed the scripting engine.
+* Aplied new char creation flags.
+* Bypassed redirect server. Needs to be removed completely.
+* Some general bug shooting. Things should run smoother now.
+
+
+July 6
+
+-- WhoList Finished
+-- Add Zone Script
+-- Modified CreatureDB (added NPC_Flag)
+
+
+July 1
+
+-- Added Starter status for all classes/races
+-- Added GM Status:
+	Kick Command
+	Ban Command
+	Op Command
+
+-- Added Resists (all), PowerAtack, PowerAtackModifier into Character DB
+-- Modified UnitBase.cs for character porpuoses
+-- Modified PlayerObject.cs for character porpuoses
+-- Modified LivingObject.cs for character porpuoses
+-- Unfinished Scripts:
+	WhoList.cs
+	FriendRemove.cs
+	FriendInvite.cs
+
+June 28
+
+-- Added LastUsed and Password to DBAccount.cs (not working properly yet)
+-- Start Itens Code (but note the right display_id´s)
+-- Added Strenght, Agility, Stamina, Intelect and Spirit to DBCharacter.cs for further scripts
+-- Added Groups, FriendList and some Guild Packets to Enum.cs
+-- Added a Item DB on tree for proper work of Start Itens

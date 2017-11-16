@@ -1,0 +1,6852 @@
+
+[spell 10]
+price=120
+
+[spell 94]
+reqspell=7325
+price=0
+
+[spell 100]
+price=50
+
+[spell 201]
+price=8000
+
+[spell 284]
+reqspell=78
+price=20
+
+[spell 285]
+reqspell=284
+price=180
+
+[spell 332]
+price=100
+
+[spell 339]
+price=200
+
+[spell 467]
+price=150
+
+[spell 587]
+
+[spell 588]
+price=800
+
+[spell 597]
+
+[spell 602]
+reqspell=7128
+price=6500
+
+[spell 643]
+reqspell=10290
+price=290
+
+[spell 645]
+reqspell=636
+price=0
+
+[spell 693]
+
+[spell 756]
+
+[spell 757]
+
+[spell 759]
+
+[spell 769]
+reqspell=780
+price=900
+
+[spell 772]
+price=50
+
+[spell 774]
+price=80
+
+[spell 780]
+reqspell=779
+price=530
+
+[spell 782]
+price=900
+
+[spell 898]
+
+[spell 990]
+
+[spell 1006]
+reqspell=602
+price=13000
+
+[spell 1032]
+reqspell=10291
+price=1600
+
+[spell 1062]
+reqspell=339
+price=220
+
+[spell 1075]
+reqspell=782
+price=5300
+
+[spell 1126]
+price=10
+
+[spell 1130]
+price=100
+
+[spell 1181]
+reqspell=820
+price=0
+
+[spell 1182]
+reqspell=1181
+price=0
+
+[spell 1183]
+reqspell=1182
+price=0
+
+[spell 1494]
+price=10
+
+[spell 1528]
+reqspell=1513
+price=0
+
+[spell 1608]
+reqspell=285
+price=530
+
+[spell 1671]
+reqspell=72
+price=1100
+
+[spell 1672]
+reqspell=1671
+price=5300
+
+[spell 1735]
+reqspell=99
+price=190
+
+[spell 1753]
+reqspell=1742
+price=1030
+
+[spell 1754]
+reqspell=1753
+price=4000
+
+[spell 1755]
+reqspell=1754
+price=0
+
+[spell 1756]
+reqspell=1755
+price=0
+
+[spell 1757]
+reqspell=1752
+price=10
+
+[spell 1758]
+reqspell=1757
+price=120
+
+[spell 1759]
+reqspell=1758
+price=560
+
+[spell 1760]
+reqspell=1759
+price=970
+
+[spell 1767]
+reqspell=1766
+price=670
+
+[spell 1768]
+reqspell=1767
+price=2200
+
+[spell 1769]
+reqspell=1768
+price=7100
+
+[spell 1777]
+reqspell=1776
+price=290
+
+[spell 1785]
+reqspell=1784
+price=230
+
+[spell 1786]
+reqspell=1785
+price=2000
+
+[spell 1787]
+reqspell=1786
+price=5900
+
+[spell 1823]
+reqspell=1822
+price=900
+
+[spell 1824]
+reqspell=1823
+price=2500
+
+[spell 1857]
+reqspell=1856
+price=2200
+
+[spell 1978]
+price=50
+
+[spell 2055]
+price=50
+
+[spell 2070]
+reqspell=6770
+price=810
+
+[spell 2149]
+craftskill1=165
+
+[spell 2152]
+craftskill1=165
+
+[spell 2153]
+craftskill1=165
+
+[spell 2156]
+craftskill1=165
+
+[spell 2157]
+craftskill1=165
+
+[spell 2158]
+craftskill1=165
+
+[spell 2159]
+craftskill1=165
+
+[spell 2160]
+craftskill1=165
+
+[spell 2161]
+craftskill1=165
+
+[spell 2162]
+craftskill1=165
+
+[spell 2163]
+craftskill1=165
+
+[spell 2164]
+craftskill1=165
+
+[spell 2165]
+craftskill1=165
+
+[spell 2166]
+craftskill1=165
+
+[spell 2167]
+craftskill1=165
+
+[spell 2168]
+craftskill1=165
+
+[spell 2169]
+craftskill1=165
+
+[spell 2329]
+craftskill1=171
+
+[spell 2330]
+craftskill1=171
+
+[spell 2331]
+craftskill1=171
+
+[spell 2332]
+craftskill1=171
+
+[spell 2333]
+craftskill1=171
+
+[spell 2334]
+craftskill1=171
+
+[spell 2335]
+craftskill1=171
+
+[spell 2336]
+craftskill1=171
+
+[spell 2337]
+craftskill1=171
+
+[spell 2362]
+
+[spell 2366]
+price=100
+
+[spell 2368]
+reqspell=2366
+price=200
+
+[spell 2370]
+reqspell=2368
+
+[spell 2385]
+craftskill1=333
+
+[spell 2386]
+craftskill1=333
+
+[spell 2387]
+craftskill1=333
+
+[spell 2389]
+craftskill1=333
+
+[spell 2392]
+craftskill1=333
+
+[spell 2393]
+craftskill1=333
+
+[spell 2394]
+craftskill1=333
+
+[spell 2395]
+craftskill1=333
+
+[spell 2396]
+craftskill1=333
+
+[spell 2397]
+craftskill1=333
+
+[spell 2399]
+craftskill1=333
+
+[spell 2401]
+craftskill1=333
+
+[spell 2402]
+craftskill1=333
+
+[spell 2403]
+craftskill1=333
+
+[spell 2406]
+craftskill1=333
+
+[spell 2484]
+price=100
+
+[spell 2538]
+craftskill1=185
+
+[spell 2539]
+craftskill1=185
+
+[spell 2540]
+craftskill1=185
+
+[spell 2541]
+craftskill1=185
+
+[spell 2542]
+craftskill1=185
+
+[spell 2543]
+craftskill1=185
+
+[spell 2544]
+craftskill1=185
+
+[spell 2545]
+craftskill1=185
+
+[spell 2546]
+craftskill1=185
+
+[spell 2547]
+craftskill1=185
+
+[spell 2548]
+craftskill1=185
+
+[spell 2549]
+craftskill1=185
+
+[spell 2575]
+name=Mining Aprentice
+addspell=2656 Smelting
+addspell=2657 Smelt Copper
+addspell=2580 Find Minerals
+
+[spell 2576]
+reqspell=2575
+price=100
+
+[spell 2578]
+reqspell=2577
+price=0
+
+[spell 2579]
+reqspell=2578
+price=0
+
+[spell 2589]
+reqspell=53
+price=80
+
+[spell 2590]
+reqspell=2589
+price=230
+
+[spell 2591]
+reqspell=2590
+price=810
+
+[spell 2657]
+
+[spell 2658]
+
+[spell 2659]
+
+[spell 2660]
+
+[spell 2661]
+craftskill1=164
+
+[spell 2662]
+craftskill1=164
+
+[spell 2663]
+craftskill1=164
+
+[spell 2664]
+craftskill1=164
+
+[spell 2665]
+
+[spell 2666]
+craftskill1=164
+
+[spell 2667]
+craftskill1=164
+
+[spell 2668]
+craftskill1=164
+
+[spell 2670]
+craftskill1=164
+
+[spell 2671]
+craftskill1=164
+
+[spell 2672]
+craftskill1=164
+
+[spell 2673]
+craftskill1=164
+
+[spell 2674]
+
+[spell 2675]
+craftskill1=164
+
+[spell 2737]
+craftskill1=164
+
+[spell 2738]
+craftskill1=164
+
+[spell 2739]
+craftskill1=164
+
+[spell 2740]
+craftskill1=164
+
+[spell 2741]
+craftskill1=164
+
+[spell 2742]
+craftskill1=164
+
+[spell 2795]
+craftskill1=185
+
+[spell 2800]
+reqspell=633
+price=780
+
+[spell 2835]
+craftskill1=171
+
+[spell 2837]
+craftskill1=171
+
+[spell 2838]
+craftskill1=171
+
+[spell 2840]
+craftskill1=171
+
+[spell 2841]
+craftskill1=171
+
+[spell 2881]
+craftskill1=165
+
+[spell 2908]
+price=3400
+
+[spell 2912]
+price=1900
+
+[spell 2963]
+craftskill1=333
+
+[spell 2964]
+craftskill1=333
+
+[spell 2997]
+reqspell=1515
+price=0
+
+[spell 3009]
+reqspell=3010
+price=0
+
+[spell 3010]
+reqspell=16832
+price=0
+
+[spell 3029]
+reqspell=1082
+price=540
+
+[spell 3044]
+price=50
+
+[spell 3100]
+reqspell=2018
+price=0
+
+[spell 3101]
+reqspell=2259
+price=0
+
+[spell 3102]
+reqspell=2550
+price=0
+
+[spell 3104]
+reqspell=2108
+price=0
+
+[spell 3115]
+
+[spell 3116]
+
+[spell 3117]
+
+[spell 3170]
+craftskill1=171
+
+[spell 3171]
+craftskill1=171
+
+[spell 3172]
+craftskill1=171
+
+[spell 3173]
+craftskill1=171
+
+[spell 3174]
+craftskill1=171
+
+[spell 3175]
+craftskill1=171
+
+[spell 3176]
+craftskill1=171
+
+[spell 3177]
+craftskill1=171
+
+[spell 3188]
+craftskill1=171
+
+[spell 3230]
+craftskill1=171
+
+[spell 3273]
+craftskill1=7162
+price=100
+
+[spell 3274]
+reqspell=3273
+craftskill1=7162
+price=500
+
+[spell 3275]
+craftskill1=197
+
+[spell 3276]
+craftskill1=7162
+price=500
+
+[spell 3277]
+craftskill1=197
+
+[spell 3278]
+craftskill1=197
+
+[spell 3286]
+price=100
+
+[spell 3292]
+craftskill1=164
+
+[spell 3293]
+craftskill1=164
+
+[spell 3294]
+craftskill1=164
+
+[spell 3295]
+craftskill1=164
+
+[spell 3296]
+craftskill1=164
+
+[spell 3297]
+craftskill1=164
+
+[spell 3304]
+
+[spell 3307]
+
+[spell 3308]
+
+[spell 3319]
+craftskill1=164
+
+[spell 3320]
+
+[spell 3321]
+craftskill1=164
+
+[spell 3323]
+craftskill1=164
+
+[spell 3324]
+craftskill1=164
+
+[spell 3325]
+craftskill1=164
+
+[spell 3326]
+
+[spell 3328]
+craftskill1=164
+
+[spell 3330]
+craftskill1=164
+
+[spell 3331]
+craftskill1=164
+
+[spell 3333]
+craftskill1=164
+
+[spell 3334]
+craftskill1=164
+
+[spell 3336]
+craftskill1=164
+
+[spell 3337]
+
+[spell 3370]
+craftskill1=185
+
+[spell 3371]
+craftskill1=185
+
+[spell 3372]
+craftskill1=185
+
+[spell 3373]
+craftskill1=185
+
+[spell 3376]
+craftskill1=185
+
+[spell 3377]
+craftskill1=185
+
+[spell 3397]
+craftskill1=185
+
+[spell 3398]
+craftskill1=185
+
+[spell 3399]
+craftskill1=185
+
+[spell 3400]
+craftskill1=185
+
+[spell 3413]
+reqspell=3102
+price=0
+
+[spell 3420]
+craftskill1=171
+
+[spell 3421]
+craftskill1=171
+
+[spell 3447]
+craftskill1=171
+
+[spell 3448]
+craftskill1=171
+
+[spell 3449]
+craftskill1=171
+
+[spell 3450]
+craftskill1=171
+
+[spell 3451]
+craftskill1=171
+
+[spell 3452]
+craftskill1=171
+
+[spell 3453]
+craftskill1=171
+
+[spell 3454]
+craftskill1=171
+
+[spell 3464]
+reqspell=3101
+price=0
+
+[spell 3491]
+craftskill1=164
+
+[spell 3492]
+craftskill1=164
+
+[spell 3493]
+craftskill1=164
+
+[spell 3494]
+craftskill1=164
+
+[spell 3495]
+craftskill1=164
+
+[spell 3496]
+craftskill1=164
+
+[spell 3497]
+craftskill1=164
+
+[spell 3498]
+craftskill1=164
+
+[spell 3500]
+craftskill1=164
+
+[spell 3501]
+craftskill1=164
+
+[spell 3502]
+craftskill1=164
+
+[spell 3503]
+craftskill1=164
+
+[spell 3504]
+craftskill1=164
+
+[spell 3505]
+craftskill1=164
+
+[spell 3506]
+craftskill1=164
+
+[spell 3507]
+craftskill1=164
+
+[spell 3508]
+craftskill1=164
+
+[spell 3511]
+craftskill1=164
+
+[spell 3513]
+craftskill1=164
+
+[spell 3515]
+craftskill1=164
+
+[spell 3538]
+reqspell=3100
+price=0
+
+[spell 3552]
+
+[spell 3564]
+reqspell=2576
+price=0
+
+[spell 3569]
+
+[spell 3570]
+reqspell=2368
+price=0
+
+[spell 3752]
+price=13000
+
+[spell 3753]
+craftskill1=165
+
+[spell 3755]
+craftskill1=333
+
+[spell 3756]
+craftskill1=165
+
+[spell 3757]
+craftskill1=333
+
+[spell 3758]
+craftskill1=333
+
+[spell 3759]
+craftskill1=165
+
+[spell 3760]
+craftskill1=165
+
+[spell 3761]
+craftskill1=165
+
+[spell 3762]
+craftskill1=165
+
+[spell 3763]
+craftskill1=165
+
+[spell 3764]
+craftskill1=165
+
+[spell 3765]
+craftskill1=165
+
+[spell 3766]
+craftskill1=165
+
+[spell 3767]
+craftskill1=165
+
+[spell 3768]
+craftskill1=165
+
+[spell 3769]
+craftskill1=165
+
+[spell 3770]
+craftskill1=165
+
+[spell 3771]
+craftskill1=165
+
+[spell 3772]
+craftskill1=165
+
+[spell 3773]
+craftskill1=165
+
+[spell 3774]
+craftskill1=165
+
+[spell 3775]
+craftskill1=165
+
+[spell 3776]
+craftskill1=165
+
+[spell 3777]
+craftskill1=165
+
+[spell 3778]
+craftskill1=165
+
+[spell 3779]
+craftskill1=165
+
+[spell 3780]
+craftskill1=165
+
+[spell 3811]
+reqspell=3104
+price=0
+
+[spell 3813]
+craftskill1=333
+
+[spell 3816]
+craftskill1=165
+
+[spell 3817]
+craftskill1=165
+
+[spell 3818]
+craftskill1=165
+
+[spell 3839]
+craftskill1=333
+
+[spell 3840]
+craftskill1=333
+
+[spell 3841]
+craftskill1=333
+
+[spell 3842]
+craftskill1=333
+
+[spell 3843]
+craftskill1=333
+
+[spell 3844]
+craftskill1=333
+
+[spell 3845]
+craftskill1=333
+
+[spell 3847]
+craftskill1=333
+
+[spell 3848]
+craftskill1=333
+
+[spell 3849]
+craftskill1=333
+
+[spell 3850]
+craftskill1=333
+
+[spell 3851]
+craftskill1=333
+
+[spell 3852]
+craftskill1=333
+
+[spell 3854]
+craftskill1=333
+
+[spell 3855]
+craftskill1=333
+
+[spell 3856]
+craftskill1=333
+
+[spell 3857]
+craftskill1=333
+
+[spell 3858]
+craftskill1=333
+
+[spell 3859]
+craftskill1=333
+
+[spell 3860]
+craftskill1=333
+
+[spell 3861]
+craftskill1=333
+
+[spell 3862]
+craftskill1=333
+
+[spell 3863]
+craftskill1=333
+
+[spell 3864]
+craftskill1=333
+
+[spell 3865]
+craftskill1=333
+
+[spell 3866]
+craftskill1=333
+
+[spell 3868]
+craftskill1=333
+
+[spell 3869]
+craftskill1=333
+
+[spell 3870]
+craftskill1=333
+
+[spell 3871]
+craftskill1=333
+
+[spell 3872]
+craftskill1=333
+
+[spell 3873]
+craftskill1=333
+
+[spell 3909]
+reqspell=3908
+price=0
+
+[spell 3910]
+reqspell=3909
+price=0
+
+[spell 3914]
+craftskill1=333
+
+[spell 3915]
+craftskill1=333
+
+[spell 3918]
+craftskill1=202
+
+[spell 3919]
+craftskill1=202
+
+[spell 3920]
+craftskill1=202
+
+[spell 3921]
+
+[spell 3922]
+craftskill1=164
+
+[spell 3923]
+craftskill1=164
+
+[spell 3924]
+craftskill1=164
+
+[spell 3925]
+craftskill1=164
+
+[spell 3926]
+craftskill1=164
+craftskill2=202
+
+[spell 3928]
+craftskill1=164
+craftskill2=202
+
+[spell 3929]
+craftskill1=202
+
+[spell 3930]
+craftskill1=202
+
+[spell 3931]
+craftskill1=202
+
+[spell 3932]
+craftskill1=164
+craftskill2=202
+
+[spell 3933]
+craftskill1=202
+
+[spell 3934]
+craftskill1=202
+
+[spell 3936]
+craftskill1=164
+craftskill2=202
+
+[spell 3937]
+craftskill1=164
+
+[spell 3938]
+craftskill1=164
+
+[spell 3939]
+craftskill1=164
+craftskill2=202
+
+[spell 3940]
+craftskill1=202
+
+[spell 3941]
+craftskill1=164
+
+[spell 3942]
+craftskill1=164
+craftskill2=202
+
+[spell 3944]
+craftskill1=164
+craftskill2=202
+
+[spell 3945]
+craftskill1=202
+
+[spell 3946]
+craftskill1=202
+
+[spell 3947]
+craftskill1=202
+
+[spell 3949]
+craftskill1=164
+
+[spell 3950]
+craftskill1=164
+craftskill2=202
+
+[spell 3952]
+craftskill1=202
+
+[spell 3953]
+craftskill1=202
+
+[spell 3954]
+craftskill1=164
+
+[spell 3955]
+craftskill1=164
+craftskill2=202
+
+[spell 3956]
+craftskill1=202
+
+[spell 3957]
+craftskill1=164
+craftskill2=202
+
+[spell 3958]
+craftskill1=164
+
+[spell 3959]
+craftskill1=164
+craftskill2=202
+
+[spell 3960]
+craftskill1=164
+craftskill2=202
+
+[spell 3961]
+craftskill1=164
+craftskill2=202
+
+[spell 3962]
+craftskill1=164
+
+[spell 3963]
+craftskill1=164
+craftskill2=202
+
+[spell 3964]
+
+[spell 3965]
+craftskill1=164
+craftskill2=202
+
+[spell 3966]
+craftskill1=202
+
+[spell 3967]
+craftskill1=164
+craftskill2=202
+
+[spell 3968]
+craftskill1=164
+craftskill2=202
+
+[spell 3969]
+craftskill1=164
+craftskill2=202
+
+[spell 3971]
+craftskill1=164
+craftskill2=202
+
+[spell 3972]
+craftskill1=202
+
+[spell 3973]
+craftskill1=202
+
+[spell 3977]
+craftskill1=202
+
+[spell 3978]
+craftskill1=202
+
+[spell 3979]
+craftskill1=202
+
+[spell 4037]
+reqspell=4036
+price=0
+
+[spell 4038]
+reqspell=4037
+price=0
+
+[spell 4094]
+craftskill1=185
+
+[spell 4096]
+craftskill1=165
+
+[spell 4097]
+craftskill1=165
+
+[spell 4172]
+reqspell=4171
+price=0
+
+[spell 4173]
+reqspell=4172
+price=0
+
+[spell 4174]
+reqspell=4173
+price=0
+
+[spell 4175]
+reqspell=4174
+price=0
+
+[spell 4176]
+reqspell=4175
+price=0
+
+[spell 4177]
+reqspell=4176
+price=0
+
+[spell 4178]
+reqspell=4177
+price=0
+
+[spell 4205]
+reqspell=4204
+price=0
+
+[spell 4206]
+reqspell=4205
+price=0
+
+[spell 4207]
+reqspell=4206
+price=0
+
+[spell 4208]
+reqspell=4207
+price=0
+
+[spell 4210]
+reqspell=4208
+price=0
+
+[spell 4211]
+reqspell=4210
+price=0
+
+[spell 4212]
+reqspell=4211
+price=0
+
+[spell 4223]
+reqspell=4222
+price=0
+
+[spell 4224]
+reqspell=4223
+price=0
+
+[spell 4225]
+reqspell=4224
+price=0
+
+[spell 4226]
+reqspell=4225
+price=0
+
+[spell 4227]
+reqspell=4226
+price=0
+
+[spell 4228]
+reqspell=4227
+price=0
+
+[spell 4229]
+reqspell=4228
+price=0
+
+[spell 4248]
+reqspell=4247
+price=0
+
+[spell 4249]
+reqspell=4248
+price=0
+
+[spell 4250]
+reqspell=4249
+price=0
+
+[spell 4251]
+reqspell=4250
+price=0
+
+[spell 4252]
+reqspell=4251
+price=0
+
+[spell 4253]
+reqspell=4252
+price=0
+
+[spell 4254]
+reqspell=4253
+price=0
+
+[spell 4264]
+reqspell=4263
+price=0
+
+[spell 4265]
+reqspell=4264
+price=0
+
+[spell 4266]
+reqspell=4265
+price=0
+
+[spell 4267]
+reqspell=4266
+price=0
+
+[spell 4268]
+reqspell=4267
+price=0
+
+[spell 4269]
+reqspell=4268
+price=0
+
+[spell 4270]
+reqspell=4269
+price=0
+
+[spell 4287]
+reqspell=601
+price=0
+
+[spell 4290]
+reqspell=4289
+price=0
+
+[spell 4294]
+reqspell=4293
+price=0
+
+[spell 4298]
+reqspell=4297
+price=0
+
+[spell 4302]
+reqspell=4301
+price=0
+
+[spell 4303]
+reqspell=4302
+price=0
+
+[spell 4308]
+reqspell=4307
+price=0
+
+[spell 4309]
+reqspell=4308
+price=0
+
+[spell 4329]
+reqspell=4328
+price=0
+
+[spell 4330]
+reqspell=4329
+price=0
+
+[spell 4335]
+reqspell=4334
+price=0
+
+[spell 4336]
+reqspell=4335
+price=0
+
+[spell 4338]
+reqspell=4336
+price=0
+
+[spell 4339]
+reqspell=4338
+price=0
+
+[spell 4340]
+reqspell=4339
+price=0
+
+[spell 4341]
+reqspell=4340
+price=0
+
+[spell 4342]
+reqspell=4341
+price=0
+
+[spell 4351]
+reqspell=4350
+price=0
+
+[spell 4352]
+reqspell=4351
+price=0
+
+[spell 4353]
+reqspell=4352
+price=0
+
+[spell 4354]
+reqspell=4353
+price=0
+
+[spell 4355]
+reqspell=4354
+price=0
+
+[spell 4356]
+reqspell=4355
+price=0
+
+[spell 4357]
+reqspell=4356
+price=0
+
+[spell 4368]
+reqspell=4366
+price=0
+
+[spell 4369]
+reqspell=4368
+price=0
+
+[spell 4370]
+reqspell=4369
+price=0
+
+[spell 4371]
+reqspell=4370
+price=0
+
+[spell 4372]
+reqspell=4371
+price=0
+
+[spell 4373]
+reqspell=4372
+price=0
+
+[spell 4374]
+reqspell=4373
+price=0
+
+[spell 4384]
+reqspell=4382
+price=0
+
+[spell 4385]
+reqspell=4384
+price=0
+
+[spell 4386]
+reqspell=4385
+price=0
+
+[spell 4387]
+reqspell=4386
+price=0
+
+[spell 4388]
+reqspell=4387
+price=0
+
+[spell 4389]
+reqspell=4388
+price=0
+
+[spell 4390]
+reqspell=4389
+price=0
+
+[spell 4400]
+reqspell=4398
+price=0
+
+[spell 4405]
+reqspell=4402
+price=0
+
+[spell 4408]
+reqspell=4406
+price=0
+
+[spell 4412]
+reqspell=4410
+price=0
+
+[spell 4416]
+reqspell=4414
+price=0
+
+[spell 4417]
+reqspell=4416
+price=0
+
+[spell 4420]
+reqspell=4418
+price=0
+
+[spell 4421]
+reqspell=4420
+price=0
+
+[spell 4428]
+reqspell=4426
+price=0
+
+[spell 4429]
+reqspell=4428
+price=0
+
+[spell 4435]
+reqspell=4433
+price=0
+
+[spell 4437]
+reqspell=4435
+price=0
+
+[spell 4442]
+reqspell=4440
+price=0
+
+[spell 4443]
+reqspell=4442
+price=0
+
+[spell 4444]
+reqspell=4443
+price=0
+
+[spell 4445]
+reqspell=4444
+price=0
+
+[spell 4446]
+reqspell=4445
+price=0
+
+[spell 4447]
+reqspell=4446
+price=0
+
+[spell 4448]
+reqspell=4447
+price=0
+
+[spell 4458]
+reqspell=4456
+price=0
+
+[spell 4459]
+reqspell=4458
+price=0
+
+[spell 4460]
+reqspell=4459
+price=0
+
+[spell 4461]
+reqspell=4460
+price=0
+
+[spell 4462]
+reqspell=4461
+price=0
+
+[spell 4463]
+reqspell=4462
+price=0
+
+[spell 4464]
+reqspell=4463
+price=0
+
+[spell 4474]
+reqspell=4472
+price=0
+
+[spell 4475]
+reqspell=4474
+price=0
+
+[spell 4476]
+reqspell=4475
+price=0
+
+[spell 4477]
+reqspell=4476
+price=0
+
+[spell 4478]
+reqspell=4477
+price=0
+
+[spell 4479]
+reqspell=4478
+price=0
+
+[spell 4480]
+reqspell=4479
+price=0
+
+[spell 4490]
+reqspell=4488
+price=0
+
+[spell 4491]
+reqspell=4490
+price=0
+
+[spell 4492]
+reqspell=4491
+price=0
+
+[spell 4493]
+reqspell=4492
+price=0
+
+[spell 4494]
+reqspell=4493
+price=0
+
+[spell 4495]
+reqspell=4494
+price=0
+
+[spell 4496]
+reqspell=4495
+price=0
+
+[spell 4508]
+craftskill1=171
+
+[spell 4517]
+reqspell=821
+price=0
+
+[spell 4518]
+reqspell=4517
+price=0
+
+[spell 4519]
+reqspell=4518
+price=0
+
+[spell 4527]
+reqspell=819
+price=0
+
+[spell 4528]
+reqspell=4527
+price=0
+
+[spell 4529]
+reqspell=4528
+price=0
+
+[spell 4530]
+reqspell=4529
+price=0
+
+[spell 4531]
+reqspell=4530
+price=0
+
+[spell 4532]
+reqspell=4531
+price=0
+
+[spell 4533]
+reqspell=4532
+price=0
+
+[spell 4540]
+reqspell=3741
+price=0
+
+[spell 4541]
+reqspell=4540
+price=0
+
+[spell 4542]
+reqspell=4541
+price=0
+
+[spell 4543]
+reqspell=4542
+price=0
+
+[spell 4544]
+reqspell=4543
+price=0
+
+[spell 4545]
+reqspell=4544
+price=0
+
+[spell 4546]
+reqspell=4545
+price=0
+
+[spell 4551]
+reqspell=4547
+price=1500
+
+[spell 4552]
+reqspell=4551
+price=5300
+
+[spell 4553]
+reqspell=4552
+price=0
+
+[spell 4554]
+reqspell=4553
+price=0
+
+[spell 4555]
+reqspell=4554
+price=0
+
+[spell 4556]
+reqspell=4555
+price=0
+
+[spell 4557]
+reqspell=4556
+price=0
+
+[spell 4558]
+reqspell=4548
+price=2500
+
+[spell 4559]
+reqspell=4558
+price=3900
+
+[spell 4560]
+reqspell=4559
+price=0
+
+[spell 4561]
+reqspell=4560
+price=0
+
+[spell 4562]
+reqspell=4561
+price=0
+
+[spell 4563]
+reqspell=4562
+price=0
+
+[spell 4564]
+reqspell=4563
+price=0
+
+[spell 4565]
+reqspell=4549
+price=1400
+
+[spell 4566]
+reqspell=4565
+price=4400
+
+[spell 4567]
+reqspell=4566
+price=0
+
+[spell 4568]
+reqspell=4567
+price=0
+
+[spell 4569]
+reqspell=4568
+price=0
+
+[spell 4570]
+reqspell=4569
+price=0
+
+[spell 4571]
+reqspell=4570
+price=0
+
+[spell 4572]
+reqspell=4550
+price=2275
+
+[spell 4573]
+reqspell=4572
+price=2880
+
+[spell 4574]
+reqspell=4573
+price=0
+
+[spell 4575]
+reqspell=4574
+price=0
+
+[spell 4576]
+reqspell=4575
+price=0
+
+[spell 4577]
+reqspell=4576
+price=0
+
+[spell 4578]
+reqspell=4577
+price=0
+
+[spell 4580]
+reqspell=4579
+price=0
+
+[spell 4581]
+reqspell=4580
+price=0
+
+[spell 4582]
+reqspell=4581
+price=0
+
+[spell 4583]
+reqspell=4582
+price=0
+
+[spell 4584]
+reqspell=4583
+price=0
+
+[spell 4585]
+reqspell=4584
+price=0
+
+[spell 4586]
+reqspell=4585
+price=0
+
+[spell 4631]
+reqspell=2635
+price=0
+
+[spell 4632]
+reqspell=4631
+price=0
+
+[spell 4633]
+reqspell=4632
+price=0
+
+[spell 4634]
+reqspell=4633
+price=0
+
+[spell 4635]
+reqspell=4634
+price=0
+
+[spell 4636]
+reqspell=4635
+price=0
+
+[spell 4637]
+reqspell=4636
+price=0
+
+[spell 4646]
+reqspell=4645
+price=0
+
+[spell 4647]
+reqspell=4646
+price=0
+
+[spell 4648]
+reqspell=4647
+price=0
+
+[spell 4649]
+reqspell=4648
+price=0
+
+[spell 4650]
+reqspell=4649
+price=0
+
+[spell 4651]
+reqspell=4650
+price=0
+
+[spell 4662]
+reqspell=4661
+price=0
+
+[spell 4663]
+reqspell=4662
+price=0
+
+[spell 4664]
+reqspell=4663
+price=0
+
+[spell 4665]
+reqspell=4664
+price=0
+
+[spell 4666]
+reqspell=4665
+price=0
+
+[spell 4667]
+reqspell=4666
+price=0
+
+[spell 4680]
+reqspell=4678
+price=0
+
+[spell 4681]
+reqspell=4680
+price=0
+
+[spell 4683]
+reqspell=4681
+price=0
+
+[spell 4684]
+reqspell=4683
+price=0
+
+[spell 4685]
+reqspell=4684
+price=0
+
+[spell 4687]
+reqspell=4685
+price=0
+
+[spell 4699]
+reqspell=4697
+price=0
+
+[spell 4700]
+reqspell=4699
+price=0
+
+[spell 4701]
+reqspell=4700
+price=0
+
+[spell 4702]
+reqspell=4701
+price=0
+
+[spell 4703]
+reqspell=4702
+price=0
+
+[spell 4705]
+reqspell=4703
+price=0
+
+[spell 4717]
+reqspell=4714
+price=0
+
+[spell 4718]
+reqspell=4717
+price=0
+
+[spell 4719]
+reqspell=4718
+price=0
+
+[spell 4720]
+reqspell=4719
+price=0
+
+[spell 4721]
+reqspell=4720
+price=0
+
+[spell 4722]
+reqspell=4721
+price=0
+
+[spell 4723]
+reqspell=4722
+price=0
+
+[spell 4751]
+reqspell=1114
+price=0
+
+[spell 4752]
+reqspell=4751
+price=0
+
+[spell 4762]
+reqspell=4760
+price=0
+
+[spell 4763]
+reqspell=4762
+price=0
+
+[spell 4780]
+reqspell=4778
+price=0
+
+[spell 4786]
+reqspell=2123
+price=0
+
+[spell 4790]
+reqspell=4788
+price=0
+
+[spell 4794]
+reqspell=4792
+price=0
+
+[spell 4798]
+reqspell=4796
+price=0
+
+[spell 4802]
+reqspell=4800
+price=0
+
+[spell 4810]
+reqspell=2916
+price=0
+
+[spell 4811]
+reqspell=4810
+price=0
+
+[spell 4818]
+reqspell=2917
+price=0
+
+[spell 4819]
+reqspell=4818
+price=0
+
+[spell 4820]
+reqspell=4819
+price=0
+
+[spell 4821]
+reqspell=4820
+price=0
+
+[spell 4822]
+reqspell=4821
+price=0
+
+[spell 4823]
+reqspell=4822
+price=0
+
+[spell 4824]
+reqspell=4823
+price=0
+
+[spell 4834]
+reqspell=4832
+price=0
+
+[spell 4835]
+reqspell=4834
+price=0
+
+[spell 4836]
+reqspell=4835
+price=0
+
+[spell 4837]
+reqspell=4836
+price=0
+
+[spell 4838]
+reqspell=4837
+price=0
+
+[spell 4839]
+reqspell=4838
+price=0
+
+[spell 4840]
+reqspell=4839
+price=0
+
+[spell 4850]
+reqspell=4848
+price=0
+
+[spell 4851]
+reqspell=4850
+price=0
+
+[spell 4852]
+reqspell=4851
+price=0
+
+[spell 4853]
+reqspell=4852
+price=0
+
+[spell 4854]
+reqspell=4853
+price=0
+
+[spell 4855]
+reqspell=4854
+price=0
+
+[spell 4856]
+reqspell=4855
+price=0
+
+[spell 4866]
+reqspell=4864
+price=0
+
+[spell 4867]
+reqspell=4866
+price=0
+
+[spell 4868]
+reqspell=4867
+price=0
+
+[spell 4869]
+reqspell=4868
+price=0
+
+[spell 4870]
+reqspell=4869
+price=0
+
+[spell 4871]
+reqspell=4870
+price=0
+
+[spell 4872]
+reqspell=4871
+price=0
+
+[spell 4882]
+reqspell=4880
+price=0
+
+[spell 4883]
+reqspell=4882
+price=0
+
+[spell 4884]
+reqspell=4883
+price=0
+
+[spell 4885]
+reqspell=4884
+price=0
+
+[spell 4886]
+reqspell=4885
+price=0
+
+[spell 4887]
+reqspell=4886
+price=0
+
+[spell 4888]
+reqspell=4887
+price=0
+
+[spell 4897]
+reqspell=4896
+price=0
+
+[spell 4902]
+reqspell=4900
+price=0
+
+[spell 4917]
+reqspell=4915
+price=0
+
+[spell 4918]
+reqspell=4917
+price=0
+
+[spell 4923]
+reqspell=4921
+price=0
+
+[spell 4924]
+reqspell=4923
+price=0
+
+[spell 4942]
+craftskill1=171
+
+[spell 4954]
+
+[spell 4960]
+
+[spell 4976]
+
+[spell 5055]
+reqspell=4178
+price=0
+
+[spell 5056]
+reqspell=5055
+price=0
+
+[spell 5057]
+reqspell=5056
+price=0
+
+[spell 5058]
+reqspell=5057
+price=0
+
+[spell 5059]
+reqspell=5058
+price=0
+
+[spell 5060]
+reqspell=5059
+price=0
+
+[spell 5061]
+reqspell=5060
+price=0
+
+[spell 5069]
+reqspell=4212
+price=0
+
+[spell 5070]
+reqspell=5069
+price=0
+
+[spell 5071]
+reqspell=5070
+price=0
+
+[spell 5072]
+reqspell=5071
+price=0
+
+[spell 5073]
+reqspell=5072
+price=0
+
+[spell 5074]
+reqspell=5073
+price=0
+
+[spell 5075]
+reqspell=5074
+price=0
+
+[spell 5084]
+reqspell=4229
+price=0
+
+[spell 5085]
+reqspell=5084
+price=0
+
+[spell 5086]
+reqspell=5085
+price=0
+
+[spell 5087]
+reqspell=5086
+price=0
+
+[spell 5088]
+reqspell=5087
+price=0
+
+[spell 5089]
+reqspell=5088
+price=0
+
+[spell 5090]
+reqspell=5089
+price=0
+
+[spell 5177]
+reqspell=5176
+price=150
+
+[spell 5178]
+reqspell=5177
+price=900
+
+[spell 5179]
+reqspell=5178
+price=3400
+
+[spell 5180]
+reqspell=5179
+price=5500
+
+[spell 5186]
+price=200
+
+[spell 5187]
+reqspell=5186
+price=900
+
+[spell 5188]
+reqspell=5187
+price=1600
+
+[spell 5189]
+reqspell=5188
+price=6700
+
+[spell 5195]
+reqspell=1062
+price=540
+
+[spell 5196]
+reqspell=5195
+price=14000
+
+[spell 5201]
+reqspell=3029
+price=1400
+
+[spell 5215]
+price=1900
+
+[spell 5242]
+reqspell=6673
+price=80
+
+[spell 5244]
+craftskill1=165
+
+[spell 5340]
+reqspell=4448
+price=0
+
+[spell 5341]
+reqspell=5340
+price=0
+
+[spell 5342]
+reqspell=5341
+price=0
+
+[spell 5343]
+reqspell=5342
+price=0
+
+[spell 5344]
+reqspell=5343
+price=0
+
+[spell 5345]
+reqspell=5344
+price=0
+
+[spell 5348]
+reqspell=4480
+price=0
+
+[spell 5349]
+reqspell=5348
+price=0
+
+[spell 5350]
+reqspell=5349
+price=0
+
+[spell 5351]
+reqspell=5350
+price=0
+
+[spell 5352]
+reqspell=5351
+price=0
+
+[spell 5353]
+reqspell=5352
+price=0
+
+[spell 5354]
+reqspell=5353
+price=0
+
+[spell 5355]
+reqspell=4464
+price=0
+
+[spell 5356]
+reqspell=5355
+price=0
+
+[spell 5357]
+reqspell=5356
+price=0
+
+[spell 5358]
+reqspell=5357
+price=0
+
+[spell 5359]
+reqspell=5358
+price=0
+
+[spell 5360]
+reqspell=5359
+price=0
+
+[spell 5395]
+
+[spell 5428]
+reqspell=4342
+price=0
+
+[spell 5429]
+reqspell=5428
+price=0
+
+[spell 5430]
+reqspell=5429
+price=0
+
+[spell 5431]
+reqspell=5430
+price=0
+
+[spell 5432]
+reqspell=5431
+price=0
+
+[spell 5433]
+reqspell=5432
+price=0
+
+[spell 5448]
+reqspell=4357
+price=0
+
+[spell 5449]
+reqspell=5448
+price=0
+
+[spell 5450]
+reqspell=5449
+price=0
+
+[spell 5451]
+reqspell=5450
+price=0
+
+[spell 5452]
+reqspell=5451
+price=0
+
+[spell 5453]
+reqspell=5452
+price=0
+
+[spell 5455]
+reqspell=5454
+price=0
+
+[spell 5456]
+reqspell=5455
+price=0
+
+[spell 5467]
+reqspell=5466
+price=0
+
+[spell 5468]
+reqspell=5467
+price=0
+
+[spell 5482]
+reqspell=5481
+price=0
+
+[spell 5483]
+reqspell=5482
+price=0
+
+[spell 5494]
+price=8000
+
+[spell 5504]
+
+[spell 5505]
+
+[spell 5506]
+
+[spell 5510]
+reqspell=5509
+price=0
+
+[spell 5511]
+reqspell=5510
+price=0
+
+[spell 5513]
+reqspell=5433
+price=0
+
+[spell 5528]
+reqspell=5527
+price=0
+
+[spell 5529]
+reqspell=5528
+price=0
+
+[spell 5546]
+reqspell=5545
+price=0
+
+[spell 5547]
+reqspell=5546
+price=0
+
+[spell 5548]
+reqspell=4374
+price=0
+
+[spell 5549]
+reqspell=5548
+price=0
+
+[spell 5550]
+reqspell=5549
+price=0
+
+[spell 5551]
+reqspell=5550
+price=0
+
+[spell 5552]
+reqspell=5551
+price=0
+
+[spell 5553]
+reqspell=5552
+price=0
+
+[spell 5554]
+reqspell=5553
+price=0
+
+[spell 5586]
+reqspell=5585
+price=0
+
+[spell 5587]
+reqspell=5586
+price=0
+
+[spell 5606]
+reqspell=649
+price=0
+
+[spell 5609]
+reqspell=5606
+price=0
+
+[spell 5618]
+reqspell=3487
+price=0
+
+[spell 5630]
+reqspell=5626
+price=0
+
+[spell 5631]
+reqspell=5630
+price=0
+
+[spell 5632]
+reqspell=5631
+price=0
+
+[spell 5633]
+reqspell=5632
+price=0
+
+[spell 5634]
+reqspell=5633
+price=0
+
+[spell 5635]
+reqspell=5634
+price=0
+
+[spell 5636]
+reqspell=5635
+price=0
+
+[spell 5637]
+reqspell=5636
+price=0
+
+[spell 5638]
+reqspell=5637
+price=0
+
+[spell 5639]
+reqspell=5638
+price=0
+
+[spell 5640]
+reqspell=5639
+price=0
+
+[spell 5641]
+reqspell=5640
+price=0
+
+[spell 5642]
+reqspell=5641
+price=0
+
+[spell 5643]
+reqspell=5642
+price=0
+
+[spell 5645]
+reqspell=94
+price=0
+
+[spell 5682]
+reqspell=4780
+price=0
+
+[spell 5683]
+reqspell=5682
+price=0
+
+[spell 5684]
+reqspell=5683
+price=0
+
+[spell 5685]
+reqspell=5684
+price=0
+
+[spell 5686]
+reqspell=5685
+price=0
+
+[spell 5687]
+reqspell=5686
+price=0
+
+[spell 5699]
+
+[spell 5701]
+
+[spell 5716]
+reqspell=5715
+price=1100
+
+[spell 5717]
+reqspell=5716
+price=0
+
+[spell 5743]
+reqspell=5742
+price=0
+
+[spell 5744]
+reqspell=5743
+price=0
+
+[spell 5745]
+reqspell=5744
+price=0
+
+[spell 5746]
+reqspell=5745
+price=0
+
+[spell 5747]
+reqspell=5746
+price=0
+
+[spell 5748]
+reqspell=5747
+price=0
+
+[spell 5749]
+reqspell=5748
+price=0
+
+[spell 5750]
+reqspell=5749
+price=0
+
+[spell 5751]
+reqspell=5750
+price=0
+
+[spell 5752]
+reqspell=5751
+price=0
+
+[spell 5753]
+reqspell=5752
+price=0
+
+[spell 5754]
+reqspell=5753
+price=0
+
+[spell 5755]
+reqspell=5754
+price=0
+
+[spell 5756]
+reqspell=5755
+price=0
+
+[spell 5758]
+reqspell=5757
+price=0
+
+[spell 5763]
+craftskill1=171
+
+[spell 5787]
+reqspell=5786
+price=0
+
+[spell 5788]
+reqspell=5787
+price=0
+
+[spell 5789]
+reqspell=5788
+price=0
+
+[spell 5790]
+reqspell=5789
+price=0
+
+[spell 5791]
+reqspell=5790
+price=0
+
+[spell 5792]
+reqspell=5791
+price=0
+
+[spell 5794]
+reqspell=4763
+price=0
+
+[spell 5795]
+reqspell=5794
+price=0
+
+[spell 5813]
+reqspell=5812
+price=0
+
+[spell 5814]
+reqspell=5813
+price=0
+
+[spell 5815]
+reqspell=5814
+price=0
+
+[spell 5817]
+reqspell=5816
+price=0
+
+[spell 5818]
+reqspell=5817
+price=0
+
+[spell 5819]
+reqspell=4794
+price=0
+
+[spell 5820]
+reqspell=4856
+price=0
+
+[spell 5821]
+reqspell=5820
+price=0
+
+[spell 5822]
+reqspell=5819
+price=0
+
+[spell 5837]
+reqspell=5834
+price=0
+
+[spell 5838]
+reqspell=5837
+price=0
+
+[spell 5839]
+reqspell=5835
+price=0
+
+[spell 5840]
+reqspell=5839
+price=0
+
+[spell 5841]
+reqspell=5840
+price=0
+
+[spell 5842]
+reqspell=4790
+price=0
+
+[spell 5843]
+reqspell=5842
+price=0
+
+[spell 5844]
+reqspell=4840
+price=0
+
+[spell 5845]
+reqspell=5844
+price=0
+
+[spell 5867]
+reqspell=5865
+price=0
+
+[spell 5868]
+reqspell=5867
+price=0
+
+[spell 5869]
+reqspell=5866
+price=0
+
+[spell 5870]
+reqspell=5869
+price=0
+
+[spell 5871]
+reqspell=5870
+price=0
+
+[spell 5872]
+reqspell=4798
+price=0
+
+[spell 5873]
+reqspell=5872
+price=0
+
+[spell 5874]
+reqspell=4872
+price=0
+
+[spell 5875]
+reqspell=5874
+price=0
+
+[spell 5891]
+reqspell=4888
+price=0
+
+[spell 5892]
+reqspell=5891
+price=0
+
+[spell 5893]
+reqspell=4802
+price=0
+
+[spell 5894]
+reqspell=5893
+price=0
+
+[spell 5898]
+reqspell=5896
+price=0
+
+[spell 5899]
+reqspell=5898
+price=0
+
+[spell 5900]
+reqspell=5899
+price=0
+
+[spell 5901]
+reqspell=5897
+price=0
+
+[spell 5902]
+reqspell=5901
+price=0
+
+[spell 5919]
+reqspell=4786
+price=0
+
+[spell 5920]
+reqspell=5919
+price=0
+
+[spell 5921]
+reqspell=4824
+price=0
+
+[spell 5922]
+reqspell=5921
+price=0
+
+[spell 5924]
+reqspell=5923
+price=0
+
+[spell 5925]
+reqspell=5924
+price=0
+
+[spell 5926]
+reqspell=5925
+price=0
+
+[spell 5928]
+reqspell=5927
+price=0
+
+[spell 5929]
+reqspell=5928
+price=0
+
+[spell 5942]
+reqspell=5941
+price=0
+
+[spell 5943]
+reqspell=5942
+price=0
+
+[spell 5944]
+reqspell=5943
+price=0
+
+[spell 5953]
+reqspell=5952
+price=0
+
+[spell 5954]
+reqspell=5953
+price=0
+
+[spell 5955]
+reqspell=5954
+price=0
+
+[spell 5956]
+reqspell=5955
+price=0
+
+[spell 5957]
+reqspell=5956
+price=0
+
+[spell 5958]
+reqspell=5957
+price=0
+
+[spell 5971]
+reqspell=5970
+price=0
+
+[spell 5972]
+reqspell=5971
+price=0
+
+[spell 5973]
+reqspell=5969
+price=0
+
+[spell 5974]
+reqspell=5973
+price=0
+
+[spell 5975]
+reqspell=5974
+price=0
+
+[spell 5976]
+reqspell=5975
+price=0
+
+[spell 5977]
+reqspell=5976
+price=0
+
+[spell 5979]
+reqspell=5977
+price=0
+
+[spell 6064]
+reqspell=
+price=13000
+
+[spell 6085]
+reqspell=6057
+price=0
+
+[spell 6086]
+reqspell=6085
+price=0
+
+[spell 6087]
+reqspell=6086
+price=0
+
+[spell 6088]
+reqspell=6087
+price=0
+
+[spell 6089]
+reqspell=6088
+price=0
+
+[spell 6090]
+reqspell=6089
+price=0
+
+[spell 6091]
+reqspell=6090
+price=0
+
+[spell 6092]
+reqspell=6091
+price=0
+
+[spell 6093]
+reqspell=6092
+price=0
+
+[spell 6096]
+reqspell=6095
+price=0
+
+[spell 6097]
+reqspell=6094
+price=0
+
+[spell 6098]
+reqspell=6097
+price=0
+
+[spell 6127]
+
+[spell 6129]
+
+[spell 6153]
+reqspell=6151
+price=0
+
+[spell 6155]
+reqspell=6153
+price=0
+
+[spell 6156]
+reqspell=6155
+price=0
+
+[spell 6157]
+reqspell=6156
+price=0
+
+[spell 6159]
+reqspell=6152
+price=0
+
+[spell 6160]
+reqspell=6159
+price=0
+
+[spell 6161]
+reqspell=6160
+price=0
+
+[spell 6162]
+reqspell=6161
+price=0
+
+[spell 6178]
+reqspell=100
+price=900
+
+[spell 6184]
+reqspell=871
+price=0
+
+[spell 6190]
+reqspell=1160
+price=530
+
+[spell 6192]
+reqspell=5242
+price=560
+
+[spell 6201]
+
+[spell 6202]
+
+[spell 6281]
+reqspell=6280
+price=0
+
+[spell 6282]
+reqspell=6281
+price=0
+
+[spell 6283]
+reqspell=6282
+price=0
+
+[spell 6286]
+reqspell=6283
+price=0
+
+[spell 6310]
+
+[spell 6314]
+reqspell=6311
+price=0
+
+[spell 6315]
+reqspell=6314
+price=0
+
+[spell 6316]
+reqspell=6315
+price=0
+
+[spell 6317]
+reqspell=6316
+price=0
+
+[spell 6331]
+reqspell=6328
+price=0
+
+[spell 6332]
+reqspell=6331
+price=0
+
+[spell 6333]
+reqspell=6332
+price=0
+
+[spell 6334]
+reqspell=6333
+price=0
+
+[spell 6343]
+price=100
+
+[spell 6366]
+
+[spell 6412]
+craftskill1=185
+
+[spell 6413]
+craftskill1=185
+
+[spell 6414]
+craftskill1=185
+
+[spell 6415]
+craftskill1=185
+
+[spell 6416]
+craftskill1=185
+
+[spell 6417]
+craftskill1=185
+
+[spell 6418]
+craftskill1=185
+
+[spell 6419]
+craftskill1=185
+
+[spell 6441]
+craftskill1=202
+
+[spell 6444]
+reqspell=6443
+price=0
+
+[spell 6445]
+reqspell=6444
+price=0
+
+[spell 6446]
+reqspell=6445
+price=0
+
+[spell 6447]
+reqspell=6446
+price=0
+
+[spell 6458]
+craftskill1=202
+
+[spell 6470]
+craftskill1=164
+
+[spell 6471]
+craftskill1=164
+
+[spell 6499]
+craftskill1=185
+
+[spell 6500]
+craftskill1=185
+
+[spell 6501]
+craftskill1=185
+
+[spell 6510]
+craftskill1=171
+
+[spell 6517]
+craftskill1=164
+
+[spell 6518]
+craftskill1=164
+
+[spell 6521]
+craftskill1=333
+
+[spell 6546]
+reqspell=772
+price=0
+
+[spell 6547]
+reqspell=6546
+price=0
+
+[spell 6548]
+reqspell=6547
+price=0
+
+[spell 6552]
+price=100
+
+[spell 6554]
+reqspell=6552
+price=0
+
+[spell 6555]
+reqspell=6554
+price=0
+
+[spell 6574]
+reqspell=6572
+price=530
+
+[spell 6609]
+
+[spell 6610]
+
+[spell 6611]
+
+[spell 6617]
+craftskill1=171
+
+[spell 6618]
+craftskill1=171
+
+[spell 6619]
+craftskill1=171
+
+[spell 6624]
+craftskill1=171
+
+[spell 6651]
+craftskill1=171
+
+[spell 6661]
+craftskill1=165
+
+[spell 6673]
+price=10
+
+[spell 6686]
+craftskill1=333
+
+[spell 6688]
+craftskill1=333
+
+[spell 6690]
+craftskill1=333
+
+[spell 6692]
+craftskill1=333
+
+[spell 6693]
+craftskill1=333
+
+[spell 6695]
+craftskill1=333
+
+[spell 6702]
+craftskill1=165
+
+[spell 6703]
+craftskill1=165
+
+[spell 6704]
+craftskill1=165
+
+[spell 6705]
+craftskill1=165
+
+[spell 6739]
+reqspell=645
+price=0
+
+[spell 6760]
+reqspell=2098
+price=20
+
+[spell 6761]
+reqspell=6760
+price=180
+
+[spell 6762]
+reqspell=6761
+price=710
+
+[spell 6768]
+reqspell=1966
+price=810
+
+[spell 6774]
+reqspell=5171
+price=2200
+
+[spell 6778]
+reqspell=5189
+price=11000
+
+[spell 6780]
+reqspell=5180
+price=14000
+
+[spell 6783]
+reqspell=5215
+price=13000
+
+[spell 6787]
+reqspell=6785
+price=1800
+
+[spell 6793]
+reqspell=5217
+price=0
+
+[spell 6798]
+reqspell=5211
+price=550
+
+[spell 6800]
+reqspell=5221
+price=550
+
+[spell 6803]
+
+[spell 6808]
+reqspell=6807
+price=220
+
+[spell 6809]
+reqspell=6808
+price=670
+
+[spell 7126]
+craftskill1=165
+
+[spell 7128]
+price=2300
+
+[spell 7133]
+craftskill1=165
+
+[spell 7135]
+craftskill1=165
+
+[spell 7147]
+craftskill1=165
+
+[spell 7149]
+craftskill1=165
+
+[spell 7151]
+craftskill1=165
+
+[spell 7153]
+craftskill1=165
+
+[spell 7156]
+craftskill1=165
+
+[spell 7179]
+craftskill1=171
+
+[spell 7181]
+craftskill1=171
+
+[spell 7183]
+craftskill1=171
+
+[spell 7198]
+reqspell=4519
+price=0
+
+[spell 7200]
+reqspell=1183
+price=0
+
+[spell 7203]
+reqspell=6157
+price=0
+
+[spell 7204]
+reqspell=7203
+price=0
+
+[spell 7205]
+reqspell=7204
+price=0
+
+[spell 7206]
+reqspell=7205
+price=0
+
+[spell 7211]
+reqspell=6162
+price=0
+
+[spell 7213]
+craftskill1=185
+
+[spell 7221]
+craftskill1=164
+
+[spell 7222]
+craftskill1=164
+
+[spell 7223]
+craftskill1=164
+
+[spell 7224]
+craftskill1=164
+
+[spell 7255]
+craftskill1=171
+
+[spell 7256]
+craftskill1=171
+
+[spell 7257]
+craftskill1=171
+
+[spell 7258]
+craftskill1=171
+
+[spell 7259]
+craftskill1=171
+
+[spell 7364]
+
+[spell 7369]
+reqspell=845
+price=1300
+
+[spell 7372]
+reqspell=1715
+price=0
+
+[spell 7373]
+reqspell=7372
+price=1100
+
+[spell 7377]
+reqspell=1672
+price=0
+
+[spell 7379]
+reqspell=6574
+price=1300
+
+[spell 7390]
+reqspell=355
+price=0
+
+[spell 7391]
+reqspell=7390
+price=0
+
+[spell 7400]
+reqspell=694
+price=2000
+
+[spell 7402]
+reqspell=7400
+price=7100
+
+[spell 7405]
+reqspell=7386
+price=560
+
+[spell 7408]
+craftskill1=164
+
+[spell 7412]
+reqspell=7411
+price=0
+
+[spell 7413]
+reqspell=7412
+price=0
+
+[spell 7421]
+
+[spell 7430]
+craftskill1=164
+
+[spell 7623]
+craftskill1=333
+
+[spell 7624]
+craftskill1=333
+
+[spell 7629]
+craftskill1=333
+
+[spell 7630]
+craftskill1=333
+
+[spell 7633]
+craftskill1=333
+
+[spell 7636]
+craftskill1=333
+
+[spell 7639]
+craftskill1=333
+
+[spell 7643]
+craftskill1=333
+
+[spell 7731]
+reqspell=7620
+price=0
+
+[spell 7732]
+reqspell=7731
+price=0
+
+[spell 7751]
+craftskill1=185
+
+[spell 7752]
+craftskill1=185
+
+[spell 7753]
+craftskill1=185
+
+[spell 7754]
+craftskill1=185
+
+[spell 7755]
+craftskill1=185
+
+[spell 7795]
+
+[spell 7799]
+reqspell=3110
+price=20
+
+[spell 7800]
+reqspell=7799
+price=250
+
+[spell 7801]
+reqspell=7800
+price=700
+
+[spell 7802]
+reqspell=7801
+price=1700
+
+[spell 7804]
+reqspell=6307
+price=300
+
+[spell 7805]
+reqspell=7804
+price=1400
+
+[spell 7809]
+reqspell=3716
+price=250
+
+[spell 7810]
+reqspell=7809
+price=600
+
+[spell 7811]
+reqspell=7810
+price=1200
+
+[spell 7813]
+reqspell=6360
+price=1400
+
+[spell 7815]
+reqspell=7814
+price=700
+
+[spell 7816]
+reqspell=7815
+price=1500
+
+[spell 7817]
+craftskill1=164
+
+[spell 7818]
+craftskill1=164
+
+[spell 7827]
+craftskill1=185
+
+[spell 7828]
+craftskill1=185
+
+[spell 7836]
+craftskill1=171
+
+[spell 7837]
+craftskill1=171
+
+[spell 7841]
+craftskill1=171
+
+[spell 7845]
+craftskill1=171
+
+[spell 7887]
+reqspell=7384
+price=1100
+
+[spell 7892]
+craftskill1=333
+
+[spell 7893]
+craftskill1=333
+
+[spell 7924]
+reqspell=3274
+price=0
+
+[spell 7928]
+craftskill1=197
+
+[spell 7929]
+craftskill1=197
+
+[spell 7934]
+price=250
+
+[spell 7935]
+
+[spell 7953]
+craftskill1=165
+
+[spell 7954]
+craftskill1=165
+
+[spell 7955]
+craftskill1=165
+
+[spell 7960]
+
+[spell 8017]
+price=10
+
+[spell 8042]
+price=100
+
+[spell 8198]
+reqspell=6343
+price=290
+
+[spell 8204]
+reqspell=8198
+price=1100
+
+[spell 8205]
+reqspell=8204
+price=2300
+
+[spell 8238]
+craftskill1=185
+
+[spell 8240]
+craftskill1=171
+
+[spell 8243]
+craftskill1=202
+
+[spell 8296]
+
+[spell 8316]
+reqspell=2947
+price=550
+
+[spell 8317]
+reqspell=8316
+price=1400
+
+[spell 8322]
+craftskill1=165
+
+[spell 8334]
+craftskill1=164
+
+[spell 8338]
+
+[spell 8339]
+craftskill1=202
+
+[spell 8366]
+craftskill1=164
+
+[spell 8367]
+craftskill1=164
+
+[spell 8368]
+craftskill1=164
+
+[spell 8380]
+reqspell=7405
+price=1300
+
+[spell 8387]
+reqspell=2383
+price=0
+
+[spell 8388]
+reqspell=2580
+price=0
+
+[spell 8465]
+craftskill1=333
+
+[spell 8467]
+craftskill1=333
+
+[spell 8483]
+craftskill1=333
+
+[spell 8489]
+craftskill1=333
+
+[spell 8604]
+craftskill1=185
+
+[spell 8607]
+craftskill1=185
+
+[spell 8617]
+reqspell=8613
+price=0
+
+[spell 8618]
+reqspell=8617
+price=0
+
+[spell 8621]
+reqspell=1760
+price=1800
+
+[spell 8623]
+reqspell=6762
+price=2500
+
+[spell 8624]
+reqspell=8623
+price=3500
+
+[spell 8629]
+reqspell=1777
+price=1500
+
+[spell 8631]
+reqspell=703
+price=560
+
+[spell 8632]
+reqspell=8631
+price=970
+
+[spell 8633]
+reqspell=8632
+price=1800
+
+[spell 8637]
+reqspell=6768
+price=810
+
+[spell 8639]
+reqspell=1943
+price=810
+
+[spell 8640]
+reqspell=8639
+price=1500
+
+[spell 8643]
+reqspell=408
+price=4700
+
+[spell 8649]
+reqspell=8647
+price=670
+
+[spell 8650]
+reqspell=8649
+price=1500
+
+[spell 8681]
+craftskill1=171
+
+[spell 8687]
+craftskill1=171
+
+[spell 8691]
+craftskill1=171
+
+[spell 8694]
+craftskill1=171
+
+[spell 8696]
+reqspell=2983
+price=1800
+
+[spell 8721]
+reqspell=2591
+price=1500
+
+[spell 8724]
+reqspell=8676
+price=670
+
+[spell 8725]
+reqspell=8724
+price=1800
+
+[spell 8736]
+
+[spell 8758]
+craftskill1=333
+
+[spell 8760]
+craftskill1=333
+
+[spell 8762]
+craftskill1=333
+
+[spell 8764]
+craftskill1=333
+
+[spell 8766]
+craftskill1=333
+
+[spell 8768]
+craftskill1=164
+
+[spell 8770]
+craftskill1=333
+
+[spell 8772]
+craftskill1=333
+
+[spell 8774]
+craftskill1=333
+
+[spell 8776]
+craftskill1=333
+
+[spell 8778]
+craftskill1=333
+
+[spell 8780]
+craftskill1=333
+
+[spell 8782]
+craftskill1=333
+
+[spell 8784]
+craftskill1=333
+
+[spell 8786]
+craftskill1=333
+
+[spell 8789]
+craftskill1=333
+
+[spell 8791]
+craftskill1=333
+
+[spell 8793]
+craftskill1=333
+
+[spell 8795]
+craftskill1=333
+
+[spell 8797]
+craftskill1=333
+
+[spell 8799]
+craftskill1=333
+
+[spell 8802]
+craftskill1=333
+
+[spell 8804]
+craftskill1=333
+
+[spell 8812]
+reqspell=6064
+
+[spell 8820]
+reqspell=1464
+price=2300
+
+[spell 8854]
+
+[spell 8855]
+
+[spell 8880]
+craftskill1=164
+
+[spell 8893]
+
+[spell 8895]
+craftskill1=164
+craftskill2=202
+
+[spell 8903]
+reqspell=6778
+price=14000
+
+[spell 8905]
+reqspell=6780
+price=19000
+
+[spell 8914]
+reqspell=1075
+price=9000
+
+[spell 8919]
+
+[spell 8921]
+reqspell=5307
+price=80
+
+[spell 8924]
+reqspell=8921
+price=300
+
+[spell 8925]
+reqspell=8924
+price=1800
+
+[spell 8926]
+reqspell=8925
+price=3400
+
+[spell 8927]
+reqspell=8926
+price=5400
+
+[spell 8928]
+reqspell=8927
+price=9000
+
+[spell 8929]
+reqspell=8928
+price=13000
+
+[spell 8949]
+reqspell=2912
+price=6700
+
+[spell 8950]
+reqspell=8949
+price=9000
+
+[spell 8951]
+reqspell=8950
+price=18000
+
+[spell 8955]
+reqspell=2908
+price=14000
+
+[spell 8972]
+reqspell=6809
+price=900
+
+[spell 8974]
+reqspell=6795
+price=0
+
+[spell 8975]
+reqspell=8974
+price=0
+
+[spell 8976]
+reqspell=9875
+price=35000
+
+[spell 8983]
+reqspell=6798
+price=1900
+
+[spell 8992]
+reqspell=6800
+price=1400
+
+[spell 9000]
+reqspell=8998
+price=1300
+
+[spell 9052]
+
+[spell 9058]
+craftskill1=165
+
+[spell 9059]
+craftskill1=165
+
+[spell 9060]
+craftskill1=165
+
+[spell 9062]
+craftskill1=165
+
+[spell 9064]
+craftskill1=165
+
+[spell 9065]
+craftskill1=165
+
+[spell 9068]
+craftskill1=165
+
+[spell 9070]
+craftskill1=165
+
+[spell 9072]
+craftskill1=165
+
+[spell 9074]
+craftskill1=165
+
+[spell 9145]
+craftskill1=165
+
+[spell 9146]
+craftskill1=165
+
+[spell 9147]
+craftskill1=165
+
+[spell 9148]
+craftskill1=165
+
+[spell 9149]
+craftskill1=165
+
+[spell 9193]
+craftskill1=165
+
+[spell 9194]
+craftskill1=165
+
+[spell 9195]
+craftskill1=165
+
+[spell 9196]
+craftskill1=165
+
+[spell 9197]
+craftskill1=165
+
+[spell 9198]
+craftskill1=165
+
+[spell 9201]
+craftskill1=165
+
+[spell 9202]
+craftskill1=165
+
+[spell 9206]
+craftskill1=165
+
+[spell 9207]
+craftskill1=165
+
+[spell 9208]
+craftskill1=165
+
+[spell 9269]
+craftskill1=164
+craftskill2=202
+
+[spell 9271]
+craftskill1=202
+
+[spell 9273]
+craftskill1=202
+
+[spell 9490]
+reqspell=1735
+price=1100
+
+[spell 9492]
+reqspell=1079
+price=540
+
+[spell 9493]
+reqspell=9492
+price=1500
+
+[spell 9513]
+craftskill1=185
+
+[spell 9582]
+
+[spell 9583]
+
+[spell 9584]
+
+[spell 9586]
+
+[spell 9594]
+
+[spell 9595]
+
+[spell 9634]
+reqspell=5487
+price=1300
+
+[spell 9745]
+reqspell=8972
+price=1800
+
+[spell 9747]
+reqspell=9490
+price=1800
+
+[spell 9752]
+reqspell=9493
+price=2500
+
+[spell 9754]
+reqspell=769
+price=2600
+
+[spell 9756]
+reqspell=8914
+price=26000
+
+[spell 9758]
+reqspell=8903
+price=26000
+
+[spell 9785]
+reqspell=3538
+price=0
+
+[spell 9811]
+craftskill1=164
+
+[spell 9813]
+craftskill1=164
+
+[spell 9814]
+craftskill1=164
+
+[spell 9818]
+craftskill1=164
+
+[spell 9820]
+craftskill1=164
+
+[spell 9821]
+reqspell=1850
+price=1900
+
+[spell 9823]
+reqspell=9005
+price=1900
+
+[spell 9824]
+reqspell=9007
+price=0
+
+[spell 9826]
+reqspell=9824
+price=0
+
+[spell 9827]
+reqspell=9823
+price=6400
+
+[spell 9829]
+reqspell=8992
+price=1900
+
+[spell 9830]
+reqspell=9829
+price=2900
+
+[spell 9833]
+reqspell=8929
+price=19000
+
+[spell 9834]
+reqspell=9833
+price=40000
+
+[spell 9835]
+reqspell=9834
+price=35000
+
+[spell 9845]
+reqspell=6793
+price=3100
+
+[spell 9846]
+reqspell=9845
+price=3900
+
+[spell 9849]
+reqspell=5201
+price=3100
+
+[spell 9850]
+reqspell=9849
+price=3500
+
+[spell 9852]
+reqspell=5196
+price=31000
+
+[spell 9853]
+reqspell=9852
+price=35000
+
+[spell 9866]
+reqspell=6787
+price=2400
+
+[spell 9867]
+reqspell=9866
+price=3500
+
+[spell 9870]
+reqspell=8976
+price=0
+
+[spell 9871]
+reqspell=9870
+price=0
+
+[spell 9875]
+reqspell=8951
+price=24000
+
+[spell 9880]
+reqspell=9745
+price=2400
+
+[spell 9881]
+reqspell=9880
+price=3500
+
+[spell 9888]
+reqspell=9758
+price=34000
+
+[spell 9889]
+reqspell=9888
+price=64000
+
+[spell 9892]
+reqspell=9000
+price=4000
+
+[spell 9894]
+reqspell=9752
+price=4000
+
+[spell 9896]
+reqspell=9894
+price=0
+
+[spell 9898]
+reqspell=9747
+price=4000
+
+[spell 9901]
+reqspell=8955
+price=29000
+
+[spell 9904]
+reqspell=1824
+price=2900
+
+[spell 9908]
+reqspell=9754
+price=2900
+
+[spell 9910]
+reqspell=9756
+price=29000
+
+[spell 9912]
+reqspell=8905
+price=46000
+
+[spell 9913]
+reqspell=6783
+price=39000
+
+[spell 9916]
+craftskill1=164
+
+[spell 9918]
+
+[spell 9920]
+
+[spell 9921]
+
+[spell 9926]
+craftskill1=164
+
+[spell 9928]
+craftskill1=164
+
+[spell 9931]
+craftskill1=164
+
+[spell 9933]
+craftskill1=164
+
+[spell 9935]
+craftskill1=164
+
+[spell 9937]
+craftskill1=164
+
+[spell 9939]
+craftskill1=164
+
+[spell 9942]
+craftskill1=164
+
+[spell 9945]
+craftskill1=164
+
+[spell 9949]
+
+[spell 9950]
+craftskill1=164
+
+[spell 9952]
+craftskill1=164
+
+[spell 9954]
+craftskill1=164
+
+[spell 9957]
+craftskill1=164
+
+[spell 9959]
+craftskill1=164
+
+[spell 9961]
+craftskill1=164
+
+[spell 9964]
+craftskill1=164
+
+[spell 9966]
+craftskill1=164
+
+[spell 9968]
+craftskill1=164
+
+[spell 9970]
+craftskill1=164
+
+[spell 9972]
+craftskill1=164
+
+[spell 9974]
+craftskill1=164
+
+[spell 9977]
+
+[spell 9979]
+craftskill1=164
+
+[spell 9980]
+craftskill1=164
+
+[spell 9983]
+craftskill1=164
+
+[spell 9985]
+craftskill1=164
+
+[spell 9986]
+craftskill1=164
+
+[spell 9987]
+craftskill1=164
+
+[spell 9993]
+craftskill1=164
+
+[spell 9995]
+craftskill1=164
+
+[spell 9997]
+craftskill1=164
+
+[spell 10001]
+craftskill1=164
+
+[spell 10003]
+craftskill1=164
+
+[spell 10005]
+craftskill1=164
+
+[spell 10007]
+craftskill1=164
+
+[spell 10009]
+craftskill1=164
+
+[spell 10011]
+craftskill1=164
+
+[spell 10013]
+craftskill1=164
+
+[spell 10015]
+craftskill1=164
+
+[spell 10053]
+
+[spell 10054]
+
+[spell 10097]
+
+[spell 10098]
+
+[spell 10138]
+
+[spell 10139]
+
+[spell 10140]
+
+[spell 10144]
+
+[spell 10145]
+
+[spell 10248]
+reqspell=3564
+price=0
+
+[spell 10269]
+reqspell=6739
+price=0
+
+[spell 10270]
+reqspell=10269
+price=0
+
+[spell 10275]
+reqspell=5645
+price=0
+
+[spell 10284]
+reqspell=5609
+price=0
+
+[spell 10285]
+reqspell=10284
+price=0
+
+[spell 10286]
+reqspell=10285
+price=0
+
+[spell 10290]
+reqspell=465
+price=30
+
+[spell 10291]
+reqspell=643
+price=780
+
+[spell 10292]
+reqspell=1032
+price=3500
+
+[spell 10293]
+reqspell=10292
+price=5900
+
+[spell 10298]
+reqspell=7294
+price=1100
+
+[spell 10299]
+reqspell=10298
+price=2300
+
+[spell 10300]
+reqspell=10299
+price=4200
+
+[spell 10301]
+reqspell=10300
+price=7100
+
+[spell 10306]
+reqspell=5618
+price=0
+
+[spell 10310]
+reqspell=2800
+price=3500
+
+[spell 10482]
+craftskill1=165
+
+[spell 10487]
+craftskill1=165
+
+[spell 10490]
+craftskill1=165
+
+[spell 10499]
+craftskill1=165
+
+[spell 10507]
+craftskill1=165
+
+[spell 10509]
+craftskill1=165
+
+[spell 10511]
+craftskill1=165
+
+[spell 10516]
+craftskill1=165
+
+[spell 10518]
+craftskill1=165
+
+[spell 10520]
+craftskill1=165
+
+[spell 10525]
+craftskill1=165
+
+[spell 10529]
+craftskill1=165
+
+[spell 10531]
+craftskill1=165
+
+[spell 10533]
+craftskill1=165
+
+[spell 10542]
+craftskill1=165
+
+[spell 10544]
+craftskill1=165
+
+[spell 10546]
+craftskill1=165
+
+[spell 10548]
+craftskill1=165
+
+[spell 10550]
+craftskill1=165
+
+[spell 10552]
+craftskill1=165
+
+[spell 10554]
+craftskill1=165
+
+[spell 10556]
+craftskill1=165
+
+[spell 10558]
+craftskill1=165
+
+[spell 10560]
+craftskill1=165
+
+[spell 10562]
+craftskill1=165
+
+[spell 10564]
+craftskill1=165
+
+[spell 10566]
+craftskill1=165
+
+[spell 10568]
+craftskill1=165
+
+[spell 10570]
+craftskill1=165
+
+[spell 10572]
+craftskill1=165
+
+[spell 10574]
+craftskill1=165
+
+[spell 10619]
+craftskill1=165
+
+[spell 10621]
+craftskill1=165
+
+[spell 10630]
+craftskill1=165
+
+[spell 10632]
+craftskill1=165
+
+[spell 10647]
+craftskill1=165
+
+[spell 10650]
+craftskill1=165
+
+[spell 10662]
+reqspell=3811
+price=0
+
+[spell 10768]
+reqspell=8618
+price=0
+
+[spell 10840]
+craftskill1=197
+
+[spell 10841]
+craftskill1=197
+
+[spell 10844]
+craftskill1=197
+
+[spell 10846]
+reqspell=7924
+price=0
+
+[spell 10907]
+price=10000
+
+[spell 10908]
+price=10000
+
+[spell 10951]
+price=28000
+
+[spell 10952]
+reqspell=10951
+price=47000
+
+[spell 11197]
+reqspell=8650
+price=2800
+
+[spell 11198]
+reqspell=11197
+price=6400
+
+[spell 11209]
+
+[spell 11267]
+reqspell=8725
+price=2200
+
+[spell 11268]
+reqspell=11267
+price=4700
+
+[spell 11269]
+reqspell=11268
+price=7100
+
+[spell 11273]
+reqspell=8640
+price=3300
+
+[spell 11274]
+reqspell=11273
+price=4000
+
+[spell 11275]
+reqspell=11274
+price=5900
+
+[spell 11279]
+reqspell=8721
+price=3300
+
+[spell 11280]
+reqspell=11279
+price=4000
+
+[spell 11281]
+reqspell=11280
+price=5900
+
+[spell 11285]
+reqspell=8629
+price=2800
+
+[spell 11286]
+reqspell=11285
+price=5900
+
+[spell 11289]
+reqspell=8633
+price=2800
+
+[spell 11290]
+reqspell=11289
+price=5800
+
+[spell 11293]
+reqspell=8621
+price=2800
+
+[spell 11294]
+reqspell=11293
+price=5800
+
+[spell 11297]
+reqspell=2070
+price=4200
+
+[spell 11299]
+reqspell=8624
+price=4200
+
+[spell 11300]
+reqspell=11299
+price=6400
+
+[spell 11303]
+reqspell=8637
+price=4000
+
+[spell 11305]
+reqspell=8696
+price=7100
+
+[spell 11341]
+craftskill1=171
+
+[spell 11342]
+craftskill1=171
+
+[spell 11343]
+craftskill1=171
+
+[spell 11357]
+craftskill1=171
+
+[spell 11358]
+craftskill1=171
+
+[spell 11400]
+craftskill1=171
+
+[spell 11435]
+
+[spell 11438]
+craftskill1=333
+
+[spell 11447]
+craftskill1=171
+
+[spell 11448]
+craftskill1=171
+
+[spell 11449]
+craftskill1=171
+
+[spell 11450]
+craftskill1=171
+
+[spell 11451]
+craftskill1=171
+
+[spell 11452]
+craftskill1=171
+
+[spell 11453]
+craftskill1=171
+
+[spell 11454]
+craftskill1=164
+
+[spell 11456]
+craftskill1=171
+
+[spell 11457]
+craftskill1=171
+
+[spell 11458]
+craftskill1=171
+
+[spell 11459]
+craftskill1=171
+
+[spell 11460]
+craftskill1=171
+
+[spell 11461]
+craftskill1=171
+
+[spell 11464]
+craftskill1=171
+
+[spell 11465]
+craftskill1=171
+
+[spell 11466]
+craftskill1=171
+
+[spell 11467]
+craftskill1=171
+
+[spell 11468]
+craftskill1=171
+
+[spell 11472]
+craftskill1=171
+
+[spell 11473]
+craftskill1=171
+
+[spell 11476]
+craftskill1=171
+
+[spell 11477]
+craftskill1=171
+
+[spell 11478]
+craftskill1=171
+
+[spell 11479]
+
+[spell 11480]
+
+[spell 11512]
+
+[spell 11513]
+
+[spell 11525]
+
+[spell 11528]
+
+[spell 11537]
+
+[spell 11545]
+
+[spell 11549]
+reqspell=6192
+price=1100
+
+[spell 11550]
+reqspell=11549
+price=4400
+
+[spell 11551]
+reqspell=11550
+price=5300
+
+[spell 11554]
+reqspell=6190
+price=1300
+
+[spell 11555]
+reqspell=11554
+price=3300
+
+[spell 11556]
+reqspell=11555
+price=4400
+
+[spell 11560]
+reqspell=1134
+price=0
+
+[spell 11561]
+reqspell=11560
+price=0
+
+[spell 11564]
+reqspell=1608
+price=1100
+
+[spell 11565]
+reqspell=11564
+price=1300
+
+[spell 11566]
+reqspell=11565
+price=4200
+
+[spell 11567]
+reqspell=11566
+price=9600
+
+[spell 11572]
+reqspell=6548
+price=1300
+
+[spell 11573]
+reqspell=11572
+price=3500
+
+[spell 11574]
+reqspell=11573
+price=5900
+
+[spell 11578]
+reqspell=6178
+price=3700
+
+[spell 11580]
+reqspell=8205
+price=4200
+
+[spell 11581]
+reqspell=11580
+price=7100
+
+[spell 11584]
+reqspell=7887
+price=3300
+
+[spell 11585]
+reqspell=11584
+price=5900
+
+[spell 11588]
+reqspell=7391
+price=0
+
+[spell 11589]
+reqspell=11588
+price=0
+
+[spell 11590]
+reqspell=11589
+price=0
+
+[spell 11596]
+reqspell=8380
+price=3700
+
+[spell 11597]
+reqspell=11596
+price=7100
+
+[spell 11600]
+reqspell=7379
+price=3300
+
+[spell 11601]
+reqspell=11600
+price=4400
+
+[spell 11604]
+reqspell=8820
+price=3700
+
+[spell 11605]
+reqspell=11604
+price=4400
+
+[spell 11608]
+reqspell=7369
+price=3500
+
+[spell 11609]
+reqspell=11608
+price=5900
+
+[spell 11610]
+
+[spell 11611]
+reqspell=3464
+price=0
+
+[spell 11637]
+
+[spell 11643]
+craftskill1=164
+
+[spell 11651]
+
+[spell 11652]
+
+[spell 11654]
+
+[spell 11729]
+
+[spell 11730]
+
+[spell 11758]
+
+[spell 11759]
+craftskill1=171
+
+[spell 11760]
+craftskill1=171
+
+[spell 11761]
+craftskill1=171
+
+[spell 11762]
+reqspell=7802
+price=4200
+
+[spell 11763]
+reqspell=11762
+price=4300
+
+[spell 11766]
+reqspell=7805
+price=1400
+
+[spell 11767]
+reqspell=11766
+price=2800
+
+[spell 11770]
+reqspell=8317
+price=1700
+
+[spell 11771]
+reqspell=11770
+price=4400
+
+[spell 11774]
+reqspell=7811
+price=2800
+
+[spell 11775]
+reqspell=11774
+price=3900
+
+[spell 11778]
+reqspell=7816
+price=1700
+
+[spell 11779]
+reqspell=11778
+price=3200
+
+[spell 11780]
+reqspell=11779
+price=3900
+
+[spell 11784]
+reqspell=7813
+price=2200
+
+[spell 11785]
+reqspell=11784
+price=4300
+
+[spell 11884]
+
+[spell 11885]
+
+[spell 11886]
+
+[spell 11887]
+
+[spell 11888]
+
+[spell 11889]
+
+[spell 11923]
+craftskill1=164
+
+[spell 11993]
+reqspell=3570
+price=0
+
+[spell 12044]
+craftskill1=333
+
+[spell 12045]
+craftskill1=333
+
+[spell 12046]
+craftskill1=333
+
+[spell 12047]
+craftskill1=333
+
+[spell 12048]
+craftskill1=333
+
+[spell 12049]
+craftskill1=333
+
+[spell 12050]
+craftskill1=333
+
+[spell 12052]
+craftskill1=333
+
+[spell 12053]
+craftskill1=333
+
+[spell 12055]
+craftskill1=333
+
+[spell 12056]
+craftskill1=333
+
+[spell 12059]
+craftskill1=333
+
+[spell 12060]
+craftskill1=333
+
+[spell 12061]
+craftskill1=333
+
+[spell 12062]
+craftskill1=333
+
+[spell 12063]
+craftskill1=333
+
+[spell 12064]
+craftskill1=333
+
+[spell 12065]
+craftskill1=333
+
+[spell 12066]
+craftskill1=333
+
+[spell 12067]
+craftskill1=333
+
+[spell 12068]
+craftskill1=333
+
+[spell 12069]
+craftskill1=333
+
+[spell 12070]
+craftskill1=333
+
+[spell 12071]
+craftskill1=333
+
+[spell 12072]
+craftskill1=333
+
+[spell 12073]
+craftskill1=333
+
+[spell 12074]
+craftskill1=333
+
+[spell 12075]
+craftskill1=333
+
+[spell 12076]
+craftskill1=333
+
+[spell 12077]
+craftskill1=333
+
+[spell 12078]
+craftskill1=333
+
+[spell 12079]
+craftskill1=333
+
+[spell 12080]
+craftskill1=333
+
+[spell 12081]
+craftskill1=333
+
+[spell 12082]
+craftskill1=333
+
+[spell 12083]
+craftskill1=333
+
+[spell 12084]
+craftskill1=333
+
+[spell 12085]
+craftskill1=333
+
+[spell 12086]
+craftskill1=333
+
+[spell 12087]
+craftskill1=333
+
+[spell 12088]
+craftskill1=333
+
+[spell 12089]
+craftskill1=333
+
+[spell 12090]
+craftskill1=333
+
+[spell 12091]
+craftskill1=333
+
+[spell 12092]
+craftskill1=333
+
+[spell 12093]
+craftskill1=333
+
+[spell 12180]
+reqspell=3910
+price=0
+
+[spell 12259]
+craftskill1=164
+
+[spell 12260]
+craftskill1=164
+
+[spell 12578]
+
+[spell 12584]
+craftskill1=164
+craftskill2=202
+
+[spell 12585]
+craftskill1=202
+
+[spell 12586]
+craftskill1=202
+
+[spell 12587]
+craftskill1=202
+
+[spell 12589]
+craftskill1=164
+
+[spell 12590]
+craftskill1=164
+
+[spell 12591]
+craftskill1=164
+craftskill2=202
+
+[spell 12594]
+craftskill1=202
+
+[spell 12595]
+craftskill1=164
+craftskill2=202
+
+[spell 12596]
+craftskill1=164
+craftskill2=202
+
+[spell 12597]
+craftskill1=164
+craftskill2=202
+
+[spell 12599]
+craftskill1=164
+craftskill2=202
+
+[spell 12603]
+craftskill1=164
+craftskill2=202
+
+[spell 12607]
+craftskill1=202
+
+[spell 12609]
+craftskill1=171
+
+[spell 12614]
+craftskill1=164
+craftskill2=202
+
+[spell 12615]
+craftskill1=202
+
+[spell 12616]
+craftskill1=202
+
+[spell 12617]
+craftskill1=164
+craftskill2=202
+
+[spell 12618]
+craftskill1=202
+
+[spell 12619]
+craftskill1=164
+craftskill2=202
+
+[spell 12620]
+craftskill1=164
+craftskill2=202
+
+[spell 12621]
+craftskill1=164
+
+[spell 12622]
+craftskill1=202
+
+[spell 12624]
+craftskill1=164
+craftskill2=202
+
+[spell 12656]
+reqspell=4038
+price=0
+
+[spell 12715]
+craftskill1=202
+
+[spell 12716]
+craftskill1=164
+craftskill2=202
+
+[spell 12717]
+craftskill1=164
+craftskill2=202
+
+[spell 12718]
+craftskill1=164
+craftskill2=202
+
+[spell 12719]
+craftskill1=202
+
+[spell 12720]
+craftskill1=164
+craftskill2=202
+
+[spell 12722]
+craftskill1=164
+craftskill2=202
+
+[spell 12735]
+
+[spell 12754]
+craftskill1=164
+craftskill2=202
+
+[spell 12755]
+craftskill1=164
+craftskill2=202
+
+[spell 12758]
+craftskill1=164
+craftskill2=202
+
+[spell 12759]
+craftskill1=164
+craftskill2=202
+
+[spell 12760]
+craftskill1=202
+
+[spell 12802]
+
+[spell 12805]
+
+[spell 12806]
+
+[spell 12808]
+
+[spell 12895]
+craftskill1=202
+
+[spell 12897]
+craftskill1=202
+
+[spell 12899]
+craftskill1=164
+craftskill2=202
+
+[spell 12900]
+craftskill1=164
+craftskill2=202
+
+[spell 12902]
+craftskill1=164
+craftskill2=202
+
+[spell 12903]
+craftskill1=164
+craftskill2=202
+
+[spell 12904]
+craftskill1=164
+craftskill2=202
+
+[spell 12905]
+craftskill1=164
+craftskill2=202
+
+[spell 12906]
+craftskill1=164
+craftskill2=202
+
+[spell 12907]
+craftskill1=164
+craftskill2=202
+
+[spell 12908]
+craftskill1=164
+craftskill2=202
+
+[spell 12998]
+
+[spell 13028]
+craftskill1=185
+
+[spell 13163]
+price=50
+
+[spell 13220]
+craftskill1=171
+
+[spell 13228]
+craftskill1=171
+
+[spell 13229]
+craftskill1=171
+
+[spell 13230]
+craftskill1=171
+
+[spell 13240]
+craftskill1=164
+craftskill2=202
+
+[spell 13325]
+
+[spell 13361]
+
+[spell 13362]
+
+[spell 13399]
+
+[spell 13497]
+
+[spell 13498]
+
+[spell 13628]
+
+[spell 13630]
+
+[spell 13632]
+
+[spell 13633]
+
+[spell 13702]
+
+[spell 13714]
+craftskill1=333
+
+[spell 13739]
+
+[spell 13740]
+
+[spell 13909]
+
+[spell 13920]
+reqspell=7413
+price=0
+
+[spell 13982]
+
+[spell 14199]
+craftskill1=333
+
+[spell 14209]
+
+[spell 14210]
+
+[spell 14227]
+
+[spell 14293]
+
+[spell 14379]
+craftskill1=164
+
+[spell 14380]
+craftskill1=164
+
+[spell 14807]
+
+[spell 14809]
+
+[spell 14810]
+
+[spell 14891]
+
+[spell 14916]
+reqspell=2649
+price=190
+
+[spell 14917]
+reqspell=14916
+price=3000
+
+[spell 14918]
+reqspell=14917
+price=10000
+
+[spell 14919]
+reqspell=14918
+price=20000
+
+[spell 14920]
+reqspell=14919
+price=30000
+
+[spell 14921]
+reqspell=14920
+price=50000
+
+[spell 14929]
+
+[spell 14930]
+craftskill1=165
+
+[spell 14932]
+craftskill1=165
+
+[spell 15065]
+
+[spell 15120]
+
+[spell 15187]
+
+[spell 15211]
+
+[spell 15247]
+
+[spell 15255]
+craftskill1=164
+craftskill2=202
+
+[spell 15292]
+craftskill1=164
+
+[spell 15293]
+craftskill1=164
+
+[spell 15294]
+craftskill1=164
+
+[spell 15295]
+craftskill1=164
+
+[spell 15296]
+craftskill1=164
+
+[spell 15303]
+craftskill1=333
+
+[spell 15304]
+craftskill1=333
+
+[spell 15342]
+
+[spell 15343]
+
+[spell 15344]
+
+[spell 15491]
+
+[spell 15539]
+
+[spell 15596]
+
+[spell 15628]
+craftskill1=164
+craftskill2=202
+
+[spell 15633]
+craftskill1=164
+craftskill2=202
+
+[spell 15649]
+
+[spell 15698]
+
+[spell 15699]
+
+[spell 15702]
+
+[spell 15833]
+craftskill1=171
+
+[spell 15853]
+craftskill1=185
+
+[spell 15855]
+craftskill1=185
+
+[spell 15856]
+craftskill1=185
+
+[spell 15861]
+craftskill1=185
+
+[spell 15863]
+craftskill1=185
+
+[spell 15865]
+craftskill1=185
+
+[spell 15906]
+craftskill1=185
+
+[spell 15910]
+craftskill1=185
+
+[spell 15915]
+craftskill1=185
+
+[spell 15933]
+craftskill1=185
+
+[spell 15935]
+craftskill1=185
+
+[spell 15958]
+
+[spell 15972]
+craftskill1=164
+
+[spell 15973]
+craftskill1=164
+
+[spell 15990]
+price=8000
+
+[spell 15998]
+
+[spell 16029]
+
+[spell 16073]
+
+[spell 16077]
+
+[spell 16153]
+
+[spell 16195]
+
+[spell 16197]
+
+[spell 16351]
+
+[spell 16548]
+
+[spell 16639]
+
+[spell 16640]
+
+[spell 16641]
+
+[spell 16642]
+craftskill1=164
+
+[spell 16643]
+craftskill1=164
+
+[spell 16644]
+craftskill1=164
+
+[spell 16645]
+craftskill1=164
+
+[spell 16646]
+craftskill1=164
+
+[spell 16647]
+craftskill1=164
+
+[spell 16648]
+craftskill1=164
+
+[spell 16649]
+craftskill1=164
+
+[spell 16650]
+craftskill1=164
+
+[spell 16651]
+craftskill1=164
+
+[spell 16652]
+craftskill1=164
+
+[spell 16653]
+craftskill1=164
+
+[spell 16654]
+craftskill1=164
+
+[spell 16655]
+craftskill1=164
+
+[spell 16656]
+craftskill1=164
+
+[spell 16657]
+craftskill1=164
+
+[spell 16658]
+craftskill1=164
+
+[spell 16659]
+craftskill1=164
+
+[spell 16660]
+craftskill1=164
+
+[spell 16661]
+craftskill1=164
+
+[spell 16662]
+craftskill1=164
+
+[spell 16663]
+craftskill1=164
+
+[spell 16664]
+craftskill1=164
+
+[spell 16665]
+craftskill1=164
+
+[spell 16667]
+craftskill1=164
+
+[spell 16697]
+reqspell=1756
+price=0
+
+[spell 16724]
+craftskill1=164
+
+[spell 16725]
+craftskill1=164
+
+[spell 16726]
+craftskill1=164
+
+[spell 16728]
+craftskill1=164
+
+[spell 16729]
+craftskill1=164
+
+[spell 16730]
+craftskill1=164
+
+[spell 16731]
+craftskill1=164
+
+[spell 16732]
+craftskill1=164
+
+[spell 16741]
+craftskill1=164
+
+[spell 16742]
+craftskill1=164
+
+[spell 16744]
+craftskill1=164
+
+[spell 16745]
+craftskill1=164
+
+[spell 16746]
+craftskill1=164
+
+[spell 16781]
+
+[spell 16810]
+reqspell=16689
+reqspell=1062
+price=5500
+
+[spell 16811]
+reqspell=16810
+reqspell=5195
+price=18000
+
+[spell 16812]
+reqspell=16811
+reqspell=5196
+price=29000
+
+[spell 16813]
+reqspell=16812
+reqspell=9852
+price=29000
+
+[spell 16828]
+reqspell=16827
+price=540
+
+[spell 16829]
+reqspell=16828
+price=1400
+
+[spell 16830]
+reqspell=16829
+price=3100
+
+[spell 16831]
+reqspell=16830
+price=3500
+
+[spell 16832]
+reqspell=16831
+price=0
+
+[spell 16960]
+craftskill1=164
+
+[spell 16965]
+craftskill1=164
+
+[spell 16967]
+craftskill1=164
+
+[spell 16969]
+craftskill1=164
+
+[spell 16970]
+craftskill1=164
+
+[spell 16971]
+craftskill1=164
+
+[spell 16973]
+craftskill1=164
+
+[spell 16978]
+craftskill1=164
+
+[spell 16980]
+craftskill1=164
+
+[spell 16983]
+craftskill1=164
+
+[spell 16984]
+craftskill1=164
+
+[spell 16985]
+craftskill1=164
+
+[spell 16986]
+craftskill1=164
+
+[spell 16987]
+craftskill1=164
+
+[spell 16988]
+craftskill1=164
+
+[spell 16990]
+craftskill1=164
+
+[spell 16991]
+craftskill1=164
+
+[spell 16992]
+craftskill1=164
+
+[spell 16993]
+craftskill1=164
+
+[spell 16994]
+craftskill1=164
+
+[spell 16995]
+craftskill1=164
+
+[spell 17048]
+
+[spell 17133]
+craftskill1=333
+
+[spell 17161]
+
+[spell 17180]
+
+[spell 17181]
+
+[spell 17187]
+
+[spell 17255]
+reqspell=17253
+price=0
+
+[spell 17256]
+reqspell=17255
+price=0
+
+[spell 17257]
+reqspell=17256
+price=0
+
+[spell 17258]
+reqspell=17257
+price=0
+
+[spell 17259]
+reqspell=17258
+price=0
+
+[spell 17260]
+reqspell=17259
+price=0
+
+[spell 17261]
+reqspell=17260
+price=0
+
+[spell 17269]
+
+[spell 17270]
+
+[spell 17329]
+reqspell=16813
+reqspell=9853
+price=40000
+
+[spell 17348]
+reqspell=17347
+price=2275
+
+[spell 17527]
+craftskill1=171
+
+[spell 17529]
+
+[spell 17551]
+craftskill1=171
+
+[spell 17552]
+craftskill1=171
+
+[spell 17553]
+craftskill1=171
+
+[spell 17554]
+craftskill1=171
+
+[spell 17555]
+craftskill1=171
+
+[spell 17556]
+craftskill1=171
+
+[spell 17557]
+craftskill1=171
+
+[spell 17559]
+
+[spell 17560]
+
+[spell 17561]
+
+[spell 17562]
+
+[spell 17563]
+
+[spell 17564]
+
+[spell 17565]
+
+[spell 17566]
+
+[spell 17570]
+craftskill1=171
+
+[spell 17571]
+craftskill1=171
+
+[spell 17572]
+craftskill1=171
+
+[spell 17573]
+craftskill1=171
+
+[spell 17574]
+craftskill1=171
+
+[spell 17575]
+craftskill1=171
+
+[spell 17576]
+craftskill1=171
+
+[spell 17577]
+craftskill1=171
+
+[spell 17578]
+craftskill1=171
+
+[spell 17579]
+craftskill1=171
+
+[spell 17580]
+craftskill1=171
+
+[spell 17632]
+craftskill1=171
+
+[spell 17634]
+craftskill1=171
+
+[spell 17635]
+craftskill1=171
+
+[spell 17636]
+craftskill1=171
+
+[spell 17637]
+craftskill1=171
+
+[spell 17638]
+craftskill1=171
+
+[spell 17672]
+
+[spell 17727]
+
+[spell 17728]
+
+[spell 17750]
+reqspell=17735
+price=1000
+
+[spell 17751]
+reqspell=17750
+price=2500
+
+[spell 17752]
+reqspell=17751
+price=2900
+
+[spell 17777]
+
+[spell 17850]
+reqspell=17767
+price=400
+
+[spell 17851]
+reqspell=17850
+price=900
+
+[spell 17852]
+reqspell=17851
+price=1500
+
+[spell 17853]
+reqspell=17852
+price=1800
+
+[spell 17854]
+reqspell=17853
+price=2700
+
+[spell 17951]
+
+[spell 17952]
+
+[spell 17953]
+
+[spell 18238]
+craftskill1=185
+
+[spell 18239]
+craftskill1=185
+
+[spell 18240]
+craftskill1=185
+
+[spell 18241]
+craftskill1=185
+
+[spell 18242]
+craftskill1=185
+
+[spell 18243]
+craftskill1=185
+
+[spell 18244]
+craftskill1=185
+
+[spell 18245]
+craftskill1=185
+
+[spell 18246]
+craftskill1=185
+
+[spell 18247]
+craftskill1=185
+
+[spell 18248]
+reqspell=7732
+price=0
+
+[spell 18260]
+reqspell=3413
+price=0
+
+[spell 18367]
+
+[spell 18397]
+
+[spell 18401]
+craftskill1=333
+
+[spell 18402]
+craftskill1=333
+
+[spell 18403]
+craftskill1=333
+
+[spell 18404]
+craftskill1=333
+
+[spell 18405]
+craftskill1=333
+
+[spell 18406]
+craftskill1=333
+
+[spell 18407]
+craftskill1=333
+
+[spell 18408]
+craftskill1=333
+
+[spell 18409]
+craftskill1=333
+
+[spell 18410]
+craftskill1=333
+
+[spell 18411]
+craftskill1=333
+
+[spell 18412]
+craftskill1=333
+
+[spell 18413]
+craftskill1=333
+
+[spell 18414]
+craftskill1=333
+
+[spell 18415]
+craftskill1=333
+
+[spell 18416]
+craftskill1=333
+
+[spell 18417]
+craftskill1=333
+
+[spell 18418]
+craftskill1=333
+
+[spell 18419]
+craftskill1=333
+
+[spell 18420]
+craftskill1=333
+
+[spell 18421]
+craftskill1=333
+
+[spell 18422]
+craftskill1=333
+
+[spell 18423]
+craftskill1=333
+
+[spell 18424]
+craftskill1=333
+
+[spell 18434]
+craftskill1=333
+
+[spell 18436]
+craftskill1=333
+
+[spell 18437]
+craftskill1=333
+
+[spell 18438]
+craftskill1=333
+
+[spell 18439]
+craftskill1=333
+
+[spell 18440]
+craftskill1=333
+
+[spell 18441]
+craftskill1=333
+
+[spell 18442]
+craftskill1=333
+
+[spell 18444]
+craftskill1=333
+
+[spell 18445]
+craftskill1=333
+
+[spell 18446]
+craftskill1=333
+
+[spell 18447]
+craftskill1=333
+
+[spell 18448]
+craftskill1=333
+
+[spell 18449]
+craftskill1=333
+
+[spell 18450]
+craftskill1=333
+
+[spell 18451]
+craftskill1=333
+
+[spell 18452]
+craftskill1=333
+
+[spell 18453]
+craftskill1=333
+
+[spell 18454]
+craftskill1=333
+
+[spell 18455]
+craftskill1=333
+
+[spell 18456]
+craftskill1=333
+
+[spell 18457]
+craftskill1=333
+
+[spell 18458]
+craftskill1=333
+
+[spell 18560]
+craftskill1=333
+
+[spell 18629]
+craftskill1=197
+
+[spell 18630]
+craftskill1=197
+
+[spell 18711]
+
+[spell 18831]
+
+[spell 18887]
+reqspell=7812
+price=0
+craftskill1=333
+
+[spell 18888]
+reqspell=18887
+price=0
+
+[spell 18889]
+reqspell=18888
+price=0
+
+[spell 18890]
+reqspell=18889
+price=0
+
+[spell 18891]
+reqspell=18890
+price=0
+
+[spell 18988]
+
+[spell 18995]
+price=200000
+
+[spell 19029]
+
+[spell 19047]
+craftskill1=165
+
+[spell 19048]
+craftskill1=165
+
+[spell 19049]
+craftskill1=165
+
+[spell 19050]
+craftskill1=165
+
+[spell 19051]
+craftskill1=165
+
+[spell 19052]
+craftskill1=165
+
+[spell 19053]
+craftskill1=165
+
+[spell 19054]
+craftskill1=165
+
+[spell 19055]
+craftskill1=165
+
+[spell 19058]
+craftskill1=165
+
+[spell 19059]
+craftskill1=165
+
+[spell 19060]
+craftskill1=165
+
+[spell 19061]
+craftskill1=165
+
+[spell 19062]
+craftskill1=165
+
+[spell 19063]
+craftskill1=165
+
+[spell 19064]
+craftskill1=165
+
+[spell 19065]
+craftskill1=165
+
+[spell 19066]
+craftskill1=165
+
+[spell 19067]
+craftskill1=165
+
+[spell 19068]
+craftskill1=165
+
+[spell 19070]
+craftskill1=165
+
+[spell 19071]
+craftskill1=165
+
+[spell 19072]
+craftskill1=165
+
+[spell 19073]
+craftskill1=165
+
+[spell 19074]
+craftskill1=165
+
+[spell 19075]
+craftskill1=165
+
+[spell 19076]
+craftskill1=165
+
+[spell 19077]
+craftskill1=165
+
+[spell 19078]
+craftskill1=165
+
+[spell 19079]
+craftskill1=165
+
+[spell 19080]
+craftskill1=165
+
+[spell 19081]
+craftskill1=165
+
+[spell 19082]
+craftskill1=165
+
+[spell 19083]
+craftskill1=165
+
+[spell 19084]
+craftskill1=165
+
+[spell 19085]
+craftskill1=165
+
+[spell 19086]
+craftskill1=165
+
+[spell 19087]
+craftskill1=165
+
+[spell 19088]
+craftskill1=165
+
+[spell 19089]
+craftskill1=165
+
+[spell 19090]
+craftskill1=165
+
+[spell 19091]
+craftskill1=165
+
+[spell 19092]
+craftskill1=165
+
+[spell 19093]
+craftskill1=165
+
+[spell 19094]
+craftskill1=165
+
+[spell 19095]
+craftskill1=165
+
+[spell 19097]
+craftskill1=165
+
+[spell 19098]
+craftskill1=165
+
+[spell 19100]
+craftskill1=165
+
+[spell 19101]
+craftskill1=165
+
+[spell 19102]
+craftskill1=165
+
+[spell 19103]
+craftskill1=165
+
+[spell 19104]
+craftskill1=165
+
+[spell 19106]
+craftskill1=165
+
+[spell 19107]
+craftskill1=165
+
+[spell 19435]
+craftskill1=333
+
+[spell 19564]
+
+[spell 19565]
+
+[spell 19566]
+
+[spell 19567]
+craftskill1=164
+
+[spell 19666]
+craftskill1=164
+
+[spell 19667]
+craftskill1=164
+
+[spell 19668]
+craftskill1=164
+
+[spell 19669]
+craftskill1=164
+
+[spell 19720]
+
+[spell 19788]
+craftskill1=202
+
+[spell 19790]
+craftskill1=164
+
+[spell 19791]
+craftskill1=164
+craftskill2=202
+
+[spell 19792]
+craftskill1=164
+craftskill2=202
+
+[spell 19793]
+craftskill1=164
+craftskill2=202
+
+[spell 19794]
+craftskill1=202
+
+[spell 19795]
+craftskill1=164
+craftskill2=202
+
+[spell 19796]
+craftskill1=164
+craftskill2=202
+
+[spell 19797]
+
+[spell 19799]
+craftskill1=164
+
+[spell 19800]
+craftskill1=164
+
+[spell 19814]
+craftskill1=164
+craftskill2=202
+
+[spell 19815]
+craftskill1=164
+craftskill2=202
+
+[spell 19819]
+craftskill1=164
+craftskill2=202
+
+[spell 19825]
+craftskill1=202
+
+[spell 19830]
+craftskill1=164
+craftskill2=202
+
+[spell 19831]
+craftskill1=164
+
+[spell 19833]
+craftskill1=164
+craftskill2=202
+
+[spell 20018]
+
+[spell 20022]
+
+[spell 20039]
+
+[spell 20040]
+
+[spell 20051]
+
+[spell 20201]
+craftskill1=164
+
+[spell 20529]
+
+[spell 20530]
+
+[spell 20531]
+
+[spell 20626]
+craftskill1=185
+
+[spell 20648]
+craftskill1=165
+
+[spell 20649]
+craftskill1=165
+
+[spell 20650]
+craftskill1=165
+
+[spell 20693]
+
+[spell 20752]
+
+[spell 20755]
+
+[spell 20756]
+
+[spell 20757]
+
+[spell 20814]
+
+[spell 20848]
+craftskill1=333
+
+[spell 20849]
+craftskill1=333
+
+[spell 20853]
+craftskill1=165
+
+[spell 20854]
+craftskill1=165
+
+[spell 20855]
+craftskill1=165
+
+[spell 20872]
+craftskill1=164
+
+[spell 20873]
+craftskill1=164
+
+[spell 20874]
+craftskill1=164
+
+[spell 20876]
+craftskill1=164
+
+[spell 20890]
+craftskill1=164
+
+[spell 20897]
+craftskill1=164
+
+[spell 20916]
+craftskill1=185
+
+[spell 21029]
+
+[spell 21100]
+
+[spell 21143]
+craftskill1=185
+
+[spell 21144]
+craftskill1=185
+
+[spell 21160]
+
+[spell 21161]
+craftskill1=164
+
+[spell 21175]
+craftskill1=185
+
+[spell 21180]
+
+[spell 21181]
+
+[spell 21356]
+
+[spell 21357]
+
+[spell 21368]
+
+[spell 21372]
+
+[spell 21398]
+
+[spell 21464]
+
+[spell 21465]
+
+[spell 21541]
+
+[spell 21542]
+
+[spell 21654]
+
+[spell 21731]
+
+[spell 21732]
+
+[spell 21734]
+
+[spell 21735]
+
+[spell 21884]
+
+[spell 21913]
+craftskill1=164
+
+[spell 21923]
+craftskill1=171
+
+[spell 21935]
+
+[spell 21939]
+
+[spell 21940]
+craftskill1=164
+craftskill2=202
+
+[spell 21943]
+craftskill1=165
+
+[spell 21945]
+craftskill1=333
+
+[spell 21953]
+
+[spell 21957]
+
+[spell 21979]
+

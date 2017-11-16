@@ -1,0 +1,1376 @@
+////////////////////////////////////////////////////////////////////// 
+// todo - items for races & classes 
+/////////////////////////////////////////////////////////////////////// 
+
+/////////////////////////////////////////////////////////////////////// 
+[race #RACE_HUMAN] 
+startmap=0 
+startzone=12 
+startpos=-8949.95 -132.493 83.5312 1.0 
+startstats=20 20 20 20 21 
+bodymale=49 
+bodyfemale=50 
+skill=98 300 300   // lang: common 
+spell=668          // lang: common 
+skill=162 1 300    // Unarmed 
+spell=203          // Unarmed 
+spell=2657         // Smelt Copper 
+spell=2656         // Smelting 
+spell=20600        // Perception 
+spell=20598        // The Human Spirit 
+spell=20599        // Diplomacy 
+spell=20597        // Sword Specialization 
+spell=20864        // Mace Specialization 
+// New 
+skill=98 300 300   // Language: Common 
+spell=668          // Language: Common 
+skill=113 300 300  // Language: Elf 
+spell=671          // Language: Elf 
+skill=111 300 300  // Language: Dwarf 
+spell=672          // Language: Dwarf 
+skill=313 300 300  // Language: Gnome 
+spell=7340         // Language: Gnome 
+spell=75           // Auto Shot 
+spell=2764         // Throw 
+skill=45 1 300     // Bows 
+spell=264          // Bows 
+skill=46 1 300     // Guns 
+spell=266          // Guns 
+skill=176 1 300    // Thrown 
+spell=2567         // Thrown 
+
+[race #RACE_ORC] 
+startmap=1 
+startzone=14 
+startpos=-618.518 -4251.67 38.718 1.0 
+startstats=23 17 22 17 23 
+bodymale=51 
+bodyfemale=52 
+skill=109 300 300  // lang: orcish 
+spell=669          // lang: orcish 
+skill=162 1 300    // Unarmed 
+spell=203          // Unarmed 
+spell=2657         // Smelt Copper 
+spell=2656         // Smelting 
+spell=20572        // Blood Fury 
+spell=20573        // Hardiness 
+spell=20575        // Command 
+spell=20574        // Axe Specialization 
+// New 
+skill=98 300 300   // Language: Common 
+spell=668          // Language: Common 
+skill=673 300 300  // Language: Undead 
+spell=17737        // Language: Undead 
+skill=109 300 300  // Language: Orc 
+spell=669          // Language: Orc 
+skill=315 300 300  // Language: Troll 
+spell=7341         // Language: Troll 
+skill=115 300 300  // Language: Minotaur 
+spell=670          // Language: Minotaur 
+spell=75           // Auto Shot 
+spell=2764         // Throw 
+skill=45 1 300     // Bows 
+spell=264          // Bows 
+skill=46 1 300     // Guns 
+spell=266          // Guns 
+skill=176 1 300    // Thrown 
+spell=2567         // Thrown 
+
+[race #RACE_DWARF] 
+startmap=0 
+startzone=1 
+startpos=-6240.32 331.033 382.758 1.0 
+startstats=22 16 23 19 19 
+bodymale=53 
+bodyfemale=54 
+skill=98 1 300     // lang: common 
+spell=668          // lang: common 
+skill=111 300 300  // lang: dwarwen 
+spell=672          // lang: dwarwen 
+skill=162 1 300    // Unarmed 
+spell=203          // Unarmed 
+spell=2657         // Smelt Copper 
+spell=2656         // Smelting 
+spell=20594        // Stoneform 
+spell=20595        // Gun Specialization 
+spell=20596        // Frost Resistance 
+spell=2481         // Treasure Finding 
+// New 
+skill=98 300 300   // Language: Common 
+spell=668          // Language: Common 
+skill=113 300 300  // Language: Elf 
+spell=671          // Language: Elf 
+skill=111 300 300  // Language: Dwarf 
+spell=672          // Language: Dwarf 
+skill=313 300 300  // Language: Gnome 
+spell=7340         // Language: Gnome 
+spell=75           // Auto Shot 
+spell=2764         // Throw 
+skill=45 1 300     // Bows 
+spell=264          // Bows 
+skill=46 1 300     // Guns 
+spell=266          // Guns 
+skill=176 1 300    // Thrown 
+spell=2567         // Thrown 
+
+[race #RACE_NIGHT_ELF] 
+startmap=1 
+startzone=14 
+startpos=10311.3 832.463 1326.41 1.0 
+startstats=17 25 19 20 20 
+bodymale=55 
+bodyfemale=56 
+skill=98 1 300     // lang: common 
+spell=668          // lang: common 
+skill=113 300 300  // lang: darnassian 
+spell=671          // lang: darnassian 
+skill=162 1 300    // Unarmed 
+spell=203          // Unarmed 
+spell=2657         // Smelt Copper 
+spell=2656         // Smelting 
+spell=20580        // Shadowmeld 
+spell=20582        // Quickness 
+spell=20585        // Wisp Spirit 
+spell=20583      // Nature Resistance 
+// New 
+skill=98 300 300   // Language: Common 
+spell=668          // Language: Common 
+skill=113 300 300  // Language: Elf 
+spell=671          // Language: Elf 
+skill=111 300 300  // Language: Dwarf 
+spell=672          // Language: Dwarf 
+skill=313 300 300  // Language: Gnome 
+spell=7340         // Language: Gnome 
+spell=75           // Auto Shot 
+spell=2764         // Throw 
+skill=45 1 300     // Bows 
+spell=264          // Bows 
+skill=46 1 300     // Guns 
+spell=266          // Guns 
+skill=176 1 300    // Thrown 
+spell=2567         // Thrown 
+
+[race #RACE_UNDEAD] 
+startmap=0 
+startzone=85 
+startpos=1676.35 1677.45 121.67 3.14 
+startstats=19 18 21 18 25 
+bodymale=57 
+bodyfemale=58 
+skill=109 1 300    // lang: orcish 
+spell=669          // lang: orcish 
+skill=673 300 300  // lang: gutterspeak 
+spell=17737        // lang: gutterspeak 
+skill=162 1 300    // Unarmed 
+spell=203          // Unarmed 
+spell=2657         // Smelt Copper 
+spell=2656         // Smelting 
+spell=7744           // Will of the Forsaken 
+spell=20577        // Cannibalize 
+spell=5227         // Underwater Breathing 
+spell=20579        // Shadow Resistance 
+// New 
+skill=98 300 300   // Language: Common 
+spell=668          // Language: Common 
+skill=673 300 300  // Language: Undead 
+spell=17737        // Language: Undead 
+skill=109 300 300  // Language: Orc 
+spell=669          // Language: Orc 
+skill=315 300 300  // Language: Troll 
+spell=7341         // Language: Troll 
+skill=115 300 300  // Language: Minotaur 
+spell=670          // Language: Minotaur 
+spell=75           // Auto Shot 
+spell=2764         // Throw 
+skill=45 1 300     // Bows 
+spell=264          // Bows 
+skill=46 1 300     // Guns 
+spell=266          // Guns 
+skill=176 1 300    // Thrown 
+spell=2567         // Thrown 
+
+[race #RACE_TAUREN] 
+startmap=1 
+startzone=215 
+startpos=-2917.58 -257.98 52.9968 1.0 
+startstats=25 15 22 15 22 
+bodymale=59 
+bodyfemale=60 
+skill=109 1 300    // lang: orcish 
+spell=669          // lang: orcish 
+skill=115 300 300  // lang: taurane 
+spell=670          // lang: taurane 
+skill=162 1 300    // Unarmed 
+spell=203          // Unarmed 
+spell=2657         // Smelt Copper 
+spell=2656         // Smelting 
+spell=20549        // War Stomp 
+spell=20550        // Endurance 
+spell=20552        // Cultivation 
+spell=20551        // Nature Resistance 
+// New 
+skill=98 300 300   // Language: Common 
+spell=668          // Language: Common 
+skill=673 300 300  // Language: Undead 
+spell=17737        // Language: Undead 
+skill=109 300 300  // Language: Orc 
+spell=669          // Language: Orc 
+skill=315 300 300  // Language: Troll 
+spell=7341         // Language: Troll 
+skill=115 300 300  // Language: Minotaur 
+spell=670          // Language: Minotaur 
+spell=75           // Auto Shot 
+spell=2764         // Throw 
+skill=45 1 300     // Bows 
+spell=264          // Bows 
+skill=46 1 300     // Guns 
+spell=266          // Guns 
+skill=176 1 300    // Thrown 
+spell=2567         // Thrown 
+
+[race #RACE_GNOME] 
+startmap=0 
+startzone=1 
+startpos=-6240.32 331.033 382.758 1.0 
+startstats=15 23 19 24 20 
+bodymale=1563 
+bodyfemale=1564 
+skill=98 1 300     // lang: common 
+spell=668          // lang: common 
+skill=313 300 300  // lang: gnomish 
+spell=7340         // lang: gnomish 
+skill=162 1 300    // Unarmed 
+spell=203          // Unarmed 
+spell=2657         // Smelt Copper 
+spell=2656         // Smelting 
+spell=20589        // Escape Artist 
+spell=20591        // Expansive Mind 
+spell=20592        // Arcane Resistance 
+spell=20593        // Technologist 
+// New 
+skill=98 300 300   // Language: Common 
+spell=668          // Language: Common 
+skill=113 300 300  // Language: Elf 
+spell=671          // Language: Elf 
+skill=111 300 300  // Language: Dwarf 
+spell=672          // Language: Dwarf 
+skill=313 300 300  // Language: Gnome 
+spell=7340         // Language: Gnome 
+spell=75           // Auto Shot 
+spell=2764         // Throw 
+skill=45 1 300     // Bows 
+spell=264          // Bows 
+skill=46 1 300     // Guns 
+spell=266          // Guns 
+skill=176 1 300    // Thrown 
+spell=2567         // Thrown 
+
+[race #RACE_TROLL] 
+startmap=1 
+startzone=14 
+startpos=-618.518 -4251.67 38.718 1.0 
+startstats=21 22 21 16 21 
+bodymale=1478 
+bodyfemale=1479 
+skill=109 1 300    // lang: orcish 
+spell=669          // lang: orcish 
+skill=315 300 300  // lang: troll 
+spell=7341         // lang: troll 
+skill=162 1 300    // Unarmed 
+spell=203          // Unarmed 
+spell=2657         // Smelt Copper 
+spell=2656         // Smelting 
+spell=20554        // Berserking 
+spell=20555        // Regeneration 
+spell=20557        // Beast Slaying 
+spell=20558        // Throwing Weapon Specialization 
+// New 
+skill=98 300 300   // Language: Common 
+spell=668          // Language: Common 
+skill=673 300 300  // Language: Undead 
+spell=17737        // Language: Undead 
+skill=109 300 300  // Language: Orc 
+spell=669          // Language: Orc 
+skill=315 300 300  // Language: Troll 
+spell=7341         // Language: Troll 
+skill=115 300 300  // Language: Minotaur 
+spell=670          // Language: Minotaur 
+spell=75           // Auto Shot 
+spell=2764         // Throw 
+skill=45 1 300     // Bows 
+spell=264          // Bows 
+skill=46 1 300     // Guns 
+spell=266          // Guns 
+skill=176 1 300    // Thrown 
+spell=2567         // Thrown 
+
+/////////////////////////////////////////////////////////////////////// 
+[class #CLASS_WARRIOR] 
+startstats=3 0 2 0 0 
+health=40 
+healthmodifier=10 
+maxpowers=0 350 0 0 0  // Rage 
+powermod=0 
+attackpower=16 
+damage=5.0 7.0 
+attacktime=2000 2000 
+spell=019CB     // Attack 
+spell=3127      // Parry 
+spell=2457      // Battle stance 
+spell=2764      // Throw 
+spell=107       // Block 
+spell=78        // Heroic Strike 
+skill=26 1 1    // Arms 
+skill=95 1 1    // Defense 
+skill=257 1 1   // Protection 
+skill=44 1 300  // Axes 
+spell=196       // Axes 
+skill=173 1 300 // Daggers 
+spell=1180      // Daggers 
+skill=54 1 300  // Maces 
+spell=198       // Maces 
+skill=43 1 300  // Swords 
+spell=201       // Swords 
+skill=415 1 300 // Cloth 
+spell=9078      // Cloth 
+skill=414 1 300 // Leather 
+spell=9077      // Leather 
+skill=413 1 300 // Mail 
+spell=8737      // Mail 
+skill=433 1 300 // Shield 
+spell=9116      // Shield 
+
+[class #CLASS_PALADIN] 
+startstats=2 0 2 0 1 
+health=38 
+healthmodifier=9 
+maxpowers=80 0 0 0 0 
+powermod=0 
+attackpower=27 
+damage=6.0 7.0 
+attacktime=2900 2000 
+spell=019CB     // Attack 
+spell=3127      // Parry 
+spell=107       // Block 
+spell=585       // Smite 
+spell=13953     // Holy Strike 
+spell=679       // Holy Strike 
+spell=635       // Holy Light 
+skill=38 1 1    // Combat 
+skill=95 1 1    // Defense 
+skill=56 1 1    // Holy 
+skill=257 1 1   // Protection 
+skill=43 1 300  // Swords 
+spell=201       // Swords 
+skill=54 1 300  // Maces 
+spell=198       // Maces 
+skill=160 1 300 // 2H Maces 
+spell=199       // 2H Maces 
+skill=415 1 300 // Cloth 
+spell=9078      // Cloth 
+skill=414 1 300 // Leather 
+spell=9077      // Leather 
+skill=413 1 300 // Mail 
+spell=8737      // Mail 
+skill=433 1 300 // Shield 
+spell=9116      // Shield 
+
+[class #CLASS_HUNTER] 
+startstats=0 3 1 0 1 
+health=46 
+healthmodifier=10 
+maxpowers=85 0 0 0 0 // Focus is not avalible now. Mana is right. 
+powermod=0 
+attackpower=16 
+damage=5.0 7.0 
+attacktime=2000 2000 
+spell=019CB     // Attack 
+spell=3127      // Parry 
+spell=2764      // Throw 
+spell=7919      // Shoot Crossbow 
+spell=75        // Auto Shot 
+spell=2973      // Raptor Strike 
+skill=50 1 1    // Beast Mastery 
+skill=95 1 1    // Defense 
+skill=51 1 1    // Outdoorsmanship 
+skill=163 1 1   // Ranged Combat 
+skill=44 1 300  // Axes 
+spell=196       // Axes 
+skill=45 1 300  // Bows 
+spell=264       // Bows 
+skill=173 1 300 // Daggers 
+spell=1180      // Daggers 
+skill=415 1 300 // Cloth 
+spell=9078      // Cloth 
+skill=414 1 300 // Leather 
+spell=9077      // Leather 
+
+[class #CLASS_ROGUE] 
+startstats=1 3 1 0 0 
+health=45 
+healthmodifier=8 
+maxpowers=0 0 0 100 0  // Energy 
+powermod=0 
+attackpower=27 
+damage=6.0 7.0 
+attacktime=2900 2000 
+spell=019CB     // Attack 
+spell=3127      // Parry 
+spell=2764      // Throw 
+spell=1752      // Sinister Strike 
+spell=2098      // Eviscerate 
+skill=253 1 1   // Assasination 
+skill=95 1 1    // Defense 
+skill=173 1 300 // Daggers 
+spell=1180      // Daggers 
+skill=176 1 300 // Thrown 
+spell=2567      // Thrown 
+skill=415 1 300 // Cloth 
+spell=9078      // Cloth 
+skill=414 1 300 // Leather 
+spell=9077      // Leather 
+
+[class #CLASS_PRIEST] 
+startstats=0 0 0 2 3 
+health=52 
+healthmodifier=6 
+maxpowers=130 0 0 0 0 
+powermod=10 
+attackpower=8 
+damage=2.0 4.0 
+attacktime=2000 2000 
+spell=019CB     // Attack 
+spell=5019      // Shoot 
+spell=585       // Smite 
+spell=2050      // Lesser Heal 
+skill=95 1 1    // Defense 
+skill=613 1 1   // Discipline 
+skill=56 1 1    // Holy 
+skill=78 1 1    // Shadow Magic 
+skill=54 1 300  // Maces 
+spell=198       // Maces 
+skill=228 1 300 // Wands 
+spell=5009      // Wands 
+skill=415 1 300 // Cloth 
+spell=9078      // Cloth 
+
+[class #CLASS_SHAMAN] 
+startstats=1 0 1 1 2 
+health=47 
+healthmodifier=8 
+maxpowers=75 0 0 0 0 
+powermod=10 
+attackpower=8 
+damage=2.0 4.0 
+attacktime=2000 2000 
+spell=019CB     // Attack 
+spell=107       // Block 
+spell=403       // Lightning Bolt 
+spell=331       // Healing Wave 
+skill=237 1 1   // Arcane Magic 
+skill=95 1 1    // Defense 
+skill=54 1 300  // Maces 
+spell=198       // Maces 
+skill=136 1 300 // Staves 
+spell=227       // Staves 
+skill=415 1 300 // Cloth 
+spell=9078      // Cloth 
+skill=414 1 300 // Leather 
+spell=9077      // Leather 
+skill=433 1 300 // Shield 
+spell=9116      // Shield 
+
+[class #CLASS_MAGE] 
+startstats=0 0 0 3 2 
+health=52 
+healthmodifier=6 
+maxpowers=120 0 0 0 0 
+powermod=10 
+attackpower=8 
+damage=2.0 4.0 
+attacktime=2000 2000 
+spell=019CB     // Attack 
+spell=5019      // Shoot 
+spell=133       // Fireball 
+spell=168       // Frost Armor 
+skill=95 1 1    // Defense 
+skill=6 1 1     // Frost 
+skill=8 1 1     // Fire 
+skill=136 1 300 // Staves 
+spell=227       // Staves 
+skill=228 1 300 // Wands 
+spell=5009      // Wands 
+skill=415 1 300 // Cloth 
+spell=9078      // Cloth 
+
+[class #CLASS_WARLOCK] 
+startstats=0 0 1 2 2 
+health=43 
+healthmodifier=7 
+maxpowers=110 0 0 0 0 
+powermod=10 
+attackpower=20 
+damage=3.28 5.28 
+attacktime=1600 2000 
+spell=019CB     // Attack 
+spell=5019      // Shoot 
+spell=686       // Shadow Bolt 
+spell=687       // Demon Skin 
+skill=95 1 1    // Defense 
+skill=354 1 1   // Demonology 
+skill=593 1 1   // Destruction 
+skill=173 1 300 // Daggers 
+spell=1180      // Daggers 
+skill=228 1 300 // Wands 
+spell=5009      // Wands 
+skill=415 1 300 // Cloth 
+spell=9078      // Cloth 
+
+[class #CLASS_DRUID] 
+startstats=1 0 0 2 2 
+health=54 
+healthmodifier=7 
+maxpowers=70 0 0 0 0 
+powermod=9 
+attackpower=8 
+damage=2.0 4.0 
+attacktime=2000 2000 
+spell=019CB     // Attack 
+spell=5176      // Wrath 
+spell=5185      // Healing Touch 
+spell=2383      // Herb Tracking 
+skill=574 1 1   // Balance 
+skill=95 1 1    // Defense 
+skill=374 1 1   // Restoration 
+skill=43 1 300  // Swords 
+spell=201       // Swords 
+skill=136 1 300 // Staves 
+spell=227       // Staves 
+skill=415 1 300 // Cloth 
+spell=9078      // Cloth 
+skill=414 1 300 // Leather 
+spell=9077      // Leather 
+
+/////////////////////////////////////////////////////////////////////// 
+[startitems #RACE_HUMAN #CLASS_WARRIOR] 
+item=3 38      // recruit's shirt 
+item=6 39      // recruit's pants 
+item=7 40      // recruit's boots 
+item=16 2362   // worn wooden shield 
+item=15 25     // worn short sword 
+item=23 117    // tough jerky 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_ORC #CLASS_WARRIOR] 
+item=3 6125    // Brawler's Harness 
+item=6 139     // Brawler's pants 
+item=7 140     // Brawler's boots 
+item=15 12282  // Worn Battleaxe 
+item=23 117    // tough jerky 
+item=24 117    // tough jerky 
+item=25 5777   // Brave's Axe 
+spell=197         // Axes 2H 
+skill=172 1 300   // Axes 2H 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_DWARF #CLASS_WARRIOR] 
+item=3 38      // recruit's shirt 
+item=6 39      // recruit's pants 
+item=7 40      // recruit's boots 
+item=15 12282  // Worn Battleaxe 
+item=23 117    // tough jerky 
+item=24 4540   // tough hunk of bread 
+item=25 5777   // Brave's Axe 
+spell=197         // Axes 2H 
+skill=172 1 300   // Axes 2H 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_NIGHT_ELF #CLASS_WARRIOR] 
+item=3 6120    // recruit's shirt 
+item=6 6121    // recruit's pants 
+item=7 6122    // recruit's boots 
+item=16 2362   // worn wooden shield 
+item=15 25     // worn short sword 
+item=23 117    // tough jerky 
+item=24 4540   // tough hunk of bread 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_UNDEAD #CLASS_WARRIOR] 
+item=3 6125    // Brawler's Harness 
+item=6 139     // Brawler's pants 
+item=7 140     // Brawler's boots 
+item=16 2362   // worn wooden shield 
+item=15 25     // worn short sword 
+item=23 117    // tough jerky 
+item=24 4604   // forest mushroom cap 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_TAUREN #CLASS_WARRIOR] 
+item=3 6125    // Brawler's Harness 
+item=6 139     // Brawler's pants 
+item=15 2361   // battleworn hammer 
+item=23 117    // tough jerky 
+item=24 4540   // tough hunk of bread 
+skill=160 1 300   // 2H Maces 
+spell=199         // 2H Maces 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_GNOME #CLASS_WARRIOR] 
+item=3 38      // recruit's shirt 
+item=6 39      // recruit's pants 
+item=7 40      // recruit's boots 
+item=16 2362   // worn wooden shield 
+item=15 25     // worn short sword 
+item=23 117    // tough jerky 
+item=24 4540   // tough hunk of bread 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_TROLL #CLASS_WARRIOR] 
+item=3 6125    // Brawler's Harness 
+item=6 139     // Brawler's pants 
+item=16 2362   // worn wooden shield 
+item=15 37     // worn short Axe 
+item=23 117    // tough jerky 
+item=24 4540   // tough hunk of bread 
+item=25 3111   // Crude Throwing Axe 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_HUMAN #CLASS_PALADIN] 
+item=3 45      // Squire's Shirt 
+item=5 3363    // Frayed Belt 
+item=6 44      // Squire's Pants 
+item=7 51      // Neophytes's Boots 
+item=9 1377    // Frayed Gloves 
+item=15 25     // Worn Short Sword 
+item=23 4540   // Tough Hunk of Bread 
+item=24 159    // Refreshing Spring Water 
+// New 
+item=25 2947   // Small Throwing Knife 
+item=26 3111   // Crude Throwing Axe 
+item=27 2504   // Worn Shortbow 
+item=28 2508   // Old Blunderbuss 
+item=29 2512   // Rough Arrow 
+item=30 2516   // Light Shot 
+item=31 4496   // Small Brown Pouch 
+item=32 5572   // Small Green Pouch 
+item=33 828    // Small Blue Pouch 
+item=34 5571   // Small Black Pouch 
+item=35 159    // Refreshing Spring Water 
+item=36 159    // Refreshing Spring Water 
+item=37 159    // Refreshing Spring Water 
+item=38 159    // Refreshing Spring Water 
+
+[startitems #RACE_DWARF #CLASS_PALADIN] 
+item=3 6117    // squire's shirt 
+item=6 6118    // squire's pants 
+item=7 43      // squire's boots 
+item=15 2361   // battleworn hammer 
+item=23 159    // refreshing spring water 
+item=24 4540   // tough hunk of bread 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_HUMAN #CLASS_ROGUE] 
+item=3 49      // Footpad's shirt 
+item=6 48      // Footpad's Pants 
+item=7 47      // Footpad's shoes 
+item=15 2092   // Worn dagger 
+item=23 4540   // tough hunk of bread 
+item=24 2070   // Darnassian Bleu 
+item=25 2947   // Small Throwing Knife 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_ORC #CLASS_ROGUE] 
+item=3 2105    // Thug shirt 
+item=6 120     // Thug Pants 
+item=7 121     // Thug shoes 
+item=15 2092   // Worn dagger 
+item=23 4540   // tough hunk of bread 
+item=24 117    // tough jerky 
+item=25 3111   // Crude Throwing Axe 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_DWARF #CLASS_ROGUE] 
+item=3 49      // Footpad's shirt 
+item=6 48      // Footpad's Pants 
+item=7 47      // Footpad's shoes 
+item=15 2092   // Worn dagger 
+item=23 4540   // tough hunk of bread 
+item=24 4540   // tough hunk of bread 
+item=25 3111   // Crude Throwing Axe 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_NIGHT_ELF #CLASS_ROGUE] 
+item=3 49      // Footpad's shirt 
+item=6 48      // Footpad's Pants 
+item=7 47      // Footpad's shoes 
+item=15 2092   // Worn dagger 
+item=23 4540   // tough hunk of bread 
+item=24 117    // tough jerky 
+item=25 2947   // Small Throwing Knife 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_UNDEAD #CLASS_ROGUE] 
+item=3 2105    // Thug shirt 
+item=6 120     // Thug Pants 
+item=7 121     // Thug shoes 
+item=15 2092   // Worn dagger 
+item=23 4604   // forest mushroom cap 
+item=24 4604   // forest mushroom cap 
+item=25 2947   // Small Throwing Knife 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_GNOME #CLASS_ROGUE] 
+item=3 49      // Footpad's shirt 
+item=6 48      // Footpad's Pants 
+item=7 47      // Footpad's shoes 
+item=15 2092   // Worn dagger 
+item=23 4540   // tough hunk of bread 
+item=24 117    // tough jerky 
+item=25 2947   // Small Throwing Knife 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_TROLL #CLASS_ROGUE] 
+item=3 6136    // Thug shirt 
+item=6 6137    // Thug Pants 
+item=7 6138    // Thug shoes 
+item=15 2092   // Worn dagger 
+item=23 4540   // tough hunk of bread 
+item=24 117    // tough jerky 
+item=25 3111   // Crude Throwing Axe 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_HUMAN #CLASS_PRIEST] 
+item=7 51      // neophytes's boots 
+item=6 52      // neophytes's pants 
+item=4 6098    // neophyte's robe 
+item=3 53      // neophyte's shirt 
+item=15 36     // worn mace 
+item=23 2070   // Darnassian Bleu 
+item=24 159    // refreshing spring water 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_DWARF #CLASS_PRIEST] 
+item=7 51      // neophytes's boots 
+item=6 52      // neophytes's pants 
+item=4 6098    // neophyte's robe 
+item=3 53      // neophyte's shirt 
+item=15 36     // worn mace 
+item=23 4540   // tough hunk of bread 
+item=24 159    // refreshing spring water 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_TROLL #CLASS_PRIEST] 
+item=7 51      // neophytes's boots 
+item=6 52      // neophytes's pants 
+item=4 6144    // neophyte's robe 
+item=3 53      // neophyte's shirt 
+item=15 36     // worn mace 
+item=23 117    // tough jerky 
+item=24 159    // refreshing spring water 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_NIGHT_ELF #CLASS_PRIEST] 
+item=7 51      // neophytes's boots 
+item=6 52      // neophytes's pants 
+item=4 6119    // neophyte's robe 
+item=3 53      // neophyte's shirt 
+item=15 36     // worn mace 
+item=23 4540   // tough hunk of bread 
+item=24 159    // refreshing spring water 
+item=25 2070   // Darnassian Bleu 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_UNDEAD #CLASS_PRIEST] 
+item=7 51      // neophytes's boots 
+item=6 52      // neophytes's pants 
+item=4 6144    // neophyte's robe 
+item=3 53      // neophyte's shirt 
+item=15 36     // worn mace 
+item=23 159    // refreshing spring water 
+item=24 4604   // forest mushroom cap 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_ORC #CLASS_SHAMAN] 
+item=6 153     // Primitive Kilt 
+item=3 154     // Primitive Mantle 
+item=15 36     // worn mace 
+item=23 117    // tough jerky 
+item=24 159    // refreshing spring water 
+skill=257 1 1  // Protection 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_TAUREN #CLASS_SHAMAN] 
+item=6 153     // Primitive Kilt 
+item=3 154     // Primitive Mantle 
+item=15 36     // worn mace 
+item=23 4540   // tough hunk of bread 
+item=24 159    // refreshing spring water 
+item=25 4604   // forest mushroom cap 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_TROLL #CLASS_SHAMAN] 
+item=6 6135    // Primitive Kilt 
+item=3 6134    // Primitive Mantle 
+item=15 36     // worn mace 
+item=23 4540   // tough hunk of bread 
+item=24 159    // refreshing spring water 
+item=25 117    // tough jerky 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_HUMAN #CLASS_MAGE] 
+item=7 55      // Apprentice's Boots 
+item=6 1395    // Apprentice's Pants 
+item=4 56      // Apprentice's Robe 
+item=3 6096    // Apprentice's Shirt 
+item=15 35     // bent staff 
+item=23 2070   // Darnassian Bleu 
+item=24 159    // refreshing spring water 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_TROLL #CLASS_MAGE] 
+item=7 55      // Apprentice's Boots 
+item=6 1395    // Apprentice's Pants 
+item=4 6140    // Apprentice's Robe 
+item=3 6096    // Apprentice's Shirt 
+item=15 35     // bent staff 
+item=23 117    // tough jerky 
+item=24 159    // refreshing spring water 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_DWARF #CLASS_MAGE] 
+item=7 55      // Apprentice's Boots 
+item=6 1395    // Apprentice's Pants 
+item=4 56      // Apprentice's Robe 
+item=3 6096    // Apprentice's Shirt 
+item=15 35     // bent staff 
+item=23 2070   // Darnassian Bleu 
+item=24 159    // refreshing spring water 
+item=25 4540   // tough hunk of bread 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_UNDEAD #CLASS_MAGE] 
+item=7 55      // Apprentice's Boots 
+item=6 1395    // Apprentice's Pants 
+item=4 6140    // Apprentice's Robe 
+item=3 6096    // Apprentice's Shirt 
+item=15 35     // bent staff 
+item=23 159    // refreshing spring water 
+item=24 4604   // forest mushroom cap 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_GNOME #CLASS_MAGE] 
+item=7 55      // Apprentice's Boots 
+item=6 1395    // Apprentice's Pants 
+item=4 56      // Apprentice's Robe 
+item=3 6096    // Apprentice's Shirt 
+item=15 35     // bent staff 
+item=23 159    // refreshing spring water 
+item=24 4540   // tough hunk of bread 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_HUMAN #CLASS_WARLOCK] 
+item=7 59      // acolyte's shoes 
+item=6 1396    // acolyte's pants 
+item=4 57      // acolyte's robe 
+item=15 2092   // worn dagger 
+item=23 117    // tough jerky 
+item=24 159    // refreshing spring water 
+item=25 2070   // Darnassian Bleu 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_ORC #CLASS_WARLOCK] 
+item=7 59      // acolyte's shoes 
+item=6 1396    // acolyte's pants 
+item=4 6129    // acolyte's robe 
+item=15 2092   // worn dagger 
+item=23 117    // tough jerky 
+item=24 159    // refreshing spring water 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_GNOME #CLASS_WARLOCK] 
+item=7 59      // acolyte's shoes 
+item=6 1396    // acolyte's pants 
+item=4 57      // acolyte's robe 
+item=15 2092   // worn dagger 
+item=23 4540   // tough hunk of bread 
+item=24 159    // refreshing spring water 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_UNDEAD #CLASS_WARLOCK] 
+item=7 59      // acolyte's shoes 
+item=6 1396    // acolyte's pants 
+item=4 6129    // acolyte's robe 
+item=15 2092   // worn dagger 
+item=23 117    // tough jerky 
+item=24 159    // refreshing spring water 
+item=25 4604   // forest mushroom cap 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_NIGHT_ELF #CLASS_DRUID] 
+item=3 964      // Red Linen Shirt 
+item=4 6123     // Novice's Robe 
+item=5 3363     // Frayed Belt 
+item=6 6118     // Squire's Pants 
+item=7 51       // Neophytes's Boots 
+item=9 1377     // Frayed Gloves 
+item=15 3661    // Handcrafted Staff 
+item=23 4540    // Tough Hunk of Bread 
+item=24 159     // Refreshing Spring Water 
+// New 
+item=25 2947    // Small Throwing Knife 
+item=26 3111    // Crude Throwing Axe 
+item=27 2504    // Worn Shortbow 
+item=28 2508    // Old Blunderbuss 
+item=29 2512    // Rough Arrow 
+item=30 2516    // Light Shot 
+item=31 4496    // Small Brown Pouch 
+item=32 5572    // Small Green Pouch 
+item=33 828     // Small Blue Pouch 
+item=34 5571    // Small Black Pouch 
+item=35 159     // Refreshing Spring Water 
+item=36 159     // Refreshing Spring Water 
+item=37 159     // Refreshing Spring Water 
+item=38 159     // Refreshing Spring Water 
+
+[startitems #RACE_TAUREN #CLASS_DRUID] 
+item=6 6124    // Novice's pants 
+item=4 6139    // Novice's Robe 
+item=15 35     // bent staff 
+item=23 159    // refreshing spring water 
+item=24 4540   // tough hunk of bread 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_DWARF #CLASS_HUNTER] 
+item=3 148     // Rugged Trapper's Shirt 
+item=6 147     // Rugged Trapper's Pants 
+item=7 129     // Rugged Trapper's Boots 
+item=15 37     // worn short Axe 
+item=23 117    // tough jerky 
+item=24 4540   // tough hunk of bread 
+skill=46 1 300    // Guns 
+spell=266         // Guns 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_NIGHT_ELF #CLASS_HUNTER] 
+item=3 148     // Rugged Trapper's Shirt 
+item=6 147     // Rugged Trapper's Pants 
+item=7 129     // Rugged Trapper's Boots 
+item=15 2092   // Worn dagger 
+item=23 117    // tough jerky 
+item=24 4540   // tough hunk of bread 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_ORC #CLASS_HUNTER] 
+item=3 127     // Trapper's Shirt 
+item=6 6126    // Trapper's Pants 
+item=7 6127    // Trapper's Boots 
+item=15 37     // worn short Axe 
+item=23 117    // tough jerky 
+item=24 4540   // tough hunk of bread 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_TAUREN #CLASS_HUNTER] 
+item=3 127     // Trapper's Shirt 
+item=6 6126    // Trapper's Pants 
+item=15 37     // worn short Axe 
+item=23 117    // tough jerky 
+item=24 4540   // tough hunk of bread 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch 
+
+[startitems #RACE_TROLL #CLASS_HUNTER] 
+item=3 127     // Trapper's Shirt 
+item=6 6126    // Trapper's Pants 
+item=15 37     // worn short Axe 
+item=23 117    // tough jerky 
+item=24 4540   // tough hunk of bread 
+// New 
+item=26 2947 // Small Throwing Knife 
+item=27 3111 // Crude Throwing Axe 
+item=28 2504 // Worn Shortbow 
+item=29 2508 // Old Blunderbuss 
+item=30 2512 // Rough Arrow 
+item=31 2516 // Light Shot 
+item=32 4496 // Small Brown Pouch 
+item=33 5571 // Small Black Pouch 
+item=34 5572 // Small Green Pouch 
+item=35 828  // Small Blue Pouch

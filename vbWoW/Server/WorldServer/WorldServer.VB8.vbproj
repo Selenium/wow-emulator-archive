@@ -1,0 +1,206 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95F188B3-62F6-4C78-86EE-12329F33A2B4}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>vbWoW.WorldServer</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>VBScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>vbWoW.WorldServer</RootNamespace>
+    <StartupObject>vbWoW.WorldServer.WS_Main</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Console</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>vbWoW.WorldServer.Documentation.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>HANDLED_MAP_ID=0</DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>vbWoW.WorldServer.Documentation.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>HANDLED_MAP_ID=0</DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>none</DebugType>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <Name>ICSharpCode.SharpZipLib</Name>
+      <HintPath>..\..\Required\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Meebey.SmartIrc4net, Version=0.3.5.1833, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Required\Meebey.SmartIrc4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Vsa">
+      <Name>Microsoft.VisualBasic.Vsa</Name>
+    </Reference>
+    <Reference Include="Microsoft.Vsa">
+      <Name>Microsoft.Vsa</Name>
+    </Reference>
+    <Reference Include="MySql.Data, Version=1.0.7.30072, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Required\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="vbWoW.Database, Version=0.1.2660.28436, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Required\vbWoW.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="vbWoW.FileBase, Version=0.1.2660.28418, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Required\vbWoW.Filebase.dll</HintPath>
+    </Reference>
+    <Reference Include="vbWoW.Logbase, Version=0.1.2660.28362, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Required\vbWoW.Logbase.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global.Opcodes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global.Packets.vb" />
+    <Compile Include="Global.System.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global.Zip.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorldServer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.Auction.vb" />
+    <Compile Include="WS.Base.vb" />
+    <Compile Include="WS.Channels.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.CharManagment.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.CharMovement.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.Combat.vb" />
+    <Compile Include="WS.Commands.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.Corpses.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.Creatures.AI.vb" />
+    <Compile Include="WS.Creatures.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.DBCDatabase.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.GameObjects.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.Guilds.vb" />
+    <Compile Include="WS.Items.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.Loot.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.Mail.vb" />
+    <Compile Include="WS.MiscHandlers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.NPCs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.Party.vb" />
+    <Compile Include="WS.Pets.vb" />
+    <Compile Include="WS.Quests.vb" />
+    <Compile Include="WS.Spawner.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.Spells.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WS.TimerBasedEvents.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib
+END
+inffast.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/inffast.h
+END
+inffixed.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/inffixed.h
+END
+deflate.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/deflate.c
+END
+zlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/zlib.h
+END
+zutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/zutil.c
+END
+gzio.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/gzio.c
+END
+deflate.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/deflate.h
+END
+zutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/zutil.h
+END
+crc32.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/crc32.c
+END
+inftrees.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/inftrees.c
+END
+crc32.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/crc32.h
+END
+trees.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/trees.c
+END
+inflate.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/inflate.c
+END
+uncompr.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/uncompr.c
+END
+zconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/zconf.h
+END
+inftrees.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/inftrees.h
+END
+inflate.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/inflate.h
+END
+trees.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/trees.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/Makefile.am
+END
+inffast.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/inffast.c
+END
+example.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/example.c
+END
+compress.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/compress.c
+END
+adler32.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/adler32.c
+END
+infback.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/zlib/infback.c
+END

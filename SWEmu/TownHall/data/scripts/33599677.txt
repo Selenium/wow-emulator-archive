@@ -1,0 +1,11 @@
+# AI Script for Northsire Peasant
+setmovespeed 3.5
+settalktext Chop Chop Chop
+moveto -8956.253906 -168.347198 81.002853
+moveto -8964.764648 -168.479828 80.345001
+repeatemote 234 4 1000
+say Boy, chopping wood is hard!
+moveto -8967.444336 -158.958176 81.156761
+moveto -8976.952148 -163.840088 79.389885
+emote 234
+say Boy, I love wood...

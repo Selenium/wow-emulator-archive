@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginScripts", "login\LoginScripts.csproj", "{D480D576-1F35-46EC-9FE0-EDE81BB42EA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldScripts", "world\WorldScripts.csproj", "{65495870-03FC-471F-86FF-7C71AD892A2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D480D576-1F35-46EC-9FE0-EDE81BB42EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D480D576-1F35-46EC-9FE0-EDE81BB42EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D480D576-1F35-46EC-9FE0-EDE81BB42EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D480D576-1F35-46EC-9FE0-EDE81BB42EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65495870-03FC-471F-86FF-7C71AD892A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65495870-03FC-471F-86FF-7C71AD892A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65495870-03FC-471F-86FF-7C71AD892A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65495870-03FC-471F-86FF-7C71AD892A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

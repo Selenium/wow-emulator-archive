@@ -1,0 +1,479 @@
+If you would like to work on an assigned Todo please check with the dev in the channel before you make any changes.
+If you want something unassigned to work on just change it to assigned & give comment on svn.
+When youre done with something, change "-" to "+".
+
+
+
+TODO Features
+[+]make wowd compatible with 1.7.0
+[+]Finish creature templates
+[+]Exploration & xp - need xp conf
+[-]Implement porper PvP system -unassigned (I will write detailed facts by myself before its assigned to make it as accurate as possible)
+[-]Add lua support -assigned nearly finished
+[-]Duel -assigned (look in facts bottom of the page)
+[-]Add quest system -assigned (look in facts bottom of the page if you want :P)
+[-]Support terrain data -unassigned
+[-]Split instances into different servers -unassigned
+[-]Enviromental damage -unassigned (look in facts bottom of the page)
+[+]Parry, Dodge, Block,crits -assigned (we got more important stuff for now) (look in facts bottom of the page)
+[-]Zones -unassigned
+[+]Reputation System
+[-]Honor System -unassigned (dont touch till PvP system is done)
+[-]Guilds -assigned
+[-]Pets -unassigned
+[-]Fishing, Weapon Smithing, Skinning etc -assigned
+[-]Raids -assigned
+
+TODO Fixes & bugs
+[+]Creature Movement -assigned
+[-]Waypoints (waiting for scripting engine)
+[-]Rewrite Creature AI System -assigned (look in facts bottom of the page)
+[+]Fix/Finish item code -assigned
+[-]Finish spell code -unassigned (but still ask on channel, maybe assigned)
+[+]Change loot system code -assigned
+[-]Trainer fixing -assigned
+[-]Fix Auction House -assigned
+[+]Fix trade
+[+]Finish gameobject code -assigned
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Facts to help & add features:
+Source:wowwow forums
+
+
+
+-Important for ai just had to put it in the top :)
+when a creature is heading back to their spawn, they get 100% Evade.
+When they loose the agro and go out of combat mode, they run as fast as
+possible towards their spawn point and get 100% Evade on all attacks..
+Also their HP regen becomes sky high.. 
+
+
+
+
+
+-Mob Fleeing, Evading and Assistance
+
+
+Basicly when it comes to fighting and running for help, the NPC's reactions to critical damage are divided into 2 seperate groups
+
+1. Occasions when they run
+2. Occastion when they don't run.
+
+1.1 Here is how it works.
+First of all I have to say that ONLY Humanoids run for help.
+
+In order to make a npc run for help, you must have left him on 20% or less of it's hit points.
+If this happens, the npc runs randomly without stopping if you chase it.
+Assuming you chase it and in the chase you get near another npc that is from the same family as the one that you chased in the first place, it will attack you.
+
+For example : You engage a Defias Thug and you make lots of damage that you leave the wolf to 20% HP. The Defias Thug will start running randomly. If you chase it and in the chase, you get near another Defias Thug, that one will start to attack you. If this happens, the Defias Thug that you chased in the first place will also turn back and attack you again. That way you have 2 Defias Thugs attacking you and (ofcourse) a high death probability.
+
+Notice that the npc that can start to attack you if you near it when you chase another wounded npc must be the same Family (Defias family in this example).
+Note : Defias are humanoids. Only humanoids will run for help.
+
+If you attack a Defias Thug and then get near a Rockjaw Trogg or a murloc or a kobold, or any other humanoid that is not from the Defias Family, you won't get attacked by it, because it is from a different family.
+
+The following situation may occur :
+
+Let's say you chase a Defias Thug and if you near a Defias Cutpurse, you will get attacked too, because it's all from Defias Family.
+Same is for Guards and all other humanoid families.
+
+1.2 Assuming you chase a Defias Thug and you get pass a npc that is agressive, it will attack you too. The Defias Thug that you chased in the first place will turn back and attack you again. So again, you have 2 mobs attacking you.
+Note : The second mob attacking you doesn't need to be humanoid only.
+
+If you try to attack a Defias Thug(for example) and if Defias Thug (or any other mob) attacks you too, you can be sure that the Defias Thug that you wanted to attack in the first place won't run.
+
+So basicly when mobs run, they look for another mob to cooperate with to kill you. Whether it's from the same family or with huge aggression.
+
+If you don't chase the humanoid npc it eventually get's back to it's spawnpoint position.
+
+
+It sometimes happen when the npc that you fight with does not run.
+
+2.1 That happens if you are on about the same level of HP as your target.
+
+Example.
+
+If you fight a Defias Thug and he is at about 20% but as a result from his attacks you are at about 20% too, he will not run.
+Instead he will try to finish you off.
+
+2.2 Elite mobs do not run.
+
+2.3 If the mob you are fighting has LOTS of aggression against you, it will stay and attack you until you kill it. Or until it kills you.
+
+2.4 Also, if a mob failes to hit you for 10 seconds, it drops the fight (Evade).
+
+
+
+
+
+
+
+
+
+-Enviromental damage
+Fall damage, drowning, lava damage, fatigue, camp-fire and torches damage etc.
+
+
+
+
+
+
+
+
+
+
+-SpellFocusObject
+[NOTE: also check DBC files]
+many spells, mostly creating spells, depend on a gameobject nearby, example:
+*smelting depends on a forge near
+*blacksmithing depends on an anvil nearby
+
+
+
+
+
+
+
+
+
+
+-Damage Reduction
+Armor reduces physical damage done against you by a certain percent. It depends on the level of the monster (or player) hitting you. Your own level doesn't matter. By hovering your mouse over Armor on your Character screen, you can see the value of this reduction for monsters that are at your current level.
+
+This percent reduction will actually fall as soon as you gain a level if you're still wearing the same armor. You haven't lost anything, it's merely showing you that your armor isn't as effective against monsters one level higher than you used to be.
+
+Armor = 2 * AGI + objects armor + shield armor.
+
+%Reduction = (Armor / (Armor+400 + 85*Enemy_Level))*100
+
+
+The maximum damage reduction is capped at 75% of the damage.
+
+Therefor, to determine which must be the AC of your character in order to absorb the possible maximum of the received damage against an enemy of your lvl or lvl lower (=75% of the damage he does), the formula is thus the following one:
+Armor = 1200 + 255 * lvl. 
+
+
+
+
+
+
+
+
+
+-Duels
+At any time in your travels, you may opt to have a 1v1 duel with another player. You do this by selecting and walking up to him, right click on his portrait and choose the Duel option or by using the /duel command. A duel flag (gameobject dropped) will then appear between him and you. If he accepts the duel, the battle will commence in 5 seconds (with countdown shown on chat); he will turn hostile and his name will change colour to red. During this time, all combat rules specific to your server ruleset will apply, such as the spell limitations of control type spells on the PvP server.
+
+The duel does not end until one of two things occur. When one player's hp is reduced to 1% or less, the result of the duel is announced to the zone you're in. No deaths actually occur and the defeated player is simply set to 1 hp. The loser also kneels before you. The duelling area is a large area of roughly 50 yards centered on the duel flag. If one player leaves the duelling zone for more than 10 seconds, he is considered to have forfeited the duel. Alternative, a player may also use /forfeit command. The results of this will also be announced to other players in the same zone.
+
+There is no penalty for winning or losing a duel except that both parties have to spend some time after the battle to heal their hp and mana. However, due to some game bugs, it is still possible to die in a duel such as in the case with DoT spells
+
+You can't duel in certain areas.
+
+You can't duel players you can attack normally.
+
+Skills will not increase from use while dueling or engaged in PvP.
+
+Dueling players can cast helpful spells on their allies (but not vice versa). Exception: Paladin Auras affect dueling friend if he is close enough (bug?) Buffs received before duel from others remain during the duel. 
+
+
+
+
+
+
+
+
+
+-Quests
+A quest is generally a task given by an NPC to a Player character that yields a reward when completed. However some quests can come from right-clicking signs (usually the "Wanted Poster" type), reading scrolls or documents, "opening" game-objects, or just completing a previous quest.
+
+You can identify quest giving NPCs from indicators over their heads:
+
+A gold ! indicates an available quest (a NPC can have more than one quest available at a time, in which case you'll get a selection screen first. Regardless of your pending quests from that NPC, if there is at least one quest available on him, the NPC will have the !).
+A blue ! indicates that that NPC has a repeatable quest available.
+A silver ! indicates a quest that will be available when you gain a few levels.
+A gold ? indicates a completed quest (you have met its requirements). They will also usually appear as a yellow dot • on the mini-map, but can be easily confused with other detectable things. The gold ? overwrites the gold !, even if there are quests available, until you turn in the quest.
+A blue ? indicates that that NPC has a repeatable quest completed (it will remain over the NPC when turned in, allowing you to turn in the quest again and again).
+A silver ? indicates an in-progress (un-completed) quest that you still have requirements to meet.
+To find out the quest or the status of an on-going quest, talk to the NPC with a quest status indicator. If the NPC only has one quest available, you'll get the quest text directly, instead of the selection screen. Same happens with 1 quest available and 1 pending (the second quest in 'silver' status), however for 1 quest available and 1 quest completed, if that NPC gives the reward, you'll get a selection screen where you can turn in the completed quest OR pick the available quest.
+
+If a quest is considered too low level for your character, you can only discover it by talking (right-click) to the quest giver, having no visual indicators that he has a quest.
+
+Most rewards take the form of items or money, but some quests (especially Class-specific ones) give abilities or spells. Some of the more desirable reward items include Uncommon quality or better items or recipes for use with trade skills. All quests (with minor exceptions) tend to include XP as part of the reward.
+
+Additional notes:
+
+Some quests allow you to choose among reward items.
+Most reward items will be bind on pickup, also known as Soulbound.
+The completion of quests will also impact your reputation with particular factions, which can have further beneficial effects such as cheaper prices at vendors (10% discount on all purchases from a faction at Honored and above) and access to special vendors such as mounts (Exalted with that faction, if I remember well). Some reward items may not be usable by your character (based on class usually).
+There are to types of item rewards: receive one or more items, or choose an item from a list. There are a few quests that combine these types (you receive an item no-matter-what and can choose another one from two more)
+
+Most quest tasks are of one of the following types (IRPG type in paranthesis):
+
+    * Gather some number of items and return them to the quest giver or some other NPC. (deliver)
+    * Kill some number of creatures (different numbers, different types etc.) and return to the the quest giver or some other NPC. (kill)
+    * Deliver an item (usually a letter or some package) or some items from the quest giver to some other NPC. (deliver)
+    * Kill some number of creatures, loot a single quest item or several quest items from them, and return with the quest item(s) to the the quest giver or some other NPC. (deliver)
+    * Kill a specific creature, usually having to fight through some other creatures and return to the the quest giver or some other NPC. (kill)
+    * Kill a specific creature, loot a single quest item or several quest items from it, and return with the quest item(s) to the the quest giver or some other NPC. (deliver)
+    * Use a trade skill or profession to acquire or make a single or several items and return with the item(s) to the quest giver or some other NPC. (deliver)
+    * Explore a particular region or area and return to the quest giver or some other NPC. (explore)
+    * Escort an NPC from one place to another, usually through a dangerous area. (N/A)
+    * Speak to a NPC (speakto)
+    * Find a container item, loot an item in it that gives you another follow-on quest. 
+
+
+
+Also, there are quest chains, more quests from the same category which depend on previous one's completion ('The Defias Brotherhood')
+
+Some quests have a time limit that will appear under the mini-map (For example this quest has a 5 minutes time limit, otherwise the quest 'fails' and you have to reattain it)
+
+There are also more complex, scripted quests, but I'll talk about some of these later-on.
+
+Quests have prerequisites like minimum level (for attaining the quest, there is also the optimal level at which you should do the quest, which is the one shown in-game), race, class, or profession (and other quests, if in a chain). The quests have different colors and give different experience, according to their level requirement and your current level. Colors range from Red (Very Hard), Orange (Hard), Yellow (Normal), Green (Easy) and Grey (Trivial). All levels but Grey get full XP, Grey gets diminushed XP (something like 10-20 times less XP, check DB sites for exact values)
+
+Your Quest Log can contain a max of 20 quests at a time. You can share a NPC-given quest with a friend if he meets its prerequisites and the quest does not give you anything except text at the begining.
+
+Special quests are marked (Elite) (Raid) (Dungeon) in the title.
+
+
+
+
+
+
+
+
+
+
+-Attack Power
+
+Attack power increases your base melee DPS by 1 for every 14 attack power.
+Strength increases your melee attack power by 2, except for rogues and Hunters. Rogues and Hunters gain 1 attack power per point of Strength, and 1 per point of Agility.
+
+Calculation:
+Warrior Character Level*3+Strength*2-20
+Paladin Character Level*3+Strength*2-20
+Rogue Character Level*2+Strength+Agility-20
+Hunter Character Level*2+Strength+Agility-20
+Shaman Character Level*2+Strength*2-20
+Druid Strength*2-20 (Warrior formula for Bear Form, Rogue formula for Cat Form)
+Mage Strength-10
+Priest Strength-10
+Warlock Strength-10
+
+Attack Power (Ranged) = (Level*2 + Agility*2)-20
+
+14 Attack Power = 1 Damage per Second 
+
+
+
+
+
+
+
+
+
+
+
+
+-Parry, Dodge, Block 
+
+Each point of +Defense skill adds 0.04% to Parry, Dodge, and Block.
+
+This means +25 Defense will grant you an extra 1% Parry, Dodge, and Block. The formula has been tested to be the same for both Hunters and Paladins. It's probably constant across all classes. Rogues are most likely to have a differing formula.
+
+Defense has additional rumored effects: The following four effects of Defense were supposedly posted by a CM on WoW's European forums. A link to the official post would be nice.
+
+
+    * Increases the chance of being missed by an attack.
+
+    * Increases the chance to dodge, parry, and block.
+
+    * Decreases the chance of being affected by a critical hit.
+
+    * Decreases the chance of being affected by a "crushing blow". Creatures that are higher level than your character can land crushing blows that deal increased melee damage. The chance of a crushing blow increases as the level difference between you and the opposing creature increases. Players never deal "crushing blows", only creatures
+
+
+Dodge
+
+General formula at level 60 = [AGI/14,5 + (Defense*0,04)]%.
+Rogue = [(AGI/(1,15 + AG base/20) - lvl/5 + (Defense*0,04)]%.
+
+Note : Dodge works also against spells.
+
+
+Block
+
+Block chance doesn't mean fully blocking the damage of that hit, but a partial absorbtion of a quantity of damage, as follows:
+
+X = [(Shield block value) + (STR/30)].
+
+Therefor, the warrior is favored here, because of the natural increased strength.
+
+Note : Block works also against spells
+
+
+
+
+
+
+-Critical hits
+For melee attacks with weapons, the chance to crit is based on agility and critical strikes deal +100% normal damage (=200%). To see your chance to crit, open your spellbook, and hover your mouse over the "attack" ability. The tooltip will show your percent chance to crit.
+
+For spells, the chance to crit is based on intellect. Critical damage spells deal +50% normal damage (=150%). Critical heals will heal +50% their normal amount (=150%). There is currently no way to see your chance to crit with spells.
+
+At level 60, the formula for critical hits is changed as below:
+Spells = [5 + INT/100]%
+Rogue = [5 + AGI/29]%
+Hunter = [5 + AGI/53]% ?? (NOT SURE)
+Warrior/Shaman = [5 + AGI/20]%
+Others = Unknown (most likely same as warrior/shaman)
+
+The weapon skill affects the chance to crit downwards (-0,04% per point of skill below the current maximum). As an example, for a maximum weapon skill of 135, with current weapon skill 112 = -0,92% less chance to cast a critical.
+If the target is frozen, the chances to cast a critical hit are increased by 50%.
+The objects increasing crit chance add up.
+
+
+Info on crit and hit chances (from devs)
+
+part 1
+
+The way WoW calculates crit rate is over ALL attacks. Crit rate is not based on hits only. In other words, if you have a 5% crit rate, that 5% chance includes misses. (they're talking here about the in-game crit display tooltip, ignore this if you don't know what it is)
+
+All crit rate adjusting abilities, items, and talents add the flat % to the base % crit rate. So if I have a 5% base crit rate and then use an item or talent that increases that crit rate (let's use Improved Backstab talent for example - +30% crit), my new crit with backstab is 35%.
+
+Regarding how defense decreases the rate of critical strikes, each point of defense that a target has over the attacker, the attacker loses 0.04% chance to crit. So, for example, if a level 60 Rogue is attacking a level 60 Warrior who has 25 defense, the rogue's crit rate will be decreased by 1%. (I think this only applies in PvP)
+
+part 2
+
++toHit items subtract from your miss%.
+
+So, ignoring all defensive actions (Block/Parry/Dodge/etc..) if I have 20% crit chance, 20% miss chance, and 60% hit chance and I equip an item that gives me +5% toHit and +5% crit, my stats become 25% crit, 15% miss chance, 60% hit chance.
+
+New hit chance = (Original hit%) + (toHit modifiers) - (crit modifiers)
+60% + 5% - 5% = 60%
+
+New crit chance = (Original crit%) + (crit modifiers)
+20% + 5% = 25%
+
+New miss chance - (Original miss%) - (toHit modifiers)
+20% - 5% = 15%
+
+(seems pretty clear, I assume it generates a random action on strike according the given probabilities - programmers 'language': random (1 - 10000); IF IN 1-6000 = hit, 6001-8500 = crit, 8501-10000 = miss) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-NPC hate system 
+
+Hate is the algorythm that allows the mob to decide who to attack, according to the damage he is receiveing, the distance from it, or if someone heals mob's target, it's generating hate against him... It's a pretty complicated system, essential for the gameplay tactics, based on a hate table for each creature involved in fighting someone. The player pulling a NPC is the first one entering its hate table (with very low hate, something like 1). The hate for a player increases with the amount of damage the player occurs to the creature (HPs probably). Another player attacking the creature will enter its hate table as well, and if the hate generated by him is bigger than the puller's, the creature will focus attacks on him. A third healing a player currently in the hate list of the creature will generate his entrance in the hate list of that creature. The amount of hate that he will generate is proportional with the HPs healed (equal or 1/2, I must search more). If the target of healing is in the hate list of more creatures, healing him seems to generate the same amount of hate on every creature. Still, if the second player is attacking the first creature pulled by the first, healing him will generate hate only for that creature (since he is only in her hate table). Also, buffing a player while in combat (auras, seals etc) will also generate hate, probably according to the damage power it adds to the player, or the damage power it substract from the creature.
+
+needs more investigation
+
+
+Tests of healing aggro 
+
+
+Healing aggro is based on HP healed, and appears to be linear. With the Subtlety talent (-20% threat), healing generates 50-60% of the aggro (or threat, if you like) per HP that damage dealing generates. Since aggro is generated based on HP healed, overhealing has no effect on aggro.
+
+Aggro for a heal is only generated on mobs that are "aware" of the player being healed. The most reasonable guess is that the mob's awareness list is the same as it's aggro list. This means:
+
+* as the puller *probably* has aggro on all mobs pulled (links may be different), healing the puller generates aggro on all those mobs
+* healing a damage dealer who is hitting one mob only generates aggro on that one mob (I already stated this before, seems to confirm)
+
+Aggro (generated by damage or healing) does not decay over time. (tested up to 3 minutes)
+
+Greater Heal, Flash Heal and Prayer of Healing all generate the same amount of aggro per HP healed, subject to the application rules above. This means that using a Greater Heal or a Flash Heal to heal a player for the same amount of HP generates exactly the same amount of aggro. Using Prayer of Healing to effectively heal several players generates about the same aggro as Flash Healing each of them individually.
+
+PW:S generates roughly half the aggro of a heal for the amount of damage it absorbs. (note that the tests were all done by a priest with Subtlety talent = -20% threat for healing, which does not affect PW:S).
+
+PW:S takes AC into account.
+
+Warriors generate a very small amount of rage from taking hits. Switching to defensive stance does not *appear* to significantly change this. With PW:S on them, they still generate rage by taking hits. It may be reduced, but not apparently (significantly) so.
+
+A simple model for Fade is that it subtracts off an amount of aggro equal to around two flash heals (~1000 HP for a 41 priest w/ Subtlety) and then returns it after 10 seconds is up.
+
+Note that a single Greater Heal can generate more aggro than Fade can get rid of. If you are near even aggro with your tank and use it, Fade will not save you from being attacked.
+
+Healing done before and during the Fade have the same impact.
+
+After the fade expires, the amount of aggro is the same as if you never Faded.
+
+Fade appears to have several unintuitive behaviors which belie the simple model posed above:
+
+* We have seen several situations where Fade expired and aggro did not return to us until we acted, at which point it behaved as expected. Other people have attempted to replicate this behavior and not seen it. Chances are that this is a bug, something you might want to play with but not depend on.
+
+* When Fade fails to remove a mob from you, it does not make that mob easier to remove. It's all or nothing.
+
+* It is possible that when Fade fails it actually makes it harder to remove the mob for the duration of the Fade.
+
+HoT and DoT spells generate aggro on each tick, not on cast.
+
+Hunter traps generate aggro like any other DoT.
+
+Bandaging generates aggro like any other HoT. I did not test in detail for the amount of aggro.
+
+Health potions generate threat, although at a reduced rate per HP from Priest healing spells.
+
+Mana potions generate threat per MP returned, which can be quite a lot of threat.
+
+Surprisingly, engineering Explosive Sheep do not generate aggro. Most likely it is treated like a pet and thus generates aggro for itself, lost instantaneously upon it's tragic death by explosion.
+
+Warrior Threat Abilities
+
+Skills by total hate generated on a single target (50% mob dmg reduction):
+1. Revenge - 1370 total hate.
+2. Shield Slam - 1220 total hate.
+3. Sunder Armor - 1050 total hate.
+4. Shield Bash - 910 total hate.
+5. Heroic Strike - 890 total hate.
+6. Cleave - 500 total hate.
+7. Thunder Clap - 290 total hate.
+8. Demoralizing Shout - 175 total hate.
+
+Skills by hate/rage efficiency on a single target (50% mob dmg reduction):
+1. Revenge - 274 hate per rage.
+2. Shield Bash - 91 hate per rage.
+3. Sunder Armor - 88 hate per rage.
+4. Heroic Strike (fast weapon) - 59 hate per rage.
+5. Shield slam- 41 hate per rage.
+6. Cleave (fast weapon) - 22 hate per rage.
+7. Demoralizing shout - 18 hate per rage.
+8. Thunder Clap - 15 hate per rage.
+
+Regular physical damage in def stance (presumably with defiance): 4.1 hate per point of damage.
+
+1 Hate = 1 point of healing by a Priest with 20% threat reduction talent. 

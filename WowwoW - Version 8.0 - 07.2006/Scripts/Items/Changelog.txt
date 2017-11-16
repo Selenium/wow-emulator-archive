@@ -1,0 +1,122 @@
+23/08/2005
+[!] Fixed some name changed from 1.3.X to 1.6.X
+[+] Added new items
+13/06/2005
+[+] Added bonus support
+[-] Changed Books to Recipes Category
+[-] Changed Parts, Explosives and Devices to TradeGoods Category
+06/06/2005
+[!] Minor bugs fixes
+05/06/2005
+[!] Bugs fixes
+
+30/05/2005
+
+
+      * Readme.txt ahd Changelog.txt added
+      * Item Damage now Working :)
+      * Added Subcategory Shield into Category Armor.
+
+
+20/05/2005
+
+
+      * Updated 11598 items
+      * Removed 8 Items
+      * Added 2 new Items
+      * Items ClassName started with numbers now starts with _
+
+
+13/05/2005
+
+
+      * added 11608 items
+      * No Damage, Bonus
+      * Spell Working
+      * Converted 11608 items.
+      * Found 135 Duplicated items.
+      * Changed 119 Duplicated items to ClassId.
+      * Changed 4 Duplicated items to NightElfClass.
+      * Changed 3 Duplicated items to DwarfClass.
+      * Changed 1 Duplicated items to TaurenClass.
+      * Changed 5 Duplicated items to TrollClass.
+      * Changed 3 Duplicated items to HordeClass.
+      * Changed Category to client 1.3.1 categorys
+
+            * Armor
+                  Cloth
+                  Leather
+                  Mail
+                  Plate
+            * Consumable
+            * Container
+            * Generic
+            * key
+            * Miscellanous
+            * Permante
+            * Projectile
+            * Quest
+            * Quiver
+            * Reagent
+            * Recipes
+            * TradeGoods
+            * Weapon
+
+
+
+09/05/2005
+
+
+      * items added 11751
+      * No Damage, Bonus or Spells
+      * No ID Duplicates - only Duplicates Names with diferent Models
+      * Item Duplicate Class Name ends with the ID ( still need to work this better)
+      * Working with 3.0
+      * Need Changes on existing Scripts
+
+
+08/05/2005
+
+
+      * SetSpell, Bonus and SetDamage Not Included.
+      * Divided script into Categories.
+
+            - Ammo
+            - Books
+            - Consumable
+            - Devices
+            - Explosives
+            - keys
+            - Miscellaneous
+            - Parts
+            - Permanent
+            - Professions
+            - QuestItems
+            - Reagent
+            - Slots
+
+                  * Back
+                  * Bag
+                  * Chest
+                  * Feet
+                  * Hands
+                  * Head
+                  * Legs
+                  * Robe
+                  * Shirt
+                  * Shoulder
+                  * Tabard
+                  * Waist
+                  * Wrist
+
+            - TradeGoods
+            - Weapons
+
+
+
+07/05/2005 :
+
+      *added 11437;
+      *Removed 135 Duplicated ID;
+      *Changed BeastSpider.cs Loot ForestPendent to ForestPendant;
+      *Changed Undead.cs Loot SwampPendent to SwampPendant;

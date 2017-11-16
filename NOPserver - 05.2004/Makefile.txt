@@ -1,0 +1,21 @@
+CFLAGS = `wx-config --cppflags` `lua-config --include` -g -O2 -Wall -Wunused -Wmissing-prototypes -Iluabind/ -I.
+LIBS = `wx-config --libs` `lua-config --libs`
+CC = gcc
+OBJS = CallbackHandler.o Core.o dbc.o PacketHandler.o ScriptHandler.o WorldThread.o
+HANDLERSOBJS = Handlers/Character.o Handlers/Client.o Handlers/Object.o Handlers/ObjectManager.o Handlers/UserManager.o Handlers/ObjPosition.o Handlers/Unit.o
+NETCODEOBJS = NetCode/Packet.o NetCode/ServerCore.o NetCode/ServerCore_Config.o NetCode/ServerCore_LoginServer.o NetCode/Servercore_WorldServer.o
+LUABINDOBS = luabind/class_rep.o luabind/create_class.o luabind/find_best_match.o luabind/function.o luabind/implicit_cast.o luabind/object.o luabind/open.o luabind/stack_content_by_name.o
+
+
+.cpp.o:
+	$(CC) $(CFLAGS) -c -o $@ $^
+
+NOPServer: $(OBJS) $(HANDLERSOBJS) $(NETCODEOBJS) $(LUABINDOBS)
+	$(CC) $(CFLAGS) $(LIBS) -o $@ $^
+
+clean:
+	rm -f $(OBJS)
+	rm -f $(HANDLERSOBJS)
+	rm -f $(NETCODEOBJS)
+	rm -f $(LUABINDOBS)
+	rm -f NOPServer

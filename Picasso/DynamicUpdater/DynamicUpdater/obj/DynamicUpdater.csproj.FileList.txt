@@ -1,0 +1,16 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DynamicUpdater.Properties.Resources.resources
+obj\Debug\DynamicUpdater.csproj.GenerateResource.Cache
+obj\Debug\DynamicUpdater.Form1.resources
+bin\Debug\!PiCaSsO! Updater.exe
+bin\Debug\!PiCaSsO! Updater.pdb
+obj\Debug\!PiCaSsO! Updater.exe
+obj\Debug\!PiCaSsO! Updater.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\DynamicUpdater.Form1.resources
+obj\Release\DynamicUpdater.Properties.Resources.resources
+obj\Release\DynamicUpdater.csproj.GenerateResource.Cache
+bin\Release\!PiCaSsO! Launcher.exe
+bin\Release\!PiCaSsO! Launcher.pdb
+obj\Release\!PiCaSsO! Launcher.exe
+obj\Release\!PiCaSsO! Launcher.pdb

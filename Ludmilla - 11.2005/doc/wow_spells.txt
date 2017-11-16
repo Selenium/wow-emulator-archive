@@ -1,0 +1,6 @@
+There is a lower bound on all heals, making the target unable to receive a heal
+with a spell level greater than their level + 10.
+
+Similar rule applies for buffs. The target cannot receive a buff with a spell
+level greater than their level + 10.
+

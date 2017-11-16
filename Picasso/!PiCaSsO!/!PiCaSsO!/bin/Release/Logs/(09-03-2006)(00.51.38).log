@@ -1,0 +1,9 @@
+!PiCaSsO! version Alpha 0.01 Copyright (C) 2006 by !PiCaSsO! Developer team
+09/03/2006 00:51:38: Loading account TEST...
+09/03/2006 00:51:38: Loaded all accounts from database!
+09/03/2006 00:51:38: Building external C# scripts, please wait...
+09/03/2006 00:51:38: Global scripts successfully loaded!
+09/03/2006 00:51:38: HTTPServer listening on port 8080
+09/03/2006 00:51:38: Worldserver listening on port 8085
+09/03/2006 00:51:38: AuthServer listening on port 1234
+09/03/2006 00:51:38: Waiting for incoming connections...

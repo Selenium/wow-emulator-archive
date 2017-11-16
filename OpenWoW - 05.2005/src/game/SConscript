@@ -1,0 +1,96 @@
+import os
+
+Import('game_env')
+
+game_srcs = [
+    'AuraHandler.cpp',
+    'Character.cpp',
+    'CharacterHandler.cpp',
+    'ChatHandler.cpp',
+    'Combat.cpp',
+    'Database.cpp',
+    'DatabaseInterface.cpp',
+    'GameClient.cpp',
+    'GameObject.cpp',
+    'Group.cpp',
+    'GroupHandler.cpp',
+    'Item.cpp',
+    'ItemHandler.cpp',
+    'Level0.cpp',
+    'Level1.cpp',
+    'Level2.cpp',
+    'Level3.cpp',
+    'MiscHandler.cpp',
+    'MovementHandler.cpp',
+    'NPCHandler.cpp',
+    'Object.cpp',
+    'ObjectMgr.cpp',
+    'PetHandler.cpp',
+    'QueryHandler.cpp',
+    'QuestHandler.cpp',
+    'SkillHandler.cpp',
+    'SpellHandler.cpp',
+    'TaxiHandler.cpp',
+    'Unit.cpp',
+    'WorldServer.cpp'
+    ]
+
+game_srcs_todo = [
+    'TradeHandler.cpp'
+    ]
+
+game_incs = [
+    'AuraHandler.h',
+    'Character.h',
+    'CharacterHandler.h',
+    'ChatHandler.h',
+    'Combat.h',
+    'Database.h',
+    'DatabaseInterface.h',
+    'GameClient.h',
+    'GameObject.h',
+    'Group.h',
+    'GroupHandler.h',
+    'Item.h',
+    'ItemHandler.h',
+    'MiscHandler.h',
+    'MovementHandler.h',
+    'MsgHandler.h',
+    'NPCHandler.h',
+    'Object.h',
+    'ObjectMgr.h',
+    'Opcodes.h',
+    'Path.h',
+    'PetHandler.h',
+    'QueryHandler.h',
+    'Quest.h',
+    'QuestHandler.h',
+    'SkillHandler.h',
+    'Spell.h',
+    'SpellHandler.h',
+    'Stats.h',
+    'TaxiHandler.h',
+    'TradeHandler.h',
+    'Unit.h',
+    'UpdateMask.h',
+    'World.h',
+    'WorldServer.h',
+    ]
+
+game_env.Append(
+    CPPPATH=[os.path.abspath(os.path.join('..', 'shared')),
+             os.path.abspath(os.path.join('..', 'srp'))])
+game_lib = game_env.Library('game', game_srcs)
+game_env.Default(game_lib)
+game_env.Alias('game', game_lib)
+
+if game_env['buildenv'] == 'win32-msvc':
+    msvsproj = game_env.MSVSProject(
+        target='game' + game_env['MSVSPROJECTSUFFIX'],
+        srcs=game_srcs,
+        incs=game_incs,
+        buildtarget=game_lib,
+        variant='SCons')
+    game_env.Default(msvsproj)
+    game_env.Alias('game', msvsproj)
+    pass

@@ -1,0 +1,182 @@
+using System;
+using WoWDaemon.Common;
+using WoWDaemon.Common.Attributes;
+using WoWDaemon.Database.DataTables;
+using WoWDaemon.Database;
+using WoWDaemon.World;
+
+namespace WorldScripts.Combat
+{
+	/// <summary>
+	/// Summary description for Combat.
+	/// </summary>
+	[WorldPacketHandler()]
+	public class Combat
+	{
+		static Random random = new Random();
+		[WorldPacketDelegate(CMSG.ATTACKSWING)]
+		static void CombatStart(WorldClient client, CMSG msgID, BinReader data)
+		{
+			ulong combatTarget=data.ReadUInt64();
+			int Damage = (int)client.Player.MinDamage+random.Next((int)(client.Player.MaxDamage-client.Player.MinDamage));
+			Chat.System(client, "Target:"+combatTarget);
+			UnitBase target=(UnitBase)ObjectManager.GetWorldObject(OBJECTTYPE.UNIT, combatTarget);
+			if (target==null)
+				return;
+			int tgtDamage = (int)target.MinDamage+random.Next((int)(target.MaxDamage-target.MinDamage));
+			target.Target = client.Player.GUID;
+			target.UpdateData();
+			ServerPacket pkg4 = new ServerPacket(SMSG.ATTACKSTART);
+//			BinWriter pkg4 = new BinWriter();
+			pkg4.Write(client.Player.GUID);
+			pkg4.Write(combatTarget);
+//			client.Send(SMSG.ATTACKSTART, pkg4);
+			pkg4.Finish();
+			client.Player.MapTile.Map.Send(pkg4, client.Player.Position, 25.0f);
+
+			ServerPacket pkg7 = new ServerPacket(SMSG.ATTACKSTART);
+			pkg7.Write(combatTarget);
+			pkg7.Write(client.Player.GUID);
+			pkg7.Finish();
+			client.Player.MapTile.Map.Send(pkg7, client.Player.Position, 25.0f);
+
+			client.Player.UpdateData();
+			target.UpdateData();
+
+			ServerPacket pkg2 = new ServerPacket(SMSG.ATTACKERSTATEUPDATE);
+			
+			pkg2.Write((uint)2); // I knew this was a int :) - AnGrA
+
+			pkg2.Write(client.Player.GUID);
+			pkg2.Write(combatTarget);
+			pkg2.Write((int)Damage);
+
+			pkg2.Write((byte)1);
+			pkg2.Write((uint)3);
+			pkg2.Write((float)1.1);
+			pkg2.Write((int)Damage);
+			pkg2.Write((int)0);
+
+			pkg2.Write((uint)1); //VICTIMSTATE.WOUND);
+			pkg2.Write((uint)0);
+			pkg2.Write((uint)0);
+			pkg2.Write((uint)0);
+			pkg2.Write((int)0);
+
+			pkg2.Finish();
+			
+			client.Player.MapTile.Map.Send(pkg2, client.Player.Position, 25.0f);
+
+			ServerPacket pkg8 = new ServerPacket(SMSG.ATTACKERSTATEUPDATE);
+			
+			pkg8.Write((uint)2); // I knew this was a int :) - AnGrA
+
+			pkg8.Write(combatTarget);
+			pkg8.Write(client.Player.GUID);
+			pkg8.Write((int)tgtDamage);
+
+			pkg8.Write((byte)1);
+			pkg8.Write((uint)3);
+			pkg8.Write((float)10.1);
+			pkg8.Write((int)tgtDamage);
+			pkg8.Write((int)0);
+
+			pkg8.Write((uint)1); //VICTIMSTATE.WOUND);
+			pkg8.Write((uint)0);
+			pkg8.Write((uint)0);
+			pkg8.Write((uint)0);
+			pkg8.Write((int)0);
+
+			pkg8.Finish();
+			
+			client.Player.MapTile.Map.Send(pkg8, client.Player.Position, 25.0f);
+			
+			target.Health-=Damage;
+			if (target.Health<1)
+			{	
+				target.Health=0;
+				target.StandState=UNITSTANDSTATE.DEAD;
+				client.Player.Target=0;
+				client.Player.Exp+=(200*target.Level);
+				if (client.Player.Exp >= client.Player.NextLevelExp)
+				{
+					client.Player.Level++;
+					client.Player.NextLevelExp = (client.Player.Level * 1000);
+					client.Player.Exp = 0;
+					client.Player.Health = client.Player.MaxHealth +=20*client.Player.Level;
+					client.Player.Power = client.Player.MaxPower +=20*client.Player.Level;
+
+				}
+
+			}
+
+			client.Player.UpdateData();
+			target.UpdateData();
+/*			
+			BinWriter pkg3 = new BinWriter();
+			pkg3.Write(client.Player.GUID);
+			pkg3.Write(CombatTarget);
+			pkg3.Write((byte)0x04); //Related to Type
+			pkg3.Write((int)50);// Damage
+			pkg3.Write((byte)0x02);  //unknown - These 4 bytes could be an int, unit, 2 char, or 2 shorts
+			pkg3.Write((byte)0x02);  //unknown
+			pkg3.Write((byte)0x02);  //unknown
+			pkg3.Write((byte)0x02);  //unknown			client.Send(SMSG.DAMAGE_DONE, pkg3);
+			client.Send(SMSG.DAMAGE_DONE, pkg3);
+
+			client.Player.UpdateData();
+
+			BinWriter pkg6 = new BinWriter();
+			pkg6.Write(client.Player.GUID);
+			pkg6.Write((byte)0x04); //Related to Type
+			pkg6.Write((int)25);// Damage
+			pkg6.Write((byte)0x02);  //unknown - These 4 bytes could be an int, unit, 2 char, or 2 shorts
+			pkg6.Write((byte)0x02);  //unknown
+			pkg6.Write((byte)0x02);  //unknown
+			pkg6.Write((byte)0x02);  //unknown
+
+			client.Send(SMSG.DAMAGE_TAKEN, pkg6);
+*/			
+//			Chat.System(client, "Round 1, FIGHT!");
+//			client.Player.UpdateData();
+
+			return;
+		}
+
+		[WorldPacketDelegate(CMSG.ATTACKSTOP)]
+		static void CombatEnd(WorldClient client, CMSG msgID, BinReader data)
+		{
+			ulong StopTarget = 0;
+			ulong OtherData = 0;
+			try {StopTarget = data.ReadUInt64();OtherData = data.ReadUInt64();}
+			catch(Exception){}
+            
+			Chat.System(client, "Target:"+StopTarget);
+			Chat.System(client, "Data:"+OtherData);
+
+//			BinWriter pkg2 = new BinWriter();
+
+			ServerPacket pkg2 = new ServerPacket(SMSG.ATTACKSTOP);
+			pkg2.Write(client.Player.GUID);
+//			pkg2.Write(client.Player.Selection.GUID);
+
+//			client.Send(SMSG.ATTACKSTOP, pkg2);
+			pkg2.Finish();
+			client.Player.MapTile.Map.Send(pkg2, client.Player.Position, 250f);
+			client.Player.UpdateData();
+
+			ServerPacket pkg9 = new ServerPacket(SMSG.ATTACKSTOP);
+			pkg9.Write(client.Player.Target);
+			//			pkg2.Write(client.Player.Selection.GUID);
+
+			//			client.Send(SMSG.ATTACKSTOP, pkg2);
+			pkg9.Finish();
+			client.Player.MapTile.Map.Send(pkg9, client.Player.Position, 250f);
+			client.Player.UpdateData();
+
+			Chat.System(client, "End of Round");
+			
+			return;
+		}
+	}
+}

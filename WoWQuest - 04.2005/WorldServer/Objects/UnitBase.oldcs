@@ -1,0 +1,711 @@
+using System;
+using System.Collections;
+using WoWDaemon.Common;
+using WoWDaemon.Database.DataTables;
+using WoWDaemon.Common.Attributes;
+
+namespace WoWDaemon.World
+{
+	/// <summary>
+	/// Summary description for UnitBase.
+	/// </summary>
+	[UpdateObject(MaxFields=(int)UNITFIELDS.MAX)]
+	public class UnitBase : LivingObject
+	{
+		private string m_name;
+		private int m_creatureFlags;
+		private int m_creatureType;
+		private int m_creatureFamily;
+
+		private ulong m_guid;
+		private uint m_entry;
+		private float m_scale = 1.0f;
+
+		private uint m_movementFlags = 0;
+		private Vector m_position = new Vector(0,0,0);
+		private float m_facing = 0.0f;
+
+		private int m_health;
+		private int m_maxHealth;
+		private int m_power;
+		private int m_maxPower;
+		private POWERTYPE m_powerType;
+		private int m_level;
+		private int m_faction;
+		private int m_displayID;
+		private int m_money;
+
+		
+		
+		public UnitBase(DBSpawn spawn)
+		{
+			m_mindamage = spawn.Min_Damage;
+			m_maxdamage = spawn.Max_Damage;
+		}
+
+		public UnitBase(DBCreature creature)
+		{
+			Random random = new Random();
+			m_name = creature.Name;
+			m_creatureFlags = creature.Flags;
+			m_npcflags = creature.NPCFlags;
+			m_creatureType = creature.CreatureType;
+			m_creatureFamily = creature.CreatureFamily;
+
+			m_guid = ObjectManager.NextGUID();
+			m_entry = creature.ObjectId;
+			m_money = random.Next((int)1+Level,(int)10+Level*3);
+			ObjectManager.AddWorldObject(this);
+		}
+		
+		public override void PreCreateObject(bool isClient)
+		{
+			base.PreCreateObject (isClient);
+		}
+
+		public override void SaveAndRemove()
+		{
+			if(MapTile != null)
+				MapTile.Map.Leave(this);
+			ObjectManager.RemoveWorldObject(this);
+		}
+
+
+		#region Creature Properties
+		public override string Name
+		{
+			get {return m_name;}
+		}
+
+		public int CreatureFlags
+		{
+			get { return m_creatureFlags;}
+		}
+
+		public int CreatureType
+		{
+			get { return m_creatureType;}
+		}
+
+		public int CreatureFamily
+		{
+			get { return m_creatureFamily;}
+		}
+
+		public override int AttackPower
+		{
+			get	{return 0;}
+			set {}
+		}
+
+		public override int AttackPowerModifier
+		{
+			get	{return 0;}
+			set {}
+		}
+
+		public override int Money
+		{
+			get {return m_money;}
+			set {m_money = value;UpdateValue(PLAYERFIELDS.COINAGE);}
+		}
+		#endregion
+
+		#region Object Properties
+		public override OBJECTTYPE ObjectType
+		{
+			get {return OBJECTTYPE.UNIT;}
+		}
+
+		public override uint MovementFlags
+		{
+			get {return m_movementFlags;}
+			set { m_movementFlags = value;}
+		}
+
+		public override Vector Position
+		{
+			get { return m_position;}
+			set {m_position = value;}
+		}
+
+
+
+		public override float Facing
+		{
+			get { return m_facing;}
+			set { m_facing = value;}
+		}
+		#endregion
+
+		#region OBJECTFIELDS
+		public override ulong GUID
+		{
+			get { return m_guid;}
+		}
+
+		public override uint Entry
+		{
+			get {return m_entry;}
+			set {}
+		}
+
+		public override HIER_OBJECTTYPE HierType
+		{
+			get {return HIER_OBJECTTYPE.UNIT;}
+		}
+
+		public override float Scale
+		{
+			get { return m_scale;}
+			set { m_scale = value; UpdateValue(OBJECTFIELDS.SCALE);}
+		}
+		#endregion
+
+		#region UNITFIELDS
+		public override int Health
+		{
+			get {return m_health;}
+			set {m_health = value;UpdateValue(UNITFIELDS.HEALTH);}
+		}
+
+		public override int MaxHealth
+		{
+			get {return m_maxHealth;}
+			set {m_maxHealth = value;UpdateValue(UNITFIELDS.MAX_HEALTH);}
+		}
+
+		public override int Power
+		{
+			get {return m_power;}
+			set {m_power = value;UpdateValue(((int)UNITFIELDS.POWER0) + (int)m_powerType);}
+		}
+
+		public override int MaxPower
+		{
+			get {return m_maxPower;}
+			set {m_maxPower = value;UpdateValue(((int)UNITFIELDS.MAX_POWER0) + (int)m_powerType);}
+		}
+
+		public override POWERTYPE PowerType
+		{
+			get {return m_powerType;}
+			set {m_powerType = value;UpdateValue(UNITFIELDS.BYTES_0);}
+		}
+
+		public override int Level
+		{
+			get {return m_level;}
+			set {m_level = value;UpdateValue(UNITFIELDS.LEVEL);}
+		}
+
+		public override int Faction
+		{
+			get {return m_faction;}
+			set {m_faction = value;UpdateValue(UNITFIELDS.FACTION);}
+		}
+
+		public override int DisplayID
+		{
+			get {return m_displayID;}
+			set {m_displayID = value;UpdateValue(UNITFIELDS.DISPLAYID);}
+		}
+
+	//	[UpdateValueAttribute(UNITFIELDS.TARGET)]
+		protected ulong m_target;
+		
+		public override ulong Target
+		{
+			get {return m_target;}
+			set { UpdateValue(UNITFIELDS.TARGET); m_target = value;}
+		}
+		#endregion
+
+		#region UnusedStats
+		public override int Agility
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+
+		public override int BaseAgility
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+
+		public override int BaseIntellect
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+
+		public override int BaseSpirit
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+
+		public override int BaseStamina
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+
+		public override int BaseStrength
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+
+		public override int Intellect
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+
+		public override int Spirit
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+
+		public override int Stamina
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+
+		public override int Strength
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+		#endregion
+
+		#region Resistances
+		public override int Resist_Physical
+		{
+			get	{return 0;}
+			set {}
+		}
+
+		public override int Resist_Holy
+		{
+			get	{return 0;}
+			set {}
+		}
+
+		public override int Resist_Fire
+		{
+			get	{return 0;}
+			set {}
+		}
+
+		public override int Resist_Nature
+		{
+			get	{return 0;}
+			set {}
+		}
+
+		public override int Resist_Frost
+		{
+			get	{return 0;}
+			set {}
+		}
+
+		public override int Resist_Shadow
+		{
+			get	{return 0;}
+			set {}
+		}
+		#endregion
+
+
+		#region PLAYERFIELDS
+		public override int SkillPoints
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+		public override int TalentPoints
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+		public override uint GuildID
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+		public override uint GuildRank
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+
+		#endregion
+
+
+
+/// <summary>
+/// The Following methods are linked to combat
+/// </summary>
+
+
+		public void StartCombat(ulong TargetID)//WorldClient newTarget)
+		{
+			Target=TargetID;
+			Attacking=true;
+			UpdateData();
+			if (!InRound)				
+				EventManager.AddEvent(new CombatEvent(this));//, TargetID));
+//			Combat.Combat.CombatStart((LivingObject)this);	
+			ServerPacket pkg4 = new ServerPacket(SMSG.ATTACKSTART);
+			pkg4.Write(GUID);
+			pkg4.Write(Target);
+			pkg4.Finish();
+			MapTile.Map.Send(pkg4, Position, 25.0f);
+			this.Roaming=false;
+			this.UpdateData();
+		}
+
+		public void StopCombat()
+		{
+			this.Target = 0;
+			this.Attacking = false;
+			ServerPacket pkg2 = new ServerPacket(SMSG.ATTACKSTOP);
+			pkg2.Write(this.GUID);
+			pkg2.Write(this.Target);
+			pkg2.Write((uint)0);
+			pkg2.Finish();
+			this.Roaming = true;
+			this.MapTile.Map.Send(pkg2, this.Position, 250f);
+			this.UpdateData();
+		}
+
+		public class CombatEvent : WorldEvent
+		{
+			UnitBase attacker;
+			PlayerObject target;
+			WorldClient aclient;
+			Random random =new Random();
+
+			public CombatEvent(UnitBase monster) : base(TimeSpan.FromMilliseconds(1))
+			{  
+				attacker = monster; 
+				aclient = (WorldClient)WorldServer.GetClientByCharacterID((uint)attacker.Target);
+			}
+
+			private void Kill()
+			{
+				attacker.StopCombat();
+				attacker=null;
+				target=null;
+				EventManager.RemoveEvent(this);
+				return;
+			}
+
+			public override void FireEvent()
+			{
+				try
+				{ 
+					if(aclient.Player==null) 
+					{
+						this.Kill();
+						return;
+					}
+					attacker.InRound=false;
+					aclient= WorldServer.GetClientByCharacterID((uint)attacker.Target);
+					if(attacker.Dead) {this.Kill();return;}
+					target= aclient.Player;
+					ChasingEvent chase = new ChasingEvent(attacker,aclient);
+
+					if(aclient.Player.Position.Distance(attacker.Position) > 25)
+					{
+						Console.WriteLine("Ennemy out of range! Stopping attack");
+						this.Kill();
+						return;
+					}
+
+<<<<<<< .mine
+					if(aclient.Player.StandState==UNITSTANDSTATE.DEAD || aclient.Player.RezSickness) {this.Kill();return;}				
+=======
+				if(aclient.Player.Dead || aclient.Player.RezSickness) {this.Kill();return;}				
+>>>>>>> .r289
+				
+					uint hitFlag=2;
+					uint victimstate=(uint)1;
+					uint hit = (uint)random.Next(10);
+					int Damage = random.Next((int)attacker.MinDamage,(int)(attacker.MaxDamage+1));
+					attacker.InRound=true;
+					switch (hit)
+					{
+						case 0:
+						case 1:
+							hitFlag=1;
+							victimstate=(uint)2;
+							Damage=0;
+							break;
+						case 9:
+							hitFlag=16;
+							Damage+=((int)attacker.MaxDamage);
+							break;
+
+					}
+				
+<<<<<<< .mine
+					ServerPacket pkg2 = new ServerPacket(SMSG.ATTACKERSTATEUPDATE);
+					pkg2.Write((uint)hitFlag);
+					pkg2.Write(attacker.GUID);
+					pkg2.Write(aclient.Player.GUID);
+					pkg2.Write((int)Damage);
+					pkg2.Write((byte)1);
+					pkg2.Write((uint)0);
+					pkg2.Write((float)Damage);
+					pkg2.Write((int)Damage);
+					pkg2.Write((int)0);
+					pkg2.Write((uint)victimstate); 
+					pkg2.Write((uint)0);
+					pkg2.Write((uint)0);
+					pkg2.Write((uint)0);
+					pkg2.Write((int)0);
+					pkg2.Finish();
+					attacker.MapTile.Map.Send(pkg2, attacker.Position, 25.0f);
+					aclient.Player.Health-=Damage;
+					if (target.Health<1)
+					{
+						aclient.Player.Health=0;
+						aclient.Player.StandState=UNITSTANDSTATE.DEAD;
+						attacker.StopCombat();
+						aclient.Player.UpdateData();
+					}
+					else
+					{
+						aclient.Player.UpdateData();
+					}
+=======
+				ServerPacket pkg2 = new ServerPacket(SMSG.ATTACKERSTATEUPDATE);
+				pkg2.Write((uint)hitFlag);
+				pkg2.Write(attacker.GUID);
+				pkg2.Write(aclient.Player.GUID);
+				pkg2.Write((int)Damage);
+				pkg2.Write((byte)1);
+				pkg2.Write((uint)0);
+				pkg2.Write((float)Damage);
+				pkg2.Write((int)Damage);
+				pkg2.Write((int)0);
+				pkg2.Write((uint)victimstate); 
+				pkg2.Write((uint)0);
+				pkg2.Write((uint)0);
+				pkg2.Write((uint)0);
+				pkg2.Write((int)0);
+				pkg2.Finish();
+				attacker.MapTile.Map.Send(pkg2, attacker.Position, 25.0f);
+
+				aclient.Player.Health-=Damage;
+				if (target.Health<1)
+				{
+					aclient.Player.Health=0;
+					aclient.Player.Dead = true ;
+					aclient.Player.StandState=UNITSTANDSTATE.DEAD;
+					attacker.StopCombat();
+					aclient.Player.UpdateData();
+>>>>>>> .r289
+				}
+				catch(Exception){this.Kill();return;}
+
+
+
+				eventTime = DateTime.Now.Add(TimeSpan.FromSeconds(attacker.BaseAttackTime));
+				EventManager.AddEvent(this);
+				return;
+			}
+		}
+	}
+
+	/// <summary>
+	/// The Following events are linked to corpse despawn
+	/// </summary>
+
+	public class CorpseDespawnEvent : WorldEvent
+	{
+		LivingObject corpse;
+		public CorpseDespawnEvent(LivingObject corpse) : base(TimeSpan.FromSeconds(30))
+		{
+			this.corpse = corpse;
+		}
+		public override void FireEvent()
+		{
+			corpse.SaveAndRemove();
+			EventManager.AddEvent(new MobsRespawnEvent(corpse));
+		}
+	}
+
+	/// <summary>
+	/// The Following events are linked to mobs respawn
+	/// </summary>
+
+	public class MobsRespawnEvent : WorldEvent
+	{
+		UnitBase m_mobs;
+		public MobsRespawnEvent(LivingObject mobs) : base(TimeSpan.FromSeconds(2))
+		{
+			m_mobs = (UnitBase)mobs;
+		}
+		public override void FireEvent()
+		{
+			// Here is the respawn code :)
+			Console.WriteLine("Trying to respawn mobs: "+m_mobs.Name);
+		}
+	}
+
+	/// <summary>
+	/// The Following events are linked to mob chasing
+	/// </summary>
+
+	public class ChasingEvent : WorldEvent
+	{
+		UnitBase mob;
+		WorldClient client;
+		ArrayList nodes;
+		public ChasingEvent(UnitBase mob, WorldClient client) : base(TimeSpan.FromMilliseconds(1))
+		{
+			this.mob = mob;
+			this.client = client;
+			EventManager.AddEvent(this);
+			nodes = new ArrayList();
+		}
+		public override void FireEvent()
+		{
+<<<<<<< .mine
+			try
+=======
+			if(client.Player.InWorld && !mob.Dead && !client.Player.Dead)
+>>>>>>> .r289
+			{
+				if(client.Player.InWorld & mob.StandState!=UNITSTANDSTATE.DEAD & client.Player.StandState!=UNITSTANDSTATE.DEAD & !client.Player.Dead)
+				{
+					float distance = client.Player.Position.Distance(mob.Position);
+					int time = (int)((distance/mob.RunningSpeed)*1000);
+					if(distance > 4)
+					{
+						ServerPacket pkg = new ServerPacket(SMSG.MONSTER_MOVE);
+						pkg.Write(mob.GUID);
+						pkg.WriteVector(mob.Position);
+						pkg.Write(mob.Facing);
+						pkg.Write((byte)0);
+						pkg.Write(0x000);
+						pkg.Write(time);
+						pkg.Write(1);
+						pkg.Write(client.Player.Position.X);
+						pkg.Write(client.Player.Position.Y);
+						pkg.Write(client.Player.Position.Z);
+						pkg.Finish();
+						mob.MapTile.SendSurrounding(pkg);
+						mob.UpdateData();
+						client.Player.UpdateData();
+
+						mob.Position.X = client.Player.Position.X;
+						mob.Position.Y = client.Player.Position.Y;
+						mob.Position.Z = client.Player.Position.Z;
+					}
+					eventTime = DateTime.Now.Add(TimeSpan.FromSeconds(2));
+					EventManager.AddEvent(this);
+
+					nodes.Add(new Vector(mob.Position.X,mob.Position.Y,mob.Position.Z));
+				}
+				else
+				{
+					EventManager.RemoveEvent(this);
+				}
+			}
+<<<<<<< .mine
+			catch(Exception){}
+=======
+			else
+			{
+				int count = 0;
+				foreach(Vector v in nodes)
+				{
+					count++;
+					Console.WriteLine(v.X);
+				}
+				EventManager.RemoveEvent(this);
+			}
+>>>>>>> .r289
+		}
+	}
+
+}
+

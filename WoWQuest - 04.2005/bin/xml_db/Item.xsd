@@ -1,0 +1,56 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="Item" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Item" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Item">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Item_ID" type="xs:unsignedInt" />
+              <xs:element name="OwnerID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="OwnerSlot" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="TemplateID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Creator" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="StackCount" type="xs:int" minOccurs="0" />
+              <xs:element name="Expiration" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellCharge_0" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellCharge_1" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellCharge_2" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellCharge_3" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellCharge_4" type="xs:int" minOccurs="0" />
+              <xs:element name="StaticFlags" type="xs:unsignedShort" minOccurs="0" />
+              <xs:element name="DynamicFlags" type="xs:unsignedShort" minOccurs="0" />
+              <xs:element name="Enchantment_0.id" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_0.expiration" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_0.chargesRemaining" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_1.id" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_1.expiration" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_1.chargesRemaining" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_2.id" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_2.expiration" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_2.chargesRemaining" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_3.id" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_3.expiration" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_3.chargesRemaining" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_4.id" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_4.expiration" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_4.chargesRemaining" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_5.id" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_5.expiration" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_5.chargesRemaining" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_6.id" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_6.expiration" type="xs:int" minOccurs="0" />
+              <xs:element name="Enchantment_6.chargesRemaining" type="xs:int" minOccurs="0" />
+              <xs:element name="PropertySeed" type="xs:int" minOccurs="0" />
+              <xs:element name="PropertyID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//Item" />
+      <xs:field xpath="Item_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

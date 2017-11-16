@@ -1,0 +1,41 @@
+!PiCaSsO! version Alpha 0.01 Copyright (C) 2006 by !PiCaSsO! Developer team
+09/18/2006 20:24:05: Loading account TEST...
+09/18/2006 20:24:05: Loaded all accounts from database!
+09/18/2006 20:24:05: Building external C# scripts, please wait...
+09/18/2006 20:24:05: Global scripts successfully loaded!
+09/18/2006 20:24:05: HTTPServer listening on port 8080
+09/18/2006 20:24:05: Worldserver listening on port 8085
+09/18/2006 20:24:05: AuthServer listening on port 1234
+09/18/2006 20:24:05: Waiting for incoming connections...
+09/18/2006 20:25:28: Incoming connection!
+09/18/2006 20:25:28: Recieved Logon Challenge!
+09/18/2006 20:25:28: Wrong client version 8726. Excpected is 2.0.0, ID = 56085!
+09/18/2006 20:25:28: Recieved AUTH_CHALLENGE from user: TEST
+09/18/2006 20:25:28: Logon proof!
+09/18/2006 20:25:28: Client requested realmlist!
+09/18/2006 20:25:31: Client requested realmlist!
+09/18/2006 20:25:31: Client Redirected to Worldserver!
+09/18/2006 20:25:31: Challenged client to auth again.
+09/18/2006 20:25:31: Recieved 2nd auth from client!
+09/18/2006 20:25:31: Account found: TEST
+09/18/2006 20:25:31: Received CMSG_CHAR_ENUM
+09/18/2006 20:25:36: Client requested realmlist!
+09/18/2006 20:25:37: Client requested realmlist!
+09/18/2006 20:25:37: Client Redirected to Worldserver!
+09/18/2006 20:25:37: Challenged client to auth again.
+09/18/2006 20:25:39: Client requested realmlist!
+09/18/2006 20:25:39: Client Redirected to Worldserver!
+09/18/2006 20:25:39: Challenged client to auth again.
+09/18/2006 20:25:45: Incoming connection!
+09/18/2006 20:25:45: Recieved Logon Challenge!
+09/18/2006 20:25:45: Wrong client version 8726. Excpected is 2.0.0, ID = 56085!
+09/18/2006 20:25:45: Recieved AUTH_CHALLENGE from user: TEST
+09/18/2006 20:25:45: Logon proof!
+09/18/2006 20:25:45: Client requested realmlist!
+09/18/2006 20:25:45: Client Redirected to Worldserver!
+09/18/2006 20:25:45: Challenged client to auth again.
+09/18/2006 20:25:45: Recieve unknown OPCode: 9
+09/18/2006 20:25:47: Client requested realmlist!
+09/18/2006 20:25:47: Client Redirected to Worldserver!
+09/18/2006 20:25:47: Challenged client to auth again.
+09/18/2006 20:25:47: Recieve unknown OPCode: 18

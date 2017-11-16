@@ -1,0 +1,50 @@
+<Project name="WorldServer" standardNamespace="NewProject" description="" newfilesearch="None" enableviewstate="True" version="1.1" projecttype="C#">
+  <Contents>
+    <File name=".\AssemblyInfo.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ChatManager.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\DBManager.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\MapInstance.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\MapManager.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\MapTile.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ObjectManager.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ObjectUpdateManager.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\WorldClient.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\WorldPacketManager.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\WorldScriptAssembly.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\WorldServer.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Objects\ContainerObject.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Objects\ItemObject.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Objects\LivingObject.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Objects\ObjectInventory.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Objects\PlayerObject.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Objects\UnitBase.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Objects\WorldObject.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+  </Contents>
+  <References>
+    <Reference type="Project" refto="Common" localcopy="True" />
+    <Reference type="Project" refto="Database" localcopy="True" />
+  </References>
+  <DeploymentInformation target="" script="" strategy="File" />
+  <Configuration runwithwarnings="False" name="Debug">
+    <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+    <Execution commandlineparameters="" consolepause="True" />
+    <Output directory=".\bin\Debug\" assembly="WoWDaemon.WorldServer" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+  </Configuration>
+  <Configurations active="Debug">
+    <Configuration runwithwarnings="False" name="Debug">
+      <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Debug\" assembly="WoWDaemon.WorldServer" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+    <Configuration runwithwarnings="False" name="Release">
+      <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="" warninglevel="4" nowarn="" includedebuginformation="False" optimize="True" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Release\" assembly="WoWDaemon.WorldServer" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+    <Configuration runwithwarnings="True" name="MonoBuild">
+      <CodeGeneration runtime="Mono" compiler="Mcs" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Debug\" assembly="WoWDaemon.WorldServer" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+  </Configurations>
+</Project>

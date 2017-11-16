@@ -1,0 +1,225 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65495870-03FC-471F-86FF-7C71AD892A2D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>WorldScripts</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WorldScripts</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\bin\scripts\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\bin\scripts\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{F21EE291-0365-484A-86AA-2FB2273C0304}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Database\Database.csproj">
+      <Name>Database</Name>
+      <Project>{0CD5A6AB-7CC6-42C3-BF96-6C19B61D1E2A}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WorldServer\WorldServer.csproj">
+      <Name>WorldServer</Name>
+      <Project>{9CBB1092-FE7F-481B-8EFD-CFCFAB1F8432}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChatCommands\banish.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\Broadcast.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\Cancom.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\Cleanup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\Exp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\Goto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\Loc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\MobCommands.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\Money.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\Morph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\Mount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\Mountmodel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\PlayerLevel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\PvP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\RemRoamNodes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\Scale.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\Speed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\SpeedTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\TestSMSG.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\Uptime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatCommands\Worldport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Living\Cleric.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Living\Druid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Living\GamePlayer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Living\Hunter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Living\Mage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Living\MonsterBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Living\Paladin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Living\Rogue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Living\Shaman.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Living\VendorBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Living\Warlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Living\Warrior.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScriptPackets\ItemVendor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScriptPackets\MiscScriptPackets.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScriptPackets\SetSelection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScriptPackets\Spawn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScriptPackets\SpawnCircle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

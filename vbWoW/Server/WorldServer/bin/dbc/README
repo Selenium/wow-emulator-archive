@@ -1,0 +1,20 @@
+Here must be all dbc files used by the server:
+ - Spell.dbc
+ - SpellCastTimes.dbc
+ - SpellDuration.dbc
+ - SpellFocusObject.dbc
+ - SpellRadius.dbc
+ - SpellRange.dbc
+ - SkillLine.dbc
+ - Talent.dbc
+ - TalentTab.dbc
+ - EmotesText.dbc
+ - DurabilityCosts.dbc
+ - AreaTable.dbc
+ - FactionTemplate.dbc
+ - Faction.dbc
+ - TaxiNodes.dbc
+ - WorldSafeLocs.dbc
+ - BankBagSlotPrices.dbc
+
+ All of them can be extracted from client application, version 2.0.6.

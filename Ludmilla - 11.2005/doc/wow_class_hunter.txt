@@ -1,0 +1,17 @@
+Hunter Functionality (medium) 
+
+Quote:  
+Why medium? Huge amount of stuff to implement, that's why. 
+I won't compile info this time, it's too much and don't have the time for it
+(also I haven't played a hunter yet). Go grab it in the following places:
+
+Hunter Pet Abilities 
+Hunter Class 
+Hunter Tactics 
+Tamed Creatures Statistics 
+
+Pet wasn't tagging the mob, but this was changed in a patch. Your pet actually
+DOES tag a mob as yours when it attacks, but you still don't get any experience
+when you don't help it, and can't loot it. If you hit at least once, you get
+full XP. I think Blusard did this so you couldn't just set your pet to
+aggressive, watch a movie, and pick up the loot afterwards.

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/norwegianelite/!svn/ver/21/Summit
+END
+make_precompiled_header.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/make_precompiled_header.sh
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/norwegianelite/!svn/ver/19/Summit/configure.ac
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/norwegianelite/!svn/ver/19/Summit/AUTHORS
+END
+.svn.ignore.global
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/norwegianelite/!svn/ver/19/Summit/.svn.ignore.global
+END
+ascent-tag
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/norwegianelite/!svn/ver/21/Summit/ascent-tag
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/norwegianelite/!svn/ver/19/Summit/INSTALL
+END
+.svn.ignore
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/norwegianelite/!svn/ver/19/Summit/.svn.ignore
+END
+extract_svn_revision.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/norwegianelite/!svn/ver/19/Summit/extract_svn_revision.sh
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/norwegianelite/!svn/ver/19/Summit/ChangeLog
+END
+make_precompiled_header_debug.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/make_precompiled_header_debug.sh
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/norwegianelite/!svn/ver/19/Summit/Makefile.am
+END
+freebsd_autotools.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/norwegianelite/!svn/ver/19/Summit/freebsd_autotools.sh
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/norwegianelite/!svn/ver/19/Summit/NEWS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/norwegianelite/!svn/ver/19/Summit/README
+END

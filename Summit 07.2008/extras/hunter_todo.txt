@@ -1,0 +1,57 @@
+Bug: Scatter shot failure
+Class: Hunter
+NPC/Area: N/A
+Explanation: Scatter shot will sometimes say "you cant do that while immune(sounds familiar...hmmm but from where?!?! *cough* alchemy >.>) but sometimes it will work,but most of the time the target can still act on their own will while SS'd(and yes,noone caused them damage)
+
+TALENTS
+--BM--
+The Beast Within: doesn't work (adds a buff for hunter onBestial Wrath) - has to trigger on cast spell and has to end when buff expires
+--MM--
+Improved Hunter's Mark: doesn't work (grants also +melee ap)
+--SUR--
+Entrapment: doesn't work (chance to trigger entrapment - 19185)
+
+at rev 2319 also Hunter's Mark (http://www.wowwiki.com/Hunter's_Mark) stopped working:
+Places the Hunter's Mark Places the Hunter's Mark on the target, increasing the ranged attack power of all attackers against that target by X /<-this was working b4/ and by an additional X each time they are struck by a ranged attack, up to a maximum of X. In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible. The target also appears on the mini-map. Lasts for 2 min.
+part with "n additional X each time they are struck by a ranged attack" never worked b4, would b really nice to see it working
+
++ all what scatler said + what i posted 2 weeks ago, and this is: Arcane Shot and Steady Shot crit chance based on intellect instead of agility and 1.5x crit damage for both of those shots (instead of 2x or 2.3x with talent)
+
+-Counterattack
+
+
+//////////////////////////////////////////////////
+
+Adds to Beast Mastery:
+
+Unleashed Fury - Broken. Does not increase pet damage.
+Improved Aspect of the Hawk - It procs and shows the buff icon but there's no speed increase at all.
+Bestial Discipline
+
+Skills:
+
+Eyes of the Beast - You start to control yourself (!) and you can't do anything until the spell is cancelled. This skill is pretty funny! tongue.gif
+Mend Pet - Still working as a channeled spell. This has changed. Now it should be an instant cast heal over time as of patch 2.1
+Track Hidden - Broken. Does not increase your stealth detection and of course, no target on the mini-map.
+Snake Trap - Never seen it working.
+
+Regarding Scatter Shot: it's a little bit confused in the list. Basically, in pvp, the target affected by Scatter will still be able to control itself. It will be unable to attack, but that's not the only effect we want.
+
+AUTO-SHOT: Currently I'm playing on the revision 2801 and Auto-Shot is all messed up!!! Most times you stand still and don't shoot. The only commit after 2801 that deals with it is the 2805 but is not clear if it's a fix. For God's sake, Hunter without Auto-shot is a rogue without stuns!!! It's ridiculous! If it's not fixed yet, please do it.
+
+Pets:
+
+Pet's attack power bonus based on Hunter's ranged attack power is not working properly. If you do any change in your atk power (increase/decrease), it won't affect the pet. It seems to be happening with stats like stamina and armor too. A feedback would be good.
+Also, Spell Damage Bonus is not adding any damage to pet spells.
+
+Skills like Dash and Dive are not working properly. You should be able to cast them anytime you want but they only work when the pet is hitting the target (which makes the skill useless).
+
+Natural Armor and Great Stamina reset the respectives stats to zero and adds only the amount mentioned.
+
+Most times if someone try to buff your pet will reset all stats to zero.
+
+*cough* Cobra Reflexes is decreasing attack speed instead of increasing and damage done should be reduced but it remains the same.
+
+Excluding the skills/spells, all training will be reset after some time and you'll get all training points back.
+
+Frenzy

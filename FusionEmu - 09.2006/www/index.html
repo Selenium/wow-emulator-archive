@@ -1,0 +1,43 @@
+<html>
+<head>
+<title><*SERVER_NAME*></title>
+</head>
+<body>
+ <table><form method="POST">
+  <tr>
+   <td colspan=2>Create Account</td>
+  </tr>
+  <tr>
+   <td>Username</td>
+   <td><input type="text" name="user"></td>
+  </tr>
+  <tr>
+   <td>Password</td>
+   <td><input type="password" name="pass"></td>
+  </tr>
+  <tr>
+   <td colspan=2><input type="submit" value="Create!"></td>
+  </tr>
+ </form></table>
+
+ <table>
+  <tr>
+   <td colspan=4>Users Online</td>
+  </tr>
+  <tr>
+   <td>Name</td>
+   <td>Level</td>
+   <td>Place</td>
+   <td>P Level</td>
+  </tr>
+<*START_ONLINE_LOOP*>
+  <tr>
+   <td><*LOOP_PLAYER_NAME*></td>
+   <td><*LOOP_PLAYER_LEVEL*></td>
+   <td><*LOOP_PLAYER_PLACE*></td>
+   <td><*LOOP_PLAYER_PLEVEL*></td>
+  </tr>
+<*STOP_ONLINE_LOOP*>
+ </table>
+</body>
+</html>

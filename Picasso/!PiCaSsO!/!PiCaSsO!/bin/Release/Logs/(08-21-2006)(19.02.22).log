@@ -1,0 +1,22 @@
+!PiCaSsO! version Alpha 0.01 Copyright (C) 2006 by !PiCaSsO! Developer team
+08/21/2006 19:02:22: Loading account TEST...
+08/21/2006 19:02:22: Loading account 1+2+3+4+5+6...
+08/21/2006 19:02:22: Loading account 1 2 3 4 5 6...
+08/21/2006 19:02:22: Loading account T E S T...
+08/21/2006 19:02:22: Loaded all accounts from database!
+08/21/2006 19:02:22: Building external C# scripts, please wait...
+08/21/2006 19:02:22: Global scripts successfully loaded!
+08/21/2006 19:02:22: HTTPServer listening on port 8080
+08/21/2006 19:02:23: Worldserver listening on port 8085
+08/21/2006 19:02:23: AuthServer listening on port 1234
+08/21/2006 19:02:23: Waiting for incoming connections...
+08/21/2006 19:02:46: Incoming connection!
+08/21/2006 19:02:46: Recieved Logon Challenge!
+08/21/2006 19:02:46: Cient version accepted: 1.11.2, ID = 22549!
+08/21/2006 19:02:46: Recieved AUTH_CHALLENGE from user: TEST
+08/21/2006 19:02:46: Logon proof!
+08/21/2006 19:02:46: Client requested realmlist!
+08/21/2006 19:02:46: Client Redirected to Worldserver!
+08/21/2006 19:02:46: Challenged client to auth again.
+08/21/2006 19:02:46: Recieved 2nd auth from client!
+08/21/2006 19:02:46: Account found: TEST

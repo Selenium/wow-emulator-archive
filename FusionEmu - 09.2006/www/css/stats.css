@@ -1,0 +1,209 @@
+/*      copyright 2005 RA3OR     */
+/*                               */
+/* eMail - ra3or@as.ro           */
+/*       - wir3d@as.ro           */
+/* IRC   - wir3d.stoleyour.cc    */
+/*       - wir3d.no-IP.org       */
+/* SITE  - www.wir3d.lx.ro       */
+
+body {
+	background:#222;
+	cursor: default;
+	font:11px/1.4 Tahoma, "Lucida Sans Unicode", Tahoma, "Lucida Console", sans-serif;
+	margin:0;
+	padding:0;
+	scrollbar-Base-color: #000;
+	scrollbar-Arrow-color: #f90;
+	scrollbar-DarkShadow-Color: #000;
+	scrollbar-Face-Color: #000;
+	scrollbar-Highlight-Color: #f90;
+	scrollbar-Shadow-Color: #f90;
+	scrollbar-Track-Color: #000;
+	background-image:url('../bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+table {
+    font-size: 13px;
+    color: #fff;
+	border-collapse:collapse;
+}
+
+#serverstats{border-bottom:none;}
+
+.statstdtop, .statstd{
+	border:1px solid #999;
+	text-align:center;
+}
+
+.statstdtop{
+	color:#ff0;
+	border:1px solid #f00;
+	border-style:solid;
+	font-weight:bold;
+}
+
+.refresh{
+	width:500px;
+	font-weight:bold;
+	text-align:center;
+	border:1px solid #ccc;
+}
+
+.center{text-align:center;}
+
+.plist {
+    color: #fff;
+	border: 1px solid #999;
+}
+
+a {
+    color: #777;
+}
+
+a:hover {
+    color:#69f;
+}
+
+.text {
+	margin:10px;
+    font-size: 20px;
+	color: #eaba28;
+}
+
+.stat {
+	font-weight: bold;
+	color: #fc3;
+	/*text-decoration: blink;*/
+}
+
+/* added here (1.4.1) */
+
+.serverload {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+	background: url(../images/sv_status.gif) no-repeat center;
+}
+
+#playerlist {
+ width: 620px;
+}
+
+#playerlist td {
+ font-size: 12px;
+}
+
+/* level/ping colors */
+.low { /* green */
+ color: #6f0;
+}
+
+.low-mid {
+ color:  #fc9;
+}
+
+.mid {
+ color: #ff0;
+ }
+
+.mid-high {
+ color: #f36;
+ }
+
+.high {
+ color: #f00;
+}
+
+.high-blink {
+	color: #f00;
+	border: 2px dotted #fff;
+	text-align: center;
+	/*text-decoration: blink;*/
+}
+
+.white {
+ color: #fff;
+}
+
+/* table colors */
+.n4m3,.l3v3l,.r4c3,.cl4ss,.m4p,.z0n3,.p1ng,.p13v31 {border:1px solid #999;font-weight:bold;text-align:center;margin:0;padding:0;}
+
+.n4m3 {color:#cff;}
+.r4c3 {color:#9cf;}
+.cl4ss {color:#cff;}
+.m4p {color:#f90;}
+.z0n3 {color:#699;}
+
+/* PLevels */
+.Player {
+ color: #fff;
+}
+
+.Counselor {
+ color: #0f0;
+}
+
+.Seer {
+ color: #ff0;
+}
+
+.Moderator {
+ color: #0f0;
+}
+
+.GM, .GameMaster {
+ color: #699;
+}
+
+.Developer {
+ color: #69f;
+}
+.Administrator {
+ color: #f00;
+}
+
+
+/* alliance / horde #FFFF00 #FFFF00 */
+.alliance {
+ color: #39f;
+}
+
+.horde {
+ color: #f66;
+}
+
+/* race css */
+.Human, .Orc, .Dwarf, .NightElf, .Undead, .Tauren, .Gnome, .Troll {width:35;height:38;}
+
+.Human {background: url(../images/Human.gif) center no-repeat;}
+.Orc {background: url(../images/Orc.gif) center no-repeat;}
+.Dwarf {background: url(../images/Dwarf.gif) center no-repeat;}
+.NightElf {background: url(../images/NightElf.gif) center no-repeat;}
+.Undead {background: url(../images/Undead.gif) center no-repeat;}
+.Tauren {background: url(../images/Tauren.gif) center no-repeat;}
+.Gnome {background: url(../images/Gnome.gif) center no-repeat;}
+.Troll {background: url(../images/Troll.gif) center no-repeat;}
+
+/* class css */
+.Warrior, .Paladin, .Hunter, .Rogue, .Priest, .Shaman, .Mage, .Warlock, .Druid {width:35;height:38;}
+
+.Warrior {background: url(../images/Warrior.gif) center no-repeat;}
+.Paladin {background: url(../images/Paladin.gif) center no-repeat;}
+.Hunter {background: url(../images/Hunter.gif) center no-repeat;}
+.Rogue {background: url(../images/Rogue.gif) center no-repeat;}
+.Priest {background: url(../images/Priest.gif) center no-repeat;}
+.Shaman {background: url(../images/Shaman.gif) center no-repeat;}
+.Mage {background: url(../images/Mage.gif) center no-repeat;}
+.Warlock {background: url(../images/Warlock.gif) center no-repeat;}
+.Druid {background: url(../images/Druid.gif) center no-repeat;}
+
+.FUTURE_1, .FUTURE_2 {
+background: url(../images/what_class.gif) center no-repeat;
+}
+
+/* rank css */
+.Rank01 { list-style-image: url("../ranks/rank01.gif"); }
+

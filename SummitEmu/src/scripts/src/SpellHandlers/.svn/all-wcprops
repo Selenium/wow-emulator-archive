@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/SpellHandlers
+END
+Setup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/SpellHandlers/Setup.cpp
+END
+ItemSpells_1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/SpellHandlers/ItemSpells_1.cpp
+END
+RogueSpells.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/SpellHandlers/RogueSpells.cpp
+END
+Setup.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/SpellHandlers/Setup.h
+END
+WarlockSpells.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/SpellHandlers/WarlockSpells.cpp
+END
+Event_MidsummerFireFestival.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/SpellHandlers/Event_MidsummerFireFestival.cpp
+END
+HunterSpells.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/SpellHandlers/HunterSpells.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/SpellHandlers/Makefile.am
+END
+WarriorSpells.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/SpellHandlers/WarriorSpells.cpp
+END
+ShamanSpells.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/SpellHandlers/ShamanSpells.cpp
+END
+PaladinSpells.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/SpellHandlers/PaladinSpells.cpp
+END
+MageSpells.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/SpellHandlers/MageSpells.cpp
+END

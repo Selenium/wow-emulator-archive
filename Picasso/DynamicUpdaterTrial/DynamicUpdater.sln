@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicUpdater", "DynamicUpdater\DynamicUpdater.csproj", "{9EA889B6-732A-46F6-A384-5ABA093B08DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EA889B6-732A-46F6-A384-5ABA093B08DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA889B6-732A-46F6-A384-5ABA093B08DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA889B6-732A-46F6-A384-5ABA093B08DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA889B6-732A-46F6-A384-5ABA093B08DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,37 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=ControlCenterHelp.chm
+Contents file=ControlCenterHelp.hhc
+Default Font=Arial,10,0
+Default topic=index.html
+Display compile progress=No
+Full-text search=Yes
+Index file=ControlCenterHelp.hhk
+Language=0x409 English (United States)
+Title=GTA SA Control Center Help
+
+
+[FILES]
+index.html
+installation.html
+control_logic.html
+page1.html
+page2.html
+page3.html
+page4.html
+page5.html
+page6.html
+config_files.html
+carpics_dat.html
+cheats_dat.html
+config_dat.html
+data_dat.html
+ini_file.html
+locs_dat.html
+weathers.html
+modlist.html
+commands.html
+
+[INFOTYPES]
+

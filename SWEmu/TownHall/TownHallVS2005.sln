@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TownHall", "TownHallVS2005.vcproj", "{038F16E7-7AF2-4D3E-BA3D-FA22191B222F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug-TBC|Win32 = Debug-TBC|Win32
+		Release|Win32 = Release|Win32
+		Release-TBC|Win32 = Release-TBC|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{038F16E7-7AF2-4D3E-BA3D-FA22191B222F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{038F16E7-7AF2-4D3E-BA3D-FA22191B222F}.Debug|Win32.Build.0 = Debug|Win32
+		{038F16E7-7AF2-4D3E-BA3D-FA22191B222F}.Debug-TBC|Win32.ActiveCfg = Debug-TBC|Win32
+		{038F16E7-7AF2-4D3E-BA3D-FA22191B222F}.Debug-TBC|Win32.Build.0 = Debug-TBC|Win32
+		{038F16E7-7AF2-4D3E-BA3D-FA22191B222F}.Release|Win32.ActiveCfg = Release|Win32
+		{038F16E7-7AF2-4D3E-BA3D-FA22191B222F}.Release|Win32.Build.0 = Release|Win32
+		{038F16E7-7AF2-4D3E-BA3D-FA22191B222F}.Release-TBC|Win32.ActiveCfg = Release-TBC|Win32
+		{038F16E7-7AF2-4D3E-BA3D-FA22191B222F}.Release-TBC|Win32.Build.0 = Release-TBC|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

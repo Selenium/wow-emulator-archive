@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/ServerStatusPlugin
+END
+PerfCounters.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/ServerStatusPlugin/PerfCounters.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/ServerStatusPlugin/Makefile.am
+END
+ServerStatusPlugin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/ServerStatusPlugin/ServerStatusPlugin.cpp
+END

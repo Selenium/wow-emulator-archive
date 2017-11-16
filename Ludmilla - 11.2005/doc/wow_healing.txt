@@ -1,0 +1,43 @@
+"Increases healing done by spells and effects by up to 42." 
+
+What does this mean? Counterintuitively, it doesn't mean casting a healing spell
+grants a random bonus between 1 and 42 for that particular cast. Each healing
+spell will get a particular, fixed benefit from this "up to 42." This benefit
+can be calculated mainly from casting time.
+
+ActualBenefit = AdvertisedBenefit * (CastingTime / 3.5) 
+
+Spells with a casting time of 3.5 seconds and above receive the full advertised
+benefit. Spells with less casting time receive a ratio of advertised benefit.
+Spells with less casting time than 1.5 seconds are still considered to be 1.5
+second spells, e.g both 1.5 second spells and instant cast spells get 0.429
+(which is 1.5/2.5) of the advertised benefit. DoT or HoT spells have their
+benefit divided among ticks.
+
+There are two other factors that can reduce the actual benefit: 
+
+- Lower Ranks. The formula above only applies to the highest rank of the spell.
+Having anything less than the highest rank reduces the actual benefit
+drastically. Blusard does this so that players won't be tempted to spam low rank
+spells whose effects might be doubled or tripled by the +Heal or +Damage
+benefits.
+
+- DoT or HoT effects after the initial spell's cast. Some spells have an initial
+heal or damage followed by a DoT or HoT. That initial component does not receive
+full benefit as some of it is moved to the HoT or Dot component.
+
+Also note: 
+- If you ever see an item which advertises "increases [...] spells and effects
+by up to 1 to 42," then it still follows the above formula for the top limit.
+However, each cast of the spell will give you a random benefit between 1 and
+what would normally be the actual benefit based on casting time.
+
+- The CastingTime value used to calculate ActualBenefit for a particular spell
+does not change if a player has a Talent, buff, or debuff affecting cast time.
+
+- Benefits are added to spells before critical hit modifications are made. So,
+yes, these will raise your criticals.
+
+P.S. Paladin's Divine Protection and Divine Shield are on the same cooldown
+timer. This means you can use only one of these in 5 minutes, its cooldown
+applying to both of them.

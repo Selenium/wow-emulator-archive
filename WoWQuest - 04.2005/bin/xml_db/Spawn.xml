@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<Spawn>
+  <Spawn>
+    <Spawn_ID>1</Spawn_ID>
+    <WorldMapID>1</WorldMapID>
+    <Position.X>-90</Position.X>
+    <Position.Y>150</Position.Y>
+    <Position.Z>60</Position.Z>
+    <Facing>0</Facing>
+    <CreatureID>1</CreatureID>
+  </Spawn>
+  <Spawn>
+    <Spawn_ID>2</Spawn_ID>
+    <WorldMapID>1</WorldMapID>
+    <Position.X>-85</Position.X>
+    <Position.Y>150</Position.Y>
+    <Position.Z>60</Position.Z>
+    <Facing>0</Facing>
+    <CreatureID>2</CreatureID>
+  </Spawn>
+</Spawn>

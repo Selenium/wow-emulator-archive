@@ -1,0 +1,24 @@
+# !!! USE MAIN SCONSTRUCT-FILE FOR COMPILING !!!
+#
+# --> SConstruct for libspells
+#
+# If you want to compile only this library comment other
+# SConstruct invocations in main SConstruct out
+#
+
+StaticLibrary('../../build/spells', [
+		'SpellTable.cpp',
+		'UnitAuras.cpp',
+		'stdafx.cpp'
+	],
+	CPPPATH = [
+		'../../src/Game',
+		'../../src/LudMilla',
+		'../../src/RealmList',
+		'../../src/Shared',
+		'../../src/Spells',
+		'../../depnew/Unix_dep/',
+		'/usr/include/python2.4'
+	],
+	CCFLAGS = '-fpermissive -w'
+)

@@ -1,0 +1,11 @@
+#!/bin/sh
+CMDLINE="g++ *.cpp libeay32.lib"
+OUTPREFIX="RealmList"
+
+case $1 in
+	debug			) $CMDLINE -w -g3 -D=_DEBUG -march=i686 -o ${OUTPREFIX}Debug && echo success;;
+	release		) $CMDLINE -ffast-math -fsingle-precision-constant -O3 -maccumulate-outgoing-args -mfpmath=sse -march=pentium4 -o ${OUTPREFIX}Release && echo success;strip ${OUTPREFIX}Release;strip ${OUTPREFIX}Release.exe;;
+	profile		) $CMDLINE -pg -O3 -march=i686 -o ${OUTPREFIX}Profile && echo success;;
+	profile-debug	) $CMDLINE -w -pedantic -pg -g3 -o ${OUTPREFIX}ProfileDebug && echo success;;
+	*			) echo "$0: Argument '$1' invalid. Valid options are: debug, release, profile-debug, profile";;
+esac

@@ -1,0 +1,234 @@
+#Edit this file as you wish. CarTypes are the selection tab on garage editor extended car selection. Type Name is the caption of the tab. TypeID is the
+#reference to CarPictures. CarPictures are 100x72 pixel thumbnails, and saved under \CarPics folder. If a thumbnail is missing, or the car is not parkable,
+#it will not be listed on the selection. You can list vehicles on more than one selection list. Create your own favorites to select one of your favorite
+#cars to park in the selected garage. Use Pipe character '|' as seperator between fields. Most of the descriptions and the thumbnails are courtesy of
+#www.g-unleashed.com. Please visit them. The g-unleashed.com thumbnails and descriptions are from the X-Box version of GTA SA, so some of the pictures
+#and descriptions can actually differ from the PC edition.
+
+GTASACarTypes
+#TypeID       Type Name
+0|            Favorites
+1|            Sports Cars
+2|            Off-road
+3|            Lowriders
+4|            Convertibles
+5|            Other Cars
+6|            Industrial Vehicles
+7|            Public Service
+8|            Helicopters
+9|            Planes
+10|           Bikes
+11|           Boats
+12|           Unique Vehicles
+END_GTASACarTypes
+
+GTASACarPictures
+#CarID        TypeID        CarName       	Stars         CarDesc
+506|          0|            Super GT|     	5|            A great looking car and quick too. But it's a bit of a handful at times and tricky to handle at high speed. Not recommended for a high pursuit, unless you want a challenge.
+541|          0|            Bullet|       	5|            Awesome car. Looks stunning, drives superb and you can always pick one up outside the burger shot in Juniper Hill, San Fierro.
+579|          0|            Huntley|      	5|            The huntley is a superb 4x4 that looks great too. Its handling is well balanced and sharp. The acceleration could be better, but that's forgiveable for a vehicle this big. It's good off road too.
+539|          0|            Vortex|       	2|            It's a hovercraft! So you can drive on and off land. However, like all hovercrafts, it can be tricky to control. Not something you want to drive about the streets, but fun none the less.
+568|          0|            Bandito|      	3|            A rare off road vehicle. The bandito is a speedy offroader that is fun to drive on and off the road. Turn the volume up and listen to that engine.
+522|          0|            NRG-500|      	4|            The daddy of the bikes. Nothing beats this. It's light, fast and damn good fun. Grab this for unique jumps. You can get hold of one either in a wareshouse, easter basin docks, or get all gold in bike school to have one spawn outside the shcool.
+602|          1|            Alpha|        	5|            One of the poorer sports cars. It feels a little overweight with sluggish handling and slight understeer. It's acceleration is disapointing too.
+429|          1|            Banshee|      	5|            The wailing banshee is back. And it's better than ever. Looks great and drives even better. Awesome acceleration and slight oversteer make this a thrilling ride.
+496|          1|            Blista Compact|	2|            Moves better than it looks. It's quick and nippy, but with low sex appeal, it isnt going to impress the ladies.
+402|          1|            Buffalo|      	5|            Jump in one of these and turn up the volume. Awesome fun to drive and great style goes with it. You can find one spawned outside catalina's hideout in Fern Ridge.
+541|          1|            Bullet|       	5|            Awesome car. Looks stunning, drives superb and you can always pick one up outside the burger shot in Juniper Hill, San Fierro.
+415|          1|            Cheetah|      	5|            The cheetah is back and as sexy as ever. No praise is needed, it's repuatation proceeds it. Jack one today.
+589|          1|            Club|         	3|            Pretty speedy coupe. Nothing too hot about this car, it looks ok and is ok to drive, just not worth the hunt that it takes to find one.
+587|          1|            Euros|        	5|            A rare car which only seems to spawn underneath the sphynx at the camel's toe in LV, after list 2 has been completed at the car import/export. It's got great stable handling and is quick enough, but it lacks acceleration over the other sports cars.
+565|          1|            Flash|        	5|            Probably the best sporty hatchback. It's quick and sticks to road really well. Acceleration is great too.
+494|          1|            Hotring Racer|	2|            Like a true nascar, it's got huge speed and handling that can see it snap away from your control at any moment. You need to be gentle with this puppy, but it won't stop you having lots of fun with it.
+502|          1|            Hotring Racer A|    2|            Like a true nascar, it's got huge speed and handling that can see it snap away from your control at any moment. You need to be gentle with this puppy, but it won't stop you having lots of fun with it.
+503|          1|            Hotring Racer B|    2|            Like a true nascar, it's got huge speed and handling that can see it snap away from your control at any moment. You need to be gentle with this puppy, but it won't stop you having lots of fun with it.
+411|          1|            Infernus|     	5|            This is arguably the fastest car in the game. The best version of the infernus yet, which looks rather alot like a Honda NSX. Pretty rare car that tends to spawn in Las Venturas.
+559|          1|            Jester|       	5|            Good car. It's not the fastest, but it's got great handling although maybe a little too twitchy for some. Personally i think it's a great car for a pursuit.
+475|          1|            Sabre|        	3|            The sabre has the true spirit of a muscle car. Over powered and difficult to control. It's still makes a fun drive.
+506|          1|            Super GT|     	5|            A great looking car and quick too. But it's a bit of a handful at times and tricky to handle at high speed. Not recommended for a high pursuit, unless you want a challenge.
+451|          1|            Turismo|      	4|            If you can find one of these rare sports cars, (usually in Las Venturas) you'll be rewarded with a superbly fast drive, that hugs the road like a dead hedgehog. They don't appear often.
+558|          1|            Uranus|       	5|            Could be mistaken for an ordinary saloon, but it's anything but. This little puppy goes like the wind is great fun to drive. Watch out for the oversteer under braking.
+477|          1|            ZR-350|       	5|            I wouldnt say the best looking, but it's very fast and the handling is great. Plus it's more common than some of the other sports cars, so you shouldnt have trouble finding one.
+568|          2|            Bandito|      	3|            A rare off road vehicle. The bandito is a speedy offroader that is fun to drive on and off the road. Turn the volume up and listen to that engine.
+424|          2|            BF Injection| 	5|            The best version of the BF Injection in any GTA, in my opinion. It looks great and is very fast. It can be a little bit tricky to control on road however. But off-road, this vehicle is superb.
+573|          2|            Dune|         	2|            You would be forgiven for thinking that this piece of machinery is useless off road. Far from it, in fact it'd give alot of the vehicles in this catergory a run for their money. It seems to glide effortlessly over rough terrain at breakneck speed.
+579|          2|            Huntley|      	5|            The huntley is a superb 4x4 that looks great too. Its handling is well balanced and sharp. The acceleration could be better, but that's forgiveable for a vehicle this big. It's good off road too.
+400|          2|            Landstalker|  	2|            Vastly improved in this version of GTA. It no longer threatens to turn over at every bump like it used to, which has made it into a pretty commendable off roader.
+500|          2|            Mesa|         	2|            This rare off roader should be jacked as soon as you see it. Not because it's particularly amazing to drive, but because it's tough to find and is needed for export on list 3. So if you see one, jack it and store it in your garage for later.
+444|          2|            Monster Truck|      2|            The daddy of off road vehicles. Great fun to drive off and on the road. There is a normal monster truck without the special paint job which can be imported from the vehicle export ship later on in the game.
+556|          2|            Monster Truck A|    2|            The daddy of off road vehicles. Great fun to drive off and on the road.
+557|          2|            Monster Truck B|    2|            The daddy of off road vehicles. Great fun to drive off and on the road.
+470|          2|            Patriot|      	3|            The ultimate off road vehicle. Nothing handles rough terrain like this thing. That's why it's so hard to get hold of. You can steal one from the secret military base in the desert.
+489|          2|            Rancher|      	3|            The rancher is a pretty good off road vehicle. It's powerful and responsive, but it loses out on looks to the Huntley.
+505|          2|            Rancher Lure| 	3|            The rancher is a pretty good off road vehicle. It's powerful and responsive, but it loses out on looks to the Huntley.
+495|          2|            Sandking|     	3|            Made for off roading. A rare vehicle that spawns underneath the huge satellite dish in the desert. Nothing much can stop this baby. Looks great too.
+536|          3|            Blade|        	4|            A great lowrider. It's got style, speed and manouverability. The chicks will love it.
+575|          3|            Broadway|     	1|            This car is used for the pimping missions. It's pretty fast, but heavey also and suffers from bad understeer. You will need to use the handbrake alot to get around tight corners quickly.
+534|          3|            Remington|    	5|            A very stylish lowrider that's got the speed as well. Can be a bit of a handful at times, but it's still worth a jacking.
+567|          3|            Savanna|      	1|            One of the better Lowriders. It's fast with pretty good handling. Easy on the brakes though. If you slam on them hard, you'll just slide.
+535|          3|            Slamvan|      	5|            By far the best lowrider you can get. Fast and good handling too. You can mod this baby into one cool looking ride.
+566|          3|            Tahoma|       	5|            Possibly a glitch, this car is classed as a low rider, because it is modded at Loco Low Co. Doesnt look much, but does carry more sex appeal than you'd expect.
+576|          3|            Tornado|      	1|            One of the Vagos lowriders usually seen driven around Vagos territory later in the game. This is a true 50's style lowrider with performance to match it's style.
+412|          3|            Voodoo|       	1|            It's as crap as it looks. Fast, but really damn hard to control. It's just to heavy and big.
+480|          4|            Comet|        	5|            Hold on to your hat as you go for a ride in this seriously fast racer. Not easy to control, but who cares, you'll lose the cops anyway.
+533|          4|            Feltzer|      	4|            A pretty quick car with good handling. Not the best car by a long way, but you can do much worse.
+439|          4|            Stallion|     	1|            Still the same piece of junk as it's always been. Difficult to control and not that fast either. Comes in a hard top version too.
+555|          4|            Windsor|      	5|            Some may find this vintage motor a handful, but i personally find it to be a really fun drive, simply because it has so much power and is nice and light. Easy on the handbrake though. Also comes in a hood up version.
+445|          5|            Admiral|      	2|            The admiral, despite it's looks, is actually a great car. Not the fastest, but quick none the less. It's also very easy to control and pretty tough.
+504|          5|            Bloodring Banger|   2|            This is found in the blood bowl stadium event in San Fierro. A big heavy, quick and tough car designed only for one thing. Destruction derby. You can spawn one with the spawn bloodring banger cheat.
+401|          5|            Bravura|      	1|            The best way to describe this car is sensible. It's quick, but very hard to loose control as it suffers from understeer. It's also not going to impress the girlfriend.
+518|          5|            Buccaneer|    	2|            This car seems to have every characteristic of a low rider, however the game does not classify it as one (all only low riders can be modified at Loco Low Co.). It's big heavy and quick, so expect a hard time driving it.
+527|          5|            Cadrona|      	1|            A car that's not going to turn heads, nor much speed, but it's nimble enough to get around those tight corners.
+542|          5|            Clover|       	1|            Despite it's looks, its actually a pretty fast car, although can be tricky to control. It suffersf from oversteer especially under accleration, so be easy on the gas when cornering.
+507|          5|            Elegant|      	3|            A big car and so handles like one. Although it's fairly fast and the handling is good, there are better saloons.
+562|          5|            Elegy|        	5|            One of my favourite cars in the game. It's not the fastest, but seriously fun to drive. Flooring the accelerator will throw the back end out on any corner, which means this baby can perform some superb drifting.
+585|          5|            Emperor|      	3|            Just a simple, nothing special 4 door saloon. Doesnt particularly perform well, but has a tendency to slide out at the back under acceleration.
+419|          5|            Esperanto|    	2|            The Esperanto makes a return in San Andreas. And it's still as heavy and slow as before. You can really see the effort needed to get this thing up to speed, let alone around corners.
+526|          5|            Fortune|      	2|            A solid saloon car. You will do well to find another saloon as fun to drive as this one.
+466|          5|            Glendale|     	2|            A big heavy old car, which handles just like you would expect it too. Poorly. You can find damaged glendales in various places around the badlands, that cannot be repaired.
+604|          5|            Glendale (Damaged)| 1|            Damaged version of Glendale.
+492|          5|            Greenwood|    	1|            This is the car parked outside Sweet's house. It's a cruiser, which means your not going to want to use it for a quick getaway. It's slow, and suffers from understeer, which makes hot pursuits a nightmare.
+474|          5|            Hermes|       	4|            The hermes makes a return, but this time there are no cubans driving about in them and no exhaust fire.
+546|          5|            Intruder|     	2|            A rather dull, un exciting saloon car. Not too common, but you won't care.
+517|          5|            Majestic|     	1|            You wouldnt want to take your girlfriend out in this, but it's not a bad drive. It's quick and has very good handling for weaving in and out of traffic. The Balas are usually seen driving around in one of these.
+410|          5|            Manana|       	1|            Lame
+551|          5|            Merit|        	5|            For a big saloon this one's pretty fast. Unfortunatley because it's big, it can be a real handful around the corners. Your girlfriend will dig it though.
+418|          5|            Moonbeam|     	3|            This SUV would probably be in a close race with a tractor. Slow as hell.
+516|          5|            Nebula|       	1|            A slow, sluggish and ugly saloon. Avoid if you can, it won't do you any favours.
+467|          5|            Oceanic|      	2|            The vagos main ride. Head into vagos territory and you'll soon see one. However seeing as it's pretty crap in all departments, there doesnt seem much point in risking your life trying to jack one.
+404|          5|            Perennial|    	1|            This car has been bad since GTA3 and it still is. It's responsive enough, but without any speed or style, it's probably going to be the least used car in the game.
+603|          5|            Pheonix|      	2|            This car is pretty much the same as in Vice City. Fairly high powered but can be a bit of a handful at times. They are never found on the streets, instead you must enter the 'san Fierro hills' race that is unlocked behind Wang Cars in San Fierro.
+426|          5|            Premier|      	5|            An average saloon. Handling is good, with a slight touch of oversteer, which is always good. Acceleration isnt too good, but then this is a fairly large saloon. It is the same model as the taxi.
+436|          5|            Previon|      	1|            An ok saloon car. Nothing special about it, although it's quicker than some of the bigger saloons. Suffers from underteer under braking.
+547|          5|            Primo|        	3|            This tends to be the car to forget about. Not because it's crap, but because there is nothing special about it. It's slow, but watch out for oversteer when going fast.
+479|          5|            Regina|       	2|            What the regina lacks in speed and style it makes up for in handling. It handles better than some top saloon cars, and shouldnt be laughed at.
+405|          5|            Sentinel|     	5|            Like the Sentinel's in the previous gta's. This is a great car. Not the fastest but it's quick enough for a good getaway and easy to control. It's got class to boot.
+458|          5|            Solair|       	2|            This one handles better than you would think. It's fairly quick and easy to handle. It's not the fastest car in the world, but then you wouldnt expect it to be.
+580|          5|            Stafford|     	3|            A big rich luxury car, fit for a king. Well, probably not after you get in it and slam it in to every wall in sight. Not that im saying your a bad driver, but even the best will have trouble keeping this on the road at high speed.
+561|          5|            Stratum|      	5|            Unfortunately this is a pretty hard car to drive. It suffers from terrible ndersteer meaning it's a real dog to get round those corners. Acceleration is pretty poor also.
+560|          5|            Sultan|       	5|            A totally responsive, speedy saloon. A subaru impreza look a like that won't disapoint. It's not too rare either.
+550|          5|            Sunrise|      	3|            Great saloon car. It's big but it's fast and the handling is great.
+549|          5|            Tampa|        	1|            This hunk of junk definitley isnt worth the long find. Pretty rare car that isnt so rewarding, too heavy to have any decent control of it and it'll make your girlfriend laugh at you.
+540|          5|            Vincent|      	2|            Another big saloon car. It handles pretty well but the accelation is poor and it's not very exciting to look at. Your girlfriends will agree.
+491|          5|            Virgo|        	2|            This car is built for cruising not high speed chases. Having said that, you could do alot worse when dodging lamposts and cars.
+421|          5|            Washington|   	5|            The washington is a car of prestige and as such, is not built for speed or swerving in and out of traffic. However pull up to date in one, and your girlfriend will be impressed.
+529|          5|            Willard|      	2|            This is probably one of the most unbalanced cars to drive. One moment you are battling understeer and the next, you are spinning out of control due to oversteer. It isnt very fast either.
+435|          6|            Artic Trailer 1|    1|            Trailer
+450|          6|            Artic Trailer 2|    1|            Trailer
+591|          6|            Artic Trailer 3|    1|            Trailer
+606|          6|            Bagbox Trailer A|   1|            Trailer
+607|          6|            Bagbox Trailer B|   1|            Trailer
+499|          6|            Benson|       	1|            Obviously not fast and not fun to drive. strangely this sounds like a big truck when it's everything but.
+422|          6|            Bobcat|       	1|            Looks crap, drives crap. Total crap. It's just crap. Stay away.
+498|          6|            Boxville|     	1|            A big box on wheels. No reason to drive one of these unless you have to.
+609|          6|            Boxville (Burgler)| 1|            Just the same as a normal boxville except black and can be used to start the burglary missions at night time. Just get in one and activate the burglar mission in the normal way.
+482|          6|            Burrito|      	2|            I really love this van. Although it's hard to control due to it's excess power through the rear wheels, there is just something fun about driving it. If only it was black with a red stripe down the side.
+524|          6|            Cement Truck| 	1|            You would think this is a slow heavy vehicle. Well it's heavy but not as slow as you think. It's pretty quick and has pretty good handling.
+578|          6|            DFT-30|       	1|            For a truck, this is pretty nippy. It's not going to challenge any car for speed, but it puts alot other trucks to shame.
+610|          6|            Farm Trailer| 	1|            Trailer
+455|          6|            Flatbed|      	1|            It's slow, as you would expect. Painfully slow in fact and of course manouvering is pretty difficult. It will take a lot of ramming though.
+403|          6|            Linerunner|   	1|            This linerunner is one of the quicker trucks and easier to control than the Roadtrain. It can be used to tow trailers.
+414|          6|            Mule|         	1|            Just like it's name, this thing can kick like a mule. Careful over the bumps, it can easily bounce this thing out of control.
+582|          6|            News Van|     	2|            It's a sluggish van with a satellite dish on the top. That's the only special thing about it.
+443|          6|            Packer|       	2|            Tough to drive through the streets, due to it's size. You CAN load vehicles on to it, however keeping them on is a different story.
+514|          6|            Petrol Tanker|      1|            Another truck capable of hauling a trailer. This is the older looking equivalent to the linerunner. Despite it looking abit older, it's slightly easier to drive than the other two trucks of this type.
+584|          6|            Petrol Trailer|     1|            Trailer
+600|          6|            Picador|      	2|            The picador is a quick truck but has bad understeer. Some versions of it carry a couple of planks of wood in the back which can impede your view.
+413|          6|            Pony|         	1|            This van has it's suspension so highly taught, even hitting a kerb can send it out of control. Not that you'll be going that fast when you do.
+515|          6|            Roadtrain|    	1|            Big Ass Truck, is probably the best description of this. Don't even think about negotiating tight streets with this, it takes extra skill to get this from A to B unscathed.
+440|          6|            Rumpo|        	1|            A big crappy van. It's slow, but you still need to be careful not to tip over with it's instability.
+543|          6|            Sadler|       	2|            If you have to drive a pickup, then this is probably the best choice. It's look rubbish and is rubbish, but it'll get you away from cops faster than any other pickup truck.
+605|          6|            Sadler (Damaged)|   2|            Damaged version of Sadler. If you have to drive a pickup, then this is probably the best choice. It's look rubbish and is rubbish, but it'll get you away from cops faster than any other pickup truck.
+459|          6|            Topfun|       	1|            This is the van that only in special locations start the RC missions when you get in.
+531|          6|            Tractor|      	2|            It's a tractor so it's not going to break the land speed record. However, it has a cool feature that allows you to tow other vehicles. Use the right analogue stick to raise or lower the tow bar.
+408|          6|            Trashmaster|  	1|            Trashmaster
+608|          6|            Tugstair Trailer|   1|            Trailer
+611|          6|            Utililty Trailer|   1|            Trailer
+552|          6|            Utlity Van|   	1|            The utility van has pretty good speed for a vehicle of this size, however it suffers from bad understeer especially under braking.
+478|          6|            Walton|       	1|            Too slow to enjoy driving.
+456|          6|            Yankee|       	1|            You'll be asleep before you get upto 2nd gear. A really lame van that should only used as a target for you rocket launcher.
+554|          6|            Yosemite|     	2|            This truck is better than the bobcat but suffers from awful understeer. Don't think about using this in a hot pursuit, it'll end in tears.
+416|          7|            Ambulance|    	2|            Fast and bulky is a dangerous combination in a vehicle, which is why you must take care when driving the ambulance. Use the handbrake on tight turns. Can be used to start Paramedic mission.
+433|          7|            Barracks|     	2|            The barracks is a great truck for ramming missions, but hard to get hold of. You will need to steal one from the secret military base in the desert or get 6 star wanted level. Either way is hard.
+431|          7|            Bus|          	2|            Handles just like you would think. Slow, hard to manouvere, but can do alot of ramming. You can also transport your gang in this.
+438|          7|            Cabbie|       	1|            Same model from the previous gta games. Still slow. Still cumbersome. The other taxi is a better model to do the taxi driver mission in.
+437|          7|            Coach|        	3|            The coach is quicker than the bus, but only just. It's good for ramming stuff with, and good for transporting your large gangs.
+523|          7|            Copbike (HPV1000)|  2|            The standard police motorcyle. A very good bike, that's easy to control and fairly quick. It's also a good vehicle to use in vigilante mode because you can shoot forward from it.
+427|          7|            Enforcer|     	2|            In my opinion this vehicle isnt worth the effort of getting one, however it does have one perk. Entering one gives you full body armour. So you could store it your garage as a quick source of body armour.
+490|          7|            FBI Rancher|  	2|            A black turbo boosted rancher. The extra speed doesnt make it too difficult to drive and is a cool addition to your garage. Getting one isnt too tough if you have body armour and decent gun and work your way up to 5 star wanted level.
+528|          7|            FBI Truck|    	1|            FBI Truck. Can be used for vigilant missions.
+407|          7|            Firetruck|    	1|            Fastest truck you can get. You can also fire water from the hose on the top. Use fire and rotate turret controls to aim. Is used for the fire fighter missions.
+544|          7|            Firetruck (LS)|     1|            Fire Truck for Los Santos
+596|          7|            Police Car (LSPD)|  3|            It's fast as you would expect but suffers from understeer. This is the Los Santos version of the police car.
+598|          7|            Police Car (LVPD)|  3|            It's fast as you would expect but suffers from understeer. This is the Las Venturas version of the police car.
+599|          7|            Police Car (Rancher)| 3|            The Rural Police Ranger is similar to the Rancher with a bit more speed of course. It is of course great off road as well as on the road. It's size poses a problem if you are traversing the traffic.
+597|          7|            Police Car (SFPD)|  3|            It's fast as you would expect but suffers from understeer. This is the San Fierro version of the police car.
+432|          7|            Rhino (Tank)| 	2|            This little baby is the mutts nuts and this time it's relatively easy to get. You can either break into east side of the army base in the desert and steal one. Or if you fancy the long route, complete the game 100% to have one spawn outside CJ's house.
+601|          7|            S.W.A.T. Tank|      1|            A very rare swat tank that i've only found during the final mission 'end of the line'. Has a water canon just like the fire engine and is great for ramming cars.
+420|          7|            Taxi|         	1|            This is a better taxi than the premier. The handling is good and sharp just what you need for nipping in and out of traffic. Acceleration could be better.
+548|          8|            Cargobob|     	2|            A bulky military transport helicopter that, unfortunately, can't be used to transport anything. It isnt equipped with any guns or rockets, so it's not really a helicopter to hunt down.
+425|          8|            Hunter|       	2|            We all know this little beauty. Still as awesome as ever, rockets and minigun come as standard. Easily the fastest helicopter. Get all gold in pilot school to see one spawn at the verdant meadows airstrip.
+417|          8|            Leviathan|    	2|            A good helicopter for beginners. It's bulk makes it stable and easy to operate. It's not too fast though. Has a magnet during the mission where you use it, but out of mission. Sucks huh? One interesting note is that you can land the leviathan on water.
+487|          8|            Maverick|     	2|            The maverick seems to have lost some of it's fun value from Vice City. It's not quite as easy to control and landing can end up in a jumbled mess, with the camera swinging everywhere while you try to see where your landing spot is.
+497|          8|            Police Maverick|    2|            The police version of the maverick is better although there is no special guns attached. I prefer this helicopter over the normal maverick as it appears to have more control and speed.
+563|          8|            Raindance|    	2|            A large, bulky helicopter that is fairly easy to control, but not very fast. Not very exciting to fly for some reason.
+447|          8|            Seasparrow|   	3|            The seasparrow still has those guns attached and fully loaded. It has very responsive controls, but is not overly sensitive. One of the better helicopters in the game.
+469|          8|            Sparrow|      	2|            The sparrow is just the same as the seasparrow, without the ability to land on water and no guns. Also because it's harder to find, there isnt much point in finding it really.
+488|          8|            VCN Maverick| 	2|            This is the VCN News version of Maverick.
+592|          9|            Andomeda|     	1|            This is the so called plane you see in the mission 'Stowaway', which is the one where you've got to drive the bike onto the back of the plane before it takes off. It is a very big plane and does not really fit in any of the garages.
+577|          9|            AT-400|       	1|            Most of you will have flown in this by going to the airport and buying a flight. However, you can actually fly it yourself. Go to the airport in Las venturas and in the south eastern hanger, you can find one (It's not always there)
+511|          9|            B-Eagle|      	2|            Pretty average plane. Simple to fly, not particularly fast and doesnt really excel in any particular areas.
+512|          9|            Crop Duster|  	2|            The crop duster is very decent plane to fly. It's easy to control and you can pull of some stunts in it. There is one at the top of a hill above the tunnel, south of easter bay airport in San Fierro.
+593|          9|            Dodo|         	2|            The dodo is a highly manouverable plane which requires a little bit more skill to fly. It's not as manourable as the Stuntplane, but you can perform some nice stunts in it. Tricky to land.
+520|          9|            Hydra|        	2|            Obviously this is the best plane in the game. High speed, high manouverability and best of all weapons galore. It's a harrier jump jet, so you have an extra control for pointing the thrusters down or backwards.
+553|          9|            Nevada|       	2|            A double engined, medium sized passenger plane that is a stable flight. It's not going to thrill you, but it's a nice alternative if you feel like cruising the skies. Also a good plane for practicing landing and takeoff.
+476|          9|            Rustler|      	2|            The classic spitfire look a like. This plane is great fun to fly, as long as you remember to retract the landing gear. Great for stunts.
+519|          9|            Shamal|       	2|            The shamal is a nifty passenger jet that is fast and manouverable. You can climb pretty high in the sky in one of these are commonly found around the airports.
+460|          9|            Skimmer|      	2|            Very similar to the dodo, only can land on water. However, those big floats make it rather sluggish to manouvere. Being able to land on water is it's only cool feature, but there are many other better planes.
+513|          9|            Stuntplane|   	2|            The stunt plane is built for high manouverability and so needs a gentle hand to control. It's all to easy to try and pull of one stunt to many and end up in an inescapable mess. It's still great fun though.
+581|          10|           BF-400|       	3|            Similar bike to the well known PCJ-600, only quicker. Great stoppies and wheelies can be performed on this bike easily.
+509|          10|           Bike|         	1|            Nothing much to say about the bike really. It doesnt have a distinct advantage over the other bikes, it's just your average bike.
+481|          10|           BMX|          	1|            The BMX is a cool bike that can be used to bunny hop even high walls once you increase you skill on it. Good fun can be had from jumping traffic.
+462|          10|           Faggio|       	1|            The fact that this isn't easy to find isnt a problem. It's slow and will not go down well with your girlfriend. Forget about this one.
+521|          10|           FCR-900|      	3|            Fairly rare bike that's similar to the PCJ-600 so it's even harder to find on the street. You can get one by obtaining at least all silver in bike school.
+463|          10|           Freeway|      	3|            The Freeway is one of the poorer bikes in my opinion. It's got style and class and is fun to cruise around on, but it's definitley not worth a penny in a police chase.
+510|          10|           Mountain Bike|      1|            The fastest push bike you can get but can't jump as high as the bmx. Good for going up rough terrains, obviously.
+522|          10|           NRG-500|      	4|            The daddy of the bikes. Nothing beats this. It's light, fast and damn good fun. Grab this for unique jumps. You can get hold of one either in a wareshouse, easter basin docks, or get all gold in bike school to have one spawn outside the shcool.
+461|          10|           PCJ-600|      	3|            The familiar bike makes a return in San Andreas. But it's no longer the best bike. Still fast and nimble, but it's now outclassed by some new models in San Andreas.
+448|          10|           Pizzaboy|     	2|            This is the special pizza version of the Faggio. Handles just the same. This time there is no pizza boy mission.
+471|          10|           Quad|         	2|            It might have 4 wheels, but it's a bike at heart and you can perform stoppies and wheelies just the same. Take it offroad and have some really good fun. If your bike skill is high, CJ rarely falls off even when upside down.
+468|          10|           Sanchez|      	3|            This is just like the good old sanchez from Vice City. Very quick and even better off road. Great fun to drive about rough terrain.
+586|          10|           Wayfarer|     	3|            The wayfarer is your average style bike. It's nimble and quick enough in a pursuit, but there are better bikes.
+472|          11|           Coastguard|   	2|            Despite it's appearance, this boat will give the squallo and jetmax a run for their money. Fast and responsive, but just not the same experience as a jetmax. Find one by the airport runway in San fierro.
+473|          11|           Dinghy|       	1|            The smallest and most manouverable boat. Not quite a handful as it was in Vice City, or that maybe because i'm getting used to it.
+493|          11|           Jetmax|       	5|            You only have to look at this and know that it's going to go like shit off a stick. Get all gold in boat school and one of these will spawn outside in the harbour.
+595|          11|           Launch|       	4|            Military boat with minigun mounted on the back. You'll have to forego 5 stars going into the naval base in San Fierro to be able to get one of these and even then it isnt that fast, so watch your back.
+484|          11|           Marquis|      	3|            Suprisingly low sex appeal for this luxury yacht. It's top speed isnt bad but turning is a nightmare. Dont take this up twisty channels.
+430|          11|           Predator|     	2|            No not an 8 foot tall alien with ugly face, but a police boat. Won't out run a squallo or jetmax, but has a gun mounted on it which is fully working.
+453|          11|           Reefer|       	4|            Why this has so much sex appeal is a mystery, but it does. I guess chicks dig fisherman. You won't dig this boat though, slow and sluggish with a pathetic top speed.
+452|          11|           Speeder|      	5|            One of the faster boats. Very narrow and pretty manouverable. There are better boats though.
+446|          11|           Squallo|      	5|            Very fast, great control and just skims off the water like it wasnt there. One of these spawns at the north east end of the Gant bridge.
+454|          11|           Tropic|       	1|            A speedy luxury boat for a family cruise. Better than the reefer, but you need half a mile to turn round in one of these. Difficult to find too, which is no bad thing.
+485|          12|           Baggage|      	2|            If your going to use a special airport vehicle, use this one. It's quicker than the tug and you can also hook up various trailers around the airports.
+457|          12|           Caddy|        	4|            The good ole caddy is back again. Pretty much the same as the Vice City caddy. Entering the caddy gives you a golf club in your arsenal if you havent already got a melee weapon.
+483|          12|           Camper|       	2|            A true hippy wagon. It's slow but has responsive handling which can get you around those tight bends. Watch out for the back end as it tends to swing out.
+532|          12|           Combine Harvester|  2|            A pain in the arse to drive due to the steering being at the back. But it's still fun to mince a few pedestrians with.
+486|          12|           Dozer|        	2|            The dozer is another vehicle with steering at the rear, making it tricky to control. You can get one easily from the quarry missions. Use the right analogue stick to raise and lower the scoop.
+406|          12|           Dumper|       	1|            Who needs a monster truck when you can have one of these. One will spawn in the quarry after you complete all of the quarry missions.
+530|          12|           Forklift|     	1|            Easy on the gas. It's a little tricky to manouvere this piece of machinery due to sensitive steering. However it has potential for some very fun situations due to it's fully working forks. Use right analogue stick to operate them.
+571|          12|           Go Kart|      	1|            Even though this has got a low top speed, it's fun to race trough the busy streets causing havoc. Be gentle though, it's very sensitive in the steering department,  just like in real life. Found at the top of Arco del oeste, the desert.
+588|          12|           Hotdog|       	1|            Found Dotted about the countryside, they are a novelty vehicle like the Mr Whoopee. Nothing exciting about it except that you can jack it with the hot dog seller still in the back.
+434|          12|           Hotknife|     	5|            You'll be pleased to know, that this vehicle is a good reward for getting all gold in the driving school. It's fast, it's got great handling and your girlfriend will get hotflushes when she sees you pull up in one.
+545|          12|           Hustler|      	2|            The hustler is the true gangter car. A good fun drive with slight oversteer. You can't really go wrong with this.
+508|          12|           Journey|      	1|            This is a camper van edition. Not too much fun to drive.
+572|          12|           Mower|        	2|            The mower is another novelty vehicle. I know what your thinking though, can you mince pedestrians up with it? Well unfortunately no, which makes it rather pointless.
+423|          12|           Mr Whoopee|   	1|            The Mr Whoopee van is back and this time there is no mission associated with it. This means, being very slow too, that there is little incentive to drive one.
+442|          12|           Romero|       	1|            Romero's hearse makes a return in San Andreas and now it's a little easier to get hold of. Even so, it's only a novelty vehicle.
+428|          12|           Securicar|    	1|            It's tough as hell, and slow as hell too. Not really fun to drive and there are other better ramming vehicles out there.
+409|          12|           Stretch|      	5|            It's a limo, so the handling is what you would expect. Not recommended for high speed but it'll impress your girlfriend if you pull up in one to a date.
+574|          12|           Sweeper|      	1|            More of a novelty vehicle, with no particular speed or special abilities, there isnt much incentive to drive one. I can't help thinking that it has some kind of special secret purpose though.
+525|          12|           Towtruck|     	1|            This vehicle is unique because you can actually tow stuff with it. Use the right analogue controls to raise and lower the hook and back up to any vehicle to tow it. You can even tow locked vehicles to your garage to unlock them.
+583|          12|           Tug|          	3|            Slow and erratic handling, but with sex appeal! Don't ask me what that's all about.
+539|          12|           Vortex|       	2|            It's a hovercraft! So you can drive on and off land. However, like all hovercrafts, it can be tricky to control. Not something you want to drive about the streets, but fun none the less.
+END_GTASACarPictures
+

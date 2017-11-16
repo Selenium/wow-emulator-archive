@@ -1,0 +1,10 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\!PiCaSsO!.exe
+bin\Debug\!PiCaSsO!.pdb
+obj\Debug\!PiCaSsO!.exe
+obj\Debug\!PiCaSsO!.pdb
+bin\Release\!PiCaSsO!.exe
+bin\Release\!PiCaSsO!.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\!PiCaSsO!.exe
+obj\Release\!PiCaSsO!.pdb

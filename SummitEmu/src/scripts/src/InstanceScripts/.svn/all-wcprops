@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/InstanceScripts
+END
+Raid_ZulGurub.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/InstanceScripts/Raid_ZulGurub.cpp
+END
+Setup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/InstanceScripts/Setup.cpp
+END
+Raid_Naxxramas.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/InstanceScripts/Raid_Naxxramas.cpp
+END
+Raid_OnyxiasLair.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/InstanceScripts/Raid_OnyxiasLair.cpp
+END
+Battleground_AlteracValley.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/InstanceScripts/Battleground_AlteracValley.cpp
+END
+Setup.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/InstanceScripts/Setup.h
+END
+Raid_MoltenCore.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/InstanceScripts/Raid_MoltenCore.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/InstanceScripts/Makefile.am
+END
+Raid_BlackwingLair.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/InstanceScripts/Raid_BlackwingLair.cpp
+END
+Instance_Deadmines.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/InstanceScripts/Instance_Deadmines.cpp
+END

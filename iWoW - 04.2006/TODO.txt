@@ -1,0 +1,18 @@
+The TODO list contains job asignments. If you see something that needs work, add it to the list. To assign yourself to one of the jobs, simply write your name behind it, and dont forget to commit it ;). - Yellow
+
+This is what currently needs doing:
+
+* Items do not show for other players - (check player updates)
+* Moving around items changes Health - (might be just item stats, low priority)
+* Spells/skills do not work propperly - 
+* Some mana/rage stats seem wrong
+* Rest status is wrong -
+* Player doesnt change to swim stance when entering water - (all emote support)
+
+* Work on 1.9.X Support 
+* Account creation / edit in the winloader -  (some work done, putting on hold for now)
+
+
+
+
+

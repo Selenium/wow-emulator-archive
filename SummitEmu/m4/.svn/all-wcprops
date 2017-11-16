@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/norwegianelite/!svn/ver/19/Summit/m4
+END
+ax_lib_postgresql.m4
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/norwegianelite/!svn/ver/19/Summit/m4/ax_lib_postgresql.m4
+END
+acx_pthread.m4
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/norwegianelite/!svn/ver/19/Summit/m4/acx_pthread.m4
+END
+ax_lib_mysql.m4
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/norwegianelite/!svn/ver/19/Summit/m4/ax_lib_mysql.m4
+END
+ax_path_lib_pcre.m4
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/m4/ax_path_lib_pcre.m4
+END
+check_ssl.m4
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/norwegianelite/!svn/ver/19/Summit/m4/check_ssl.m4
+END

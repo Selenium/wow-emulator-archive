@@ -1,0 +1,54 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game", "..\src\game\game.vcproj", "{8EE6CED1-C221-4EAA-B79F-F1B25C3946CB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "realmlist", "..\src\realmlist\realmlist.vcproj", "{F6BD0009-52DA-4C1D-B6BA-44140974C83C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shared", "..\src\shared\shared.vcproj", "{8D074D34-03B4-42E9-9687-264399CAFFEF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua", "..\src\shared\lua\lua.vcproj", "{EA4B7CFE-6FBF-42C3-A4E3-CBD36265BC41}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "srp", "..\src\srp\srp.vcproj", "{FF468AA4-02AF-4E43-8383-9B4E91F41AFC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wsdrealmlist", "..\src\wsdrealmlist\wsdrealmlist.vcproj", "{ADC13C9B-A084-4DE8-9818-489C2706E898}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wsdworldsrv", "..\src\wsdworldsrv\wsdworldsrv.vcproj", "{40B32D72-F154-4539-AE51-E565196C6B69}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Scons = Scons
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8EE6CED1-C221-4EAA-B79F-F1B25C3946CB}.Scons.ActiveCfg = Scons|Win32
+		{8EE6CED1-C221-4EAA-B79F-F1B25C3946CB}.Scons.Build.0 = Scons|Win32
+		{F6BD0009-52DA-4C1D-B6BA-44140974C83C}.Scons.ActiveCfg = Scons|Win32
+		{F6BD0009-52DA-4C1D-B6BA-44140974C83C}.Scons.Build.0 = Scons|Win32
+		{8D074D34-03B4-42E9-9687-264399CAFFEF}.Scons.ActiveCfg = Scons|Win32
+		{8D074D34-03B4-42E9-9687-264399CAFFEF}.Scons.Build.0 = Scons|Win32
+		{EA4B7CFE-6FBF-42C3-A4E3-CBD36265BC41}.Scons.ActiveCfg = Scons|Win32
+		{EA4B7CFE-6FBF-42C3-A4E3-CBD36265BC41}.Scons.Build.0 = Scons|Win32
+		{FF468AA4-02AF-4E43-8383-9B4E91F41AFC}.Scons.ActiveCfg = Scons|Win32
+		{FF468AA4-02AF-4E43-8383-9B4E91F41AFC}.Scons.Build.0 = Scons|Win32
+		{ADC13C9B-A084-4DE8-9818-489C2706E898}.Scons.ActiveCfg = Scons|Win32
+		{ADC13C9B-A084-4DE8-9818-489C2706E898}.Scons.Build.0 = Scons|Win32
+		{40B32D72-F154-4539-AE51-E565196C6B69}.Scons.ActiveCfg = Scons|Win32
+		{40B32D72-F154-4539-AE51-E565196C6B69}.Scons.Build.0 = Scons|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

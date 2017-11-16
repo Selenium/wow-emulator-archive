@@ -1,0 +1,23 @@
+!PiCaSsO! version Alpha 0.01 Copyright (C) 2006 by !PiCaSsO! Developer team
+09/19/2006 21:46:06: Loading account TEST...
+09/19/2006 21:46:06: Loaded all accounts from database!
+09/19/2006 21:46:06: Building external C# scripts, please wait...
+09/19/2006 21:46:06: Global scripts successfully loaded!
+09/19/2006 21:46:06: HTTPServer listening on port 8080
+09/19/2006 21:46:06: Worldserver listening on port 8085
+09/19/2006 21:46:07: AuthServer listening on port 1234
+09/19/2006 21:46:07: Waiting for incoming connections...
+09/19/2006 21:46:51: Incoming connection!
+09/19/2006 21:46:51: Recieved Logon Challenge!
+09/19/2006 21:46:51: Cient version accepted: 2.0.0, ID = 56085!
+09/19/2006 21:46:51: Recieved AUTH_CHALLENGE from user: TEST
+09/19/2006 21:46:52: Logon proof!
+09/19/2006 21:46:52: Client requested realmlist!
+09/19/2006 21:46:52: Client Redirected to Worldserver!
+09/19/2006 21:46:52: Challenged client to auth again.
+09/19/2006 21:46:52: Recieved 2nd auth from client!
+09/19/2006 21:46:52: Account found: TEST
+09/19/2006 21:46:52: Received CMSG_CHAR_ENUM
+09/19/2006 21:47:13: Player entered World.
+09/19/2006 21:47:13: Updated account data.
+09/19/2006 21:47:22: Recieve unknown OPCode: 29001

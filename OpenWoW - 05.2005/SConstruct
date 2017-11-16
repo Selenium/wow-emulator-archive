@@ -1,0 +1,135 @@
+import os
+import SCons
+
+opts = Options('buildconf.py')
+env = Environment(options=opts)
+env.SConsignFile()
+
+# PathOption validator for SCons 0.97
+## def PathBuildDir(key, val, env):
+##     if val is not None:
+##         SCons.Options.PathOption.PathIsDirCreate(
+##             key,
+##             os.path.abspath(env.subst(val)),
+##             env)
+##         pass
+##     pass
+# use it like so:
+## PathOption('builddir',
+##            'build directory',
+##            None,
+##            PathBuildDir)
+
+opts.AddOptions(EnumOption('buildtype',
+                           'build type',
+                           'debug',
+                           allowed_values=('debug', 'release')),
+                EnumOption('buildenv',
+                           'build environment',
+                           'auto',
+                           allowed_values=('auto',
+                                           'linux-gcc',
+                                           'win32-msvc')))
+opts.Add('builddir', 'build directory', None)
+Help(opts.GenerateHelpText(env))
+opts.Update(env)
+
+# buildenv option
+assert(env.has_key('buildenv'))
+assert(env.has_key('PLATFORM'))
+if env['buildenv'] == 'auto':
+    if env['PLATFORM'] == 'win32':
+        env['buildenv'] = 'win32-msvc'
+    elif env['PLATFORM'] == 'posix':
+        env['buildenv'] = 'linux-gcc'
+        pass
+    pass
+pass
+
+# buildtype option
+assert(env.has_key('buildtype'))
+
+# build environments
+if env['buildenv'] == 'win32-msvc':
+    disable_warnings = ['/wd4100', '/wd4201', '/wd4121']
+
+    env.Replace(CFLAGS=['/nologo'],
+                CXXFLAGS=['/nologo', '/EHsc', '/Zc:forScope', '/W4',
+                          '/Wp64'] + disable_warnings,
+                CPPDEFINES=['VC_EXTRALEAN', 'WIN32_LEAN_AND_MEAN', 'WIN32'])
+
+    if env['buildtype'] == 'debug':
+        mysql_lib_path = 'C:\Program Files\MySQL\MySQL Server 4.1\lib\debug'
+        env.Append(CFLAGS=['/Od', '/MTd'],
+                   CXXFLAGS=['/Od', '/RTCcsu', '/Ge', '/GS', '/Z7', '/MTd'],
+                   CPPDEFINES=['_DEBUG'],
+                   LINKFLAGS=['/DEBUG'])
+        pass
+    elif env['buildtype'] == 'release':
+        mysql_lib_path = 'C:\Program Files\MySQL\MySQL Server 4.1\lib\opt'
+        env.Append(CFLAGS=['/O2', '/MT'],
+                   CXXFLAGS=['/O2', '/GS', '/MT'])
+        pass
+
+    env.Append(CPPPATH=['C:\Program Files\MySQL\MySQL Server 4.1\include',
+                        'C:\OpenSSL\include'],
+               LIBS=['libeay32', 'ssleay32', 'libmysql', 'Winmm', 'Ws2_32'],
+               LIBPATH=['C:\OpenSSL\lib\VC', mysql_lib_path])
+    pass
+elif env['buildenv'] == 'linux-gcc':
+    # write GCC temporary files to user's home directory
+    env['ENV']['TMPDIR'] = '/tmp'
+
+    env.Replace(CFLAGS=['-Wall', '-Werror', '-std=c99'],
+                CXXFLAGS=['-Wall', '-Werror', '-ansi', '-pedantic'])
+    if env['buildtype'] == 'debug':
+        env.Append(CFLAGS=['-O0', '-ggdb'],
+                   CXXFLAGS=['-O0', '-ggdb'])
+    elif env['buildtype'] == 'release':
+        env.Append(CFLAGS=['-O2'],
+                   CXXFLAGS=['-O2'])
+        pass
+
+    # dependencies
+    env.Append(CPPPATH=['/usr/include/mysql', '/usr/kerberos/include'],
+               LIBPATH=['/usr/lib/mysql'],
+               LIBS=['ssl', 'mysqlclient_r'])
+
+    pass
+
+# environments for components
+game_env = env.Copy()
+realmlist_env = env.Copy()
+shared_env = env.Copy()
+srp_env = env.Copy()
+wsdrealmlist_env = env.Copy()
+wsdworldsrv_env = env.Copy()
+lua_env = env.Copy()
+
+components = {
+    'game' : ('game_env', 'game'),
+    'realmlist' : ('realmlist_env', 'realmlist'),
+    'shared' : ('shared_env', 'shared'),
+    'srp' : ('srp_env', 'srp'),
+    'wsdrealmlist' : ('wsdrealmlist_env', 'wsdrealmlist'),
+    'wsdworldsrv' : ('wsdworldsrv_env', 'wsdworldsrv'),
+    'lua' : ('lua_env', os.path.join('shared', 'lua')),
+    }
+
+for ckey in components.iterkeys():
+    dir = components[ckey][1]
+    sconscript = os.path.join('src', dir, 'SConscript')
+    exports = [components[ckey][0]]
+    if env.has_key('builddir'):
+        build_dir_base = os.path.join(env.subst(env['builddir']),
+                                      env['buildtype'])
+        build_dir = os.path.join(build_dir_base, dir)
+        env.SConscript(sconscript,
+                       exports=exports,
+                       build_dir=build_dir,
+                       duplicate=1)
+        pass
+    else:
+        env.SConscript(sconscript, exports=exports)
+        pass
+    pass

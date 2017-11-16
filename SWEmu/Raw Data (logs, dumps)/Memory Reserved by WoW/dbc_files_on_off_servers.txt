@@ -1,0 +1,138 @@
+00555D90   MOV EAX,WoW.007F2AB4                      ASCII "DBFilesClient\AnimationData.dbc" not interesting but it can also can be accept by client
+00555F80   MOV EAX,WoW.007F2AF4                      ASCII "DBFilesClient\AreaPOI.dbc" 			?
+00556510   MOV EAX,WoW.007F2B2C                      ASCII "DBFilesClient\AreaTable.dbc"		?	
+00556900   MOV EAX,WoW.007F2B64                      ASCII "DBFilesClient\AreaTrigger.dbc"		?
+00556B10   MOV EAX,WoW.007F2BA4                      ASCII "DBFilesClient\AttackAnimKits.dbc"		?
+00556C80   MOV EAX,WoW.007F2BE8                      ASCII "DBFilesClient\AttackAnimTypes.dbc"		?
+00556DA0   MOV EAX,WoW.007F2C30                      ASCII "DBFilesClient\AuctionHouse.dbc"		auction
+00557080   MOV EAX,WoW.007F2C70                      ASCII "DBFilesClient\BankBagSlotPrices.dbc"	bank
+00557180   MOV EAX,WoW.007F2CB8                      ASCII "DBFilesClient\CameraShakes.dbc"		visuality i think
+00557350   MOV EAX,WoW.007F2CF8                      ASCII "DBFilesClient\Cfg_Categories.dbc"		?
+005575F0   MOV EAX,WoW.007F2D3C                      ASCII "DBFilesClient\Cfg_Configs.dbc"		presonal player settings
+00557730   MOV EAX,WoW.007F2D7C                      ASCII "DBFilesClient\CharBaseInfo.dbc"		?
+00557830   MOV EAX,WoW.007F2DBC                      ASCII "DBFilesClient\CharHairGeosets.dbc"		?
+005579C0   MOV EAX,WoW.007F2E04                      ASCII "DBFilesClient\CharSections.dbc"		?
+00557C10   MOV EAX,WoW.007F2E44                      ASCII "DBFilesClient\CharStartOutfit.dbc"		?
+00557DE0   MOV EAX,WoW.007F2E8C                      ASCII "DBFilesClient\CharVariations.dbc"		?
+00557F00   MOV EAX,WoW.007F2ED0                      ASCII "DBFilesClient\CharacterCreateCameras.dbc"   visuality
+00558090   MOV EAX,WoW.007F2F24                      ASCII "DBFilesClient\CharacterFacialHairStyles.dbc"visuality
+00558240   MOV EAX,WoW.007F2F7C                      ASCII "DBFilesClient\ChatChannels.dbc"		chat system
+00558690   MOV EAX,WoW.007F2FBC                      ASCII "DBFilesClient\ChatProfanity.dbc"		?
+005587B0   MOV EAX,WoW.007F2FFC                      ASCII "DBFilesClient\ChrClasses.dbc"		self-explainig
+00558B10   MOV EAX,WoW.007F3038                      ASCII "DBFilesClient\ChrRaces.dbc"			self-explainig
+00559070   MOV EAX,WoW.007F3070                      ASCII "DBFilesClient\CinematicCamera.dbc"		visuality
+00559240   MOV EAX,WoW.007F30B8                      ASCII "DBFilesClient\CinematicSequences.dbc"	visuality
+00559360   MOV EAX,WoW.007F3104                      ASCII "DBFilesClient\CreatureDisplayInfoExtra.dbc"	visuality
+00559590   MOV EAX,WoW.007F315C                      ASCII "DBFilesClient\CreatureDisplayInfo.dbc"	visuality
+00559820   MOV EAX,WoW.007F31AC                      ASCII "DBFilesClient\CreatureFamily.dbc"		interesting
+00559B90   MOV EAX,WoW.007F31F0                      ASCII "DBFilesClient\CreatureModelData.dbc"	visuality
+00559E90   MOV EAX,WoW.007F3238                      ASCII "DBFilesClient\CreatureSoundData.dbc"	sound
+0055A210   MOV EAX,WoW.007F3280                      ASCII "DBFilesClient\CreatureSpellData.dbc"	interesting
+0055A330   MOV EAX,WoW.007F32C8                      ASCII "DBFilesClient\CreatureType.dbc"		interesting
+0055A5D0   MOV EAX,WoW.007F3308                      ASCII "DBFilesClient\DeathThudLookups.dbc"		?
+0055A740   MOV EAX,WoW.007F3350                      ASCII "DBFilesClient\DurabilityCosts.dbc"		repairing costs
+0055A860   MOV EAX,WoW.007F3398                      ASCII "DBFilesClient\DurabilityQuality.dbc"	for items
+0055A960   MOV EAX,WoW.007F33E0                      ASCII "DBFilesClient\Emotes.dbc"			misc
+0055AB30   MOV EAX,WoW.007F3414                      ASCII "DBFilesClient\EmotesTextData.dbc"		misc
+0055ADB0   MOV EAX,WoW.007F3458                      ASCII "DBFilesClient\EmotesTextSound.dbc"		misc
+0055AF20   MOV EAX,WoW.007F34A0                      ASCII "DBFilesClient\EmotesText.dbc"		misc
+0055B090   MOV EAX,WoW.007F34DC                      ASCII "DBFilesClient\EnvironmentalDamage.dbc"	?
+0055B1B0   MOV EAX,WoW.007F352C                      ASCII "DBFilesClient\Exhaustion.dbc"		maybe relaxation
+0055B4D0   MOV EAX,WoW.007F3568                      ASCII "DBFilesClient\FactionGroup.dbc"		interesting
+0055B7A0   MOV EAX,WoW.007F35A8                      ASCII "DBFilesClient\Faction.dbc"			interesting
+0055BCB0   MOV EAX,WoW.007F35E0                      ASCII "DBFilesClient\FactionTemplate.dbc"		interesting
+0055BE80   MOV EAX,WoW.007F3628                      ASCII "DBFilesClient\FootprintTextures.dbc"	visuality
+0055BFA0   MOV EAX,WoW.007F3670                      ASCII "DBFilesClient\FootstepTerrainLookup.dbc"	visuality
+0055C110   MOV EAX,WoW.007F36C0                      ASCII "DBFilesClient\GameObjectDisplayInfo.dbc"	visuality
+0055C260   MOV EAX,WoW.007F3710                      ASCII "DBFilesClient\GameTips.dbc"			misc
+0055C4E0   MOV EAX,WoW.007F3748                      ASCII "DBFilesClient\GMTicketCategory.dbc"		gm stuff for ticket helping
+0055C760   MOV EAX,WoW.007F3790                      ASCII "DBFilesClient\GroundEffectDoodad.dbc"	?
+0055C8B0   MOV EAX,WoW.007F37DC                      ASCII "DBFilesClient\GroundEffectTexture.dbc"	visuality
+0055CAA0   MOV EAX,WoW.007F382C                      ASCII "DBFilesClient\HelmetGeosetVisData.dbc"	visuality
+0055CBA0   MOV EAX,WoW.007F387C                      ASCII "DBFilesClient\ItemClass.dbc"		interesting
+0055CE60   MOV EAX,WoW.007F38B4                      ASCII "DBFilesClient\ItemDisplayInfo.dbc"		visualuty
+0055D260   MOV EAX,WoW.007F38FC                      ASCII "DBFilesClient\ItemGroupSounds.dbc"		sound
+0055D360   MOV EAX,WoW.007F3944                      ASCII "DBFilesClient\ItemPetFood.dbc"		hmm ?
+0055D5E0   MOV EAX,WoW.007F3984                      ASCII "DBFilesClient\ItemRandomProperties.dbc"	self-explain
+0055D8B0   MOV EAX,WoW.007F39D4                      ASCII "DBFilesClient\ItemSet.dbc"			self-explain
+0055DCB0   MOV EAX,WoW.007F3A0C                      ASCII "DBFilesClient\ItemSubClassMask.dbc"		class Mask - interesting
+0055DF50   MOV EAX,WoW.007F3A54                      ASCII "DBFilesClient\ItemSubClass.dbc"		what is a subclass?
+0055E4C0   MOV EAX,WoW.007F3A94                      ASCII "DBFilesClient\ItemVisualEffects.dbc"	visuality
+0055E5E0   MOV EAX,WoW.007F3ADC                      ASCII "DBFilesClient\ItemVisuals.dbc"		visuality
+0055E6E0   MOV EAX,WoW.007F3B1C                      ASCII "DBFilesClient\LanguageWords.dbc"		lang
+0055E830   MOV EAX,WoW.007F3B5C                      ASCII "DBFilesClient\Languages.dbc"		lang
+0055EAB0   MOV EAX,WoW.007F3B94                      ASCII "DBFilesClient\LoadingScreens.dbc"		visuality
+0055EC10   MOV EAX,WoW.007F3BD8                      ASCII "DBFilesClient\LoadingScreenTaxiSplines.dbc"	visuality
+0055ED80   MOV EAX,WoW.007F3C30                      ASCII "DBFilesClient\Lock.dbc"			for dbc working correctly
+0055EEF0   MOV EAX,WoW.007F3C60                      ASCII "DBFilesClient\LockType.dbc"			the same
+0055F520   MOV EAX,WoW.007F3C98                      ASCII "DBFilesClient\Map.dbc"			self-explain
+0055FD40   MOV EAX,WoW.007F3CC8                      ASCII "DBFilesClient\Material.dbc"			crafting stuff
+0055FE60   MOV EAX,WoW.007F3D00                      ASCII "DBFilesClient\NameGen.dbc"			names			
+0055FFD0   MOV EAX,WoW.007F3D38                      ASCII "DBFilesClient\NPCSounds.dbc"		sound
+005600D0   MOV EAX,WoW.007F3D70                      ASCII "DBFilesClient\NamesProfanity.dbc"		names
+005601F0   MOV EAX,WoW.007F3DB4                      ASCII "DBFilesClient\NamesReserved.dbc"		names
+00560310   MOV EAX,WoW.007F3DF4                      ASCII "DBFilesClient\Package.dbc"			?
+005605E0   MOV EAX,WoW.007F3E2C                      ASCII "DBFilesClient\PageTextMaterial.dbc"		text
+00560700   MOV EAX,WoW.007F3E74                      ASCII "DBFilesClient\PaperDollItemFrame.dbc"	frame ui stuff
+00560860   MOV EAX,WoW.007F3EC0                      ASCII "DBFilesClient\PetLoyalty.dbc"		pet stuff
+00560AE0   MOV EAX,WoW.007F3EFC                      ASCII "DBFilesClient\PetPersonality.dbc"		pet stuff
+00560DC0   MOV EAX,WoW.007F3F40                      ASCII "DBFilesClient\QuestInfo.dbc"		quest stuff
+00561040   MOV EAX,WoW.007F3F78                      ASCII "DBFilesClient\QuestSort.dbc"		?
+005612C0   MOV EAX,WoW.007F3FB0                      ASCII "DBFilesClient\Resistances.dbc"		self-explain
+00561580   MOV EAX,WoW.007F3FF0                      ASCII "DBFilesClient\ServerMessages.dbc"		interesting
+00561800   MOV EAX,WoW.007F4034                      ASCII "DBFilesClient\SheatheSoundLookups.dbc"	sound
+005619B0   MOV EAX,WoW.007F4084                      ASCII "DBFilesClient\SkillCostsData.dbc"		skill stuff
+00561AD0   MOV EAX,WoW.007F40C8                      ASCII "DBFilesClient\SkillLineAbility.dbc"		skill stuff
+00561D60   MOV EAX,WoW.007F4110                      ASCII "DBFilesClient\SkillLineCategory.dbc"	skill stuff
+00562000   MOV EAX,WoW.007F4158                      ASCII "DBFilesClient\SkillLine.dbc"		skill stuff
+00562480   MOV EAX,WoW.007F4190                      ASCII "DBFilesClient\SkillRaceClassInfo.dbc"	skill stuff
+00562650   MOV EAX,WoW.007F41DC                      ASCII "DBFilesClient\SkillTiers.dbc"		skill stuff
+00562770   MOV EAX,WoW.007F4218                      ASCII "DBFilesClient\SoundAmbience.dbc"		sound
+00562870   MOV EAX,WoW.007F4258                      ASCII "DBFilesClient\SoundEntries.dbc"		sound
+00562C60   MOV EAX,WoW.007F4298                      ASCII "DBFilesClient\SoundProviderPreferences.dbc"	sound
+00563060   MOV EAX,WoW.007F42F0                      ASCII "DBFilesClient\SoundSamplePreferences.dbc"	sound
+00563350   MOV EAX,WoW.007F4344                      ASCII "DBFilesClient\SoundWaterType.dbc"		sound
+00563490   MOV EAX,WoW.007F4388                      ASCII "DBFilesClient\SpellCastTimes.dbc"		Spell stuff
+005635D0   MOV EAX,WoW.007F43CC                      ASCII "DBFilesClient\SpellCategory.dbc"		Spell stuff
+005636D0   MOV EAX,WoW.007F440C                      ASCII "DBFilesClient\SpellChainEffects.dbc"	Spell stuff
+005638C0   MOV EAX,WoW.007F4454                      ASCII "DBFilesClient\SpellDispelType.dbc"		Spell stuff
+00563B60   MOV EAX,WoW.007F449C                      ASCII "DBFilesClient\SpellDuration.dbc"		Spell stuff
+00563CA0   MOV EAX,WoW.007F44DC                      ASCII "DBFilesClient\SpellEffectCameraShakes.dbc"	Spell stuff
+00563DA0   MOV EAX,WoW.007F4534                      ASCII "DBFilesClient\SpellFocusObject.dbc"		Spell stuff
+00564020   MOV EAX,WoW.007F457C                      ASCII "DBFilesClient\SpellIcon.dbc"		Spell stuff
+00564140   MOV EAX,WoW.007F45B4                      ASCII "DBFilesClient\SpellItemEnchantment.dbc"	Spell stuff
+00564480   MOV EAX,WoW.007F4604                      ASCII "DBFilesClient\SpellMechanic.dbc"		Spell stuff
+00564700   MOV EAX,WoW.007F4644                      ASCII "DBFilesClient\SpellRadius.dbc"		Spell stuff
+00564840   MOV EAX,WoW.007F4684                      ASCII "DBFilesClient\SpellRange.dbc"		Spell stuff
+00564CC0   MOV EAX,WoW.007F46C0                      ASCII "DBFilesClient\Spell.dbc"			Spell stuff
+00566180   MOV EAX,WoW.007F46F0                      ASCII "DBFilesClient\SpellShapeshiftForm.dbc"	Spell stuff
+00566480   MOV EAX,WoW.007F4740                      ASCII "DBFilesClient\SpellVisualEffectName.dbc"	Spell stuff
+00566620   MOV EAX,WoW.007F4790                      ASCII "DBFilesClient\SpellVisualKit.dbc"		Spell stuff
+00566930   MOV EAX,WoW.007F47D4                      ASCII "DBFilesClient\SpellVisual.dbc"		Spell stuff
+00566C00   MOV EAX,WoW.007F4814                      ASCII "DBFilesClient\StableSlotPrices.dbc"		?
+00566D00   MOV EAX,WoW.007F485C                      ASCII "DBFilesClient\Stationery.dbc"		?
+00566E70   MOV EAX,WoW.007F4898                      ASCII "DBFilesClient\StringLookups.dbc"		?
+00566F90   MOV EAX,WoW.007F48D8                      ASCII "DBFilesClient\Talent.dbc"			talent stuff
+00567180   MOV EAX,WoW.007F490C                      ASCII "DBFilesClient\TalentTab.dbc"		talent stuff
+005674B0   MOV EAX,WoW.007F4944                      ASCII "DBFilesClient\TaxiNodes.dbc"		taxi stuff
+005677B0   MOV EAX,WoW.007F497C                      ASCII "DBFilesClient\TaxiPathNode.dbc"		taxi stuff
+005679A0   MOV EAX,WoW.007F49BC                      ASCII "DBFilesClient\TaxiPath.dbc"			taxi stuff
+00567AE0   MOV EAX,WoW.007F49F4                      ASCII "DBFilesClient\TerrainType.dbc"		map stuff
+00567C90   MOV EAX,WoW.007F4A34                      ASCII "DBFilesClient\TerrainTypeSounds.dbc"	map stuff
+00567D70   MOV EAX,WoW.007F4A7C                      ASCII "DBFilesClient\TransportAnimation.dbc"	visuality
+00567F20   MOV EAX,WoW.007F4AC8                      ASCII "DBFilesClient\UISoundLookups.dbc"		UI
+00568070   MOV EAX,WoW.007F4B0C                      ASCII "DBFilesClient\UnitBloodLevels.dbc"		blood? expansion?
+00568170   MOV EAX,WoW.007F4B54                      ASCII "DBFilesClient\UnitBlood.dbc"		?
+00568390   MOV EAX,WoW.007F4B8C                      ASCII "DBFilesClient\VocalUISounds.dbc"		UI
+00568500   MOV EAX,WoW.007F4BCC                      ASCII "DBFilesClient\WMOAreaTable.dbc"		sound?
+005688D0   MOV EAX,WoW.007F4C0C                      ASCII "DBFilesClient\WeaponImpactSounds.dbc"	sound
+00568A40   MOV EAX,WoW.007F4C58                      ASCII "DBFilesClient\WeaponSwingSounds2.dbc"	sound
+00568B80   MOV EAX,WoW.007F4CA4                      ASCII "DBFilesClient\WorldMapArea.dbc"		map stuff
+00568D70   MOV EAX,WoW.007F4CE4                      ASCII "DBFilesClient\WorldMapContinent.dbc"	map stuff
+00568FE0   MOV EAX,WoW.007F4D2C                      ASCII "DBFilesClient\WorldMapOverlay.dbc"		map stuff
+00569290   MOV EAX,WoW.007F4D74                      ASCII "DBFilesClient\WorldSafeLocs.dbc"		?
+00569590   MOV EAX,WoW.007F4DB4                      ASCII "DBFilesClient\WorldStateUI.dbc"		UI
+00569C90   MOV EAX,WoW.007F4DF4                      ASCII "DBFilesClient\ZoneIntroMusicTable.dbc"	music
+00569E20   MOV EAX,WoW.007F4E44                      ASCII "DBFilesClient\ZoneMusic.dbc"		music
+
+they put this errors in client because of easy testing thier official server and client

@@ -1,0 +1,40 @@
+*NOTES
+entryid = nameid
+
+CreatureLoot:
+<entryid><lootid><chance>
+int		 int	 float
+
+
+
+CreatureSpells:
+<entryid><spellid>
+int		 int
+
+
+
+CreatureSpawnTemplates:
+<entryid><maxhealth><maxmana><level><faction><flag><scale><elite><mindmg><maxdmg><minrangedmg><maxrangedmg><baseattacktime>
+int	 int	    int	     int    int	     int   float  bool	 float	 float	 float	      float	   float
+
+<rangedattacktime><slot1model><slot1pos><slot2model><slot2pos>
+float		  int	      int	int	    int
+
+slotXmodel = is the model that this creature will use as one of there weapons
+slotXpos = is the position that the weapon will face
+*NOTE there might also be a slot 3 if i can get it working
+
+item info will be stored in spells templates
+
+It has been decided that the templates will be stored in columns as this will allow easy adjustments between verions.
+We will load these columns from the table and just change guid and set the creatures x y z o mapid zoneid and save it to the Creatures table.
+
+So what is this?
+
+It's Templates.
+basicly a copy of a unit with out unique stuff so you can do ".spawn nameid" and it'll make a unit exacly like you defined
+and change the unique things to make it it's own unit, with templates they will be spawned with right displayid, dmg etc
+and right weapons equipted.
+
+I will also make it so you can update a template and type a command and all units with the same template will be updated.
+I will also make a column in the creatures table that is a bool either use template or don't use it.

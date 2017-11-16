@@ -1,0 +1,35 @@
+'[OBJECT]
+ WITH Chars(12)
+  .GUID="075C1F8"					'[0]000 0000 - first 0 is reserved for PLAYERS - [RGiud = "0" & TGuid]
+  .NAME="aaaaaa"
+  .RACE=1						'1=human, 2=orc, 3=dwarf, 4=night elf, 5=undead, 6=tauren, 7=gnome, 8=troll
+  .CLASS=1						'1=warrior, 2=paladin, 3=hunter, 4=rogue, 5=priest, 7=shaman, 8=mage, 9=warlock, 11=druid
+  .GENDER=0						'0=male, 1=female
+  .SKIN=3
+  .FACE=1
+  .HAIR=1:4:0
+  .LEVEL=1
+  .ZONEID=14
+  'uint16 unknown1
+  .MAPID=1
+  'uint16 unknown2
+  .POSITIONX=-618.518005
+  .POSITIONY=-4251.669922
+  .POSITIONX=38.717999		
+  .GUILDID=0
+  .RESTED=False
+  'uint32 unknown3
+  .PETInfo=0
+  .PETLevel=0
+  .PETFalily=0
+
+ 
+
+
+
+ for(i=0; i<20; i++)
+   uint16 itemid
+   uint16 zero = 0
+   uint8 displayid // equipped inventory slot, see below
+
+ END WITH

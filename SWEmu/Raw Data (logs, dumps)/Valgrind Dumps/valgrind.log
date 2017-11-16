@@ -1,0 +1,217 @@
+==2006-01-27 04:35:47.888 3541== Memcheck, a memory error detector.
+==2006-01-27 04:35:47.889 3541== Copyright (C) 2002-2005, and GNU GPL'd, by Julian Seward et al.
+==2006-01-27 04:35:47.889 3541== Using LibVEX rev 1367, a library for dynamic binary translation.
+==2006-01-27 04:35:47.889 3541== Copyright (C) 2004-2005, and GNU GPL'd, by OpenWorks LLP.
+==2006-01-27 04:35:47.889 3541== Using valgrind-3.0.1, a dynamic binary instrumentation framework.
+==2006-01-27 04:35:47.889 3541== Copyright (C) 2000-2005, and GNU GPL'd, by Julian Seward et al.
+==2006-01-27 04:35:47.889 3541== 
+==2006-01-27 04:35:47.889 3541== My PID = 3541, parent PID = 3282.  Prog and args are:
+==2006-01-27 04:35:47.889 3541==    ./TownHall
+--2006-01-27 04:35:47.889 3541-- 
+--2006-01-27 04:35:47.889 3541-- Valgrind library directory: /usr/lib/valgrind
+--2006-01-27 04:35:47.889 3541-- Command line
+--2006-01-27 04:35:47.889 3541--    ./TownHall
+--2006-01-27 04:35:47.889 3541-- Startup, with flags:
+--2006-01-27 04:35:47.889 3541--    --leak-check=full
+--2006-01-27 04:35:47.889 3541--    --show-reachable=yes
+--2006-01-27 04:35:47.889 3541--    --error-limit=no
+--2006-01-27 04:35:47.889 3541--    --time-stamp=yes
+--2006-01-27 04:35:47.889 3541--    --log-file=/home/burlex/valgrind.log
+--2006-01-27 04:35:47.889 3541--    -v
+--2006-01-27 04:35:47.889 3541-- Contents of /proc/version:
+--2006-01-27 04:35:47.890 3541--   Linux version 2.6.15-1.1826.2.10_FC5 (bhcompile@hs20-bc1-1.build.redhat.com) (gcc version 4.1.0 20060106 (Red Hat 4.1.0-0.14)) #1 Wed Jan 11 18:12:42 EST 2006
+--2006-01-27 04:35:47.890 3541-- Reading syms from /home/burlex/TownHall/TownHall (0x8048000)
+--2006-01-27 04:35:48.046 3541-- Reading syms from /lib/ld-2.3.90.so (0x1B8E4000)
+--2006-01-27 04:35:48.047 3541-- Reading syms from /usr/lib/valgrind/stage2 (0xB0000000)
+==2006-01-27 04:35:48.048 3541== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--2006-01-27 04:35:48.091 3541-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==2006-01-27 04:35:48.135 3541== 
+--2006-01-27 04:35:48.267 3541-- Reading syms from /usr/lib/valgrind/vg_preload_core.so (0x1B900000)
+==2006-01-27 04:35:48.267 3541== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--2006-01-27 04:35:48.291 3541-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck.so (0x1B902000)
+==2006-01-27 04:35:48.294 3541== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--2006-01-27 04:35:48.304 3541-- REDIR: 0x1B8F8AA0 (index) redirected to 0x1B90501C (index)
+--2006-01-27 04:35:48.332 3541-- Reading syms from /lib/libssl.so.0.9.8a (0x1B920000)
+--2006-01-27 04:35:48.332 3541--    object doesn't have a symbol table
+==2006-01-27 04:35:48.333 3541== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--2006-01-27 04:35:48.341 3541-- Reading syms from /usr/lib/libz.so.1.2.3 (0x1B963000)
+--2006-01-27 04:35:48.341 3541--    object doesn't have a symbol table
+==2006-01-27 04:35:48.341 3541== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--2006-01-27 04:35:48.342 3541-- Reading syms from /usr/lib/libgthread-2.0.so.0.902.0 (0x1B976000)
+--2006-01-27 04:35:48.342 3541--    object doesn't have a symbol table
+--2006-01-27 04:35:48.345 3541-- Reading syms from /usr/lib/libstdc++.so.6.0.7 (0x1B97B000)
+--2006-01-27 04:35:48.346 3541--    object doesn't have a symbol table
+--2006-01-27 04:35:48.364 3541-- Reading syms from /lib/libm-2.3.90.so (0x1BA5E000)
+--2006-01-27 04:35:48.367 3541-- Reading syms from /lib/libgcc_s-4.1.0-20060106.so.1 (0x1BA84000)
+--2006-01-27 04:35:48.367 3541--    object doesn't have a symbol table
+--2006-01-27 04:35:48.370 3541-- Reading syms from /lib/libc-2.3.90.so (0x1BA8F000)
+--2006-01-27 04:35:48.387 3541-- Reading syms from /lib/libcrypto.so.0.9.8a (0x1BBB6000)
+--2006-01-27 04:35:48.387 3541--    object doesn't have a symbol table
+==2006-01-27 04:35:48.392 3541== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--2006-01-27 04:35:48.411 3541-- Reading syms from /lib/libpthread-2.3.90.so (0x1BCDB000)
+--2006-01-27 04:35:48.417 3541-- Reading syms from /lib/libdl-2.3.90.so (0x1BCED000)
+--2006-01-27 04:35:48.420 3541-- Reading syms from /usr/lib/libgssapi_krb5.so.2.2 (0x1BCF1000)
+--2006-01-27 04:35:48.420 3541--    object doesn't have a symbol table
+==2006-01-27 04:35:48.420 3541== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--2006-01-27 04:35:48.422 3541-- Reading syms from /usr/lib/libkrb5.so.3.2 (0x1BD0A000)
+--2006-01-27 04:35:48.422 3541--    object doesn't have a symbol table
+==2006-01-27 04:35:48.424 3541== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--2006-01-27 04:35:48.428 3541-- Reading syms from /lib/libcom_err.so.2.1 (0x1BD7A000)
+--2006-01-27 04:35:48.428 3541--    object doesn't have a symbol table
+--2006-01-27 04:35:48.429 3541-- Reading syms from /usr/lib/libk5crypto.so.3.0 (0x1BD7D000)
+--2006-01-27 04:35:48.429 3541--    object doesn't have a symbol table
+==2006-01-27 04:35:48.430 3541== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--2006-01-27 04:35:48.431 3541-- Reading syms from /lib/libresolv-2.3.90.so (0x1BDA1000)
+--2006-01-27 04:35:48.432 3541-- Reading syms from /usr/lib/libglib-2.0.so.0.902.0 (0x1BDB4000)
+--2006-01-27 04:35:48.432 3541--    object doesn't have a symbol table
+--2006-01-27 04:35:48.449 3541-- Reading syms from /usr/lib/libkrb5support.so.0.0 (0x1BE43000)
+--2006-01-27 04:35:48.449 3541--    object doesn't have a symbol table
+==2006-01-27 04:35:48.449 3541== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--2006-01-27 04:35:48.584 3541-- REDIR: 0x1B8E47F0 (_dl_sysinfo_int80) redirected to 0xB00226AF (???)
+--2006-01-27 04:35:48.590 3541-- REDIR: 0x1BAF9BB0 (memset) redirected to 0x1B9052D4 (memset)
+--2006-01-27 04:35:48.592 3541-- REDIR: 0x1BAFA040 (memcpy) redirected to 0x1B90592C (memcpy)
+--2006-01-27 04:35:48.619 3541-- REDIR: 0x1BAF8D40 (rindex) redirected to 0x1B904F3C (rindex)
+--2006-01-27 04:35:48.701 3541-- REDIR: 0x1BAF4638 (malloc) redirected to 0x1B904474 (malloc)
+--2006-01-27 04:35:48.706 3541-- REDIR: 0x1BA299F0 (operator new(unsigned)) redirected to 0x1B904B5E (operator new(unsigned))
+--2006-01-27 04:35:48.714 3541-- REDIR: 0x1BA284F8 (operator delete(void*)) redirected to 0x1B903E4C (operator delete(void*))
+--2006-01-27 04:35:50.886 3541-- REDIR: 0x1BAF5F78 (realloc) redirected to 0x1B904517 (realloc)
+--2006-01-27 04:35:50.889 3541-- REDIR: 0x1BAF5DD4 (free) redirected to 0x1B9040E0 (free)
+--2006-01-27 04:35:50.919 3541-- REDIR: 0x1BAF8C94 (strncpy) redirected to 0x1B90544C (strncpy)
+--2006-01-27 04:35:50.925 3541-- REDIR: 0x1BAF84F0 (strcpy) redirected to 0x1B905558 (strcpy)
+--2006-01-27 04:35:50.940 3541-- REDIR: 0x1BAF8BA8 (strncmp) redirected to 0x1B9050F0 (strncmp)
+--2006-01-27 04:35:50.951 3541-- REDIR: 0x1BAF96B0 (memchr) redirected to 0x1B9051E8 (memchr)
+--2006-01-27 04:35:50.957 3541-- REDIR: 0x1BAF8320 (index) redirected to 0x1B904FF8 (index)
+==2006-01-27 04:35:51.033 3541== Conditional jump or move depends on uninitialised value(s)
+==2006-01-27 04:35:51.034 3541==    at 0x1BB62A05: inet_addr (in /lib/libc-2.3.90.so)
+==2006-01-27 04:35:51.034 3541==    by 0x80F31FE: CSettings::Handle_Setting(char const*, char const*) (Settings.cpp:73)
+==2006-01-27 04:35:51.034 3541==    by 0x80F3937: CSettings::LoadSettings() (Settings.cpp:277)
+==2006-01-27 04:35:51.034 3541==    by 0x80EC453: CRealmServer::Go() (RealmServer.cpp:1576)
+==2006-01-27 04:35:51.034 3541==    by 0x80F7535: main (TownHall.cpp:135)
+--2006-01-27 04:35:51.053 3541-- REDIR: 0x1BAF89C0 (strlen) redirected to 0x1B905090 (strlen)
+--2006-01-27 04:35:51.055 3541-- REDIR: 0x1BAF8170 (strcat) redirected to 0x1B905610 (strcat)
+--2006-01-27 04:35:52.294 3541-- REDIR: 0x1BAF9B40 (memmove) redirected to 0x1B9052F8 (memmove)
+--2006-01-27 04:36:28.341 3541-- REDIR: 0x1BAF4344 (calloc) redirected to 0x1B9038FD (calloc)
+--2006-01-27 04:36:28.387 3541-- REDIR: 0x1BA29B18 (operator new[](unsigned)) redirected to 0x1B904866 (operator new[](unsigned))
+--2006-01-27 04:37:16.798 3541-- REDIR: 0x1BA28548 (operator delete[](void*)) redirected to 0x1B903B34 (operator delete[](void*))
+==2006-01-27 04:37:29.108 3541== 
+==2006-01-27 04:37:29.108 3541== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 48 from 2)
+==2006-01-27 04:37:29.108 3541== 
+==2006-01-27 04:37:29.108 3541== 1 errors in context 1 of 1:
+==2006-01-27 04:37:29.108 3541== Conditional jump or move depends on uninitialised value(s)
+==2006-01-27 04:37:29.108 3541==    at 0x1BB62A05: inet_addr (in /lib/libc-2.3.90.so)
+==2006-01-27 04:37:29.108 3541==    by 0x80F31FE: CSettings::Handle_Setting(char const*, char const*) (Settings.cpp:73)
+==2006-01-27 04:37:29.108 3541==    by 0x80F3937: CSettings::LoadSettings() (Settings.cpp:277)
+==2006-01-27 04:37:29.108 3541==    by 0x80EC453: CRealmServer::Go() (RealmServer.cpp:1576)
+==2006-01-27 04:37:29.109 3541==    by 0x80F7535: main (TownHall.cpp:135)
+--2006-01-27 04:37:29.109 3541-- 
+--2006-01-27 04:37:29.109 3541-- supp:    3 index-not-intercepted-early-enough-HACK-1
+--2006-01-27 04:37:29.109 3541-- supp:   45 dl_relocate_object
+==2006-01-27 04:37:29.109 3541== 
+==2006-01-27 04:37:29.109 3541== IN SUMMARY: 1 errors from 1 contexts (suppressed: 48 from 2)
+==2006-01-27 04:37:29.109 3541== 
+==2006-01-27 04:37:29.110 3541== malloc/free: in use at exit: 685934 bytes in 16931 blocks.
+==2006-01-27 04:37:29.110 3541== malloc/free: 825459 allocs, 808528 frees, 126264355 bytes allocated.
+==2006-01-27 04:37:29.110 3541== 
+==2006-01-27 04:37:29.132 3541== searching for pointers to 16931 not-freed blocks.
+==2006-01-27 04:37:29.660 3541== checked 10863496 bytes.
+==2006-01-27 04:37:29.736 3541== 
+==2006-01-27 04:37:29.736 3541== 
+==2006-01-27 04:37:29.736 3541== 18 bytes in 1 blocks are still reachable in loss record 1 of 9
+==2006-01-27 04:37:29.736 3541==    at 0x1B9044F3: malloc (vg_replace_malloc.c:149)
+==2006-01-27 04:37:29.736 3541==    by 0x1BB6B036: inet_ntoa (in /lib/libc-2.3.90.so)
+==2006-01-27 04:37:29.736 3541==    by 0x80F6A75: TCPSocket::GetHostByName(char const*, char*) (TCPSocket.cpp:300)
+==2006-01-27 04:37:29.736 3541==    by 0x80F31BF: CSettings::Handle_Setting(char const*, char const*) (Settings.cpp:68)
+==2006-01-27 04:37:29.736 3541==    by 0x80F3937: CSettings::LoadSettings() (Settings.cpp:277)
+==2006-01-27 04:37:29.736 3541==    by 0x80EC453: CRealmServer::Go() (RealmServer.cpp:1576)
+==2006-01-27 04:37:29.736 3541==    by 0x80F7535: main (TownHall.cpp:135)
+==2006-01-27 04:37:29.736 3541== 
+==2006-01-27 04:37:29.736 3541== 
+==2006-01-27 04:37:29.736 3541== 136 bytes in 1 blocks are possibly lost in loss record 2 of 9
+==2006-01-27 04:37:29.736 3541==    at 0x1B903983: calloc (vg_replace_malloc.c:279)
+==2006-01-27 04:37:29.736 3541==    by 0x1B8F4411: _dl_allocate_tls (in /lib/ld-2.3.90.so)
+==2006-01-27 04:37:29.736 3541==    by 0x1BCE0861: pthread_create@@GLIBC_2.1 (in /lib/libpthread-2.3.90.so)
+==2006-01-27 04:37:29.736 3541==    by 0x80ED3F7: CRealmServer::Go() (UnixThreading.h:179)
+==2006-01-27 04:37:29.736 3541==    by 0x80F7535: main (TownHall.cpp:135)
+==2006-01-27 04:37:29.737 3541== 
+==2006-01-27 04:37:29.737 3541== 
+==2006-01-27 04:37:29.737 3541== 144 bytes in 12 blocks are still reachable in loss record 3 of 9
+==2006-01-27 04:37:29.737 3541==    at 0x1B904BDE: operator new(unsigned) (vg_replace_malloc.c:164)
+==2006-01-27 04:37:29.737 3541==    by 0x809423E: CCreature::AddMerchantItem(unsigned long) (new_allocator.h:88)
+==2006-01-27 04:37:29.737 3541==    by 0x80EBF91: CRealmServer::SpawnSavedCreatures() (RealmServer.cpp:2573)
+==2006-01-27 04:37:29.737 3541==    by 0x80ED3A8: CRealmServer::Go() (RealmServer.cpp:1729)
+==2006-01-27 04:37:29.737 3541==    by 0x80F7535: main (TownHall.cpp:135)
+==2006-01-27 04:37:29.737 3541== 
+==2006-01-27 04:37:29.737 3541== 
+==2006-01-27 04:37:29.737 3541== 256 bytes in 1 blocks are possibly lost in loss record 4 of 9
+==2006-01-27 04:37:29.737 3541==    at 0x1B904BDE: operator new(unsigned) (vg_replace_malloc.c:164)
+==2006-01-27 04:37:29.737 3541==    by 0x80EE5F4: std::vector<LootItem, std::allocator<LootItem> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LootItem*, std::vector<LootItem, std::allocator<LootItem> > >, LootItem const&) (new_allocator.h:88)
+==2006-01-27 04:37:29.737 3541==    by 0x80E3DCD: InitGOLoots() (stl_vector.h:610)
+==2006-01-27 04:37:29.737 3541==    by 0x80ED391: CRealmServer::Go() (RealmServer.cpp:1726)
+==2006-01-27 04:37:29.737 3541==    by 0x80F7535: main (TownHall.cpp:135)
+==2006-01-27 04:37:29.737 3541== 
+==2006-01-27 04:37:29.737 3541== 
+==2006-01-27 04:37:29.737 3541== 352 bytes in 1 blocks are still reachable in loss record 5 of 9
+==2006-01-27 04:37:29.737 3541==    at 0x1B9044F3: malloc (vg_replace_malloc.c:149)
+==2006-01-27 04:37:29.737 3541==    by 0x1BAE39E4: __fopen_internal (in /lib/libc-2.3.90.so)
+==2006-01-27 04:37:29.737 3541==    by 0x1BAE3AA5: fopen@@GLIBC_2.1 (in /lib/libc-2.3.90.so)
+==2006-01-27 04:37:29.738 3541==    by 0x80E5F7F: CRealmServer::ImportItems() (RealmServer.cpp:2173)
+==2006-01-27 04:37:29.738 3541==    by 0x80EC4DC: CRealmServer::Go() (RealmServer.cpp:1583)
+==2006-01-27 04:37:29.738 3541==    by 0x80F7535: main (TownHall.cpp:135)
+==2006-01-27 04:37:29.738 3541== 
+==2006-01-27 04:37:29.738 3541== 
+==2006-01-27 04:37:29.738 3541== 1752 bytes in 73 blocks are definitely lost in loss record 6 of 9
+==2006-01-27 04:37:29.738 3541==    at 0x1B904BDE: operator new(unsigned) (vg_replace_malloc.c:164)
+==2006-01-27 04:37:29.738 3541==    by 0x8095412: std::_Rb_tree<unsigned long, std::pair<unsigned long const, CFlyPath*>, std::_Select1st<std::pair<unsigned long const, CFlyPath*> >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, CFlyPath*> > >::insert_unique(std::pair<unsigned long const, CFlyPath*> const&) (new_allocator.h:88)
+==2006-01-27 04:37:29.738 3541==    by 0x80956E5: std::_Rb_tree<unsigned long, std::pair<unsigned long const, CFlyPath*>, std::_Select1st<std::pair<unsigned long const, CFlyPath*> >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, CFlyPath*> > >::insert_unique(std::_Rb_tree_iterator<std::pair<unsigned long const, CFlyPath*> >, std::pair<unsigned long const, CFlyPath*> const&) (stl_tree.h:949)
+==2006-01-27 04:37:29.738 3541==    by 0x8095AC5: CFlyPathMob::New(unsigned long) (stl_map.h:420)
+==2006-01-27 04:37:29.738 3541==    by 0x808D048: GenerateFlyPathMob(unsigned long, char const*, unsigned long, _Location, float) (Creature.cpp:2071)
+==2006-01-27 04:37:29.738 3541==    by 0x80EC1F9: CRealmServer::SpawnSavedCreatures() (RealmServer.cpp:2445)
+==2006-01-27 04:37:29.738 3541==    by 0x80ED3A8: CRealmServer::Go() (RealmServer.cpp:1729)
+==2006-01-27 04:37:29.738 3541==    by 0x80F7535: main (TownHall.cpp:135)
+==2006-01-27 04:37:29.738 3541== 
+==2006-01-27 04:37:29.738 3541== 
+==2006-01-27 04:37:29.738 3541== 190572 (13884 direct, 176688 indirect) bytes in 1157 blocks are definitely lost in loss record 7 of 9
+==2006-01-27 04:37:29.738 3541==    at 0x1B904BDE: operator new(unsigned) (vg_replace_malloc.c:164)
+==2006-01-27 04:37:29.738 3541==    by 0x809423E: CCreature::AddMerchantItem(unsigned long) (new_allocator.h:88)
+==2006-01-27 04:37:29.738 3541==    by 0x80EBF91: CRealmServer::SpawnSavedCreatures() (RealmServer.cpp:2573)
+==2006-01-27 04:37:29.738 3541==    by 0x80ED3A8: CRealmServer::Go() (RealmServer.cpp:1729)
+==2006-01-27 04:37:29.738 3541==    by 0x80F7535: main (TownHall.cpp:135)
+==2006-01-27 04:37:29.739 3541== 
+==2006-01-27 04:37:29.739 3541== 
+==2006-01-27 04:37:29.739 3541== 176688 bytes in 14724 blocks are indirectly lost in loss record 8 of 9
+==2006-01-27 04:37:29.739 3541==    at 0x1B904BDE: operator new(unsigned) (vg_replace_malloc.c:164)
+==2006-01-27 04:37:29.739 3541==    by 0x809423E: CCreature::AddMerchantItem(unsigned long) (new_allocator.h:88)
+==2006-01-27 04:37:29.739 3541==    by 0x80EBF91: CRealmServer::SpawnSavedCreatures() (RealmServer.cpp:2573)
+==2006-01-27 04:37:29.739 3541==    by 0x80ED3A8: CRealmServer::Go() (RealmServer.cpp:1729)
+==2006-01-27 04:37:29.739 3541==    by 0x80F7535: main (TownHall.cpp:135)
+==2006-01-27 04:37:29.739 3541== 
+==2006-01-27 04:37:29.739 3541== 
+==2006-01-27 04:37:29.739 3541== 492704 bytes in 961 blocks are definitely lost in loss record 9 of 9
+==2006-01-27 04:37:29.739 3541==    at 0x1B904BDE: operator new(unsigned) (vg_replace_malloc.c:164)
+==2006-01-27 04:37:29.739 3541==    by 0x80EE5F4: std::vector<LootItem, std::allocator<LootItem> >::_M_insert_aux(__gnu_cxx::__normal_iterator<LootItem*, std::vector<LootItem, std::allocator<LootItem> > >, LootItem const&) (new_allocator.h:88)
+==2006-01-27 04:37:29.739 3541==    by 0x80E3DCD: InitGOLoots() (stl_vector.h:610)
+==2006-01-27 04:37:29.739 3541==    by 0x80ED391: CRealmServer::Go() (RealmServer.cpp:1726)
+==2006-01-27 04:37:29.739 3541==    by 0x80F7535: main (TownHall.cpp:135)
+==2006-01-27 04:37:29.739 3541== 
+==2006-01-27 04:37:29.739 3541== LEAK SUMMARY:
+==2006-01-27 04:37:29.739 3541==    definitely lost: 508340 bytes in 2191 blocks.
+==2006-01-27 04:37:29.739 3541==    indirectly lost: 176688 bytes in 14724 blocks.
+==2006-01-27 04:37:29.739 3541==      possibly lost: 392 bytes in 2 blocks.
+==2006-01-27 04:37:29.739 3541==    still reachable: 514 bytes in 14 blocks.
+==2006-01-27 04:37:29.739 3541==         suppressed: 0 bytes in 0 blocks.
+--2006-01-27 04:37:29.739 3541--  memcheck: sanity checks: 4770 cheap, 191 expensive
+--2006-01-27 04:37:29.739 3541--  memcheck: auxmaps: 0 auxmap entries (0k, 0M) in use
+--2006-01-27 04:37:29.739 3541--  memcheck: auxmaps: 0 searches, 0 comparisons
+--2006-01-27 04:37:29.739 3541--  memcheck: secondaries: 1971 issued (126144k, 123M)
+--2006-01-27 04:37:29.740 3541--  memcheck: secondaries: 239 accessible and distinguished (15296k, 14M)
+--2006-01-27 04:37:29.741 3541--     tt/tc: 27188 tt lookups requiring 29275 probes
+--2006-01-27 04:37:29.741 3541--     tt/tc: 27188 fast-cache updates, 3 flushes
+--2006-01-27 04:37:29.741 3541-- translate: new        8405 (204687 -> 3027588; ratio 147:10) [0 scs]
+--2006-01-27 04:37:29.741 3541-- translate: dumped     0 (0 -> ??)
+--2006-01-27 04:37:29.741 3541-- translate: discarded  2 (99 -> ??)
+--2006-01-27 04:37:29.741 3541-- scheduler: 238486216 jumps (bb entries).
+--2006-01-27 04:37:29.741 3541-- scheduler: 4770/1913676 major/minor sched events.
+--2006-01-27 04:37:29.741 3541--    sanity: 4771 cheap, 191 expensive checks.
+--2006-01-27 04:37:29.741 3541--    exectx: 4999 lists, 1650 contexts (avg 0 per list)
+--2006-01-27 04:37:29.741 3541--    exectx: 1633945 searches, 1635910 full compares (1001 per 1000)
+--2006-01-27 04:37:29.741 3541--    exectx: 19659 cmp2, 135 cmp4, 0 cmpAll

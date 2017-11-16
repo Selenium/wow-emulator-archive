@@ -1,0 +1,8 @@
+When conneting with client 1.8.0.3735 enUS and the server is requiring 1.8.1 
+the file wow-patch-4735-enUS.mpq will be sended to client.
+
+So update file for 1.8.0 to 1.8.1 must be named:
+wow-patch-4735-enUS.mpq
+
+So update file for 1.8.1 to 1.8.2 must be named:
+wow-patch-4769-enUS.mpq

@@ -1,0 +1,101 @@
+# Project: NOPServer
+# Makefile created by Dev-C++ 4.9.8.0
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = ../luabind/class_rep.o ../luabind/create_class.o ../luabind/find_best_match.o ../luabind/function.o ../luabind/implicit_cast.o ../luabind/object.o ../luabind/open.o ../luabind/stack_content_by_name.o ../NetCode/Packet.o ../NetCode/ServerCore.o ../NetCode/servercore_config.o ../NetCode/servercore_loginserver.o ../NetCode/servercore_realmserver.o ../NetCode/servercore_worldserver.o ../Handlers/Character.o ../Handlers/Client.o ../Handlers/Object.o ../Handlers/ObjectManager.o ../Handlers/UserManager.o ../CallbackHandler.o ../Core.o ../dbc.o ../PacketHandler.o ../ScriptHandler.o ../WorldThread.o $(RES)
+LINKOBJ  = ../luabind/class_rep.o ../luabind/create_class.o ../luabind/find_best_match.o ../luabind/function.o ../luabind/implicit_cast.o ../luabind/object.o ../luabind/open.o ../luabind/stack_content_by_name.o ../NetCode/Packet.o ../NetCode/ServerCore.o ../NetCode/servercore_config.o ../NetCode/servercore_loginserver.o ../NetCode/servercore_realmserver.o ../NetCode/servercore_worldserver.o ../Handlers/Character.o ../Handlers/Client.o ../Handlers/Object.o ../Handlers/ObjectManager.o ../Handlers/UserManager.o ../CallbackHandler.o ../Core.o ../dbc.o ../PacketHandler.o ../ScriptHandler.o ../WorldThread.o $(RES)
+LIBS =  -L"D:/Projects/Dev-Cpp/lib" -mwindows -lwxmsw -lole32 -lwsock32 -lcomctl32 -lctl3d32 -lgcc -lstdc++ -lshell32 -loleaut32 -ladvapi32 -luuid -lodbc32 -ltiff -lpng -ljpeg -lzlib ../../lua/lua.a 
+INCS =  -I"D:/Projects/Dev-Cpp/include"  -I"../../lua/include/"  -I"../luabind/"  -I"../../boost/" 
+CXXINCS =  -I"D:/Projects/Dev-Cpp/include/c++"  -I"D:/Projects/Dev-Cpp/include/c++/mingw32"  -I"D:/Projects/Dev-Cpp/include/c++/backward"  -I"D:/Projects/Dev-Cpp/include"  -I"../../lua/include/"  -I"../luabind/"  -I"../../boost/" 
+BIN  = NOPServer.exe
+CXXFLAGS = $(CXXINCS)-Wall -D__WXMSW__ -D__GNUWIN32__ -D__WIN95__   
+CFLAGS = $(INCS)-fno-rtti -fno-exceptions -fno-pcc-struct-return -fstrict-aliasing -Wall -fvtable-thunks -D__WXMSW__ -D__GNUWIN32__ -D__WIN95__   
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before NOPServer.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) $(LINKOBJ) -o "NOPServer.exe" $(LIBS)
+
+../luabind/class_rep.o: ../luabind/class_rep.cpp
+	$(CPP) -c ../luabind/class_rep.cpp -o ../luabind/class_rep.o $(CXXFLAGS)
+
+../luabind/create_class.o: ../luabind/create_class.cpp
+	$(CPP) -c ../luabind/create_class.cpp -o ../luabind/create_class.o $(CXXFLAGS)
+
+../luabind/find_best_match.o: ../luabind/find_best_match.cpp
+	$(CPP) -c ../luabind/find_best_match.cpp -o ../luabind/find_best_match.o $(CXXFLAGS)
+
+../luabind/function.o: ../luabind/function.cpp
+	$(CPP) -c ../luabind/function.cpp -o ../luabind/function.o $(CXXFLAGS)
+
+../luabind/implicit_cast.o: ../luabind/implicit_cast.cpp
+	$(CPP) -c ../luabind/implicit_cast.cpp -o ../luabind/implicit_cast.o $(CXXFLAGS)
+
+../luabind/object.o: ../luabind/object.cpp
+	$(CPP) -c ../luabind/object.cpp -o ../luabind/object.o $(CXXFLAGS)
+
+../luabind/open.o: ../luabind/open.cpp
+	$(CPP) -c ../luabind/open.cpp -o ../luabind/open.o $(CXXFLAGS)
+
+../luabind/stack_content_by_name.o: ../luabind/stack_content_by_name.cpp
+	$(CPP) -c ../luabind/stack_content_by_name.cpp -o ../luabind/stack_content_by_name.o $(CXXFLAGS)
+
+../NetCode/Packet.o: ../NetCode/Packet.cpp
+	$(CPP) -c ../NetCode/Packet.cpp -o ../NetCode/Packet.o $(CXXFLAGS)
+
+../NetCode/ServerCore.o: ../NetCode/ServerCore.cpp
+	$(CPP) -c ../NetCode/ServerCore.cpp -o ../NetCode/ServerCore.o $(CXXFLAGS)
+
+../NetCode/servercore_config.o: ../NetCode/servercore_config.cpp
+	$(CPP) -c ../NetCode/servercore_config.cpp -o ../NetCode/servercore_config.o $(CXXFLAGS)
+
+../NetCode/servercore_loginserver.o: ../NetCode/servercore_loginserver.cpp
+	$(CPP) -c ../NetCode/servercore_loginserver.cpp -o ../NetCode/servercore_loginserver.o $(CXXFLAGS)
+
+../NetCode/servercore_realmserver.o: ../NetCode/servercore_realmserver.cpp
+	$(CPP) -c ../NetCode/servercore_realmserver.cpp -o ../NetCode/servercore_realmserver.o $(CXXFLAGS)
+
+../NetCode/servercore_worldserver.o: ../NetCode/servercore_worldserver.cpp
+	$(CPP) -c ../NetCode/servercore_worldserver.cpp -o ../NetCode/servercore_worldserver.o $(CXXFLAGS)
+
+../Handlers/Character.o: ../Handlers/Character.cpp
+	$(CPP) -c ../Handlers/Character.cpp -o ../Handlers/Character.o $(CXXFLAGS)
+
+../Handlers/Client.o: ../Handlers/Client.cpp
+	$(CPP) -c ../Handlers/Client.cpp -o ../Handlers/Client.o $(CXXFLAGS)
+
+../Handlers/Object.o: ../Handlers/Object.cpp
+	$(CPP) -c ../Handlers/Object.cpp -o ../Handlers/Object.o $(CXXFLAGS)
+
+../Handlers/ObjectManager.o: ../Handlers/ObjectManager.cpp
+	$(CPP) -c ../Handlers/ObjectManager.cpp -o ../Handlers/ObjectManager.o $(CXXFLAGS)
+
+../Handlers/UserManager.o: ../Handlers/UserManager.cpp
+	$(CPP) -c ../Handlers/UserManager.cpp -o ../Handlers/UserManager.o $(CXXFLAGS)
+
+../CallbackHandler.o: ../CallbackHandler.cpp
+	$(CPP) -c ../CallbackHandler.cpp -o ../CallbackHandler.o $(CXXFLAGS)
+
+../Core.o: ../Core.cpp
+	$(CPP) -c ../Core.cpp -o ../Core.o $(CXXFLAGS)
+
+../dbc.o: ../dbc.cpp
+	$(CPP) -c ../dbc.cpp -o ../dbc.o $(CXXFLAGS)
+
+../PacketHandler.o: ../PacketHandler.cpp
+	$(CPP) -c ../PacketHandler.cpp -o ../PacketHandler.o $(CXXFLAGS)
+
+../ScriptHandler.o: ../ScriptHandler.cpp
+	$(CPP) -c ../ScriptHandler.cpp -o ../ScriptHandler.o $(CXXFLAGS)
+
+../WorldThread.o: ../WorldThread.cpp
+	$(CPP) -c ../WorldThread.cpp -o ../WorldThread.o $(CXXFLAGS)

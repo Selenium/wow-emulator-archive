@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="LudMilla"
+	RootNamespace="LudMilla"
+	SccProjectName=""
+	SccLocalPath="">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(SolutionDir)\build\$(ProjectName)___$(PlatformName)_$(ConfigurationName)"
+			IntermediateDirectory="$(SolutionDir)\build\$(ProjectName)___$(PlatformName)_$(ConfigurationName)"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				InlineFunctionExpansion="2"
+				FavorSizeOrSpeed="1"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)/depnew/$(PlatformName)_include/&quot;"
+				PreprocessorDefinitions="WIN32,NDEBUG,_CONSOLE"
+				StringPooling="TRUE"
+				RuntimeLibrary="0"
+				EnableFunctionLevelLinking="TRUE"
+				RuntimeTypeInfo="TRUE"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderFile="$(IntDir)\$(TargetName).pch"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				Detect64BitPortabilityProblems="TRUE"
+				CompileAs="0"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions="/MACHINE:I386"
+				AdditionalDependencies="libmySQL.lib ws2_32.lib winmm.lib"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="&quot;..\dep\lib\$(ConfigurationName)&quot;;&quot;$(SolutionDir)/depnew/$(PlatformName)_$(ConfigurationName)/&quot;"
+				SubSystem="1"
+				OptimizeReferences="0"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName="..\bin\Release/LudMilla.tlb"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Building final directory..."
+				CommandLine="if not exist $(SolutionDir)\bin mkdir $(SolutionDir)\bin
+if not exist $(SolutionDir)\bin\$(ConfigurationName) mkdir $(SolutionDir)\bin\$(ConfigurationName)
+copy $(SolutionDir)\dep\lib\$(ConfigurationName)\*.dll $(SolutionDir)\bin\$(ConfigurationName)
+copy $(SolutionDir)\depnew\$(PlatformName)_$(ConfigurationName)\*.dll $(SolutionDir)\bin\$(ConfigurationName)
+copy $(SolutionDir)\depnew\$(PlatformName)_$(ConfigurationName)\*.pdb $(SolutionDir)\bin\$(ConfigurationName)
+copy $(TargetPath) $(SolutionDir)\bin\$(ConfigurationName)\
+copy $(ProjectDir)$(ProjectName)\$(ProjectName).conf $(SolutionDir)\bin\$(ConfigurationName)\
+copy $(IntDir)\Readme_LudmillaConsoleCmds.txt $(SolutionDir)\bin\$(ConfigurationName)\docs
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="1033"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(SolutionDir)\build\$(ProjectName)___$(PlatformName)_$(ConfigurationName)"
+			IntermediateDirectory="$(SolutionDir)\build\$(ProjectName)___$(PlatformName)_$(ConfigurationName)"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)/depnew/$(PlatformName)_include/&quot;"
+				PreprocessorDefinitions="WIN32,_DEBUG,_CONSOLE"
+				IgnoreStandardIncludePath="FALSE"
+				MinimalRebuild="TRUE"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				StructMemberAlignment="4"
+				RuntimeTypeInfo="TRUE"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderFile="$(IntDir)\$(TargetName).pch"
+				ObjectFile="$(IntDir)\"
+				ProgramDataBaseFileName="$(IntDir)\vc70.pdb"
+				BrowseInformation="1"
+				BrowseInformationFile="$(IntDir)\"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				Detect64BitPortabilityProblems="TRUE"
+				DebugInformationFormat="3"
+				CompileAs="0"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalOptions="/MACHINE:I386"
+				AdditionalDependencies="libmySQL.lib ws2_32.lib winmm.lib"
+				OutputFile="$(OutDir)\$(ProjectName).exe"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="&quot;..\dep\lib\$(ConfigurationName)&quot;;&quot;$(SolutionDir)/depnew/$(PlatformName)_$(ConfigurationName)/&quot;"
+				IgnoreDefaultLibraryNames=""
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(OutDir)\$(ProjectName).pdb"
+				SubSystem="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				TypeLibraryName=".\..\bin\Debug/LudMilla.tlb"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				Description="Building final directory..."
+				CommandLine="if not exist &quot;$(SolutionDir)\bin&quot; mkdir &quot;$(SolutionDir)\bin&quot;
+if not exist &quot;$(SolutionDir)\bin\$(ConfigurationName)&quot; mkdir &quot;$(SolutionDir)\bin\$(ConfigurationName)&quot;
+copy &quot;$(SolutionDir)\dep\lib\$(ConfigurationName)\*.dll&quot; &quot;$(SolutionDir)\bin\$(ConfigurationName)&quot;
+copy &quot;$(SolutionDir)\depnew\$(PlatformName)_$(ConfigurationName)\*.dll&quot; &quot;$(SolutionDir)\bin\$(ConfigurationName)&quot;
+copy &quot;$(SolutionDir)\depnew\$(PlatformName)_$(ConfigurationName)\*.pdb&quot; &quot;$(SolutionDir)\bin\$(ConfigurationName)&quot;
+copy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)\bin\$(ConfigurationName)\&quot;
+copy &quot;$(ProjectDir)$(ProjectName)\$(ProjectName).conf&quot; &quot;$(SolutionDir)\bin\$(ConfigurationName)\&quot;
+copy &quot;$(IntDir)\Readme_LudmillaConsoleCmds.txt&quot; &quot;$(SolutionDir)\bin\$(ConfigurationName)\docs&quot;
+"
+				ExcludedFromBuild="FALSE"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG"
+				Culture="1033"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="ConsoleCommands"
+			Filter="">
+			<File
+				RelativePath=".\LudMilla\ConsoleCommands\AConsole.cpp">
+			</File>
+			<File
+				RelativePath=".\LudMilla\ConsoleCommands\AConsole.h">
+			</File>
+			<File
+				RelativePath=".\LudMilla\ConsoleCommands\ConsoleCmds.cpp">
+			</File>
+			<File
+				RelativePath=".\LudMilla\ConsoleCommands\ConsoleCmds.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Version"
+			Filter="">
+			<File
+				RelativePath=".\LudMilla\Version\revision.h">
+			</File>
+			<File
+				RelativePath=".\LudMilla\Version\version.cpp">
+			</File>
+			<File
+				RelativePath=".\LudMilla\Version\version.h">
+			</File>
+		</Filter>
+		<File
+			RelativePath=".\LudMilla\LudMilla.conf">
+		</File>
+		<File
+			RelativePath="LudMilla\Main.cpp">
+		</File>
+		<File
+			RelativePath="LudMilla\Master.cpp">
+		</File>
+		<File
+			RelativePath="LudMilla\Master.h">
+		</File>
+		<File
+			RelativePath=".\LudMilla\Readme_LudmillaConsoleCmds.txt">
+			<FileConfiguration
+				Name="Release|Win32">
+				<Tool
+					Name="VCCustomBuildTool"
+					CommandLine="copy $(InputPath) $(IntDir)
+"
+					Outputs="$(IntDir)\$(InputFileName)"/>
+			</FileConfiguration>
+			<FileConfiguration
+				Name="Debug|Win32">
+				<Tool
+					Name="VCCustomBuildTool"
+					CommandLine="copy &quot;$(InputPath)&quot; &quot;$(IntDir)&quot;
+"
+					Outputs="$(IntDir)\$(InputFileName)"/>
+			</FileConfiguration>
+		</File>
+		<File
+			RelativePath="LudMilla\StdAfx.cpp">
+			<FileConfiguration
+				Name="Release|Win32">
+				<Tool
+					Name="VCCLCompilerTool"
+					UsePrecompiledHeader="1"/>
+			</FileConfiguration>
+			<FileConfiguration
+				Name="Debug|Win32">
+				<Tool
+					Name="VCCLCompilerTool"
+					UsePrecompiledHeader="1"
+					PrecompiledHeaderThrough="StdAfx.h"/>
+			</FileConfiguration>
+		</File>
+		<File
+			RelativePath="LudMilla\StdAfx.h">
+		</File>
+		<File
+			RelativePath="LudMilla\WorldRunnable.cpp">
+		</File>
+		<File
+			RelativePath="LudMilla\WorldRunnable.h">
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

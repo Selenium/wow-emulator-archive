@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib
+END
+SFileReadFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/SFileReadFile.cpp
+END
+SListFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/SListFile.cpp
+END
+StormLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/StormLib.h
+END
+SFileFindFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/SFileFindFile.cpp
+END
+StormDll.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/StormDll.h
+END
+SCommon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/SCommon.cpp
+END
+SFileCompactArchive.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/SFileCompactArchive.cpp
+END
+StormPort.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/StormPort.h
+END
+SCommon.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/SCommon.h
+END
+SFileOpenFileEx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/SFileOpenFileEx.cpp
+END
+SCompression.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/SCompression.cpp
+END
+SFileCreateArchiveEx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/SFileCreateArchiveEx.cpp
+END
+SFileOpenArchive.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/SFileOpenArchive.cpp
+END
+GfxDecode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/GfxDecode.cpp
+END
+StormPortLinux.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/StormPortLinux.cpp
+END
+StormPortMac.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/StormPortMac.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/Makefile
+END
+SFileExtractFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/SFileExtractFile.cpp
+END

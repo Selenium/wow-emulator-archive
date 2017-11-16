@@ -1,0 +1,78 @@
+WoWPython -- History of visible changes.
+
+Copyright (C) 2004, Team Python
+See the end for copying conditions.
+
+Please submit WoWPython bug reports at:
+  http://sourceforge.net/tracker/?func=add&group_id=114767&atid=669366
+
+
+Version 0.8.9
+
+* Cleaned the player login code and ObjectMgr creation helper
+  functions. - DeathCheese
+* Added support for a WoWPython.conf file which can contain console
+  commands to be executed on server start. - Follower
+* Fixed a bug that would displays players as naked after logging out
+  and then back in. - DeathCheese
+* Fixed Cinematics now will only start if at starting location
+* Quest code mainenance.  No new features, but now existing features
+  work correctly.  Most of it. - DeathCheese
+* In Worldserver::disconnect_client() LogoutPlayer() nulls current
+  char before we have a chance to remove it from InRange lists
+
+
+Version 0.8.8
+
+* Added Monster Movement - Asus coded WantedMan updated cvs
+* Added !summon and !appear
+
+
+Version 0.8.7
+
+* Multiple levels of GM - Battyone
+* Redesigned Command Prefixes - Battyone
+* Spell Trainers no longer train duplicate spells - R-o-n-n-y
+* LAN Mode fix - Eggy
+* .mount has a level requirement for non-gm - Battyone
+* .mount gives proper mounts - Europa
+* .mount for gm has no lvl requirement - Battyone
+* Kalimdor Spawns work correctly - anonymous (no name on patch tracker)
+* !broadcast command implemented - Europa
+* .mount sets correct mount speed - Battyone
+* .dismout sets correct walk speed - Battyone
+* Seperated GM levels - DeathCheese
+* Updatemask correct - DeathCheese
+* worldport no longer crashes client (still buggy with alot of creatures)
+
+
+Version 0.8.6
+
+* Trainers are now managed in Database - Angelic|999
+* Cosmetic changes to versioning - Battyone
+* New .sql file - Battyone
+* Beginnings of updatemask fix - DeathCheese
+* .speed Command - RandomGuy
+* Added LANhost - Eggy
+
+
+Version 0.8.5-pre3
+
+* Initial Release
+
+
+-------------------------------------------------------
+Copying information:
+
+Copyright (C) 2004, Team Python
+
+   Permission is granted to anyone to make or distribute verbatim copies
+   of this document as received, in any medium, provided that the
+   copyright notice and this permission notice are preserved,
+   thus giving the recipient permission to redistribute in turn.
+
+   Permission is granted to distribute modified versions
+   of this document, or of portions of it,
+   under the above conditions, provided also that they
+   carry prominent notices stating who last changed them.
+

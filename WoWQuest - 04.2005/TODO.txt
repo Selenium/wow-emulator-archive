@@ -1,0 +1,17 @@
+The TODO list contains job asignments. If you see something that needs work, add it to the list. To assign yourself to one of the jobs, simply write your name behind it, and dont forget to commit it ;). - Yellow
+
+This is what currently needs doing:
+
+* Items do not show for other players - 
+* Moving around items changes Health (Prolly just item stats, low priority)
+* Spells/skills do not work propperly - 
+* Some mana/rage stats seem wrong
+* Rest status is wrong
+* Player doesnt change to swim stance when entering water
+
+* Find the 1.3.0 changes
+* Account creation / edit in the winloader -  (some work done, putting on hold for now)
+* Redirect server can be removed (Used to be necesery for wow beta2)
+
+
+

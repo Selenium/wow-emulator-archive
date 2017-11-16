@@ -1,0 +1,91 @@
+All the current known Burning Crusade mounts.
+Last number (XXXXX) is also model ID/morph ID
+Note: ID numbers should be in hex when adding to code.
+
+=====================================================
+Blood Elf Level 40 Mounts: Hawkstrider
+=====================================================
+
+Red Hawkstrider: .reload 147 18696
+Brown Hawkstrider: .reload 147 19478
+Pink Hawkstrider: .reload 147 19479
+Grren Hawkstrider: .reload 147 19480
+
+=====================================================
+Blood Elf Level 60 Mounts: Armored Hawkstrider
+=====================================================
+
+Armored Red Hawkstrider: .reload 147 18697
+Armored Pink Hawkstrider: .reload 147 19482
+Armored White Hawkstrider: .reload 147 19483
+Armored SeaBlue Hawkstrider: .reload 147 19484
+
+=====================================================
+Draenei Level 40 Mounts: Elekk
+=====================================================
+
+Elekk: .reload 147 17063
+
+=====================================================
+Draenei Level 60 Mounts: Armored Elekk
+=====================================================
+
+Armored Elekk: .reload 147 17906
+
+//here
+
+=====================================================
+Alliance Normal Flying Mounts: Gryphon
+=====================================================
+
+Normal Gryphon: .reload 147 17693
+Black Gryphon: .reload 147 17694
+White Gryphon: .reload 147 17696
+
+=====================================================
+Alliance Epic Flying Mounts: Armored Gryphon
+=====================================================
+
+Green Armored Gryphon: .reload 147 17703
+Purple Armored Gryphon: .reload 147 17717
+Red Armored Gryphon: .reload 147 17718
+Blue Armored Gryphon: .reload 147 17759
+
+=====================================================
+Horde Normal Flying Mounts: Wyvern
+=====================================================
+
+Normal Wyvern: .reload 147 17699
+Blue Wyvern: .reload 147 17700
+Purple Wyvern: .reload 147 17701
+
+=====================================================
+Horde Epic Flying Mounts: Armored Wyvern
+=====================================================
+
+Red Armored Wyvern: .reload 147 17719
+Green Armored Wyvern: .reload 147 17720
+Purple Armored Wyvern: .reload 147 17721
+Yellow Armored Wyvern: .reload 147 17722
+
+=====================================================
+Boss drop: Felhorse
+=====================================================
+
+Felhorse: .reload 147 19250
+
+=====================================================
+Rare Flying Mount: Phoenix
+=====================================================
+
+Phoenix: .reload 147 17890
+
+=====================================================
+Rare Flying Mounts: Netherdrakes
+=====================================================
+
+Normal Netherdrake: .reload 147 16314
+Slightly Less Purple Netherdrake: .reload 147 17772
+Slightly Less Purple Netherdrake: .reload 147 17888
+Seablue Netherdrake: .reload 147 19891
+ELITE ARMORED NETHERDRAKE: .reload 147 20344

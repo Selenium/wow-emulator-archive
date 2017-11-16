@@ -1,0 +1,9 @@
+bin\Debug\WoWDaemon.Database.dll
+bin\Debug\WoWDaemon.Database.pdb
+bin\Debug\ByteFX.MySQL.dll
+bin\Debug\WoWDaemon.Common.dll
+bin\Debug\ICSharpCode.SharpZipLib.dll
+bin\Debug\WoWDaemon.Common.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\WoWDaemon.Database.dll
+obj\Debug\WoWDaemon.Database.pdb

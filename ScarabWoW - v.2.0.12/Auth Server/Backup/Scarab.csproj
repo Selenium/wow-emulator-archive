@@ -1,0 +1,41 @@
+<VisualStudioProject>
+  <CSHARP ProjectType="local" ProjectVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="4888e80d-069c-43b1-bf7b-2e2e265dabfb">
+    <Build>
+      <Settings AssemblyName="Scarab" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="Exe">
+        <Config Name="Debug" AllowUnsafeBlocks="true" DefineConstants="DEBUG;TRACE" DebugSymbols="true" IncrementalBuild="false" NoStdLib="false" Optimize="false" OutputPath="bin\Debug\" WarningLevel="4" />
+        <Config Name="Release" AllowUnsafeBlocks="true" DefineConstants="TRACE" DebugSymbols="false" IncrementalBuild="false" NoStdLib="false" Optimize="true" OutputPath="bin\Release\" WarningLevel="4" />
+      </Settings>
+      <References>
+        <Reference Name="System" AssemblyName="System" />
+        <Reference Name="MySql.Data" AssemblyName="MySql.Data" />
+      </References>
+    </Build>
+    <Files>
+      <Include>
+        <File RelPath="AssemblyInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Global.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\Utils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\ConfigParser.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\DatabaseManager.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\Network.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\ServerBase.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\Core.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="BigInteger.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\DatabaseConfig.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\NetworkConfg.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\RealmStruct.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\RealmColor.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\RealmTimeZone.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\RealmStatus.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\RealmType.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\RealmList.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\Account.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\ClientConnection.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\Program.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\ByteArrayBuilderV2.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\AuthOpCode.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="AuthServer\AuthErrorCode.cs" SubType="Code" BuildAction="Compile" />
+      </Include>
+    </Files>
+  </CSHARP>
+</VisualStudioProject>

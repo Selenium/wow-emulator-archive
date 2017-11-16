@@ -1,0 +1,184 @@
+Visual Basic World Of Warcraft® Server Emulator
+Copyright (c) 2005-2007, vbWoW Team
+
+
+Version:
+	vbWoW Server Pack
+	version 0.3.2660
+
+
+Basic Information:
+	vbWoW is an emulator for World Of Warcraft. The application is 
+	written in Visual Basic .Net, using CodeDom for dynamic code compiling of its scripts. 
+	Using Clustered Computing, once completed this server will be able to handle many players online. 
+	<vbWoW Server Pack> is consists of the following components: 
+		-RealmServer	- serving as login, account control, and realmlist manager
+		-WorldServer	- main server that controls all game functionality
+		-Control Center   - monitors server for problems
+		-Database	- database library engine used by all servers
+		-Filebase	- library containing wrapers for accessing game file types
+		-Logbase	- library for logging features (logging to irc/telnet/file/console)
+		-Ad		- for extracting maps
+
+
+Changelog:
+	Only noticeable changes are listed.
+	[+]:Feature
+	[*]:Update 
+	[!]:Note
+	[-]:InProgress
+
+	version 0.3.XXXX [XX.XX.2007]
+	- taxi working
+	- pets/summons support (no advenced AI or spells using them for now)
+	- vbWoW.Filebase access to MPQ and ADT files
+	- StandingAI, GuardAI, WaypointAI, CooperativeAI, EvilAI
+
+	version 0.3.2660 [14.04.2007]
+	+ moved to vbWoW.Logbase usage (added IRC/CONSOLE/COLORCONSOLE/TELNET/FILE log modes)
+	+ few more updates to the Mail system
+	+ bank working
+	+ version 2.0.8/2.0.10/2.0.12 support
+
+	version 0.3.2621 [08.03.2007]
+	+ spell effects related to comabat system (for adding to dodge, block, parry, crit chance)
+	+ new logging support (vbWoW.Logbase)
+	* combat system finally done
+	* starting items/spells fixed and moved outside the core
+
+	version 0.3.2584 [29.01.2007]
+	+ version 2.0.3/2.0.4/2.0.5/2.0.6 support, dbc scripts updated
+	+ keyring slot working
+	+ added some new item fields (sockets, bagfamily...)
+	+ added more aura effects
+
+	version 0.3.2565 [09.01.2007]
+	+ spell aura system (added fisrt aura handlers for: far sight, mount, periodic damage, transform)
+	+ improved invisibility system (addded auras for stealth, stealth detection)
+	+ version 2.0.1 support
+	+ talent learning and unlearning working (only visual effect for now)
+
+	version 0.3.2508 [13.10.2006]
+	+ new DefaultAI to be used with most creatures
+	+ items can be looted/opened (after closing looted item is deleted)
+	+ vbWoW.Database support for Oracle
+	+ vbWoW.Filebase component for access to DBC and WDB files
+
+	version 0.3.2471 [07.10.2006]
+	+ guilds working (will need little rewrite when RedirectServer is ready)
+	+ duel working
+	* changed database engine to vbWoW.Database (supporting MySQL, MSSQL)
+	* rewrite of vbWoW.WorldServer commands parsing and using delegates, now help command is available
+	! only MySQL database support is guaranteed to work for now
+
+	version 0.3.2447 [13.09.2006]
+	+ petition /guild charter/ working
+	+ basic core support for enchantments, random properties and working binding (soulbound items)
+	+ talent unlearn working (not used for now)
+	* updated combat system (dodge, parry, block works)
+
+	version 0.3.2435 [01.09.2006]
+	+ version 1.12 support
+	+ mail fully working (normal mail and auction mail)
+	+ auction working
+
+	version 0.3.2401 [29.07.2006]
+	+ quests support (kill mobs, gather items, deliver items, talk to)
+	+ next quest support
+	+ trainers working
+	+ version 1.11 support
+
+	version 0.3.2360 [19.06.2006]
+	+ party loot working
+	+ more spell effects added (frost nova, create item, learn spell)
+
+	version 0.3.2351 [10.06.2006]
+	+ trade working
+	+ party working
+	+ xp sharing
+
+	version 0.3.2341 [01.06.2006]
+	+ vendors working
+	+ loot system
+	+ general npc menu (no need for scripting every npc)
+	+ basic spell database and handling (fireball works)
+	+ simple creature AI for moving/defence
+	+ basic gameObject interactions
+	+ durability/repair working
+	+ combat system working - crit/hit/miss (dodge/parry and other needs formula)
+	+ addons banning system
+	
+	version 0.3.2322 [11.05.2006]
+	+ gmtickets
+	+ basic defensive creature AI
+	+ basic mail and trade
+	* enabled starting movies
+
+	version 0.3.2321 [10.05.2006]
+	+ basic combat system
+	+ graveyards working
+	+ spawning/importing spawns fixes
+
+	version 0.3.2315 [04.05.2006]
+	+ version 1.10 support (setweather command)
+	+ reputation woking
+	+ item spliting/stacking
+
+	version 0.3.2300 [19.04.2006]
+	+ cell manager ready - players can see each other
+	+ exploration working
+	+ death system working 
+	+ corpses/bones working
+	+ invisible system (like invisible spirit healers, invisible GM's (not yet enabled, but ready))
+	+ npc Gossip Scripting, ingame/console commands scripting
+	+ adding creatures in the world (no spawns commands yet)
+	+ gameObjects - first touch
+	! now to run WorldServer you need to use MaNGOS' map extractor with "-r 64" for extracting the maps
+	! maps are loaded from F:/World of Wacraft/Maps and not all
+	! only MapID=0 is working for now becouse RedirectServer is not done yet
+
+	version 0.3.4 [X.02.2006]
+	+ ActionBars working
+	+ basic spell scripting
+	+ items working (without spells)
+
+	version 0.3.3 [14.02.2006]
+	+ basic skills operations
+	+ basic spells operations
+	+ movement opcodes fixed
+	+ character stats working
+	+ private, global, say, yell chats working
+	+ friend list working at 100%
+	+ who working at 100%
+	+ ignore list working at 100%
+	+ handling tutorial flags
+	+ warden command bot working with sample commands like BAN, KICK, INFO...
+	+ character managment working at 100%
+
+	version 0.3.2 [17.11.2005]
+	+ working basic realm, basic mysql db, basic ban function
+	+ realm server development start, based on partial aWoWe 0.2 code
+
+	version 0.3.1 [16.11.2005]
+	+ changing code to reflect last selected DB source - MySQL, using aWoWe 0.2 source
+	+ splitting Realm and World servers
+	+ rewriting all auth module to use SRP6 dll by Kolie and Team NOX, because aWoWe 0.2 slow BigInt module
+
+
+Authors:
+	+ Spirit	: Core Coder, Tools Coder, Project Leader
+	+ Many other developers as well whom decided not to have their names shown here.
+
+
+Thanks To:
+	+ World of Warcraft®, (c) 2004 Blizzard Entertainment.
+	+ WowwoW, (c) 2005 DrNexus
+	+ SRP6DLL, Kolie and Team NOX
+	+ MySQL® Connector/Net 1.0
+	+ WoWD, OpenWoW, Ludmilla, MaNGOS Development Teams
+	+ Database teams and Repack makers
+	+ ...and all others missed here.
+
+
+Notes:
+	Enjoy :D. Visit http://vbwow.org/ for more information on vbWoW :).

@@ -1,0 +1,84 @@
+For melee attacks with weapons, the chance to crit is based on agility and
+critical strikes deal +100% normal damage (=200%). To see your chance to crit,
+open your spellbook, and hover your mouse over the "attack" ability. The tooltip
+will show your percent chance to crit.
+
+For spells, the chance to crit is based on intellect. Critical damage spells
+deal +50% normal damage (=150%). Critical heals will heal +50% their normal
+amount (=150%). There is currently no way to see your chance to crit with
+spells.
+
+At level 60, the formula for critical hits is changed as below: 
+
+Spells = [5 + INT/29]% 
+Rogue = [5 + AGI/29]% 
+Hunter = [5 + AGI/53]% ?? (NOT SURE) 
+Warrior/Shaman = [5 + AGI/20]% 
+Others = Unknown (most likely same as warrior/shaman) 
+
+The weapon skill affects the chance to crit downwards (-0,04% per point of skill
+below the current maximum). As an example, for a maximum weapon skill of 135,
+with current weapon skill 112 = -0,92% less chance to cast a critical.
+
+If the target is frozen, the chances to cast a critical hit are increased by 50%. 
+
+The objects increasing crit chance add up. 
+
+
+Info on crit and hit chances (from devs) 
+
+part 1 
+
+The way WoW calculates crit rate is over ALL attacks. Crit rate is not based on
+hits only. In other words, if you have a 5% crit rate, that 5% chance includes
+misses. (they're talking here about the in-game crit display tooltip, ignore
+this if you don't know what it is)
+
+All crit rate adjusting abilities, items, and talents add the flat % to the base
+% crit rate. So if I have a 5% base crit rate and then use an item or talent
+that increases that crit rate (let's use Improved Backstab talent for example -
++30% crit), my new crit with backstab is 35%.
+
+Regarding how defense decreases the rate of critical strikes, each point of
+defense that a target has over the attacker, the attacker loses 0.04% chance to
+crit. So, for example, if a level 60 Rogue is attacking a level 60 Warrior who
+has 25 defense, the rogue's crit rate will be decreased by 1%. (I think this
+only applies in PvP)
+
+part 2 
+
++toHit items subtract from your miss%. 
+
+So, ignoring all defensive actions (Block/Parry/Dodge/etc..) if I have 20% crit
+chance, 20% miss chance, and 60% hit chance and I equip an item that gives me
++5% toHit and +5% crit, my stats become 25% crit, 15% miss chance, 60% hit
+chance.
+
+New hit chance = (Original hit%) + (toHit modifiers) - (crit modifiers) 
+60% + 5% - 5% = 60% 
+
+New crit chance = (Original crit%) + (crit modifiers) 
+20% + 5% = 25% 
+
+New miss chance - (Original miss%) - (toHit modifiers) 
+20% - 5% = 15% 
+
+(seems pretty clear, I assume it generates a random action on strike according
+the given probabilities - programmers 'language': random (1 - 10000); IF IN
+1-6000 = hit, 6001-8500 = crit, 8501-10000 = miss)
+
+
+DUAL WIELD
+-----------
+Possible only for warriors, rogues and hunters. 
+
+Inflicts a 24% base miss rate (compared to 5% for wielding a single weapon). 
+
+(this applies for maximum weapon skill for current level and is likely higher if
+skill is lower than maximum)
+
+The weapon in the off hand inflicts only 50% of its damage. 
+
+Note: The Rogue's dual-wield talent increases the off-hand weapon's damage from
+50% up to 75%.
+

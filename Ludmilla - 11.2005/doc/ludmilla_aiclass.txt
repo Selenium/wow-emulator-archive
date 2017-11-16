@@ -1,0 +1,79 @@
+Let me try to compile such list... It still will be not full, so get ready to add any updates 
+to your generator script and run it over and over again :)
+
+Each class has 3 branches of spells + base spells available to everyone of that race, also 
+each class has 3 branches of talents. We will not think about talents this time, because we 
+have no knowledge about it, and mobs unlikely to use talents, only spells. As I noticed mobs 
+rarely (or never) use spells from all 3 branches, rather from 2. So warrior mob, sundering your armor, 
+is unlikely to hit you with battle shout or rend from other spell branches.
+
+If no aispells= specified, defaults to melee
+
+aispells=melee // only melee combat
+
+WARRIOR
+aispells=warrior // using some subset of arms + protection?
+
+MAGE
+aispells=mage // maybe uses some random branch?
+aispells=mage.fire
+aispells=mage.frost
+aispells=mage.shadow // word "Shadowmage"
+
+PALADIN
+aispells=paladin // maybe uses some random branch
+aispells=paladin.holy // word "Scarlet"
+aispells=paladin.protection // Scarlet boss - Mograine and Whitemane
+
+PRIEST
+aispells=priest // uses holy + shadowmagic
+// Can't remember priest mobs, maybe some bosses or healing supports in instances...
+
+ROGUE
+aispells=rogue // uses subtlety + combat spells
+
+SHAMAN // word "Mystic", "Shaman"
+aispells=shaman // elementalcombat + restoration branches I guess
+
+WARLOCK
+aispells=warlock // use destruction and affliction branches
+
+DRUID
+aispells=druid // uses restoration + balance - healing and entangling roots druid
+
+HUNTER
+// Well I don't remember any hunter mob, so this class entirely not used
+
+OTHER AI SPELL SETS
+aispells=spider
+aispells=dragonkin // fireballs, then flame breath since some high level
+aispells=rabid // casts disease or rabies of maximum available level
+aispells=shadowhorn // "shadowhorn stag" beast in ashenvale casts curse of shadowhorn
+
+==========================================
+NOW TO AI CLASSES
+
+Aiclass can use any one aispells= value to cast in combat. If no aiclass= specified, defaults 
+
+to mixed.
+
+aiclass=none // does not react
+aiclass=coward // flees from threat
+aiclass=melee // attacks only melee
+aiclass=mixed // hits melee, casts spells from aispell= set on enemy or allies or self
+aiclass=caster // prefers to cast first, can hit melee
+aiclass=purecaster // only casts, never hits melee (warlock imp)
+
+AI ROLES
+
+Ai roles tell what creature does when idle and no threat around. If no AI role specified, then defaults to none.
+
+airole=none // does nothing special
+airole=guard // guards territory, chasing and melee attacking all enemies, does not cast
+airole=worker // shows work animation, can walk path
+airole=smith // shows smithing animation, can walk path
+airole=training // attacks combat dummy constantly dealing zero damage
+airole=dead // lays like dead or sick, but talks and gives quests
+airole=sitting // sits on the ground
+
+// Later to think about savannah lions, that can sleep :)

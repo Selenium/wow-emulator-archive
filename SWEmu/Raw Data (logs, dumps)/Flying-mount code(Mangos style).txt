@@ -1,0 +1,52 @@
+|14:58| <> to fly with this 
+|14:58| <> WorldPacket data;
+|14:58| <> 	
+|14:58| <> 	data.Initialize(835);
+|14:58| <>     data << uint8(0xFF) << player->GetGUID();
+|14:58| <> 	data << uint32(2);
+|14:58| <>     player->SendMessageToSet(&data,true);
+|14:58| <> 	//player->GetSession()->SendPacket(&data);
+|14:58| <> 835 is opcode
+|14:58| <Bloody> nice
+|14:58| <> remember to send this code to him
+|14:58| <> to land 
+|14:59| <> Player *player=m_session->GetPlayer();
+|14:59| <> 	WorldPacket data;
+|14:59| <> 	
+|14:59| <> 	data.Initialize(836);
+|14:59| <>     data << uint8(0xFF) << player->GetGUID();
+|14:59| <> 	data << uint32(5);
+|14:59| <>     player->SendMessageToSet(&data,true);
+|14:59| <> 	//player->GetSession()->SendPacket(&data);
+|14:59| <>     return true;
+|14:59| <> and the final one is 
+|14:59| <> to change speed
+|14:59| <> flying speed
+|14:59| <> WorldPacket data;
+|14:59| <> 	
+|14:59| <> 	data.Initialize(897);               //SMSG_FORCE_FLY_SPEED_CHANGE 899back
+|14:59| <>     data << uint8(0xFF) << player->GetGUID();
+|14:59| <>     data << (uint32)0;
+|14:59| <>     data << (float)ASpeed;
+|14:59| <>     player->SendMessageToSet(&data,true);
+|14:59| <>     return true;
+
+Basic rewrite of code above(mangos-style to pantera)
+//fly
+CPacket pkg;
+pkg.Reset(835);
+pkg << guid << (unsigned long)2;
+pClient->Send(&pkg);
+
+//land
+CPacket pkg;
+pkg.Reset(836);
+pkg << guid << (unsigned long)5;
+pClient->Send(&pkg);
+
+//change speed
+CPacket pkg;
+pkg.Reset(897);
+pkg  << guid << (unsigned long)0 << (float)ASpeed;
+pClient->Send(&pkg);
+

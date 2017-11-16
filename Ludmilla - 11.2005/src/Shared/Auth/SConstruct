@@ -1,0 +1,25 @@
+# !!! USE MAIN SCONSTRUCT-FILE FOR COMPILING !!!
+#
+# --> SConstruct for libauth
+#
+# If you want to compile only this library comment other
+# SConstruct invocations in main SConstruct out
+#
+
+StaticLibrary('../../build/auth', [
+		'BigNumber.cpp',
+		'Sha1.cpp',
+		'WowCrypt.cpp'
+	],
+	CPPPATH = [
+		'../../src/Game',
+		'../../src/LudMilla',
+		'../../src/RealmList',
+		'../../src/Shared',
+		'../../src/Shared/Auth',
+		'../../src/Spells',
+		'../../depnew/Unix_dep/',
+		'/usr/include/python2.4'
+	],
+	CCFLAGS='-fpermissive -w'
+)

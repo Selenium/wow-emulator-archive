@@ -1,0 +1,212 @@
+# Project: wowpython
+# Makefile created by Dev-C++ 4.9.8.0
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = wowpython_private.res
+OBJ  = DevCPP/Character.o DevCPP/CharacterHandler.o DevCPP/ChatHandler.o DevCPP/Combat.o DevCPP/GameClient.o DevCPP/GameObject.o DevCPP/Group.o DevCPP/GroupHandler.o DevCPP/Item.o DevCPP/ItemHandler.o DevCPP/Level0.o DevCPP/Level1.o DevCPP/Level2.o DevCPP/Level3.o DevCPP/MiscHandler.o DevCPP/MovementHandler.o DevCPP/NPCHandler.o DevCPP/Object.o DevCPP/ObjectMgr.o DevCPP/QueryHandler.o DevCPP/QuestHandler.o DevCPP/SkillHandler.o DevCPP/SpellHandler.o DevCPP/TaxiHandler.o DevCPP/Unit.o DevCPP/WorldServer.o DevCPP/RealmClient.o DevCPP/RealmListSrv.o DevCPP/RedirectorSrv.o DevCPP/Client.o DevCPP/Database.o DevCPP/DatabaseInterface.o DevCPP/Log.o DevCPP/MemoryLeaks.o DevCPP/Network.o DevCPP/NetworkInterface.o DevCPP/Script.o DevCPP/Server.o DevCPP/Threads.o DevCPP/UserAccount.o DevCPP/lapi.o DevCPP/lcode.o DevCPP/ldebug.o DevCPP/ldo.o DevCPP/ldump.o DevCPP/lfunc.o DevCPP/lgc.o DevCPP/llex.o DevCPP/lmem.o DevCPP/lobject.o DevCPP/lopcodes.o DevCPP/lparser.o DevCPP/lstate.o DevCPP/lstring.o DevCPP/ltable.o DevCPP/ltests.o DevCPP/ltm.o DevCPP/lundump.o DevCPP/lvm.o DevCPP/lzio.o DevCPP/Main.o $(RES)
+LINKOBJ  = DevCPP/Character.o DevCPP/CharacterHandler.o DevCPP/ChatHandler.o DevCPP/Combat.o DevCPP/GameClient.o DevCPP/GameObject.o DevCPP/Group.o DevCPP/GroupHandler.o DevCPP/Item.o DevCPP/ItemHandler.o DevCPP/Level0.o DevCPP/Level1.o DevCPP/Level2.o DevCPP/Level3.o DevCPP/MiscHandler.o DevCPP/MovementHandler.o DevCPP/NPCHandler.o DevCPP/Object.o DevCPP/ObjectMgr.o DevCPP/QueryHandler.o DevCPP/QuestHandler.o DevCPP/SkillHandler.o DevCPP/SpellHandler.o DevCPP/TaxiHandler.o DevCPP/Unit.o DevCPP/WorldServer.o DevCPP/RealmClient.o DevCPP/RealmListSrv.o DevCPP/RedirectorSrv.o DevCPP/Client.o DevCPP/Database.o DevCPP/DatabaseInterface.o DevCPP/Log.o DevCPP/MemoryLeaks.o DevCPP/Network.o DevCPP/NetworkInterface.o DevCPP/Script.o DevCPP/Server.o DevCPP/Threads.o DevCPP/UserAccount.o DevCPP/lapi.o DevCPP/lcode.o DevCPP/ldebug.o DevCPP/ldo.o DevCPP/ldump.o DevCPP/lfunc.o DevCPP/lgc.o DevCPP/llex.o DevCPP/lmem.o DevCPP/lobject.o DevCPP/lopcodes.o DevCPP/lparser.o DevCPP/lstate.o DevCPP/lstring.o DevCPP/ltable.o DevCPP/ltests.o DevCPP/ltm.o DevCPP/lundump.o DevCPP/lvm.o DevCPP/lzio.o DevCPP/Main.o $(RES)
+LIBS =  -L"C:/Program Files/Dev-Cpp/lib" -L"../dep/lib" -lws2_32 -lwinmm -lmysql 
+INCS =  -I"C:/Program Files/Dev-Cpp/include"  -I"../src/shared"  -I"../src/realmlist"  -I"../src/redirect"  -I"../src/game"  -I"../dep/inc/mysql" 
+CXXINCS =  -I"C:/Program Files/Dev-Cpp/include/c++"  -I"C:/Program Files/Dev-Cpp/include/c++/mingw32"  -I"C:/Program Files/Dev-Cpp/include/c++/backward"  -I"C:/Program Files/Dev-Cpp/include"  -I"../src/shared"  -I"../src/realmlist"  -I"../src/redirect"  -I"../src/game"  -I"../dep/inc/mysql" 
+BIN  = ../bin/wowpython.exe
+CXXFLAGS = $(CXXINCS)  -O3
+CFLAGS = $(INCS)  -O3
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before ../bin/wowpython.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) $(LINKOBJ) -o "..\bin\wowpython.exe" $(LIBS)
+
+DevCPP/Character.o: ../src/game/Character.cpp
+	$(CPP) -c ../src/game/Character.cpp -o DevCPP/Character.o $(CXXFLAGS)
+
+DevCPP/CharacterHandler.o: ../src/game/CharacterHandler.cpp
+	$(CPP) -c ../src/game/CharacterHandler.cpp -o DevCPP/CharacterHandler.o $(CXXFLAGS)
+
+DevCPP/ChatHandler.o: ../src/game/ChatHandler.cpp
+	$(CPP) -c ../src/game/ChatHandler.cpp -o DevCPP/ChatHandler.o $(CXXFLAGS)
+
+DevCPP/Combat.o: ../src/game/Combat.cpp
+	$(CPP) -c ../src/game/Combat.cpp -o DevCPP/Combat.o $(CXXFLAGS)
+
+DevCPP/GameClient.o: ../src/game/GameClient.cpp
+	$(CPP) -c ../src/game/GameClient.cpp -o DevCPP/GameClient.o $(CXXFLAGS)
+
+DevCPP/GameObject.o: ../src/game/GameObject.cpp
+	$(CPP) -c ../src/game/GameObject.cpp -o DevCPP/GameObject.o $(CXXFLAGS)
+
+DevCPP/Group.o: ../src/game/Group.cpp
+	$(CPP) -c ../src/game/Group.cpp -o DevCPP/Group.o $(CXXFLAGS)
+
+DevCPP/GroupHandler.o: ../src/game/GroupHandler.cpp
+	$(CPP) -c ../src/game/GroupHandler.cpp -o DevCPP/GroupHandler.o $(CXXFLAGS)
+
+DevCPP/Item.o: ../src/game/Item.cpp
+	$(CPP) -c ../src/game/Item.cpp -o DevCPP/Item.o $(CXXFLAGS)
+
+DevCPP/ItemHandler.o: ../src/game/ItemHandler.cpp
+	$(CPP) -c ../src/game/ItemHandler.cpp -o DevCPP/ItemHandler.o $(CXXFLAGS)
+
+DevCPP/Level0.o: ../src/game/Level0.cpp
+	$(CPP) -c ../src/game/Level0.cpp -o DevCPP/Level0.o $(CXXFLAGS)
+
+DevCPP/Level1.o: ../src/game/Level1.cpp
+	$(CPP) -c ../src/game/Level1.cpp -o DevCPP/Level1.o $(CXXFLAGS)
+
+DevCPP/Level2.o: ../src/game/Level2.cpp
+	$(CPP) -c ../src/game/Level2.cpp -o DevCPP/Level2.o $(CXXFLAGS)
+
+DevCPP/Level3.o: ../src/game/Level3.cpp
+	$(CPP) -c ../src/game/Level3.cpp -o DevCPP/Level3.o $(CXXFLAGS)
+
+DevCPP/MiscHandler.o: ../src/game/MiscHandler.cpp
+	$(CPP) -c ../src/game/MiscHandler.cpp -o DevCPP/MiscHandler.o $(CXXFLAGS)
+
+DevCPP/MovementHandler.o: ../src/game/MovementHandler.cpp
+	$(CPP) -c ../src/game/MovementHandler.cpp -o DevCPP/MovementHandler.o $(CXXFLAGS)
+
+DevCPP/NPCHandler.o: ../src/game/NPCHandler.cpp
+	$(CPP) -c ../src/game/NPCHandler.cpp -o DevCPP/NPCHandler.o $(CXXFLAGS)
+
+DevCPP/Object.o: ../src/game/Object.cpp
+	$(CPP) -c ../src/game/Object.cpp -o DevCPP/Object.o $(CXXFLAGS)
+
+DevCPP/ObjectMgr.o: ../src/game/ObjectMgr.cpp
+	$(CPP) -c ../src/game/ObjectMgr.cpp -o DevCPP/ObjectMgr.o $(CXXFLAGS)
+
+DevCPP/QueryHandler.o: ../src/game/QueryHandler.cpp
+	$(CPP) -c ../src/game/QueryHandler.cpp -o DevCPP/QueryHandler.o $(CXXFLAGS)
+
+DevCPP/QuestHandler.o: ../src/game/QuestHandler.cpp
+	$(CPP) -c ../src/game/QuestHandler.cpp -o DevCPP/QuestHandler.o $(CXXFLAGS)
+
+DevCPP/SkillHandler.o: ../src/game/SkillHandler.cpp
+	$(CPP) -c ../src/game/SkillHandler.cpp -o DevCPP/SkillHandler.o $(CXXFLAGS)
+
+DevCPP/SpellHandler.o: ../src/game/SpellHandler.cpp
+	$(CPP) -c ../src/game/SpellHandler.cpp -o DevCPP/SpellHandler.o $(CXXFLAGS)
+
+DevCPP/TaxiHandler.o: ../src/game/TaxiHandler.cpp
+	$(CPP) -c ../src/game/TaxiHandler.cpp -o DevCPP/TaxiHandler.o $(CXXFLAGS)
+
+DevCPP/Unit.o: ../src/game/Unit.cpp
+	$(CPP) -c ../src/game/Unit.cpp -o DevCPP/Unit.o $(CXXFLAGS)
+
+DevCPP/WorldServer.o: ../src/game/WorldServer.cpp
+	$(CPP) -c ../src/game/WorldServer.cpp -o DevCPP/WorldServer.o $(CXXFLAGS)
+
+DevCPP/RealmClient.o: ../src/realmlist/RealmClient.cpp
+	$(CPP) -c ../src/realmlist/RealmClient.cpp -o DevCPP/RealmClient.o $(CXXFLAGS)
+
+DevCPP/RealmListSrv.o: ../src/realmlist/RealmListSrv.cpp
+	$(CPP) -c ../src/realmlist/RealmListSrv.cpp -o DevCPP/RealmListSrv.o $(CXXFLAGS)
+
+DevCPP/RedirectorSrv.o: ../src/redirect/RedirectorSrv.cpp
+	$(CPP) -c ../src/redirect/RedirectorSrv.cpp -o DevCPP/RedirectorSrv.o $(CXXFLAGS)
+
+DevCPP/Client.o: ../src/shared/Client.cpp
+	$(CPP) -c ../src/shared/Client.cpp -o DevCPP/Client.o $(CXXFLAGS)
+
+DevCPP/Database.o: ../src/shared/Database.cpp
+	$(CPP) -c ../src/shared/Database.cpp -o DevCPP/Database.o $(CXXFLAGS)
+
+DevCPP/DatabaseInterface.o: ../src/shared/DatabaseInterface.cpp
+	$(CPP) -c ../src/shared/DatabaseInterface.cpp -o DevCPP/DatabaseInterface.o $(CXXFLAGS)
+
+DevCPP/Log.o: ../src/shared/Log.cpp
+	$(CPP) -c ../src/shared/Log.cpp -o DevCPP/Log.o $(CXXFLAGS)
+
+DevCPP/MemoryLeaks.o: ../src/shared/MemoryLeaks.cpp
+	$(CPP) -c ../src/shared/MemoryLeaks.cpp -o DevCPP/MemoryLeaks.o $(CXXFLAGS)
+
+DevCPP/Network.o: ../src/shared/Network.cpp
+	$(CPP) -c ../src/shared/Network.cpp -o DevCPP/Network.o $(CXXFLAGS)
+
+DevCPP/NetworkInterface.o: ../src/shared/NetworkInterface.cpp
+	$(CPP) -c ../src/shared/NetworkInterface.cpp -o DevCPP/NetworkInterface.o $(CXXFLAGS)
+
+DevCPP/Script.o: ../src/shared/Script.cpp
+	$(CPP) -c ../src/shared/Script.cpp -o DevCPP/Script.o $(CXXFLAGS)
+
+DevCPP/Server.o: ../src/shared/Server.cpp
+	$(CPP) -c ../src/shared/Server.cpp -o DevCPP/Server.o $(CXXFLAGS)
+
+DevCPP/Threads.o: ../src/shared/Threads.cpp
+	$(CPP) -c ../src/shared/Threads.cpp -o DevCPP/Threads.o $(CXXFLAGS)
+
+DevCPP/UserAccount.o: ../src/shared/UserAccount.cpp
+	$(CPP) -c ../src/shared/UserAccount.cpp -o DevCPP/UserAccount.o $(CXXFLAGS)
+
+DevCPP/lapi.o: ../src/shared/lua/lapi.c
+	$(CPP) -c ../src/shared/lua/lapi.c -o DevCPP/lapi.o $(CXXFLAGS)
+
+DevCPP/lcode.o: ../src/shared/lua/lcode.c
+	$(CPP) -c ../src/shared/lua/lcode.c -o DevCPP/lcode.o $(CXXFLAGS)
+
+DevCPP/ldebug.o: ../src/shared/lua/ldebug.c
+	$(CPP) -c ../src/shared/lua/ldebug.c -o DevCPP/ldebug.o $(CXXFLAGS)
+
+DevCPP/ldo.o: ../src/shared/lua/ldo.c
+	$(CPP) -c ../src/shared/lua/ldo.c -o DevCPP/ldo.o $(CXXFLAGS)
+
+DevCPP/ldump.o: ../src/shared/lua/ldump.c
+	$(CPP) -c ../src/shared/lua/ldump.c -o DevCPP/ldump.o $(CXXFLAGS)
+
+DevCPP/lfunc.o: ../src/shared/lua/lfunc.c
+	$(CPP) -c ../src/shared/lua/lfunc.c -o DevCPP/lfunc.o $(CXXFLAGS)
+
+DevCPP/lgc.o: ../src/shared/lua/lgc.c
+	$(CPP) -c ../src/shared/lua/lgc.c -o DevCPP/lgc.o $(CXXFLAGS)
+
+DevCPP/llex.o: ../src/shared/lua/llex.c
+	$(CPP) -c ../src/shared/lua/llex.c -o DevCPP/llex.o $(CXXFLAGS)
+
+DevCPP/lmem.o: ../src/shared/lua/lmem.c
+	$(CPP) -c ../src/shared/lua/lmem.c -o DevCPP/lmem.o $(CXXFLAGS)
+
+DevCPP/lobject.o: ../src/shared/lua/lobject.c
+	$(CPP) -c ../src/shared/lua/lobject.c -o DevCPP/lobject.o $(CXXFLAGS)
+
+DevCPP/lopcodes.o: ../src/shared/lua/lopcodes.c
+	$(CPP) -c ../src/shared/lua/lopcodes.c -o DevCPP/lopcodes.o $(CXXFLAGS)
+
+DevCPP/lparser.o: ../src/shared/lua/lparser.c
+	$(CPP) -c ../src/shared/lua/lparser.c -o DevCPP/lparser.o $(CXXFLAGS)
+
+DevCPP/lstate.o: ../src/shared/lua/lstate.c
+	$(CPP) -c ../src/shared/lua/lstate.c -o DevCPP/lstate.o $(CXXFLAGS)
+
+DevCPP/lstring.o: ../src/shared/lua/lstring.c
+	$(CPP) -c ../src/shared/lua/lstring.c -o DevCPP/lstring.o $(CXXFLAGS)
+
+DevCPP/ltable.o: ../src/shared/lua/ltable.c
+	$(CPP) -c ../src/shared/lua/ltable.c -o DevCPP/ltable.o $(CXXFLAGS)
+
+DevCPP/ltests.o: ../src/shared/lua/ltests.c
+	$(CPP) -c ../src/shared/lua/ltests.c -o DevCPP/ltests.o $(CXXFLAGS)
+
+DevCPP/ltm.o: ../src/shared/lua/ltm.c
+	$(CPP) -c ../src/shared/lua/ltm.c -o DevCPP/ltm.o $(CXXFLAGS)
+
+DevCPP/lundump.o: ../src/shared/lua/lundump.c
+	$(CPP) -c ../src/shared/lua/lundump.c -o DevCPP/lundump.o $(CXXFLAGS)
+
+DevCPP/lvm.o: ../src/shared/lua/lvm.c
+	$(CPP) -c ../src/shared/lua/lvm.c -o DevCPP/lvm.o $(CXXFLAGS)
+
+DevCPP/lzio.o: ../src/shared/lua/lzio.c
+	$(CPP) -c ../src/shared/lua/lzio.c -o DevCPP/lzio.o $(CXXFLAGS)
+
+DevCPP/Main.o: ../src/wowpython/Main.cpp
+	$(CPP) -c ../src/wowpython/Main.cpp -o DevCPP/Main.o $(CXXFLAGS)
+
+wowpython_private.res: wowpython_private.rc 
+	$(WINDRES) -i wowpython_private.rc -I rc -o wowpython_private.res -O coff 

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver
+END
+AuthStructs.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/AuthStructs.h
+END
+LogonOpcodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/LogonOpcodes.h
+END
+LogonConsole.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/LogonConsole.cpp
+END
+LogonConsole.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/LogonConsole.h
+END
+AuthSocket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/AuthSocket.cpp
+END
+AuthSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/AuthSocket.h
+END
+AutoPatcher.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/AutoPatcher.cpp
+END
+AccountCache.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/AccountCache.cpp
+END
+LogonCommServer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/LogonCommServer.cpp
+END
+AutoPatcher.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/AutoPatcher.h
+END
+Main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/Main.cpp
+END
+AccountCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/AccountCache.h
+END
+LogonCommServer.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/LogonCommServer.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/Makefile.am
+END
+LogonStdAfx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/LogonStdAfx.cpp
+END
+Main.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/Main.h
+END
+LogonOpcodes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/LogonOpcodes.cpp
+END
+PeriodicFunctionCall_Thread.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/PeriodicFunctionCall_Thread.h
+END
+LogonStdAfx.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver/LogonStdAfx.h
+END

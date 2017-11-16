@@ -1,0 +1,92 @@
+Strength
+
+    * Strength increases your melee attack power by 2, except for rogues and Hunters. Rogues and Hunters gain 1 attack power per point of Strength, and 1 per point of Agility.
+    * Attack power increases your base melee DPS by 1 for every 14 attack power.
+    * Increases the amount of damage you can block with a shield. 
+
+Strength does not affect critical hit chances at all. Strength does not improve your chance to block, but rather the amount of damage blocked when you succeed. This amount is determined in part by Strength (and the other part by your shield).
+
+
+Stamina
+Increases health points. Each point of Stamina gives you an additional 10 HP.
+
+
+Intellect
+
+    * Increases the rate at which you learn weapon skills.
+    * Increases your Mana points.
+    * Increases your chance to score a critical hit with spells. 
+
+Agility
+
+    * Increases Armor Class by 2 for every point of AGI.
+    * Increases the chance of a critical hit with melee and ranged attacks. The amount of the increase is dependant on both class and level. For most level 60 character classes, approximately 20 points of AGI will increase your critical hit chance by approximately 1%. Rogues require 29 AGI for an additional 1% critical hit chance, and Hunters require 53 AGI for an additional 1% critical hit chance, but both of these classes also gain attack power from agility and the items available to them typically have much higher amounts of AGI.
+    * Increases the chance to dodge an attack. The amount increased is dependant on both class and level. For most level 60 character classes, approximately 20 points of AGI will increase your chance to dodge by approximately 1%. Rogues only require 14.5 AGI for an additional 1% dodge chance. Hunters require 26.5 AGI for an additional 1% dodge chance, but Hunters typically have a high amount of agility, as well as an Aspect spell that further increases their chance to dodge attacks. 
+
+Spirit
+Increases health and mana regeneration. Spirit affects all characters' mana and hit point regeneration rates in and out of combat.
+Proposed formula (not verified):
+mana/sec = 7 + Spirit/10 (see Health/Mana Regen for more specific rates)
+Also, sitting down does not speed up mana (or health) regeneration, only drinking (respective eating) does that.
+
+1 Stamina= 10 health
+1 Intellect= 15 mana and .01% chance to crit with spells
+1 spirit for priests= .25 mana per 3 secs
+1 spirit for everyone else= .2 mana per 3 secs
+1 Agility for rouges and hunters= .05% crit chance with melee and 2 armor and .05% dodge chance and 1 attack power
+1 Agility for everyone else= .05% crit chance with melee and 2 armor and .05% dodge chance
+1 strength for Rouges and hunters= 1 attack power
+1 Strength for everyone else= 2 attack power
+
+Attack Power
+
+14 attack power = 1 damage per second.
+
+Warrior/Paladin: AP=charlvl*3+str*2-20
+Rogue/Hunter: AP=charlvl*2+str+agi-20
+Shaman: AP=charlvl*2+str*2-20
+Druid: AP=str*2-20
+Mage/Priest/Warlock: AP=str-10
+
+Attack Power effect DPS only.
+DPS=AP/14+wpn's DPS
+
+
+XP calculation
+http://wow.allakhazam.com/db/guides.html?guide=362
+
+Health Regen
+o regeneration in combat.
+There is 1 tick of regeneration every 2 seconds.
+Its value depends on class and spirit :
+
+Mage = Spirit*0.10
+Priest = Spirit*0.10
+Warlock = Spirit*0.11
+Druid = Unknown
+Shaman = Spirit*0.11 + 9 
+Rogue = Spirit*0.50
+Warrior = Spirit*0.80
+Hunter = Spirit*0.25
+Paladin = Spirit*0.25
+
+
+Mana Regen
+Your mana regenerates all of the time, except for a period of five seconds after you cast a spell. In this five seconds, you have no regeneration. This is commonly called the five second rule. A spell here is defined as anything that costs mana to cast.
+
+One interesting note is when spells *don't* cost mana, they will not start this timer, and you will continue to regen mana. Nature's Swiftness costs no mana, and will not invoke the five second rule. Spells casted with the clearcasting state from the Elemental Focus talent also will not start the five second timer.
+
+Totems, on the other hand, will start the five second timer.
+
+Mana regenerates according to how much spirit you have. You do not mana regen faster if you are sitting down or standing up. You do not mana regen faster in battle or out of battle.
+
+Regeneration starts again 5 seconds after casting is over.
+There is 1 tick of regeneration every 2 seconds.
+Its value depends on class and spirit : 
+Mage = Spirit/4 + 11
+Priest = Spirit/4 + 13
+Warlock = Spirit/4 + 8
+Druid = Spirit/5 + 15
+Shaman = Spirit/5 + 17 (from pionere)
+Hunter= Spirit/4 + 11
+Paladin = Spirit/4 + 8

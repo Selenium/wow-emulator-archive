@@ -1,0 +1,41 @@
+havner:
+- lua makefile
+- NetworkInterface delete in pClient destructor (check if there's memleak)
+- RealmMap integration in RealmList
+- PthreadLock virtual class for UserHashes and after above point for RealmList
+- full WS <-> RL communication, notifications, pings, bla bla bla
+- review LINA things i commented out to reimplement them
+- add log levels to Log class (or even subclasses to show specific messages)
+- unify all Log calls for above (including deletion of all printfs and couts)
+- clean Main.cpp files (i'll wait for zap with his commit)
+- check variables visibilty and add get/set functions (mainly for Srp)
+- add some packet creator for RL to avoid this sprintfs, arrays (operator<<)
+- fix RL packet logger and make it work both ways maybe(?)
+  RL protocol makes it hard to implement, cause no packet size on beginning
+- check why LOGON_PROOF with rejection doesn't work on uncracked exe anymore
+- s/char*/const char*/ where it should be
+cosmetics:
+- includes cleaning
+- files' headers check
+- clean both version.h (i would put them in one file)
+
+robo:
+- lua integration - a big topic to discuss, really
+- packet forger - packet generation layer, to make game code packet independant
+
+joker:
+- Update combat system
+- Update emotes
+- Implement the rest of chat system (Zone chat, local defense, world defense,
+  local trade, guild chat, party chat, raid chat)
+- Replace quest system with a scriptable setup
+- Implement quadtree system for in range object collection (I'll handle this one)
+- Fix autoconf. it currently does not find mysql/openssl ALOT of the time (even on
+  std system layouts)
+- Restructurize the database. 
+- Update a9's for new 1.2.4 fields/lengths
+- Implement zlib compression to replace SMSG_UPDATE_OBJECT with
+  SMSG_COMPRESSED_UPDATE_OBJECT (this should save some bandwidth :)
+
+zap:
+- General cleanup

@@ -1,0 +1,543 @@
+<?xml version="1.0" standalone="yes"?>
+<Creature>
+  <Creature>
+    <Creature_ID>1</Creature_ID>
+    <Name>Thief</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.Thief</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>2</Creature_ID>
+    <Name>Small Thief</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.SmallThief</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>3</Creature_ID>
+    <Name>Wolk</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>4</Creature_ID>
+    <Name>fuck</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>5</Creature_ID>
+    <Name>some</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>6</Creature_ID>
+    <Name>cunB4t</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>7</Creature_ID>
+    <Name>sd</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>8</Creature_ID>
+    <Name>Dragon</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>9</Creature_ID>
+    <Name>fd</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>10</Creature_ID>
+    <Name>dg</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>11</Creature_ID>
+    <Name>grell</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>12</Creature_ID>
+    <Name>centaur</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>13</Creature_ID>
+    <Name>cent</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>14</Creature_ID>
+    <Name>Tarindrella</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>15</Creature_ID>
+    <Name>tarantual</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>16</Creature_ID>
+    <Name>webwood</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>17</Creature_ID>
+    <Name>ne</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>18</Creature_ID>
+    <Name>hyppo</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>19</Creature_ID>
+    <Name>mjau</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>20</Creature_ID>
+    <Name>sentinel</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>21</Creature_ID>
+    <Name>mage</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>22</Creature_ID>
+    <Name>test</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>23</Creature_ID>
+    <Name>test2</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>24</Creature_ID>
+    <Name>teldrasill</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>25</Creature_ID>
+    <Name>gruff</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>26</Creature_ID>
+    <Name>cock</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>27</Creature_ID>
+    <Name>braclet</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>28</Creature_ID>
+    <Name>whore</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>29</Creature_ID>
+    <Name>gorilla</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>30</Creature_ID>
+    <Name>7f3</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>31</Creature_ID>
+    <Name>7f2</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>32</Creature_ID>
+    <Name>fitta</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>33</Creature_ID>
+    <Name>607</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>34</Creature_ID>
+    <Name>691</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>35</Creature_ID>
+    <Name>elk</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>36</Creature_ID>
+    <Name>692</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>37</Creature_ID>
+    <Name>gr</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>38</Creature_ID>
+    <Name>6b2</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>39</Creature_ID>
+    <Name>jlh</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>40</Creature_ID>
+    <Name>lomper</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>41</Creature_ID>
+    <Name>dellyha</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>42</Creature_ID>
+    <Name>dellcomp</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>43</Creature_ID>
+    <Name>gkdg</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>44</Creature_ID>
+    <Name>teter</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+  <Creature>
+    <Creature_ID>45</Creature_ID>
+    <Name>anicentprotector</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WoWDaemon.World.UnitBase</Script>
+  </Creature>
+</Creature>

@@ -1,0 +1,341 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua
+END
+lauxlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lauxlib.c
+END
+ldebug.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/ldebug.c
+END
+lauxlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lauxlib.h
+END
+ldebug.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/ldebug.h
+END
+ltablib.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/ltablib.c
+END
+liolib.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/liolib.c
+END
+lstrlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lstrlib.c
+END
+lualib.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lualib.h
+END
+ldo.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/ldo.c
+END
+ldump.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/ldump.c
+END
+ldo.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/ldo.h
+END
+loslib.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/loslib.c
+END
+luac.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/luac.c
+END
+lundump.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lundump.c
+END
+ldblib.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/ldblib.c
+END
+lundump.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lundump.h
+END
+lmem.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lmem.c
+END
+ltm.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/ltm.c
+END
+lstate.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lstate.c
+END
+lmathlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lmathlib.c
+END
+lvm.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lvm.c
+END
+lmem.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lmem.h
+END
+ltm.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/ltm.h
+END
+lstate.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lstate.h
+END
+lvm.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lvm.h
+END
+ltable.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/ltable.c
+END
+llex.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/llex.c
+END
+lgc.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lgc.c
+END
+loadlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/loadlib.c
+END
+lfunc.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lfunc.c
+END
+lparser.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lparser.c
+END
+lopcodes.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lopcodes.c
+END
+ltable.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/ltable.h
+END
+llex.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/llex.h
+END
+lgc.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lgc.h
+END
+lfunc.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lfunc.h
+END
+lopcodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lopcodes.h
+END
+lbaselib.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lbaselib.c
+END
+lparser.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lparser.h
+END
+lzio.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lzio.c
+END
+linit.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/linit.c
+END
+lua.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lua.c
+END
+lobject.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lobject.c
+END
+llimits.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/llimits.h
+END
+lstring.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lstring.c
+END
+lzio.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lzio.h
+END
+lapi.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lapi.c
+END
+lcode.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lcode.c
+END
+lua.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lua.h
+END
+lobject.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lobject.h
+END
+lstring.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lstring.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/Makefile.am
+END
+lapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lapi.h
+END
+lcode.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/lcode.h
+END
+luaconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/luaconf.h
+END
+print.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/LUAScripting/lua/print.c
+END

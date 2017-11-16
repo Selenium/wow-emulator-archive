@@ -1,0 +1,60 @@
+namespace Server
+{
+    using System;
+
+    public enum MusicName
+    {
+        // Fields
+        Approach = 41,
+        Britain1 = 9,
+        Britain2 = 10,
+        BTCastle = 44,
+        Bucsden = 11,
+        Cave01 = 25,
+        Combat1 = 38,
+        Combat2 = 39,
+        Combat3 = 40,
+        Cove = 47,
+        Create1 = 1,
+        Death = 42,
+        DragFlit = 2,
+        Dungeon2 = 46,
+        Dungeon9 = 26,
+        Forest_a = 27,
+        InTown01 = 28,
+        Invalid = -1,
+        Jhelom = 12,
+        Jungle_a = 29,
+        LBCastle = 13,
+        Linelle = 14,
+        Magincia = 15,
+        Minoc = 16,
+        Moonglow = 48,
+        Mountn_a = 30,
+        Nujelm = 45,
+        Ocllo = 17,
+        OldUlt01 = 0,
+        OldUlt02 = 3,
+        OldUlt03 = 4,
+        OldUlt04 = 5,
+        OldUlt05 = 6,
+        OldUlt06 = 7,
+        Plains_a = 31,
+        Sailing = 32,
+        Samlethe = 18,
+        Serpents = 19,
+        Skarabra = 20,
+        Stones2 = 8,
+        Swamp_a = 33,
+        Tavern01 = 34,
+        Tavern02 = 35,
+        Tavern03 = 36,
+        Tavern04 = 37,
+        Trinsic = 21,
+        Vesper = 22,
+        Victory = 43,
+        Wind = 23,
+        Yew = 24
+    }
+}
+

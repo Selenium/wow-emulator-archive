@@ -1,0 +1,244 @@
+*************************************
+************************************
+**
+** TODO LIST II: The Pantera era
+**
+**
+** I'm setting a few mile stones for us to work on.
+** This to keep thing chrologic. First we do mile stone
+** 1 features, then we party and proceed to mile stone 2.
+** To assign yourself to a job, put your name behind it.
+** When you finished it, add that to the entry and the date:
+** 
+** Updateobject - Chaos - finished - 11/09/05
+** 
+************************************
+*************************************
+
+
+The three commandmends of the Milestone System:
+
+1. Thou shall stick to it or thou shall snuff it.
+2. Thou shall not add new items for the current Milestone, or thou shall snuff it.
+3. Thou shall keep it a clean list without comments, or thy shall snuff it.
+4. Thou shall snuff it, might thou not hold thee to these commandmends.
+
+***DONE*** = ALL necessary changes made
+**Mostly Done** = Mostly done, please note what hasn't been done
+Anything less than that means it is 'in progress' (optional: make notes on how much done)
+
+********************************************************************
+********************************************************************
+** Milestone 1:
+**
+** We are FINISHED this major milestone, and are well on our way to being awesome ;)
+**
+
+**********************************
+* DONE
+*
+* Item Data being sent properly         nneonneo        11/13/2005        ***DONE***
+* Emotes                                rz950 / Chaos   11/14/2005        ***DONE*** - Finally vanquished by nneonneo (thanks to info on mounted emoting)
+* Queue System                          nneonneo        11/14/2005        ***DONE***
+* Random creep movement                 Chaos           11/14/2005        ***DONE*** - From command !wander
+* Action Buttons                        nneonneo        11/14/2005        ***DONE***
+* Chat system                           Chaos           11/15/2005        ***DONE***
+* Spells storage for players            nneonneo        11/11/2005        ***DONE*** - Note! If you find any place in the code which teaches the player a spell, tell me (it needs a handler). The trainers are fixed already.
+* Item Stats                            nneonneo        11/16/2005        ***DONE***
+* Friends/ignore system                 nneonneo        11/15/2005        ***DONE***
+* Skills                                nneonneo        11/18/2005        ***DONE***
+* Language system                       nneonneo        11/18/2005        ***DONE*** - There wasn't much to do, this is actually all skills-controlled.
+* Basic Spells (New spell system)       Chaos           11/23/2005        ***DONE***
+* Useable Items                         Chaos           11/24/2005        ***DONE***
+* Swimstate change                      Chaos           11/24/2005        ***DONE***
+* /roll (Dedicated to Spacey :P)        Chaos           11/26/2005        ***DONE***
+* Item loot                             nneonneo        12/07/2005        ***DONE***
+* Combat mode tweaks                    nneonneo        12/27/2005        ***DONE*** - Wrong facing & out of range.
+* 1.9.x Port				    Burlex          02/18/2006	  ***DONE*** - Finally :D
+
+********************************************************************
+* STILL NEED TO GET FIXED TO BE WORKING 100%
+
+* Player stats/Regen
+
+********************************************************************
+** Milestone 2:
+**
+**
+**
+
+**********************************
+* DONE
+*
+* Guilds                                nneonneo        11/20/2005        **Mostly Done**
+* Channel System                        nneonneo        11/23/2005        ***DONE***
+* Proper logout system                  nneonneo        12/15/2005        ***DONE***
+* Who lists                             nneonneo        12/19/2005        ***DONE***
+* Rest System                           nneonneo        12/29/2005        ***DONE***
+* Trade                                 Burlex          01/01/2006        ***DONE***
+* AI System                             Burlex          02/01/2006        ***DONE***   (already done more than basic)
+* Mob Tagging                           Burlex          02/06/2006	  ***DONE*** (to the extent of my knowledge)
+* Proper Faction System                 kolkoo          02/05/2006        ***DONE*** (bur: done to my knowledge)
+* Skill Leveling                        Burlex          02/06/2006        ***DONE***
+* Reputation System                     kolkoo          02/26/2006	  ***DONE***
+
+
+**********************************
+* STILL NEED TO GET FIXED TO BE WORKING 100%
+
+* Death System
+* Duelling
+* Bags
+* Taxi System
+* Crit,Dodge,Block,Miss,Evade and Parry
+
+**********************************
+* YET TODO
+* Raids <-- See raids in references
+* PvP System  <-- See PvP i references
+* Server Rules System <-- PvP/RP/RPPvP/PvE/etc
+
+********************************************************************
+********************************************************************
+** Milestone 3:
+**
+**
+**
+
+**********************************
+* DONE
+*
+* Packet Compression                    nneonneo        11/27/2005        ***DONE***
+* Gameobjects                           Burlex          02/05/2006        **Mostly done** can't figure out why they won't have the right icon and do the right function.. nneonneo, a some help here would be great.
+	. OK, in regards to this: try changing GType to just Type (seems that GType will always be 0 except in special cases)
+* Item Durability                       Burlex          02/01/2006        **Mostly done** all that needs to be done is durabiltiy repairing
+* Weapon Master                         Burlex          02/08/2006        ...what is the status of this...
+* Underwater Breathing                  Burlex          02/18/2006	  **Mostly Done** Needs regen.
+* Elevators                             Burlex          02/19/2006        **Mostly Done** I think walking is a bit screwed on them though.
+
+**********************************
+* IN PROGRESS
+*
+* Mail System                           Burlex/nneonneo
+* Mount system - Burlex
+* Advanced Spells - Burlex (this is a LOT more work so I bumped it)
+* Environmental damage(environmentaldamage.dbc) <-- Already got Fall damage, but not lava dmg for example :p - Burlex
+* Talents - Burlex (only relearning is left)
+* Pet System - Burlex (critters work now)
+
+**********************************
+* ON HOLD
+*
+
+**********************************
+* YET TODO
+* Party - Semi-Done <-- Bumped to MS3, due to many reasons - Spacey
+* Auction houses
+* Honor system
+* Trade skills
+
+********************************************************************
+********************************************************************
+** Milestone 4:
+**
+**
+**
+
+**********************************
+* DONE
+*
+* Discovery System                      Burlex          02/04/2005        ***DONE***
+
+
+**********************************
+* IN PROGRESS
+*
+* Gossip - Burlex
+* Quests - Burlex
+
+**********************************
+* YET TODO
+*
+* Transportations (ships, zeppelins, subway) <--More like just entering the TaxiNodes
+* Advanced creep AI <-- More AI scripts in general, much more accurate AI and aggro list(hatelist)
+* Instances
+* Trade skills
+* All slash commands
+* Advanced combat system (Line of Sight, and a couple of combat mode tweaks)
+* Meeting Stone System
+* Battlegrounds <-- Bumped from MS5 due to high player demand in general
+
+
+********************************************************************
+********************************************************************
+** Milestone 5:
+**
+**
+**
+**********************************
+* DONE
+*
+* <OPTIONAL> GM Ticket System           nneonneo        12/01/2005        **Mostly Done**
+	As there isn't a GM client, I just made it report any GM complaint to report.log.
+* External scripting support            Burlex          02/01/2006	  *mostly done.. can always implement DLL scripting later on.*
+
+**********************************
+* YET TODO
+*
+* Ingame events
+* <OPTIONAL> Split Kalimdor and Eastern Kingdoms in to 2 different servers
+* Review all formulas and make sure they're correct
+
+*****************************************
+
+
+--------------------------------------------------------------------------------------------------------------------------
+Old list: 
+
+
+When you solve a TODO, just put your name \
+     and a star beside it (e.g. nneonneo-*TODOItem)
+Higher Priority Level = More Important
+
+
+Realmlist Server
+    
+Priority Level  Description
+    1          Make it work on system tray icon.
+    3     nneonneo-*"Session Expired" message on a successful login\
+                      with a realmserver---how to fix?
+    6     nneonneo-*"Logging in to Game Server..." stuck message\
+                      if realm is selected from list (must have auto-connected to work)
+    10 Spacey & Afinda*PHP Script (or similar) to manage accounts
+                        Account format: name[32],password[32],sessionkey[40],lastlogin[4]
+                        You may fill sessionkey and lastlogin with zeros. Name and password must\
+                            be null-terminated.
+    1               <optional>Password configuration so only trusted RealmServers can be listed
+TownHall
+    Priority Level  Description
+    
+    8        Queue System         
+    999      Ye-*InfoData (or UpdateBlocks)
+                        CPlayer::GetPlayerInfoData (Player.cpp) <--used to send information about your own character
+                        CItem::GetItemInfoData (Item.cpp, ItemTemplate.cpp) <--used to send info about all your items (maybe disable this by destroying all your own items)
+                        CCreature::GetCreatureInfoData (Creature.cpp) <--used to send info about creatures (disable by renaming data/spawns.sav)
+                        CPlayer::GetOtherPlayerInfoData (Player.cpp) <--used to send info about other players, pretty much identical to GetPlayerInfoData (disable by not letting other players enter world)
+                        **We can fix these one at a time by simply disabling all other factors (except GetPlayerInfoData!)                         CClient::AddKnown* and CPlayer::UpdateKnown* (Client.cpp, may not need updating)
+                      With these, the emulator will be much closer to finishing.
+                      What to do: The functions repeatedly add data to an UpdateBlock; you have to\
+                          edit these data to bring it up to 1.8.0
+                      If you need the packetlogging, set COMPRESSED_PLYR_PACKETS in Globals.h to 0.
+    5               DBCs (especially Spell.dbc)
+    8     nneonneo-*CHAR_ENUM (why does this fail)
+    6     nneonneo-*Pressing "Enter World" does nothing (works on 1.6.1)
+    6     nneonneo-*"Account Created" instead of "Character Created" message..probably opcodes
+    1               MsgHandlers.cpp updates
+    1               External Scripting support
+    0               Database
+Other
+    x               Note: The .dsp and .dsw are nice, but I think the library libeay32.lib is missing from both...
+    x               Note: For account creation, could you please add a change password option? Refer to create.py for ideas.
+    x                    Note:Plz someone who are familliar with SVN write a manual how do i need to work
+with my copy from the server? *nneonneo: Get TortoiseSVN and read the manual.
+
+--------------------------------------------------------------------------------------------------------------------------

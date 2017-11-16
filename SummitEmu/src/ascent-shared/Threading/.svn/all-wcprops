@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Threading
+END
+ThreadPool.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Threading/ThreadPool.cpp
+END
+ThreadStarter.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Threading/ThreadStarter.h
+END
+Mutex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Threading/Mutex.cpp
+END
+RWLock.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Threading/RWLock.h
+END
+ThreadPool.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Threading/ThreadPool.h
+END
+Guard.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Threading/Guard.h
+END
+Mutex.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Threading/Mutex.h
+END
+Queue.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Threading/Queue.h
+END
+Threading.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Threading/Threading.h
+END
+Condition.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Threading/Condition.h
+END
+LockedQueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Threading/LockedQueue.h
+END

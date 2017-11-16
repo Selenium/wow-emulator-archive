@@ -1,0 +1,34 @@
+Proc is short for "process." This term is used to describe the act of random
+effects going off. For example:
+
+"When Silent Fang procs, it silences your target for 6 seconds." 
+"Paladins spend fights praying for Seal of Command to proc." 
+
+Procs per hit is simply the percent chance of a proc occurring each hit. This
+can be an attack you launch or an attack launched on you. This may seem obvious,
+but it's a good term to have in contrast to the less intuitive procs per minute.
+Procs per hit benefit greatly from faster hits.
+
+Procs per minute scales procs per hit according to weapon speed. Here's the
+formula:
+
+Procs per hit = (Weapon speed) / (60 / Procs per ninute) 
+
+which is the same as: 
+
+Procs per hit = Weapon speed * Procs per minute / 60 
+
+This gives the percentage chance that the proc will go off each hit. An
+understandable misconception is that procs per minute guarantees that exactly
+some amount of procs will occur each minute of combat. As you can see, this is
+not the case. The term is a little misleading.
+
+
+Example: 
+
+Seal of Command tests out at 5 Procs per minute. Let's say you have an Arcanite
+Reaper which has a speed of 3.8 seconds.
+3.8 * 5 / 60 = 31.66% chance to proc Command per hit. 
+
+What about a Dimensional Blade which has a speed of 1.6 seconds? 
+1.6 * 5 / 60 = 13.33% chance to proc Command per hit.

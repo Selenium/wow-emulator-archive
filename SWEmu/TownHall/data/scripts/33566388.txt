@@ -1,0 +1,4 @@
+#moocow
+settalktext I am the mysterious moocow!
+settalkemote 7
+moveto -9089.425781 -33.618298 88.129356

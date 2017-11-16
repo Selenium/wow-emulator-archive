@@ -1,0 +1,53 @@
+Maelstrom Remoting Documentation
+
+Below is a list of server components and their related .NET Remoting Interfaces:
+
+Data Server
+
+	Remoting Interface: IDataServer
+	Remoting Name: "DataServer"
+	Remoting Port: 40000
+
+Object Server
+
+	Remoting Interface: IObjectServer
+	Remoting Name: "ObjectServer"
+	Remoting Port: 40001
+
+World Server
+
+	Remoting Interface: IWorldServer
+	Remoting Name: "WorldServer"
+	Remoting Port: 40002
+
+Login Server
+
+	Remoting Interface: ILoginServer
+	Remoting Name: "LoginServer"
+	Remoting Port: 40003
+
+Redirect Server
+
+	Remoting Interface: IRedirectServer
+	Remoting Name: "RedirectServer"
+	Remoting Port: 40004
+
+Realm List Server
+
+	Remoting Interface: IRealmListServer
+	Remoting Name: "RealmListServer"
+	Remoting Port: 40005
+
+NOTE: Ports are subject to change.
+
+To obtain the shared remote object for each server, make use of the RemotingClient class in Maelstrom.Remoting as follows:
+
+	<interface> RemoteServerObject = (<interface>)RemotingClient.GetServerObject(IPAddress,<port>,<name>,typeof(<interface>));
+
+Therefore, to obtain the instance of the Data Server interface existing locally, you would do the following:
+
+	IDataServer DataServerObject = (IDataServer)RemotingClient.GetServerObject(IPAddress.Loopback,40000,"DataServer",typeof(IDataServer));
+
+You can then call the methods of the DataServerObject as if the object existed locally (therefore please ensure that the methods for each server interface are designed for efficiency - ie. caching, etc.).
+
+NOTE: Remoting is used at all times, even if the server component is hosted within the same application domain/process, this is so that a common access medium is used for communication between server components (so that it can scale with minimal problems).

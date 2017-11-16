@@ -1,0 +1,171 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Ukrainian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_UKR)
+#ifdef _WIN32
+LANGUAGE LANG_UKRAINIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 184, 257
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "WoWD Service Extension"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Configuration",IDC_STATIC,7,7,170,82
+    PUSHBUTTON      "Register",IDB_REGISTER,39,18,50,14,WS_DISABLED
+    PUSHBUTTON      "Unregister",IDB_UNREGISTER,94,18,50,14,WS_DISABLED
+    CTEXT           "Service is not registered",IDL_REG,43,35,97,8
+    PUSHBUTTON      "Start",IDB_START,39,59,50,14,WS_DISABLED
+    PUSHBUTTON      "Stop",IDB_STOP,94,59,50,14,WS_DISABLED
+    CTEXT           "Service is not running",IDL_RUN,43,75,97,8
+    GROUPBOX        "Control",IDG_CONTROL,7,97,170,49
+    EDITTEXT        IDE_COMMAND,12,108,160,14,ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_DISABLED
+    PUSHBUTTON      "Connect",IDB_CONNECT,12,126,50,14,WS_DISABLED
+    PUSHBUTTON      "Disconnect",IDB_DISCONNECT,67,126,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "Execute",IDB_COMMAND,122,126,50,14,WS_DISABLED
+    GROUPBOX        "Remote",IDG_REMOTE,7,154,170,96
+    CONTROL         "Enable",IDCB_REMOTE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,164,37,10
+    LTEXT           "Host Name:",IDL_HOST,27,179,38,8,WS_DISABLED
+    EDITTEXT        IDE_HOST,77,177,80,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "User Name:",IDL_USER,27,198,38,8,WS_DISABLED
+    EDITTEXT        IDE_USER,77,195,80,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Password:",IDL_PASS,27,217,34,8,WS_DISABLED
+    EDITTEXT        IDE_PASS,77,213,80,14,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Login",IDB_LOGIN,39,231,50,14,WS_DISABLED
+    PUSHBUTTON      "Logout",IDB_LOGOUT,94,231,50,14,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "042204b0"
+        BEGIN
+            VALUE "FileDescription", "WoWD Service Manager"
+            VALUE "FileVersion", "1,0,0,0"
+            VALUE "InternalName", "wowdsrv"
+            VALUE "LegalCopyright", "Copyright (C) 2005 WoWD"
+            VALUE "OriginalFilename", "wowdsrv.exe"
+            VALUE "ProductName", "WoW Server"
+            VALUE "ProductVersion", "1,0,0,0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x422, 1200
+    END
+END
+
+#endif    // Ukrainian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

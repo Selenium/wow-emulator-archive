@@ -1,0 +1,213 @@
+//////////////////////
+////Trainers//////////
+//////////////////////
+
+-Trainers:
+To add a trainer you first need to get the GUID of the spawned MOB that
+is going to be a trainer and to do that you select the MOB and type the
+command ".guid" it will display two things, the first one is "LOW PART"
+and the second is "HIGH PART" the thing what you would be looking for 
+is the low part, that would be the GUID of the trainer.
+
+Once u have the GUID goto your database and check the table
+ "TRAINERS", in the "GUID" field you put the GUID of the npc
+ that you want to be trainer. Ok let me explain how "SKILLLINES"
+ work. Skill lines are the lines of all skills example you add
+ the skill line of fire to the TRAINER and it will train all
+ fire skills and spells. to add a skill line u need the "SKILLLINEID".
+
+When your done with the skilllines you need to add "MAXLEVEL"
+ of the skill & spells. that will tell the server witch rank
+ of skills and spells the trainer should give out. if you set
+ the max level to 5 it will only give out spells and skill
+ ranks of 5 example: FIRE BOLT (RANK 5).
+
+The "CLASS" field is for the class of spells the NPC will show (warrior,paladin,etc.)
+
+
+	Kod:
+	+-------+-----------------------+-------+-------------------------------+
+| ID   | Category      |   | Name            |
++-------+-----------------------+-------+-------------------------------+
+| 43   | Weapon Skills      | 0   | Swords         |
+| 44   | Weapon Skills      | 0   | Axes            |
+| 45   | Weapon Skills      | 0   | Bows            |
+| 46   | Weapon Skills      | 0   | Guns            |
+| 54   | Weapon Skills      | 0   | Maces            |
+| 55   | Weapon Skills      | 0   | Two-Handed Swords      |
+| 95   | Weapon Skills      | 0   | Defense         |
+| 118   | Weapon Skills      | 0   | Dual Wield         |
+| 136   | Weapon Skills      | 0   | Staves         |
+| 160   | Weapon Skills      | 0   | Two-Handed Maces      |
+| 162   | Weapon Skills      | 0   | Unarmed         |
+| 176   | Weapon Skills      | 0   | Thrown         |
+| 172   | Weapon Skills      | 0   | Two-Handed Axes      |
+| 173   | Weapon Skills      | 0   | Daggers         |
+| 226   | Weapon Skills      | 0   | Crossbows         |
+| 228   | Weapon Skills      | 0   | Wands            |
+| 229   | Weapon Skills      | 0   | Polearms         |
+| 473   | Weapon Skills      | 0   | Fist Weapons         |
++-------+-----------------------+-------+-------------------------------+
+| 6   | Class Skills      | 0   | Frost            |
+| 8   | Class Skills      | 0   | Fire            |
+| 26   | Class Skills      | 0   | Arms            |
+| 38   | Class Skills      | 0   | Combat         |
+| 39   | Class Skills      | 0   | Subtlety         |
+| 40   | Class Skills      | 0   | Poisons         |
+| 50   | Class Skills      | 0   | Beast Mastery         |
+| 51   | Class Skills      | 0   | Survival         |
+| 56   | Class Skills      | 0   | Holy            |
+| 78   | Class Skills      | 0   | Shadow Magic         |
+| 134   | Class Skills      | 0   | Feral Combat         |
+| 163   | Class Skills      | 0   | Marksmanship         |
+| 184   | Class Skills      | 0   | Retribution         |
+| 188   | Class Skills      | 0   | Pet - Imp         |
+| 189   | Class Skills      | 0   | Pet - Felhunter      |
+| 203   | Class Skills      | 0   | Pet - Spider         |
+| 204   | Class Skills      | 0   | Pet - Voidwalker      |
+| 205   | Class Skills      | 0   | Pet - Succubus      |
+| 206   | Class Skills      | 0   | Pet - Infernal      |
+| 207   | Class Skills      | 0   | Pet - Doomguard      |
+| 208   | Class Skills      | 0   | Pet - Wolf         |
+| 209   | Class Skills      | 0   | Pet - Cat         |
+| 210   | Class Skills      | 0   | Pet - Bear         |
+| 211   | Class Skills      | 0   | Pet - Boar         |
+| 212   | Class Skills      | 0   | Pet - Crocilisk      |
+| 213   | Class Skills      | 0   | Pet - Carrion Bird      |
+| 214   | Class Skills      | 0   | Pet - Crab         |
+| 217   | Class Skills      | 0   | Pet - Raptor         |
+| 218   | Class Skills      | 0   | Pet - Tallstrider      |
+| 215   | Class Skills      | 0   | Pet - Gorilla         |
+| 236   | Class Skills      | 0   | Pet - Scorpid         |
+| 237   | Class Skills      | 0   | Arcane         |
+| 251   | Class Skills      | 0   | Pet - Turtle         |
+| 253   | Class Skills      | 0   | Assassination         |
+| 256   | Class Skills      | 0   | Fury            |
+| 257   | Class Skills      | 0   | Protection         |
+| 261   | Class Skills      | 0   | Beast Training      |
+| 267   | Class Skills      | 0   | Protection         |
+| 270   | Class Skills      | 0   | Pet - Talents         |
+| 354   | Class Skills      | 0   | Demonology         |
+| 355   | Class Skills      | 0   | Affliction         |
+| 373   | Class Skills      | 0   | Enhancement         |
+| 374   | Class Skills      | 0   | Restoration         |
+| 375   | Class Skills      | 0   | Elemental Combat      |
+| 573   | Class Skills      | 0   | Restoration         |
+| 574   | Class Skills      | 0   | Balance         |
+| 593   | Class Skills      | 0   | Destruction         |
+| 594   | Class Skills      | 0   | Holy            |
+| 613   | Class Skills      | 0   | Discipline         |
+| 633   | Class Skills      | 0   | Lockpicking         |
+| 653   | Class Skills      | 0   | Pet - Bat         |
+| 654   | Class Skills      | 0   | Pet - Hyena         |
+| 655   | Class Skills      | 0   | Pet - Owl         |
+| 656   | Class Skills      | 0   | Pet - Wind Serpent      |
++-------+-----------------------+-------+-------------------------------+
+| 101   | Secondary Skills   | 0   | Dwarven Racial      |
+| 124   | Secondary Skills   | 0   | Tauren Racial         |
+| 125   | Secondary Skills   | 0   | Orc Racial         |
+| 126   | Secondary Skills   | 0   | Night Elf Racial      |
+| 129   | Secondary Skills   | 0   | First Aid         |
+| 152   | Secondary Skills   | 0   | Ram Riding         |
+| 149   | Secondary Skills   | 0   | Wolf Riding         |
+| 142   | Secondary Skills   | 0   | Survival         |
+| 148   | Secondary Skills   | 0   | Horse Riding         |
+| 150   | Secondary Skills   | 0   | Tiger Riding         |
+| 155   | Secondary Skills   | 0   | Swimming         |
+| 185   | Secondary Skills   | 0   | Cooking         |
+| 220   | Secondary Skills   | 0   | Racial - Undead      |
+| 356   | Secondary Skills   | 0   | Fishing         |
+| 533   | Secondary Skills   | 0   | Raptor Riding         |
+| 553   | Secondary Skills   | 0   | Mechanostrider Piloting   |
+| 554   | Secondary Skills   | 0   | Undead Horsemanship      |
+| 713   | Secondary Skills   | 0   | Kodo Riding         |
+| 733   | Secondary Skills   | 0   | Racial - Troll      |
+| 753   | Secondary Skills   | 0   | Racial - Gnome      |
+| 754   | Secondary Skills   | 0   | Racial - Human      |
++-------+-----------------------+-------+-------------------------------+
+| 164   | Professions      | 0   | Blacksmithing         |
+| 165   | Professions      | 0   | Leatherworking      |
+| 171   | Professions      | 0   | Alchemy         |
+| 182   | Professions      | 0   | Herbalism         |
+| 186   | Professions      | 0   | Mining         |
+| 197   | Professions      | 0   | Tailoring         |
+| 202   | Professions      | 0   | Engineering         |
+| 333   | Professions      | 0   | Enchanting         |
+| 393   | Professions      | 0   | Skinning         |
++-------+-----------------------+-------+-------------------------------+
+| 98   | Languages      | 0   | Language: Common      |
+| 109   | Languages      | 0   | Language: Orcish      |
+| 111   | Languages      | 0   | Language: Dwarven      |
+| 113   | Languages      | 0   | Language: Darnassian      |
+| 115   | Languages      | 0   | Language: Taurahe      |
+| 137   | Languages      | 0   | Language: Thalassian      |
+| 138   | Languages      | 0   | Language: Draconic      |
+| 139   | Languages      | 0   | Language: Demon Tongue   |
+| 140   | Languages      | 0   | Language: Titan      |
+| 141   | Languages      | 0   | Language: Old Tongue      |
+| 315   | Languages      | 0   | Language: Troll      |
+| 673   | Languages      | 0   | Language: Gutterspeak      |
+| 313   | Languages      | 0   | Language: Gnomish      |
++-------+-----------------------+-------+-------------------------------+
+| 293   | Armor Proficiencies   | 0   | Plate Mail         |
+| 413   | Armor Proficiencies   | 0   | Mail            |
+| 414   | Armor Proficiencies   | 0   | Leather         |
+| 415   | Armor Proficiencies   | 0   | Cloth            |
+| 433   | Armor Proficiencies   | 0   | Shield         |
++-------+-----------------------+-------+-------------------------------+
+| 183   | Not Displayed      | 0   | GENERIC (DND)         |
++-------+-----------------------+-------+-------------------------------+
+
+
+	Kod:
+	
+CLASSES:
+Warrior = 1
+Paladin = 2
+Hunter  = 3
+Rouge   = 4
+Priest  = 5
+Shaman  = 7
+Mage    = 8
+Warlock = 9
+Druid   = 11 
+
+--------------------------------------------------------------------------------------------------------------
+
+////////////////
+///Quests///////
+///////////////
+
+the quests.conf (quest.conf must be in the wowd DIR) file contains a list of quest template files ie:
+c:\q1.txt
+c:\q2.txt
+c:\q3.txt
+each template file contains one quests only
+these are the fields in the quest template files:
+questid = the number must be UNIQ for all quest (cannot be repeted.)
+name = name of the quest duh!
+description = story of the quest where to go/what to do.
+description_2 = same as above.
+finished = what it says when quest is finished.
+incomplete = what it says when quest is incomplete
+objectives = what mobs to kill/how many to kill.
+xp = xp reward number
+money = chopper/gold/silver reward
+type = works with 1,2,3 | 1 = gives quest | 2 = finishes quest | 3 = gives and finishes quest the same npc.
+level_req = level you requier to do the quest
+level = have no idea (someone please edit this doron please help i dont know all templates :-/)
+pre_req_quest = quest you requier to finish the quest
+zone = i have no idea
+repeatable = if quest can be redone or not.
+mob_to_kill = entry id of the mob to kill
+item_to_get = item you have to give to npc
+static_reward = always get the item
+dynamic_reward = random reward
+
+Types:
+
+type 1 = npc quest giver starts the quest
+type 2 = npc quest giver ends the quest
+type 3 = npc quest giver starts the quest and ends the quest 
+
+----------------------------------------------------------------------------------------------

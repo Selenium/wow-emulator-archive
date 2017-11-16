@@ -1,0 +1,426 @@
+http://wowmapview.sourceforge.net/
+
+
+           World Of Warcraft Maps format Information (adtinfo.txt)
+           ----------------------------------------------------------
+                                    by
+	                          ObscuR
+
+Introduction
+============
+The information contained in this file is only collected by me.
+
+
+Index
+=====
+
+1. Fast reference : The chunk tree
+	This will help you to find rapidly a chunk number and its description.
+2. A chunk - What's that ?
+	This will explain what a chunk is and help programmers understand the
+	general concept of the ADT file format.
+3. Data types
+	This short section will describe all data types used.
+4. Chunks description
+	This is the most important part of the document. It describes the chunks.
+
+
+
+1. Fast reference : The chunk tree
+==================================
+
+MVER = Version (0x12)
+
+WDL chunks  :
+      - MAOF  = Map area offsets
+       + MARE = Map Area
+
+WDT Chunks :
+      - MPHD = Header
+      - NIAM =
+      - MWMO =
+
+ADT Chunks  :
+      - MHDR = Area Header
+      - MCIN = Chunk infos
+      - MTEX = Textures
+      - MMDX = ModelsDoodad Refsz
+      - MMID = Models index
+      - MWMO = World Map objects
+      - MWID = World Map objects index
+      - MDDF = Map doodad defs
+      - MODF = Map Object defs
+
+      -MCNK : Main chunk
+	+ MCVT : Heigth map
+	+ MCNR : Normals
+	+ MCLY : Layers
+	+ MCRF : Doodad Refs
+	+ MCSH : Shadow 
+	+ MCAL : Alpha
+	+ MCLQ : Liquids
+	+ MCSE : Sound emiters
+
+2. A chunk - What's that ?
+==========================
+
+2.1 - What is a chunk ?
+--------------------
+
+The ADT file format is compounded of several "chunks". What is a
+"chunk" ? Well, that's quite simple.
+
+Each chunk contains information : for example, it can contain colors,
+images ... All tools which use the "chunk" method make file formats like
+this:
+
+  1st chunk
+  2nd chunk
+  3rd chunk
+  ...
+  nth chunk
+
+
+2.2 - What is a "sub-chunk" ?
+---------------------------
+
+But, there are several problems with this format :
+ - The data are all at same level (an image is as important as the name of
+   an object ...)
+ - A general concept can't group several things.
+
+This is why there are "sub-chunks".
+
+In fact, each chunk can contain several sub-chunks :
+
+  1st chunk
+    1st sub-chunk
+    2nd sub-chunk
+  2nd chunk
+  3rd chunk
+    1st sub-chunk
+      1st sub-sub-chunk
+  ...
+  Nth chunk
+
+
+2.3 - How to read chunks ?
+------------------------
+
+This is the representation of a chunk :
+
+Offset   Length    Name
+
+0        4         Chunk-ID
+4        8         Chunk-length = 8+n+m
+8        n         Data
+8+n      m         Sub-chunks
+
+
+3. Data types
+=============
+
+Name        Description
+
+uint16      2 byte
+uint32      4 byte
+float       4 byte floating point number
+strz        zero terminated string (C-string)
+vector      3 floats (X,Y,Z)
+degree      angle from 0 to 360 degree
+rad         angle from 0 to 2*pi
+
+
+4. Chunks description
+=============================================================================
+                             M A I N  C H U N K S
+=============================================================================
+
+[MVER]	Name	: Map version
+	Level	: 0
+	Size	: 0x04
+	Parent	: none
+	Desc	: 
+	Struct	:
+		/*0x00*/ uint32 version ;
+
+[MHDR]	Name	: Map area header 
+	Level	: 0
+	Size	: 0x40
+	Parent	: none
+	Desc	: 
+	Struct	:
+		struct SMAreaHeader
+		{
+ 		 /*000h*/  UINT32 pad;
+ 		 /*004h*/  UINT32 offsInfo;		
+ 		 /*008h*/  UINT32 offsTex;		
+ 		 /*00Ch*/  UINT32 offsModels;		
+ 		 /*010h*/  UINT32 offsModelsIds;		
+ 		 /*014h*/  UINT32 offsMapObejcts;		
+ 		 /*018h*/  UINT32 offsMapObejctsIds;		
+ 		 /*01Ch*/  UINT32 offsDoodsDef;		
+ 		 /*020h*/  UINT32 offsObjectsDef;	
+ 		 /*024h*/  UINT32 pad1;	
+ 		 /*028h*/  UINT32 pad2;		
+ 		 /*02Ch*/  UINT32 unk1;	
+ 		 /*030h*/  UINT32 unk2;		
+ 		 /*034h*/  UINT32 unk3;		
+ 		 /*038h*/  UINT32 unk4;		
+ 		 /*03Ch*/  UINT32 unk5;	
+		 /*040h*/
+		}
+
+[MCIN] 	Name	: Chunk Info
+	Level	: 0
+	Size	: nMainChunks*sizeof(SMChunkInfo)
+	Parent	: none
+	Desc	: Contain Main Chunks offsets.
+	Struct	:
+		struct SMChunkInfo{
+		 /*000h*/  UINT32 offset;
+		 /*004h*/  UINT32 size;		
+		 /*008h*/  UINT32 flags;		
+		 /*00Ch*/  UINT32 AnsycID;;		
+		 /*010h*/  		
+		}
+
+		/*000h*/ SMChunkInfo ChunkInfos[chunk.size/sizeof(SMChunkInfo)]
+
+[MTEX]	Name	: Textures
+	Level	: 0
+	Size	: ?
+	Parent	: none
+	Desc	: 
+	class	: CChunkTex
+	Struct	:
+		/*0x00*/ strz Textures[]
+
+[MMDX]	Name	: Models
+	Level	: 0
+	Size	: ?
+	Parent	: none
+	Desc	: 
+	class	: 
+	Struct	:
+		/*0x00*/ strz Models[]
+
+[MMID] 	Name	: Models index
+	Level	: 0
+	Size	: ?
+	Parent	: none
+	Desc	: 
+	class	: 
+	Struct	:
+		/*0x00*/ UINT32 offsModel[]
+
+[MWMO] 	Name	: World Map objects
+	Level	: 0
+	Size	: ?
+	Parent	: none
+	Desc	: 
+	class	: 
+	Struct	:
+		/*0x00*/ strz Objects[]
+ 
+[MWID] 	Name	: World Map objects Index
+	Level	: 0
+	Size	: ?
+	Parent	: none
+	Desc	: 
+	class	: 
+	Struct	:
+		/*0x00*/ UINT32 offsObject[]
+
+[MDDF] 	Name	:  Map doodad defs
+	Level	: 0
+	Size	: ?
+	Parent	: none
+	Desc	: 
+	class	: CChunkTex
+	Struct	:
+		struct SMDoodadDef
+		{
+		 /*000h*/  UINT32 nameId;
+		 /*004h*/  UINT32 uniqueId;		
+		 /*008h*/  float pos[3];		
+		 /*00Ch*/ 
+		 /*010h*/ 
+		 /*014h*/  float rot;		
+		 /*018h*/  float scale;		
+		 /*01Ch*/  UINT32 flags;		
+		 /*020h*/  	
+		};
+
+[MODF] 	Name	: Map Objects doodad defs
+	Level	: 0
+	Size	: ?
+	Parent	: none
+	Desc	: 
+	class	: 
+	Struct	:
+		struct SMODoodadDef
+		{
+		 /*000h*/  UINT32 nameId;
+		 /*004h*/  UINT32 uniqueId;		
+		 /*008h*/  float pos[3];		
+		 /*00Ch*/ 
+		 /*010h*/ 
+		 /*014h*/  float rot;		
+		 /*018h*/  float scale;		
+		 /*01Ch*/  UINT32 color;		
+		 /*020h*/  	
+		};
+
+[MCNK]	Name	: Main chunk
+	Level	: 0
+	Size	: 0x80 + sub-chunks
+	Parent	: none
+	Struct	: Main chunk
+		enum MC_FLAGS {
+			FLAG_SHADOW
+			FLAG_IMPASS
+			FLAG_LQ_RIVER
+			FLAG_LQ_OCEAN
+			FLAG_LQ_MAGMA
+		}; // Not checked 
+
+		struct SMChunk{
+		/*000h*/  UINT32 flags;		
+		/*004h*/  UINT32 indexX;		
+		/*008h*/  UINT32 indexY;		
+		/*00Ch*/  UINT32 radius;		
+		/*010h*/  UINT32 nLayers;		
+		/*014h*/  UINT32 offsHeight;		
+		/*018h*/  UINT32 offsNormal;		
+		/*01Ch*/  UINT32 offsLayer;		
+		/*020h*/  UINT32 offsRefs;	
+		/*024h*/  UINT32 offsAlpha;	
+		/*028h*/  UINT32 sizeAlpha;		
+		/*02Ch*/  UINT32 offsShadow;	
+		/*030h*/  UINT32 sizeShadow;		
+		/*034h*/  UINT32 areaid;		
+		/*038h*/  UINT32 nMapObjRefs;		
+		/*03Ch*/  UINT32 holes;		
+		/*040h*/  UINT32 pad0;		
+		/*044h*/  UINT32 predTex;		
+		/*048h*/  UINT32 noEffectDoodad;		
+		/*04Ch*/  UINT32 unk12;		
+		/*050h*/  UINT32 unk13;		
+		/*054h*/  UINT32 unk14;		
+		/*058h*/  UINT32 offsSndEmitters;		
+		/*05Ch*/  UINT32 nSndEmitters;		
+		/*060h*/  UINT32 offsLiquid;	
+		/*064h*/  UINT32 sizeLiquid;		
+		/*068h*/  float pos[3];	
+		/*06Ch*/  
+		/*070h*/  
+		/*074h*/  UINT32 unk17;		
+		/*078h*/  UINT32 unk18;		
+		/*07Ch*/  UINT32 unk19;		
+		/*080h*/
+		};
+
+		 /*080h*/ sub-chunks..
+
+=============================================================================
+                             S U B  C H U N K S
+=============================================================================
+
+[MCVT]	Name	: Height map
+	Level	: 1
+	Size	: 4*(9*9)+(8*8) = 580
+	Parent	: MCNK (Main chunk)
+	Desc	: Contain a 8*8 Height grid .(9*9 Verts)
+		  And 8*8 sub Heigths 
+
+	Struct	: 
+		
+		/*004h*/ float Verts[145]; 
+
+	Exemple	: 
+		[00] H1 (upper right corner)
+		...
+		[08] H9
+		[09] SubH1 (upper right corner)
+		...
+		[16] SubH8
+		[17] H10 (upper right corner)
+		....
+		[25] H18
+		[26] SubH9
+		...
+
+
+[MCNR]	Name	: Normals
+	Level	: 1
+	Size	: subchunk.size 
+	Parent	: MCNK (Main chunk)
+	Struct	:
+		struct SMNormal{
+		 /*000h*/  UINT8 p;
+		 /*002h*/  UINT16 n;
+		 /*003h*/  
+		};
+		/*0x00*/ SMNormal normals[subchunk.size/0x03];
+
+	
+[MCLY]	Name	: Layers
+	Level	: 1
+	Size	: 0x10 * MainChunk->nLayers
+	Parent	: MCNK (Main chunk)
+	Class	: CChunkLayer
+	Struct	:
+		struct SMLayer{
+		 /*000h*/  UINT32 textureId;
+		 /*004h*/  UINT32 props;		
+		 /*008h*/  UINT32 offsAlpha;		
+		 /*00Ch*/  UINT32 effectId;;		
+		 /*010h*/  		
+		};
+
+[MCRF]	Name	: Doodad Refs
+	Level	: 1
+	Size	: 0x04 * MainChunk->nDoodadRefs
+	Parent	: MCNK (Main chunk)
+	Struct	:
+		struct SMCDoodaRefs{
+		 /*000h*/  UINT32 Index;
+		 /*004h*/  	 		
+		};
+
+[MCSH]	Name	: Shadow
+	Level	: 1
+	Size	: MainChunk->sizeShadow
+	Parent	: MCNK (Main chunk)
+	Class	: CChunkShadow
+	Struct	:
+
+[MCAL]	Name	: Alpha
+	Level	: 1
+	Size	: MainChunk->sizeAlpha
+	Parent	: MCNK (Main chunk)
+	Class	: 
+	Struct	:
+
+[MCLQ]	Name	: Liquid
+	Level	: 1
+	Size	: MainChunk->sizeLiquid
+	Parent	: MCNK (Main chunk)
+	Class	: CChunkLiquid
+	Struct	:
+		struct SMCLiquid{
+		 /*000h*/  float height;
+		 /*004h*/  UINT32 flag;	 		
+		 /*008h*/ 
+		};
+		/*000h*/  SMCLiquid Liquids[];
+
+	/*0x00*/ float Ukn[];
+
+[MCSE]	Name	: Sound Emiter
+	Level	: 1
+	Size	: 
+	Parent	: MCNK (Main chunk)
+	Class	: 
+	Struct	:

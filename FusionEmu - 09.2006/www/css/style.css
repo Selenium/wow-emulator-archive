@@ -1,0 +1,76 @@
+/* OldOne was here. */
+
+body{
+	background-color:#eee;
+	font:11px/1.4 Tahoma, "Lucida Sans Unicode", Tahoma, "Lucida Console", sans-serif;
+	color:#ccc;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+a{color:#eee;}
+a:hover{color:#fff;text-decoration:none;}
+
+#container{
+	width:200px;
+	border:2px solid #000;
+	margin-left:auto;
+	margin-right:auto;
+	background:#525252;
+}
+
+#top h3{
+	margin:0;padding:0;
+	background:transparent url(../images/wowlogo.jpg) no-repeat;
+	height:70px;
+	border-bottom:1px solid #000;
+	}
+#top h3 span {display:none;}
+	
+#content{height:112px;border:1px solid #999;margin:5px;margin-bottom:5px;}
+	
+#login, #create{width:60px; float:left;padding-left:95px;padding-right:95px;padding-top:9px;}
+#login{padding-top:9px;padding-bottom:10px;border-right:1px solid #999;background-color:#333;border-bottom:1px solid #999;}
+#create{background-color:#333;border-bottom:1px solid #999;padding-right:102px;}
+#login p, #create p{margin:0;margin-bottom:2px;}
+#login form, #create form{text-align:right;margin:0px;margin-bottom:5px;}
+
+#login h3, #create h3, #status h3{
+font-size:15px; 
+text-align:center; 
+margin:5px 0;
+padding:0;
+border:1px solid #aaa;
+}
+
+#status{margin:5px;margin-bottom:5px; margin-top:0;border:1px solid #999;}
+#status p {margin:5px;}
+#status h3{margin:0 auto;padding-top:4px;padding-bottom:3px;border:0;border-bottom:1px solid #999;background:#333;}
+
+#iframe{width:99%;height:325px;border:1px solid #eee;}
+
+#footer {border-top:1px solid #000;background:#333;}
+#footer p{padding:3px;margin:0;}
+#footer a{text-decoration:none;}
+#footer a:hover{text-decoration:underline;}
+
+input, select {
+	  width:91px;
+      font-size: 10px;
+      font-weight: bold;
+      color: #333;
+      border:1px solid #777;
+      background-color: #ccc;
+      margin:0;
+}
+
+.button{width:auto;}
+
+input.text {
+      color: red;
+}
+
+input.disabled {
+      background-color: #eee;
+}

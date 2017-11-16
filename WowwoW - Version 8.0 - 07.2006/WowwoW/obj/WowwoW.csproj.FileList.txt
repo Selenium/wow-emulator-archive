@@ -1,0 +1,5 @@
+bin\Debug\WowwoW.exe
+bin\Debug\WowwoW.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\WowwoW.exe
+obj\Debug\WowwoW.pdb

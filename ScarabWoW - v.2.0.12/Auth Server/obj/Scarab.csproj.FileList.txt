@@ -1,0 +1,2 @@
+obj\Release\ResolveAssemblyReference.cache
+obj\Debug\ResolveAssemblyReference.cache

@@ -1,0 +1,156 @@
+4/7/2007- formulas are wrong. Health regenerating too fast. Level-up stats get wrong values.
+- warlock dies all the time. probably has no health
+- duel target gathering fro spells does not target taret pet ..
+- gamobjects are invisible
+- client crashes if duel is initialized by char who entered second time the game
+- still can loot quest items even if not required
+- make create packet caching for prototypes when possible
+- duel spell target selection should be different
+- make a tool to compare packets from different client versions so it will not be required to make it by hand
+- get some gamobject a9
+- reset go ids to old id so spells will work ..
+- item updates can be sent multiple times to client per turn (like on char login containers can be sent up to 4 times). Make a way to send it once only per turn
+- hunter crashes when trying to create bag items : char_field 654(humanslot_19),bagslot 62(slot_0)
+- remake most of the db since it is for 1.8 it is causeing a lot of client server differences (spell effect values, enchantments ...)
+- casted spell does not owerwrite old one
+- creatures on hit spell list (frost armor) is not working as should.
+- some creatures do not have any energy so they can't cast spells
+- some packets that need checking before reenable : handle_CMSG_GROUP_DECLINE,handle_CMSG_GROUP_UNINVITE,handle_CMSG_GROUP_SET_LEADER,handle_CMSG_LOOT_METHOD,handle_CMSG_GROUP_DISBAND,handle_CMSG_GAMEOBJ_USE,handle_CMSG_NPC_TEXT_QUERY,handle_CMSG_GMTICKET_GETTICKET,CMSG_GROUP_CANCEL,SMSG_GROUP_CANCEL,CMSG_GROUP_UNINVITE,SMSG_SPELL_FAILURE,SMSG_SPELL_COOLDOWN,SMSG_MOVE_SET_HOVER
+- make a script to fill creature prefered target column for spells in db
+- corpse is not removed from map when you logout dead and enter the game again. Retest this because code looks good
+- original sends considerably less creature movement packets 2-3 per turn
+- quests need to have cast spell for reward teach spell
+- firewall is not working
+- when created a warior it tryed to cast spell 8026 (he is not supposed to) somewhere is a memory bug and extra bytes a written or read.Problem persisted!
+- on char logout delete items, pet, affects and all other dinamic things
+- a lot of items are not in db so they are not added to char templates
+- map cells should have lists of creature lists based on faction so we can pick out enemy objects faster(for agro)
+- on rogues stealth make him walk and not run
+- spell 53(backstab) effect 121. Must be behind !
+- load and use spell stackability
+- on attack, loot, other chars don't see you making any actions
+- log more packets for this CMSG_REQUEST_PARTY_MEMBER_STATS. This needs decoding
+- make logs wih more then 2 group mamabers and check SMSG_GROUP_LIST again
+- when you learn blood rage everybody dissapears near us.WTF ?
+- on server crash make it configurable to restart itself
+- blizzard spell needs to gather targets each time it is applying effects
+- cretures still move wierdly after generated z cords. Original seems to send packet waves
+- quest query is using 4 fixed values, make sure we add columns into db and load/use those
+- quest templates got richer with 10 unknown values, add to db and investigate (SMSG_QUESTGIVER_QUEST_DETAILS)
+- spell id=1462 (best lore) can print out info about creature like health
+- figure out a way to know how do talents get the spell list they affect (maybe it's skill line). Then modify code here : SPELL_AURA_ADD_TARGET_TRIGGER
+- spell error codes have to remade
+- item enchantents are not saved and loaded from db. Do we require this at all ? For spell based enchantments i think so
+- for creature query, 3 values are missing (they are present in wdb files) load, those too
+- make a packet sending sheduler. Server is sending some packets too fast and they are throttled
+- on login spell 836(logineffect) is casted on char
+- relamserver character count for realms
+- realmserver realm refresh flood control
+- realmserver color is yellow instead of green ? why ?
+- relamserver bytes off first char from realm name ?
+- pet should walk faster then owner to avoid map dissapear bugs
+- on spawn pet, send out pet spells too (see log)
+- on char lvl-up,lvl-up pet too
+- pet has to be saved/ loaded from database
+- make some functions for creature behavior : pasive, defensive, agresive
+- make creatures that can do more then 1 thing to show gossip menu instead of vedor_list (ex) (trainer that has a quest too)
+- pvp
+- sumon creauture
+- see what is spell_animation 701
+- remake factions for chars. Char should have a copy of faction template (structures) and only yet met factions are visible. Once you meet a new faction it is set visible. Agro should be based on this
+- check functions to use pointer refrence when using big structures (asm heap push takes longer)
+- chars are not removed from map on exit
+- dodge, block, crit can not be modified by spells, block will be always 0 ?
+- add on respawn script for creatures when using dota version= should morph creature into next defined creature
+- add a basic waypoint list to newly spawned creatures so they will not crash server if attacked. Or find another solution :) for standing creatures
+- make sure we delete everything on creaure del (sumon would leave trash datain memory ;))
+from solfern : http://thottbot.com/?formula=1 - get xp formula, dmg reduction
+- unit speed should not be constant and equal to all. Load it from db and use it.
+- s=528,ef=38 - removedisease - what is a diseas spell
+- on teleport, map position is not correct ? when char near me teleported i still saw him and when i moved closer to new location he disapeared on old and new place :(
+- test if hearthstone time is reloaded. if yes then make it dinamic (item id ...)
+- for spell cooldowns add item_id too
+- original uses different timers for actions (like rush and directly atack)
+- reimport maps (they are wrong)
+- char does not see negative auras on self :O
+- ghost speaks to char with gossip
+- client keeps sending set sheated when we fight with hands. We forget to set flags or values ?
+- change creature xp revard to not reward whole group instead reward each char agro owner acordingly
+- test areatriggers cast spell ability
+- on trade/load clear the made_by field for items so no crash would occure
+- should add a list of timed event for char (like timed quest, maybe move here spell affects too)
+- make/test explore qests
+- sell price is based on durability and not is like in client
+- sold and bought item instance will not show in inventory. If bought in same slot ?
+- make gameobject looting
+- make a database integrity checker
+	- check trainer spells that do not teach anything (maybe it's not a bug)
+	- creatures that have invalid map id
+	- creatures that are outside defined map
+	- spirit healers that show
+	- vendor items that have no template
+	- creatures that have no template
+	- gameobjects that have no template
+	- trainer invalid spells
+	- npc text
+	- quests
+	- quest items are correct
+
+next milestone :
+	item requirements
+	item update
+	loot objects
+	gossip
+	instances
+   items
+	show items for creatures
+   take care all of those constructors and destructors that were left uninitilised or not destroyed :(
+   spell
+	EFF_TARGET_CHAIN - remake this
+	add pet and duel to friend / enemy list
+	treat all spell failed cases (130 OMG)
+	treat all spell efect types (117 OMG*2)
+   group could be implemented with a static list(for max 5 members not cool to have list)
+   if gameobject is static then cache it's create packet data - see corpse
+   recheck to see if all base fields are used and inited as should
+   implement gossip menus
+   implement channel chat system
+   implement scripting support
+   handle CMSG_JOIN_CHANNEL (should make a chat handler first)
+   rest is initilised without knowing how (hehe, copy + paste)
+   handle tutorialflags.tutorial flags are always sent as all finished
+make sure all inits and deinits are ok (in constructor set next=NULL)
+if pet kills the target then we still should receive xp (char as master of pet, fist we need to implement pets)
+on item equip check if requirements have been met
+make skills have effect
+make tallents have effect
+at dmg calculation see if has dual vield and add secondary dmg too to total dmg
+ranged dmage is not working
+268 - amikor a hunter az inventory-bol amo-t rak a char screen-be
+26D - amikor ujratolti 2 loves kozt a fegyvert
+check creature/item/go limits for template lists when using them
+items are always sending createpacket instead of updatepacket. Maybe we should have some updatemasks stored by owner
+import item texts
+handle item texts
+remake inventory change error codes. They show wrong error strings on client side
+
+maybe later
+	- somehow replace dinamic alocation of basic_unit_class lists with constant instances (maybe compiler can optimize the code better, instead using 100 refrences)
+	- some trained spells require 3 spells before can be teached-maybe we should add 2 more mysql columns and use them
+	- on buy item and somebody else bought the item before us,we will get a not_enough_money err instead of not enough item
+	- make item stacking like so you can stack items even if there is only 1 slot left
+	- original predicts player movement for creature rush
+
+Not known if should be done yet
+	dead creatures are aquired from mapmanager. Maybe healing spells require them , and it is a speed deficiency
+	maybe we should destroy items as any other objects for clients on exit so no error should occure (prety small chances)
+	maybe we should only send spell cooldown if it is not sent already (check this)
+	!!!if you say more then 30 minutes(vendor eliminate sold items)at a vendor watching your sold items, and try to by back, you will get a crash because of the bad guid
+
+dream implementations
+	create 2 separate mapmanagers. 1 for static no self interact objects : corpse, gos (large cells). 2 : players + creatures (small cell)
+	change mysql library to a newer one
+	make server clustering
+	socket has a nonbuffered mode ? We use liniar programing so this could be used ?
+	disabled sendq for sockets. This is teoreticaly very bad. Make some tests and see if realy is that bad
+	implement telnet suport for external commands

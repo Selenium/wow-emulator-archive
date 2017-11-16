@@ -1,0 +1,61 @@
+Changelog:
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Current CVS
+++++++++++++++++++++++++++++++++++++++++++++++++++
+* Obejct manager rewrite started - Ignatich
+* We use hash_maps now for objects, should help performance a lot - Ignatich
+* New chat commands - sYkez
+* Spell code rewrite started - Ignatich
+* Improved logging - sYkez
+* Some chat commands fixed - Ignatich
+* Chat fixed and improved support - Munky
+* Worldport fix - Munky, Ignatich and Rguy
+* Changed wowWData to dynamic buffers - Ignatich
+* More Handlers converted to new structure - Ignatich, sYkez, Mooseman
+* Initial work on big handler update  - Ignatich
+* Character screen fixes for 0.9.0 - Munky & RGuy
+* Namechange and general cleanup - sYkez
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Pre 0.9.0.1
+++++++++++++++++++++++++++++++++++++++++++++++++++
+* Timers now use time difference provided by Server class
+* Movement code now interpolates monster movement
+* Commands can be nested now. (ex. !modify hp 100 100)
+* GPS command added
+* CMSG_NAME_QUERY fixed properly this time
+* Database code cleanup
+
+older changees:
+
+Command patch v3:
+
+* More command code cleanup
+* More detailed command responses
+* All command now automatically show help if you enter wrong number of arguments
+* You can call all commands via '.' and '!' (to satisfy '.' addicted users)
+* Fixed GetPlayerNameFromGUID
+
+Command patch v2:
+
+* New commands:
+    !gmlist - who list of active GMs
+    !displayid - change display id of a creature
+    !npcflag - change npcflag of a creature
+    !factionid - change faction of a creature
+* All commands fixed so creature commands no longer work on characters and vice verse. (!delete for example)
+* This patch also includes CMSG_NAME_QUERY CPU hog patch
+* Some db queues are more efficient now
+* Fixes by sYkez included too (should be in cvs already but pserver is down)
+* Combat crash fixed (same here)
+* Fixed identation for DatabaseInterface.cpp (really annoying)
+* Some smaller command code fixes and cleanups
+
+Command patch v1:
+
+* Now each command has it's own function
+* Advanced help system
+* Command completion
+* DB configurable security and help
+* Some fixes for lina's command patch
+* Some other fixes from my dev tree i can't remember

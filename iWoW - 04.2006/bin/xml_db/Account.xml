@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?>
+<Account>
+  <Account>
+    <Account_ID>1</Account_ID>
+    <Name>tester</Name>
+    <Password>pass</Password>
+    <SessionKey>AE-B2-23-39-54-C5-B6-46-30-4B-B8-EC-2A-B7-B7-18-87-FF-A5-41-0D-4F-D5-2D-6B-B5-E2-2B-DE-EE-15-49-D4-2F-32-3F-D8-A1-2B-DF</SessionKey>
+    <CreationDate>2005-03-26T02:20:11.0280934+11:00</CreationDate>
+    <AccessLvl>9</AccessLvl>
+    <LastIP>192.168.3.212</LastIP>
+    <FlagAccess>0</FlagAccess>
+  </Account>
+  <Account>
+    <Account_ID>2</Account_ID>
+    <Name>Yellow</Name>
+    <Password>furks</Password>
+    <SessionKey>F7-D4-0C-0F-92-C3-80-24-DF-A3-F8-92-45-54-95-66-BE-9E-23-B5-30-0E-D2-44-BC-7E-B6-FD-E6-A3-4D-00-10-F8-18-9F-C6-34-5F-70</SessionKey>
+    <CreationDate>2005-03-31T23:35:13.396072+11:00</CreationDate>
+    <AccessLvl>9</AccessLvl>
+    <LastIP>10.10.10.253</LastIP>
+    <FlagAccess>0</FlagAccess>
+  </Account>
+  <Account>
+    <Account_ID>3</Account_ID>
+    <Name>Test</Name>
+    <Password>pass</Password>
+    <SessionKey />
+    <CreationDate>2005-03-31T23:35:24.5821568+11:00</CreationDate>
+    <AccessLvl>9</AccessLvl>
+    <LastIP>10.10.10.253</LastIP>
+    <FlagAccess>0</FlagAccess>
+  </Account>
+</Account>

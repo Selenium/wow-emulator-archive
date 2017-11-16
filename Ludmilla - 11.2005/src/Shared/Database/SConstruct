@@ -1,0 +1,30 @@
+# !!! USE MAIN SCONSTRUCT-FILE FOR COMPILING !!!
+#
+# --> SConstruct for libdatabase
+#
+# If you want to compile only this library comment other
+# SConstruct invocations in main SConstruct out
+#
+
+StaticLibrary('../../build/database', [
+		'DBC.cpp',
+		'DBCStores.cpp',
+		'Database.cpp',
+		'DatabaseMysql.cpp',
+		'DatabaseSqlite.cpp',
+		'Field.cpp',
+		'QueryResultMysql.cpp',
+		'QueryResultSqlite.cpp'
+	],
+	CPPPATH = [
+		'../../src/Game',
+		'../../src/LudMilla',
+		'../../src/RealmList',
+		'../../src/Shared',
+		'../../src/Shared/Database',
+		'../../src/Spells',
+		'../../depnew/Unix_dep/',
+                '/usr/include/python2.4'
+	],
+	CCFLAGS='-fpermissive -w'
+)

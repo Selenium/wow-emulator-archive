@@ -1,0 +1,42 @@
+!PiCaSsO! version Alpha 0.01 Copyright (C) 2006 by !PiCaSsO! Developer team
+08/20/2006 19:50:58: Loading account TEST...
+08/20/2006 19:50:58: Loading account 1+2+3+4+5+6...
+08/20/2006 19:50:58: Loading account 1 2 3 4 5 6...
+08/20/2006 19:50:58: Loading account T E S T...
+08/20/2006 19:50:58: Loaded all accounts from database!
+08/20/2006 19:50:58: Building external C# scripts, please wait...
+08/20/2006 19:50:58: Global scripts successfully loaded!
+08/20/2006 19:50:58: HTTPServer listening on port 8080
+08/20/2006 19:50:58: Worldserver listening on port 8085
+08/20/2006 19:50:58: AuthServer listening on port 1234
+08/20/2006 19:50:58: Waiting for incoming connections...
+08/20/2006 19:51:24: Incoming connection!
+08/20/2006 19:51:25: Recieved Logon Challenge!
+08/20/2006 19:51:25: Cient version accepted: 1.11.2, ID = 22549!
+08/20/2006 19:51:25: Recieved AUTH_CHALLENGE from user: TEST
+08/20/2006 19:51:25: Logon proof!
+08/20/2006 19:51:25: Client requested realmlist!
+08/20/2006 19:51:25: Client Redirected to Worldserver!
+08/20/2006 19:51:25: Challenged client to auth again.
+08/20/2006 19:51:25: Recieved 2nd auth from client!
+08/20/2006 19:51:25: Temporair message: string account = TEST
+08/20/2006 19:51:25: Temporair message: int ClientSeed = 1250731224
+08/20/2006 19:51:25: Temporair message: byte[] digest = 7824815745160364923787931091121431252371671261620130
+08/20/2006 19:51:27: Client requested realmlist!
+08/20/2006 19:51:27: Client Redirected to Worldserver!
+08/20/2006 19:51:27: Challenged client to auth again.
+08/20/2006 19:51:27: Recieved 2nd auth from client!
+08/20/2006 19:51:27: Temporair message: string account = TEST
+08/20/2006 19:51:27: Temporair message: int ClientSeed = 75927982
+08/20/2006 19:51:27: Temporair message: byte[] digest = 1062014711773235861054287214247221241465587228212237
+08/20/2006 19:51:57: Recieve unknown OPCode: 165
+08/20/2006 19:52:27: Recieve unknown OPCode: 33
+08/20/2006 19:52:57: Recieve unknown OPCode: 39
+08/20/2006 19:53:27: Recieve unknown OPCode: 203
+08/20/2006 19:53:57: Recieve unknown OPCode: 82
+08/20/2006 19:54:27: Recieve unknown OPCode: 42
+08/20/2006 19:54:57: Recieve unknown OPCode: 155
+08/20/2006 19:55:28: Recieve unknown OPCode: 187
+08/20/2006 19:55:58: Recieve unknown OPCode: 97
+08/20/2006 19:56:28: Recieve unknown OPCode: 234
+08/20/2006 19:56:58: Recieve unknown OPCode: 167

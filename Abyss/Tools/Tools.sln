@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WPEToBin", "WPEToBin\WPEToBin.vcproj", "{448CBCCC-0C01-4D90-B84A-C6B6805C2C7C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DumpBin", "DumpBin\DumpBin.vcproj", "{D6FC847A-DC52-4245-8D64-D1106824452E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{448CBCCC-0C01-4D90-B84A-C6B6805C2C7C}.Debug.ActiveCfg = Debug|Win32
+		{448CBCCC-0C01-4D90-B84A-C6B6805C2C7C}.Debug.Build.0 = Debug|Win32
+		{448CBCCC-0C01-4D90-B84A-C6B6805C2C7C}.Release.ActiveCfg = Release|Win32
+		{448CBCCC-0C01-4D90-B84A-C6B6805C2C7C}.Release.Build.0 = Release|Win32
+		{D6FC847A-DC52-4245-8D64-D1106824452E}.Debug.ActiveCfg = Debug|Win32
+		{D6FC847A-DC52-4245-8D64-D1106824452E}.Debug.Build.0 = Debug|Win32
+		{D6FC847A-DC52-4245-8D64-D1106824452E}.Release.ActiveCfg = Release|Win32
+		{D6FC847A-DC52-4245-8D64-D1106824452E}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+eWoW 0.0.1 - 
+
+* Fix some piece text behind channel name - maybe won't working  with other stuff! :/
+* Added ServerMessage(SMSG_SERVER_MESSAGE) - maybe little bug, but text is yellow 
+* Logout again working
+* Added some welcome message - only test
+* Update SMSG_CHAR_CREATE error codes on 1.8.0
+* Error codes for CharacterHandler move to enums.cs
+* Fix bug with creating chars
+* Fix bug with retriving characters
+* Added library for MySQL
+* Restructure codes
+* Compatibility with .NET Framework 2.0
+* Config now in XML :o)
+* Update Fields on 1.8.0
+* Update opcodes on 1.8.0

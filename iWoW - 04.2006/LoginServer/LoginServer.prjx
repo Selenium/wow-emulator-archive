@@ -1,0 +1,42 @@
+<Project name="LoginServer" standardNamespace="NewProject" description="" newfilesearch="None" enableviewstate="True" version="1.1" projecttype="C#">
+  <Contents>
+    <File name=".\AssemblyInfo.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ChatManager.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\LoginClient.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\LoginHandlers.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\LoginPacketManager.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\LoginScriptAssembly.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\LoginServer.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\RealmListUpdater.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\RedirectServer.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\WorldConnection.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+  </Contents>
+  <References>
+    <Reference type="Project" refto="Common" localcopy="True" />
+    <Reference type="Project" refto="Database" localcopy="True" />
+    <Reference type="Assembly" refto="..\ICSharpCode.SharpZipLib.dll" localcopy="True" />
+  </References>
+  <DeploymentInformation target="" script="" strategy="File" />
+  <Configuration runwithwarnings="False" name="Debug">
+    <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+    <Execution commandlineparameters="" consolepause="True" />
+    <Output directory=".\bin\Debug\" assembly="WoWDaemon.LoginServer" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+  </Configuration>
+  <Configurations active="Debug">
+    <Configuration runwithwarnings="False" name="Debug">
+      <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Debug\" assembly="WoWDaemon.LoginServer" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+    <Configuration runwithwarnings="False" name="Release">
+      <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="" warninglevel="4" nowarn="" includedebuginformation="False" optimize="True" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Release\" assembly="WoWDaemon.LoginServer" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+    <Configuration runwithwarnings="True" name="MonoBuild">
+      <CodeGeneration runtime="Mono" compiler="Mcs" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Debug\" assembly="WoWDaemon.LoginServer" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+  </Configurations>
+</Project>

@@ -1,0 +1,84 @@
+How to add Spells to Creatures?
+
+Add a new line to ai_agents table which has the following fields
+
+entryId should be clear
+
+AI_AGENT is one of this enum where AGENT_MELEE is 1, AGENT_RANGED is 2 and so on:
+enum AI_Agent
+{
+    AGENT_NULL,
+    AGENT_MELEE,
+    AGENT_RANGED,
+    AGENT_FLEE,
+    AGENT_SPELL,
+    AGENT_CALLFORHELP
+};
+
+procEvent is the event which can trigger this spell.
+currently we got this enum with events where EVENT_ENTERCOMBAT is 0(not all are used yet cause our combat system doesnt support a few of it):
+enum AiEvents
+{
+    EVENT_ENTERCOMBAT,
+    EVENT_LEAVECOMBAT,
+    EVENT_DAMAGETAKEN,
+    EVENT_TARGETCASTSPELL,
+    EVENT_TARGETPARRYED,
+    EVENT_TARGETDODGED,
+    EVENT_TARGETBLOCKED,
+    EVENT_TARGETCRITHIT,
+    EVENT_TARGETDIED,
+    EVENT_UNITPARRYED,
+    EVENT_UNITDODGED,
+    EVENT_UNITBLOCKED,
+    EVENT_UNITCRITHIT,
+    EVENT_UNITDIED,
+    EVENT_ASSISTTARGETDIED,
+    EVENT_FOLLOWOWNER
+};
+
+procChance is the Chance to cast that spell.
+e.g. 50 for a 50% chance to cast that spell in the event
+
+procCount is how often that spell should be used in one Fight. 0 means infinite use
+
+spellId is the spellId of the spell to cast
+
+spellType is one of that enum:
+enum AI_SpellType
+{
+    STYPE_NULL,
+    STYPE_ROOT,
+    STYPE_HEAL,
+    STYPE_STUN,
+    STYPE_FEAR,
+    STYPE_SILENCE,
+    STYPE_CURSE,
+    STYPE_AOEDAMAGE,
+    STYPE_DAMAGE,
+    STYPE_SUMMON,
+    STYPE_BUFF,
+    STYPE_DEBUFF
+};
+
+spelltargetType is one of that enum:
+enum AI_SpellTargetType
+{
+    TTYPE_NULL,
+    TTYPE_SINGLETARGET,
+    TTYPE_DESTINATION,
+    TTYPE_SOURCE
+};
+
+spellCooldown is the cooldown for that spell after it got casted
+
+floatMisc1 and Misc2 are misc values which are used for a few spell types:
+example:
+STYPE_HEAL
+floatMisc1 defines the hp percentage at which it should cast that spell.
+
+
+lets say you got 20% chance to cast a healing spell at EVENT_DAMAGETAKEN.
+with floatMisc1 is 0.40.
+
+Creature has a 20% chance to cast that healing spell when damage taken and hp of it or one of its assistTargets is <=40%

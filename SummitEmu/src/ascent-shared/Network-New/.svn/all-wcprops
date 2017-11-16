@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New
+END
+Network.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/Network.h
+END
+TcpSocket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/TcpSocket.cpp
+END
+SocketEngine_kqueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/SocketEngine_kqueue.h
+END
+CircularBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/CircularBuffer.h
+END
+TcpSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/TcpSocket.h
+END
+SocketEngine_poll.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/SocketEngine_poll.cpp
+END
+BaseBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/BaseBuffer.h
+END
+SocketEngine_epoll.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/SocketEngine_epoll.cpp
+END
+SocketEngine_poll.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/SocketEngine_poll.h
+END
+ListenSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/ListenSocket.h
+END
+SocketEngine_select.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/SocketEngine_select.cpp
+END
+SocketEngine.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/SocketEngine.cpp
+END
+SocketEngine_epoll.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/SocketEngine_epoll.h
+END
+SocketEngine_select.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/SocketEngine_select.h
+END
+SocketEngine.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/SocketEngine.h
+END
+StraightBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/StraightBuffer.h
+END
+SocketEngine_iocp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/SocketEngine_iocp.cpp
+END
+BaseSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/BaseSocket.h
+END
+SocketEngine_kqueue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/SocketEngine_kqueue.cpp
+END
+SocketEngine_iocp.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Network-New/SocketEngine_iocp.h
+END

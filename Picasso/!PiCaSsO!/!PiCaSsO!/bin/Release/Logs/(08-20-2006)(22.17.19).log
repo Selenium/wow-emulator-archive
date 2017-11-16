@@ -1,0 +1,35 @@
+!PiCaSsO! version Alpha 0.01 Copyright (C) 2006 by !PiCaSsO! Developer team
+08/20/2006 22:17:19: Loading account TEST...
+08/20/2006 22:17:19: Loading account 1+2+3+4+5+6...
+08/20/2006 22:17:19: Loading account 1 2 3 4 5 6...
+08/20/2006 22:17:19: Loading account T E S T...
+08/20/2006 22:17:19: Loaded all accounts from database!
+08/20/2006 22:17:19: Building external C# scripts, please wait...
+08/20/2006 22:17:19: Global scripts successfully loaded!
+08/20/2006 22:17:19: HTTPServer listening on port 8080
+08/20/2006 22:17:19: Worldserver listening on port 8085
+08/20/2006 22:17:20: AuthServer listening on port 1234
+08/20/2006 22:17:20: Waiting for incoming connections...
+08/20/2006 22:18:01: Incoming connection!
+08/20/2006 22:18:01: Recieved Logon Challenge!
+08/20/2006 22:18:01: Cient version accepted: 1.11.2, ID = 22549!
+08/20/2006 22:18:01: Recieved AUTH_CHALLENGE from user: TEST
+08/20/2006 22:18:01: Logon proof!
+08/20/2006 22:18:02: Client requested realmlist!
+08/20/2006 22:18:02: Client Redirected to Worldserver!
+08/20/2006 22:18:02: Challenged client to auth again.
+08/20/2006 22:18:02: Recieved 2nd auth from client!
+08/20/2006 22:18:02: Account found: TEST
+08/20/2006 22:18:02: Temporair message: string account = TEST
+08/20/2006 22:18:02: Temporair message: int ClientSeed = 1818518713
+08/20/2006 22:18:02: Temporair message: int ServerSeed = 3735927486
+08/20/2006 22:18:02: Temporair message: byte[] digest = 43204491971157713074252216122247861788137145158174237
+08/20/2006 22:18:11: Client requested realmlist!
+08/20/2006 22:18:11: Client Redirected to Worldserver!
+08/20/2006 22:18:11: Challenged client to auth again.
+08/20/2006 22:18:11: Recieved 2nd auth from client!
+08/20/2006 22:18:11: Account found: TEST
+08/20/2006 22:18:11: Temporair message: string account = TEST
+08/20/2006 22:18:11: Temporair message: int ClientSeed = 1402092063
+08/20/2006 22:18:11: Temporair message: int ServerSeed = 3735927486
+08/20/2006 22:18:11: Temporair message: byte[] digest = 2468557221148218241812351121451721341148915711423118933

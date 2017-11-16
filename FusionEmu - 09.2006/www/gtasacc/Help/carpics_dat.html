@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>GTA SA Control Center - GTASACarPics</title>
+</head>
+
+<body>
+
+<b><font face="Arial">GTASACarPics.dat</font></b><p><font face="Arial">This file has all the details needed to load the garage editor / car spawner vehicle selection form. 
+</font></p>
+<p><font face="Arial">If you delete this file, it will be regenerated using the original values. Edit this file as you wish.  Please use '#' character for the comments. 
+</font></p>
+<p><font face="Arial">CarTypes are the selection tab on garage editor extended car selection. Type Name is the caption of the tab. TypeID is the reference to CarPictures. 
+</font></p>
+<p><font face="Arial">CarPictures are 100x72 pixel thumbnails, and saved under \CarPics folder. If a thumbnail is missing, or the car is not parkable, it will not be listed on the selection. 
+</font></p>
+<p><font face="Arial">You can list vehicles on more than one selection list. Create your own favorites to select one of your favorite cars to park in the selected garage. 
+</font></p>
+<p><font face="Arial">Use Pipe character '|' as seperator between fields. Most of the descriptions and the thumbnails are courtesy of 
+<a href="http://www.g-unleashed.com">www.g-unleashed.com</a>. The g-unleashed.com thumbnails and descriptions are from the X-Box version of GTA SA, so some of the pictures and descriptions can actually differ from the PC edition.
+</font></p>
+<p><font face="Arial">This file has 2 sections: GTASACarTypes and GTASACarPictures:
+</font></p>
+<p><b><font face="Arial">Section: GTASACarTypes </font></b></p>
+<p><font face="Arial">The seperator is '|' (pipe) character. you can use tabs or white-space to make this file more readable. 
+</font></p>
+<p><font face="Arial">This section is for the 12 Vehicle Type Tabs and the Favorites Tab. The ID's are hard-coded (0 belonging to the favorites). You can edit the type name's freely.
+</font></p>
+<p><i><font face="Arial">Example: </font></i></p>
+<pre>#TypeID       Type Name
+0|            Favorites
+1|            Sports Cars
+</pre>
+
+<b><font face="Arial">Section: GTASACarPictures </font></b>
+<p><font face="Arial">The seperator is '|' (pipe) character. you can use tabs or white-space to make this file more readable. 
+</font></p>
+<p><font face="Arial">You can assign a car to more than one TypeID's, and have it appear on several tabs on the vehicle selection form. 
+</font></p>
+<p><font face="Arial">The CarID is hard coded GTA SA CarID. Please edit carefully. You can assign the car to one of the 12 vehicle types (1 to 12), or to 0 for being in 'favorites'. 
+</font></p>
+<p><font face="Arial">You can edit the favorites listing on the control center using context menu, but you need to edit this section if you want a vehicle to appear in a different tab. 
+</font></p>
+<p><font face="Arial">Car Name is in free-text. Stars is only as information, and represents the sexappeal stat of this car. CarDesc is a free-text description of this vehicle, and is from g-unleashed.com.</font></p>
+<p><i><font face="Arial">Example: </font></i></p>
+<pre>#CarID        TypeID        CarName       	Stars         CarDesc
+506|          0|            Super GT|     	5|            A great looking car and quick too...
+541|          1|            Bullet|       	5|            Awesome car. Looks stunning, drives...
+</pre>
+
+</body>
+</html>

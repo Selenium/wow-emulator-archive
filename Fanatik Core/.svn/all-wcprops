@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svnroot/mangos/!svn/ver/3393/trunk
+END
+bcpp.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/mangos/!svn/ver/1098/trunk/bcpp.cfg
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/mangos/!svn/ver/3332/trunk/configure.ac
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/mangos/!svn/ver/927/trunk/AUTHORS
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/mangos/!svn/ver/3123/trunk/ChangeLog
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/mangos/!svn/ver/927/trunk/COPYING
+END
+THANKS
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svnroot/mangos/!svn/ver/961/trunk/THANKS
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/mangos/!svn/ver/3273/trunk/Makefile.am
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svnroot/mangos/!svn/ver/3230/trunk/NEWS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/mangos/!svn/ver/3137/trunk/README
+END

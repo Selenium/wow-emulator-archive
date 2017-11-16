@@ -1,0 +1,1853 @@
+#ifndef UPDATEFIELDS_H
+#define UPDATEFIELDS_H
+
+// 1.12.x Update Fields as of build 5590 (PTR)
+
+#if TBC
+//OBJECT:
+#define  OBJECT_FIELD_GUID                                          0x000   //  Size:2  Type:GUID   Flags:1
+#define  OBJECT_FIELD_TYPE                                          0x002   //  Size:1  Type:Int32  Flags:1
+#define  OBJECT_FIELD_ENTRY                                         0x003   //  Size:1  Type:Int32  Flags:1
+#define  OBJECT_FIELD_SCALE_X                                       0x004   //  Size:1  Type:Float  Flags:1
+#define  OBJECT_FIELD_PADDING                                       0x005   //  Size:1  Type:Int32  Flags:0
+#define  OBJECT_END                                                 0x006
+
+//ITEM:
+#define  ITEM_FIELD_OWNER                                           OBJECT_END + 0x000  //  Size:2  Type:GUID   Flags:1
+#define  ITEM_FIELD_CONTAINED                                       OBJECT_END + 0x002  //  Size:2  Type:GUID   Flags:1
+#define  ITEM_FIELD_CREATOR                                         OBJECT_END + 0x004  //  Size:2  Type:GUID   Flags:1
+#define  ITEM_FIELD_GIFTCREATOR                                     OBJECT_END + 0x006  //  Size:2  Type:GUID   Flags:1
+#define  ITEM_FIELD_STACK_COUNT                                     OBJECT_END + 0x008  //  Size:1  Type:Int32  Flags:20
+#define  ITEM_FIELD_DURATION                                        OBJECT_END + 0x009  //  Size:1  Type:Int32  Flags:20
+#define  ITEM_FIELD_SPELL_CHARGES                                   OBJECT_END + 0x00A  //  Size:5  Type:Int32  Flags:20
+#define  ITEM_FIELD_FLAGS                                           OBJECT_END + 0x00F  //  Size:1  Type:Int32  Flags:1
+#define  ITEM_FIELD_ENCHANTMENT                                     OBJECT_END + 0x010  //  Size:33 Type:Int32  Flags:1
+#define  ITEM_FIELD_PROPERTY_SEED                                   OBJECT_END + 0x031  //  Size:1  Type:Int32  Flags:1
+#define  ITEM_FIELD_RANDOM_PROPERTIES_ID                            OBJECT_END + 0x032  //  Size:1  Type:Int32  Flags:1
+#define  ITEM_FIELD_ITEM_TEXT_ID                                    OBJECT_END + 0x033  //  Size:1  Type:Int32  Flags:4
+#define  ITEM_FIELD_DURABILITY                                      OBJECT_END + 0x034  //  Size:1  Type:Int32  Flags:20
+#define  ITEM_FIELD_MAXDURABILITY                                   OBJECT_END + 0x035  //  Size:1  Type:Int32  Flags:20
+#define  ITEM_END                                                   OBJECT_END + 0x036
+
+//CONTAINER:
+#define  CONTAINER_FIELD_NUM_SLOTS                                  ITEM_END + 0x000    //  Size:1  Type:Int32  Flags:1
+#define  CONTAINER_ALIGN_PAD                                        ITEM_END + 0x001    //  Size:1  Type:Bytes  Flags:0
+#define  CONTAINER_FIELD_SLOT_1                                     ITEM_END + 0x002    //  Size:72 Type:GUID   Flags:1
+#define  CONTAINER_END                                              ITEM_END + 0x04A
+
+//UNIT:
+#define  UNIT_FIELD_CHARM                                           OBJECT_END + 0x000  //  Size:2  Type:GUID   Flags:1
+#define  UNIT_FIELD_SUMMON                                          OBJECT_END + 0x002  //  Size:2  Type:GUID   Flags:1
+#define  UNIT_FIELD_CHARMEDBY                                       OBJECT_END + 0x004  //  Size:2  Type:GUID   Flags:1
+#define  UNIT_FIELD_SUMMONEDBY                                      OBJECT_END + 0x006  //  Size:2  Type:GUID   Flags:1
+#define  UNIT_FIELD_CREATEDBY                                       OBJECT_END + 0x008  //  Size:2  Type:GUID   Flags:1
+#define  UNIT_FIELD_TARGET                                          OBJECT_END + 0x00A  //  Size:2  Type:GUID   Flags:1
+#define  UNIT_FIELD_PERSUADED                                       OBJECT_END + 0x00C  //  Size:2  Type:GUID   Flags:1
+#define  UNIT_FIELD_CHANNEL_OBJECT                                  OBJECT_END + 0x00E  //  Size:2  Type:GUID   Flags:1
+#define  UNIT_FIELD_HEALTH                                          OBJECT_END + 0x010  //  Size:1  Type:Int32  Flags:256
+#define  UNIT_FIELD_POWER1                                          OBJECT_END + 0x011  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_POWER2                                          OBJECT_END + 0x012  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_POWER3                                          OBJECT_END + 0x013  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_POWER4                                          OBJECT_END + 0x014  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_POWER5                                          OBJECT_END + 0x015  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_MAXHEALTH                                       OBJECT_END + 0x016  //  Size:1  Type:Int32  Flags:256
+#define  UNIT_FIELD_MAXPOWER1                                       OBJECT_END + 0x017  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_MAXPOWER2                                       OBJECT_END + 0x018  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_MAXPOWER3                                       OBJECT_END + 0x019  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_MAXPOWER4                                       OBJECT_END + 0x01A  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_MAXPOWER5                                       OBJECT_END + 0x01B  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_LEVEL                                           OBJECT_END + 0x01C  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_FACTIONTEMPLATE                                 OBJECT_END + 0x01D  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_BYTES_0                                         OBJECT_END + 0x01E  //  Size:1  Type:Bytes  Flags:1
+#define  UNIT_VIRTUAL_ITEM_SLOT_DISPLAY                             OBJECT_END + 0x01F  //  Size:3  Type:Int32  Flags:1
+#define  UNIT_VIRTUAL_ITEM_INFO                                     OBJECT_END + 0x022  //  Size:6  Type:Bytes  Flags:1
+#define  UNIT_FIELD_FLAGS                                           OBJECT_END + 0x028  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_AURA                                            OBJECT_END + 0x029  //  Size:56 Type:Int32  Flags:1
+#define  UNIT_FIELD_AURAFLAGS                                       OBJECT_END + 0x061  //  Size:7  Type:Bytes  Flags:1
+#define  UNIT_FIELD_AURALEVELS                                      OBJECT_END + 0x068  //  Size:14 Type:Bytes  Flags:1
+#define  UNIT_FIELD_AURAAPPLICATIONS                                OBJECT_END + 0x076  //  Size:14 Type:Bytes  Flags:1
+#define  UNIT_FIELD_AURASTATE                                       OBJECT_END + 0x084  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_BASEATTACKTIME                                  OBJECT_END + 0x085  //  Size:2  Type:Int32  Flags:1
+#define  UNIT_FIELD_RANGEDATTACKTIME                                OBJECT_END + 0x087  //  Size:1  Type:Int32  Flags:2
+#define  UNIT_FIELD_BOUNDINGRADIUS                                  OBJECT_END + 0x088  //  Size:1  Type:Float  Flags:1
+#define  UNIT_FIELD_COMBATREACH                                     OBJECT_END + 0x089  //  Size:1  Type:Float  Flags:1
+#define  UNIT_FIELD_DISPLAYID                                       OBJECT_END + 0x08A  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_NATIVEDISPLAYID                                 OBJECT_END + 0x08B  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_MOUNTDISPLAYID                                  OBJECT_END + 0x08C  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_MINDAMAGE                                       OBJECT_END + 0x08D  //  Size:1  Type:Float  Flags:38
+#define  UNIT_FIELD_MAXDAMAGE                                       OBJECT_END + 0x08E  //  Size:1  Type:Float  Flags:38
+#define  UNIT_FIELD_MINOFFHANDDAMAGE                                OBJECT_END + 0x08F  //  Size:1  Type:Float  Flags:38
+#define  UNIT_FIELD_MAXOFFHANDDAMAGE                                OBJECT_END + 0x090  //  Size:1  Type:Float  Flags:38
+#define  UNIT_FIELD_BYTES_1                                         OBJECT_END + 0x091  //  Size:1  Type:Bytes  Flags:1
+#define  UNIT_FIELD_PETNUMBER                                       OBJECT_END + 0x092  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_PET_NAME_TIMESTAMP                              OBJECT_END + 0x093  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_FIELD_PETEXPERIENCE                                   OBJECT_END + 0x094  //  Size:1  Type:Int32  Flags:4
+#define  UNIT_FIELD_PETNEXTLEVELEXP                                 OBJECT_END + 0x095  //  Size:1  Type:Int32  Flags:4
+#define  UNIT_DYNAMIC_FLAGS                                         OBJECT_END + 0x096  //  Size:1  Type:Int32  Flags:256
+#define  UNIT_CHANNEL_SPELL                                         OBJECT_END + 0x097  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_MOD_CAST_SPEED                                        OBJECT_END + 0x098  //  Size:1  Type:Float  Flags:1
+#define  UNIT_CREATED_BY_SPELL                                      OBJECT_END + 0x099  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_NPC_FLAGS                                             OBJECT_END + 0x09A  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_NPC_EMOTESTATE                                        OBJECT_END + 0x09B  //  Size:1  Type:Int32  Flags:1
+#define  UNIT_TRAINING_POINTS                                       OBJECT_END + 0x09C  //  Size:1  Type:Chars? Flags:4
+#define  UNIT_FIELD_STAT0                                           OBJECT_END + 0x09D  //  Size:1  Type:Int32  Flags:6
+#define  UNIT_FIELD_STAT1                                           OBJECT_END + 0x09E  //  Size:1  Type:Int32  Flags:6
+#define  UNIT_FIELD_STAT2                                           OBJECT_END + 0x09F  //  Size:1  Type:Int32  Flags:6
+#define  UNIT_FIELD_STAT3                                           OBJECT_END + 0x0A0  //  Size:1  Type:Int32  Flags:6
+#define  UNIT_FIELD_STAT4                                           OBJECT_END + 0x0A1  //  Size:1  Type:Int32  Flags:6
+#define  UNIT_FIELD_RESISTANCES                                     OBJECT_END + 0x0A2  //  Size:7  Type:Int32  Flags:38
+#define  UNIT_FIELD_BASE_MANA                                       OBJECT_END + 0x0A9  //  Size:1  Type:Int32  Flags:6
+#define  UNIT_FIELD_BASE_HEALTH                                     OBJECT_END + 0x0AA  //  Size:1  Type:Int32  Flags:6
+#define  UNIT_FIELD_BYTES_2                                         OBJECT_END + 0x0AB  //  Size:1  Type:Bytes  Flags:1
+#define  UNIT_FIELD_ATTACK_POWER                                    OBJECT_END + 0x0AC  //  Size:1  Type:Int32  Flags:6
+#define  UNIT_FIELD_ATTACK_POWER_MODS                               OBJECT_END + 0x0AD  //  Size:1  Type:Chars? Flags:6
+#define  UNIT_FIELD_ATTACK_POWER_MULTIPLIER                         OBJECT_END + 0x0AE  //  Size:1  Type:Float  Flags:6
+#define  UNIT_FIELD_RANGED_ATTACK_POWER                             OBJECT_END + 0x0AF  //  Size:1  Type:Int32  Flags:6
+#define  UNIT_FIELD_RANGED_ATTACK_POWER_MODS                        OBJECT_END + 0x0B0  //  Size:1  Type:Chars? Flags:6
+#define  UNIT_FIELD_RANGED_ATTACK_POWER_MULTIPLIER                  OBJECT_END + 0x0B1  //  Size:1  Type:Float  Flags:6
+#define  UNIT_FIELD_MINRANGEDDAMAGE                                 OBJECT_END + 0x0B2  //  Size:1  Type:Float  Flags:6
+#define  UNIT_FIELD_MAXRANGEDDAMAGE                                 OBJECT_END + 0x0B3  //  Size:1  Type:Float  Flags:6
+#define  UNIT_FIELD_POWER_COST_MODIFIER                             OBJECT_END + 0x0B4  //  Size:7  Type:Int32  Flags:6
+#define  UNIT_FIELD_POWER_COST_MULTIPLIER                           OBJECT_END + 0x0BB  //  Size:7  Type:Float  Flags:6
+#define  UNIT_END                                                   OBJECT_END + 0x0C2
+
+//PLAYER:
+#define  PLAYER_DUEL_ARBITER                                        UNIT_END + 0x000    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_FLAGS                                               UNIT_END + 0x002    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_GUILDID                                             UNIT_END + 0x003    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_GUILDRANK                                           UNIT_END + 0x004    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_BYTES                                               UNIT_END + 0x005    //  Size:1  Type:Bytes  Flags:1
+#define  PLAYER_BYTES_2                                             UNIT_END + 0x006    //  Size:1  Type:Bytes  Flags:1
+#define  PLAYER_BYTES_3                                             UNIT_END + 0x007    //  Size:1  Type:Bytes  Flags:1
+#define  PLAYER_DUEL_TEAM                                           UNIT_END + 0x008    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_GUILD_TIMESTAMP                                     UNIT_END + 0x009    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_QUEST_LOG_1_1                                       UNIT_END + 0x00A    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_1_2                                       UNIT_END + 0x00B    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_2_1                                       UNIT_END + 0x00D    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_2_2                                       UNIT_END + 0x00E    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_3_1                                       UNIT_END + 0x010    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_3_2                                       UNIT_END + 0x011    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_4_1                                       UNIT_END + 0x013    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_4_2                                       UNIT_END + 0x014    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_5_1                                       UNIT_END + 0x016    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_5_2                                       UNIT_END + 0x017    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_6_1                                       UNIT_END + 0x019    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_6_2                                       UNIT_END + 0x01A    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_7_1                                       UNIT_END + 0x01C    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_7_2                                       UNIT_END + 0x01D    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_8_1                                       UNIT_END + 0x01F    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_8_2                                       UNIT_END + 0x020    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_9_1                                       UNIT_END + 0x022    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_9_2                                       UNIT_END + 0x023    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_10_1                                      UNIT_END + 0x025    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_10_2                                      UNIT_END + 0x026    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_11_1                                      UNIT_END + 0x028    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_11_2                                      UNIT_END + 0x029    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_12_1                                      UNIT_END + 0x02B    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_12_2                                      UNIT_END + 0x02C    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_13_1                                      UNIT_END + 0x02E    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_13_2                                      UNIT_END + 0x02F    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_14_1                                      UNIT_END + 0x031    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_14_2                                      UNIT_END + 0x032    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_15_1                                      UNIT_END + 0x034    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_15_2                                      UNIT_END + 0x035    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_16_1                                      UNIT_END + 0x037    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_16_2                                      UNIT_END + 0x038    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_17_1                                      UNIT_END + 0x03A    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_17_2                                      UNIT_END + 0x03B    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_18_1                                      UNIT_END + 0x03D    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_18_2                                      UNIT_END + 0x03E    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_19_1                                      UNIT_END + 0x040    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_19_2                                      UNIT_END + 0x041    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_20_1                                      UNIT_END + 0x043    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_20_2                                      UNIT_END + 0x044    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_21_1                                      UNIT_END + 0x046    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_21_2                                      UNIT_END + 0x047    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_22_1                                      UNIT_END + 0x049    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_22_2                                      UNIT_END + 0x04A    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_23_1                                      UNIT_END + 0x04C    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_23_2                                      UNIT_END + 0x04D    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_24_1                                      UNIT_END + 0x04F    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_24_2                                      UNIT_END + 0x050    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_QUEST_LOG_25_1                                      UNIT_END + 0x052    //  Size:1  Type:Int32  Flags:64
+#define  PLAYER_QUEST_LOG_25_2                                      UNIT_END + 0x053    //  Size:2  Type:Int32  Flags:2
+#define  PLAYER_VISIBLE_ITEM_1_CREATOR                              UNIT_END + 0x055    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_1_0                                    UNIT_END + 0x057    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_1_PROPERTIES                           UNIT_END + 0x063    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_1_PAD                                  UNIT_END + 0x064    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_2_CREATOR                              UNIT_END + 0x065    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_2_0                                    UNIT_END + 0x067    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_2_PROPERTIES                           UNIT_END + 0x073    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_2_PAD                                  UNIT_END + 0x074    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_3_CREATOR                              UNIT_END + 0x075    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_3_0                                    UNIT_END + 0x077    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_3_PROPERTIES                           UNIT_END + 0x083    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_3_PAD                                  UNIT_END + 0x084    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_4_CREATOR                              UNIT_END + 0x085    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_4_0                                    UNIT_END + 0x087    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_4_PROPERTIES                           UNIT_END + 0x093    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_4_PAD                                  UNIT_END + 0x094    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_5_CREATOR                              UNIT_END + 0x095    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_5_0                                    UNIT_END + 0x097    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_5_PROPERTIES                           UNIT_END + 0x0A3    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_5_PAD                                  UNIT_END + 0x0A4    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_6_CREATOR                              UNIT_END + 0x0A5    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_6_0                                    UNIT_END + 0x0A7    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_6_PROPERTIES                           UNIT_END + 0x0B3    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_6_PAD                                  UNIT_END + 0x0B4    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_7_CREATOR                              UNIT_END + 0x0B5    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_7_0                                    UNIT_END + 0x0B7    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_7_PROPERTIES                           UNIT_END + 0x0C3    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_7_PAD                                  UNIT_END + 0x0C4    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_8_CREATOR                              UNIT_END + 0x0C5    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_8_0                                    UNIT_END + 0x0C7    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_8_PROPERTIES                           UNIT_END + 0x0D3    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_8_PAD                                  UNIT_END + 0x0D4    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_9_CREATOR                              UNIT_END + 0x0D5    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_9_0                                    UNIT_END + 0x0D7    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_9_PROPERTIES                           UNIT_END + 0x0E3    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_9_PAD                                  UNIT_END + 0x0E4    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_10_CREATOR                             UNIT_END + 0x0E5    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_10_0                                   UNIT_END + 0x0E7    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_10_PROPERTIES                          UNIT_END + 0x0F3    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_10_PAD                                 UNIT_END + 0x0F4    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_11_CREATOR                             UNIT_END + 0x0F5    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_11_0                                   UNIT_END + 0x0F7    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_11_PROPERTIES                          UNIT_END + 0x103    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_11_PAD                                 UNIT_END + 0x104    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_12_CREATOR                             UNIT_END + 0x105    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_12_0                                   UNIT_END + 0x107    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_12_PROPERTIES                          UNIT_END + 0x113    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_12_PAD                                 UNIT_END + 0x114    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_13_CREATOR                             UNIT_END + 0x115    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_13_0                                   UNIT_END + 0x117    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_13_PROPERTIES                          UNIT_END + 0x123    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_13_PAD                                 UNIT_END + 0x124    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_14_CREATOR                             UNIT_END + 0x125    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_14_0                                   UNIT_END + 0x127    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_14_PROPERTIES                          UNIT_END + 0x133    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_14_PAD                                 UNIT_END + 0x134    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_15_CREATOR                             UNIT_END + 0x135    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_15_0                                   UNIT_END + 0x137    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_15_PROPERTIES                          UNIT_END + 0x143    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_15_PAD                                 UNIT_END + 0x144    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_16_CREATOR                             UNIT_END + 0x145    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_16_0                                   UNIT_END + 0x147    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_16_PROPERTIES                          UNIT_END + 0x153    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_16_PAD                                 UNIT_END + 0x154    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_17_CREATOR                             UNIT_END + 0x155    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_17_0                                   UNIT_END + 0x157    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_17_PROPERTIES                          UNIT_END + 0x163    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_17_PAD                                 UNIT_END + 0x164    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_18_CREATOR                             UNIT_END + 0x165    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_18_0                                   UNIT_END + 0x167    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_18_PROPERTIES                          UNIT_END + 0x173    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_18_PAD                                 UNIT_END + 0x174    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_19_CREATOR                             UNIT_END + 0x175    //  Size:2  Type:GUID   Flags:1
+#define  PLAYER_VISIBLE_ITEM_19_0                                   UNIT_END + 0x177    //  Size:12 Type:Int32  Flags:1
+#define  PLAYER_VISIBLE_ITEM_19_PROPERTIES                          UNIT_END + 0x183    //  Size:1  Type:Chars? Flags:1
+#define  PLAYER_VISIBLE_ITEM_19_PAD                                 UNIT_END + 0x184    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_CHOSEN_TITLE                                        UNIT_END + 0x185    //  Size:1  Type:Int32  Flags:1
+#define  PLAYER_FIELD_INV_SLOT_HEAD                                 UNIT_END + 0x186    //  Size:46 Type:GUID   Flags:2
+#define  PLAYER_FIELD_PACK_SLOT_1                                   UNIT_END + 0x1B4    //  Size:32 Type:GUID   Flags:2
+#define  PLAYER_FIELD_BANK_SLOT_1                                   UNIT_END + 0x1D4    //  Size:56 Type:GUID   Flags:2
+#define  PLAYER_FIELD_BANKBAG_SLOT_1                                UNIT_END + 0x204    //  Size:14 Type:GUID   Flags:2
+#define  PLAYER_FIELD_VENDORBUYBACK_SLOT_1                          UNIT_END + 0x21A    //  Size:24 Type:GUID   Flags:2
+#define  PLAYER_FIELD_KEYRING_SLOT_1                                UNIT_END + 0x232    //  Size:64 Type:GUID   Flags:2
+#define  PLAYER_FARSIGHT                                            UNIT_END + 0x272    //  Size:2  Type:GUID   Flags:2
+#define  PLAYER__FIELD_COMBO_TARGET                                 UNIT_END + 0x274    //  Size:2  Type:GUID   Flags:2
+#define  PLAYER__FIELD_KNOWN_TITLES                                 UNIT_END + 0x276    //  Size:2  Type:GUID   Flags:2
+#define  PLAYER_XP                                                  UNIT_END + 0x278    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_NEXT_LEVEL_XP                                       UNIT_END + 0x279    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_SKILL_INFO_1_1                                      UNIT_END + 0x27A    //  Size:384    Type:Chars? Flags:2
+#define  PLAYER_CHARACTER_POINTS1                                   UNIT_END + 0x3FA    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_CHARACTER_POINTS2                                   UNIT_END + 0x3FB    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_TRACK_CREATURES                                     UNIT_END + 0x3FC    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_TRACK_RESOURCES                                     UNIT_END + 0x3FD    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_BLOCK_PERCENTAGE                                    UNIT_END + 0x3FE    //  Size:1  Type:Float  Flags:2
+#define  PLAYER_DODGE_PERCENTAGE                                    UNIT_END + 0x3FF    //  Size:1  Type:Float  Flags:2
+#define  PLAYER_PARRY_PERCENTAGE                                    UNIT_END + 0x400    //  Size:1  Type:Float  Flags:2
+#define  PLAYER_CRIT_PERCENTAGE                                     UNIT_END + 0x401    //  Size:1  Type:Float  Flags:2
+#define  PLAYER_RANGED_CRIT_PERCENTAGE                              UNIT_END + 0x402    //  Size:1  Type:Float  Flags:2
+#define  PLAYER_SPELL_CRIT_PERCENTAGE1                              UNIT_END + 0x403    //  Size:7  Type:Float  Flags:2
+#define  PLAYER_EXPLORED_ZONES_1                                    UNIT_END + 0x40A    //  Size:64 Type:Bytes  Flags:2
+#define  PLAYER_REST_STATE_EXPERIENCE                               UNIT_END + 0x44A    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_COINAGE                                       UNIT_END + 0x44B    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_POSSTAT0                                      UNIT_END + 0x44C    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_POSSTAT1                                      UNIT_END + 0x44D    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_POSSTAT2                                      UNIT_END + 0x44E    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_POSSTAT3                                      UNIT_END + 0x44F    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_POSSTAT4                                      UNIT_END + 0x450    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_NEGSTAT0                                      UNIT_END + 0x451    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_NEGSTAT1                                      UNIT_END + 0x452    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_NEGSTAT2                                      UNIT_END + 0x453    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_NEGSTAT3                                      UNIT_END + 0x454    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_NEGSTAT4                                      UNIT_END + 0x455    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_RESISTANCEBUFFMODSPOSITIVE                    UNIT_END + 0x456    //  Size:7  Type:Int32  Flags:2
+#define  PLAYER_FIELD_RESISTANCEBUFFMODSNEGATIVE                    UNIT_END + 0x45D    //  Size:7  Type:Int32  Flags:2
+#define  PLAYER_FIELD_MOD_DAMAGE_DONE_POS                           UNIT_END + 0x464    //  Size:7  Type:Int32  Flags:2
+#define  PLAYER_FIELD_MOD_DAMAGE_DONE_NEG                           UNIT_END + 0x46B    //  Size:7  Type:Int32  Flags:2
+#define  PLAYER_FIELD_MOD_DAMAGE_DONE_PCT                           UNIT_END + 0x472    //  Size:7  Type:Int32  Flags:2
+#define  PLAYER_FIELD_MOD_HEALING_DONE_POS                          UNIT_END + 0x479    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_MOD_TARGET_RESISTANCE                         UNIT_END + 0x47A    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_BYTES                                         UNIT_END + 0x47B    //  Size:1  Type:Bytes  Flags:2
+#define  PLAYER_AMMO_ID                                             UNIT_END + 0x47C    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_SELF_RES_SPELL                                      UNIT_END + 0x47D    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_PVP_MEDALS                                    UNIT_END + 0x47E    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_BUYBACK_PRICE_1                               UNIT_END + 0x47F    //  Size:12 Type:Int32  Flags:2
+#define  PLAYER_FIELD_BUYBACK_TIMESTAMP_1                           UNIT_END + 0x48B    //  Size:12 Type:Int32  Flags:2
+#define  PLAYER_FIELD_SESSION_KILLS                                 UNIT_END + 0x497    //  Size:1  Type:Chars? Flags:2
+#define  PLAYER_FIELD_YESTERDAY_KILLS                               UNIT_END + 0x498    //  Size:1  Type:Chars? Flags:2
+#define  PLAYER_FIELD_LAST_WEEK_KILLS                               UNIT_END + 0x499    //  Size:1  Type:Chars? Flags:2
+#define  PLAYER_FIELD_THIS_WEEK_KILLS                               UNIT_END + 0x49A    //  Size:1  Type:Chars? Flags:2
+#define  PLAYER_FIELD_THIS_WEEK_CONTRIBUTION                        UNIT_END + 0x49B    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_LIFETIME_HONORABLE_KILLS                      UNIT_END + 0x49C    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_LIFETIME_DISHONORABLE_KILLS                   UNIT_END + 0x49D    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_YESTERDAY_CONTRIBUTION                        UNIT_END + 0x49E    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_LAST_WEEK_CONTRIBUTION                        UNIT_END + 0x49F    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_LAST_WEEK_RANK                                UNIT_END + 0x4A0    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_BYTES2                                        UNIT_END + 0x4A1    //  Size:1  Type:Bytes  Flags:2
+#define  PLAYER_FIELD_WATCHED_FACTION_INDEX                         UNIT_END + 0x4A2    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_COMBAT_RATING_1                               UNIT_END + 0x4A3    //  Size:20 Type:Int32  Flags:2
+#define  PLAYER_FIELD_ARENA_TEAM_INFO_1_1                           UNIT_END + 0x4B7    //  Size:9  Type:Int32  Flags:2
+#define  PLAYER_FIELD_HONOR_CURRENCY                                UNIT_END + 0x4C0    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_FIELD_ARENA_CURRENCY                                UNIT_END + 0x4C1    //  Size:1  Type:Int32  Flags:2
+#define  PLAYER_END                                                 UNIT_END + 0x4C2
+
+//OBJECT:
+#define  OBJECT_FIELD_CREATED_BY                                    OBJECT_END + 0x000  //  Size:2  Type:GUID   Flags:1
+
+//GAMEOBJECT:
+#define  GAMEOBJECT_DISPLAYID                                       OBJECT_END + 0x002  //  Size:1  Type:Int32  Flags:1
+#define  GAMEOBJECT_FLAGS                                           OBJECT_END + 0x003  //  Size:1  Type:Int32  Flags:1
+#define  GAMEOBJECT_ROTATION                                        OBJECT_END + 0x004  //  Size:4  Type:Float  Flags:1
+#define  GAMEOBJECT_STATE                                           OBJECT_END + 0x008  //  Size:1  Type:Int32  Flags:1
+#define  GAMEOBJECT_POS_X                                           OBJECT_END + 0x009  //  Size:1  Type:Float  Flags:1
+#define  GAMEOBJECT_POS_Y                                           OBJECT_END + 0x00A  //  Size:1  Type:Float  Flags:1
+#define  GAMEOBJECT_POS_Z                                           OBJECT_END + 0x00B  //  Size:1  Type:Float  Flags:1
+#define  GAMEOBJECT_FACING                                          OBJECT_END + 0x00C  //  Size:1  Type:Float  Flags:1
+#define  GAMEOBJECT_DYN_FLAGS                                       OBJECT_END + 0x00D  //  Size:1  Type:Int32  Flags:256
+#define  GAMEOBJECT_FACTION                                         OBJECT_END + 0x00E  //  Size:1  Type:Int32  Flags:1
+#define  GAMEOBJECT_TYPE_ID                                         OBJECT_END + 0x00F  //  Size:1  Type:Int32  Flags:1
+#define  GAMEOBJECT_LEVEL                                           OBJECT_END + 0x010  //  Size:1  Type:Int32  Flags:1
+#define  GAMEOBJECT_ARTKIT                                          OBJECT_END + 0x011  //  Size:1  Type:Int32  Flags:1
+#define  GAMEOBJECT_ANIMPROGRESS                                    OBJECT_END + 0x012  //  Size:1  Type:Int32  Flags:256
+#define  GAMEOBJECT_PADDING                                         OBJECT_END + 0x013  //  Size:1  Type:Int32  Flags:0
+#define  GAMEOBJECT_END                                             OBJECT_END + 0x014
+
+//DYNAMICOBJECT:
+#define  DYNAMICOBJECT_CASTER                                       OBJECT_END + 0x000  //  Size:2  Type:GUID   Flags:1
+#define  DYNAMICOBJECT_BYTES                                        OBJECT_END + 0x002  //  Size:1  Type:Bytes  Flags:1
+#define  DYNAMICOBJECT_SPELLID                                      OBJECT_END + 0x003  //  Size:1  Type:Int32  Flags:1
+#define  DYNAMICOBJECT_RADIUS                                       OBJECT_END + 0x004  //  Size:1  Type:Float  Flags:1
+#define  DYNAMICOBJECT_POS_X                                        OBJECT_END + 0x005  //  Size:1  Type:Float  Flags:1
+#define  DYNAMICOBJECT_POS_Y                                        OBJECT_END + 0x006  //  Size:1  Type:Float  Flags:1
+#define  DYNAMICOBJECT_POS_Z                                        OBJECT_END + 0x007  //  Size:1  Type:Float  Flags:1
+#define  DYNAMICOBJECT_FACING                                       OBJECT_END + 0x008  //  Size:1  Type:Float  Flags:1
+#define  DYNAMICOBJECT_PAD                                          OBJECT_END + 0x009  //  Size:1  Type:Bytes  Flags:1
+#define  DYNAMICOBJECT_END                                          OBJECT_END + 0x00A
+
+//CORPSE:
+#define  CORPSE_FIELD_OWNER                                         OBJECT_END + 0x000  //  Size:2  Type:GUID   Flags:1
+#define  CORPSE_FIELD_FACING                                        OBJECT_END + 0x002  //  Size:1  Type:Float  Flags:1
+#define  CORPSE_FIELD_POS_X                                         OBJECT_END + 0x003  //  Size:1  Type:Float  Flags:1
+#define  CORPSE_FIELD_POS_Y                                         OBJECT_END + 0x004  //  Size:1  Type:Float  Flags:1
+#define  CORPSE_FIELD_POS_Z                                         OBJECT_END + 0x005  //  Size:1  Type:Float  Flags:1
+#define  CORPSE_FIELD_DISPLAY_ID                                    OBJECT_END + 0x006  //  Size:1  Type:Int32  Flags:1
+#define  CORPSE_FIELD_ITEM                                          OBJECT_END + 0x007  //  Size:19 Type:Int32  Flags:1
+#define  CORPSE_FIELD_BYTES_1                                       OBJECT_END + 0x01A  //  Size:1  Type:Bytes  Flags:1
+#define  CORPSE_FIELD_BYTES_2                                       OBJECT_END + 0x01B  //  Size:1  Type:Bytes  Flags:1
+#define  CORPSE_FIELD_GUILD                                         OBJECT_END + 0x01C  //  Size:1  Type:Int32  Flags:1
+#define  CORPSE_FIELD_FLAGS                                         OBJECT_END + 0x01D  //  Size:1  Type:Int32  Flags:1
+#define  CORPSE_FIELD_DYNAMIC_FLAGS                                 OBJECT_END + 0x01E  //  Size:1  Type:Int32  Flags:256
+#define  CORPSE_FIELD_PAD                                           OBJECT_END + 0x01F  //  Size:1  Type:Int32  Flags:0
+#define  CORPSE_END                                                 OBJECT_END + 0x020
+#else
+// Object
+#define OBJECT_FIELD_GUID                   0x000 // GUID
+#define OBJECT_FIELD_GUID_01                0x001 // GUID
+#define OBJECT_FIELD_TYPE                   0x002 // Int32
+#define OBJECT_FIELD_ENTRY                  0x003 // Int32
+#define OBJECT_FIELD_SCALE_X                0x004 // Float
+#define OBJECT_FIELD_PADDING                0x005 // Int32
+#define OBJECT_END                          0x006
+
+// Item
+#define ITEM_FIELD_OWNER                    OBJECT_END + 0x000 // GUID
+#define ITEM_FIELD_OWNER_01                 OBJECT_END + 0x001 // GUID
+#define ITEM_FIELD_CONTAINED                OBJECT_END + 0x002 // GUID
+#define ITEM_FIELD_CONTAINED_01             OBJECT_END + 0x003 // GUID
+#define ITEM_FIELD_CREATOR                  OBJECT_END + 0x004 // GUID
+#define ITEM_FIELD_CREATOR_01               OBJECT_END + 0x005 // GUID
+#define ITEM_FIELD_GIFTCREATOR              OBJECT_END + 0x006 // GUID
+#define ITEM_FIELD_GIFTCREATOR_01           OBJECT_END + 0x007 // GUID
+#define ITEM_FIELD_STACK_COUNT              OBJECT_END + 0x008 // Int32
+#define ITEM_FIELD_DURATION                 OBJECT_END + 0x009 // Int32
+#define ITEM_FIELD_SPELL_CHARGES            OBJECT_END + 0x00A // Int32
+#define ITEM_FIELD_SPELL_CHARGES_01             OBJECT_END + 0x00B // Int32
+#define ITEM_FIELD_SPELL_CHARGES_02             OBJECT_END + 0x00C // Int32
+#define ITEM_FIELD_SPELL_CHARGES_03             OBJECT_END + 0x00D // Int32
+#define ITEM_FIELD_SPELL_CHARGES_04             OBJECT_END + 0x00E // Int32
+#define ITEM_FIELD_FLAGS                    OBJECT_END + 0x00F // Int32
+#define ITEM_FIELD_ENCHANTMENT          OBJECT_END + 0x010 // Int32
+#define ITEM_FIELD_ENCHANTMENT_01           OBJECT_END + 0x011 // Int32
+#define ITEM_FIELD_ENCHANTMENT_02           OBJECT_END + 0x012 // Int32
+#define ITEM_FIELD_ENCHANTMENT_03           OBJECT_END + 0x013 // Int32
+#define ITEM_FIELD_ENCHANTMENT_04           OBJECT_END + 0x014 // Int32
+#define ITEM_FIELD_ENCHANTMENT_05           OBJECT_END + 0x015 // Int32
+#define ITEM_FIELD_ENCHANTMENT_06           OBJECT_END + 0x016 // Int32
+#define ITEM_FIELD_ENCHANTMENT_07           OBJECT_END + 0x017 // Int32
+#define ITEM_FIELD_ENCHANTMENT_08           OBJECT_END + 0x018 // Int32
+#define ITEM_FIELD_ENCHANTMENT_09           OBJECT_END + 0x019 // Int32
+#define ITEM_FIELD_ENCHANTMENT_10           OBJECT_END + 0x01A // Int32
+#define ITEM_FIELD_ENCHANTMENT_11           OBJECT_END + 0x01B // Int32
+#define ITEM_FIELD_ENCHANTMENT_12           OBJECT_END + 0x01C // Int32
+#define ITEM_FIELD_ENCHANTMENT_13           OBJECT_END + 0x01D // Int32
+#define ITEM_FIELD_ENCHANTMENT_14           OBJECT_END + 0x01E // Int32
+#define ITEM_FIELD_ENCHANTMENT_15           OBJECT_END + 0x01F // Int32
+#define ITEM_FIELD_ENCHANTMENT_16           OBJECT_END + 0x020 // Int32
+#define ITEM_FIELD_ENCHANTMENT_17           OBJECT_END + 0x021 // Int32
+#define ITEM_FIELD_ENCHANTMENT_18           OBJECT_END + 0x022 // Int32
+#define ITEM_FIELD_ENCHANTMENT_19           OBJECT_END + 0x023 // Int32
+#define ITEM_FIELD_ENCHANTMENT_20           OBJECT_END + 0x024 // Int32
+#define ITEM_FIELD_PROPERTY_SEED            OBJECT_END + 0x025 // Int32
+#define ITEM_FIELD_RANDOM_PROPERTIES_ID     OBJECT_END + 0x026 // Int32
+#define ITEM_FIELD_ITEM_TEXT_ID             OBJECT_END + 0x027 // Int32
+#define ITEM_FIELD_DURABILITY               OBJECT_END + 0x028 // Int32
+#define ITEM_FIELD_MAXDURABILITY            OBJECT_END + 0x029 // Int32
+#define ITEM_END             OBJECT_END + 0x02A
+
+// Container
+#define CONTAINER_FIELD_NUM_SLOTS           ITEM_END + 0x000 // Int32
+#define CONTAINER_ALIGN_PAD                 ITEM_END + 0x001 // Bytes
+#define CONTAINER_FIELD_SLOT_1          ITEM_END + 0x002 // GUID
+#define CONTAINER_FIELD_SLOT_1_01           ITEM_END + 0x003 // GUID
+#define CONTAINER_FIELD_SLOT_1_02           ITEM_END + 0x004 // GUID
+#define CONTAINER_FIELD_SLOT_1_03           ITEM_END + 0x005 // GUID
+#define CONTAINER_FIELD_SLOT_1_04           ITEM_END + 0x006 // GUID
+#define CONTAINER_FIELD_SLOT_1_05           ITEM_END + 0x007 // GUID
+#define CONTAINER_FIELD_SLOT_1_06           ITEM_END + 0x008 // GUID
+#define CONTAINER_FIELD_SLOT_1_07           ITEM_END + 0x009 // GUID
+#define CONTAINER_FIELD_SLOT_1_08           ITEM_END + 0x00A // GUID
+#define CONTAINER_FIELD_SLOT_1_09           ITEM_END + 0x00B // GUID
+#define CONTAINER_FIELD_SLOT_1_10           ITEM_END + 0x00C // GUID
+#define CONTAINER_FIELD_SLOT_1_11           ITEM_END + 0x00D // GUID
+#define CONTAINER_FIELD_SLOT_1_12           ITEM_END + 0x00E // GUID
+#define CONTAINER_FIELD_SLOT_1_13           ITEM_END + 0x00F // GUID
+#define CONTAINER_FIELD_SLOT_1_14           ITEM_END + 0x010 // GUID
+#define CONTAINER_FIELD_SLOT_1_15           ITEM_END + 0x011 // GUID
+#define CONTAINER_FIELD_SLOT_1_16           ITEM_END + 0x012 // GUID
+#define CONTAINER_FIELD_SLOT_1_17           ITEM_END + 0x013 // GUID
+#define CONTAINER_FIELD_SLOT_1_18           ITEM_END + 0x014 // GUID
+#define CONTAINER_FIELD_SLOT_1_19           ITEM_END + 0x015 // GUID
+#define CONTAINER_FIELD_SLOT_1_20           ITEM_END + 0x016 // GUID
+#define CONTAINER_FIELD_SLOT_1_21           ITEM_END + 0x017 // GUID
+#define CONTAINER_FIELD_SLOT_1_22           ITEM_END + 0x018 // GUID
+#define CONTAINER_FIELD_SLOT_1_23           ITEM_END + 0x019 // GUID
+#define CONTAINER_FIELD_SLOT_1_24           ITEM_END + 0x01A // GUID
+#define CONTAINER_FIELD_SLOT_1_25           ITEM_END + 0x01B // GUID
+#define CONTAINER_FIELD_SLOT_1_26           ITEM_END + 0x01C // GUID
+#define CONTAINER_FIELD_SLOT_1_27           ITEM_END + 0x01D // GUID
+#define CONTAINER_FIELD_SLOT_1_28           ITEM_END + 0x01E // GUID
+#define CONTAINER_FIELD_SLOT_1_29           ITEM_END + 0x01F // GUID
+#define CONTAINER_FIELD_SLOT_1_30           ITEM_END + 0x020 // GUID
+#define CONTAINER_FIELD_SLOT_1_31           ITEM_END + 0x021 // GUID
+#define CONTAINER_FIELD_SLOT_1_32           ITEM_END + 0x022 // GUID
+#define CONTAINER_FIELD_SLOT_1_33           ITEM_END + 0x023 // GUID
+#define CONTAINER_FIELD_SLOT_1_34           ITEM_END + 0x024 // GUID
+#define CONTAINER_FIELD_SLOT_1_35           ITEM_END + 0x025 // GUID
+#define CONTAINER_FIELD_SLOT_1_36           ITEM_END + 0x026 // GUID
+#define CONTAINER_FIELD_SLOT_1_37           ITEM_END + 0x027 // GUID
+#define CONTAINER_FIELD_SLOT_1_38           ITEM_END + 0x028 // GUID
+#define CONTAINER_FIELD_SLOT_1_39           ITEM_END + 0x029 // GUID
+#define CONTAINER_FIELD_SLOT_1_40           ITEM_END + 0x02A // GUID
+#define CONTAINER_FIELD_SLOT_1_41           ITEM_END + 0x02B // GUID
+#define CONTAINER_FIELD_SLOT_1_42           ITEM_END + 0x02C // GUID
+#define CONTAINER_FIELD_SLOT_1_43           ITEM_END + 0x02D // GUID
+#define CONTAINER_FIELD_SLOT_1_44           ITEM_END + 0x02E // GUID
+#define CONTAINER_FIELD_SLOT_1_45           ITEM_END + 0x02F // GUID
+#define CONTAINER_FIELD_SLOT_1_46           ITEM_END + 0x030 // GUID
+#define CONTAINER_FIELD_SLOT_1_47           ITEM_END + 0x031 // GUID
+#define CONTAINER_FIELD_SLOT_1_48           ITEM_END + 0x032 // GUID
+#define CONTAINER_FIELD_SLOT_1_49           ITEM_END + 0x033 // GUID
+#define CONTAINER_FIELD_SLOT_1_50           ITEM_END + 0x034 // GUID
+#define CONTAINER_FIELD_SLOT_1_51           ITEM_END + 0x035 // GUID
+#define CONTAINER_FIELD_SLOT_1_52           ITEM_END + 0x036 // GUID
+#define CONTAINER_FIELD_SLOT_1_53           ITEM_END + 0x037 // GUID
+#define CONTAINER_FIELD_SLOT_1_54           ITEM_END + 0x038 // GUID
+#define CONTAINER_FIELD_SLOT_1_55           ITEM_END + 0x039 // GUID
+#define CONTAINER_FIELD_SLOT_1_56           ITEM_END + 0x03A // GUID
+#define CONTAINER_FIELD_SLOT_1_57           ITEM_END + 0x03B // GUID
+#define CONTAINER_FIELD_SLOT_1_58           ITEM_END + 0x03C // GUID
+#define CONTAINER_FIELD_SLOT_1_59           ITEM_END + 0x03D // GUID
+#define CONTAINER_FIELD_SLOT_1_60           ITEM_END + 0x03E // GUID
+#define CONTAINER_FIELD_SLOT_1_61           ITEM_END + 0x03F // GUID
+#define CONTAINER_FIELD_SLOT_1_62           ITEM_END + 0x040 // GUID
+#define CONTAINER_FIELD_SLOT_1_63           ITEM_END + 0x041 // GUID
+#define CONTAINER_FIELD_SLOT_1_64           ITEM_END + 0x042 // GUID
+#define CONTAINER_FIELD_SLOT_1_65           ITEM_END + 0x043 // GUID
+#define CONTAINER_FIELD_SLOT_1_66           ITEM_END + 0x044 // GUID
+#define CONTAINER_FIELD_SLOT_1_67           ITEM_END + 0x045 // GUID
+#define CONTAINER_FIELD_SLOT_1_68           ITEM_END + 0x046 // GUID
+#define CONTAINER_FIELD_SLOT_1_69           ITEM_END + 0x047 // GUID
+#define CONTAINER_FIELD_SLOT_1_70           ITEM_END + 0x048 // GUID
+#define CONTAINER_FIELD_SLOT_1_71           ITEM_END + 0x049 // GUID
+#define CONTAINER_END            ITEM_END + 0x04A
+
+// Unit
+#define UNIT_FIELD_CHARM            OBJECT_END + 0x000 // GUID
+#define UNIT_FIELD_CHARM_01             OBJECT_END + 0x001 // GUID
+#define UNIT_FIELD_SUMMON           OBJECT_END + 0x002 // GUID
+#define UNIT_FIELD_SUMMON_01            OBJECT_END + 0x003 // GUID
+#define UNIT_FIELD_CHARMEDBY            OBJECT_END + 0x004 // GUID
+#define UNIT_FIELD_CHARMEDBY_01             OBJECT_END + 0x005 // GUID
+#define UNIT_FIELD_SUMMONEDBY           OBJECT_END + 0x006 // GUID
+#define UNIT_FIELD_SUMMONEDBY_01            OBJECT_END + 0x007 // GUID
+#define UNIT_FIELD_CREATEDBY            OBJECT_END + 0x008 // GUID
+#define UNIT_FIELD_CREATEDBY_01             OBJECT_END + 0x009 // GUID
+#define UNIT_FIELD_TARGET           OBJECT_END + 0x00A // GUID
+#define UNIT_FIELD_TARGET_01            OBJECT_END + 0x00B // GUID
+#define UNIT_FIELD_PERSUADED            OBJECT_END + 0x00C // GUID
+#define UNIT_FIELD_PERSUADED_01             OBJECT_END + 0x00D // GUID
+#define UNIT_FIELD_CHANNEL_OBJECT           OBJECT_END + 0x00E // GUID
+#define UNIT_FIELD_CHANNEL_OBJECT_01            OBJECT_END + 0x00F // GUID
+#define UNIT_FIELD_HEALTH                   OBJECT_END + 0x010 // Int32
+#define UNIT_FIELD_POWER1                   OBJECT_END + 0x011 // Int32
+#define UNIT_FIELD_POWER2                   OBJECT_END + 0x012 // Int32
+#define UNIT_FIELD_POWER3                   OBJECT_END + 0x013 // Int32
+#define UNIT_FIELD_POWER4                   OBJECT_END + 0x014 // Int32
+#define UNIT_FIELD_POWER5                   OBJECT_END + 0x015 // Int32
+#define UNIT_FIELD_MAXHEALTH                OBJECT_END + 0x016 // Int32
+#define UNIT_FIELD_MAXPOWER1                OBJECT_END + 0x017 // Int32
+#define UNIT_FIELD_MAXPOWER2                OBJECT_END + 0x018 // Int32
+#define UNIT_FIELD_MAXPOWER3                OBJECT_END + 0x019 // Int32
+#define UNIT_FIELD_MAXPOWER4                OBJECT_END + 0x01A // Int32
+#define UNIT_FIELD_MAXPOWER5                OBJECT_END + 0x01B // Int32
+#define UNIT_FIELD_LEVEL                    OBJECT_END + 0x01C // Int32
+#define UNIT_FIELD_FACTIONTEMPLATE          OBJECT_END + 0x01D // Int32
+#define UNIT_FIELD_BYTES_0                  OBJECT_END + 0x01E // Bytes
+#define UNIT_VIRTUAL_ITEM_SLOT_DISPLAY          OBJECT_END + 0x01F // Int32
+#define UNIT_VIRTUAL_ITEM_SLOT_DISPLAY_01           OBJECT_END + 0x020 // Int32
+#define UNIT_VIRTUAL_ITEM_SLOT_DISPLAY_02           OBJECT_END + 0x021 // Int32
+#define UNIT_VIRTUAL_ITEM_INFO          OBJECT_END + 0x022 // Bytes
+#define UNIT_VIRTUAL_ITEM_INFO_01           OBJECT_END + 0x023 // Bytes
+#define UNIT_VIRTUAL_ITEM_INFO_02           OBJECT_END + 0x024 // Bytes
+#define UNIT_VIRTUAL_ITEM_INFO_03           OBJECT_END + 0x025 // Bytes
+#define UNIT_VIRTUAL_ITEM_INFO_04           OBJECT_END + 0x026 // Bytes
+#define UNIT_VIRTUAL_ITEM_INFO_05           OBJECT_END + 0x027 // Bytes
+#define UNIT_FIELD_FLAGS                    OBJECT_END + 0x028 // Int32
+#define UNIT_FIELD_AURA             OBJECT_END + 0x029 // Int32
+#define UNIT_FIELD_AURA_01          OBJECT_END + 0x02A // Int32
+#define UNIT_FIELD_AURA_02          OBJECT_END + 0x02B // Int32
+#define UNIT_FIELD_AURA_03          OBJECT_END + 0x02C // Int32
+#define UNIT_FIELD_AURA_04          OBJECT_END + 0x02D // Int32
+#define UNIT_FIELD_AURA_05          OBJECT_END + 0x02E // Int32
+#define UNIT_FIELD_AURA_06          OBJECT_END + 0x02F // Int32
+#define UNIT_FIELD_AURA_07          OBJECT_END + 0x030 // Int32
+#define UNIT_FIELD_AURA_08          OBJECT_END + 0x031 // Int32
+#define UNIT_FIELD_AURA_09          OBJECT_END + 0x032 // Int32
+#define UNIT_FIELD_AURA_10          OBJECT_END + 0x033 // Int32
+#define UNIT_FIELD_AURA_11          OBJECT_END + 0x034 // Int32
+#define UNIT_FIELD_AURA_12          OBJECT_END + 0x035 // Int32
+#define UNIT_FIELD_AURA_13          OBJECT_END + 0x036 // Int32
+#define UNIT_FIELD_AURA_14          OBJECT_END + 0x037 // Int32
+#define UNIT_FIELD_AURA_15          OBJECT_END + 0x038 // Int32
+#define UNIT_FIELD_AURA_16          OBJECT_END + 0x039 // Int32
+#define UNIT_FIELD_AURA_17          OBJECT_END + 0x03A // Int32
+#define UNIT_FIELD_AURA_18          OBJECT_END + 0x03B // Int32
+#define UNIT_FIELD_AURA_19          OBJECT_END + 0x03C // Int32
+#define UNIT_FIELD_AURA_20          OBJECT_END + 0x03D // Int32
+#define UNIT_FIELD_AURA_21          OBJECT_END + 0x03E // Int32
+#define UNIT_FIELD_AURA_22          OBJECT_END + 0x03F // Int32
+#define UNIT_FIELD_AURA_23          OBJECT_END + 0x040 // Int32
+#define UNIT_FIELD_AURA_24          OBJECT_END + 0x041 // Int32
+#define UNIT_FIELD_AURA_25          OBJECT_END + 0x042 // Int32
+#define UNIT_FIELD_AURA_26          OBJECT_END + 0x043 // Int32
+#define UNIT_FIELD_AURA_27          OBJECT_END + 0x044 // Int32
+#define UNIT_FIELD_AURA_28          OBJECT_END + 0x045 // Int32
+#define UNIT_FIELD_AURA_29          OBJECT_END + 0x046 // Int32
+#define UNIT_FIELD_AURA_30          OBJECT_END + 0x047 // Int32
+#define UNIT_FIELD_AURA_31          OBJECT_END + 0x048 // Int32
+#define UNIT_FIELD_AURA_32          OBJECT_END + 0x049 // Int32
+#define UNIT_FIELD_AURA_33          OBJECT_END + 0x04A // Int32
+#define UNIT_FIELD_AURA_34          OBJECT_END + 0x04B // Int32
+#define UNIT_FIELD_AURA_35          OBJECT_END + 0x04C // Int32
+#define UNIT_FIELD_AURA_36          OBJECT_END + 0x04D // Int32
+#define UNIT_FIELD_AURA_37          OBJECT_END + 0x04E // Int32
+#define UNIT_FIELD_AURA_38          OBJECT_END + 0x04F // Int32
+#define UNIT_FIELD_AURA_39          OBJECT_END + 0x050 // Int32
+#define UNIT_FIELD_AURA_40          OBJECT_END + 0x051 // Int32
+#define UNIT_FIELD_AURA_41          OBJECT_END + 0x052 // Int32
+#define UNIT_FIELD_AURA_42          OBJECT_END + 0x053 // Int32
+#define UNIT_FIELD_AURA_43          OBJECT_END + 0x054 // Int32
+#define UNIT_FIELD_AURA_44          OBJECT_END + 0x055 // Int32
+#define UNIT_FIELD_AURA_45          OBJECT_END + 0x056 // Int32
+#define UNIT_FIELD_AURA_46          OBJECT_END + 0x057 // Int32
+#define UNIT_FIELD_AURA_47          OBJECT_END + 0x058 // Int32
+#define UNIT_FIELD_AURAFLAGS            OBJECT_END + 0x059 // Bytes
+#define UNIT_FIELD_AURAFLAGS_01             OBJECT_END + 0x05A // Bytes
+#define UNIT_FIELD_AURAFLAGS_02             OBJECT_END + 0x05B // Bytes
+#define UNIT_FIELD_AURAFLAGS_03             OBJECT_END + 0x05C // Bytes
+#define UNIT_FIELD_AURAFLAGS_04             OBJECT_END + 0x05D // Bytes
+#define UNIT_FIELD_AURAFLAGS_05             OBJECT_END + 0x05E // Bytes
+#define UNIT_FIELD_AURALEVELS           OBJECT_END + 0x05F // Bytes
+#define UNIT_FIELD_AURALEVELS_01            OBJECT_END + 0x060 // Bytes
+#define UNIT_FIELD_AURALEVELS_02            OBJECT_END + 0x061 // Bytes
+#define UNIT_FIELD_AURALEVELS_03            OBJECT_END + 0x062 // Bytes
+#define UNIT_FIELD_AURALEVELS_04            OBJECT_END + 0x063 // Bytes
+#define UNIT_FIELD_AURALEVELS_05            OBJECT_END + 0x064 // Bytes
+#define UNIT_FIELD_AURALEVELS_06            OBJECT_END + 0x065 // Bytes
+#define UNIT_FIELD_AURALEVELS_07            OBJECT_END + 0x066 // Bytes
+#define UNIT_FIELD_AURALEVELS_08            OBJECT_END + 0x067 // Bytes
+#define UNIT_FIELD_AURALEVELS_09            OBJECT_END + 0x068 // Bytes
+#define UNIT_FIELD_AURALEVELS_10            OBJECT_END + 0x069 // Bytes
+#define UNIT_FIELD_AURALEVELS_11            OBJECT_END + 0x06A // Bytes
+#define UNIT_FIELD_AURAAPPLICATIONS             OBJECT_END + 0x06B // Bytes
+#define UNIT_FIELD_AURAAPPLICATIONS_01          OBJECT_END + 0x06C // Bytes
+#define UNIT_FIELD_AURAAPPLICATIONS_02          OBJECT_END + 0x06D // Bytes
+#define UNIT_FIELD_AURAAPPLICATIONS_03          OBJECT_END + 0x06E // Bytes
+#define UNIT_FIELD_AURAAPPLICATIONS_04          OBJECT_END + 0x06F // Bytes
+#define UNIT_FIELD_AURAAPPLICATIONS_05          OBJECT_END + 0x070 // Bytes
+#define UNIT_FIELD_AURAAPPLICATIONS_06          OBJECT_END + 0x071 // Bytes
+#define UNIT_FIELD_AURAAPPLICATIONS_07          OBJECT_END + 0x072 // Bytes
+#define UNIT_FIELD_AURAAPPLICATIONS_08          OBJECT_END + 0x073 // Bytes
+#define UNIT_FIELD_AURAAPPLICATIONS_09          OBJECT_END + 0x074 // Bytes
+#define UNIT_FIELD_AURAAPPLICATIONS_10          OBJECT_END + 0x075 // Bytes
+#define UNIT_FIELD_AURAAPPLICATIONS_11          OBJECT_END + 0x076 // Bytes
+#define UNIT_FIELD_AURASTATE                OBJECT_END + 0x077 // Int32
+#define UNIT_FIELD_BASEATTACKTIME           OBJECT_END + 0x078 // Int32
+#define UNIT_FIELD_BASEATTACKTIME_01            OBJECT_END + 0x079 // Int32
+#define UNIT_FIELD_RANGEDATTACKTIME         OBJECT_END + 0x07A // Int32
+#define UNIT_FIELD_BOUNDINGRADIUS           OBJECT_END + 0x07B // Float
+#define UNIT_FIELD_COMBATREACH              OBJECT_END + 0x07C // Float
+#define UNIT_FIELD_DISPLAYID                OBJECT_END + 0x07D // Int32
+#define UNIT_FIELD_NATIVEDISPLAYID          OBJECT_END + 0x07E // Int32
+#define UNIT_FIELD_MOUNTDISPLAYID           OBJECT_END + 0x07F // Int32
+#define UNIT_FIELD_MINDAMAGE                OBJECT_END + 0x080 // Float
+#define UNIT_FIELD_MAXDAMAGE                OBJECT_END + 0x081 // Float
+#define UNIT_FIELD_MINOFFHANDDAMAGE         OBJECT_END + 0x082 // Float
+#define UNIT_FIELD_MAXOFFHANDDAMAGE         OBJECT_END + 0x083 // Float
+#define UNIT_FIELD_BYTES_1                  OBJECT_END + 0x084 // Bytes
+#define UNIT_FIELD_PETNUMBER                OBJECT_END + 0x085 // Int32
+#define UNIT_FIELD_PET_NAME_TIMESTAMP       OBJECT_END + 0x086 // Int32
+#define UNIT_FIELD_PETEXPERIENCE            OBJECT_END + 0x087 // Int32
+#define UNIT_FIELD_PETNEXTLEVELEXP          OBJECT_END + 0x088 // Int32
+#define UNIT_DYNAMIC_FLAGS                  OBJECT_END + 0x089 // Int32
+#define UNIT_CHANNEL_SPELL                  OBJECT_END + 0x08A // Int32
+#define UNIT_MOD_CAST_SPEED                 OBJECT_END + 0x08B // Float
+#define UNIT_CREATED_BY_SPELL               OBJECT_END + 0x08C // Int32
+#define UNIT_NPC_FLAGS                      OBJECT_END + 0x08D // Int32
+#define UNIT_NPC_EMOTESTATE                 OBJECT_END + 0x08E // Int32
+#define UNIT_TRAINING_POINTS                OBJECT_END + 0x08F // Chars?
+#define UNIT_FIELD_STAT0                    OBJECT_END + 0x090 // Int32
+#define UNIT_FIELD_STAT1                    OBJECT_END + 0x091 // Int32
+#define UNIT_FIELD_STAT2                    OBJECT_END + 0x092 // Int32
+#define UNIT_FIELD_STAT3                    OBJECT_END + 0x093 // Int32
+#define UNIT_FIELD_STAT4                    OBJECT_END + 0x094 // Int32
+#define UNIT_FIELD_RESISTANCES          OBJECT_END + 0x095 // Int32
+#define UNIT_FIELD_RESISTANCES_01           OBJECT_END + 0x096 // Int32
+#define UNIT_FIELD_RESISTANCES_02           OBJECT_END + 0x097 // Int32
+#define UNIT_FIELD_RESISTANCES_03           OBJECT_END + 0x098 // Int32
+#define UNIT_FIELD_RESISTANCES_04           OBJECT_END + 0x099 // Int32
+#define UNIT_FIELD_RESISTANCES_05           OBJECT_END + 0x09A // Int32
+#define UNIT_FIELD_RESISTANCES_06           OBJECT_END + 0x09B // Int32
+#define UNIT_FIELD_BASE_MANA                OBJECT_END + 0x09C // Int32
+#define UNIT_FIELD_BASE_HEALTH              OBJECT_END + 0x09D // Int32
+#define UNIT_FIELD_BYTES_2                  OBJECT_END + 0x09E // Bytes
+#define UNIT_FIELD_ATTACK_POWER             OBJECT_END + 0x09F // Int32
+#define UNIT_FIELD_ATTACK_POWER_MODS        OBJECT_END + 0x0A0 // Chars?
+#define UNIT_FIELD_ATTACK_POWER_MULTIPLIER  OBJECT_END + 0x0A1 // Float
+#define UNIT_FIELD_RANGED_ATTACK_POWER      OBJECT_END + 0x0A2 // Int32
+#define UNIT_FIELD_RANGED_ATTACK_POWER_MODS OBJECT_END + 0x0A3 // Chars?
+#define UNIT_FIELD_RANGED_ATTACK_POWER_MULTIPLIER OBJECT_END + 0x0A4 // Float
+#define UNIT_FIELD_MINRANGEDDAMAGE          OBJECT_END + 0x0A5 // Float
+#define UNIT_FIELD_MAXRANGEDDAMAGE          OBJECT_END + 0x0A6 // Float
+#define UNIT_FIELD_POWER_COST_MODIFIER          OBJECT_END + 0x0A7 // Int32
+#define UNIT_FIELD_POWER_COST_MODIFIER_01           OBJECT_END + 0x0A8 // Int32
+#define UNIT_FIELD_POWER_COST_MODIFIER_02           OBJECT_END + 0x0A9 // Int32
+#define UNIT_FIELD_POWER_COST_MODIFIER_03           OBJECT_END + 0x0AA // Int32
+#define UNIT_FIELD_POWER_COST_MODIFIER_04           OBJECT_END + 0x0AB // Int32
+#define UNIT_FIELD_POWER_COST_MODIFIER_05           OBJECT_END + 0x0AC // Int32
+#define UNIT_FIELD_POWER_COST_MODIFIER_06           OBJECT_END + 0x0AD // Int32
+#define UNIT_FIELD_POWER_COST_MULTIPLIER            OBJECT_END + 0x0AE // Float
+#define UNIT_FIELD_POWER_COST_MULTIPLIER_01             OBJECT_END + 0x0AF // Float
+#define UNIT_FIELD_POWER_COST_MULTIPLIER_02             OBJECT_END + 0x0B0 // Float
+#define UNIT_FIELD_POWER_COST_MULTIPLIER_03             OBJECT_END + 0x0B1 // Float
+#define UNIT_FIELD_POWER_COST_MULTIPLIER_04             OBJECT_END + 0x0B2 // Float
+#define UNIT_FIELD_POWER_COST_MULTIPLIER_05             OBJECT_END + 0x0B3 // Float
+#define UNIT_FIELD_POWER_COST_MULTIPLIER_06             OBJECT_END + 0x0B4 // Float
+#define UNIT_FIELD_PADDING                  OBJECT_END + 0x0B5 // Int32
+#define UNIT_END             OBJECT_END + 0x0B6
+
+// Player
+#define PLAYER_DUEL_ARBITER             UNIT_END + 0x000 // GUID
+#define PLAYER_DUEL_ARBITER_01          UNIT_END + 0x001 // GUID
+#define PLAYER_FLAGS                        UNIT_END + 0x002 // Int32
+#define PLAYER_GUILDID                      UNIT_END + 0x003 // Int32
+#define PLAYER_GUILDRANK                    UNIT_END + 0x004 // Int32
+#define PLAYER_BYTES                        UNIT_END + 0x005 // Bytes
+#define PLAYER_BYTES_2                      UNIT_END + 0x006 // Bytes
+#define PLAYER_BYTES_3                      UNIT_END + 0x007 // Bytes
+#define PLAYER_DUEL_TEAM                    UNIT_END + 0x008 // Int32
+#define PLAYER_GUILD_TIMESTAMP              UNIT_END + 0x009 // Int32
+#define PLAYER_QUEST_LOG_1_1                UNIT_END + 0x00A // Int32
+#define PLAYER_QUEST_LOG_1_2            UNIT_END + 0x00B // Int32
+#define PLAYER_QUEST_LOG_1_2_01             UNIT_END + 0x00C // Int32
+#define PLAYER_QUEST_LOG_2_1                UNIT_END + 0x00D // Int32
+#define PLAYER_QUEST_LOG_2_2            UNIT_END + 0x00E // Int32
+#define PLAYER_QUEST_LOG_2_2_01             UNIT_END + 0x00F // Int32
+#define PLAYER_QUEST_LOG_3_1                UNIT_END + 0x010 // Int32
+#define PLAYER_QUEST_LOG_3_2            UNIT_END + 0x011 // Int32
+#define PLAYER_QUEST_LOG_3_2_01             UNIT_END + 0x012 // Int32
+#define PLAYER_QUEST_LOG_4_1                UNIT_END + 0x013 // Int32
+#define PLAYER_QUEST_LOG_4_2            UNIT_END + 0x014 // Int32
+#define PLAYER_QUEST_LOG_4_2_01             UNIT_END + 0x015 // Int32
+#define PLAYER_QUEST_LOG_5_1                UNIT_END + 0x016 // Int32
+#define PLAYER_QUEST_LOG_5_2            UNIT_END + 0x017 // Int32
+#define PLAYER_QUEST_LOG_5_2_01             UNIT_END + 0x018 // Int32
+#define PLAYER_QUEST_LOG_6_1                UNIT_END + 0x019 // Int32
+#define PLAYER_QUEST_LOG_6_2            UNIT_END + 0x01A // Int32
+#define PLAYER_QUEST_LOG_6_2_01             UNIT_END + 0x01B // Int32
+#define PLAYER_QUEST_LOG_7_1                UNIT_END + 0x01C // Int32
+#define PLAYER_QUEST_LOG_7_2            UNIT_END + 0x01D // Int32
+#define PLAYER_QUEST_LOG_7_2_01             UNIT_END + 0x01E // Int32
+#define PLAYER_QUEST_LOG_8_1                UNIT_END + 0x01F // Int32
+#define PLAYER_QUEST_LOG_8_2            UNIT_END + 0x020 // Int32
+#define PLAYER_QUEST_LOG_8_2_01             UNIT_END + 0x021 // Int32
+#define PLAYER_QUEST_LOG_9_1                UNIT_END + 0x022 // Int32
+#define PLAYER_QUEST_LOG_9_2            UNIT_END + 0x023 // Int32
+#define PLAYER_QUEST_LOG_9_2_01             UNIT_END + 0x024 // Int32
+#define PLAYER_QUEST_LOG_10_1               UNIT_END + 0x025 // Int32
+#define PLAYER_QUEST_LOG_10_2           UNIT_END + 0x026 // Int32
+#define PLAYER_QUEST_LOG_10_2_01            UNIT_END + 0x027 // Int32
+#define PLAYER_QUEST_LOG_11_1               UNIT_END + 0x028 // Int32
+#define PLAYER_QUEST_LOG_11_2           UNIT_END + 0x029 // Int32
+#define PLAYER_QUEST_LOG_11_2_01            UNIT_END + 0x02A // Int32
+#define PLAYER_QUEST_LOG_12_1               UNIT_END + 0x02B // Int32
+#define PLAYER_QUEST_LOG_12_2           UNIT_END + 0x02C // Int32
+#define PLAYER_QUEST_LOG_12_2_01            UNIT_END + 0x02D // Int32
+#define PLAYER_QUEST_LOG_13_1               UNIT_END + 0x02E // Int32
+#define PLAYER_QUEST_LOG_13_2           UNIT_END + 0x02F // Int32
+#define PLAYER_QUEST_LOG_13_2_01            UNIT_END + 0x030 // Int32
+#define PLAYER_QUEST_LOG_14_1               UNIT_END + 0x031 // Int32
+#define PLAYER_QUEST_LOG_14_2           UNIT_END + 0x032 // Int32
+#define PLAYER_QUEST_LOG_14_2_01            UNIT_END + 0x033 // Int32
+#define PLAYER_QUEST_LOG_15_1               UNIT_END + 0x034 // Int32
+#define PLAYER_QUEST_LOG_15_2           UNIT_END + 0x035 // Int32
+#define PLAYER_QUEST_LOG_15_2_01            UNIT_END + 0x036 // Int32
+#define PLAYER_QUEST_LOG_16_1               UNIT_END + 0x037 // Int32
+#define PLAYER_QUEST_LOG_16_2           UNIT_END + 0x038 // Int32
+#define PLAYER_QUEST_LOG_16_2_01            UNIT_END + 0x039 // Int32
+#define PLAYER_QUEST_LOG_17_1               UNIT_END + 0x03A // Int32
+#define PLAYER_QUEST_LOG_17_2           UNIT_END + 0x03B // Int32
+#define PLAYER_QUEST_LOG_17_2_01            UNIT_END + 0x03C // Int32
+#define PLAYER_QUEST_LOG_18_1               UNIT_END + 0x03D // Int32
+#define PLAYER_QUEST_LOG_18_2           UNIT_END + 0x03E // Int32
+#define PLAYER_QUEST_LOG_18_2_01            UNIT_END + 0x03F // Int32
+#define PLAYER_QUEST_LOG_19_1               UNIT_END + 0x040 // Int32
+#define PLAYER_QUEST_LOG_19_2           UNIT_END + 0x041 // Int32
+#define PLAYER_QUEST_LOG_19_2_01            UNIT_END + 0x042 // Int32
+#define PLAYER_QUEST_LOG_20_1               UNIT_END + 0x043 // Int32
+#define PLAYER_QUEST_LOG_20_2           UNIT_END + 0x044 // Int32
+#define PLAYER_QUEST_LOG_20_2_01            UNIT_END + 0x045 // Int32
+#define PLAYER_VISIBLE_ITEM_1_CREATOR           UNIT_END + 0x046 // GUID
+#define PLAYER_VISIBLE_ITEM_1_CREATOR_01            UNIT_END + 0x047 // GUID
+#define PLAYER_VISIBLE_ITEM_1_0             UNIT_END + 0x048 // Int32
+#define PLAYER_VISIBLE_ITEM_1_0_01          UNIT_END + 0x049 // Int32
+#define PLAYER_VISIBLE_ITEM_1_0_02          UNIT_END + 0x04A // Int32
+#define PLAYER_VISIBLE_ITEM_1_0_03          UNIT_END + 0x04B // Int32
+#define PLAYER_VISIBLE_ITEM_1_0_04          UNIT_END + 0x04C // Int32
+#define PLAYER_VISIBLE_ITEM_1_0_05          UNIT_END + 0x04D // Int32
+#define PLAYER_VISIBLE_ITEM_1_0_06          UNIT_END + 0x04E // Int32
+#define PLAYER_VISIBLE_ITEM_1_0_07          UNIT_END + 0x04F // Int32
+#define PLAYER_VISIBLE_ITEM_1_PROPERTIES    UNIT_END + 0x050 // Chars?
+#define PLAYER_VISIBLE_ITEM_1_PAD           UNIT_END + 0x051 // Int32
+#define PLAYER_VISIBLE_ITEM_2_CREATOR           UNIT_END + 0x052 // GUID
+#define PLAYER_VISIBLE_ITEM_2_CREATOR_01            UNIT_END + 0x053 // GUID
+#define PLAYER_VISIBLE_ITEM_2_0             UNIT_END + 0x054 // Int32
+#define PLAYER_VISIBLE_ITEM_2_0_01          UNIT_END + 0x055 // Int32
+#define PLAYER_VISIBLE_ITEM_2_0_02          UNIT_END + 0x056 // Int32
+#define PLAYER_VISIBLE_ITEM_2_0_03          UNIT_END + 0x057 // Int32
+#define PLAYER_VISIBLE_ITEM_2_0_04          UNIT_END + 0x058 // Int32
+#define PLAYER_VISIBLE_ITEM_2_0_05          UNIT_END + 0x059 // Int32
+#define PLAYER_VISIBLE_ITEM_2_0_06          UNIT_END + 0x05A // Int32
+#define PLAYER_VISIBLE_ITEM_2_0_07          UNIT_END + 0x05B // Int32
+#define PLAYER_VISIBLE_ITEM_2_PROPERTIES    UNIT_END + 0x05C // Chars?
+#define PLAYER_VISIBLE_ITEM_2_PAD           UNIT_END + 0x05D // Int32
+#define PLAYER_VISIBLE_ITEM_3_CREATOR           UNIT_END + 0x05E // GUID
+#define PLAYER_VISIBLE_ITEM_3_CREATOR_01            UNIT_END + 0x05F // GUID
+#define PLAYER_VISIBLE_ITEM_3_0             UNIT_END + 0x060 // Int32
+#define PLAYER_VISIBLE_ITEM_3_0_01          UNIT_END + 0x061 // Int32
+#define PLAYER_VISIBLE_ITEM_3_0_02          UNIT_END + 0x062 // Int32
+#define PLAYER_VISIBLE_ITEM_3_0_03          UNIT_END + 0x063 // Int32
+#define PLAYER_VISIBLE_ITEM_3_0_04          UNIT_END + 0x064 // Int32
+#define PLAYER_VISIBLE_ITEM_3_0_05          UNIT_END + 0x065 // Int32
+#define PLAYER_VISIBLE_ITEM_3_0_06          UNIT_END + 0x066 // Int32
+#define PLAYER_VISIBLE_ITEM_3_0_07          UNIT_END + 0x067 // Int32
+#define PLAYER_VISIBLE_ITEM_3_PROPERTIES    UNIT_END + 0x068 // Chars?
+#define PLAYER_VISIBLE_ITEM_3_PAD           UNIT_END + 0x069 // Int32
+#define PLAYER_VISIBLE_ITEM_4_CREATOR           UNIT_END + 0x06A // GUID
+#define PLAYER_VISIBLE_ITEM_4_CREATOR_01            UNIT_END + 0x06B // GUID
+#define PLAYER_VISIBLE_ITEM_4_0             UNIT_END + 0x06C // Int32
+#define PLAYER_VISIBLE_ITEM_4_0_01          UNIT_END + 0x06D // Int32
+#define PLAYER_VISIBLE_ITEM_4_0_02          UNIT_END + 0x06E // Int32
+#define PLAYER_VISIBLE_ITEM_4_0_03          UNIT_END + 0x06F // Int32
+#define PLAYER_VISIBLE_ITEM_4_0_04          UNIT_END + 0x070 // Int32
+#define PLAYER_VISIBLE_ITEM_4_0_05          UNIT_END + 0x071 // Int32
+#define PLAYER_VISIBLE_ITEM_4_0_06          UNIT_END + 0x072 // Int32
+#define PLAYER_VISIBLE_ITEM_4_0_07          UNIT_END + 0x073 // Int32
+#define PLAYER_VISIBLE_ITEM_4_PROPERTIES    UNIT_END + 0x074 // Chars?
+#define PLAYER_VISIBLE_ITEM_4_PAD           UNIT_END + 0x075 // Int32
+#define PLAYER_VISIBLE_ITEM_5_CREATOR           UNIT_END + 0x076 // GUID
+#define PLAYER_VISIBLE_ITEM_5_CREATOR_01            UNIT_END + 0x077 // GUID
+#define PLAYER_VISIBLE_ITEM_5_0             UNIT_END + 0x078 // Int32
+#define PLAYER_VISIBLE_ITEM_5_0_01          UNIT_END + 0x079 // Int32
+#define PLAYER_VISIBLE_ITEM_5_0_02          UNIT_END + 0x07A // Int32
+#define PLAYER_VISIBLE_ITEM_5_0_03          UNIT_END + 0x07B // Int32
+#define PLAYER_VISIBLE_ITEM_5_0_04          UNIT_END + 0x07C // Int32
+#define PLAYER_VISIBLE_ITEM_5_0_05          UNIT_END + 0x07D // Int32
+#define PLAYER_VISIBLE_ITEM_5_0_06          UNIT_END + 0x07E // Int32
+#define PLAYER_VISIBLE_ITEM_5_0_07          UNIT_END + 0x07F // Int32
+#define PLAYER_VISIBLE_ITEM_5_PROPERTIES    UNIT_END + 0x080 // Chars?
+#define PLAYER_VISIBLE_ITEM_5_PAD           UNIT_END + 0x081 // Int32
+#define PLAYER_VISIBLE_ITEM_6_CREATOR           UNIT_END + 0x082 // GUID
+#define PLAYER_VISIBLE_ITEM_6_CREATOR_01            UNIT_END + 0x083 // GUID
+#define PLAYER_VISIBLE_ITEM_6_0             UNIT_END + 0x084 // Int32
+#define PLAYER_VISIBLE_ITEM_6_0_01          UNIT_END + 0x085 // Int32
+#define PLAYER_VISIBLE_ITEM_6_0_02          UNIT_END + 0x086 // Int32
+#define PLAYER_VISIBLE_ITEM_6_0_03          UNIT_END + 0x087 // Int32
+#define PLAYER_VISIBLE_ITEM_6_0_04          UNIT_END + 0x088 // Int32
+#define PLAYER_VISIBLE_ITEM_6_0_05          UNIT_END + 0x089 // Int32
+#define PLAYER_VISIBLE_ITEM_6_0_06          UNIT_END + 0x08A // Int32
+#define PLAYER_VISIBLE_ITEM_6_0_07          UNIT_END + 0x08B // Int32
+#define PLAYER_VISIBLE_ITEM_6_PROPERTIES    UNIT_END + 0x08C // Chars?
+#define PLAYER_VISIBLE_ITEM_6_PAD           UNIT_END + 0x08D // Int32
+#define PLAYER_VISIBLE_ITEM_7_CREATOR           UNIT_END + 0x08E // GUID
+#define PLAYER_VISIBLE_ITEM_7_CREATOR_01            UNIT_END + 0x08F // GUID
+#define PLAYER_VISIBLE_ITEM_7_0             UNIT_END + 0x090 // Int32
+#define PLAYER_VISIBLE_ITEM_7_0_01          UNIT_END + 0x091 // Int32
+#define PLAYER_VISIBLE_ITEM_7_0_02          UNIT_END + 0x092 // Int32
+#define PLAYER_VISIBLE_ITEM_7_0_03          UNIT_END + 0x093 // Int32
+#define PLAYER_VISIBLE_ITEM_7_0_04          UNIT_END + 0x094 // Int32
+#define PLAYER_VISIBLE_ITEM_7_0_05          UNIT_END + 0x095 // Int32
+#define PLAYER_VISIBLE_ITEM_7_0_06          UNIT_END + 0x096 // Int32
+#define PLAYER_VISIBLE_ITEM_7_0_07          UNIT_END + 0x097 // Int32
+#define PLAYER_VISIBLE_ITEM_7_PROPERTIES    UNIT_END + 0x098 // Chars?
+#define PLAYER_VISIBLE_ITEM_7_PAD           UNIT_END + 0x099 // Int32
+#define PLAYER_VISIBLE_ITEM_8_CREATOR           UNIT_END + 0x09A // GUID
+#define PLAYER_VISIBLE_ITEM_8_CREATOR_01            UNIT_END + 0x09B // GUID
+#define PLAYER_VISIBLE_ITEM_8_0             UNIT_END + 0x09C // Int32
+#define PLAYER_VISIBLE_ITEM_8_0_01          UNIT_END + 0x09D // Int32
+#define PLAYER_VISIBLE_ITEM_8_0_02          UNIT_END + 0x09E // Int32
+#define PLAYER_VISIBLE_ITEM_8_0_03          UNIT_END + 0x09F // Int32
+#define PLAYER_VISIBLE_ITEM_8_0_04          UNIT_END + 0x0A0 // Int32
+#define PLAYER_VISIBLE_ITEM_8_0_05          UNIT_END + 0x0A1 // Int32
+#define PLAYER_VISIBLE_ITEM_8_0_06          UNIT_END + 0x0A2 // Int32
+#define PLAYER_VISIBLE_ITEM_8_0_07          UNIT_END + 0x0A3 // Int32
+#define PLAYER_VISIBLE_ITEM_8_PROPERTIES    UNIT_END + 0x0A4 // Chars?
+#define PLAYER_VISIBLE_ITEM_8_PAD           UNIT_END + 0x0A5 // Int32
+#define PLAYER_VISIBLE_ITEM_9_CREATOR           UNIT_END + 0x0A6 // GUID
+#define PLAYER_VISIBLE_ITEM_9_CREATOR_01            UNIT_END + 0x0A7 // GUID
+#define PLAYER_VISIBLE_ITEM_9_0             UNIT_END + 0x0A8 // Int32
+#define PLAYER_VISIBLE_ITEM_9_0_01          UNIT_END + 0x0A9 // Int32
+#define PLAYER_VISIBLE_ITEM_9_0_02          UNIT_END + 0x0AA // Int32
+#define PLAYER_VISIBLE_ITEM_9_0_03          UNIT_END + 0x0AB // Int32
+#define PLAYER_VISIBLE_ITEM_9_0_04          UNIT_END + 0x0AC // Int32
+#define PLAYER_VISIBLE_ITEM_9_0_05          UNIT_END + 0x0AD // Int32
+#define PLAYER_VISIBLE_ITEM_9_0_06          UNIT_END + 0x0AE // Int32
+#define PLAYER_VISIBLE_ITEM_9_0_07          UNIT_END + 0x0AF // Int32
+#define PLAYER_VISIBLE_ITEM_9_PROPERTIES    UNIT_END + 0x0B0 // Chars?
+#define PLAYER_VISIBLE_ITEM_9_PAD           UNIT_END + 0x0B1 // Int32
+#define PLAYER_VISIBLE_ITEM_10_CREATOR          UNIT_END + 0x0B2 // GUID
+#define PLAYER_VISIBLE_ITEM_10_CREATOR_01           UNIT_END + 0x0B3 // GUID
+#define PLAYER_VISIBLE_ITEM_10_0            UNIT_END + 0x0B4 // Int32
+#define PLAYER_VISIBLE_ITEM_10_0_01             UNIT_END + 0x0B5 // Int32
+#define PLAYER_VISIBLE_ITEM_10_0_02             UNIT_END + 0x0B6 // Int32
+#define PLAYER_VISIBLE_ITEM_10_0_03             UNIT_END + 0x0B7 // Int32
+#define PLAYER_VISIBLE_ITEM_10_0_04             UNIT_END + 0x0B8 // Int32
+#define PLAYER_VISIBLE_ITEM_10_0_05             UNIT_END + 0x0B9 // Int32
+#define PLAYER_VISIBLE_ITEM_10_0_06             UNIT_END + 0x0BA // Int32
+#define PLAYER_VISIBLE_ITEM_10_0_07             UNIT_END + 0x0BB // Int32
+#define PLAYER_VISIBLE_ITEM_10_PROPERTIES   UNIT_END + 0x0BC // Chars?
+#define PLAYER_VISIBLE_ITEM_10_PAD          UNIT_END + 0x0BD // Int32
+#define PLAYER_VISIBLE_ITEM_11_CREATOR          UNIT_END + 0x0BE // GUID
+#define PLAYER_VISIBLE_ITEM_11_CREATOR_01           UNIT_END + 0x0BF // GUID
+#define PLAYER_VISIBLE_ITEM_11_0            UNIT_END + 0x0C0 // Int32
+#define PLAYER_VISIBLE_ITEM_11_0_01             UNIT_END + 0x0C1 // Int32
+#define PLAYER_VISIBLE_ITEM_11_0_02             UNIT_END + 0x0C2 // Int32
+#define PLAYER_VISIBLE_ITEM_11_0_03             UNIT_END + 0x0C3 // Int32
+#define PLAYER_VISIBLE_ITEM_11_0_04             UNIT_END + 0x0C4 // Int32
+#define PLAYER_VISIBLE_ITEM_11_0_05             UNIT_END + 0x0C5 // Int32
+#define PLAYER_VISIBLE_ITEM_11_0_06             UNIT_END + 0x0C6 // Int32
+#define PLAYER_VISIBLE_ITEM_11_0_07             UNIT_END + 0x0C7 // Int32
+#define PLAYER_VISIBLE_ITEM_11_PROPERTIES   UNIT_END + 0x0C8 // Chars?
+#define PLAYER_VISIBLE_ITEM_11_PAD          UNIT_END + 0x0C9 // Int32
+#define PLAYER_VISIBLE_ITEM_12_CREATOR          UNIT_END + 0x0CA // GUID
+#define PLAYER_VISIBLE_ITEM_12_CREATOR_01           UNIT_END + 0x0CB // GUID
+#define PLAYER_VISIBLE_ITEM_12_0            UNIT_END + 0x0CC // Int32
+#define PLAYER_VISIBLE_ITEM_12_0_01             UNIT_END + 0x0CD // Int32
+#define PLAYER_VISIBLE_ITEM_12_0_02             UNIT_END + 0x0CE // Int32
+#define PLAYER_VISIBLE_ITEM_12_0_03             UNIT_END + 0x0CF // Int32
+#define PLAYER_VISIBLE_ITEM_12_0_04             UNIT_END + 0x0D0 // Int32
+#define PLAYER_VISIBLE_ITEM_12_0_05             UNIT_END + 0x0D1 // Int32
+#define PLAYER_VISIBLE_ITEM_12_0_06             UNIT_END + 0x0D2 // Int32
+#define PLAYER_VISIBLE_ITEM_12_0_07             UNIT_END + 0x0D3 // Int32
+#define PLAYER_VISIBLE_ITEM_12_PROPERTIES   UNIT_END + 0x0D4 // Chars?
+#define PLAYER_VISIBLE_ITEM_12_PAD          UNIT_END + 0x0D5 // Int32
+#define PLAYER_VISIBLE_ITEM_13_CREATOR          UNIT_END + 0x0D6 // GUID
+#define PLAYER_VISIBLE_ITEM_13_CREATOR_01           UNIT_END + 0x0D7 // GUID
+#define PLAYER_VISIBLE_ITEM_13_0            UNIT_END + 0x0D8 // Int32
+#define PLAYER_VISIBLE_ITEM_13_0_01             UNIT_END + 0x0D9 // Int32
+#define PLAYER_VISIBLE_ITEM_13_0_02             UNIT_END + 0x0DA // Int32
+#define PLAYER_VISIBLE_ITEM_13_0_03             UNIT_END + 0x0DB // Int32
+#define PLAYER_VISIBLE_ITEM_13_0_04             UNIT_END + 0x0DC // Int32
+#define PLAYER_VISIBLE_ITEM_13_0_05             UNIT_END + 0x0DD // Int32
+#define PLAYER_VISIBLE_ITEM_13_0_06             UNIT_END + 0x0DE // Int32
+#define PLAYER_VISIBLE_ITEM_13_0_07             UNIT_END + 0x0DF // Int32
+#define PLAYER_VISIBLE_ITEM_13_PROPERTIES   UNIT_END + 0x0E0 // Chars?
+#define PLAYER_VISIBLE_ITEM_13_PAD          UNIT_END + 0x0E1 // Int32
+#define PLAYER_VISIBLE_ITEM_14_CREATOR          UNIT_END + 0x0E2 // GUID
+#define PLAYER_VISIBLE_ITEM_14_CREATOR_01           UNIT_END + 0x0E3 // GUID
+#define PLAYER_VISIBLE_ITEM_14_0            UNIT_END + 0x0E4 // Int32
+#define PLAYER_VISIBLE_ITEM_14_0_01             UNIT_END + 0x0E5 // Int32
+#define PLAYER_VISIBLE_ITEM_14_0_02             UNIT_END + 0x0E6 // Int32
+#define PLAYER_VISIBLE_ITEM_14_0_03             UNIT_END + 0x0E7 // Int32
+#define PLAYER_VISIBLE_ITEM_14_0_04             UNIT_END + 0x0E8 // Int32
+#define PLAYER_VISIBLE_ITEM_14_0_05             UNIT_END + 0x0E9 // Int32
+#define PLAYER_VISIBLE_ITEM_14_0_06             UNIT_END + 0x0EA // Int32
+#define PLAYER_VISIBLE_ITEM_14_0_07             UNIT_END + 0x0EB // Int32
+#define PLAYER_VISIBLE_ITEM_14_PROPERTIES   UNIT_END + 0x0EC // Chars?
+#define PLAYER_VISIBLE_ITEM_14_PAD          UNIT_END + 0x0ED // Int32
+#define PLAYER_VISIBLE_ITEM_15_CREATOR          UNIT_END + 0x0EE // GUID
+#define PLAYER_VISIBLE_ITEM_15_CREATOR_01           UNIT_END + 0x0EF // GUID
+#define PLAYER_VISIBLE_ITEM_15_0            UNIT_END + 0x0F0 // Int32
+#define PLAYER_VISIBLE_ITEM_15_0_01             UNIT_END + 0x0F1 // Int32
+#define PLAYER_VISIBLE_ITEM_15_0_02             UNIT_END + 0x0F2 // Int32
+#define PLAYER_VISIBLE_ITEM_15_0_03             UNIT_END + 0x0F3 // Int32
+#define PLAYER_VISIBLE_ITEM_15_0_04             UNIT_END + 0x0F4 // Int32
+#define PLAYER_VISIBLE_ITEM_15_0_05             UNIT_END + 0x0F5 // Int32
+#define PLAYER_VISIBLE_ITEM_15_0_06             UNIT_END + 0x0F6 // Int32
+#define PLAYER_VISIBLE_ITEM_15_0_07             UNIT_END + 0x0F7 // Int32
+#define PLAYER_VISIBLE_ITEM_15_PROPERTIES   UNIT_END + 0x0F8 // Chars?
+#define PLAYER_VISIBLE_ITEM_15_PAD          UNIT_END + 0x0F9 // Int32
+#define PLAYER_VISIBLE_ITEM_16_CREATOR          UNIT_END + 0x0FA // GUID
+#define PLAYER_VISIBLE_ITEM_16_CREATOR_01           UNIT_END + 0x0FB // GUID
+#define PLAYER_VISIBLE_ITEM_16_0            UNIT_END + 0x0FC // Int32
+#define PLAYER_VISIBLE_ITEM_16_0_01             UNIT_END + 0x0FD // Int32
+#define PLAYER_VISIBLE_ITEM_16_0_02             UNIT_END + 0x0FE // Int32
+#define PLAYER_VISIBLE_ITEM_16_0_03             UNIT_END + 0x0FF // Int32
+#define PLAYER_VISIBLE_ITEM_16_0_04             UNIT_END + 0x100 // Int32
+#define PLAYER_VISIBLE_ITEM_16_0_05             UNIT_END + 0x101 // Int32
+#define PLAYER_VISIBLE_ITEM_16_0_06             UNIT_END + 0x102 // Int32
+#define PLAYER_VISIBLE_ITEM_16_0_07             UNIT_END + 0x103 // Int32
+#define PLAYER_VISIBLE_ITEM_16_PROPERTIES   UNIT_END + 0x104 // Chars?
+#define PLAYER_VISIBLE_ITEM_16_PAD          UNIT_END + 0x105 // Int32
+#define PLAYER_VISIBLE_ITEM_17_CREATOR          UNIT_END + 0x106 // GUID
+#define PLAYER_VISIBLE_ITEM_17_CREATOR_01           UNIT_END + 0x107 // GUID
+#define PLAYER_VISIBLE_ITEM_17_0            UNIT_END + 0x108 // Int32
+#define PLAYER_VISIBLE_ITEM_17_0_01             UNIT_END + 0x109 // Int32
+#define PLAYER_VISIBLE_ITEM_17_0_02             UNIT_END + 0x10A // Int32
+#define PLAYER_VISIBLE_ITEM_17_0_03             UNIT_END + 0x10B // Int32
+#define PLAYER_VISIBLE_ITEM_17_0_04             UNIT_END + 0x10C // Int32
+#define PLAYER_VISIBLE_ITEM_17_0_05             UNIT_END + 0x10D // Int32
+#define PLAYER_VISIBLE_ITEM_17_0_06             UNIT_END + 0x10E // Int32
+#define PLAYER_VISIBLE_ITEM_17_0_07             UNIT_END + 0x10F // Int32
+#define PLAYER_VISIBLE_ITEM_17_PROPERTIES   UNIT_END + 0x110 // Chars?
+#define PLAYER_VISIBLE_ITEM_17_PAD          UNIT_END + 0x111 // Int32
+#define PLAYER_VISIBLE_ITEM_18_CREATOR          UNIT_END + 0x112 // GUID
+#define PLAYER_VISIBLE_ITEM_18_CREATOR_01           UNIT_END + 0x113 // GUID
+#define PLAYER_VISIBLE_ITEM_18_0            UNIT_END + 0x114 // Int32
+#define PLAYER_VISIBLE_ITEM_18_0_01             UNIT_END + 0x115 // Int32
+#define PLAYER_VISIBLE_ITEM_18_0_02             UNIT_END + 0x116 // Int32
+#define PLAYER_VISIBLE_ITEM_18_0_03             UNIT_END + 0x117 // Int32
+#define PLAYER_VISIBLE_ITEM_18_0_04             UNIT_END + 0x118 // Int32
+#define PLAYER_VISIBLE_ITEM_18_0_05             UNIT_END + 0x119 // Int32
+#define PLAYER_VISIBLE_ITEM_18_0_06             UNIT_END + 0x11A // Int32
+#define PLAYER_VISIBLE_ITEM_18_0_07             UNIT_END + 0x11B // Int32
+#define PLAYER_VISIBLE_ITEM_18_PROPERTIES   UNIT_END + 0x11C // Chars?
+#define PLAYER_VISIBLE_ITEM_18_PAD          UNIT_END + 0x11D // Int32
+#define PLAYER_VISIBLE_ITEM_19_CREATOR          UNIT_END + 0x11E // GUID
+#define PLAYER_VISIBLE_ITEM_19_CREATOR_01           UNIT_END + 0x11F // GUID
+#define PLAYER_VISIBLE_ITEM_19_0            UNIT_END + 0x120 // Int32
+#define PLAYER_VISIBLE_ITEM_19_0_01             UNIT_END + 0x121 // Int32
+#define PLAYER_VISIBLE_ITEM_19_0_02             UNIT_END + 0x122 // Int32
+#define PLAYER_VISIBLE_ITEM_19_0_03             UNIT_END + 0x123 // Int32
+#define PLAYER_VISIBLE_ITEM_19_0_04             UNIT_END + 0x124 // Int32
+#define PLAYER_VISIBLE_ITEM_19_0_05             UNIT_END + 0x125 // Int32
+#define PLAYER_VISIBLE_ITEM_19_0_06             UNIT_END + 0x126 // Int32
+#define PLAYER_VISIBLE_ITEM_19_0_07             UNIT_END + 0x127 // Int32
+#define PLAYER_VISIBLE_ITEM_19_PROPERTIES   UNIT_END + 0x128 // Chars?
+#define PLAYER_VISIBLE_ITEM_19_PAD          UNIT_END + 0x129 // Int32
+#define PLAYER_FIELD_INV_SLOT_HEAD          UNIT_END + 0x12A // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_01           UNIT_END + 0x12B // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_02           UNIT_END + 0x12C // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_03           UNIT_END + 0x12D // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_04           UNIT_END + 0x12E // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_05           UNIT_END + 0x12F // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_06           UNIT_END + 0x130 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_07           UNIT_END + 0x131 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_08           UNIT_END + 0x132 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_09           UNIT_END + 0x133 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_10           UNIT_END + 0x134 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_11           UNIT_END + 0x135 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_12           UNIT_END + 0x136 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_13           UNIT_END + 0x137 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_14           UNIT_END + 0x138 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_15           UNIT_END + 0x139 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_16           UNIT_END + 0x13A // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_17           UNIT_END + 0x13B // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_18           UNIT_END + 0x13C // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_19           UNIT_END + 0x13D // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_20           UNIT_END + 0x13E // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_21           UNIT_END + 0x13F // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_22           UNIT_END + 0x140 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_23           UNIT_END + 0x141 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_24           UNIT_END + 0x142 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_25           UNIT_END + 0x143 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_26           UNIT_END + 0x144 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_27           UNIT_END + 0x145 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_28           UNIT_END + 0x146 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_29           UNIT_END + 0x147 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_30           UNIT_END + 0x148 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_31           UNIT_END + 0x149 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_32           UNIT_END + 0x14A // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_33           UNIT_END + 0x14B // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_34           UNIT_END + 0x14C // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_35           UNIT_END + 0x14D // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_36           UNIT_END + 0x14E // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_37           UNIT_END + 0x14F // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_38           UNIT_END + 0x150 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_39           UNIT_END + 0x151 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_40           UNIT_END + 0x152 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_41           UNIT_END + 0x153 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_42           UNIT_END + 0x154 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_43           UNIT_END + 0x155 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_44           UNIT_END + 0x156 // GUID
+#define PLAYER_FIELD_INV_SLOT_HEAD_45           UNIT_END + 0x157 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1            UNIT_END + 0x158 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_01             UNIT_END + 0x159 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_02             UNIT_END + 0x15A // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_03             UNIT_END + 0x15B // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_04             UNIT_END + 0x15C // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_05             UNIT_END + 0x15D // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_06             UNIT_END + 0x15E // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_07             UNIT_END + 0x15F // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_08             UNIT_END + 0x160 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_09             UNIT_END + 0x161 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_10             UNIT_END + 0x162 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_11             UNIT_END + 0x163 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_12             UNIT_END + 0x164 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_13             UNIT_END + 0x165 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_14             UNIT_END + 0x166 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_15             UNIT_END + 0x167 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_16             UNIT_END + 0x168 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_17             UNIT_END + 0x169 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_18             UNIT_END + 0x16A // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_19             UNIT_END + 0x16B // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_20             UNIT_END + 0x16C // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_21             UNIT_END + 0x16D // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_22             UNIT_END + 0x16E // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_23             UNIT_END + 0x16F // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_24             UNIT_END + 0x170 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_25             UNIT_END + 0x171 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_26             UNIT_END + 0x172 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_27             UNIT_END + 0x173 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_28             UNIT_END + 0x174 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_29             UNIT_END + 0x175 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_30             UNIT_END + 0x176 // GUID
+#define PLAYER_FIELD_PACK_SLOT_1_31             UNIT_END + 0x177 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_00             UNIT_END + 0x178 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_01             UNIT_END + 0x179 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_02             UNIT_END + 0x17A // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_03             UNIT_END + 0x17B // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_04             UNIT_END + 0x17C // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_05             UNIT_END + 0x17D // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_06             UNIT_END + 0x17E // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_07             UNIT_END + 0x17F // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_08             UNIT_END + 0x180 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_09             UNIT_END + 0x181 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_10             UNIT_END + 0x182 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_11             UNIT_END + 0x183 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_12             UNIT_END + 0x184 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_13             UNIT_END + 0x185 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_14             UNIT_END + 0x186 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_15             UNIT_END + 0x187 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_16             UNIT_END + 0x188 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_17             UNIT_END + 0x189 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_18             UNIT_END + 0x18A // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_19             UNIT_END + 0x18B // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_20             UNIT_END + 0x18C // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_21             UNIT_END + 0x18D // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_22             UNIT_END + 0x18E // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_23             UNIT_END + 0x18F // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_24             UNIT_END + 0x190 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_25             UNIT_END + 0x191 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_26             UNIT_END + 0x192 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_27             UNIT_END + 0x193 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_28             UNIT_END + 0x194 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_29             UNIT_END + 0x195 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_30             UNIT_END + 0x196 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_31             UNIT_END + 0x197 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_32             UNIT_END + 0x198 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_33             UNIT_END + 0x199 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_34             UNIT_END + 0x19A // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_35             UNIT_END + 0x19B // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_36             UNIT_END + 0x19C // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_37             UNIT_END + 0x19D // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_38             UNIT_END + 0x19E // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_39             UNIT_END + 0x19F // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_40             UNIT_END + 0x1A0 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_41             UNIT_END + 0x1A1 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_42             UNIT_END + 0x1A2 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_43             UNIT_END + 0x1A3 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_44             UNIT_END + 0x1A4 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_45             UNIT_END + 0x1A5 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_46             UNIT_END + 0x1A6 // GUID
+#define PLAYER_FIELD_BANK_SLOT_1_47             UNIT_END + 0x1A7 // GUID
+#define PLAYER_FIELD_BANKBAG_SLOT_1             UNIT_END + 0x1A8 // GUID
+#define PLAYER_FIELD_BANKBAG_SLOT_1_01          UNIT_END + 0x1A9 // GUID
+#define PLAYER_FIELD_BANKBAG_SLOT_1_02          UNIT_END + 0x1AA // GUID
+#define PLAYER_FIELD_BANKBAG_SLOT_1_03          UNIT_END + 0x1AB // GUID
+#define PLAYER_FIELD_BANKBAG_SLOT_1_04          UNIT_END + 0x1AC // GUID
+#define PLAYER_FIELD_BANKBAG_SLOT_1_05          UNIT_END + 0x1AD // GUID
+#define PLAYER_FIELD_BANKBAG_SLOT_1_06          UNIT_END + 0x1AE // GUID
+#define PLAYER_FIELD_BANKBAG_SLOT_1_07          UNIT_END + 0x1AF // GUID
+#define PLAYER_FIELD_BANKBAG_SLOT_1_08          UNIT_END + 0x1B0 // GUID
+#define PLAYER_FIELD_BANKBAG_SLOT_1_09          UNIT_END + 0x1B1 // GUID
+#define PLAYER_FIELD_BANKBAG_SLOT_1_10          UNIT_END + 0x1B2 // GUID
+#define PLAYER_FIELD_BANKBAG_SLOT_1_11          UNIT_END + 0x1B3 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1           UNIT_END + 0x1B4 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_01            UNIT_END + 0x1B5 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_02            UNIT_END + 0x1B6 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_03            UNIT_END + 0x1B7 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_04            UNIT_END + 0x1B8 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_05            UNIT_END + 0x1B9 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_06            UNIT_END + 0x1BA // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_07            UNIT_END + 0x1BB // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_08            UNIT_END + 0x1BC // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_09            UNIT_END + 0x1BD // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_10            UNIT_END + 0x1BE // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_11            UNIT_END + 0x1BF // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_12            UNIT_END + 0x1C0 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_13            UNIT_END + 0x1C1 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_14            UNIT_END + 0x1C2 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_15            UNIT_END + 0x1C3 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_16            UNIT_END + 0x1C4 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_17            UNIT_END + 0x1C5 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_18            UNIT_END + 0x1C6 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_19            UNIT_END + 0x1C7 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_20            UNIT_END + 0x1C8 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_21            UNIT_END + 0x1C9 // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_22            UNIT_END + 0x1CA // GUID
+#define PLAYER_FIELD_VENDORBUYBACK_SLOT_1_23            UNIT_END + 0x1CB // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1             UNIT_END + 0x1CC // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_01          UNIT_END + 0x1CD // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_02          UNIT_END + 0x1CE // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_03          UNIT_END + 0x1CF // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_04          UNIT_END + 0x1D0 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_05          UNIT_END + 0x1D1 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_06          UNIT_END + 0x1D2 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_07          UNIT_END + 0x1D3 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_08          UNIT_END + 0x1D4 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_09          UNIT_END + 0x1D5 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_10          UNIT_END + 0x1D6 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_11          UNIT_END + 0x1D7 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_12          UNIT_END + 0x1D8 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_13          UNIT_END + 0x1D9 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_14          UNIT_END + 0x1DA // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_15          UNIT_END + 0x1DB // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_16          UNIT_END + 0x1DC // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_17          UNIT_END + 0x1DD // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_18          UNIT_END + 0x1DE // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_19          UNIT_END + 0x1DF // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_20          UNIT_END + 0x1E0 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_21          UNIT_END + 0x1E1 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_22          UNIT_END + 0x1E2 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_23          UNIT_END + 0x1E3 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_24          UNIT_END + 0x1E4 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_25          UNIT_END + 0x1E5 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_26          UNIT_END + 0x1E6 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_27          UNIT_END + 0x1E7 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_28          UNIT_END + 0x1E8 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_29          UNIT_END + 0x1E9 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_30          UNIT_END + 0x1EA // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_31          UNIT_END + 0x1EB // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_32          UNIT_END + 0x1EC // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_33          UNIT_END + 0x1ED // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_34          UNIT_END + 0x1EE // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_35          UNIT_END + 0x1EF // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_36          UNIT_END + 0x1F0 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_37          UNIT_END + 0x1F1 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_38          UNIT_END + 0x1F2 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_39          UNIT_END + 0x1F3 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_40          UNIT_END + 0x1F4 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_41          UNIT_END + 0x1F5 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_42          UNIT_END + 0x1F6 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_43          UNIT_END + 0x1F7 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_44          UNIT_END + 0x1F8 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_45          UNIT_END + 0x1F9 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_46          UNIT_END + 0x1FA // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_47          UNIT_END + 0x1FB // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_48          UNIT_END + 0x1FC // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_49          UNIT_END + 0x1FD // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_50          UNIT_END + 0x1FE // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_51          UNIT_END + 0x1FF // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_52          UNIT_END + 0x200 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_53          UNIT_END + 0x201 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_54          UNIT_END + 0x202 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_55          UNIT_END + 0x203 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_56          UNIT_END + 0x204 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_57          UNIT_END + 0x205 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_58          UNIT_END + 0x206 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_59          UNIT_END + 0x207 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_60          UNIT_END + 0x208 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_61          UNIT_END + 0x209 // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_62          UNIT_END + 0x20A // GUID
+#define PLAYER_FIELD_KEYRING_SLOT_1_63          UNIT_END + 0x20B // GUID
+#define PLAYER_FARSIGHT             UNIT_END + 0x20C // GUID
+#define PLAYER_FARSIGHT_01          UNIT_END + 0x20D // GUID
+#define PLAYER__FIELD_COMBO_TARGET          UNIT_END + 0x20E // GUID
+#define PLAYER__FIELD_COMBO_TARGET_01           UNIT_END + 0x20F // GUID
+#define PLAYER_XP                           UNIT_END + 0x210 // Int32
+#define PLAYER_NEXT_LEVEL_XP                UNIT_END + 0x211 // Int32
+#define PLAYER_SKILL_INFO_1_1           UNIT_END + 0x212 // Chars?
+#define PLAYER_SKILL_INFO_1_1_01            UNIT_END + 0x213 // Chars?
+#define PLAYER_SKILL_INFO_1_1_02            UNIT_END + 0x214 // Chars?
+#define PLAYER_SKILL_INFO_1_1_03            UNIT_END + 0x215 // Chars?
+#define PLAYER_SKILL_INFO_1_1_04            UNIT_END + 0x216 // Chars?
+#define PLAYER_SKILL_INFO_1_1_05            UNIT_END + 0x217 // Chars?
+#define PLAYER_SKILL_INFO_1_1_06            UNIT_END + 0x218 // Chars?
+#define PLAYER_SKILL_INFO_1_1_07            UNIT_END + 0x219 // Chars?
+#define PLAYER_SKILL_INFO_1_1_08            UNIT_END + 0x21A // Chars?
+#define PLAYER_SKILL_INFO_1_1_09            UNIT_END + 0x21B // Chars?
+#define PLAYER_SKILL_INFO_1_1_10            UNIT_END + 0x21C // Chars?
+#define PLAYER_SKILL_INFO_1_1_11            UNIT_END + 0x21D // Chars?
+#define PLAYER_SKILL_INFO_1_1_12            UNIT_END + 0x21E // Chars?
+#define PLAYER_SKILL_INFO_1_1_13            UNIT_END + 0x21F // Chars?
+#define PLAYER_SKILL_INFO_1_1_14            UNIT_END + 0x220 // Chars?
+#define PLAYER_SKILL_INFO_1_1_15            UNIT_END + 0x221 // Chars?
+#define PLAYER_SKILL_INFO_1_1_16            UNIT_END + 0x222 // Chars?
+#define PLAYER_SKILL_INFO_1_1_17            UNIT_END + 0x223 // Chars?
+#define PLAYER_SKILL_INFO_1_1_18            UNIT_END + 0x224 // Chars?
+#define PLAYER_SKILL_INFO_1_1_19            UNIT_END + 0x225 // Chars?
+#define PLAYER_SKILL_INFO_1_1_20            UNIT_END + 0x226 // Chars?
+#define PLAYER_SKILL_INFO_1_1_21            UNIT_END + 0x227 // Chars?
+#define PLAYER_SKILL_INFO_1_1_22            UNIT_END + 0x228 // Chars?
+#define PLAYER_SKILL_INFO_1_1_23            UNIT_END + 0x229 // Chars?
+#define PLAYER_SKILL_INFO_1_1_24            UNIT_END + 0x22A // Chars?
+#define PLAYER_SKILL_INFO_1_1_25            UNIT_END + 0x22B // Chars?
+#define PLAYER_SKILL_INFO_1_1_26            UNIT_END + 0x22C // Chars?
+#define PLAYER_SKILL_INFO_1_1_27            UNIT_END + 0x22D // Chars?
+#define PLAYER_SKILL_INFO_1_1_28            UNIT_END + 0x22E // Chars?
+#define PLAYER_SKILL_INFO_1_1_29            UNIT_END + 0x22F // Chars?
+#define PLAYER_SKILL_INFO_1_1_30            UNIT_END + 0x230 // Chars?
+#define PLAYER_SKILL_INFO_1_1_31            UNIT_END + 0x231 // Chars?
+#define PLAYER_SKILL_INFO_1_1_32            UNIT_END + 0x232 // Chars?
+#define PLAYER_SKILL_INFO_1_1_33            UNIT_END + 0x233 // Chars?
+#define PLAYER_SKILL_INFO_1_1_34            UNIT_END + 0x234 // Chars?
+#define PLAYER_SKILL_INFO_1_1_35            UNIT_END + 0x235 // Chars?
+#define PLAYER_SKILL_INFO_1_1_36            UNIT_END + 0x236 // Chars?
+#define PLAYER_SKILL_INFO_1_1_37            UNIT_END + 0x237 // Chars?
+#define PLAYER_SKILL_INFO_1_1_38            UNIT_END + 0x238 // Chars?
+#define PLAYER_SKILL_INFO_1_1_39            UNIT_END + 0x239 // Chars?
+#define PLAYER_SKILL_INFO_1_1_40            UNIT_END + 0x23A // Chars?
+#define PLAYER_SKILL_INFO_1_1_41            UNIT_END + 0x23B // Chars?
+#define PLAYER_SKILL_INFO_1_1_42            UNIT_END + 0x23C // Chars?
+#define PLAYER_SKILL_INFO_1_1_43            UNIT_END + 0x23D // Chars?
+#define PLAYER_SKILL_INFO_1_1_44            UNIT_END + 0x23E // Chars?
+#define PLAYER_SKILL_INFO_1_1_45            UNIT_END + 0x23F // Chars?
+#define PLAYER_SKILL_INFO_1_1_46            UNIT_END + 0x240 // Chars?
+#define PLAYER_SKILL_INFO_1_1_47            UNIT_END + 0x241 // Chars?
+#define PLAYER_SKILL_INFO_1_1_48            UNIT_END + 0x242 // Chars?
+#define PLAYER_SKILL_INFO_1_1_49            UNIT_END + 0x243 // Chars?
+#define PLAYER_SKILL_INFO_1_1_50            UNIT_END + 0x244 // Chars?
+#define PLAYER_SKILL_INFO_1_1_51            UNIT_END + 0x245 // Chars?
+#define PLAYER_SKILL_INFO_1_1_52            UNIT_END + 0x246 // Chars?
+#define PLAYER_SKILL_INFO_1_1_53            UNIT_END + 0x247 // Chars?
+#define PLAYER_SKILL_INFO_1_1_54            UNIT_END + 0x248 // Chars?
+#define PLAYER_SKILL_INFO_1_1_55            UNIT_END + 0x249 // Chars?
+#define PLAYER_SKILL_INFO_1_1_56            UNIT_END + 0x24A // Chars?
+#define PLAYER_SKILL_INFO_1_1_57            UNIT_END + 0x24B // Chars?
+#define PLAYER_SKILL_INFO_1_1_58            UNIT_END + 0x24C // Chars?
+#define PLAYER_SKILL_INFO_1_1_59            UNIT_END + 0x24D // Chars?
+#define PLAYER_SKILL_INFO_1_1_60            UNIT_END + 0x24E // Chars?
+#define PLAYER_SKILL_INFO_1_1_61            UNIT_END + 0x24F // Chars?
+#define PLAYER_SKILL_INFO_1_1_62            UNIT_END + 0x250 // Chars?
+#define PLAYER_SKILL_INFO_1_1_63            UNIT_END + 0x251 // Chars?
+#define PLAYER_SKILL_INFO_1_1_64            UNIT_END + 0x252 // Chars?
+#define PLAYER_SKILL_INFO_1_1_65            UNIT_END + 0x253 // Chars?
+#define PLAYER_SKILL_INFO_1_1_66            UNIT_END + 0x254 // Chars?
+#define PLAYER_SKILL_INFO_1_1_67            UNIT_END + 0x255 // Chars?
+#define PLAYER_SKILL_INFO_1_1_68            UNIT_END + 0x256 // Chars?
+#define PLAYER_SKILL_INFO_1_1_69            UNIT_END + 0x257 // Chars?
+#define PLAYER_SKILL_INFO_1_1_70            UNIT_END + 0x258 // Chars?
+#define PLAYER_SKILL_INFO_1_1_71            UNIT_END + 0x259 // Chars?
+#define PLAYER_SKILL_INFO_1_1_72            UNIT_END + 0x25A // Chars?
+#define PLAYER_SKILL_INFO_1_1_73            UNIT_END + 0x25B // Chars?
+#define PLAYER_SKILL_INFO_1_1_74            UNIT_END + 0x25C // Chars?
+#define PLAYER_SKILL_INFO_1_1_75            UNIT_END + 0x25D // Chars?
+#define PLAYER_SKILL_INFO_1_1_76            UNIT_END + 0x25E // Chars?
+#define PLAYER_SKILL_INFO_1_1_77            UNIT_END + 0x25F // Chars?
+#define PLAYER_SKILL_INFO_1_1_78            UNIT_END + 0x260 // Chars?
+#define PLAYER_SKILL_INFO_1_1_79            UNIT_END + 0x261 // Chars?
+#define PLAYER_SKILL_INFO_1_1_80            UNIT_END + 0x262 // Chars?
+#define PLAYER_SKILL_INFO_1_1_81            UNIT_END + 0x263 // Chars?
+#define PLAYER_SKILL_INFO_1_1_82            UNIT_END + 0x264 // Chars?
+#define PLAYER_SKILL_INFO_1_1_83            UNIT_END + 0x265 // Chars?
+#define PLAYER_SKILL_INFO_1_1_84            UNIT_END + 0x266 // Chars?
+#define PLAYER_SKILL_INFO_1_1_85            UNIT_END + 0x267 // Chars?
+#define PLAYER_SKILL_INFO_1_1_86            UNIT_END + 0x268 // Chars?
+#define PLAYER_SKILL_INFO_1_1_87            UNIT_END + 0x269 // Chars?
+#define PLAYER_SKILL_INFO_1_1_88            UNIT_END + 0x26A // Chars?
+#define PLAYER_SKILL_INFO_1_1_89            UNIT_END + 0x26B // Chars?
+#define PLAYER_SKILL_INFO_1_1_90            UNIT_END + 0x26C // Chars?
+#define PLAYER_SKILL_INFO_1_1_91            UNIT_END + 0x26D // Chars?
+#define PLAYER_SKILL_INFO_1_1_92            UNIT_END + 0x26E // Chars?
+#define PLAYER_SKILL_INFO_1_1_93            UNIT_END + 0x26F // Chars?
+#define PLAYER_SKILL_INFO_1_1_94            UNIT_END + 0x270 // Chars?
+#define PLAYER_SKILL_INFO_1_1_95            UNIT_END + 0x271 // Chars?
+#define PLAYER_SKILL_INFO_1_1_96            UNIT_END + 0x272 // Chars?
+#define PLAYER_SKILL_INFO_1_1_97            UNIT_END + 0x273 // Chars?
+#define PLAYER_SKILL_INFO_1_1_98            UNIT_END + 0x274 // Chars?
+#define PLAYER_SKILL_INFO_1_1_99            UNIT_END + 0x275 // Chars?
+#define PLAYER_SKILL_INFO_1_1_100           UNIT_END + 0x276 // Chars?
+#define PLAYER_SKILL_INFO_1_1_101           UNIT_END + 0x277 // Chars?
+#define PLAYER_SKILL_INFO_1_1_102           UNIT_END + 0x278 // Chars?
+#define PLAYER_SKILL_INFO_1_1_103           UNIT_END + 0x279 // Chars?
+#define PLAYER_SKILL_INFO_1_1_104           UNIT_END + 0x27A // Chars?
+#define PLAYER_SKILL_INFO_1_1_105           UNIT_END + 0x27B // Chars?
+#define PLAYER_SKILL_INFO_1_1_106           UNIT_END + 0x27C // Chars?
+#define PLAYER_SKILL_INFO_1_1_107           UNIT_END + 0x27D // Chars?
+#define PLAYER_SKILL_INFO_1_1_108           UNIT_END + 0x27E // Chars?
+#define PLAYER_SKILL_INFO_1_1_109           UNIT_END + 0x27F // Chars?
+#define PLAYER_SKILL_INFO_1_1_110           UNIT_END + 0x280 // Chars?
+#define PLAYER_SKILL_INFO_1_1_111           UNIT_END + 0x281 // Chars?
+#define PLAYER_SKILL_INFO_1_1_112           UNIT_END + 0x282 // Chars?
+#define PLAYER_SKILL_INFO_1_1_113           UNIT_END + 0x283 // Chars?
+#define PLAYER_SKILL_INFO_1_1_114           UNIT_END + 0x284 // Chars?
+#define PLAYER_SKILL_INFO_1_1_115           UNIT_END + 0x285 // Chars?
+#define PLAYER_SKILL_INFO_1_1_116           UNIT_END + 0x286 // Chars?
+#define PLAYER_SKILL_INFO_1_1_117           UNIT_END + 0x287 // Chars?
+#define PLAYER_SKILL_INFO_1_1_118           UNIT_END + 0x288 // Chars?
+#define PLAYER_SKILL_INFO_1_1_119           UNIT_END + 0x289 // Chars?
+#define PLAYER_SKILL_INFO_1_1_120           UNIT_END + 0x28A // Chars?
+#define PLAYER_SKILL_INFO_1_1_121           UNIT_END + 0x28B // Chars?
+#define PLAYER_SKILL_INFO_1_1_122           UNIT_END + 0x28C // Chars?
+#define PLAYER_SKILL_INFO_1_1_123           UNIT_END + 0x28D // Chars?
+#define PLAYER_SKILL_INFO_1_1_124           UNIT_END + 0x28E // Chars?
+#define PLAYER_SKILL_INFO_1_1_125           UNIT_END + 0x28F // Chars?
+#define PLAYER_SKILL_INFO_1_1_126           UNIT_END + 0x290 // Chars?
+#define PLAYER_SKILL_INFO_1_1_127           UNIT_END + 0x291 // Chars?
+#define PLAYER_SKILL_INFO_1_1_128           UNIT_END + 0x292 // Chars?
+#define PLAYER_SKILL_INFO_1_1_129           UNIT_END + 0x293 // Chars?
+#define PLAYER_SKILL_INFO_1_1_130           UNIT_END + 0x294 // Chars?
+#define PLAYER_SKILL_INFO_1_1_131           UNIT_END + 0x295 // Chars?
+#define PLAYER_SKILL_INFO_1_1_132           UNIT_END + 0x296 // Chars?
+#define PLAYER_SKILL_INFO_1_1_133           UNIT_END + 0x297 // Chars?
+#define PLAYER_SKILL_INFO_1_1_134           UNIT_END + 0x298 // Chars?
+#define PLAYER_SKILL_INFO_1_1_135           UNIT_END + 0x299 // Chars?
+#define PLAYER_SKILL_INFO_1_1_136           UNIT_END + 0x29A // Chars?
+#define PLAYER_SKILL_INFO_1_1_137           UNIT_END + 0x29B // Chars?
+#define PLAYER_SKILL_INFO_1_1_138           UNIT_END + 0x29C // Chars?
+#define PLAYER_SKILL_INFO_1_1_139           UNIT_END + 0x29D // Chars?
+#define PLAYER_SKILL_INFO_1_1_140           UNIT_END + 0x29E // Chars?
+#define PLAYER_SKILL_INFO_1_1_141           UNIT_END + 0x29F // Chars?
+#define PLAYER_SKILL_INFO_1_1_142           UNIT_END + 0x2A0 // Chars?
+#define PLAYER_SKILL_INFO_1_1_143           UNIT_END + 0x2A1 // Chars?
+#define PLAYER_SKILL_INFO_1_1_144           UNIT_END + 0x2A2 // Chars?
+#define PLAYER_SKILL_INFO_1_1_145           UNIT_END + 0x2A3 // Chars?
+#define PLAYER_SKILL_INFO_1_1_146           UNIT_END + 0x2A4 // Chars?
+#define PLAYER_SKILL_INFO_1_1_147           UNIT_END + 0x2A5 // Chars?
+#define PLAYER_SKILL_INFO_1_1_148           UNIT_END + 0x2A6 // Chars?
+#define PLAYER_SKILL_INFO_1_1_149           UNIT_END + 0x2A7 // Chars?
+#define PLAYER_SKILL_INFO_1_1_150           UNIT_END + 0x2A8 // Chars?
+#define PLAYER_SKILL_INFO_1_1_151           UNIT_END + 0x2A9 // Chars?
+#define PLAYER_SKILL_INFO_1_1_152           UNIT_END + 0x2AA // Chars?
+#define PLAYER_SKILL_INFO_1_1_153           UNIT_END + 0x2AB // Chars?
+#define PLAYER_SKILL_INFO_1_1_154           UNIT_END + 0x2AC // Chars?
+#define PLAYER_SKILL_INFO_1_1_155           UNIT_END + 0x2AD // Chars?
+#define PLAYER_SKILL_INFO_1_1_156           UNIT_END + 0x2AE // Chars?
+#define PLAYER_SKILL_INFO_1_1_157           UNIT_END + 0x2AF // Chars?
+#define PLAYER_SKILL_INFO_1_1_158           UNIT_END + 0x2B0 // Chars?
+#define PLAYER_SKILL_INFO_1_1_159           UNIT_END + 0x2B1 // Chars?
+#define PLAYER_SKILL_INFO_1_1_160           UNIT_END + 0x2B2 // Chars?
+#define PLAYER_SKILL_INFO_1_1_161           UNIT_END + 0x2B3 // Chars?
+#define PLAYER_SKILL_INFO_1_1_162           UNIT_END + 0x2B4 // Chars?
+#define PLAYER_SKILL_INFO_1_1_163           UNIT_END + 0x2B5 // Chars?
+#define PLAYER_SKILL_INFO_1_1_164           UNIT_END + 0x2B6 // Chars?
+#define PLAYER_SKILL_INFO_1_1_165           UNIT_END + 0x2B7 // Chars?
+#define PLAYER_SKILL_INFO_1_1_166           UNIT_END + 0x2B8 // Chars?
+#define PLAYER_SKILL_INFO_1_1_167           UNIT_END + 0x2B9 // Chars?
+#define PLAYER_SKILL_INFO_1_1_168           UNIT_END + 0x2BA // Chars?
+#define PLAYER_SKILL_INFO_1_1_169           UNIT_END + 0x2BB // Chars?
+#define PLAYER_SKILL_INFO_1_1_170           UNIT_END + 0x2BC // Chars?
+#define PLAYER_SKILL_INFO_1_1_171           UNIT_END + 0x2BD // Chars?
+#define PLAYER_SKILL_INFO_1_1_172           UNIT_END + 0x2BE // Chars?
+#define PLAYER_SKILL_INFO_1_1_173           UNIT_END + 0x2BF // Chars?
+#define PLAYER_SKILL_INFO_1_1_174           UNIT_END + 0x2C0 // Chars?
+#define PLAYER_SKILL_INFO_1_1_175           UNIT_END + 0x2C1 // Chars?
+#define PLAYER_SKILL_INFO_1_1_176           UNIT_END + 0x2C2 // Chars?
+#define PLAYER_SKILL_INFO_1_1_177           UNIT_END + 0x2C3 // Chars?
+#define PLAYER_SKILL_INFO_1_1_178           UNIT_END + 0x2C4 // Chars?
+#define PLAYER_SKILL_INFO_1_1_179           UNIT_END + 0x2C5 // Chars?
+#define PLAYER_SKILL_INFO_1_1_180           UNIT_END + 0x2C6 // Chars?
+#define PLAYER_SKILL_INFO_1_1_181           UNIT_END + 0x2C7 // Chars?
+#define PLAYER_SKILL_INFO_1_1_182           UNIT_END + 0x2C8 // Chars?
+#define PLAYER_SKILL_INFO_1_1_183           UNIT_END + 0x2C9 // Chars?
+#define PLAYER_SKILL_INFO_1_1_184           UNIT_END + 0x2CA // Chars?
+#define PLAYER_SKILL_INFO_1_1_185           UNIT_END + 0x2CB // Chars?
+#define PLAYER_SKILL_INFO_1_1_186           UNIT_END + 0x2CC // Chars?
+#define PLAYER_SKILL_INFO_1_1_187           UNIT_END + 0x2CD // Chars?
+#define PLAYER_SKILL_INFO_1_1_188           UNIT_END + 0x2CE // Chars?
+#define PLAYER_SKILL_INFO_1_1_189           UNIT_END + 0x2CF // Chars?
+#define PLAYER_SKILL_INFO_1_1_190           UNIT_END + 0x2D0 // Chars?
+#define PLAYER_SKILL_INFO_1_1_191           UNIT_END + 0x2D1 // Chars?
+#define PLAYER_SKILL_INFO_1_1_192           UNIT_END + 0x2D2 // Chars?
+#define PLAYER_SKILL_INFO_1_1_193           UNIT_END + 0x2D3 // Chars?
+#define PLAYER_SKILL_INFO_1_1_194           UNIT_END + 0x2D4 // Chars?
+#define PLAYER_SKILL_INFO_1_1_195           UNIT_END + 0x2D5 // Chars?
+#define PLAYER_SKILL_INFO_1_1_196           UNIT_END + 0x2D6 // Chars?
+#define PLAYER_SKILL_INFO_1_1_197           UNIT_END + 0x2D7 // Chars?
+#define PLAYER_SKILL_INFO_1_1_198           UNIT_END + 0x2D8 // Chars?
+#define PLAYER_SKILL_INFO_1_1_199           UNIT_END + 0x2D9 // Chars?
+#define PLAYER_SKILL_INFO_1_1_200           UNIT_END + 0x2DA // Chars?
+#define PLAYER_SKILL_INFO_1_1_201           UNIT_END + 0x2DB // Chars?
+#define PLAYER_SKILL_INFO_1_1_202           UNIT_END + 0x2DC // Chars?
+#define PLAYER_SKILL_INFO_1_1_203           UNIT_END + 0x2DD // Chars?
+#define PLAYER_SKILL_INFO_1_1_204           UNIT_END + 0x2DE // Chars?
+#define PLAYER_SKILL_INFO_1_1_205           UNIT_END + 0x2DF // Chars?
+#define PLAYER_SKILL_INFO_1_1_206           UNIT_END + 0x2E0 // Chars?
+#define PLAYER_SKILL_INFO_1_1_207           UNIT_END + 0x2E1 // Chars?
+#define PLAYER_SKILL_INFO_1_1_208           UNIT_END + 0x2E2 // Chars?
+#define PLAYER_SKILL_INFO_1_1_209           UNIT_END + 0x2E3 // Chars?
+#define PLAYER_SKILL_INFO_1_1_210           UNIT_END + 0x2E4 // Chars?
+#define PLAYER_SKILL_INFO_1_1_211           UNIT_END + 0x2E5 // Chars?
+#define PLAYER_SKILL_INFO_1_1_212           UNIT_END + 0x2E6 // Chars?
+#define PLAYER_SKILL_INFO_1_1_213           UNIT_END + 0x2E7 // Chars?
+#define PLAYER_SKILL_INFO_1_1_214           UNIT_END + 0x2E8 // Chars?
+#define PLAYER_SKILL_INFO_1_1_215           UNIT_END + 0x2E9 // Chars?
+#define PLAYER_SKILL_INFO_1_1_216           UNIT_END + 0x2EA // Chars?
+#define PLAYER_SKILL_INFO_1_1_217           UNIT_END + 0x2EB // Chars?
+#define PLAYER_SKILL_INFO_1_1_218           UNIT_END + 0x2EC // Chars?
+#define PLAYER_SKILL_INFO_1_1_219           UNIT_END + 0x2ED // Chars?
+#define PLAYER_SKILL_INFO_1_1_220           UNIT_END + 0x2EE // Chars?
+#define PLAYER_SKILL_INFO_1_1_221           UNIT_END + 0x2EF // Chars?
+#define PLAYER_SKILL_INFO_1_1_222           UNIT_END + 0x2F0 // Chars?
+#define PLAYER_SKILL_INFO_1_1_223           UNIT_END + 0x2F1 // Chars?
+#define PLAYER_SKILL_INFO_1_1_224           UNIT_END + 0x2F2 // Chars?
+#define PLAYER_SKILL_INFO_1_1_225           UNIT_END + 0x2F3 // Chars?
+#define PLAYER_SKILL_INFO_1_1_226           UNIT_END + 0x2F4 // Chars?
+#define PLAYER_SKILL_INFO_1_1_227           UNIT_END + 0x2F5 // Chars?
+#define PLAYER_SKILL_INFO_1_1_228           UNIT_END + 0x2F6 // Chars?
+#define PLAYER_SKILL_INFO_1_1_229           UNIT_END + 0x2F7 // Chars?
+#define PLAYER_SKILL_INFO_1_1_230           UNIT_END + 0x2F8 // Chars?
+#define PLAYER_SKILL_INFO_1_1_231           UNIT_END + 0x2F9 // Chars?
+#define PLAYER_SKILL_INFO_1_1_232           UNIT_END + 0x2FA // Chars?
+#define PLAYER_SKILL_INFO_1_1_233           UNIT_END + 0x2FB // Chars?
+#define PLAYER_SKILL_INFO_1_1_234           UNIT_END + 0x2FC // Chars?
+#define PLAYER_SKILL_INFO_1_1_235           UNIT_END + 0x2FD // Chars?
+#define PLAYER_SKILL_INFO_1_1_236           UNIT_END + 0x2FE // Chars?
+#define PLAYER_SKILL_INFO_1_1_237           UNIT_END + 0x2FF // Chars?
+#define PLAYER_SKILL_INFO_1_1_238           UNIT_END + 0x300 // Chars?
+#define PLAYER_SKILL_INFO_1_1_239           UNIT_END + 0x301 // Chars?
+#define PLAYER_SKILL_INFO_1_1_240           UNIT_END + 0x302 // Chars?
+#define PLAYER_SKILL_INFO_1_1_241           UNIT_END + 0x303 // Chars?
+#define PLAYER_SKILL_INFO_1_1_242           UNIT_END + 0x304 // Chars?
+#define PLAYER_SKILL_INFO_1_1_243           UNIT_END + 0x305 // Chars?
+#define PLAYER_SKILL_INFO_1_1_244           UNIT_END + 0x306 // Chars?
+#define PLAYER_SKILL_INFO_1_1_245           UNIT_END + 0x307 // Chars?
+#define PLAYER_SKILL_INFO_1_1_246           UNIT_END + 0x308 // Chars?
+#define PLAYER_SKILL_INFO_1_1_247           UNIT_END + 0x309 // Chars?
+#define PLAYER_SKILL_INFO_1_1_248           UNIT_END + 0x30A // Chars?
+#define PLAYER_SKILL_INFO_1_1_249           UNIT_END + 0x30B // Chars?
+#define PLAYER_SKILL_INFO_1_1_250           UNIT_END + 0x30C // Chars?
+#define PLAYER_SKILL_INFO_1_1_251           UNIT_END + 0x30D // Chars?
+#define PLAYER_SKILL_INFO_1_1_252           UNIT_END + 0x30E // Chars?
+#define PLAYER_SKILL_INFO_1_1_253           UNIT_END + 0x30F // Chars?
+#define PLAYER_SKILL_INFO_1_1_254           UNIT_END + 0x310 // Chars?
+#define PLAYER_SKILL_INFO_1_1_255           UNIT_END + 0x311 // Chars?
+#define PLAYER_SKILL_INFO_1_1_256           UNIT_END + 0x312 // Chars?
+#define PLAYER_SKILL_INFO_1_1_257           UNIT_END + 0x313 // Chars?
+#define PLAYER_SKILL_INFO_1_1_258           UNIT_END + 0x314 // Chars?
+#define PLAYER_SKILL_INFO_1_1_259           UNIT_END + 0x315 // Chars?
+#define PLAYER_SKILL_INFO_1_1_260           UNIT_END + 0x316 // Chars?
+#define PLAYER_SKILL_INFO_1_1_261           UNIT_END + 0x317 // Chars?
+#define PLAYER_SKILL_INFO_1_1_262           UNIT_END + 0x318 // Chars?
+#define PLAYER_SKILL_INFO_1_1_263           UNIT_END + 0x319 // Chars?
+#define PLAYER_SKILL_INFO_1_1_264           UNIT_END + 0x31A // Chars?
+#define PLAYER_SKILL_INFO_1_1_265           UNIT_END + 0x31B // Chars?
+#define PLAYER_SKILL_INFO_1_1_266           UNIT_END + 0x31C // Chars?
+#define PLAYER_SKILL_INFO_1_1_267           UNIT_END + 0x31D // Chars?
+#define PLAYER_SKILL_INFO_1_1_268           UNIT_END + 0x31E // Chars?
+#define PLAYER_SKILL_INFO_1_1_269           UNIT_END + 0x31F // Chars?
+#define PLAYER_SKILL_INFO_1_1_270           UNIT_END + 0x320 // Chars?
+#define PLAYER_SKILL_INFO_1_1_271           UNIT_END + 0x321 // Chars?
+#define PLAYER_SKILL_INFO_1_1_272           UNIT_END + 0x322 // Chars?
+#define PLAYER_SKILL_INFO_1_1_273           UNIT_END + 0x323 // Chars?
+#define PLAYER_SKILL_INFO_1_1_274           UNIT_END + 0x324 // Chars?
+#define PLAYER_SKILL_INFO_1_1_275           UNIT_END + 0x325 // Chars?
+#define PLAYER_SKILL_INFO_1_1_276           UNIT_END + 0x326 // Chars?
+#define PLAYER_SKILL_INFO_1_1_277           UNIT_END + 0x327 // Chars?
+#define PLAYER_SKILL_INFO_1_1_278           UNIT_END + 0x328 // Chars?
+#define PLAYER_SKILL_INFO_1_1_279           UNIT_END + 0x329 // Chars?
+#define PLAYER_SKILL_INFO_1_1_280           UNIT_END + 0x32A // Chars?
+#define PLAYER_SKILL_INFO_1_1_281           UNIT_END + 0x32B // Chars?
+#define PLAYER_SKILL_INFO_1_1_282           UNIT_END + 0x32C // Chars?
+#define PLAYER_SKILL_INFO_1_1_283           UNIT_END + 0x32D // Chars?
+#define PLAYER_SKILL_INFO_1_1_284           UNIT_END + 0x32E // Chars?
+#define PLAYER_SKILL_INFO_1_1_285           UNIT_END + 0x32F // Chars?
+#define PLAYER_SKILL_INFO_1_1_286           UNIT_END + 0x330 // Chars?
+#define PLAYER_SKILL_INFO_1_1_287           UNIT_END + 0x331 // Chars?
+#define PLAYER_SKILL_INFO_1_1_288           UNIT_END + 0x332 // Chars?
+#define PLAYER_SKILL_INFO_1_1_289           UNIT_END + 0x333 // Chars?
+#define PLAYER_SKILL_INFO_1_1_290           UNIT_END + 0x334 // Chars?
+#define PLAYER_SKILL_INFO_1_1_291           UNIT_END + 0x335 // Chars?
+#define PLAYER_SKILL_INFO_1_1_292           UNIT_END + 0x336 // Chars?
+#define PLAYER_SKILL_INFO_1_1_293           UNIT_END + 0x337 // Chars?
+#define PLAYER_SKILL_INFO_1_1_294           UNIT_END + 0x338 // Chars?
+#define PLAYER_SKILL_INFO_1_1_295           UNIT_END + 0x339 // Chars?
+#define PLAYER_SKILL_INFO_1_1_296           UNIT_END + 0x33A // Chars?
+#define PLAYER_SKILL_INFO_1_1_297           UNIT_END + 0x33B // Chars?
+#define PLAYER_SKILL_INFO_1_1_298           UNIT_END + 0x33C // Chars?
+#define PLAYER_SKILL_INFO_1_1_299           UNIT_END + 0x33D // Chars?
+#define PLAYER_SKILL_INFO_1_1_300           UNIT_END + 0x33E // Chars?
+#define PLAYER_SKILL_INFO_1_1_301           UNIT_END + 0x33F // Chars?
+#define PLAYER_SKILL_INFO_1_1_302           UNIT_END + 0x340 // Chars?
+#define PLAYER_SKILL_INFO_1_1_303           UNIT_END + 0x341 // Chars?
+#define PLAYER_SKILL_INFO_1_1_304           UNIT_END + 0x342 // Chars?
+#define PLAYER_SKILL_INFO_1_1_305           UNIT_END + 0x343 // Chars?
+#define PLAYER_SKILL_INFO_1_1_306           UNIT_END + 0x344 // Chars?
+#define PLAYER_SKILL_INFO_1_1_307           UNIT_END + 0x345 // Chars?
+#define PLAYER_SKILL_INFO_1_1_308           UNIT_END + 0x346 // Chars?
+#define PLAYER_SKILL_INFO_1_1_309           UNIT_END + 0x347 // Chars?
+#define PLAYER_SKILL_INFO_1_1_310           UNIT_END + 0x348 // Chars?
+#define PLAYER_SKILL_INFO_1_1_311           UNIT_END + 0x349 // Chars?
+#define PLAYER_SKILL_INFO_1_1_312           UNIT_END + 0x34A // Chars?
+#define PLAYER_SKILL_INFO_1_1_313           UNIT_END + 0x34B // Chars?
+#define PLAYER_SKILL_INFO_1_1_314           UNIT_END + 0x34C // Chars?
+#define PLAYER_SKILL_INFO_1_1_315           UNIT_END + 0x34D // Chars?
+#define PLAYER_SKILL_INFO_1_1_316           UNIT_END + 0x34E // Chars?
+#define PLAYER_SKILL_INFO_1_1_317           UNIT_END + 0x34F // Chars?
+#define PLAYER_SKILL_INFO_1_1_318           UNIT_END + 0x350 // Chars?
+#define PLAYER_SKILL_INFO_1_1_319           UNIT_END + 0x351 // Chars?
+#define PLAYER_SKILL_INFO_1_1_320           UNIT_END + 0x352 // Chars?
+#define PLAYER_SKILL_INFO_1_1_321           UNIT_END + 0x353 // Chars?
+#define PLAYER_SKILL_INFO_1_1_322           UNIT_END + 0x354 // Chars?
+#define PLAYER_SKILL_INFO_1_1_323           UNIT_END + 0x355 // Chars?
+#define PLAYER_SKILL_INFO_1_1_324           UNIT_END + 0x356 // Chars?
+#define PLAYER_SKILL_INFO_1_1_325           UNIT_END + 0x357 // Chars?
+#define PLAYER_SKILL_INFO_1_1_326           UNIT_END + 0x358 // Chars?
+#define PLAYER_SKILL_INFO_1_1_327           UNIT_END + 0x359 // Chars?
+#define PLAYER_SKILL_INFO_1_1_328           UNIT_END + 0x35A // Chars?
+#define PLAYER_SKILL_INFO_1_1_329           UNIT_END + 0x35B // Chars?
+#define PLAYER_SKILL_INFO_1_1_330           UNIT_END + 0x35C // Chars?
+#define PLAYER_SKILL_INFO_1_1_331           UNIT_END + 0x35D // Chars?
+#define PLAYER_SKILL_INFO_1_1_332           UNIT_END + 0x35E // Chars?
+#define PLAYER_SKILL_INFO_1_1_333           UNIT_END + 0x35F // Chars?
+#define PLAYER_SKILL_INFO_1_1_334           UNIT_END + 0x360 // Chars?
+#define PLAYER_SKILL_INFO_1_1_335           UNIT_END + 0x361 // Chars?
+#define PLAYER_SKILL_INFO_1_1_336           UNIT_END + 0x362 // Chars?
+#define PLAYER_SKILL_INFO_1_1_337           UNIT_END + 0x363 // Chars?
+#define PLAYER_SKILL_INFO_1_1_338           UNIT_END + 0x364 // Chars?
+#define PLAYER_SKILL_INFO_1_1_339           UNIT_END + 0x365 // Chars?
+#define PLAYER_SKILL_INFO_1_1_340           UNIT_END + 0x366 // Chars?
+#define PLAYER_SKILL_INFO_1_1_341           UNIT_END + 0x367 // Chars?
+#define PLAYER_SKILL_INFO_1_1_342           UNIT_END + 0x368 // Chars?
+#define PLAYER_SKILL_INFO_1_1_343           UNIT_END + 0x369 // Chars?
+#define PLAYER_SKILL_INFO_1_1_344           UNIT_END + 0x36A // Chars?
+#define PLAYER_SKILL_INFO_1_1_345           UNIT_END + 0x36B // Chars?
+#define PLAYER_SKILL_INFO_1_1_346           UNIT_END + 0x36C // Chars?
+#define PLAYER_SKILL_INFO_1_1_347           UNIT_END + 0x36D // Chars?
+#define PLAYER_SKILL_INFO_1_1_348           UNIT_END + 0x36E // Chars?
+#define PLAYER_SKILL_INFO_1_1_349           UNIT_END + 0x36F // Chars?
+#define PLAYER_SKILL_INFO_1_1_350           UNIT_END + 0x370 // Chars?
+#define PLAYER_SKILL_INFO_1_1_351           UNIT_END + 0x371 // Chars?
+#define PLAYER_SKILL_INFO_1_1_352           UNIT_END + 0x372 // Chars?
+#define PLAYER_SKILL_INFO_1_1_353           UNIT_END + 0x373 // Chars?
+#define PLAYER_SKILL_INFO_1_1_354           UNIT_END + 0x374 // Chars?
+#define PLAYER_SKILL_INFO_1_1_355           UNIT_END + 0x375 // Chars?
+#define PLAYER_SKILL_INFO_1_1_356           UNIT_END + 0x376 // Chars?
+#define PLAYER_SKILL_INFO_1_1_357           UNIT_END + 0x377 // Chars?
+#define PLAYER_SKILL_INFO_1_1_358           UNIT_END + 0x378 // Chars?
+#define PLAYER_SKILL_INFO_1_1_359           UNIT_END + 0x379 // Chars?
+#define PLAYER_SKILL_INFO_1_1_360           UNIT_END + 0x37A // Chars?
+#define PLAYER_SKILL_INFO_1_1_361           UNIT_END + 0x37B // Chars?
+#define PLAYER_SKILL_INFO_1_1_362           UNIT_END + 0x37C // Chars?
+#define PLAYER_SKILL_INFO_1_1_363           UNIT_END + 0x37D // Chars?
+#define PLAYER_SKILL_INFO_1_1_364           UNIT_END + 0x37E // Chars?
+#define PLAYER_SKILL_INFO_1_1_365           UNIT_END + 0x37F // Chars?
+#define PLAYER_SKILL_INFO_1_1_366           UNIT_END + 0x380 // Chars?
+#define PLAYER_SKILL_INFO_1_1_367           UNIT_END + 0x381 // Chars?
+#define PLAYER_SKILL_INFO_1_1_368           UNIT_END + 0x382 // Chars?
+#define PLAYER_SKILL_INFO_1_1_369           UNIT_END + 0x383 // Chars?
+#define PLAYER_SKILL_INFO_1_1_370           UNIT_END + 0x384 // Chars?
+#define PLAYER_SKILL_INFO_1_1_371           UNIT_END + 0x385 // Chars?
+#define PLAYER_SKILL_INFO_1_1_372           UNIT_END + 0x386 // Chars?
+#define PLAYER_SKILL_INFO_1_1_373           UNIT_END + 0x387 // Chars?
+#define PLAYER_SKILL_INFO_1_1_374           UNIT_END + 0x388 // Chars?
+#define PLAYER_SKILL_INFO_1_1_375           UNIT_END + 0x389 // Chars?
+#define PLAYER_SKILL_INFO_1_1_376           UNIT_END + 0x38A // Chars?
+#define PLAYER_SKILL_INFO_1_1_377           UNIT_END + 0x38B // Chars?
+#define PLAYER_SKILL_INFO_1_1_378           UNIT_END + 0x38C // Chars?
+#define PLAYER_SKILL_INFO_1_1_379           UNIT_END + 0x38D // Chars?
+#define PLAYER_SKILL_INFO_1_1_380           UNIT_END + 0x38E // Chars?
+#define PLAYER_SKILL_INFO_1_1_381           UNIT_END + 0x38F // Chars?
+#define PLAYER_SKILL_INFO_1_1_382           UNIT_END + 0x390 // Chars?
+#define PLAYER_SKILL_INFO_1_1_383           UNIT_END + 0x391 // Chars?
+#define PLAYER_CHARACTER_POINTS1            UNIT_END + 0x392 // Int32
+#define PLAYER_CHARACTER_POINTS2            UNIT_END + 0x393 // Int32
+#define PLAYER_TRACK_CREATURES              UNIT_END + 0x394 // Int32
+#define PLAYER_TRACK_RESOURCES              UNIT_END + 0x395 // Int32
+#define PLAYER_BLOCK_PERCENTAGE             UNIT_END + 0x396 // Float
+#define PLAYER_DODGE_PERCENTAGE             UNIT_END + 0x397 // Float
+#define PLAYER_PARRY_PERCENTAGE             UNIT_END + 0x398 // Float
+#define PLAYER_CRIT_PERCENTAGE              UNIT_END + 0x399 // Float
+#define PLAYER_RANGED_CRIT_PERCENTAGE       UNIT_END + 0x39A // Float
+#define PLAYER_EXPLORED_ZONES_1             UNIT_END + 0x39B // Bytes
+#define PLAYER_EXPLORED_ZONES_1_01          UNIT_END + 0x39C // Bytes
+#define PLAYER_EXPLORED_ZONES_1_02          UNIT_END + 0x39D // Bytes
+#define PLAYER_EXPLORED_ZONES_1_03          UNIT_END + 0x39E // Bytes
+#define PLAYER_EXPLORED_ZONES_1_04          UNIT_END + 0x39F // Bytes
+#define PLAYER_EXPLORED_ZONES_1_05          UNIT_END + 0x3A0 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_06          UNIT_END + 0x3A1 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_07          UNIT_END + 0x3A2 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_08          UNIT_END + 0x3A3 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_09          UNIT_END + 0x3A4 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_10          UNIT_END + 0x3A5 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_11          UNIT_END + 0x3A6 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_12          UNIT_END + 0x3A7 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_13          UNIT_END + 0x3A8 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_14          UNIT_END + 0x3A9 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_15          UNIT_END + 0x3AA // Bytes
+#define PLAYER_EXPLORED_ZONES_1_16          UNIT_END + 0x3AB // Bytes
+#define PLAYER_EXPLORED_ZONES_1_17          UNIT_END + 0x3AC // Bytes
+#define PLAYER_EXPLORED_ZONES_1_18          UNIT_END + 0x3AD // Bytes
+#define PLAYER_EXPLORED_ZONES_1_19          UNIT_END + 0x3AE // Bytes
+#define PLAYER_EXPLORED_ZONES_1_20          UNIT_END + 0x3AF // Bytes
+#define PLAYER_EXPLORED_ZONES_1_21          UNIT_END + 0x3B0 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_22          UNIT_END + 0x3B1 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_23          UNIT_END + 0x3B2 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_24          UNIT_END + 0x3B3 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_25          UNIT_END + 0x3B4 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_26          UNIT_END + 0x3B5 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_27          UNIT_END + 0x3B6 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_28          UNIT_END + 0x3B7 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_29          UNIT_END + 0x3B8 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_30          UNIT_END + 0x3B9 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_31          UNIT_END + 0x3BA // Bytes
+#define PLAYER_EXPLORED_ZONES_1_32          UNIT_END + 0x3BB // Bytes
+#define PLAYER_EXPLORED_ZONES_1_33          UNIT_END + 0x3BC // Bytes
+#define PLAYER_EXPLORED_ZONES_1_34          UNIT_END + 0x3BD // Bytes
+#define PLAYER_EXPLORED_ZONES_1_35          UNIT_END + 0x3BE // Bytes
+#define PLAYER_EXPLORED_ZONES_1_36          UNIT_END + 0x3BF // Bytes
+#define PLAYER_EXPLORED_ZONES_1_37          UNIT_END + 0x3C0 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_38          UNIT_END + 0x3C1 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_39          UNIT_END + 0x3C2 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_40          UNIT_END + 0x3C3 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_41          UNIT_END + 0x3C4 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_42          UNIT_END + 0x3C5 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_43          UNIT_END + 0x3C6 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_44          UNIT_END + 0x3C7 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_45          UNIT_END + 0x3C8 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_46          UNIT_END + 0x3C9 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_47          UNIT_END + 0x3CA // Bytes
+#define PLAYER_EXPLORED_ZONES_1_48          UNIT_END + 0x3CB // Bytes
+#define PLAYER_EXPLORED_ZONES_1_49          UNIT_END + 0x3CC // Bytes
+#define PLAYER_EXPLORED_ZONES_1_50          UNIT_END + 0x3CD // Bytes
+#define PLAYER_EXPLORED_ZONES_1_51          UNIT_END + 0x3CE // Bytes
+#define PLAYER_EXPLORED_ZONES_1_52          UNIT_END + 0x3CF // Bytes
+#define PLAYER_EXPLORED_ZONES_1_53          UNIT_END + 0x3D0 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_54          UNIT_END + 0x3D1 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_55          UNIT_END + 0x3D2 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_56          UNIT_END + 0x3D3 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_57          UNIT_END + 0x3D4 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_58          UNIT_END + 0x3D5 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_59          UNIT_END + 0x3D6 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_60          UNIT_END + 0x3D7 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_61          UNIT_END + 0x3D8 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_62          UNIT_END + 0x3D9 // Bytes
+#define PLAYER_EXPLORED_ZONES_1_63          UNIT_END + 0x3DA // Bytes
+#define PLAYER_REST_STATE_EXPERIENCE        UNIT_END + 0x3DB // Int32
+#define PLAYER_FIELD_COINAGE                UNIT_END + 0x3DC // Int32
+#define PLAYER_FIELD_POSSTAT0               UNIT_END + 0x3DD // Int32
+#define PLAYER_FIELD_POSSTAT1               UNIT_END + 0x3DE // Int32
+#define PLAYER_FIELD_POSSTAT2               UNIT_END + 0x3DF // Int32
+#define PLAYER_FIELD_POSSTAT3               UNIT_END + 0x3E0 // Int32
+#define PLAYER_FIELD_POSSTAT4               UNIT_END + 0x3E1 // Int32
+#define PLAYER_FIELD_NEGSTAT0               UNIT_END + 0x3E2 // Int32
+#define PLAYER_FIELD_NEGSTAT1               UNIT_END + 0x3E3 // Int32
+#define PLAYER_FIELD_NEGSTAT2               UNIT_END + 0x3E4 // Int32
+#define PLAYER_FIELD_NEGSTAT3               UNIT_END + 0x3E5 // Int32
+#define PLAYER_FIELD_NEGSTAT4               UNIT_END + 0x3E6 // Int32
+#define PLAYER_FIELD_RESISTANCEBUFFMODSPOSITIVE             UNIT_END + 0x3E7 // Int32
+#define PLAYER_FIELD_RESISTANCEBUFFMODSPOSITIVE_01          UNIT_END + 0x3E8 // Int32
+#define PLAYER_FIELD_RESISTANCEBUFFMODSPOSITIVE_02          UNIT_END + 0x3E9 // Int32
+#define PLAYER_FIELD_RESISTANCEBUFFMODSPOSITIVE_03          UNIT_END + 0x3EA // Int32
+#define PLAYER_FIELD_RESISTANCEBUFFMODSPOSITIVE_04          UNIT_END + 0x3EB // Int32
+#define PLAYER_FIELD_RESISTANCEBUFFMODSPOSITIVE_05          UNIT_END + 0x3EC // Int32
+#define PLAYER_FIELD_RESISTANCEBUFFMODSPOSITIVE_06          UNIT_END + 0x3ED // Int32
+#define PLAYER_FIELD_RESISTANCEBUFFMODSNEGATIVE             UNIT_END + 0x3EE // Int32
+#define PLAYER_FIELD_RESISTANCEBUFFMODSNEGATIVE_01          UNIT_END + 0x3EF // Int32
+#define PLAYER_FIELD_RESISTANCEBUFFMODSNEGATIVE_02          UNIT_END + 0x3F0 // Int32
+#define PLAYER_FIELD_RESISTANCEBUFFMODSNEGATIVE_03          UNIT_END + 0x3F1 // Int32
+#define PLAYER_FIELD_RESISTANCEBUFFMODSNEGATIVE_04          UNIT_END + 0x3F2 // Int32
+#define PLAYER_FIELD_RESISTANCEBUFFMODSNEGATIVE_05          UNIT_END + 0x3F3 // Int32
+#define PLAYER_FIELD_RESISTANCEBUFFMODSNEGATIVE_06          UNIT_END + 0x3F4 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_POS            UNIT_END + 0x3F5 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_POS_01             UNIT_END + 0x3F6 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_POS_02             UNIT_END + 0x3F7 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_POS_03             UNIT_END + 0x3F8 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_POS_04             UNIT_END + 0x3F9 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_POS_05             UNIT_END + 0x3FA // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_POS_06             UNIT_END + 0x3FB // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_NEG            UNIT_END + 0x3FC // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_NEG_01             UNIT_END + 0x3FD // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_NEG_02             UNIT_END + 0x3FE // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_NEG_03             UNIT_END + 0x3FF // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_NEG_04             UNIT_END + 0x400 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_NEG_05             UNIT_END + 0x401 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_NEG_06             UNIT_END + 0x402 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_PCT            UNIT_END + 0x403 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_PCT_01             UNIT_END + 0x404 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_PCT_02             UNIT_END + 0x405 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_PCT_03             UNIT_END + 0x406 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_PCT_04             UNIT_END + 0x407 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_PCT_05             UNIT_END + 0x408 // Int32
+#define PLAYER_FIELD_MOD_DAMAGE_DONE_PCT_06             UNIT_END + 0x409 // Int32
+#define PLAYER_FIELD_BYTES                  UNIT_END + 0x40A // Bytes
+#define PLAYER_AMMO_ID                      UNIT_END + 0x40B // Int32
+#define PLAYER_SELF_RES_SPELL               UNIT_END + 0x40C // Int32
+#define PLAYER_FIELD_PVP_MEDALS             UNIT_END + 0x40D // Int32
+#define PLAYER_FIELD_BUYBACK_PRICE_1            UNIT_END + 0x40E // Int32
+#define PLAYER_FIELD_BUYBACK_PRICE_1_01             UNIT_END + 0x40F // Int32
+#define PLAYER_FIELD_BUYBACK_PRICE_1_02             UNIT_END + 0x410 // Int32
+#define PLAYER_FIELD_BUYBACK_PRICE_1_03             UNIT_END + 0x411 // Int32
+#define PLAYER_FIELD_BUYBACK_PRICE_1_04             UNIT_END + 0x412 // Int32
+#define PLAYER_FIELD_BUYBACK_PRICE_1_05             UNIT_END + 0x413 // Int32
+#define PLAYER_FIELD_BUYBACK_PRICE_1_06             UNIT_END + 0x414 // Int32
+#define PLAYER_FIELD_BUYBACK_PRICE_1_07             UNIT_END + 0x415 // Int32
+#define PLAYER_FIELD_BUYBACK_PRICE_1_08             UNIT_END + 0x416 // Int32
+#define PLAYER_FIELD_BUYBACK_PRICE_1_09             UNIT_END + 0x417 // Int32
+#define PLAYER_FIELD_BUYBACK_PRICE_1_10             UNIT_END + 0x418 // Int32
+#define PLAYER_FIELD_BUYBACK_PRICE_1_11             UNIT_END + 0x419 // Int32
+#define PLAYER_FIELD_BUYBACK_TIMESTAMP_1            UNIT_END + 0x41A // Int32
+#define PLAYER_FIELD_BUYBACK_TIMESTAMP_1_01             UNIT_END + 0x41B // Int32
+#define PLAYER_FIELD_BUYBACK_TIMESTAMP_1_02             UNIT_END + 0x41C // Int32
+#define PLAYER_FIELD_BUYBACK_TIMESTAMP_1_03             UNIT_END + 0x41D // Int32
+#define PLAYER_FIELD_BUYBACK_TIMESTAMP_1_04             UNIT_END + 0x41E // Int32
+#define PLAYER_FIELD_BUYBACK_TIMESTAMP_1_05             UNIT_END + 0x41F // Int32
+#define PLAYER_FIELD_BUYBACK_TIMESTAMP_1_06             UNIT_END + 0x420 // Int32
+#define PLAYER_FIELD_BUYBACK_TIMESTAMP_1_07             UNIT_END + 0x421 // Int32
+#define PLAYER_FIELD_BUYBACK_TIMESTAMP_1_08             UNIT_END + 0x422 // Int32
+#define PLAYER_FIELD_BUYBACK_TIMESTAMP_1_09             UNIT_END + 0x423 // Int32
+#define PLAYER_FIELD_BUYBACK_TIMESTAMP_1_10             UNIT_END + 0x424 // Int32
+#define PLAYER_FIELD_BUYBACK_TIMESTAMP_1_11             UNIT_END + 0x425 // Int32
+#define PLAYER_FIELD_SESSION_KILLS          UNIT_END + 0x426 // Chars?
+#define PLAYER_FIELD_YESTERDAY_KILLS        UNIT_END + 0x427 // Chars?
+#define PLAYER_FIELD_LAST_WEEK_KILLS        UNIT_END + 0x428 // Chars?
+#define PLAYER_FIELD_THIS_WEEK_KILLS        UNIT_END + 0x429 // Chars?
+#define PLAYER_FIELD_THIS_WEEK_CONTRIBUTION UNIT_END + 0x42A // Int32
+#define PLAYER_FIELD_LIFETIME_HONORBALE_KILLS UNIT_END + 0x42B // Int32
+#define PLAYER_FIELD_LIFETIME_DISHONORBALE_KILLS UNIT_END + 0x42C // Int32
+#define PLAYER_FIELD_YESTERDAY_CONTRIBUTION UNIT_END + 0x42D // Int32
+#define PLAYER_FIELD_LAST_WEEK_CONTRIBUTION UNIT_END + 0x42E // Int32
+#define PLAYER_FIELD_LAST_WEEK_RANK         UNIT_END + 0x42F // Int32
+#define PLAYER_FIELD_BYTES2                 UNIT_END + 0x430 // Bytes
+#define PLAYER_FIELD_WATCHED_FACTION_INDEX  UNIT_END + 0x431 // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1            UNIT_END + 0x432 // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_01             UNIT_END + 0x433 // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_02             UNIT_END + 0x434 // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_03             UNIT_END + 0x435 // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_04             UNIT_END + 0x436 // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_05             UNIT_END + 0x437 // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_06             UNIT_END + 0x438 // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_07             UNIT_END + 0x439 // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_08             UNIT_END + 0x43A // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_09             UNIT_END + 0x43B // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_10             UNIT_END + 0x43C // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_11             UNIT_END + 0x43D // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_12             UNIT_END + 0x43E // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_13             UNIT_END + 0x43F // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_14             UNIT_END + 0x440 // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_15             UNIT_END + 0x441 // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_16             UNIT_END + 0x442 // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_17             UNIT_END + 0x443 // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_18             UNIT_END + 0x444 // Int32
+#define PLAYER_FIELD_COMBAT_RATING_1_19             UNIT_END + 0x445 // Int32
+#define PLAYER_END           UNIT_END + 0x446
+
+// Object
+#define OBJECT_FIELD_CREATED_BY             OBJECT_END + 0x000 // GUID
+#define OBJECT_FIELD_CREATED_BY_01          OBJECT_END + 0x001 // GUID
+
+// Gameobject
+#define GAMEOBJECT_DISPLAYID                OBJECT_END + 0x002 // Int32
+#define GAMEOBJECT_FLAGS                    OBJECT_END + 0x003 // Int32
+#define GAMEOBJECT_ROTATION             OBJECT_END + 0x004 // Float
+#define GAMEOBJECT_ROTATION_01          OBJECT_END + 0x005 // Float
+#define GAMEOBJECT_ROTATION_02          OBJECT_END + 0x006 // Float
+#define GAMEOBJECT_ROTATION_03          OBJECT_END + 0x007 // Float
+#define GAMEOBJECT_STATE                    OBJECT_END + 0x008 // Int32
+#define GAMEOBJECT_POS_X                    OBJECT_END + 0x009 // Float
+#define GAMEOBJECT_POS_Y                    OBJECT_END + 0x00A // Float
+#define GAMEOBJECT_POS_Z                    OBJECT_END + 0x00B // Float
+#define GAMEOBJECT_FACING                   OBJECT_END + 0x00C // Float
+#define GAMEOBJECT_DYN_FLAGS                OBJECT_END + 0x00D // Int32
+#define GAMEOBJECT_FACTION                  OBJECT_END + 0x00E // Int32
+#define GAMEOBJECT_TYPE_ID                  OBJECT_END + 0x00F // Int32
+#define GAMEOBJECT_LEVEL                    OBJECT_END + 0x010 // Int32
+#define GAMEOBJECT_ARTKIT                   OBJECT_END + 0x011 // Int32
+#define GAMEOBJECT_ANIMPROGRESS             OBJECT_END + 0x012 // Int32
+#define GAMEOBJECT_PADDING                  OBJECT_END + 0x013 // Int32
+#define GAMEOBJECT_END           OBJECT_END + 0x014
+
+// Dynamicobject
+#define DYNAMICOBJECT_CASTER            OBJECT_END + 0x000 // GUID
+#define DYNAMICOBJECT_CASTER_01             OBJECT_END + 0x001 // GUID
+#define DYNAMICOBJECT_BYTES                 OBJECT_END + 0x002 // Bytes
+#define DYNAMICOBJECT_SPELLID               OBJECT_END + 0x003 // Int32
+#define DYNAMICOBJECT_RADIUS                OBJECT_END + 0x004 // Float
+#define DYNAMICOBJECT_POS_X                 OBJECT_END + 0x005 // Float
+#define DYNAMICOBJECT_POS_Y                 OBJECT_END + 0x006 // Float
+#define DYNAMICOBJECT_POS_Z                 OBJECT_END + 0x007 // Float
+#define DYNAMICOBJECT_FACING                OBJECT_END + 0x008 // Float
+#define DYNAMICOBJECT_PAD                   OBJECT_END + 0x009 // Bytes
+#define DYNAMICOBJECT_END            OBJECT_END + 0x010
+
+// Corpse
+#define CORPSE_FIELD_OWNER          OBJECT_END + 0x000 // GUID
+#define CORPSE_FIELD_OWNER_01           OBJECT_END + 0x001 // GUID
+#define CORPSE_FIELD_FACING                 OBJECT_END + 0x002 // Float
+#define CORPSE_FIELD_POS_X                  OBJECT_END + 0x003 // Float
+#define CORPSE_FIELD_POS_Y                  OBJECT_END + 0x004 // Float
+#define CORPSE_FIELD_POS_Z                  OBJECT_END + 0x005 // Float
+#define CORPSE_FIELD_DISPLAY_ID             OBJECT_END + 0x006 // Int32
+#define CORPSE_FIELD_ITEM           OBJECT_END + 0x007 // Int32
+#define CORPSE_FIELD_ITEM_01            OBJECT_END + 0x008 // Int32
+#define CORPSE_FIELD_ITEM_02            OBJECT_END + 0x009 // Int32
+#define CORPSE_FIELD_ITEM_03            OBJECT_END + 0x00A // Int32
+#define CORPSE_FIELD_ITEM_04            OBJECT_END + 0x00B // Int32
+#define CORPSE_FIELD_ITEM_05            OBJECT_END + 0x00C // Int32
+#define CORPSE_FIELD_ITEM_06            OBJECT_END + 0x00D // Int32
+#define CORPSE_FIELD_ITEM_07            OBJECT_END + 0x00E // Int32
+#define CORPSE_FIELD_ITEM_08            OBJECT_END + 0x00F // Int32
+#define CORPSE_FIELD_ITEM_09            OBJECT_END + 0x010 // Int32
+#define CORPSE_FIELD_ITEM_10            OBJECT_END + 0x011 // Int32
+#define CORPSE_FIELD_ITEM_11            OBJECT_END + 0x012 // Int32
+#define CORPSE_FIELD_ITEM_12            OBJECT_END + 0x013 // Int32
+#define CORPSE_FIELD_ITEM_13            OBJECT_END + 0x014 // Int32
+#define CORPSE_FIELD_ITEM_14            OBJECT_END + 0x015 // Int32
+#define CORPSE_FIELD_ITEM_15            OBJECT_END + 0x016 // Int32
+#define CORPSE_FIELD_ITEM_16            OBJECT_END + 0x017 // Int32
+#define CORPSE_FIELD_ITEM_17            OBJECT_END + 0x018 // Int32
+#define CORPSE_FIELD_ITEM_18            OBJECT_END + 0x019 // Int32
+#define CORPSE_FIELD_BYTES_1                OBJECT_END + 0x01A // Bytes
+#define CORPSE_FIELD_BYTES_2                OBJECT_END + 0x01B // Bytes
+#define CORPSE_FIELD_GUILD                  OBJECT_END + 0x01C // Int32
+#define CORPSE_FIELD_FLAGS                  OBJECT_END + 0x01D // Int32
+#define CORPSE_FIELD_DYNAMIC_FLAGS          OBJECT_END + 0x01E // Int32
+#define CORPSE_FIELD_PAD                    OBJECT_END + 0x01F // Int32
+#define CORPSE_END           OBJECT_END + 0x20
+#endif
+//Done
+#endif // UPDATEFIELDS_H

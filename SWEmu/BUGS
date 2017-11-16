@@ -1,0 +1,29 @@
+This file lists known bugs, and who will be assigned to them. Used because nobody ever uses Bugzilla (admittedly a bit complex)
+We *will* list every bug here, even if it seems silly, because every little thing counts.
+And no, the TODO is for broad categories, this is for smaller things or general problems.
+
+x Not working / no function
+* Crash
++ Major (some major detail is incorrect, e.g. chat commands are wrongly interpreted)
+m Minor (spelling, etc.)
+  
+m Changed below problem to minor. After a few seconds it does close completely. Patience ;)
+m Sometimes when you shutdown townhall u check windows processes and its stikk there consuming your memory above 300mb. PLEASE CHECK
+
+Combat System:
+	+ Creature chasing seems to be laggy and highly ineffecient, you can easily run away
+	m When attacking in a party and the objective is destroyed, each player will see all the other players remain in attacking stance (the player himself sees himself in normal stance)
+	+ SOmetimes when dueling you see a lot of DUEL FLAGS and it discs you.
+
+Spells System:
+	+ Sometimes fireball will shoot twice instead of one, cause is due to the DOT aura tha tis applied. Probably not fully supported yet
+	+ Can use Heroic Strike from any distance, even though it does no damage
+	* When casting atack spell(fireball) on longer distance client crashes.
+
+NPC Interactions:
+
+Social:
+	
+Other:
+	m All error messages(ie You are too far away, or wrong facing) are spammed, they should just not dissappear untill you do what is required.
+		can't fix because client autospams them w/o server intervention

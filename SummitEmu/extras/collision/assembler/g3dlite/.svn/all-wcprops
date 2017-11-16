@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/g3dlite
+END
+Plane.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/g3dlite/Plane.cpp
+END
+Crypto.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/g3dlite/Crypto.cpp
+END
+System.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/g3dlite/System.cpp
+END
+license.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/g3dlite/license.html
+END
+Triangle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/g3dlite/Triangle.cpp
+END
+Vector3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/g3dlite/Vector3.cpp
+END
+Vector4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/g3dlite/Vector4.cpp
+END
+Matrix3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/g3dlite/Matrix3.cpp
+END
+Box.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/g3dlite/Box.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/g3dlite/Makefile.am
+END
+format.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/g3dlite/format.cpp
+END
+AABox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/g3dlite/AABox.cpp
+END

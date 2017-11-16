@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MPQReader", "MPQReader.vbproj", "{022DBAA9-F13C-4176-9846-FB29AB510D80}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{022DBAA9-F13C-4176-9846-FB29AB510D80}.Debug.ActiveCfg = Debug|.NET
+		{022DBAA9-F13C-4176-9846-FB29AB510D80}.Debug.Build.0 = Debug|.NET
+		{022DBAA9-F13C-4176-9846-FB29AB510D80}.Release.ActiveCfg = Release|.NET
+		{022DBAA9-F13C-4176-9846-FB29AB510D80}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

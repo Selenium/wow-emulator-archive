@@ -1,0 +1,35 @@
+Due to popular demand: 
+Duels (high) 
+
+
+Quote:  
+At any time in your travels, you may opt to have a 1v1 duel with another player.
+You do this by selecting and walking up to him, right click on his portrait and
+choose the Duel option or by using the /duel command. A duel flag (gameobject
+dropped) will then appear between him and you. If he accepts the duel, the
+battle will commence in 5 seconds (with countdown shown on chat); he will turn
+hostile and his name will change colour to red. During this time, all combat
+rules specific to your server ruleset will apply, such as the spell limitations
+of control type spells on the PvP server.
+
+The duel does not end until one of two things occur. When one player's hp is
+reduced to 1 or less, the result of the duel is announced to the zone you're in.
+No deaths actually occur and the defeated player is simply set to 1 hp. The
+loser also kneels before you. The duelling area is a large area of roughly 50
+yards centered on the duel flag. If one player leaves the duelling zone for more
+than 10 seconds, he is considered to have forfeited the duel. Alternative, a
+player may also use /forfeit command. The results of this will also be announced
+to other players in the same zone.
+
+There is no penalty for winning or losing a duel except that both parties have
+to spend some time after the battle to heal their hp and mana. However, due to
+some game bugs, it is still possible to die in a duel such as in the case with
+DoT spells
+
+You can't duel in certain areas. 
+
+You can't duel players you can attack normally. 
+
+Skills will not increase from use while dueling or engaged in PvP. 
+
+Dueling players can cast helpful spells on their allies (but not vice versa).

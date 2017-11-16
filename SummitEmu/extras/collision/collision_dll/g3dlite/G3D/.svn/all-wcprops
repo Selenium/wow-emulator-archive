@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D
+END
+AABox.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/AABox.h
+END
+Plane.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Plane.h
+END
+Quat.inl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Quat.inl
+END
+Vector2int16.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Vector2int16.h
+END
+RegistryUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/RegistryUtil.h
+END
+Crypto.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Crypto.h
+END
+g3dmath.inl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/g3dmath.inl
+END
+platform.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/platform.h
+END
+Vector2.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Vector2.h
+END
+Vector3.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Vector3.h
+END
+debug.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/debug.h
+END
+Vector4.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Vector4.h
+END
+Sphere.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Sphere.h
+END
+Table.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Table.h
+END
+Line.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Line.h
+END
+Matrix3.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Matrix3.h
+END
+stringutils.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/stringutils.h
+END
+Box.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Box.h
+END
+CollisionDetection.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/CollisionDetection.h
+END
+Ray.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Ray.h
+END
+GCamera.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/GCamera.h
+END
+CoordinateFrame.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/CoordinateFrame.h
+END
+Triangle.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Triangle.h
+END
+Vector3int16.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Vector3int16.h
+END
+Quat.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Quat.h
+END
+Array.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Array.h
+END
+Vector2.inl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Vector2.inl
+END
+Vector3.inl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Vector3.inl
+END
+Vector4.inl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/Vector4.inl
+END
+System.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/System.h
+END
+g3dmath.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/g3dmath.h
+END
+format.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/collision_dll/g3dlite/G3D/format.h
+END

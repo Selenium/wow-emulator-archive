@@ -1,0 +1,194 @@
+using System;
+using WoWDaemon.Common;
+using WoWDaemon.Common.Attributes;
+using WoWDaemon.Database.DataTables;
+using WoWDaemon.Database;
+using WoWDaemon.World;
+using WorldScripts.Living;
+
+namespace WorldScripts.Combat
+{
+	/// <summary>
+	/// Summary description for Combat.
+	/// </summary>
+	[WorldPacketHandler()]
+	public class Combat
+	{
+		[WorldPacketDelegate(CMSG.ATTACKSWING)]
+		static void OnAttackSwing(WorldClient client, CMSG msgID, BinReader data)
+		{
+			ulong CombatTarget=data.ReadUInt64();
+			WorldClient tmpClient=WorldServer.GetClientByCharacterID((uint)CombatTarget);
+			if (tmpClient==null)
+			{
+				UnitBase targetMonster=(UnitBase)ObjectManager.GetWorldObject(OBJECTTYPE.UNIT, CombatTarget);
+				if (targetMonster==null)
+				{
+					Chat.System(client, "Invalid Target");
+					return;
+				}
+				else
+				{
+					targetMonster.StartCombat(client.Player.GUID);
+					client.Player.StartCombat(CombatTarget);//targetMonster);
+				}
+			}
+			else
+			{
+				if (tmpClient.Player.PvP)
+				{
+					Chat.System(tmpClient, client.Player.Name+" has attacked you!");
+/*					client.Player.Target=CombatTarget;
+					client.Player.Attacking=true;
+					client.Player.UpdateData();
+					if (!client.Player.InRound)				
+*/				}
+				else
+				{
+					Chat.System(client, tmpClient.Player.Name+" declines your offer to duel.");
+				}
+			}
+
+			return;
+		}
+
+		[WorldPacketDelegate(CMSG.ATTACKSTOP)]
+		static void OnAttackStop(WorldClient client, CMSG msgID, BinReader data)
+		{
+			uint newData=0;
+			try
+			{
+				newData = data.ReadUInt32();
+			}
+			catch(Exception){}
+
+			Chat.System(client, "Data:"+newData);
+			client.Player.Attacking=false;
+			CombatEnd((LivingObject)client.Player, client.Player.Target);
+
+		}
+		
+		public static void CombatStart(LivingObject Attacker)
+		{
+			ServerPacket pkg4 = new ServerPacket(SMSG.ATTACKSTART);
+			pkg4.Write(Attacker.GUID);
+			pkg4.Write(Attacker.Target);
+			pkg4.Finish();
+			Attacker.MapTile.Map.Send(pkg4, Attacker.Position, 25.0f);
+		}
+
+		public static void CombatEnd(LivingObject Attacker, ulong TargetID)
+		{
+			ServerPacket pkg2 = new ServerPacket(SMSG.ATTACKSTOP);
+			pkg2.Write(Attacker.GUID);
+			pkg2.Write(TargetID);
+			pkg2.Finish();
+			Attacker.MapTile.Map.Send(pkg2, Attacker.Position, 25.0f);
+
+			Attacker.Attacking = false;
+		//			Chat.System(client, "End of Round" + "   " + client.Player.GUID);
+			
+		return;
+	}
+}	
+	/* public class CombatEvent : WorldEvent
+	{
+		UInt64 attacker;
+		UInt64 target;
+		WorldClient client;
+		public CombatEvent(UInt64 attacker, UInt64 target, WorldClient client) : base(TimeSpan.FromMilliseconds(1))
+		{
+			this.attacker = attacker;
+			this.target = target;
+			this.client = client;
+		}
+		public override void FireEvent()
+		{
+			LivingObject AttackerObject = (LivingObject)ObjectManager.GetWorldObjectByGUID(attacker);
+			LivingObject TargetObject = (LivingObject)ObjectManager.GetWorldObjectByGUID(target);
+
+			if(!TargetObject.Dead && AttackerObject.Attacking && !AttackerObject.Dead)
+			{
+				Random random =new Random();
+				int Damage = 0;
+				int PlayerMaxDmg = 50;
+				//int PlayerMinDmg = ((int)client.Player.MinDamage);
+				//int PlayerMaxDmg = ((int)client.Player.MaxDamage);
+				int MobMinDmg = ((int)AttackerObject.MinDamage);
+				int MobMaxDmg = ((int)AttackerObject.MaxDamage);
+				
+				
+				if(AttackerObject is PlayerObject)Damage = random.Next(PlayerMaxDmg);
+				else Damage = random.Next(MobMinDmg,MobMaxDmg);;
+
+
+				TargetObject.Health-=Damage;
+
+				if (AttackerObject is PlayerObject && TargetObject.Health<1)
+				{	
+					AttackerObject.Attacking = false;
+					TargetObject.Dead = true;
+					TargetObject.Health=0;
+					TargetObject.StandState=UNITSTANDSTATE.DEAD;
+					if(!(TargetObject is PlayerObject))
+					{
+				    	EventManager.AddEvent(new CorpseDespawnEvent(TargetObject));
+						Chat.System(client, "Sent this to event manager for Despawn!!");
+					}
+					client.Player.Target=0;
+					client.Player.Exp+=(200*TargetObject.Level);
+					if (client.Player.Exp >= client.Player.NextLevelExp)
+					{
+						client.Player.Level++;
+						client.Player.NextLevelExp = (client.Player.Level * 1000);
+						client.Player.Exp = 0;
+						client.Player.Health = AttackerObject.MaxHealth +=20*AttackerObject.Level;
+						client.Player.Power = AttackerObject.MaxPower +=20*AttackerObject.Level;
+					}
+				}
+				else if (TargetObject.Health<1)
+				{	
+					AttackerObject.Attacking = false;
+					TargetObject.Dead = true;
+					TargetObject.Health=0;
+					TargetObject.StandState=UNITSTANDSTATE.DEAD;
+				}
+
+
+				if(TargetObject.Health < 0 && (!(TargetObject is PlayerObject))) 
+				{
+				    //mob.Roaming = false;
+
+				}
+
+
+				ServerPacket pkg2 = new ServerPacket(SMSG.ATTACKERSTATEUPDATE);
+				pkg2.Write((uint)2); // I knew this was a int :) - AnGrA
+
+				pkg2.Write(attacker);
+				pkg2.Write(target);
+				pkg2.Write((int)Damage);
+				pkg2.Write((byte)1);
+				pkg2.Write((uint)3);
+				pkg2.Write((float)Damage);
+				pkg2.Write((int)Damage);
+				pkg2.Write((int)0);
+				pkg2.Write((uint)1); //VICTIMSTATE.WOUND);
+				pkg2.Write((uint)0);
+				pkg2.Write((uint)0);
+				pkg2.Write((uint)0);
+				pkg2.Write((int)0);
+				pkg2.Finish();
+				client.Player.MapTile.Map.Send(pkg2, client.Player.Position, 25.0f);
+				AttackerObject.UpdateData();	
+				TargetObject.UpdateData();
+			}
+			
+			if(!TargetObject.Dead && AttackerObject.Attacking && !AttackerObject.Dead)
+			{
+				eventTime = DateTime.Now.Add(TimeSpan.FromSeconds(3));
+				EventManager.AddEvent(this);
+			}
+		}
+	} */
+}

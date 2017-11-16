@@ -1,0 +1,41 @@
+<Project name="LoginScripts" standardNamespace="NewProject" description="" newfilesearch="None" enableviewstate="True" version="1.1" projecttype="C#">
+  <Contents>
+    <File name=".\ChatCommands\Info.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ChatCommands\Spawn.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ChatCommands\Test.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ClientPackets\Login\AuthSession.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ClientPackets\Login\CharCreate.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ClientPackets\Login\CharDelete.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ClientPackets\Login\CharEnum.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ClientPackets\Login\Ping.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ClientPackets\Login\PlayerLogin.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+  </Contents>
+  <References>
+    <Reference type="Project" refto="Common" localcopy="True" />
+    <Reference type="Project" refto="Database" localcopy="True" />
+    <Reference type="Project" refto="LoginServer" localcopy="True" />
+  </References>
+  <DeploymentInformation target="" script="" strategy="File" />
+  <Configuration runwithwarnings="False" name="Debug">
+    <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+    <Execution commandlineparameters="" consolepause="True" />
+    <Output directory=".\bin\Debug\" assembly="LoginScripts" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+  </Configuration>
+  <Configurations active="Debug">
+    <Configuration runwithwarnings="False" name="Debug">
+      <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Debug\" assembly="LoginScripts" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+    <Configuration runwithwarnings="False" name="Release">
+      <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="" warninglevel="4" nowarn="" includedebuginformation="False" optimize="True" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Release\" assembly="LoginScripts" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+    <Configuration runwithwarnings="False" name="MonoBuild">
+      <CodeGeneration runtime="MsNet" compiler="Mcs" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Debug\" assembly="LoginScripts" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+  </Configurations>
+</Project>

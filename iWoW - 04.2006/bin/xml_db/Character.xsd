@@ -1,0 +1,81 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="Character" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Character" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Character">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Character_ID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" />
+              <xs:element name="Level" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Race" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Class" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Gender" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Skin" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Face" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="HairStyle" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="HairColor" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="FacialHairStyle" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="WorldMapID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Zone" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Continent" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Position.X" type="xs:float" minOccurs="0" />
+              <xs:element name="Position.Y" type="xs:float" minOccurs="0" />
+              <xs:element name="Position.Z" type="xs:float" minOccurs="0" />
+              <xs:element name="Facing" type="xs:float" minOccurs="0" />
+              <xs:element name="RestedState" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="AccountID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="CreationDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Scale" type="xs:float" minOccurs="0" />
+              <xs:element name="Health" type="xs:int" minOccurs="0" />
+              <xs:element name="MaxHealth" type="xs:int" minOccurs="0" />
+              <xs:element name="Power" type="xs:int" minOccurs="0" />
+              <xs:element name="MaxPower" type="xs:int" minOccurs="0" />
+              <xs:element name="AttackPower" type="xs:int" minOccurs="0" />
+              <xs:element name="AttackPowerModifier" type="xs:int" minOccurs="0" />
+              <xs:element name="PowerType" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Strength" type="xs:int" minOccurs="0" />
+              <xs:element name="BaseStrength" type="xs:int" minOccurs="0" />
+              <xs:element name="BaseAgility" type="xs:int" minOccurs="0" />
+              <xs:element name="Agility" type="xs:int" minOccurs="0" />
+              <xs:element name="BaseStamina" type="xs:int" minOccurs="0" />
+              <xs:element name="Stamina" type="xs:int" minOccurs="0" />
+              <xs:element name="BaseIntellect" type="xs:int" minOccurs="0" />
+              <xs:element name="Intellect" type="xs:int" minOccurs="0" />
+              <xs:element name="BaseSpirit" type="xs:int" minOccurs="0" />
+              <xs:element name="Spirit" type="xs:int" minOccurs="0" />
+              <xs:element name="Resist_Physical" type="xs:int" minOccurs="0" />
+              <xs:element name="Resist_Holy" type="xs:int" minOccurs="0" />
+              <xs:element name="Resist_Fire" type="xs:int" minOccurs="0" />
+              <xs:element name="Resist_Nature" type="xs:int" minOccurs="0" />
+              <xs:element name="Resist_Frost" type="xs:int" minOccurs="0" />
+              <xs:element name="Resist_Shadow" type="xs:int" minOccurs="0" />
+              <xs:element name="Faction" type="xs:int" minOccurs="0" />
+              <xs:element name="SkillPoints" type="xs:int" minOccurs="0" />
+              <xs:element name="TalentPoints" type="xs:int" minOccurs="0" />
+              <xs:element name="GuildID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="GuildRank" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="GuildName" type="xs:string" minOccurs="0" />
+              <xs:element name="GuildTimeStamp" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Money" type="xs:int" minOccurs="0" />
+              <xs:element name="DisplayID" type="xs:int" minOccurs="0" />
+              <xs:element name="Exp" type="xs:int" minOccurs="0" />
+              <xs:element name="UIConfig0" type="xs:string" minOccurs="0" />
+              <xs:element name="UIConfig1" type="xs:string" minOccurs="0" />
+              <xs:element name="UIConfig2" type="xs:string" minOccurs="0" />
+              <xs:element name="UIConfig3" type="xs:string" minOccurs="0" />
+              <xs:element name="UIConfig4" type="xs:string" minOccurs="0" />
+              <xs:element name="UIConfig6" type="xs:string" minOccurs="0" />
+              <xs:element name="UIConfig7" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//Character" />
+      <xs:field xpath="Name" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

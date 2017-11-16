@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip
+END
+zip.def
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip/zip.def
+END
+minizip.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip/minizip.c
+END
+unzip.def
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip/unzip.def
+END
+zip.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip/zip.c
+END
+zlibvc.dsw
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip/zlibvc.dsw
+END
+unzip.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip/unzip.c
+END
+zlibvc.def
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip/zlibvc.def
+END
+zip.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip/zip.h
+END
+miniunz.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip/miniunz.c
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip/readme.txt
+END
+unzip.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip/unzip.h
+END
+ChangeLogUnzip
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip/ChangeLogUnzip
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip/Makefile
+END
+zlibvc.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/stormlib/zlib/contrib/minizip/zlibvc.dsp
+END

@@ -1,0 +1,6 @@
+bin\Debug\WoWDaemon.Common.dll
+bin\Debug\WoWDaemon.Common.pdb
+bin\Debug\ICSharpCode.SharpZipLib.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\WoWDaemon.Common.dll
+obj\Debug\WoWDaemon.Common.pdb

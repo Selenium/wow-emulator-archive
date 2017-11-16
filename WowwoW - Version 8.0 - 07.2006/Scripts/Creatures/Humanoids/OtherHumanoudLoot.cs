@@ -1,0 +1,957 @@
+using System;
+using Server.Items;
+using System.Collections;
+using Server;
+
+
+
+namespace Server
+{
+	public class OtherHumanoudDrops
+	{
+		public static Loot[] AuntieBerniceStonefield = new Loot[] {
+																  };
+		
+		public static Loot[] PrettyBoyDuncan = new Loot[] {new Loot( typeof( CatelynsBlade), 57.1429f ) 
+															  ,new Loot( typeof( SilkCloth), 42.8571f ) 
+															  ,new Loot( typeof( SweetNectar), 14.2857f ) 
+
+														  };		
+
+		public static Loot[] SeaWolfMacKinley = new Loot[] {
+														   };		
+		
+		public static Loot[] ShakyPhillipe = new Loot[] {
+														};		
+		
+		public static Loot[] StinkyIgnatz = new Loot[] {
+													   };		
+		
+		public static Loot[] SwampEyeJarl = new Loot[] {
+													   };		
+		
+		public static Loot[] Abercrombie = new Loot[] {
+													  };		
+
+		public static Loot[] AchelliostheBanished = new Loot[] {new Loot( typeof( ArchersBracers), 0.696864f ) 
+																   ,new Loot( typeof( ArchersCloak), 1.0453f ) 
+																   ,new Loot( typeof( BandedArmor), 1.0453f ) 
+																   ,new Loot( typeof( BandedBoots), 1.39373f ) 
+																   ,new Loot( typeof( BandedBracers), 2.43902f ) 
+																   ,new Loot( typeof( BandedGauntlets), 1.74216f ) 
+																   ,new Loot( typeof( BandedGirdle), 2.09059f ) 
+																   ,new Loot( typeof( BandedHelm), 2.09059f ) 
+																   ,new Loot( typeof( BandedLeggings), 0.348432f ) 
+																   ,new Loot( typeof( BandedPauldrons), 2.43902f ) 
+																   ,new Loot( typeof( ConjurersCloak), 0.348432f ) 
+																   ,new Loot( typeof( DervishLeggings), 2.78746f ) 
+																   ,new Loot( typeof( DervishTunic), 1.74216f ) 
+																   ,new Loot( typeof( DokebiBuckler), 0.348432f ) 
+																   ,new Loot( typeof( DurableBelt), 2.43902f ) 
+																   ,new Loot( typeof( DurableBoots), 6.96864f ) 
+																   ,new Loot( typeof( DurableBracers), 3.13589f ) 
+																   ,new Loot( typeof( DurableGloves), 2.09059f ) 
+																   ,new Loot( typeof( DurableHat), 2.43902f ) 
+																   ,new Loot( typeof( DurablePants), 0.696864f ) 
+																   ,new Loot( typeof( DurableShoulders), 0.696864f ) 
+																   ,new Loot( typeof( DurableTunic), 1.39373f ) 
+																   ,new Loot( typeof( EldersBoots), 0.348432f ) 
+																   ,new Loot( typeof( EldersBracers), 2.43902f ) 
+																   ,new Loot( typeof( EldersCloak), 1.39373f ) 
+																   ,new Loot( typeof( EldersGloves), 0.696864f ) 
+																   ,new Loot( typeof( EldersHat), 0.348432f ) 
+																   ,new Loot( typeof( EldersMantle), 0.348432f ) 
+																   ,new Loot( typeof( EldersSash), 2.43902f ) 
+																   ,new Loot( typeof( InfiltratorBoots), 0.696864f ) 
+																   ,new Loot( typeof( InfiltratorBracers), 3.48432f ) 
+																   ,new Loot( typeof( InfiltratorCap), 1.0453f ) 
+																   ,new Loot( typeof( InfiltratorCloak), 4.18118f ) 
+																   ,new Loot( typeof( InfiltratorCord), 0.696864f ) 
+																   ,new Loot( typeof( InfiltratorGloves), 1.0453f ) 
+																   ,new Loot( typeof( InfiltratorPants), 0.348432f ) 
+																   ,new Loot( typeof( InfiltratorShoulders), 0.696864f ) 
+																   ,new Loot( typeof( Jade), 0.696864f ) 
+																   ,new Loot( typeof( KnightsCloak), 0.696864f ) 
+																   ,new Loot( typeof( PhalanxBracers), 3.13589f ) 
+																   ,new Loot( typeof( PhalanxCloak), 1.39373f ) 
+																   ,new Loot( typeof( PhalanxGauntlets), 0.348432f ) 
+																   ,new Loot( typeof( PhalanxGirdle), 1.0453f ) 
+																   ,new Loot( typeof( PhalanxHeadguard), 0.348432f ) 
+																   ,new Loot( typeof( PhalanxLeggings), 1.0453f ) 
+																   ,new Loot( typeof( PhalanxSpaulders), 1.0453f ) 
+																   ,new Loot( typeof( RaincallerMitts), 0.348432f ) 
+																   ,new Loot( typeof( RenegadeBracers), 0.348432f ) 
+																   ,new Loot( typeof( RenegadeCloak), 0.696864f ) 
+																   ,new Loot( typeof( SagesCirclet), 2.43902f ) 
+																   ,new Loot( typeof( SagesCloth), 1.39373f ) 
+																   ,new Loot( typeof( SagesMantle), 2.43902f ) 
+																   ,new Loot( typeof( SagesPants), 1.0453f ) 
+																   ,new Loot( typeof( SagesRobe), 0.696864f ) 
+																   ,new Loot( typeof( ScaledLeatherBelt), 0.696864f ) 
+																   ,new Loot( typeof( ScaledLeatherBoots), 5.57491f ) 
+																   ,new Loot( typeof( ScaledLeatherGloves), 3.48432f ) 
+																   ,new Loot( typeof( ScaledLeatherHeadband), 0.348432f ) 
+																   ,new Loot( typeof( ScaledLeatherLeggings), 1.0453f ) 
+																   ,new Loot( typeof( ScaledLeatherShoulders), 1.39373f ) 
+																   ,new Loot( typeof( CopperOre), 0.696864f ) 
+																   ,new Loot( typeof( GreaterHealingPotion), 1.74216f ) 
+																   ,new Loot( typeof( IronOre), 1.0453f ) 
+																   ,new Loot( typeof( LesserManaPotion), 2.09059f ) 
+																   ,new Loot( typeof( MageweaveCloth), 0.696864f ) 
+																   ,new Loot( typeof( ScrollOfIntellectII), 0.348432f ) 
+																   ,new Loot( typeof( ScrollOfStaminaII), 1.0453f ) 
+																   ,new Loot( typeof( SilkCloth), 24.7387f ) 
+																   ,new Loot( typeof( SoulDust), 0.348432f ) 
+																   ,new Loot( typeof( SweetNectar), 1.74216f ) 
+																   ,new Loot( typeof( WildHogShank), 4.52962f ) 
+																   ,new Loot( typeof( WoolCloth), 3.13589f ) 
+																   ,new Loot( typeof( DoubleMailBracers), 0.348432f ) 
+																   ,new Loot( typeof( HardenedLeatherPants), 0.348432f ) 
+																   ,new Loot( typeof( InterlacedPants), 0.348432f ) 
+																   ,new Loot( typeof( InterlacedVest), 0.696864f ) 
+																   ,new Loot( typeof( LongBarreledMusket), 0.348432f ) 
+																   ,new Loot( typeof( TautCompoundBow), 0.348432f ) 
+
+															   };		
+
+		public static Loot[] AcolyteDellis = new Loot[] {
+														};		
+
+		public static Loot[] AcolyteFenrick = new Loot[] {
+														 };		
+
+		public static Loot[] AcolytePorena = new Loot[] {
+														};		
+
+		public static Loot[] AcolyteWytula = new Loot[] {
+														};		
+
+		public static Loot[] AdamLind = new Loot[] {new Loot( typeof( WoolCloth), 50f ) 
+
+												   };		
+
+		public static Loot[] AddledLeper = new Loot[] {new Loot( typeof( BatteringHammer), 0.0240125f ) 
+														  ,new Loot( typeof( BattleKnife), 0.0280146f ) 
+														  ,new Loot( typeof( Battlesmasher), 0.0490255f ) 
+														  ,new Loot( typeof( BrightBelt), 0.0440229f ) 
+														  ,new Loot( typeof( BrightGloves), 0.0370193f ) 
+														  ,new Loot( typeof( DecapitatingSword), 0.0600312f ) 
+														  ,new Loot( typeof( DireWand), 0.027014f ) 
+														  ,new Loot( typeof( ForestLeatherBoots), 0.0390203f ) 
+														  ,new Loot( typeof( ForestLeatherBracers), 0.0380198f ) 
+														  ,new Loot( typeof( ForestLeatherGloves), 0.0380198f ) 
+														  ,new Loot( typeof( ForestLeatherMantle), 0.0380198f ) 
+														  ,new Loot( typeof( FortifiedBelt), 0.0520271f ) 
+														  ,new Loot( typeof( FortifiedBracers), 0.0340177f ) 
+														  ,new Loot( typeof( FortifiedChain), 0.027014f ) 
+														  ,new Loot( typeof( FortifiedGauntlets), 0.0260135f ) 
+														  ,new Loot( typeof( FortifiedLeggings), 0.0390203f ) 
+														  ,new Loot( typeof( HeftyBattlehammer), 0.0490255f ) 
+														  ,new Loot( typeof( IvyclothBoots), 0.0300156f ) 
+														  ,new Loot( typeof( IvyclothBracelets), 0.025013f ) 
+														  ,new Loot( typeof( IvyclothCloak), 0.0290151f ) 
+														  ,new Loot( typeof( JaggedStar), 0.0430224f ) 
+														  ,new Loot( typeof( LambentScaleCloak), 0.0310161f ) 
+														  ,new Loot( typeof( LambentScaleGirdle), 0.0200104f ) 
+														  ,new Loot( typeof( MassiveBattleAxe), 0.0380198f ) 
+														  ,new Loot( typeof( MossAgate), 0.0850442f ) 
+														  ,new Loot( typeof( OrnateBronzeLockbox), 0.0260135f ) 
+														  ,new Loot( typeof( PolishedZweihander), 0.0320166f ) 
+														  ,new Loot( typeof( PrecisionBow), 0.0310161f ) 
+														  ,new Loot( typeof( RidgeCleaver), 0.0450234f ) 
+														  ,new Loot( typeof( ScoutingTrousers), 0.0410213f ) 
+														  ,new Loot( typeof( ScoutingTunic), 0.0260135f ) 
+														  ,new Loot( typeof( ShimmeringRobe), 0.025013f ) 
+														  ,new Loot( typeof( ShimmeringTrousers), 0.0310161f ) 
+														  ,new Loot( typeof( SuperiorBelt), 0.025013f ) 
+														  ,new Loot( typeof( SuperiorCloak), 0.027014f ) 
+														  ,new Loot( typeof( HealingPotion), 1.19362f ) 
+														  ,new Loot( typeof( LesserManaPotion), 0.604314f ) 
+														  ,new Loot( typeof( MelonJuice), 2.15412f ) 
+														  ,new Loot( typeof( MoistCornbread), 4.32825f ) 
+														  ,new Loot( typeof( ScrollOfIntellectII), 0.165086f ) 
+														  ,new Loot( typeof( ScrollOfProtectionII), 0.234122f ) 
+														  ,new Loot( typeof( ScrollOfSpiritII), 0.201105f ) 
+														  ,new Loot( typeof( ScrollOfStaminaII), 0.124065f ) 
+														  ,new Loot( typeof( ShimmeringAmice), 0.0310161f ) 
+														  ,new Loot( typeof( SilkCloth), 20.5797f ) 
+														  ,new Loot( typeof( WhitePunchCard), 8.21227f ) 
+														  ,new Loot( typeof( WoolCloth), 8.41237f ) 
+														  ,new Loot( typeof( BludgeoningCudgel), 0.205107f ) 
+														  ,new Loot( typeof( BoxShield), 0.144075f ) 
+														  ,new Loot( typeof( BrocadeBelt), 0.124065f ) 
+														  ,new Loot( typeof( BrocadeBracers), 0.106055f ) 
+														  ,new Loot( typeof( BrocadeCloak), 0.129067f ) 
+														  ,new Loot( typeof( BrocadeGloves), 0.139072f ) 
+														  ,new Loot( typeof( BrocadePants), 0.144075f ) 
+														  ,new Loot( typeof( BrocadeShoes), 0.137071f ) 
+														  ,new Loot( typeof( BrocadeShoulderpads), 0.15308f ) 
+														  ,new Loot( typeof( BrocadeVest), 0.131068f ) 
+														  ,new Loot( typeof( CedarWalkingStick), 0.224117f ) 
+														  ,new Loot( typeof( GougingPick), 0.201105f ) 
+														  ,new Loot( typeof( HuntingKnife), 0.198103f ) 
+														  ,new Loot( typeof( LinkedChainBelt), 0.0890463f ) 
+														  ,new Loot( typeof( LinkedChainBoots), 0.102053f ) 
+														  ,new Loot( typeof( LinkedChainBracers), 0.101053f ) 
+														  ,new Loot( typeof( LinkedChainCloak), 0.124065f ) 
+														  ,new Loot( typeof( LinkedChainGloves), 0.0930484f ) 
+														  ,new Loot( typeof( LinkedChainPants), 0.102053f ) 
+														  ,new Loot( typeof( LinkedChainShoulderpads), 0.100052f ) 
+														  ,new Loot( typeof( LinkedChainVest), 0.098051f ) 
+														  ,new Loot( typeof( MishandledRecurveBow), 0.189098f ) 
+														  ,new Loot( typeof( RawhideBelt), 0.100052f ) 
+														  ,new Loot( typeof( RawhideBoots), 0.143074f ) 
+														  ,new Loot( typeof( RawhideBracers), 0.130068f ) 
+														  ,new Loot( typeof( RawhideCloak), 0.140073f ) 
+														  ,new Loot( typeof( RawhideGloves), 0.148077f ) 
+														  ,new Loot( typeof( RawhidePants), 0.13407f ) 
+														  ,new Loot( typeof( RawhideShoulderpads), 0.114059f ) 
+														  ,new Loot( typeof( RawhideTunic), 0.123064f ) 
+														  ,new Loot( typeof( ShinyWarAxe), 0.189098f ) 
+														  ,new Loot( typeof( ShoddyBlunderbuss), 0.188098f ) 
+														  ,new Loot( typeof( SmallRoundShield), 0.13507f ) 
+														  ,new Loot( typeof( StandardClaymore), 0.215112f ) 
+														  ,new Loot( typeof( WarpedBlade), 0.194101f ) 
+														  ,new Loot( typeof( WoodenMaul), 0.189098f ) 
+
+													  };		
+
+		public static Loot[] Adon = new Loot[] {
+											   };		
+
+		public static Loot[] AdvisorBelgrum = new Loot[] {
+														 };		
+
+		public static Loot[] AffraySpectator = new Loot[] {
+														  };		
+
+		public static Loot[] Agal = new Loot[] {new Loot( typeof( CarvingKnife), 0.0514668f ) 
+												   ,new Loot( typeof( HuntingBow), 0.0514668f ) 
+												   ,new Loot( typeof( Malachite), 0.720535f ) 
+												   ,new Loot( typeof( PatternRedLinenRobe), 0.1544f ) 
+												   ,new Loot( typeof( PlansCopperChainVest), 0.102934f ) 
+												   ,new Loot( typeof( SeveringAxe), 0.0514668f ) 
+												   ,new Loot( typeof( Tigerseye), 0.102934f ) 
+												   ,new Loot( typeof( Beatstick), 0.1544f ) 
+												   ,new Loot( typeof( BillyClub), 0.1544f ) 
+												   ,new Loot( typeof( FlangedMace), 0.1544f ) 
+												   ,new Loot( typeof( LinenCloth), 28.8214f ) 
+												   ,new Loot( typeof( LongBoStaff), 0.1544f ) 
+												   ,new Loot( typeof( LumberjackAxe), 0.205867f ) 
+												   ,new Loot( typeof( MinorHealingPotion), 1.80134f ) 
+												   ,new Loot( typeof( PelletRifle), 0.360268f ) 
+												   ,new Loot( typeof( RefreshingSpringWater), 2.67627f ) 
+												   ,new Loot( typeof( ScrollOfProtection), 0.823469f ) 
+												   ,new Loot( typeof( ScrollOfSpirit), 0.977869f ) 
+												   ,new Loot( typeof( ShinyRedApple), 7.72002f ) 
+												   ,new Loot( typeof( SmallBlackPouch), 0.102934f ) 
+												   ,new Loot( typeof( SmallRedPouch), 0.0514668f ) 
+												   ,new Loot( typeof( WoodChopper), 0.257334f ) 
+												   ,new Loot( typeof( BeatenBattleAxe), 0.720535f ) 
+												   ,new Loot( typeof( CarpentersMallet), 0.308801f ) 
+												   ,new Loot( typeof( CrackedBuckler), 0.566135f ) 
+												   ,new Loot( typeof( CrackedShortbow), 0.411734f ) 
+												   ,new Loot( typeof( CrackedSledge), 1.28667f ) 
+												   ,new Loot( typeof( CrudeBastardSword), 0.205867f ) 
+												   ,new Loot( typeof( FeebleSword), 0.566135f ) 
+												   ,new Loot( typeof( LooseChainBelt), 0.257334f ) 
+												   ,new Loot( typeof( LooseChainBoots), 0.411734f ) 
+												   ,new Loot( typeof( LooseChainBracers), 0.257334f ) 
+												   ,new Loot( typeof( LooseChainCloak), 0.514668f ) 
+												   ,new Loot( typeof( LooseChainGloves), 0.360268f ) 
+												   ,new Loot( typeof( LooseChainPants), 0.257334f ) 
+												   ,new Loot( typeof( LooseChainVest), 0.308801f ) 
+												   ,new Loot( typeof( PatchworkArmor), 0.566135f ) 
+												   ,new Loot( typeof( PatchworkBelt), 0.514668f ) 
+												   ,new Loot( typeof( PatchworkBracers), 0.257334f ) 
+												   ,new Loot( typeof( PatchworkCloak), 0.463201f ) 
+												   ,new Loot( typeof( PatchworkGloves), 0.360268f ) 
+												   ,new Loot( typeof( PatchworkPants), 0.257334f ) 
+												   ,new Loot( typeof( PatchworkShoes), 0.514668f ) 
+												   ,new Loot( typeof( RustCoveredBlunderbuss), 0.463201f ) 
+												   ,new Loot( typeof( RustyHatchet), 0.720535f ) 
+												   ,new Loot( typeof( SharpenedLetterOpener), 0.463201f ) 
+												   ,new Loot( typeof( WitheredStaff), 0.463201f ) 
+												   ,new Loot( typeof( WornHideCloak), 0.360268f ) 
+												   ,new Loot( typeof( WornLargeShield), 0.360268f ) 
+												   ,new Loot( typeof( WornLeatherBelt), 0.720535f ) 
+												   ,new Loot( typeof( WornLeatherBoots), 0.566135f ) 
+												   ,new Loot( typeof( WornLeatherBracers), 0.514668f ) 
+												   ,new Loot( typeof( WornLeatherGloves), 0.257334f ) 
+												   ,new Loot( typeof( WornLeatherPants), 0.360268f ) 
+												   ,new Loot( typeof( WornLeatherVest), 0.514668f ) 
+
+											   };		
+
+		public static Loot[] AgentKearnen = new Loot[] {
+													   };		
+
+		public static Loot[] AggemThorncurse = new Loot[] {new Loot( typeof( TrollsBaneLeggings), 0.0773395f ) 
+															  ,new Loot( typeof( MageEyeBlunderbuss), 0.0773395f ) 
+															  ,new Loot( typeof( BandedArmor), 0.232019f ) 
+															  ,new Loot( typeof( BandedBoots), 0.0773395f ) 
+															  ,new Loot( typeof( BandedBracers), 1.23743f ) 
+															  ,new Loot( typeof( BandedCloak), 0.386698f ) 
+															  ,new Loot( typeof( BandedGauntlets), 0.464037f ) 
+															  ,new Loot( typeof( BandedGirdle), 0.464037f ) 
+															  ,new Loot( typeof( BandedHelm), 0.232019f ) 
+															  ,new Loot( typeof( BandedLeggings), 0.386698f ) 
+															  ,new Loot( typeof( BandedPauldrons), 0.232019f ) 
+															  ,new Loot( typeof( BasaltNecklace), 0.0773395f ) 
+															  ,new Loot( typeof( BattleforgeArmor), 0.696056f ) 
+															  ,new Loot( typeof( BattleforgeBoots), 0.773395f ) 
+															  ,new Loot( typeof( BattleforgeShield), 0.0773395f ) 
+															  ,new Loot( typeof( BrutalWarAxe), 0.0773395f ) 
+															  ,new Loot( typeof( CavalierTwoHander), 0.0773395f ) 
+															  ,new Loot( typeof( ConjurersCloak), 0.309358f ) 
+															  ,new Loot( typeof( CutthroatsCape), 0.0773395f ) 
+															  ,new Loot( typeof( DervishCape), 0.0773395f ) 
+															  ,new Loot( typeof( DervishLeggings), 1.23743f ) 
+															  ,new Loot( typeof( DervishSpaulders), 0.928074f ) 
+															  ,new Loot( typeof( DervishTunic), 1.70147f ) 
+															  ,new Loot( typeof( DokebiBuckler), 0.0773395f ) 
+															  ,new Loot( typeof( DokebiChestguard), 0.154679f ) 
+															  ,new Loot( typeof( DurableBelt), 2.01083f ) 
+															  ,new Loot( typeof( DurableBoots), 0.0773395f ) 
+															  ,new Loot( typeof( DurableBracers), 1.70147f ) 
+															  ,new Loot( typeof( DurableCape), 0.541377f ) 
+															  ,new Loot( typeof( DurableGloves), 0.154679f ) 
+															  ,new Loot( typeof( DurableHat), 0.696056f ) 
+															  ,new Loot( typeof( DurablePants), 0.386698f ) 
+															  ,new Loot( typeof( DurableShoulders), 0.154679f ) 
+															  ,new Loot( typeof( EldersBoots), 0.0773395f ) 
+															  ,new Loot( typeof( EldersBracers), 0.232019f ) 
+															  ,new Loot( typeof( EldersCloak), 0.928074f ) 
+															  ,new Loot( typeof( EldersGloves), 0.154679f ) 
+															  ,new Loot( typeof( EldersMantle), 0.0773395f ) 
+															  ,new Loot( typeof( EldersSash), 0.154679f ) 
+															  ,new Loot( typeof( EmblazonedBracers), 0.0773395f ) 
+															  ,new Loot( typeof( EmblazonedGloves), 0.0773395f ) 
+															  ,new Loot( typeof( Firestarter), 0.154679f ) 
+															  ,new Loot( typeof( GhostwalkerCloak), 0.0773395f ) 
+															  ,new Loot( typeof( GlimmeringFlamberge), 0.0773395f ) 
+															  ,new Loot( typeof( HeadhuntersBands), 0.154679f ) 
+															  ,new Loot( typeof( HeavyBronzeLockbox), 0.154679f ) 
+															  ,new Loot( typeof( HonedStiletto), 0.232019f ) 
+															  ,new Loot( typeof( InfiltratorBracers), 0.232019f ) 
+															  ,new Loot( typeof( InfiltratorCap), 0.386698f ) 
+															  ,new Loot( typeof( InfiltratorCloak), 0.309358f ) 
+															  ,new Loot( typeof( InfiltratorCord), 0.154679f ) 
+															  ,new Loot( typeof( InfiltratorGloves), 0.154679f ) 
+															  ,new Loot( typeof( IvyclothRobe), 0.696056f ) 
+															  ,new Loot( typeof( IvyclothTunic), 0.618716f ) 
+															  ,new Loot( typeof( Jade), 0.386698f ) 
+															  ,new Loot( typeof( LeadenMace), 0.0773395f ) 
+															  ,new Loot( typeof( LesserMoonstone), 0.850735f ) 
+															  ,new Loot( typeof( LongBattleBow), 0.0773395f ) 
+															  ,new Loot( typeof( MagicianStaff), 0.464037f ) 
+															  ,new Loot( typeof( MossAgate), 0.386698f ) 
+															  ,new Loot( typeof( PathfinderFootpads), 0.0773395f ) 
+															  ,new Loot( typeof( PathfinderGloves), 0.0773395f ) 
+															  ,new Loot( typeof( PathfinderPants), 0.0773395f ) 
+															  ,new Loot( typeof( PatternDarkLeatherShoulders), 0.0773395f ) 
+															  ,new Loot( typeof( PatternReinforcedWoolenShoulders), 0.0773395f ) 
+															  ,new Loot( typeof( PatternStylishGreenShirt), 0.0773395f ) 
+															  ,new Loot( typeof( PhalanxBracers), 0.309358f ) 
+															  ,new Loot( typeof( PhalanxCloak), 1.70147f ) 
+															  ,new Loot( typeof( PhalanxGirdle), 0.232019f ) 
+															  ,new Loot( typeof( PhalanxHeadguard), 0.0773395f ) 
+															  ,new Loot( typeof( PhalanxSpaulders), 0.309358f ) 
+															  ,new Loot( typeof( PrecisionBow), 0.0773395f ) 
+															  ,new Loot( typeof( RaincallerBoots), 0.0773395f ) 
+															  ,new Loot( typeof( RaincallerMitts), 0.232019f ) 
+															  ,new Loot( typeof( RaincallerRobes), 0.0773395f ) 
+															  ,new Loot( typeof( RaincallerScepter), 0.154679f ) 
+															  ,new Loot( typeof( RenegadeCloak), 0.0773395f ) 
+															  ,new Loot( typeof( ResilientCape), 0.232019f ) 
+															  ,new Loot( typeof( ResilientCord), 0.309358f ) 
+															  ,new Loot( typeof( ResilientHandgrips), 0.0773395f ) 
+															  ,new Loot( typeof( RobustGloves), 0.232019f ) 
+															  ,new Loot( typeof( RobustLeggings), 0.232019f ) 
+															  ,new Loot( typeof( RobustShoulders), 0.0773395f ) 
+															  ,new Loot( typeof( SagesCirclet), 0.464037f ) 
+															  ,new Loot( typeof( SagesCloth), 0.232019f ) 
+															  ,new Loot( typeof( SagesGloves), 0.696056f ) 
+															  ,new Loot( typeof( SagesMantle), 1.08275f ) 
+															  ,new Loot( typeof( SagesPants), 0.618716f ) 
+															  ,new Loot( typeof( SagesRobe), 0.309358f ) 
+															  ,new Loot( typeof( SagesSash), 0.386698f ) 
+															  ,new Loot( typeof( ScaledCloak), 0.696056f ) 
+															  ,new Loot( typeof( ScaledLeatherBelt), 1.08275f ) 
+															  ,new Loot( typeof( ScaledLeatherBoots), 0.386698f ) 
+															  ,new Loot( typeof( ScaledLeatherBracers), 1.08275f ) 
+															  ,new Loot( typeof( ScaledLeatherGloves), 0.541377f ) 
+															  ,new Loot( typeof( ScaledLeatherHeadband), 0.232019f ) 
+															  ,new Loot( typeof( ScaledLeatherShoulders), 0.232019f ) 
+															  ,new Loot( typeof( SentrysLeggings), 0.0773395f ) 
+															  ,new Loot( typeof( SentrysShoulderguards), 0.232019f ) 
+															  ,new Loot( typeof( SilverOre), 0.0773395f ) 
+															  ,new Loot( typeof( SlayersPants), 0.154679f ) 
+															  ,new Loot( typeof( SpikedChainBreastplate), 0.154679f ) 
+															  ,new Loot( typeof( SplittingHatchet), 0.232019f ) 
+															  ,new Loot( typeof( ThickScaleBelt), 0.0773395f ) 
+															  ,new Loot( typeof( ThickScaleBracelets), 0.0773395f ) 
+															  ,new Loot( typeof( ThickScaleCloak), 0.154679f ) 
+															  ,new Loot( typeof( ThickScaleSabatons), 0.0773395f ) 
+															  ,new Loot( typeof( ThistlefurBands), 0.0773395f ) 
+															  ,new Loot( typeof( ThistlefurSandals), 0.0773395f ) 
+															  ,new Loot( typeof( VikingSword), 0.232019f ) 
+															  ,new Loot( typeof( WatchersLeggings), 0.154679f ) 
+															  ,new Loot( typeof( WatchersRobes), 0.154679f ) 
+															  ,new Loot( typeof( WickedChainGauntlets), 0.232019f ) 
+															  ,new Loot( typeof( WickedChainWaistband), 0.232019f ) 
+															  ,new Loot( typeof( BoltOfWoolenCloth), 0.309358f ) 
+															  ,new Loot( typeof( Briarthorn), 0.232019f ) 
+															  ,new Loot( typeof( CoarseStone), 0.154679f ) 
+															  ,new Loot( typeof( DwarvenMild), 0.154679f ) 
+															  ,new Loot( typeof( Fadeleaf), 0.0773395f ) 
+															  ,new Loot( typeof( HealingPotion), 0.696056f ) 
+															  ,new Loot( typeof( Kingsblood), 0.0773395f ) 
+															  ,new Loot( typeof( LargeBlueSack), 0.0773395f ) 
+															  ,new Loot( typeof( LesserHealingPotion), 0.154679f ) 
+															  ,new Loot( typeof( LesserManaPotion), 0.696056f ) 
+															  ,new Loot( typeof( LightHide), 0.0773395f ) 
+															  ,new Loot( typeof( LightLeather), 0.0773395f ) 
+															  ,new Loot( typeof( Mageroyal), 0.0773395f ) 
+															  ,new Loot( typeof( MediumLeather), 0.154679f ) 
+															  ,new Loot( typeof( MelonJuice), 1.46945f ) 
+															  ,new Loot( typeof( MinorManaPotion), 0.0773395f ) 
+															  ,new Loot( typeof( MoistCornbread), 0.232019f ) 
+															  ,new Loot( typeof( MuttonChop), 0.0773395f ) 
+															  ,new Loot( typeof( ScrollOfIntellectII), 0.154679f ) 
+															  ,new Loot( typeof( ScrollOfProtectionII), 0.309358f ) 
+															  ,new Loot( typeof( ScrollOfSpiritII), 0.309358f ) 
+															  ,new Loot( typeof( ScrollOfStaminaII), 0.0773395f ) 
+															  ,new Loot( typeof( SilkCloth), 16.86f ) 
+															  ,new Loot( typeof( SnapvineWatermelon), 3.86698f ) 
+															  ,new Loot( typeof( SpongyMorel), 0.0773395f ) 
+															  ,new Loot( typeof( Thornspike), 52.4362f ) 
+															  ,new Loot( typeof( TreshalasPendant), 0.0773395f ) 
+															  ,new Loot( typeof( WoolCloth), 7.96597f ) 
+															  ,new Loot( typeof( BulkyBludgeon), 0.541377f ) 
+															  ,new Loot( typeof( CrossStitchedBelt), 0.309358f ) 
+															  ,new Loot( typeof( CrossStitchedBracers), 0.232019f ) 
+															  ,new Loot( typeof( CrossStitchedCloak), 0.232019f ) 
+															  ,new Loot( typeof( CrossStitchedGloves), 0.154679f ) 
+															  ,new Loot( typeof( CrossStitchedPants), 0.232019f ) 
+															  ,new Loot( typeof( CrossStitchedSandals), 0.0773395f ) 
+															  ,new Loot( typeof( CrossStitchedShoulderpads), 0.154679f ) 
+															  ,new Loot( typeof( CrossStitchedVest), 0.386698f ) 
+															  ,new Loot( typeof( DeftStiletto), 0.232019f ) 
+															  ,new Loot( typeof( LongBastardSword), 0.541377f ) 
+															  ,new Loot( typeof( MeatCleaver), 0.541377f ) 
+															  ,new Loot( typeof( OakenWarStaff), 0.232019f ) 
+															  ,new Loot( typeof( OiledBlunderbuss), 0.386698f ) 
+															  ,new Loot( typeof( ReinforcedChainBelt), 0.154679f ) 
+															  ,new Loot( typeof( ReinforcedChainBoots), 0.386698f ) 
+															  ,new Loot( typeof( ReinforcedChainBracers), 0.386698f ) 
+															  ,new Loot( typeof( ReinforcedChainCloak), 0.0773395f ) 
+															  ,new Loot( typeof( ReinforcedChainGloves), 0.232019f ) 
+															  ,new Loot( typeof( ReinforcedChainPants), 0.0773395f ) 
+															  ,new Loot( typeof( ReinforcedChainShoulderpads), 0.232019f ) 
+															  ,new Loot( typeof( ReinforcedChainVest), 0.232019f ) 
+															  ,new Loot( typeof( RockMaul), 0.618716f ) 
+															  ,new Loot( typeof( ShortCutlass), 0.386698f ) 
+															  ,new Loot( typeof( StiffRecurveBow), 0.232019f ) 
+															  ,new Loot( typeof( StoneWarAxe), 0.232019f ) 
+															  ,new Loot( typeof( TargeShield), 0.154679f ) 
+															  ,new Loot( typeof( ToughCloak), 0.386698f ) 
+															  ,new Loot( typeof( ToughLeatherArmor), 0.232019f ) 
+															  ,new Loot( typeof( ToughLeatherBelt), 0.232019f ) 
+															  ,new Loot( typeof( ToughLeatherBoots), 0.154679f ) 
+															  ,new Loot( typeof( ToughLeatherBracers), 0.386698f ) 
+															  ,new Loot( typeof( ToughLeatherGloves), 0.154679f ) 
+															  ,new Loot( typeof( ToughLeatherPants), 0.464037f ) 
+															  ,new Loot( typeof( ToughLeatherShoulderpads), 0.309358f ) 
+															  ,new Loot( typeof( TowerShield), 0.0773395f ) 
+
+														  };		
+
+		public static Loot[] AgnarBeastamer = new Loot[] {
+														 };		
+
+		public static Loot[] AjeckRouack = new Loot[] {
+													  };		
+
+		public static Loot[] AkZeloth = new Loot[] {
+												   };		
+
+		public static Loot[] AkubartheSeer = new Loot[] {new Loot( typeof( AbjurersRobe), 1.07817f ) 
+															,new Loot( typeof( Aquamarine), 0.269542f ) 
+															,new Loot( typeof( ChieftainsBreastplate), 0.539084f ) 
+															,new Loot( typeof( CouncillorsBoots), 0.539084f ) 
+															,new Loot( typeof( CouncillorsCirclet), 0.808625f ) 
+															,new Loot( typeof( CouncillorsCloak), 1.88679f ) 
+															,new Loot( typeof( CouncillorsCuffs), 3.50404f ) 
+															,new Loot( typeof( CouncillorsGloves), 1.07817f ) 
+															,new Loot( typeof( CouncillorsSash), 2.69542f ) 
+															,new Loot( typeof( CouncillorsShoulders), 1.07817f ) 
+															,new Loot( typeof( CrusadersArmor), 1.34771f ) 
+															,new Loot( typeof( CrusadersHelm), 1.61725f ) 
+															,new Loot( typeof( CrusadersLeggings), 4.85175f ) 
+															,new Loot( typeof( CrusadersPauldrons), 1.88679f ) 
+															,new Loot( typeof( DuskwovenPants), 0.808625f ) 
+															,new Loot( typeof( DuskwovenTunic), 0.269542f ) 
+															,new Loot( typeof( EbonholdShoulderpads), 0.269542f ) 
+															,new Loot( typeof( ElegantCloak), 0.808625f ) 
+															,new Loot( typeof( EmeraldGirdle), 0.539084f ) 
+															,new Loot( typeof( EmeraldSabatons), 0.808625f ) 
+															,new Loot( typeof( EmeraldVambraces), 1.07817f ) 
+															,new Loot( typeof( EngravedBracers), 1.34771f ) 
+															,new Loot( typeof( EngravedCape), 0.539084f ) 
+															,new Loot( typeof( EngravedGirdle), 1.07817f ) 
+															,new Loot( typeof( HeavyLamellarChestpiece), 1.61725f ) 
+															,new Loot( typeof( HeavyLamellarHelm), 1.88679f ) 
+															,new Loot( typeof( HeavyLamellarLeggings), 3.2345f ) 
+															,new Loot( typeof( HeavyLamellarPauldrons), 1.07817f ) 
+															,new Loot( typeof( LibramOfRumination), 0.269542f ) 
+															,new Loot( typeof( LordsBoots), 1.61725f ) 
+															,new Loot( typeof( LordsBreastplate), 1.07817f ) 
+															,new Loot( typeof( MysticalBoots), 3.50404f ) 
+															,new Loot( typeof( MysticalBracers), 1.34771f ) 
+															,new Loot( typeof( MysticalGloves), 2.15633f ) 
+															,new Loot( typeof( MysticalHeadwrap), 0.808625f ) 
+															,new Loot( typeof( MysticalLeggings), 1.07817f ) 
+															,new Loot( typeof( MysticalMantle), 1.07817f ) 
+															,new Loot( typeof( OrnateBracers), 6.73854f ) 
+															,new Loot( typeof( OrnateCirclet), 0.269542f ) 
+															,new Loot( typeof( OrnateCloak), 1.07817f ) 
+															,new Loot( typeof( OrnateGauntlets), 0.269542f ) 
+															,new Loot( typeof( OrnateGirdle), 1.88679f ) 
+															,new Loot( typeof( OrnateGreaves), 0.269542f ) 
+															,new Loot( typeof( OrnateLegguards), 1.61725f ) 
+															,new Loot( typeof( OrnatePauldrons), 0.808625f ) 
+															,new Loot( typeof( RevenantChestplate), 1.88679f ) 
+															,new Loot( typeof( RighteousArmor), 2.15633f ) 
+															,new Loot( typeof( RighteousLeggings), 0.808625f ) 
+															,new Loot( typeof( StarRuby), 0.269542f ) 
+															,new Loot( typeof( SwampRing), 0.269542f ) 
+															,new Loot( typeof( SwashbucklersBoots), 2.42588f ) 
+															,new Loot( typeof( SwashbucklersEyepatch), 0.269542f ) 
+															,new Loot( typeof( SwashbucklersGloves), 1.34771f ) 
+															,new Loot( typeof( SwashbucklersLeggings), 0.269542f ) 
+															,new Loot( typeof( SwashbucklersShoulderpads), 0.808625f ) 
+															,new Loot( typeof( TemplarBoots), 1.61725f ) 
+															,new Loot( typeof( TemplarBracers), 2.15633f ) 
+															,new Loot( typeof( TemplarCrown), 1.07817f ) 
+															,new Loot( typeof( TemplarGauntlets), 1.07817f ) 
+															,new Loot( typeof( TemplarGirdle), 4.31267f ) 
+															,new Loot( typeof( TemplarLegplates), 0.269542f ) 
+															,new Loot( typeof( TemplarPauldrons), 0.808625f ) 
+															,new Loot( typeof( TravelersBackpack), 0.539084f ) 
+															,new Loot( typeof( TruesilverOre), 0.808625f ) 
+															,new Loot( typeof( WanderersBelt), 3.50404f ) 
+															,new Loot( typeof( WanderersBoots), 2.96496f ) 
+															,new Loot( typeof( WanderersBracers), 2.69542f ) 
+															,new Loot( typeof( WanderersCloak), 1.34771f ) 
+															,new Loot( typeof( WanderersGloves), 0.808625f ) 
+															,new Loot( typeof( WanderersHat), 0.808625f ) 
+															,new Loot( typeof( WanderersShoulders), 1.07817f ) 
+															,new Loot( typeof( MajorHealingPotion), 0.808625f ) 
+															,new Loot( typeof( MorningGloryDew), 2.15633f ) 
+															,new Loot( typeof( RoastedQuail), 4.31267f ) 
+															,new Loot( typeof( Runecloth), 24.5283f ) 
+															,new Loot( typeof( ScrollOfStrengthIII), 0.269542f ) 
+															,new Loot( typeof( SuperiorManaPotion), 0.808625f ) 
+															,new Loot( typeof( CloutMace), 0.539084f ) 
+															,new Loot( typeof( CrestedBuckler), 0.269542f ) 
+															,new Loot( typeof( SmoothLeatherShoulderpads), 0.269542f ) 
+															,new Loot( typeof( TwillBoots), 0.269542f ) 
+															,new Loot( typeof( TwillBracers), 0.269542f ) 
+															,new Loot( typeof( TwillGloves), 0.269542f ) 
+
+														};		
+
+		public static Loot[] AlanndarianNightsong = new Loot[] {
+															   };		
+
+		public static Loot[] AlexiaIronknife = new Loot[] {
+														  };		
+
+		public static Loot[] Alina = new Loot[] {new Loot( typeof( LoomingGavel), 0.123305f ) 
+													,new Loot( typeof( AcrobaticStaff), 0.0616523f ) 
+													,new Loot( typeof( BandedHelm), 0.0616523f ) 
+													,new Loot( typeof( CombatShield), 0.0616523f ) 
+													,new Loot( typeof( HackingCleaver), 0.0616523f ) 
+													,new Loot( typeof( InfiltratorBoots), 0.0616523f ) 
+													,new Loot( typeof( InfiltratorBuckler), 0.0616523f ) 
+													,new Loot( typeof( InfiltratorShoulders), 0.0616523f ) 
+													,new Loot( typeof( IronLockbox), 0.0616523f ) 
+													,new Loot( typeof( Jade), 0.308261f ) 
+													,new Loot( typeof( LesserMoonstone), 0.123305f ) 
+													,new Loot( typeof( MailCombatArmor), 0.0616523f ) 
+													,new Loot( typeof( MailCombatHeadguard), 0.123305f ) 
+													,new Loot( typeof( NightskyCowl), 0.0616523f ) 
+													,new Loot( typeof( PatternDuskyLeatherLeggings), 0.0616523f ) 
+													,new Loot( typeof( PhalanxGirdle), 0.0616523f ) 
+													,new Loot( typeof( SagesRobe), 0.0616523f ) 
+													,new Loot( typeof( ScaledLeatherLeggings), 0.0616523f ) 
+													,new Loot( typeof( ScaledLeatherShoulders), 0.0616523f ) 
+													,new Loot( typeof( WandOfEventide), 0.0616523f ) 
+													,new Loot( typeof( BloodstoneShard), 70.6535f ) 
+													,new Loot( typeof( DeliciousCaveMold), 4.43896f ) 
+													,new Loot( typeof( GreaterHealingPotion), 1.2947f ) 
+													,new Loot( typeof( MageweaveCloth), 1.10974f ) 
+													,new Loot( typeof( ManaPotion), 0.308261f ) 
+													,new Loot( typeof( ScrollOfAgilityII), 0.246609f ) 
+													,new Loot( typeof( ScrollOfIntellectII), 0.246609f ) 
+													,new Loot( typeof( ScrollOfStaminaII), 0.493218f ) 
+													,new Loot( typeof( ScrollOfStrengthII), 0.123305f ) 
+													,new Loot( typeof( SilkCloth), 25.1541f ) 
+													,new Loot( typeof( SweetNectar), 2.89766f ) 
+													,new Loot( typeof( WoolCloth), 3.45253f ) 
+													,new Loot( typeof( BroadClaymore), 0.0616523f ) 
+													,new Loot( typeof( DoubleMailBoots), 0.123305f ) 
+													,new Loot( typeof( DoubleMailBracers), 0.0616523f ) 
+													,new Loot( typeof( DoubleMailCoif), 0.123305f ) 
+													,new Loot( typeof( DoubleMailGloves), 0.0616523f ) 
+													,new Loot( typeof( HardenedLeatherBoots), 0.123305f ) 
+													,new Loot( typeof( HardenedLeatherBracers), 0.0616523f ) 
+													,new Loot( typeof( HardenedLeatherGloves), 0.184957f ) 
+													,new Loot( typeof( HardenedLeatherHelm), 0.0616523f ) 
+													,new Loot( typeof( HardenedLeatherPants), 0.123305f ) 
+													,new Loot( typeof( HardenedLeatherShoulderpads), 0.0616523f ) 
+													,new Loot( typeof( HardenedLeatherTunic), 0.0616523f ) 
+													,new Loot( typeof( HeftyWarAxe), 0.246609f ) 
+													,new Loot( typeof( InterlacedBelt), 0.123305f ) 
+													,new Loot( typeof( InterlacedBoots), 0.0616523f ) 
+													,new Loot( typeof( InterlacedBracers), 0.0616523f ) 
+													,new Loot( typeof( InterlacedCowl), 0.184957f ) 
+													,new Loot( typeof( InterlacedGloves), 0.0616523f ) 
+													,new Loot( typeof( InterlacedShoulderpads), 0.246609f ) 
+													,new Loot( typeof( InterlacedVest), 0.184957f ) 
+													,new Loot( typeof( KeenAxe), 0.123305f ) 
+													,new Loot( typeof( LargeWarClub), 0.184957f ) 
+													,new Loot( typeof( LongBarreledMusket), 0.184957f ) 
+													,new Loot( typeof( MetalStave), 0.184957f ) 
+													,new Loot( typeof( ReflectiveHeater), 0.0616523f ) 
+													,new Loot( typeof( ShinyDirk), 0.246609f ) 
+													,new Loot( typeof( StoneClub), 0.123305f ) 
+
+												};		
+
+		public static Loot[] AllianceSentinel = new Loot[] {
+														   };		
+
+		public static Loot[] AmbassadorArdalan = new Loot[] {
+															};		
+
+		public static Loot[] AmbassadorBerrybuck = new Loot[] {
+															  };		
+
+		public static Loot[] AmbassadorFlamelash = new Loot[] {new Loot( typeof( CircleOfFlame), 0.123584f ) 
+																  ,new Loot( typeof( KrolBlade), 0.0205973f ) 
+																  ,new Loot( typeof( AristocraticCuffs), 0.0205973f ) 
+																  ,new Loot( typeof( BookGiftOfTheWildII), 0.061792f ) 
+																  ,new Loot( typeof( BurstOfKnowledge), 7.31205f ) 
+																  ,new Loot( typeof( CapeOfTheFireSalamander), 38.0021f ) 
+																  ,new Loot( typeof( DoomforgedStraightedge), 0.0205973f ) 
+																  ,new Loot( typeof( FlameWrath), 8.75386f ) 
+																  ,new Loot( typeof( FuneralPyreVestment), 0.0411946f ) 
+																  ,new Loot( typeof( LargeBrilliantShard), 0.061792f ) 
+																  ,new Loot( typeof( MoltenFists), 39.3821f ) 
+																  ,new Loot( typeof( StoneshieldCloak), 0.0411946f ) 
+																  ,new Loot( typeof( TheJudgesGavel), 0.0205973f ) 
+																  ,new Loot( typeof( AlabasterBreastplate), 0.0205973f ) 
+																  ,new Loot( typeof( AlabasterShield), 0.0205973f ) 
+																  ,new Loot( typeof( Aquamarine), 0.247168f ) 
+																  ,new Loot( typeof( ArcaneBands), 0.0205973f ) 
+																  ,new Loot( typeof( ArcaneBoots), 0.0205973f ) 
+																  ,new Loot( typeof( ArcaneCover), 0.0205973f ) 
+																  ,new Loot( typeof( ArcaneGloves), 0.061792f ) 
+																  ,new Loot( typeof( ArcaneSash), 0.061792f ) 
+																  ,new Loot( typeof( BlackDiamond), 0.185376f ) 
+																  ,new Loot( typeof( BurnsideRifle), 0.0205973f ) 
+																  ,new Loot( typeof( CouncillorsBoots), 0.061792f ) 
+																  ,new Loot( typeof( CouncillorsScepter), 0.0205973f ) 
+																  ,new Loot( typeof( EbonholdArmor), 0.0205973f ) 
+																  ,new Loot( typeof( ElegantBelt), 0.0411946f ) 
+																  ,new Loot( typeof( ElegantCirclet), 0.0205973f ) 
+																  ,new Loot( typeof( ElegantCloak), 0.102987f ) 
+																  ,new Loot( typeof( ElegantGloves), 0.061792f ) 
+																  ,new Loot( typeof( ElegantMantle), 0.0205973f ) 
+																  ,new Loot( typeof( EmeraldLegplates), 0.0205973f ) 
+																  ,new Loot( typeof( EmeraldPauldrons), 0.061792f ) 
+																  ,new Loot( typeof( EmeraldShield), 0.0411946f ) 
+																  ,new Loot( typeof( EmeraldVambraces), 0.0205973f ) 
+																  ,new Loot( typeof( EngravedGirdle), 0.061792f ) 
+																  ,new Loot( typeof( EngravedPauldrons), 0.0205973f ) 
+																  ,new Loot( typeof( EssenceOfFire), 2.55407f ) 
+																  ,new Loot( typeof( FormulaEnchantBootsSpirit), 0.0411946f ) 
+																  ,new Loot( typeof( GlowstarRod), 0.0205973f ) 
+																  ,new Loot( typeof( HerosBand), 0.0205973f ) 
+																  ,new Loot( typeof( HerosCape), 0.123584f ) 
+																  ,new Loot( typeof( HerosGauntlets), 0.0411946f ) 
+																  ,new Loot( typeof( ImbuedPlateGirdle), 0.0205973f ) 
+																  ,new Loot( typeof( ImbuedPlatePauldrons), 0.061792f ) 
+																  ,new Loot( typeof( ImperialRedScepter), 0.0411946f ) 
+																  ,new Loot( typeof( ImperialRedTunic), 0.0205973f ) 
+																  ,new Loot( typeof( JasperLink), 0.0205973f ) 
+																  ,new Loot( typeof( MagusLongStaff), 0.0411946f ) 
+																  ,new Loot( typeof( MercurialBracers), 0.0205973f ) 
+																  ,new Loot( typeof( NightshadeArmguards), 0.0205973f ) 
+																  ,new Loot( typeof( NightshadeCloak), 0.061792f ) 
+																  ,new Loot( typeof( OrnateBreastplate), 0.061792f ) 
+																  ,new Loot( typeof( OrnateCirclet), 0.0205973f ) 
+																  ,new Loot( typeof( OrnateGauntlets), 0.123584f ) 
+																  ,new Loot( typeof( OrnateGreaves), 0.164779f ) 
+																  ,new Loot( typeof( OrnateLegguards), 0.0205973f ) 
+																  ,new Loot( typeof( Painbringer), 0.0205973f ) 
+																  ,new Loot( typeof( PatternBrightclothPants), 0.0205973f ) 
+																  ,new Loot( typeof( PatternFrostweavePants), 0.0205973f ) 
+																  ,new Loot( typeof( PatternMoonclothBag), 0.0205973f ) 
+																  ,new Loot( typeof( PlansRadiantGloves), 0.0411946f ) 
+																  ,new Loot( typeof( PlansThoriumBelt), 0.0205973f ) 
+																  ,new Loot( typeof( RecipeGreaterStoneshieldPotion), 0.0411946f ) 
+																  ,new Loot( typeof( RingOfTheHeavens), 0.0205973f ) 
+																  ,new Loot( typeof( SchematicThoriumShells), 0.0205973f ) 
+																  ,new Loot( typeof( SerpentskinArmor), 0.0205973f ) 
+																  ,new Loot( typeof( StarRuby), 0.288363f ) 
+																  ,new Loot( typeof( SwampRing), 0.061792f ) 
+																  ,new Loot( typeof( TemplarLegplates), 0.0823893f ) 
+																  ,new Loot( typeof( TemplarShield), 0.0205973f ) 
+																  ,new Loot( typeof( ThoriumLockbox), 0.185376f ) 
+																  ,new Loot( typeof( TravelersBackpack), 0.0411946f ) 
+																  ,new Loot( typeof( TravelersBoots), 0.0205973f ) 
+																  ,new Loot( typeof( TravelersBracers), 0.061792f ) 
+																  ,new Loot( typeof( TravelersHelm), 0.0205973f ) 
+																  ,new Loot( typeof( TravelersLeggings), 0.0205973f ) 
+																  ,new Loot( typeof( WanderersShoulders), 0.0823893f ) 
+																  ,new Loot( typeof( ACrumpledUpNote), 0.061792f ) 
+																  ,new Loot( typeof( ElementalFire), 1.91555f ) 
+																  ,new Loot( typeof( EssenceOfTheElements), 0.659114f ) 
+																  ,new Loot( typeof( HeartOfFire), 1.64779f ) 
+																  ,new Loot( typeof( MajorHealingPotion), 0.597322f ) 
+																  ,new Loot( typeof( MorningGloryDew), 0.906282f ) 
+																  ,new Loot( typeof( RoastedQuail), 1.62719f ) 
+																  ,new Loot( typeof( ScrollOfAgilityIII), 0.102987f ) 
+																  ,new Loot( typeof( ScrollOfProtectionIV), 0.102987f ) 
+																  ,new Loot( typeof( ScrollOfSpiritIV), 0.0823893f ) 
+																  ,new Loot( typeof( ScrollOfStrengthIII), 0.226571f ) 
+																  ,new Loot( typeof( SuperiorManaPotion), 0.247168f ) 
+																  ,new Loot( typeof( BalancedWarAxe), 0.205973f ) 
+																  ,new Loot( typeof( BulkyMaul), 0.185376f ) 
+																  ,new Loot( typeof( CloutMace), 0.0205973f ) 
+																  ,new Loot( typeof( CrestedBuckler), 0.0823893f ) 
+																  ,new Loot( typeof( DeflectingTower), 0.102987f ) 
+																  ,new Loot( typeof( FineLongsword), 0.0205973f ) 
+																  ,new Loot( typeof( JaggedAxe), 0.205973f ) 
+																  ,new Loot( typeof( LaminatedScaleBelt), 0.061792f ) 
+																  ,new Loot( typeof( LaminatedScaleBracers), 0.0205973f ) 
+																  ,new Loot( typeof( LaminatedScaleCloak), 0.102987f ) 
+																  ,new Loot( typeof( LaminatedScaleGloves), 0.0411946f ) 
+																  ,new Loot( typeof( LaminatedScalePants), 0.0205973f ) 
+																  ,new Loot( typeof( LaminatedScaleShoulderpads), 0.123584f ) 
+																  ,new Loot( typeof( LightPlateBelt), 0.061792f ) 
+																  ,new Loot( typeof( LightPlateBracers), 0.0205973f ) 
+																  ,new Loot( typeof( LightPlateChestpiece), 0.0411946f ) 
+																  ,new Loot( typeof( LightPlateGloves), 0.061792f ) 
+																  ,new Loot( typeof( LightPlateHelmet), 0.0411946f ) 
+																  ,new Loot( typeof( LightPlatePants), 0.0823893f ) 
+																  ,new Loot( typeof( PrimedMusket), 0.144181f ) 
+																  ,new Loot( typeof( RecurveLongBow), 0.102987f ) 
+																  ,new Loot( typeof( SmoothCloak), 0.061792f ) 
+																  ,new Loot( typeof( SmoothLeatherBelt), 0.0823893f ) 
+																  ,new Loot( typeof( SmoothLeatherBoots), 0.0411946f ) 
+																  ,new Loot( typeof( SmoothLeatherBracers), 0.0823893f ) 
+																  ,new Loot( typeof( SmoothLeatherGloves), 0.0411946f ) 
+																  ,new Loot( typeof( SmoothLeatherHelmet), 0.102987f ) 
+																  ,new Loot( typeof( SmoothLeatherPants), 0.0205973f ) 
+																  ,new Loot( typeof( SmoothLeatherShoulderpads), 0.0411946f ) 
+																  ,new Loot( typeof( SpikedDagger), 0.0823893f ) 
+																  ,new Loot( typeof( StoutWarStaff), 0.247168f ) 
+																  ,new Loot( typeof( TaperedGreatsword), 0.102987f ) 
+																  ,new Loot( typeof( TwillBelt), 0.0205973f ) 
+																  ,new Loot( typeof( TwillBoots), 0.0411946f ) 
+																  ,new Loot( typeof( TwillBracers), 0.185376f ) 
+																  ,new Loot( typeof( TwillCloak), 0.0411946f ) 
+																  ,new Loot( typeof( TwillCover), 0.0823893f ) 
+																  ,new Loot( typeof( TwillGloves), 0.061792f ) 
+																  ,new Loot( typeof( TwillPants), 0.0411946f ) 
+																  ,new Loot( typeof( TwillShoulderpads), 0.102987f ) 
+																  ,new Loot( typeof( TwillVest), 0.061792f ) 
+
+															  };		
+
+		public static Loot[] AmiePierce = new Loot[] {
+													 };		
+
+		public static Loot[] Anathera = new Loot[] {
+												   };		
+
+		public static Loot[] Anaya = new Loot[] {
+												};		
+
+		public static Loot[] AncestralSpirit = new Loot[] {
+														  };		
+
+		public static Loot[] AncientofLore = new Loot[] {
+														};		
+
+		public static Loot[] Andi = new Loot[] {
+											   };		
+
+		public static Loot[] AndiLynn = new Loot[] {
+												   };		
+
+		public static Loot[] AndreFirebeard = new Loot[] {new Loot( typeof( ArdentCustodian), 0.0274348f ) 
+															 ,new Loot( typeof( HeavensLight), 0.0274348f ) 
+															 ,new Loot( typeof( SheepshearMantle), 0.0274348f ) 
+															 ,new Loot( typeof( AncientCrown), 0.0548697f ) 
+															 ,new Loot( typeof( AncientGreaves), 0.0274348f ) 
+															 ,new Loot( typeof( Aquamarine), 0.192044f ) 
+															 ,new Loot( typeof( BloodwovenBracers), 0.0274348f ) 
+															 ,new Loot( typeof( BrutishShoulders), 0.0274348f ) 
+															 ,new Loot( typeof( Citrine), 0.0823045f ) 
+															 ,new Loot( typeof( CrusaderBow), 0.0548697f ) 
+															 ,new Loot( typeof( DarkmistWizardHat), 0.0274348f ) 
+															 ,new Loot( typeof( FalconsHook), 0.0274348f ) 
+															 ,new Loot( typeof( FuriousFalchion), 0.0548697f ) 
+															 ,new Loot( typeof( ImposingGloves), 0.0274348f ) 
+															 ,new Loot( typeof( KeepersBindings), 0.0548697f ) 
+															 ,new Loot( typeof( KeepersCloak), 0.0274348f ) 
+															 ,new Loot( typeof( LodestoneNecklace), 0.0274348f ) 
+															 ,new Loot( typeof( LunarCoronet), 0.0274348f ) 
+															 ,new Loot( typeof( LunarLeggings), 0.0274348f ) 
+															 ,new Loot( typeof( LunarMantle), 0.0274348f ) 
+															 ,new Loot( typeof( MarshRing), 0.0274348f ) 
+															 ,new Loot( typeof( OOX17TNDistressBeacon), 0.137174f ) 
+															 ,new Loot( typeof( PatternGuardianLeatherBracers), 0.0274348f ) 
+															 ,new Loot( typeof( PatternToughScorpidHelm), 0.713306f ) 
+															 ,new Loot( typeof( PatternToughScorpidShoulders), 0.987654f ) 
+															 ,new Loot( typeof( PatternWhiteBanditMask), 0.0548697f ) 
+															 ,new Loot( typeof( RageclawCloak), 0.0274348f ) 
+															 ,new Loot( typeof( RecipeMagicResistancePotion), 0.0274348f ) 
+															 ,new Loot( typeof( RicochetBlunderbuss), 0.0274348f ) 
+															 ,new Loot( typeof( ScorpashiCape), 0.0274348f ) 
+															 ,new Loot( typeof( ScorpashiShoulderPads), 0.0274348f ) 
+															 ,new Loot( typeof( SkullcrusherMace), 0.0274348f ) 
+															 ,new Loot( typeof( StarRuby), 0.109739f ) 
+															 ,new Loot( typeof( SteadfastBuckler), 0.0548697f ) 
+															 ,new Loot( typeof( SteelLockbox), 0.0548697f ) 
+															 ,new Loot( typeof( TyrantsGreaves), 0.0274348f ) 
+															 ,new Loot( typeof( WarbringersCrown), 0.109739f ) 
+															 ,new Loot( typeof( WarbringersLegguards), 0.0274348f ) 
+															 ,new Loot( typeof( WardensWraps), 0.0274348f ) 
+															 ,new Loot( typeof( WindchaserWoolies), 0.0274348f ) 
+															 ,new Loot( typeof( WolfRidersBoots), 0.0274348f ) 
+															 ,new Loot( typeof( FineAgedCheddar), 3.75857f ) 
+															 ,new Loot( typeof( FirebeardsHead), 63.8957f ) 
+															 ,new Loot( typeof( GreaterManaPotion), 0.548697f ) 
+															 ,new Loot( typeof( JourneymansBackpack), 0.109739f ) 
+															 ,new Loot( typeof( MageweaveCloth), 17.6955f ) 
+															 ,new Loot( typeof( MoonberryJuice), 1.92044f ) 
+															 ,new Loot( typeof( ScrollOfIntellectIII), 0.137174f ) 
+															 ,new Loot( typeof( ScrollOfProtectionIII), 0.329218f ) 
+															 ,new Loot( typeof( ScrollOfSpiritIII), 0.274348f ) 
+															 ,new Loot( typeof( ScrollOfStaminaIII), 0.164609f ) 
+															 ,new Loot( typeof( SilkCloth), 8.25789f ) 
+															 ,new Loot( typeof( SuperiorHealingPotion), 0.85048f ) 
+															 ,new Loot( typeof( WastewanderWaterPouch), 28.3951f ) 
+															 ,new Loot( typeof( BalancedLongBow), 0.137174f ) 
+															 ,new Loot( typeof( BlockingTarge), 0.0274348f ) 
+															 ,new Loot( typeof( CrochetBelt), 0.0274348f ) 
+															 ,new Loot( typeof( CrochetBoots), 0.0274348f ) 
+															 ,new Loot( typeof( CrochetBracers), 0.0274348f ) 
+															 ,new Loot( typeof( CrochetCloak), 0.0823045f ) 
+															 ,new Loot( typeof( CrochetGloves), 0.0548697f ) 
+															 ,new Loot( typeof( CrochetHat), 0.0274348f ) 
+															 ,new Loot( typeof( CrochetPants), 0.192044f ) 
+															 ,new Loot( typeof( CrochetShoulderpads), 0.0548697f ) 
+															 ,new Loot( typeof( CrochetVest), 0.0274348f ) 
+															 ,new Loot( typeof( CrushingMaul), 0.109739f ) 
+															 ,new Loot( typeof( FinePointedDagger), 0.192044f ) 
+															 ,new Loot( typeof( HeavyFlintAxe), 0.0548697f ) 
+															 ,new Loot( typeof( HeavyWarStaff), 0.0548697f ) 
+															 ,new Loot( typeof( OverlinkedChainArmor), 0.0274348f ) 
+															 ,new Loot( typeof( OverlinkedChainBoots), 0.0274348f ) 
+															 ,new Loot( typeof( OverlinkedChainCloak), 0.0823045f ) 
+															 ,new Loot( typeof( OverlinkedChainGloves), 0.0274348f ) 
+															 ,new Loot( typeof( OverlinkedChainPants), 0.0548697f ) 
+															 ,new Loot( typeof( OverlinkedChainShoulderpads), 0.0823045f ) 
+															 ,new Loot( typeof( ProtectivePavise), 0.0548697f ) 
+															 ,new Loot( typeof( SentinelMusket), 0.109739f ) 
+															 ,new Loot( typeof( SharpShortsword), 0.137174f ) 
+															 ,new Loot( typeof( SplinteringBattleAxe), 0.164609f ) 
+															 ,new Loot( typeof( ThickCloak), 0.0274348f ) 
+															 ,new Loot( typeof( ThickLeatherBelt), 0.0823045f ) 
+															 ,new Loot( typeof( ThickLeatherBracers), 0.0274348f ) 
+															 ,new Loot( typeof( ThickLeatherGloves), 0.0274348f ) 
+															 ,new Loot( typeof( ThickLeatherHat), 0.0823045f ) 
+															 ,new Loot( typeof( ThickLeatherPants), 0.0274348f ) 
+															 ,new Loot( typeof( ThickLeatherShoulderpads), 0.0823045f ) 
+															 ,new Loot( typeof( ThickLeatherTunic), 0.109739f ) 
+															 ,new Loot( typeof( WhettedClaymore), 0.137174f ) 
+
+														 };		
+
+		public static Loot[] AndreaHalloran = new Loot[] {
+														 };		
+
+		public static Loot[] AngelasMoonbreeze = new Loot[] {
+															};		
+
+		public static Loot[] Angus = new Loot[] {
+												};		
+
+		public static Loot[] AngusStern = new Loot[] {
+													 };		
+
+		public static Loot[] Anilia = new Loot[] {new Loot( typeof( BristleWhiskerCatfish), 11.1111f ) 
+													 ,new Loot( typeof( DwarvenMild), 11.1111f ) 
+													 ,new Loot( typeof( MediumLeather), 11.1111f ) 
+													 ,new Loot( typeof( MelonJuice), 11.1111f ) 
+													 ,new Loot( typeof( MuttonChop), 33.3333f ) 
+													 ,new Loot( typeof( SnapvineWatermelon), 11.1111f ) 
+													 ,new Loot( typeof( WarsongOil), 44.4444f ) 
+													 ,new Loot( typeof( MeatCleaver), 11.1111f ) 
+
+												 };		
+
+		/*public static Loot[] GuardHowe = new Loot[] {
+		};		
+
+		public static Loot[] GuardHowe = new Loot[] {
+		};		
+
+		public static Loot[] GuardHowe = new Loot[] {
+		};		
+
+		public static Loot[] GuardHowe = new Loot[] {
+		};		
+
+		public static Loot[] GuardHowe = new Loot[] {
+		};		
+
+		public static Loot[] GuardHowe = new Loot[] {
+		};		
+
+		public static Loot[] GuardHowe = new Loot[] {
+		};		
+
+		public static Loot[] GuardHowe = new Loot[] {
+		};		
+
+		public static Loot[] GuardHowe = new Loot[] {
+		};		
+
+		public static Loot[] GuardHowe = new Loot[] {
+		};		
+
+		public static Loot[] GuardHowe = new Loot[] {
+		};		
+
+		public static Loot[] GuardHowe = new Loot[] {
+		};		
+
+		public static Loot[] GuardHowe = new Loot[] {
+		};		
+
+		public static Loot[] GuardHowe = new Loot[] {
+		};		
+
+		public static Loot[] GuardHowe = new Loot[] {
+		};*/		
+
+	}
+}

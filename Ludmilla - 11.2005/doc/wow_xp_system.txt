@@ -1,0 +1,61 @@
+XP & tagging system (medium) 
+
+Quote:  
+
+
+A player does not get XP, nor can he loot a mob aggroed by someone else if he is
+not grouped in some way (party, raid etc) with the puller (XP is also not
+rewarded if the mob is a number of levels below you... 5 I think)
+
+[sidenote]: the above rules are also determinant for the warlock ability to pull
+soulshard from mobs (he can only get a soulshard if he gets XP for that mob)
+
+
+
+UPDATE: It was mentioned in a pre-beta note that they MAY be increasing the
+range of xp bearing mobs for higher level characters. I believe it will be 20%
+of your level with a minimum of 5 levels. We will hopefully have this in the
+next patch (beta 1, my note), but no promises.
+
+Examples: 
+Level 10 character would get experience from level 6+ mobs 
+Level 50 character would get experience from level 40+ mobs 
+
+
+XP for level-up - chart 
+http://wow.allakhazam.com/db/guides.html?guide=362
+
+Mob tagging/Mob XP rewarding (continued) 
+
+Quote:  
+Already stated this, but let's review and detail it a little: 
+
+A player does not get XP, nor can he loot a mob aggroed by someone else if he is
+not grouped in some way (party, raid etc) with the puller (XP is also not
+rewarded if the mob is a number of levels below you... 20% of your level with a
+minimum of 5 levels) ALSO, he doesn't get a kill count for quests, if he is not
+in the mob's hate (or aggro/threat) list (this also apply for Honorable Kills in
+PVP!), even if his group/raid killed the mob (he does still get money or loot
+rights, if it's the case... for XP, I'll have to check, there is a group bonus
+and different ratios according to party members' levels).
+
+[sidenote]: the above rules are also determinant for the warlock ability to pull
+soulshard from mobs (he can only get a soulshard if he gets XP for that mob)
+
+
+Mob XP reloaded
+Quote:  
+
+XP=(MOB_LEVEL*5+45)*(1+0.05*(MOB_LEVEL-PLAYER_LEVEL)) 
+
+Mob Colors (when pressing the V key in-game) - (the following info is not precise) 
+5 levels and above -- Red (XP decreases (or caps?) as difference increases) 
+Between +4 and +3 levels -- Orange (XP using above formula) 
+Between +2 and -2 levels -- Yellow (XP using above formula) 
+Between -3 and 80% of your level -- Green (XP using above formula) 
+Below 80% of your level (minimum 5 levels below, you know the story) -- Grey (no XP!!!) 
+
+Also (I've probably already said this) XP awarded depends on the damage you do
+to the mob (this means that if a higher level player "helps" you by allowing you
+to tag the mob and killing it afterwards, you get only low/no XP. Of course, if
+the helper is not grouped with you, he still gets no XP)

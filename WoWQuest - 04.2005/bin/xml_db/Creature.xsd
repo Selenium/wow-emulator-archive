@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="Creature" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Creature" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Creature">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Creature_ID" type="xs:unsignedInt" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Name1" type="xs:string" minOccurs="0" />
+              <xs:element name="Name2" type="xs:string" minOccurs="0" />
+              <xs:element name="Name3" type="xs:string" minOccurs="0" />
+              <xs:element name="Title" type="xs:string" minOccurs="0" />
+              <xs:element name="Flags" type="xs:int" minOccurs="0" />
+              <xs:element name="CreatureType" type="xs:int" minOccurs="0" />
+              <xs:element name="CreatureFamily" type="xs:int" minOccurs="0" />
+              <xs:element name="Script" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//Creature" />
+      <xs:field xpath="Creature_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,275 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/norwegianelite/!svn/ver/20/Summit/src/ascent-shared
+END
+ascent_getopt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/ascent_getopt.cpp
+END
+LocationVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/LocationVector.h
+END
+CallBack.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/CallBack.h
+END
+MersenneTwister.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/MersenneTwister.h
+END
+CrashHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/CrashHandler.h
+END
+FastQueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/FastQueue.h
+END
+Singleton.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Singleton.h
+END
+AscentConfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/AscentConfig.h
+END
+BufferPool.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/BufferPool.h
+END
+PacketLog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/PacketLog.cpp
+END
+Storage.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/20/Summit/src/ascent-shared/Storage.h
+END
+NGLog.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/NGLog.h
+END
+Util.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Util.cpp
+END
+CircularQueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/CircularQueue.h
+END
+StackWalker.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/StackWalker.h
+END
+crc32.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/crc32.h
+END
+CoreMemoryAllocator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/CoreMemoryAllocator.cpp
+END
+RC4Engine.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/RC4Engine.h
+END
+WorldPacket.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/WorldPacket.h
+END
+Timer.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Timer.h
+END
+Log.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Log.h
+END
+RevisionExtractor.exe
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/RevisionExtractor.exe
+END
+WoWGuid.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/WoWGuid.h
+END
+CallBack.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/CallBack.cpp
+END
+Common.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Common.h
+END
+MemoryLeaks.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/MemoryLeaks.h
+END
+CrashHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/CrashHandler.cpp
+END
+MersenneTwister.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/MersenneTwister.cpp
+END
+ByteBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/ByteBuffer.h
+END
+BufferPool.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/BufferPool.cpp
+END
+ascent_getopt.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/ascent_getopt.h
+END
+StackBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/StackBuffer.h
+END
+PreallocatedQueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/PreallocatedQueue.h
+END
+StackWalker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/StackWalker.cpp
+END
+crc32.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/crc32.cpp
+END
+PacketLog.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/PacketLog.h
+END
+Log.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Log.cpp
+END
+Errors.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Errors.h
+END
+Util.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Util.h
+END
+AuthCodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/AuthCodes.h
+END
+MemoryLeaks.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/MemoryLeaks.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Makefile.am
+END
+New-Bytebuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/New-Bytebuffer.h
+END
+CoreMemoryAllocator_Core.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/CoreMemoryAllocator_Core.cpp
+END
+SmartPointer.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/SmartPointer.h
+END

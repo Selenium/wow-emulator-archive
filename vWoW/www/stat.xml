@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="stat.xsl"?>
+  <stats>
+    <server>
+      <version>0.0.6</version>
+      <owner>UniX</owner>
+      <servername>UniX Imba Server</servername>
+      <uptime>0 weeks 0 days 0 hours 3 mins</uptime>
+    </server>
+    <serverload>
+      <network>
+        <configsleep>100</configsleep>
+        <loops>0</loops>
+        <totaltime>0</totaltime>
+        <load>0.00%</load>
+      </network>
+      <world>
+        <configsleep>500</configsleep>
+        <loops>206</loops>
+        <totaltime>16913</totaltime>
+        <load>7.90%</load>
+      </world>
+    </serverload>
+    <players>
+      <player>
+        <name>Loki</name>
+        <race>4</race>
+        <class>1</class>
+        <level>12</level>
+        <map>1</map>
+        <zone>148</zone>
+        <ping>2</ping>
+        <plevel>0</plevel>
+        <ip>84.41.221.133</ip>
+      </player>
+    </players>
+  </stats>

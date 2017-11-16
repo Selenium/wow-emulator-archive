@@ -1,0 +1,39 @@
+import os
+
+Import('wsdworldsrv_env')
+
+def exename(basename):
+    if wsdworldsrv_env['buildtype'] == 'debug':
+        return basename + 'd'
+    elif wsdworldsrv_env['buildtype'] == 'release':
+        return basename
+    pass
+
+shared_dir = os.path.abspath(os.path.join('..', 'shared'))
+game_dir = os.path.abspath(os.path.join('..', 'game'))
+srp_dir = os.path.abspath(os.path.join('..', 'srp'))
+
+wsdworldsrv_env.Append(CPPPATH=[shared_dir, game_dir, srp_dir],
+                       LIBPATH=[shared_dir, game_dir, srp_dir],
+                       LIBS=['shared', 'game', 'srp'])
+
+wsdworldsrv_srcs = ['Main.cpp']
+wsdworldsrv_prog = wsdworldsrv_env.Program(exename('wsdworldsrv'),
+                                           wsdworldsrv_srcs)
+wsdworldsrv_env.Default(wsdworldsrv_prog)
+wsdworldsrv_env.Alias('wsdworldsrv', wsdworldsrv_prog)
+
+# install wsdworldsrv to bin directory
+i = wsdworldsrv_env.Install('#bin', wsdworldsrv_prog)
+wsdworldsrv_env.Default(i)
+wsdworldsrv_env.Alias('wsdworldsrv', i)
+
+if wsdworldsrv_env['buildenv'] == 'win32-msvc':
+    msvsproj = wsdworldsrv_env.MSVSProject(
+        target='wsdworldsrv' + wsdworldsrv_env['MSVSPROJECTSUFFIX'],
+        srcs=wsdworldsrv_srcs,
+        buildtarget=wsdworldsrv_prog,
+        variant='SCons')
+    wsdworldsrv_env.Default(msvsproj)
+    wsdworldsrv_env.Alias('wsdworldsrv', msvsproj)
+    pass

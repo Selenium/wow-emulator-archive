@@ -1,0 +1,2935 @@
+<?xml version="1.0" standalone="yes"?>
+<Creature>
+  <Creature>
+    <Creature_ID>1</Creature_ID>
+    <Name>Mottled Boar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>2</Creature_ID>
+    <Name>Ukor</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>3</Creature_ID>
+    <Name>Dire Mottled Boar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>4</Creature_ID>
+    <Name>Clattering Scorpid</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>5</Creature_ID>
+    <Name>Ragged Young Wolf</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>6</Creature_ID>
+    <Name>Rockjaw Trogg</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>7</Creature_ID>
+    <Name>Small Craig Boar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>8</Creature_ID>
+    <Name>Ragged Timber Wolf</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>9</Creature_ID>
+    <Name>Grell</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>10</Creature_ID>
+    <Name>Webwood Spider</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>11</Creature_ID>
+    <Name>Webwood Spider Queen</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>12</Creature_ID>
+    <Name>Squirrel</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>13</Creature_ID>
+    <Name>Scorpid Worker</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>14</Creature_ID>
+    <Name>Vile Familiar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>15</Creature_ID>
+    <Name>Voljo The Vile</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>16</Creature_ID>
+    <Name>Armored Scorpid</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>17</Creature_ID>
+    <Name>Carrion Bird</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>18</Creature_ID>
+    <Name>Gazelle</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>19</Creature_ID>
+    <Name>Pygmy Surf Crawler</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>20</Creature_ID>
+    <Name>Surf Crawler</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>21</Creature_ID>
+    <Name>Plainstrider</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>22</Creature_ID>
+    <Name>Bloodtalon Slasher</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>23</Creature_ID>
+    <Name>Durotar Tiger</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>24</Creature_ID>
+    <Name>Young Nightsabre</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>25</Creature_ID>
+    <Name>Voodoo Troll</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>26</Creature_ID>
+    <Name>Hexed Troll</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>27</Creature_ID>
+    <Name>Young Thistle Boar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>28</Creature_ID>
+    <Name>Zalazane</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>29</Creature_ID>
+    <Name>Mangy Nightsabre</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>30</Creature_ID>
+    <Name>Rabbit</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>31</Creature_ID>
+    <Name>Grellkin</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>32</Creature_ID>
+    <Name>Frog</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>33</Creature_ID>
+    <Name>Chipmunk</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>34</Creature_ID>
+    <Name>Makura Clacker</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>35</Creature_ID>
+    <Name>Makura Shellhide</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>36</Creature_ID>
+    <Name>Kul Tiras Marine</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>37</Creature_ID>
+    <Name>Lieutnant Benedict</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>38</Creature_ID>
+    <Name>Kul Tiras Sailor</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>39</Creature_ID>
+    <Name>Razormane Guard</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>40</Creature_ID>
+    <Name>Razormane Dustrunner</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>41</Creature_ID>
+    <Name>Venomtail Scorpid</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>42</Creature_ID>
+    <Name>Bloodtalon Scythemaw</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>43</Creature_ID>
+    <Name>Elder Mottled Boar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>44</Creature_ID>
+    <Name>Crusted Surf Crawler</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>45</Creature_ID>
+    <Name>Makura Elder</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>46</Creature_ID>
+    <Name>Dustwind Harpy</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>47</Creature_ID>
+    <Name>Thunder Lizard</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>48</Creature_ID>
+    <Name>Lightning Hide</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>49</Creature_ID>
+    <Name>Rat</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>50</Creature_ID>
+    <Name>Undertaker Mordo</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>51</Creature_ID>
+    <Name>Caretaker Caice</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>52</Creature_ID>
+    <Name>Meven Korgal</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>53</Creature_ID>
+    <Name>Scarlet Convert</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>54</Creature_ID>
+    <Name>Scarlet Initiate</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>55</Creature_ID>
+    <Name>Mangy Duskbat</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>56</Creature_ID>
+    <Name>Young Night Web</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>57</Creature_ID>
+    <Name>Night Web</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>58</Creature_ID>
+    <Name>Owl</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>59</Creature_ID>
+    <Name>Snake</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>60</Creature_ID>
+    <Name>Mindless Zombie</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>61</Creature_ID>
+    <Name>Strigid Owl</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>62</Creature_ID>
+    <Name>Wretched Zombie</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>63</Creature_ID>
+    <Name>Nightsabre</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>64</Creature_ID>
+    <Name>Rattlecage Skeleton</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>65</Creature_ID>
+    <Name>Gnarlpine Gardener</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>66</Creature_ID>
+    <Name>Gnarlpine Warrior</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>67</Creature_ID>
+    <Name>Gnarlpine Ursa</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>68</Creature_ID>
+    <Name>Calvin Montague</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>69</Creature_ID>
+    <Name>Gnarlpine Warrior</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>70</Creature_ID>
+    <Name>Gnarlpine Gardener</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>71</Creature_ID>
+    <Name>Deathguard Simmer</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>72</Creature_ID>
+    <Name>Gnarlpine Ursa</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>73</Creature_ID>
+    <Name>Scarlet Warrior</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>74</Creature_ID>
+    <Name>Tirisfal Farmhand</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>75</Creature_ID>
+    <Name>Field Rat</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>76</Creature_ID>
+    <Name>Farmers Duaghter</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>77</Creature_ID>
+    <Name>Tirisfal Farmer</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>78</Creature_ID>
+    <Name>Greater Duskbat</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>79</Creature_ID>
+    <Name>Decreipt Darkhound</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>80</Creature_ID>
+    <Name>Cursed Darkhound</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>81</Creature_ID>
+    <Name>Rattlecage Soldier</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>82</Creature_ID>
+    <Name>Darkeye Bonecaster</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>83</Creature_ID>
+    <Name>Stormwind Guard</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>84</Creature_ID>
+    <Name>Stormwind Captain</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>85</Creature_ID>
+    <Name>Sewer Crocodile</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>86</Creature_ID>
+    <Name>Helga</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>87</Creature_ID>
+    <Name>Kaklos</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>88</Creature_ID>
+    <Name>Cat</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>89</Creature_ID>
+    <Name>Child</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>90</Creature_ID>
+    <Name>Gnarlpine Augur</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>91</Creature_ID>
+    <Name>Gnarlpine Defender</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>92</Creature_ID>
+    <Name>Gnarlpine Shaman</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>93</Creature_ID>
+    <Name>Rotting Dead</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>94</Creature_ID>
+    <Name>Thistle Boar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>95</Creature_ID>
+    <Name>Ravaged Corpse</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>96</Creature_ID>
+    <Name>Rot Hide Graverobber</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>97</Creature_ID>
+    <Name>Rot Hide Gnoll</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>98</Creature_ID>
+    <Name>Vicious Grell</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>99</Creature_ID>
+    <Name>Hungering Dead</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>100</Creature_ID>
+    <Name>Vampiric Duskbat</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>101</Creature_ID>
+    <Name>Ravenous Darkhound</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>102</Creature_ID>
+    <Name>Vicious Night Web</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>103</Creature_ID>
+    <Name>Night Web Queen</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>104</Creature_ID>
+    <Name>Scarlet Friar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>105</Creature_ID>
+    <Name>Scarlet Vanguard</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>106</Creature_ID>
+    <Name>Scarlet Zealot</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>107</Creature_ID>
+    <Name>Captain Perrine</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>108</Creature_ID>
+    <Name>Scarlet Guard</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>109</Creature_ID>
+    <Name>Scarlet Captain</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>110</Creature_ID>
+    <Name>Stablemaster</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>111</Creature_ID>
+    <Name>Horse</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>112</Creature_ID>
+    <Name>Wandering Soul</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>113</Creature_ID>
+    <Name>Deer</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>114</Creature_ID>
+    <Name>Unkown Webwood</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>115</Creature_ID>
+    <Name>Strigid Shreeker</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>116</Creature_ID>
+    <Name>Gnarlpine Avenger</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>117</Creature_ID>
+    <Name>Gnarlpine Pathfinder</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>118</Creature_ID>
+    <Name>Ursal the Mauler</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>119</Creature_ID>
+    <Name>Webwood Venomfang</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>120</Creature_ID>
+    <Name>Elder Nightsabre</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>121</Creature_ID>
+    <Name>Webwood Silkspinner</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>122</Creature_ID>
+    <Name>Gnarlpine Ambusher</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>123</Creature_ID>
+    <Name>Murloc Coastrunner</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>124</Creature_ID>
+    <Name>Murloc Raider</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>125</Creature_ID>
+    <Name>Sand Crawler</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>126</Creature_ID>
+    <Name>Murloc Minor Oracle</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>127</Creature_ID>
+    <Name>Murloc Hunter</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>128</Creature_ID>
+    <Name>Murloc Oracle</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>129</Creature_ID>
+    <Name>Murloc Tidehunter</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>130</Creature_ID>
+    <Name>Shore Crawler</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>131</Creature_ID>
+    <Name>Riverpaw Mongrel</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>132</Creature_ID>
+    <Name>Riverpaw Brute</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>133</Creature_ID>
+    <Name>Riverpaw Herbalist</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>134</Creature_ID>
+    <Name>Dust Devil</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>135</Creature_ID>
+    <Name>Defias Smuggler</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>136</Creature_ID>
+    <Name>Defias Trapper</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>137</Creature_ID>
+    <Name>Defias Looter</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>138</Creature_ID>
+    <Name>Defias Pillager</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>139</Creature_ID>
+    <Name>Fleshripper</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>140</Creature_ID>
+    <Name>Riverpaw Scout</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>141</Creature_ID>
+    <Name>Riverpaw Gnoll</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>142</Creature_ID>
+    <Name>Harvest Watcher</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>143</Creature_ID>
+    <Name>Defias Footpad</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>144</Creature_ID>
+    <Name>Rusty Harvest Golem</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>145</Creature_ID>
+    <Name>Coyote</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>146</Creature_ID>
+    <Name>Young Fleshripper</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>147</Creature_ID>
+    <Name>Great Goretusk</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>148</Creature_ID>
+    <Name>Greater Fleshripper</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>149</Creature_ID>
+    <Name>Chicken</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>150</Creature_ID>
+    <Name>Defias Pathstalker</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>151</Creature_ID>
+    <Name>Defias Knickleback</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>152</Creature_ID>
+    <Name>Werewolf</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>153</Creature_ID>
+    <Name>Harvest Reaper</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>154</Creature_ID>
+    <Name>Riverpaw Bandit</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>155</Creature_ID>
+    <Name>Riverpaw Taskmaster</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>156</Creature_ID>
+    <Name>Burly Rockjaw Trogg</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>157</Creature_ID>
+    <Name>Frostmane Whelp</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>158</Creature_ID>
+    <Name>Goblin Shredder</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>159</Creature_ID>
+    <Name>Goblin Inventor</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>160</Creature_ID>
+    <Name>Young Snow Leopard</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>161</Creature_ID>
+    <Name>Young Black Bear</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>162</Creature_ID>
+    <Name>Snow Leopard</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>163</Creature_ID>
+    <Name>Iceclaw Bear</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>164</Creature_ID>
+    <Name>Frostmane Headhunter</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>165</Creature_ID>
+    <Name>Frostmane Seer</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>166</Creature_ID>
+    <Name>Elder Craig Boar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>167</Creature_ID>
+    <Name>Winter Wolf</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>168</Creature_ID>
+    <Name>Leper Gnome</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>169</Creature_ID>
+    <Name>Young Wendigo</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>170</Creature_ID>
+    <Name>Wendigo</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>171</Creature_ID>
+    <Name>Craig Boar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>172</Creature_ID>
+    <Name>Rockjaw Skullthumper</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>173</Creature_ID>
+    <Name>Rockjaw Ambusher</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>174</Creature_ID>
+    <Name>Rockjaw Backbreaker</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>175</Creature_ID>
+    <Name>Dark Iron Spy</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>176</Creature_ID>
+    <Name>Dark Iron Captain</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>177</Creature_ID>
+    <Name>Scarred Craig Boar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>178</Creature_ID>
+    <Name>Frozen Frenzy</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>179</Creature_ID>
+    <Name>Kobold Vermin</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>180</Creature_ID>
+    <Name>Young Wolf</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>181</Creature_ID>
+    <Name>Timber Wolf</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>182</Creature_ID>
+    <Name>Kobold Worker</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>183</Creature_ID>
+    <Name>Kobold Laborer</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>184</Creature_ID>
+    <Name>Garrick Padfoot</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>185</Creature_ID>
+    <Name>Defias Thug</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>186</Creature_ID>
+    <Name>Defias Cutpurse</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>187</Creature_ID>
+    <Name>Mangy Wolf</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>188</Creature_ID>
+    <Name>Young Forest Bear</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>189</Creature_ID>
+    <Name>Longsnout</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>190</Creature_ID>
+    <Name>Stonetusk Boar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>191</Creature_ID>
+    <Name>Forest Spider</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>192</Creature_ID>
+    <Name>Defias Bandit</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>193</Creature_ID>
+    <Name>Grey Forest Wolf</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>194</Creature_ID>
+    <Name>Rockhide Boar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>195</Creature_ID>
+    <Name>Murloc Streamrunner</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>196</Creature_ID>
+    <Name>Kobold Tunneler</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>197</Creature_ID>
+    <Name>Kobold Miner</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>198</Creature_ID>
+    <Name>Kobold Geomancer</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>199</Creature_ID>
+    <Name>Mine Spider</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>200</Creature_ID>
+    <Name>Goldtooth</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>201</Creature_ID>
+    <Name>Narg the Taskmaster</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>202</Creature_ID>
+    <Name>Defias Rogue Wizard</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>203</Creature_ID>
+    <Name>Water Elemental</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>204</Creature_ID>
+    <Name>Murloc Forager</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>205</Creature_ID>
+    <Name>Murloc Lurker</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>206</Creature_ID>
+    <Name>Prowler</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>207</Creature_ID>
+    <Name>Battle Boar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>208</Creature_ID>
+    <Name>Mountain Cougar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>209</Creature_ID>
+    <Name>Bristlback Quillboar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>210</Creature_ID>
+    <Name>Bristlback Warboar</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>211</Creature_ID>
+    <Name>Bristlback Shaman</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>212</Creature_ID>
+    <Name>Bristlback WarChief</Name>
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>213</Creature_ID>
+    <Name>Ravine Basilisk</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>214</Creature_ID>
+    <Name>Windfury Harpy</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>215</Creature_ID>
+    <Name>Windfury Wind Witch</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>216</Creature_ID>
+    <Name>Taloned Swoop</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>217</Creature_ID>
+    <Name>Prarie Wolf Alpha</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>218</Creature_ID>
+    <Name>Vtr. Co. Supervisor</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>219</Creature_ID>
+    <Name>Venture Co. Worker</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>220</Creature_ID>
+    <Name>Venture Co. Hireling</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>221</Creature_ID>
+    <Name>Flatland Cougar</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>222</Creature_ID>
+    <Name>Prarie Stalker</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>223</Creature_ID>
+    <Name>Swoop</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>224</Creature_ID>
+    <Name>Prarie Wolf</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>225</Creature_ID>
+    <Name>Wirly Swoop</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>226</Creature_ID>
+    <Name>Elder Plainstrider</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>227</Creature_ID>
+    <Name>Kodo Bull</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>228</Creature_ID>
+    <Name>Kodo Matriarch</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>229</Creature_ID>
+    <Name>Palemane Tanner</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>230</Creature_ID>
+    <Name>Palemane Skinner</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>231</Creature_ID>
+    <Name>Palemane Poacher</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>232</Creature_ID>
+    <Name>Big Foot</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>233</Creature_ID>
+    <Name>BaelDun Appraiser</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>234</Creature_ID>
+    <Name>BaelDun Digger</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>235</Creature_ID>
+    <Name>Windfury Sorceress</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>236</Creature_ID>
+    <Name>Windfury Matriarch</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>237</Creature_ID>
+    <Name>Flatland Prowler</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>238</Creature_ID>
+    <Name>Bristlback Druid</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>239</Creature_ID>
+    <Name>Ancestral Spirit</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>240</Creature_ID>
+    <Name>Adult Plainstrider</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>241</Creature_ID>
+    <Name>Vtr. Co. Hireling</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>245</Creature_ID>
+    <Name>Thomas Ironhand</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Weapon Smith</Title>
+    <Flags>0</Flags>
+    <NPCFlags>4</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>246</Creature_ID>
+    <Name>Houghart</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Mage Trainer</Title>
+    <Flags>0</Flags>
+    <NPCFlags>80</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>247</Creature_ID>
+    <Name>Moira Morband</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Armor Smith</Title>
+    <Flags>0</Flags>
+    <NPCFlags>4</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>248</Creature_ID>
+    <Name>Alicia</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Leather Merchant</Title>
+    <Flags>0</Flags>
+    <NPCFlags>4</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>249</Creature_ID>
+    <Name>Philip</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Merchant</Title>
+    <Flags>0</Flags>
+    <NPCFlags>4</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>250</Creature_ID>
+    <Name>Nichole</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Cloth Merchant</Title>
+    <Flags>0</Flags>
+    <NPCFlags>4</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>251</Creature_ID>
+    <Name>Amanda Farhand</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Priest Vendor</Title>
+    <Flags>0</Flags>
+    <NPCFlags>80</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>252</Creature_ID>
+    <Name>Marcus Reddawn</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Warlock Trainer</Title>
+    <Flags>0</Flags>
+    <NPCFlags>80</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>253</Creature_ID>
+    <Name>Amanda holy</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Priest Trainer</Title>
+    <Flags>0</Flags>
+    <NPCFlags>80</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>254</Creature_ID>
+    <Name>Billy the kid</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Trainer</Title>
+    <Flags>0</Flags>
+    <NPCFlags>80</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>255</Creature_ID>
+    <Name>Thomas Doomer</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Warrior Trainer</Title>
+    <Flags>0</Flags>
+    <NPCFlags>80</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>256</Creature_ID>
+    <Name>gayman</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Shaman Trainer</Title>
+    <Flags>0</Flags>
+    <NPCFlags>80</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>257</Creature_ID>
+    <Name>Allan Fasthand</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Rogue Trainer</Title>
+    <Flags>0</Flags>
+    <NPCFlags>80</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>258</Creature_ID>
+    <Name>John Ironwill</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Paladin Trainer</Title>
+    <Flags>0</Flags>
+    <NPCFlags>80</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>259</Creature_ID>
+    <Name>Herman Windwisp</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Druid Trainer</Title>
+    <Flags>0</Flags>
+    <NPCFlags>80</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>260</Creature_ID>
+    <Name>Will</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>General Merchant</Title>
+    <Flags>0</Flags>
+    <NPCFlags>4</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>261</Creature_ID>
+    <Name>Aline</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Archery Merchant</Title>
+    <Flags>0</Flags>
+    <NPCFlags>4</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>262</Creature_ID>
+    <Name>Argus Pathfinder</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Hunter Trainer</Title>
+    <Flags>0</Flags>
+    <NPCFlags>80</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.VendorBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>263</Creature_ID>
+    <Name>Tabard</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Tabard Vendor</Title>
+    <Flags>0</Flags>
+    <NPCFlags>512</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>264</Creature_ID>
+    <Name>Guild</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Petitioner</Title>
+    <Flags>0</Flags>
+    <NPCFlags>256</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>265</Creature_ID>
+    <Name>Banker</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Banker</Title>
+    <Flags>0</Flags>
+    <NPCFlags>128</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>266</Creature_ID>
+    <Name>NPC</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Talker</Title>
+    <Flags>0</Flags>
+    <NPCFlags>1</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>267</Creature_ID>
+    <Name>WoWCraft Knight</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Info</Title>
+    <Flags>0</Flags>
+    <NPCFlags>1</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>268</Creature_ID>
+    <Name>WoWCraft Quester</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Quester</Title>
+    <Flags>0</Flags>
+    <NPCFlags>2</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>269</Creature_ID>
+    <Name>test</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title />
+    <Flags>0</Flags>
+    <NPCFlags>0</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>true</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>270</Creature_ID>
+    <Name>Wilbor Thornta</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Banker</Title>
+    <Flags>0</Flags>
+    <NPCFlags>128</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>271</Creature_ID>
+    <Name>Leila</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Tabard Vendor</Title>
+    <Flags>0</Flags>
+    <NPCFlags>512</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>272</Creature_ID>
+    <Name>Heerid</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Taxi Vendor</Title>
+    <Flags>0</Flags>
+    <NPCFlags>8</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+  <Creature>
+    <Creature_ID>273</Creature_ID>
+    <Name>Patricia Cole</Name>
+    <Name1 />
+    <Name2 />
+    <Name3 />
+    <Title>Healer</Title>
+    <Flags>0</Flags>
+    <NPCFlags>64</NPCFlags>
+    <CreatureType>0</CreatureType>
+    <CreatureFamily>0</CreatureFamily>
+    <Script>WorldScripts.Living.MonsterBase</Script>
+    <Roam>false</Roam>
+  </Creature>
+</Creature>

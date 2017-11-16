@@ -1,0 +1,39 @@
+import os
+
+Import('wsdrealmlist_env')
+
+def exename(basename):
+    if wsdrealmlist_env['buildtype'] == 'debug':
+        return basename + 'd'
+    elif wsdrealmlist_env['buildtype'] == 'release':
+        return basename
+    pass
+
+shared_dir = os.path.abspath(os.path.join('..', 'shared'))
+srp_dir = os.path.abspath(os.path.join('..', 'srp'))
+realmlist_dir = os.path.abspath(os.path.join('..', 'realmlist'))
+
+wsdrealmlist_env.Append(CPPPATH=[shared_dir, srp_dir, realmlist_dir],
+                        LIBPATH=[shared_dir, srp_dir, realmlist_dir],
+                        LIBS=['realmlist', 'srp', 'shared'])
+
+wsdrealmlist_srcs = ['Main.cpp']
+wsdrealmlist_prog = wsdrealmlist_env.Program(exename('wsdrealmlist'),
+                                             wsdrealmlist_srcs)
+wsdrealmlist_env.Default(wsdrealmlist_prog)
+wsdrealmlist_env.Alias('wsdrealmlist', wsdrealmlist_prog)
+
+# install wsdrealmlist to bin directory
+i = wsdrealmlist_env.Install('#bin', wsdrealmlist_prog)
+wsdrealmlist_env.Default(i)
+wsdrealmlist_env.Alias('wsdrealmlist', i)
+
+if wsdrealmlist_env['buildenv'] == 'win32-msvc':
+    msvsproj = wsdrealmlist_env.MSVSProject(
+        target='wsdrealmlist' + wsdrealmlist_env['MSVSPROJECTSUFFIX'],
+        srcs=wsdrealmlist_srcs,
+        buildtarget=wsdrealmlist_prog,
+        variant='SCons')
+    wsdrealmlist_env.Default(msvsproj)
+    wsdrealmlist_env.Alias('wsdrealmlist', msvsproj)
+    pass

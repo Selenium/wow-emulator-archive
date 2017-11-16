@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="configuration" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="config" type="configType" maxOccurs="unbounded" />
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="configid" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//config" />
+			<xs:field xpath="@id" />
+		</xs:key>
+	</xs:element>
+	<xs:complexType name="configType">
+		<xs:sequence>
+			<xs:element name="port" type="xs:unsignedShort" minOccurs="0" maxOccurs="1" />
+			<xs:element name="packages" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="remoting" type="remotingType" minOccurs="1" maxOccurs="1" />
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="required" />
+	</xs:complexType>
+	<xs:complexType name="remotingType">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="port" type="xs:unsignedShort" minOccurs="1" maxOccurs="1" />
+			<xs:element name="redirectserver" type="redirectType" minOccurs="0" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="redirectType">
+		<xs:sequence>
+			<xs:element name="address" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="port" type="xs:unsignedShort" minOccurs="1" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

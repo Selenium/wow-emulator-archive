@@ -1,0 +1,5 @@
+# name:address:port:icon:color
+Azaroth:192.168.0.1:8129:0:0
+Asteroth:192.168.0.2:8129:1:0
+Kalimdor:192.168.0.3:8129:0:1
+Hargotrow:192.168.0.199:8129:0:1

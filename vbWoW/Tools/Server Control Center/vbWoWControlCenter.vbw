@@ -1,0 +1,6 @@
+Main = 148, 266, 849, 889, C, 23, 301, 750, 926, C
+modCheckRegistry = 44, 58, 769, 683, 
+dlgSettings = 76, 107, 787, 730, C, 102, 345, 827, 970, C
+modCheckProcess = 154, 203, 920, 828, 
+modSysTray = 154, 203, 679, 717, 
+modDetectFile = 176, 232, 901, 857, 

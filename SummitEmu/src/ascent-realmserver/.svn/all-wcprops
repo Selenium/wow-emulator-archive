@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver
+END
+LogonCommClient.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/LogonCommClient.h
+END
+WorldSocket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/WorldSocket.cpp
+END
+WorkerServer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/WorkerServer.cpp
+END
+Master.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/Master.h
+END
+ObjectStorage.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/ObjectStorage.h
+END
+QueryHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/QueryHandler.cpp
+END
+WorldSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/WorldSocket.h
+END
+WorkerServer.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/WorkerServer.h
+END
+WorkerServerSocket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/WorkerServerSocket.cpp
+END
+ClientManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/ClientManager.cpp
+END
+RStdAfx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/RStdAfx.cpp
+END
+ClusterManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/ClusterManager.cpp
+END
+WorkerServerSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/WorkerServerSocket.h
+END
+ClientManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/ClientManager.h
+END
+RStdAfx.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/RStdAfx.h
+END
+ClusterManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/ClusterManager.h
+END
+Session.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/Session.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/Makefile.am
+END
+LogonCommHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/LogonCommHandler.cpp
+END
+Session.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/Session.h
+END
+Structures.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/Structures.h
+END
+LogonCommClient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/LogonCommClient.cpp
+END
+CharacterHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/CharacterHandler.cpp
+END
+ObjectStorage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/ObjectStorage.cpp
+END
+Master.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/Master.cpp
+END
+WorkerOpcodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/WorkerOpcodes.h
+END
+LogonCommHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realmserver/LogonCommHandler.h
+END

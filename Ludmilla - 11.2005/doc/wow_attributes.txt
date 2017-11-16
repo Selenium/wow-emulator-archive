@@ -1,0 +1,163 @@
+Spirit 
+Increases health and mana regeneration. Spirit affects all characters' mana and
+hit point regeneration rates in and out of combat.
+
+Proposed formula (not verified): 
+
+mana/sec = 7 + Spirit/10 (UPDATE: see Health/Mana Regen for more specific rates)
+
+Also, sitting down does not speed up mana (or health) regeneration, only
+drinking (respective eating) does that.
+
+
+Quote:  
+Spirit increases the rate of health and mana regeneration. 
+
+Health regeneration only takes place out of combat. Mana regeneration may take
+place in combat, but not for five seconds after completing a spell cast.
+
+The formulas vary across class. Careful investigation is required. 
+
+Sidenote: This comes to confirm my observations. It seems only mana regened for
+me when I was fighting (true, since I was a mage and while casting mana never
+regened)
+
+
+
+
+Stamina 
+Increases health points. Each point of Stamina gives you an additional 10 HP.
+
+
+Intellect
+Increases the rate at which you learn weapon skills. 
+Increases your Mana points. 
+Increases your chance to score a critical hit with spells.
+
+
+Attack Power 
+- Attack power increases your base melee DPS by 1 for every 14 attack power. 
+- Strength increases your melee attack power by 2, except for rogues and
+Hunters. Rogues and Hunters gain 1 attack power per point of Strength, and 1 per
+point of Agility (see table on page 3 for more detailed calculation).
+
+Attack Power calculation (high) 
+
+Quote:  
+Warrior Character Level*3+Strength*2-20 
+Paladin Character Level*3+Strength*2-20 
+Rogue Character Level*2+Strength+Agility-20 
+Hunter Character Level*2+Strength+Agility-20 
+Shaman Character Level*2+Strength*2-20 
+Druid Strength*2-20 
+Mage Strength-10 
+Priest Strength-10 
+Warlock Strength-10 
+
+14 Attack Power = 1 Damage per Second
+
+
+
+Defense 
+- Increases the chance of being missed by an attack. 
+- Increases the chance to dodge, parry, and block. 
+- Decreases the chance of being affected by a critical hit. 
+- Decreases the chance of being affected by a "crushing blow". Creatures that
+are higher level than your character can land crushing blows that deal increased
+melee damage. The chance of a crushing blow increases as the level difference
+between you and the opposing creature increases. Players never deal "crushing
+blows", only creatures.
+
+
+
+Agility 
+
+Increases your attack power with ranged weapons. 
+Increases your armor. 
+Increases your chance to score a critical hit with a weapon. 
+Increases your chance to dodge attacks. 
+Rogues gain a much stronger bonus to dodge from agility than other classes. 
+Hunter & Rogue: Increases your attack power with melee weapons. 
+
+From the Developers: 
+
+Agility 
+
+Increases Armor Class by 2 for every point of AGI. 
+
+Increases the chance of a critical hit with melee and ranged attacks. The amount
+of the increase is dependant on both class and level. For most level 60
+character classes, approximately 20 points of AGI will increase your critical
+hit chance by approximately 1%. Rogues require 29 AGI for an additional 1%
+critical hit chance, and Hunters require 53 AGI for an additional 1% critical
+hit chance, but both of these classes also gain attack power from agility and
+the items available to them typically have much higher amounts of AGI.
+
+Increases the chance to dodge an attack. The amount increased is dependant on
+both class and level. For most level 60 character classes, approximately 20
+points of AGI will increase your chance to dodge by approximately 1%. Rogues
+only require 14.5 AGI for an additional 1% dodge chance. Hunters require 26.5
+AGI for an additional 1% dodge chance, but Hunters typically have a high amount
+of agility, as well as an Aspect spell that further increases their chance to
+dodge attacks.
+
+
+
+Strength
+Strength increases your melee attack power by 2, except for rogues and Hunters.
+Rogues and Hunters gain 1 attack power per point of Strength, and 1 per point of
+Agility.
+
+Attack power increases your base melee DPS by 1 for every 14 attack power. 
+
+Increases the amount of damage you can block with a shield. 
+
+Strength does not affect critical hit chances at all. Strength does not improve
+your chance to block, but rather the amount of damage blocked when you succeed.
+This amount is determined in part by Strength (and the other part by your
+shield).
+
+
+
+
+
+Health regen 
+
+No regeneration in combat. 
+There is 1 tick of regeneration every 2 seconds. 
+Its value depends on class and spirit : 
+
+Mage = Spirit*0.10 
+Priest = Spirit*0.10 
+Warlock = Spirit*0.11 
+Druid = Unknown 
+Shaman = Spirit*0.11 + 9 (from pionere) 
+Rogue = Spirit*0.50 
+Warrior = Spirit*0.80 
+Hunter = Spirit*0.25 
+Paladin = Spirit*0.25
+
+
+Mana regen 
+
+No regeneration while casting (except when specialized in talents that override this) 
+Regeneration starts again 5 seconds after casting is over. 
+There is 1 tick of regeneration every 2 seconds. 
+Its value depends on class and spirit : 
+
+Mage = Spirit/4 + 11 
+Priest = Spirit/4 + 13 
+Warlock = Spirit/4 + 8 
+Druid = Spirit/5 + 15 
+Shaman = Spirit/5 + 17 (from pionere) 
+Hunter= Spirit/4 + 11 
+Paladin = Spirit/4 + 8
+
+
+Probably outdated with new patches or even then they was not correct  
+Shaman: 
+Mana += spirit/5 + 17; 
+HitPoint += spirit/9 + 9; 
+
+Paladin: 
+Mana += spirit/4 + 13;

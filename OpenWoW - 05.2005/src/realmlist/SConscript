@@ -1,0 +1,39 @@
+import os
+
+Import('realmlist_env')
+
+realmlist_srcs = [
+    'Accounts.cpp',
+    'RealmClient.cpp',
+    'RealmList.cpp',
+    'RealmListSrv.cpp',
+    'UserHashes.cpp',
+    'WorldCommSrv.cpp',
+    ]
+
+realmlist_incs = [
+    'Accounts.h',
+    'RealmClient.h',
+    'RealmList.h',
+    'RealmListSrv.h',
+    'UserHashes.h',
+    'WorldCommSrv.h',
+    ]
+
+realmlist_env.Append(
+    CPPPATH=[os.path.abspath(os.path.join('..', 'shared')),
+             os.path.abspath(os.path.join('..', 'srp'))])
+realmlist_lib = realmlist_env.Library('realmlist', realmlist_srcs)
+realmlist_env.Default(realmlist_lib)
+realmlist_env.Alias('realmlist', realmlist_lib)
+
+if realmlist_env['buildenv'] == 'win32-msvc':
+    msvsproj = realmlist_env.MSVSProject(
+        target='realmlist' + realmlist_env['MSVSPROJECTSUFFIX'],
+        srcs=realmlist_srcs,
+        incs=realmlist_incs,
+        buildtarget=realmlist_lib,
+        variant='SCons')
+    realmlist_env.Default(msvsproj)
+    realmlist_env.Alias('realmlist', msvsproj)
+    pass

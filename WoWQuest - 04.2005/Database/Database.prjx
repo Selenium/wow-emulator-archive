@@ -1,0 +1,57 @@
+<Project name="Database" standardNamespace="NewProject" description="" newfilesearch="None" enableviewstate="True" version="1.1" projecttype="C#">
+  <Contents>
+    <File name=".\AssemblyInfo.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\DatabaseException.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\DataObject.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\DataTableHandler.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\IdGenerator.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ObjectDatabase.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Cache\CacheException.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Cache\ICache.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Cache\SimpleCache.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Connection\ConnectionType.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Connection\DataConnection.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\DataTables\DBAccount.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\DataTables\DBCharacter.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\DataTables\DBCreature.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\DataTables\DBItem.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\DataTables\DBItemTemplate.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\DataTables\DBObject.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\DataTables\DBPlayerStartInfo.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\DataTables\DBSpawn.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\DataTables\DBWorldMap.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\MemberValues\FieldMemberValue.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\MemberValues\IndexMemberValue.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\MemberValues\MemberValue.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\MemberValues\PropertyMemberValue.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\MemberValues\SerializeValue.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\MemberValues\SubClassMemberValue.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+  </Contents>
+  <References>
+    <Reference type="Project" refto="Common" localcopy="True" />
+    <Reference type="Assembly" refto="..\ByteFX.MySQL.dll" localcopy="True" />
+  </References>
+  <DeploymentInformation target="" script="" strategy="File" />
+  <Configuration runwithwarnings="False" name="Debug">
+    <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+    <Execution commandlineparameters="" consolepause="True" />
+    <Output directory=".\bin\Debug\" assembly="WoWDaemon.Database" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+  </Configuration>
+  <Configurations active="Debug">
+    <Configuration runwithwarnings="False" name="Debug">
+      <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Debug\" assembly="WoWDaemon.Database" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+    <Configuration runwithwarnings="False" name="Release">
+      <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="" warninglevel="4" nowarn="" includedebuginformation="False" optimize="True" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Release\" assembly="WoWDaemon.Database" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+    <Configuration runwithwarnings="True" name="MonoBuild">
+      <CodeGeneration runtime="Mono" compiler="Mcs" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Debug\" assembly="WoWDaemon.Database" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+  </Configurations>
+</Project>

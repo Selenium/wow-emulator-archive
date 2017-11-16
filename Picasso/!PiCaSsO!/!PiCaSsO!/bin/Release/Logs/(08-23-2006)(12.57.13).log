@@ -1,0 +1,30 @@
+!PiCaSsO! version Alpha 0.01 Copyright (C) 2006 by !PiCaSsO! Developer team
+08/23/2006 12:57:13: Loading account TEST...
+08/23/2006 12:57:13: Loading account 1+2+3+4+5+6...
+08/23/2006 12:57:13: Loading account 1 2 3 4 5 6...
+08/23/2006 12:57:13: Loading account T E S T...
+08/23/2006 12:57:13: Loaded all accounts from database!
+08/23/2006 12:57:13: Building external C# scripts, please wait...
+08/23/2006 12:57:13: Global scripts successfully loaded!
+08/23/2006 12:57:13: HTTPServer listening on port 8080
+08/23/2006 12:57:13: Worldserver listening on port 8085
+08/23/2006 12:57:14: AuthServer listening on port 1234
+08/23/2006 12:57:14: Waiting for incoming connections...
+08/23/2006 12:57:45: Incoming connection!
+08/23/2006 12:57:45: Recieved Logon Challenge!
+08/23/2006 12:57:45: Cient version accepted: 1.11.2, ID = 22549!
+08/23/2006 12:57:45: Recieved AUTH_CHALLENGE from user: TEST
+08/23/2006 12:57:45: Logon proof!
+08/23/2006 12:57:46: Client requested realmlist!
+08/23/2006 12:57:46: Client Redirected to Worldserver!
+08/23/2006 12:57:46: Challenged client to auth again.
+08/23/2006 12:57:46: Recieved 2nd auth from client!
+08/23/2006 12:57:46: Account found: TEST
+08/23/2006 12:57:46: Received CMSG_CHAR_ENUM
+08/23/2006 12:57:58: Client requested realmlist!
+08/23/2006 12:58:01: Received CMSG_CHAR_ENUM
+08/23/2006 12:58:01: Client requested realmlist!
+08/23/2006 12:58:01: Client Redirected to Worldserver!
+08/23/2006 12:58:01: Challenged client to auth again.
+08/23/2006 12:58:01: Eine bestehende Verbindung wurde softwaregesteuert
+durch den Hostcomputer abgebrochen

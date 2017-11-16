@@ -1,0 +1,5 @@
+#!/bin/sh
+#g++ -w *.cpp libeay32.lib -D=_DEBUG -march=i686 -o RealmList && echo success #debug
+g++ *.cpp libeay32.lib -O3 -march=i686 -o RealmList && echo success #release
+strip RealmList
+strip RealmList.exe #stupid windows ;)

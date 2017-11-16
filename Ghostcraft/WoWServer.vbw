@@ -1,0 +1,15 @@
+frmLink = 0, 0, 0, 0, C, 176, 176, 801, 652, C
+frmMain = 0, 0, 0, 0, C, 154, 154, 779, 630, C
+REALMPackets = 0, 0, 0, 0, C
+AccountRoutines = 0, 0, 0, 0, C
+Declares = 0, 0, 0, 0, C
+modArrays = 0, 0, 0, 0, C
+clsServerSocket = 0, 0, 0, 0, C
+WORLDPackets = 44, 44, 669, 520, 
+CharacterRoutines = 0, 0, 0, 0, C
+ObjectManagement = 88, 88, 713, 564, 
+ObjectManagement_Variables = 66, 66, 691, 542, 
+GUIDs = 0, 0, 0, 0, C
+GMCommands = 132, 132, 757, 608, 
+ItemManagement = 0, 0, 0, 0, C
+PlayerManagement = 22, 22, 818, 677, 

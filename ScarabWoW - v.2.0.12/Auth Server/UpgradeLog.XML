@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Scarab">
+</Property><Property Name="Solution File" Value="E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Scarab.sln">
+</Property><Property Name="Date" Value="Saturday, August 11, 2007">
+</Property><Property Name="Time" Value="21:56:20 PM">
+</Property></Properties><Event ErrorLevel="0" Project="Scarab" Source="Scarab.csproj" Description="Project file successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\Scarab.csproj">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AssemblyInfo.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\Account.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\Account.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\AuthErrorCode.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\AuthErrorCode.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\AuthOpCode.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\AuthOpCode.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\ByteArrayBuilderV2.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\ByteArrayBuilderV2.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\ClientConnection.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\ClientConnection.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\ConfigParser.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\ConfigParser.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\Core.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\Core.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\DatabaseConfig.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\DatabaseConfig.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\DatabaseManager.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\DatabaseManager.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\Network.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\Network.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\NetworkConfg.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\NetworkConfg.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\Program.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\Program.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\RealmColor.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\RealmColor.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\RealmList.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\RealmList.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\RealmStatus.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\RealmStatus.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\RealmStruct.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\RealmStruct.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\RealmTimeZone.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\RealmTimeZone.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\RealmType.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\RealmType.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\ServerBase.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\ServerBase.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="AuthServer\Utils.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\AuthServer\Utils.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="BigInteger.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\BigInteger.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="Global.cs" Description="File successfully backed up as E:\Old WoW EMU's\ScarabWoW Source Code\2.0.12 Version\Scarab\Backup\Global.cs">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="Scarab.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Scarab" Source="Scarab.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Scarab" Source="Scarab.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

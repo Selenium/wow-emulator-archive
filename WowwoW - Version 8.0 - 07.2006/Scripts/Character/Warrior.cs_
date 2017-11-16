@@ -1,0 +1,116 @@
+//	Script made by fulgas - 12/05/05 15:08:50
+//      Script modified by fulgas - 12/05/05 - items
+//	Script made by pionere - 10/05/05 00:31:56
+using System;
+using Server.Items;
+
+//	Script made by pionere - 08/05/05 12:53:24
+/////////////////////////////////////////////
+namespace Server.Scripts
+{
+
+	/*
+	 * Author: pionere modified Kroy's Druid class
+	 * Date: 2005-05-07.
+	 * Mage methods.
+	 * Called from CustomHandlers.cs.
+	 * Currently starting stats, starting items and level progression. 
+	 */
+	public class Warrior 
+	{
+		/* Starting stats, abilities, items and spells. */
+		public static void Start(Character c) 
+		{
+			c.TrainAbility(new int[] { 0xC37, 0x6B, 0x0ACC, 0x0999, 0x4E, 0xC4,
+										 0x49C, 0xC6, 0x19CB, 0xC9, 0x2376, 0x2375, 0x2221, 0x239C,
+										 0xCA, 0x2EE, 0x3FC0, 0x51, 0xcb, 0x506D, 0x506F, 0x5070,
+										 0x5071, 0x4B, 0xACC, 0x108, 0x10A, 0xA07, 7918});
+			c.ActionBarAdd(0x19CB);
+			
+			/* Stats. */
+			c.Str +=3;
+			c.Stamina += 2;
+			c.BaseHitPoints = ClassHandlers.StartingHP(c, 40);
+			c.HitPoints = c.BaseHitPoints;
+	
+			/* Items. */
+			// Author: fulgas ( fulgas@gmail.com ) 10-05-2005
+			// spell check Nigth => Night
+			if ( (c.Race == Races.Human) || (c.Race == Races.Dwarf) 
+				|| (c.Race == Races.Gnome) || (c.Race == Races.NightElf) )
+			{
+				if( c.Race != Races.NightElf )
+				{
+					c.Equip(new RecruitsShirt(), Items.Slots.Shirt);
+					c.Equip(new RecruitsPants(), Items.Slots.Legs);
+					c.Equip(new RecruitsBoots(), Items.Slots.Feet);
+				}
+				else
+				{
+					c.Equip(new NightElfRecruitsShirt(), Items.Slots.Shirt);
+					c.Equip(new NightElfRecruitsPants(), Items.Slots.Legs);
+					c.Equip(new NightElfRecruitsBoots(), Items.Slots.Feet);
+				}
+				if ( (c.Race == Races.Human) || (c.Race == Races.NightElf)
+					|| (c.Race == Races.Gnome) )// human || NE || Gnome
+				{
+					c.Equip(new WornShortsword(), Items.Slots.MainHand);
+					c.Equip(new WornWoodenShield(), Items.Slots.OffHand);
+				}
+				else // Dwarf
+				{
+					c.Equip(new WornBattleaxe(), Items.Slots.MainHand);
+				}
+				c.CreateAndAddObject("ToughJerky",20);
+			}
+			else
+			{
+				c.Equip(new BrawlersHarness(), Items.Slots.Shirt);
+				c.Equip(new BrawlersPants(), Items.Slots.Legs);
+				if ( (c.Race == Races.Orc) || (c.Race == Races.Undead) )
+				{
+					c.Equip(new BrawlersBoots(), Items.Slots.Feet);
+					if ( c.Race == Races.Orc ) // orc
+					{
+						c.Equip(new WornBattleaxe(), Items.Slots.MainHand);
+						c.CreateAndAddObject("ToughJerky",20);
+					}
+					else // undead
+					{
+						c.Equip(new WornShortsword(), Items.Slots.MainHand);
+						c.Equip(new WornWoodenShield(), Items.Slots.OffHand);
+						c.CreateAndAddObject("ForestMushroomCap",20);	
+					}
+				}
+				else if ( c.Race == Races.Tauren ) //tauren
+				{
+					c.Equip(new BattlewornHammer(), Items.Slots.MainHand);
+					c.CreateAndAddObject("ToughHunkOfBread",20);
+				}
+				else // troll
+				{
+					c.Equip(new WornAxe(), Items.Slots.MainHand);
+					c.Equip(new WornWoodenShield(), Items.Slots.OffHand);
+					c.CreateAndAddObject("CrudeThrowingAxe", 200); 
+					c.CreateAndAddObject("ToughJerky",20);	
+				}
+			}
+			c.CreateAndAddObject("Hearthstone");
+		}
+	
+		/* Level progression rules. */
+		public static void LevelUp(Character c, ref int gainHp, ref int gainMana,
+			ref float gainStr, ref float gainAgi,
+			ref float gainSta, ref float gainInt, ref float gainSpi) 
+		{
+			if (c.Level <= 14) gainHp = 19;
+			else gainHp = c.Level+10;
+
+			gainStr = ClassHandlers.gainStat(c.Level, 0.000039, 0.006902, 1.080040, -1.051701);
+			gainInt = ClassHandlers.gainStat(c.Level, 0.000002, 0.001003, 0.100890, -0.076055);
+			gainAgi = ClassHandlers.gainStat(c.Level, 0.000022, 0.004600, 0.655333, -0.600356);
+			gainSta = ClassHandlers.gainStat(c.Level, 0.000059, 0.004044, 1.040000, -1.488504);
+			gainSpi = ClassHandlers.gainStat(c.Level, 0.000006, 0.002031, 0.278360, -0.340077);
+		}
+	}
+}

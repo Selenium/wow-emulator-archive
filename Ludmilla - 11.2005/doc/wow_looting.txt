@@ -1,0 +1,96 @@
+A player does not get XP, nor can he loot a mob aggroed by someone else if he is
+not grouped in some way (party, raid etc) with the puller (XP is also not
+rewarded if the mob is a number of levels below you... 5 I think)
+
+[sidenote]: the above rules are also determinant for the warlock ability to pull
+soulshard from mobs (he can only get a soulshard if he gets XP for that mob)
+
+In case of looting a boss (elite) for a quest item, all the members of the group
+can loot that specific quest item (once per kill, of course)
+
+Group loot rules:
+
+* Free for all. Everyone can loot. 
+
+* Round robin. Everyone takes a turn. When it's your turn to loot, you'll see
+sparklies above the mob. My favorite.
+
+* Master loot. One person only can loot.
+
+* Need before greed. Not well implemented, in my opinion. Based on what you can
+use. So, casters can only be eligible for cloth. Warriors, for example, are
+eligible for everything because they can wear cloth, leather, chain and mail.
+
+* Threshold. This is a special setting, which is used in conjunction with all
+the other ones. It basically forces people to roll on items according to the
+threshold. So, if it's set to uncommon (for example), everyone will get a pop-up
+box with the options to pass or roll on any blue item (uncommon quality). The
+winner automatically gets the item added to their inventory.
+
+UPDATE: It was mentioned in a pre-beta note that they MAY be increasing the
+range of xp bearing mobs for higher level characters. I believe it will be 20%
+of your level with a minimum of 5 levels. We will hopefully have this in the
+next patch (beta 1, my note), but no promises.
+
+Examples: 
+Level 10 character would get experience from level 6+ mobs 
+Level 50 character would get experience from level 40+ mobs
+
+
+
+
+Looting While Solo 
+You already know this, you can loot what you kill. Mob tagging applies. but I'll
+touch this a bit later.
+
+Looting While In A Party 
+There are five group looting parameters: 
+
+Free-for-all: First-come, first-served. Anyone can loot what the party has killed. 
+
+Designated looter: One person in the group, designated by the leader, loots all
+corpses.
+
+Round-robin: Party members take turns looting corpses. Seems to apply wether you
+participated in killing the mob or not.
+
+Group loot: When an item equal to or above the threshold (details on threshold
+below) is on a monster that is killed, everyone gets a pop-up box on their
+screen with the item and pass or roll options and a timer. Anyone who rolls,
+displays a number between 1 and 100, the highest roller of all those who choose
+to roll automatically gets the item. Anyone who waits until the timer expires
+automatically passes. Items below the threshold are taken care of by normal
+round robin rules.
+
+Need before Greed: Same as group loot, except players who cannot use the item
+automatically pass.
+
+In all group loot settings, money on the corpse is distributed as evenly as
+possible among all party members. Grey or white items on the corpse can be
+picked up by whomever is looting it (including bind on pickup). If a corpse
+carries a quest item, each member of the party who has that quest will be
+allowed to loot that corpse, and each member will be able to loot the quest item
+in question (this only applies to bosses - elite mobs).
+
+Items of good (green) quality or higher might not be immediately lootable,
+depending on the loot rolling threshhold established by the party leader. When
+an item is available that falls within that rolling threshhold (generally set to
+Uncommon = Green), the looter is prohibited from taking the item and a 'roll
+window' pops up for all party members with an image of the item and two buttons
+- a pair-of-dice button and a cancel button. Mouse over the picture of the item
+to see its characteristics, and if you want to take it, click the pair-of-dice
+button to randomly generate a number from 1 to 100. If you don't want the item,
+click the cancel button and you will 'pass' on the item. The high-roller among
+those who roll is awarded the item, and it goes in that character's backpack. If
+everyone passes on a rollable item, the item becomes freely lootable to anyone
+in the party.
+
+Note that these group looting parameters only apply when looting corpses -
+containers like chests, food crates, and the like are always treated by the game
+as 'free for all', though many groups have a protocol that is used when a chest
+is encountered. Two common protocols are 'roll for chest', where each party
+member types '/random 100' to generate a random number and the winner loots the
+entire chest, and 'high to low', where the highest level member of the group
+gets first crack at the chest, takes anything she likes, then anything left is
+available for the next highest level group member, etc., until the chest is
+empty or no one wishes to take anything else.

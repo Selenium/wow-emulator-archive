@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/norwegianelite/!svn/ver/20/Summit/src
+END
+ascent-realms.conf
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-realms.conf
+END
+ascent-logonserver.conf
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-logonserver.conf
+END
+ascent-voicechat.conf
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-voicechat.conf
+END
+ascent-world.conf
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world.conf
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/norwegianelite/!svn/ver/19/Summit/src/Makefile.am
+END

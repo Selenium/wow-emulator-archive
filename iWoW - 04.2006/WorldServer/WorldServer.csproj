@@ -1,0 +1,197 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9CBB1092-FE7F-481B-8EFD-CFCFAB1F8432}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>WoWDaemon.WorldServer</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WoWDaemon.World</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\WinLoader\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{F21EE291-0365-484A-86AA-2FB2273C0304}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Database\Database.csproj">
+      <Name>Database</Name>
+      <Project>{0CD5A6AB-7CC6-42C3-BF96-6C19B61D1E2A}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChannelManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClientPackets\Combat.cs" />
+    <Compile Include="ClientPackets\Inventory.cs" />
+    <Compile Include="ClientPackets\Loot.cs" />
+    <Compile Include="ClientPackets\OpeningCinematic.cs" />
+    <Compile Include="ClientPackets\Spells.cs" />
+    <Compile Include="ClientPackets\StandStateChanged.cs" />
+    <Compile Include="ClientPackets\TextEmote.cs" />
+    <Compile Include="DBManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DebugLogger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GroupManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LootManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MapInstance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MapManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MapTile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\ContainerObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\ItemObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\LivingObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\ObjectInventory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\PlayerObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\UnitBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\WorldObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectUpdateManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StatManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorldClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorldClock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorldMsgHandlers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorldPacketManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorldScriptAssembly.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorldServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ClientScripts\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

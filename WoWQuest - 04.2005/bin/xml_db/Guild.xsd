@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="Guild" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Guild" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Guild">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Guild_ID" type="xs:unsignedInt" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Leader" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="CreationDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="GuildInfo" type="xs:string" minOccurs="0" />
+              <xs:element name="MOTD" type="xs:string" minOccurs="0" />
+              <xs:element name="Color" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Border" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="BorderColor" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Icon" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="IconColor" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="RankName_0" type="xs:string" minOccurs="0" />
+              <xs:element name="RankName_1" type="xs:string" minOccurs="0" />
+              <xs:element name="RankName_2" type="xs:string" minOccurs="0" />
+              <xs:element name="RankName_3" type="xs:string" minOccurs="0" />
+              <xs:element name="RankName_4" type="xs:string" minOccurs="0" />
+              <xs:element name="RankName_5" type="xs:string" minOccurs="0" />
+              <xs:element name="RankName_6" type="xs:string" minOccurs="0" />
+              <xs:element name="RankName_7" type="xs:string" minOccurs="0" />
+              <xs:element name="RankName_8" type="xs:string" minOccurs="0" />
+              <xs:element name="RankName_9" type="xs:string" minOccurs="0" />
+              <xs:element name="RankFlags_0" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="RankFlags_1" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="RankFlags_2" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="RankFlags_3" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="RankFlags_4" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="RankFlags_5" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="RankFlags_6" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="RankFlags_7" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="RankFlags_8" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="RankFlags_9" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="MaxRank" type="xs:unsignedInt" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//Guild" />
+      <xs:field xpath="Guild_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

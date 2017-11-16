@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="GuildMembers" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="GuildMembers" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="GuildMembers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GuildMembers_ID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="GuildId" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="MemberId" type="xs:unsignedInt" />
+              <xs:element name="Rank" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Note" type="xs:string" minOccurs="0" />
+              <xs:element name="OfficerNote" type="xs:string" minOccurs="0" />
+              <xs:element name="LastOnline" type="xs:unsignedInt" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//GuildMembers" />
+      <xs:field xpath="MemberId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract
+END
+wdtfile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/wdtfile.cpp
+END
+model.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/model.cpp
+END
+modelheaders.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/modelheaders.h
+END
+wmo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/wmo.cpp
+END
+mpq.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/mpq.h
+END
+wdtfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/wdtfile.h
+END
+vmapexport.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/vmapexport.cpp
+END
+model.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/model.h
+END
+wmo.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/wmo.h
+END
+adtfile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/adtfile.cpp
+END
+vec3d.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/vec3d.h
+END
+adtfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/adtfile.h
+END
+dbcfile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/dbcfile.cpp
+END
+mpq.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/mpq.cpp
+END
+dbcfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/extractor/vmapextract/dbcfile.h
+END

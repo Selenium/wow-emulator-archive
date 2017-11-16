@@ -1,0 +1,2 @@
+#!/bin/sh
+g++ -w *.cpp -lz -lpthread -g3 -O3 -march=i686 -o TownHall && echo success

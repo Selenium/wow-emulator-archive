@@ -1,0 +1,6 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\WoWDaemon.WinLoader.AccountConfig.resources
+obj\Debug\WoWDaemon.WinLoader.PlayerConfig.resources
+obj\Debug\WoWDaemon.WinLoader.WinConf.resources
+obj\Debug\WoWDaemon.WinLoader.WinLoader.resources
+obj\Debug\WinLoader.csproj.GenerateResource.Cache

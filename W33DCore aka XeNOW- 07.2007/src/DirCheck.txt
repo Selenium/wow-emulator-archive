@@ -1,0 +1,9 @@
+bindings ----done
+
+game ----not done
+
+shared ---not done
+
+realmd ---- done
+
+mangosd ---- done ( xenow )

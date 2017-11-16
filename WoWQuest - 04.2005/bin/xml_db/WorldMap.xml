@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<WorldMap>
+  <WorldMap>
+    <WorldMap_ID>1</WorldMap_ID>
+    <Continent>0</Continent>
+    <BottomX>-16000</BottomX>
+    <BottomY>-16000</BottomY>
+    <TopX>8000</TopX>
+    <TopY>5200</TopY>
+    <TileSize>100</TileSize>
+  </WorldMap>
+  <WorldMap>
+    <WorldMap_ID>2</WorldMap_ID>
+    <Continent>1</Continent>
+    <BottomX>-12000</BottomX>
+    <BottomY>-9000</BottomY>
+    <TopX>12000</TopX>
+    <TopY>5200</TopY>
+    <TileSize>100</TileSize>
+  </WorldMap>
+</WorldMap>

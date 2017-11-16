@@ -1,0 +1,16 @@
+frmMain = 91, 199, 892, 705, C, 0, 0, 0, 0, C
+frmSplash = 246, 153, 693, 720, C, 0, 0, 0, 0, C
+frmMDI = 120, 118, 955, 666, C, 0, 0, 0, 0, C
+frmLog = 94, 185, 965, 685, C, 0, 0, 0, 0, C
+SHA1 = 157, 117, 962, 701, C
+System = 121, 92, 955, 678, C
+BigInt = 101, 53, 871, 664, C
+RSFunctions = 61, 109, 925, 709, C
+Global = 212, 36, 850, 604, C
+Constants = 151, 66, 927, 613, C
+RSPacketAnalyzer = 16, 120, 1008, 693, C
+frmWSSetup = 152, 108, 939, 655, C, 0, 0, 0, 0, C
+WSPacketAnalyzer = 48, 92, 1005, 669, C
+WSFunctions = 2, 93, 808, 631, C
+DataBase = 194, 100, 863, 691, C
+frmMisc = 63, 73, 949, 676, C, 0, 0, 0, 0, C

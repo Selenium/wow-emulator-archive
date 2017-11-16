@@ -1,0 +1,46 @@
+!PiCaSsO! version Alpha 0.01 Copyright (C) 2006 by !PiCaSsO! Developer team
+08/20/2006 19:46:54: Loading account TEST...
+08/20/2006 19:46:54: Loading account 1+2+3+4+5+6...
+08/20/2006 19:46:54: Loading account 1 2 3 4 5 6...
+08/20/2006 19:46:54: Loading account T E S T...
+08/20/2006 19:46:54: Loaded all accounts from database!
+08/20/2006 19:46:54: Building external C# scripts, please wait...
+08/20/2006 19:46:54: Global scripts successfully loaded!
+08/20/2006 19:46:54: HTTPServer listening on port 8080
+08/20/2006 19:46:55: Worldserver listening on port 8085
+08/20/2006 19:46:55: AuthServer listening on port 1234
+08/20/2006 19:46:55: Waiting for incoming connections...
+08/20/2006 19:47:18: Incoming connection!
+08/20/2006 19:47:18: Recieved Logon Challenge!
+08/20/2006 19:47:18: Cient version accepted: 1.11.2, ID = 22549!
+08/20/2006 19:47:18: Recieved AUTH_CHALLENGE from user: TEST
+08/20/2006 19:47:21: Logon proof!
+08/20/2006 19:47:21: Client requested realmlist!
+08/20/2006 19:47:21: Client Redirected to Worldserver!
+08/20/2006 19:47:21: Challenged client to auth again.
+08/20/2006 19:47:21: Recieved 2nd auth from client!
+08/20/2006 19:47:21: Temporair message: string account = TEST
+08/20/2006 19:47:21: Temporair message: int ClientSeed = 67444222
+08/20/2006 19:47:21: Temporair message: byte[] digest = 00000000000000000000
+08/20/2006 19:47:36: Client requested realmlist!
+08/20/2006 19:47:36: Client Redirected to Worldserver!
+08/20/2006 19:47:36: Challenged client to auth again.
+08/20/2006 19:47:36: Recieved 2nd auth from client!
+08/20/2006 19:47:36: Temporair message: string account = TEST
+08/20/2006 19:47:36: Temporair message: int ClientSeed = -552002662
+08/20/2006 19:47:36: Temporair message: byte[] digest = 00000000000000000000
+08/20/2006 19:47:38: Client requested realmlist!
+08/20/2006 19:47:38: Client Redirected to Worldserver!
+08/20/2006 19:47:38: Challenged client to auth again.
+08/20/2006 19:47:38: Recieved 2nd auth from client!
+08/20/2006 19:47:38: Temporair message: string account = TEST
+08/20/2006 19:47:38: Temporair message: int ClientSeed = 440153665
+08/20/2006 19:47:38: Temporair message: byte[] digest = 00000000000000000000
+08/20/2006 19:47:44: Client requested realmlist!
+08/20/2006 19:47:44: Client requested realmlist!
+08/20/2006 19:47:44: Client Redirected to Worldserver!
+08/20/2006 19:47:44: Challenged client to auth again.
+08/20/2006 19:47:44: Recieved 2nd auth from client!
+08/20/2006 19:47:44: Temporair message: string account = TEST
+08/20/2006 19:47:44: Temporair message: int ClientSeed = 1181201561
+08/20/2006 19:47:44: Temporair message: byte[] digest = 00000000000000000000

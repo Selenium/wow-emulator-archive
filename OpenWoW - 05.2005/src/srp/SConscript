@@ -1,0 +1,30 @@
+import os
+
+Import('srp_env')
+
+srp_srcs = [
+    'SrpRealm.cpp',
+    'SrpWorld.cpp',
+    'bigint.c'
+    ]
+
+srp_incs = [
+    'SrpRealm.h',
+    'SrpWorld.h',
+    'bigint.h'
+    ]
+
+srp_lib = srp_env.Library('srp', srp_srcs)
+srp_env.Default(srp_lib)
+srp_env.Alias('srp', srp_lib)
+
+if srp_env['buildenv'] == 'win32-msvc':
+    msvsproj = srp_env.MSVSProject(
+        target='srp' + srp_env['MSVSPROJECTSUFFIX'],
+        srcs=srp_srcs,
+        incs=srp_incs,
+        buildtarget=srp_lib,
+        variant='SCons')
+    srp_env.Default(msvsproj)
+    srp_env.Alias('srp', msvsproj)
+    pass

@@ -1,0 +1,59 @@
+When an offensive spell is cast, the target has two seperate chances to resist
+the attack.
+
+First, there is a roll based purely on the level difference between the caster
+and the target. If the target is significantly higher level, the spell will
+usually fail completely. If the target is significantly lower level, the spell
+will very rarely fail. This first roll is why spell casting players have such a
+hard time landing spells consistantly on all monsters a few levels higher. In
+PvP combat, it is much less of a factor. A level 10 Mage can very often land
+polymorph on a level 60 player.
+
+Formula needed for the first roll. 
+
+Second, there is a roll based on the level of the caster and the resistance stat
+of the target. Notice that the level of the target is not a factor in this roll.
+
+Average Resistance = (Target's Resistance / (Caster's Level * 5)) * .75 
+
+Average resistance may be no higher than 75%. Of course, what it takes to reach
+75% average resistance depends on the spellcaster's level. Against a level 1
+spellcaster, it would take a resistance stat of 5. Level 20 would take 100
+resistance. Level 50 would take 250 resistance. Level 60 would take 300
+resistance. Level 63 would take 315 resistance.
+
+Why is it called "average resistance?" For spells that don't cause immediate
+damage, you'll either totally take the hit or totally avoid the hit. The average
+resistance is the chance you'll totally avoid the hit. Adding the word "average"
+is a little redundant in this case.
+
+However, when spells do cause immediate damage, it's not just a full hit or full
+miss situation. Damage spells be resisted for 0%, 25%, 50%, 75%, or 100% of
+their regular damage. Your average resistance can still be anywhere betweeen 0%
+and 75%. If your average resistance is maxed out, then there's a really good
+chance of 75% of the spell's damage to be resisted. There's also a fairly good
+chance of 100% of the spell's damage being resisted. A slightly lower chance of
+50% of its damage being resisted. Small chances of only 25% or even 0% of the
+damage being resisted. It's a weighted average. Visualize it as a bell curve
+around your average resistance.
+
+Example: Average Resistance vs. Level 60 Spellcasters 
+
+
+Code:   
+Resistance Stat  Average Resistance  
+  0                          0%  
+ 25                         6.25%  
+ 50                        12.5%  
+ 75                        18.75%  
+100                        25%  
+125                        31.25%  
+150                        37.5%  
+175                        43.75%  
+200                        50%  
+225                        56.25%  
+250                        62.5%  
+275                        68.75%  
+300                        75% 
+
+http://www.worldofwarcraft.com/info/basics/resistances.html

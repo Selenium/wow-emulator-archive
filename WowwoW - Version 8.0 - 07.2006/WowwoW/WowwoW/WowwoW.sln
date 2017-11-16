@@ -1,0 +1,34 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WowwoW", "WowwoW\WowwoW.csproj", "{97DE59C8-1DA9-43B7-A07F-F9FDB8678258}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {AA870F4C-5992-4DF7-A48C-7D72E9F7524C}
+		SccProjectUniqueName1 = WowwoW\\WowwoW.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection1 = WowwoW\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		Volhv = Volhv
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{97DE59C8-1DA9-43B7-A07F-F9FDB8678258}.Debug.ActiveCfg = Debug|.NET
+		{97DE59C8-1DA9-43B7-A07F-F9FDB8678258}.Debug.Build.0 = Debug|.NET
+		{97DE59C8-1DA9-43B7-A07F-F9FDB8678258}.Release.ActiveCfg = Release|.NET
+		{97DE59C8-1DA9-43B7-A07F-F9FDB8678258}.Release.Build.0 = Release|.NET
+		{97DE59C8-1DA9-43B7-A07F-F9FDB8678258}.Volhv.ActiveCfg = Volhv|.NET
+		{97DE59C8-1DA9-43B7-A07F-F9FDB8678258}.Volhv.Build.0 = Volhv|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="Quest" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Quest" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Quest">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Quest_ID" type="xs:unsignedInt" />
+              <xs:element name="Title" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="Objectives" type="xs:string" minOccurs="0" />
+              <xs:element name="CompletedText" type="xs:string" minOccurs="0" />
+              <xs:element name="IncompletedText" type="xs:string" minOccurs="0" />
+              <xs:element name="RequiredLevel" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="RequiredQuest" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="ChooseRewardID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="ChooseDisplayID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="ChooseQuantity" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="AlwaysRewardID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="AlwaysDisplayID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="AlwaysRewardQuantity" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="MoneyReward" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="XPReward" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="OriginalGUID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="TargetGUID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="MonsterToKill" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="MonsterQuantity" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="ItemToCollect" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="ItemQuantity" type="xs:unsignedInt" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//Quest" />
+      <xs:field xpath="Quest_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

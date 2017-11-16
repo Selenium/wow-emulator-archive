@@ -1,0 +1,176 @@
+1,1,"PLAYER, Human"
+2,2,"PLAYER, Orc"
+3,3,"PLAYER, Dwarf"
+4,4,"PLAYER, Night Elf"
+5,5,"PLAYER, Undead"
+6,6,"PLAYER, Tauren "
+7,7,Creature
+115,8,"PLAYER, Gnome"
+116,9,"PLAYER, Troll"
+14,14,Monster
+17,15,Defias Brotherhood
+20,16,"Gnoll, Riverpaw"
+19,17,"Gnoll, Redridge"
+39,18,"Gnoll, Shadowhide"
+18,19,Murloc
+21,20,"Undead, Scourge"
+121,21,Booty Bay
+22,22,Beast - Spider
+1094,23,Beast - Boar
+24,24,Worgen
+25,25,Kobold
+28,26,"Troll, Bloodscalp"
+30,27,"Troll, Skullsplitter"
+31,28,Prey
+32,29,Beast - Wolf
+,30,Defias Brotherhood Traitor
+35,31,Friendly
+36,32,Trogg
+37,33,"Troll, Frostmane"
+40,34,"Orc, Blackrock"
+41,35,Villian
+42,36,Victim
+44,37,Beast - Bear
+45,38,Ogre
+46,39,Kurzen's Mercenaries
+10,40,Escortee
+47,41,Venture Company
+48,42,Beast - Raptor
+49,43,Basilisk
+50,44,"Dragonflight, Green"
+51,45,Lost Ones
+,46, Blacksmithing - Armorsmithing
+55,47,Ironforge
+54,48,"Dwarf, Dark Iron"
+53,49,"Human, Night Watch"
+60,50,"Dragonflight, Red"
+61,51,"Gnoll, Mosshide"
+62,52,"Orc, Dragonmaw"
+63,53,"Gnome, Leper"
+23,54,Gnomeregan Exiles
+66,55,Leopard
+67,56,Scarlet Crusade
+70,57,"Gnoll, Rothide"
+72,58,Beast - Gorilla
+1474,59,Thorium Brotherhood
+74,60,Naga
+76,61,Dalaran
+77,62,Forlorn Spirit
+78,63,Darkhowl
+81,64,Grell
+82,65,Furbolg
+83,66,Horde Generic
+,67,Horde
+68,68,Undercity
+79,69,Darnassus
+87,70,Syndicate
+88,71,Hillsbrad Militia
+11,72,Stormwind
+90,73,Demon
+91,74,Elemental
+92,75,Spirit
+29,76,Orgrimmar
+94,77,Treasure
+95,78,"Gnoll, Mudsnout"
+96,79,"HIllsbrad, Southshore Mayor"
+103,80,"Dragonflight, Black"
+104,81,Thunder Bluff
+654,82,"Troll, Witherbark"
+,83, Leatherworking - Elemental
+,84,"Quilboar, Razormane"
+111,85,"Quilboar, Bristleback"
+,86, Leatherworking - Dragonscale
+119,87,Bloodsail Buccaneers
+128,88,Blackfathom
+129,89,Makrura
+130,90,"Centaur, Kolkar"
+131,91,"Centaur, Galak"
+132,92,Gelkis Clan Centaur
+133,93,Magram Clan Centaur
+134,94,Maraudine
+149,108,Theramore
+152,109,"Quilboar, Razorfen"
+109,110,"Quilboar, Razormane 2"
+154,111,"Quilboar, Deathshead"
+168,128,Enemy
+188,148,Ambient
+208,168,Nethergarde Caravan
+,169,Steamwheedle Cartel
+84,189,Alliance Generic
+,209,Nethergarde
+270,229,Wailing Caverns
+310,249,Silithid
+370,269,Silvermoon Remnant
+1574,270,Zandalar Tribe
+,289, Blacksmithing - Weaponsmithing
+413,309,Scorpid
+411,310,Beast - Bat
+415,311,Titan
+430,329,Taskmaster Fizzule
+471,349,Ravenholdt
+474,369,Gadgetzan
+494,389,Gnomeregan Bug
+514,409,Harpy
+554,429,Burning Blade
+574,449,Shadowsilk Poacher
+575,450,Searing Spider
+,469,Alliance
+69,470,Ratchet
+694,471,Wildhammer Clan
+735,489,"Goblin, Dark Iron Bar Patron"
+777,509,! REUSE ME 004
+776,510,! REUSE ME 003
+778,511,Giant
+794,529,Argent Dawn
+126,530,Darkspear Trolls
+,531,"Dragonflight, Bronze"
+,532,"Dragonflight, Blue"
+,549, Leatherworking - Tribal
+,550, Engineering - Goblin
+,551, Engineering - Gnome
+,569, Blacksmithing - Hammersmithing
+,570, Blacksmithing - Axesmithing
+,571, Blacksmithing - Swordsmithing
+795,572,"Troll, Vilebranch"
+230,573,Southsea Freebooters
+,574,Caer Darrow
+934,575,"Furbolg, Uncorrupted"
+414,576,Timbermaw Furbolgs
+854,577,Everlook
+874,589,Wintersaber Trainers
+635,609,Cenarion Circle
+1014,629,Shatterspear Trolls
+73,630,Ravasaur Trainers
+1095,649,Majordomo Executus
+914,669,Beast - Carrion Bird
+1114,670,Beast - Cat
+1194,671,Beast - Crab
+1597,672,Beast - Crocilisk
+1214,673,Beast - Hyena
+1215,674,Beast - Owl
+1335,675,Beast - Scorpid
+1554,676,Beast - Tallstrider
+1596,677,Beast - Turtle
+1216,678,Beast - Wind Serpent
+1217,679,Training Dummy
+1534,689,"Dragonflight, Black - Bait"
+695,709,Battleground Neutral
+52,729,Frostwolf Clan
+1294,730,Stormpike Guard
+1415,749,Hydraxian Waterlords
+1434,750,Sulfuron Firelords
+1494,769,Gizlock's Dummy
+1495,770,Gizlock's Charm
+1496,771,Gizlock
+,789,Moro'gai
+1555,790,Spirit Guide - Alliance
+,809,Shen'dralar
+,829,Ogre (Captain Kromcrush)
+,849,Spirit Guide - Horde
+,869,Jaedenar
+,889,Warsong Outriders
+,890,Silverwing Sentinels
+,891,Alliance Forces
+,892,Horde Forces
+,893,Revantusk Trolls
+,909,Darkmoon Faire

@@ -1,0 +1,45 @@
+NPC, GameObject settings scriptable, triggered by events (like quest, attacking,
+using, entering its range & more) (medium)
+
+Quote:  
+I assigned it a medium priority, since I think it's not that easy to implement,
+and the game is relatively playable without it. As you probably know, there are
+a lot more quests than the four types supported by wad's emu (kill, deliver,
+speak to - which is more like action, since you can also "speak" to gameobjects
+to trigger end of a quest - and explore). Those include
+
+* speaking to a NPC to get a quest, after which the NPC changes its state from
+friendly to enemy (faction maybe?) and starts attacking you, having to bring him
+to like 25% of his health to end the quest (carefull, if the player dies or the
+25% health is aquired, the npc should revert to its original state and return to
+its location, and the quest should be completed, respectively player-dropped and
+reaquired)
+
+* spawning/deleting NPC/gameobject on event (quest finished/started, place
+reached, if having a specific prerequisit - like quest, skill, reputation etc).
+Example: for some quests, other NPCs teleport to your location after killing
+someone to deliver your quest reward, for another a quest completion triggers
+the spawning of food (GameObject probably) in a boat, also a giant (NPC) spawns
+nearby and comes (waypoint/script) to the boat and starts eating, after
+finishing eating (GO food deleted) goes (waypoint) to the first location and
+dissapears (NPC deleted)
+
+* NPC casting spell on event
+
+* NPC waypoints, also triggerable by event or not (for escort quests etc.)
+
+* NPC status changing (there are quests where a NPC is lost and shall follow you
+- Human Pet maybe? -, your quest being to bring him to a specific location, that
+will trigger the end of quest...)
+
+* Hate table change on event (not sure if this is the function, but there is a
+quest where a bomb exploding on a train wagon causes almost all the kobolds in
+the area to run there... might as well be waypoint triggering, I don't know)
+
+* Guards action triggering (if an "enemy" - faction or maybe reputation based -
+npc or player enters his area of awareness, trigger basic hate - 1, as for
+pulling - for him, causing the guard to attack/assist)
+
+* NPC morphing (model changing) 
+
+Of course, more examples can be given, and I'm sure I haven't covered them all

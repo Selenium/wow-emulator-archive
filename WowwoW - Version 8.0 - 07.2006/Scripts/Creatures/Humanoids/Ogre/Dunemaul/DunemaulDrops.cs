@@ -1,0 +1,78 @@
+using System;
+using System.Collections;
+using Server;
+using Server.Items;
+
+namespace Server
+{
+	public class DunemaulDrops
+	{
+		public static Loot[] DunemaulOgre = new Loot[] {new Loot( typeof( Aquamarine), 0.162792f ) 
+,new Loot( typeof( BrutishShoulders), 0.0252213f ) 
+,new Loot( typeof( Citrine), 0.0229284f ) 
+,new Loot( typeof( CrusaderBow), 0.0275141f ) 
+,new Loot( typeof( EbonclawReaver), 0.0252213f ) 
+,new Loot( typeof( FuriousFalchion), 0.0229284f ) 
+,new Loot( typeof( GiganticWarAxe), 0.0229284f ) 
+,new Loot( typeof( GryphonCloak), 0.0275141f ) 
+,new Loot( typeof( JadeBracers), 0.0229284f ) 
+,new Loot( typeof( OOX17TNDistressBeacon), 0.215527f ) 
+,new Loot( typeof( ReinforcedSteelLockbox), 0.0550282f ) 
+,new Loot( typeof( StarRuby), 0.0848351f ) 
+,new Loot( typeof( SteelLockbox), 0.0389783f ) 
+,new Loot( typeof( UmbralWand), 0.0320998f ) 
+,new Loot( typeof( CuredHamSteak), 4.7416f ) 
+,new Loot( typeof( GahzridianOrnament), 0.229284f ) 
+,new Loot( typeof( GreaterManaPotion), 0.674095f ) 
+,new Loot( typeof( JourneymansBackpack), 0.0252213f ) 
+,new Loot( typeof( MageweaveCloth), 34.8695f ) 
+,new Loot( typeof( MoonberryJuice), 2.24928f ) 
+,new Loot( typeof( PurpleLotus), 0.0229284f ) 
+,new Loot( typeof( ScrollOfAgilityIII), 0.162792f ) 
+,new Loot( typeof( ScrollOfIntellectIII), 0.300362f ) 
+,new Loot( typeof( ScrollOfStaminaIII), 0.304948f ) 
+,new Loot( typeof( ScrollOfStrengthIII), 0.199477f ) 
+,new Loot( typeof( SuperiorHealingPotion), 1.48576f ) 
+,new Loot( typeof( BalancedLongBow), 0.121521f ) 
+,new Loot( typeof( BlockingTarge), 0.0917137f ) 
+,new Loot( typeof( BluntingMace), 0.0894208f ) 
+,new Loot( typeof( CrochetBelt), 0.0733709f ) 
+,new Loot( typeof( CrochetBoots), 0.0596139f ) 
+,new Loot( typeof( CrochetBracers), 0.0962994f ) 
+,new Loot( typeof( CrochetCloak), 0.0664924f ) 
+,new Loot( typeof( CrochetGloves), 0.0894208f ) 
+,new Loot( typeof( CrochetHat), 0.0596139f ) 
+,new Loot( typeof( CrochetPants), 0.0687853f ) 
+,new Loot( typeof( CrochetShoulderpads), 0.0917137f ) 
+,new Loot( typeof( CrochetVest), 0.0481497f ) 
+,new Loot( typeof( CrushingMaul), 0.0940065f ) 
+,new Loot( typeof( FinePointedDagger), 0.0962994f ) 
+,new Loot( typeof( HeavyFlintAxe), 0.116935f ) 
+,new Loot( typeof( HeavyWarStaff), 0.116935f ) 
+,new Loot( typeof( OverlinkedChainArmor), 0.0389783f ) 
+,new Loot( typeof( OverlinkedChainBoots), 0.0366855f ) 
+,new Loot( typeof( OverlinkedChainBracers), 0.0412712f ) 
+,new Loot( typeof( OverlinkedChainCloak), 0.0504425f ) 
+,new Loot( typeof( OverlinkedChainGloves), 0.0527354f ) 
+,new Loot( typeof( OverlinkedChainPants), 0.043564f ) 
+,new Loot( typeof( OverlinkedChainShoulderpads), 0.0389783f ) 
+,new Loot( typeof( OverlinkedCoif), 0.0458568f ) 
+,new Loot( typeof( ProtectivePavise), 0.0641996f ) 
+,new Loot( typeof( SentinelMusket), 0.103178f ) 
+,new Loot( typeof( SharpShortsword), 0.116935f ) 
+,new Loot( typeof( SplinteringBattleAxe), 0.110056f ) 
+,new Loot( typeof( ThickCloak), 0.0664924f ) 
+,new Loot( typeof( ThickLeatherBelt), 0.0756638f ) 
+,new Loot( typeof( ThickLeatherBoots), 0.0641996f ) 
+,new Loot( typeof( ThickLeatherBracers), 0.057321f ) 
+,new Loot( typeof( ThickLeatherGloves), 0.0504425f ) 
+,new Loot( typeof( ThickLeatherHat), 0.057321f ) 
+,new Loot( typeof( ThickLeatherPants), 0.0664924f ) 
+,new Loot( typeof( ThickLeatherShoulderpads), 0.0481497f ) 
+,new Loot( typeof( ThickLeatherTunic), 0.0458568f ) 
+,new Loot( typeof( WhettedClaymore), 0.116935f ) 
+};
+		
+			
+	}
+}

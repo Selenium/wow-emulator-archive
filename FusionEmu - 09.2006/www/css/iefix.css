@@ -1,0 +1,5 @@
+/* WDDG Community Page IE CSS Fixes */
+#login {padding-top:15px;}
+#login, #create{margin-bottom:-2px;}
+#login p, #create p{margin:0;}
+#status h3{padding-top:0px;}

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/GossipScripts
+END
+Setup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/GossipScripts/Setup.cpp
+END
+Setup.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/GossipScripts/Setup.h
+END
+Gossip_Innkeepers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/GossipScripts/Gossip_Innkeepers.cpp
+END
+GuardGossip.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/GossipScripts/GuardGossip.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/GossipScripts/Makefile.am
+END
+Gossip_Battlemaster.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/GossipScripts/Gossip_Battlemaster.cpp
+END

@@ -1,0 +1,68 @@
+# !!! USE MAIN SCONSTRUCT-FILE FOR COMPILING !!!
+#
+# --> SConstruct for libgame
+#
+# If you want to compile only this library comment other
+# SConstruct invocations in main SConstruct out
+#
+
+StaticLibrary('../../build/game', [
+		'AuctionHouse.cpp',
+		'Channel.cpp',
+		'ChannelHandler.cpp',
+		'CharacterHandler.cpp',
+		'Chat.cpp',
+		'ChatHandler.cpp',
+		'CombatHandler.cpp',
+		'Container.cpp',
+		'Corpse.cpp',
+		'Creature.cpp',
+		'DevCommands.cpp',
+		'DynamicObject.cpp',
+		'GameObject.cpp',
+		'Group.cpp',
+		'GroupHandler.cpp',
+		'Item.cpp',
+		'ItemHandler.cpp',
+		'Level0.cpp',
+		'Level1.cpp',
+		'Level2.cpp',
+		'Level3.cpp',
+		'Mail.cpp',
+		'MapMgr.cpp',
+		'MiscHandler.cpp',
+		'MovementHandler.cpp',
+		'NPCHandler.cpp',
+		'Object.cpp',
+		'ObjectMgr.cpp',
+		'Opcodes.cpp',
+		'Player.cpp',
+		'QueryHandler.cpp',
+		'QuestHandler.cpp',
+		'QuestScriptBackend.cpp',
+		'QuestPacketHandler.cpp',
+		'SkillHandler.cpp',
+		'Spell.cpp',
+		'SpellHandler.cpp',
+		'StdAfx.cpp',
+		'TaxiHandler.cpp',
+		'Terrain.cpp',
+		'Unit.cpp',
+		'UpdateData.cpp',
+		'WaypointAdmin.cpp',
+		'World.cpp',
+		'WorldSession.cpp',
+		'WorldSocket.cpp',
+		'WorldSocketMgr.cpp'
+	],
+	CPPPATH = [
+		'../../src/Game',
+		'../../src/LudMilla',
+		'../../src/RealmList',
+		'../../src/Shared',
+		'../../src/Spells',
+		'../../depnew/Unix_dep/',
+                '/usr/include/python2.4'
+	],
+	CCFLAGS = '-fpermissive -w'
+)

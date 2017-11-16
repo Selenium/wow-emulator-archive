@@ -1,0 +1,120 @@
+using System;
+using Server.Items;
+using HelperTools;
+
+
+namespace Server.Creatures
+{
+	public class GnarlpineAmbusher : BaseCreature
+	{
+		public GnarlpineAmbusher() : base()
+		{
+			Name = "Gnarlpine Ambusher";
+			Id = 2152;
+			Model = 3024;
+			Level = RandomLevel(6,7);
+			SetDamage(1f+1.8f*Level,1f+2.5*Level);			
+			AttackSpeed = 2000;
+			Armor = 30;
+			Block = 0;
+			ResistArcane = 0;
+			ResistFire = 0;
+			ResistFrost = 0;
+			ResistHoly = 0;
+			ResistNature = 0;
+			Flags1=0x080000;
+			BaseMana = 0;
+			BoundingRadius = 1f;
+			CombatReach = 1.25f;
+			Size = 0.85f;
+			Speed = 2.9f;
+			WalkSpeed = 2.9f;
+			RunSpeed = 5.9f;
+			Str = (int)(Level/2.5f);
+			Faction = Factions.Monster;
+			AIEngine = new PatrolAI( this );
+			NpcType = 7;
+			NpcFlags = 0; 
+			//Item( int _model, InventoryTypes _inventoryType, int _quality, int _subclass, int _objectclass, int _sheath, int param1, int param2, int param3 ) 
+			//Equip( new Item( 24930, InventoryTypes.Ranged, 2, 2, 2, 0, 0, 0, 0 ) ); 
+			Loots = new BaseTreasure[]{  new BaseTreasure(Drops.MoneyA , 100f )
+			,new BaseTreasure( GnarlpineAmbusherDrops.GnarlpineAmbusher , 100f ) };
+			/*****************************/
+			BCAddon.Hp( this, 118, 6 );
+			/*****************************/
+		}
+	}
+}
+
+
+namespace Server.Items
+{
+public class GnarlpineAmbusherDrops
+	{
+		public static Loot[] GnarlpineAmbusher = new Loot[] {new Loot( typeof( Malachite), 0.447111f ) 
+,new Loot( typeof( NotchedShortsword), 0.0224679f ) 
+,new Loot( typeof( PatternRedLinenRobe), 0.166262f ) 
+,new Loot( typeof( PatternWhiteLeatherJerkin), 0.0247147f ) 
+,new Loot( typeof( PlansCopperChainVest), 0.184237f ) 
+,new Loot( typeof( SchematicMechanicalSquirrel), 0.0224679f ) 
+,new Loot( typeof( Tigerseye), 0.157275f ) 
+,new Loot( typeof( TrainingSword), 0.031455f ) 
+,new Loot( typeof( Beatstick), 0.0516761f ) 
+,new Loot( typeof( BillyClub), 0.042689f ) 
+,new Loot( typeof( CadetsBow), 0.0561697f ) 
+,new Loot( typeof( FineScimitar), 0.0651568f ) 
+,new Loot( typeof( FlangedMace), 0.107846f ) 
+,new Loot( typeof( HuntingRifle), 0.031455f ) 
+,new Loot( typeof( LinenCloth), 29.179f ) 
+,new Loot( typeof( LongBoStaff), 0.0404422f ) 
+,new Loot( typeof( LumberjackAxe), 0.031455f ) 
+,new Loot( typeof( MinorHealingPotion), 2.06704f ) 
+,new Loot( typeof( PelletRifle), 0.12582f ) 
+,new Loot( typeof( PracticeSword), 0.13256f ) 
+,new Loot( typeof( RefreshingSpringWater), 3.6735f ) 
+,new Loot( typeof( ScrollOfProtection), 0.705491f ) 
+,new Loot( typeof( ScrollOfSpirit), 0.611126f ) 
+,new Loot( typeof( ShinyRedApple), 7.32902f ) 
+,new Loot( typeof( SimpleDagger), 0.0674036f ) 
+,new Loot( typeof( SmallBlackPouch), 0.0516761f ) 
+,new Loot( typeof( SmallBluePouch), 0.0696504f ) 
+,new Loot( typeof( SmallBrownPouch), 0.0359486f ) 
+,new Loot( typeof( SmallGreenPouch), 0.0247147f ) 
+,new Loot( typeof( SmallRedPouch), 0.0561697f ) 
+,new Loot( typeof( WoodChopper), 0.0606633f ) 
+,new Loot( typeof( BeatenBattleAxe), 0.584165f ) 
+,new Loot( typeof( CarpentersMallet), 0.581918f ) 
+,new Loot( typeof( CrackedBuckler), 0.366226f ) 
+,new Loot( typeof( CrackedShortbow), 0.498787f ) 
+,new Loot( typeof( CrackedSledge), 0.563944f ) 
+,new Loot( typeof( CrudeBastardSword), 0.633594f ) 
+,new Loot( typeof( FeebleSword), 0.649321f ) 
+,new Loot( typeof( LooseChainBelt), 0.278602f ) 
+,new Loot( typeof( LooseChainBoots), 0.294329f ) 
+,new Loot( typeof( LooseChainBracers), 0.298823f ) 
+,new Loot( typeof( LooseChainCloak), 0.330278f ) 
+,new Loot( typeof( LooseChainGloves), 0.298823f ) 
+,new Loot( typeof( LooseChainPants), 0.328031f ) 
+,new Loot( typeof( LooseChainVest), 0.31455f ) 
+,new Loot( typeof( PatchworkArmor), 0.438123f ) 
+,new Loot( typeof( PatchworkBelt), 0.431383f ) 
+,new Loot( typeof( PatchworkBracers), 0.390941f ) 
+,new Loot( typeof( PatchworkCloak), 0.388694f ) 
+,new Loot( typeof( PatchworkGloves), 0.422396f ) 
+,new Loot( typeof( PatchworkPants), 0.492046f ) 
+,new Loot( typeof( PatchworkShoes), 0.395435f ) 
+,new Loot( typeof( RustCoveredBlunderbuss), 0.570684f ) 
+,new Loot( typeof( RustyHatchet), 0.635841f ) 
+,new Loot( typeof( SharpenedLetterOpener), 0.498787f ) 
+,new Loot( typeof( WitheredStaff), 0.62236f ) 
+,new Loot( typeof( WornHideCloak), 0.372967f ) 
+,new Loot( typeof( WornLargeShield), 0.368473f ) 
+,new Loot( typeof( WornLeatherBelt), 0.330278f ) 
+,new Loot( typeof( WornLeatherBoots), 0.348252f ) 
+,new Loot( typeof( WornLeatherBracers), 0.352746f ) 
+,new Loot( typeof( WornLeatherGloves), 0.390941f ) 
+,new Loot( typeof( WornLeatherPants), 0.348252f ) 
+,new Loot( typeof( WornLeatherVest), 0.361733f ) 
+};
+	}
+}

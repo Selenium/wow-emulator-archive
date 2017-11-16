@@ -1,0 +1,70 @@
+#include "StdAfx.h"
+
+// Copyright (C) 2004 WoW Daemon
+//
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+void WorldSession::HandleAttackSwingOpcode( WorldPacket & recv_data )
+{
+    //WorldPacket data;
+    uint64 guid;
+    recv_data >> guid;
+
+    // AttackSwing
+    Log::getSingleton( ).outDebug( "WORLD: Recvd CMSG_ATTACKSWING Message" );
+
+    Creature *pEnemy = objmgr.GetObject<Creature>(guid);
+	Player *pPVPEnemy = objmgr.GetObject<Player>(guid);
+
+    if(pEnemy)
+	{
+		GetPlayer()->addStateFlag(UF_ATTACKING);
+		//GetPlayer()->smsg_AttackStart(pEnemy);
+	}
+	else if(pPVPEnemy)
+	{
+		GetPlayer()->addStateFlag(UF_ATTACKING);
+		//GetPlayer()->smsg_AttackStart(pPVPEnemy);
+	}
+	else
+	{
+        //Log::getSingleton( ).outError( "WORLD: %u %.8X is not a creature",
+        //    GUID_LOPART(guid), GUID_HIPART(guid));
+		Log::getSingleton( ).outError( "WORLD: %u %.8X is not a player nor a creature",
+			GUID_LOPART(guid), GUID_HIPART(guid));
+        return; // we do not attack PCs for now...you're wrong! We do! Muhahaha!
+    }
+	
+	// Draw crossed swords over player level number marking in combat
+	// -- not here: look in Unit:: and Player::OnEnter|ExitCombat
+	//GetPlayer()->SetFlag (UNIT_FIELD_FLAGS, 0x80000);
+}
+
+
+void WorldSession::HandleAttackStopOpcode( WorldPacket & recv_data )
+{
+    //WorldPacket data;
+    uint64 guid = GetPlayer()->GetSelection();
+
+    //GetPlayer()->smsg_AttackStop(guid);
+
+    GetPlayer()->clearStateFlag(UF_ATTACKING);
+    
+	// GetPlayer()->removeCreatureFlag(0x00080000);
+
+	// Draw crossed swords over player level number marking in combat
+	// -- not here: look in Unit:: and Player::OnEnter|ExitCombat
+	//GetPlayer()->RemoveFlag (UNIT_FIELD_FLAGS, 0x80000);
+}

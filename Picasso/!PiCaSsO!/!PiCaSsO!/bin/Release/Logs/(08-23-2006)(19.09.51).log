@@ -1,0 +1,29 @@
+!PiCaSsO! version Alpha 0.01 Copyright (C) 2006 by !PiCaSsO! Developer team
+08/23/2006 19:09:51: Loading account TEST...
+08/23/2006 19:09:51: Loading account 1+2+3+4+5+6...
+08/23/2006 19:09:51: Loading account 1 2 3 4 5 6...
+08/23/2006 19:09:51: Loading account T E S T...
+08/23/2006 19:09:51: Loaded all accounts from database!
+08/23/2006 19:09:51: Building external C# scripts, please wait...
+08/23/2006 19:09:51: Global scripts successfully loaded!
+08/23/2006 19:09:51: HTTPServer listening on port 8080
+08/23/2006 19:09:52: Worldserver listening on port 8085
+08/23/2006 19:09:52: AuthServer listening on port 1234
+08/23/2006 19:09:52: Waiting for incoming connections...
+08/23/2006 19:10:29: Incoming connection!
+08/23/2006 19:10:29: Recieved Logon Challenge!
+08/23/2006 19:10:29: Cient version accepted: 1.11.2, ID = 22549!
+08/23/2006 19:10:29: Recieved AUTH_CHALLENGE from user: TESST
+08/23/2006 19:10:29: Wrong login.
+08/23/2006 19:10:35: Incoming connection!
+08/23/2006 19:10:35: Recieved Logon Challenge!
+08/23/2006 19:10:35: Cient version accepted: 1.11.2, ID = 22549!
+08/23/2006 19:10:35: Recieved AUTH_CHALLENGE from user: TEST
+08/23/2006 19:10:35: Logon proof!
+08/23/2006 19:10:35: Client requested realmlist!
+08/23/2006 19:10:35: Client Redirected to Worldserver!
+08/23/2006 19:10:35: Challenged client to auth again.
+08/23/2006 19:10:35: Recieved 2nd auth from client!
+08/23/2006 19:10:35: Account found: TEST
+08/23/2006 19:10:35: Received CMSG_CHAR_ENUM
+08/23/2006 19:10:40: Client requested realmlist!

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq
+END
+explode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq/explode.cpp
+END
+mpq.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq/mpq.h
+END
+wave.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq/wave.cpp
+END
+huffman.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq/huffman.cpp
+END
+zconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq/zconf.h
+END
+explode.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq/explode.h
+END
+zlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq/zlib.h
+END
+wave.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq/wave.h
+END
+common.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq/common.cpp
+END
+huffman.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq/huffman.h
+END
+extract.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq/extract.cpp
+END
+parser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq/parser.cpp
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq/common.h
+END
+mpq.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/extras/map_extractor/libmpq/mpq.cpp
+END

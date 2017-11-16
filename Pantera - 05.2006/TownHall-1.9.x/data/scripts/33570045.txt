@@ -1,0 +1,10 @@
+settalktext Chop Chop Chop
+moveto -8963.500000 -263.539734 75.519585
+emote 234
+emote 234
+moveto -8941.927734 -245.646500 79.190002
+emote 234
+emote 234
+moveto -8947.478516 -284.378784 75.630531
+emote 234
+emote 234

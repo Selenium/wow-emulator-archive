@@ -1,0 +1,26 @@
+Attack Power 
+
+- Attack power increases your base melee DPS by 1 for every 14 attack power. 
+
+- Strength increases your melee attack power by 2, except for rogues and
+Hunters. Rogues and Hunters gain 1 attack power per point of Strength, and 1 per
+point of Agility (see table on page 3 for more detailed calculation).
+
+
+
+Attack Power calculation (high) 
+
+Quote:  
+Warrior     CharacterLevel*3+Strength*2-20 
+Paladin     CharacterLevel*3+Strength*2-20 
+Rogue       CharacterLevel*2+Strength+Agility-20 
+Hunter      CharacterLevel*2+Strength+Agility-20 
+Shaman      CharacterLevel*2+Strength*2-20 
+Druid       Strength*2-20 (Warrior formula for Bear Form, Rogue formula for Cat Form) 
+Mage        Strength-10 
+Priest      Strength-10 
+Warlock     Strength-10 
+
+Attack Power (Ranged) = (Level*2 + Agility*2)-20 
+
+14 Attack Power = 1 Damage per Second

@@ -1,0 +1,29 @@
+# !!! USE MAIN SCONSTRUCT-FILE FOR COMPILING !!!
+#
+# --> SConstruct for libshared
+#
+# If you want to compile only this library comment other
+# SConstruct invocations in main SConstruct out
+#
+
+StaticLibrary('../../build/shared', [
+		'Log.cpp',
+		'MemoryLeaks.cpp',
+		'MersenneTwister.cpp',
+		'PacketBuilder.cpp',
+		'StdAfx.cpp',
+		'Util.cpp',
+		'FactionTemplates.cpp',
+		'Portable.cpp'
+	],
+	CPPPATH = [
+		'../../src/Game',
+		'../../src/LudMilla',
+		'../../src/RealmList',
+		'../../src/Shared',
+		'../../src/Spells',
+		'../../depnew/Unix_dep/',
+		'/usr/include/python2.4'
+	],
+	CCFLAGS = '-fpermissive -w'
+)

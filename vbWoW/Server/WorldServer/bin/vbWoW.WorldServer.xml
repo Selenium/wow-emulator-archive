@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorldServer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WSPort>8085</WSPort>
+	<WSHost>0.0.0.0</WSHost>
+
+	<ServerLimit>100</ServerLimit>
+	<XPRate>1.0</XPRate>
+	<ManaRegenerationRate>1.0</ManaRegenerationRate>
+	<HealthRegenerationRate>1.0</HealthRegenerationRate>
+	<GlobalAuction>false</GlobalAuction>
+
+	<LogType>COLORCONSOLE</LogType>
+	<LogLevel>NETWORK</LogLevel>
+	<LogConfig>emupedia.com:6667:vbWoWLogBot:#test</LogConfig>
+
+	<SQLUser>user</SQLUser>
+    <SQLPass>password</SQLPass>
+    <SQLHost>127.0.0.1</SQLHost>
+	<SQLPort>3306</SQLPort>
+    <SQLDBName>vbwowdb</SQLDBName>
+	<SQLDBType>MySQL</SQLDBType>
+
+	<ScriptsCompiler>
+		<Include>System.dll</Include>
+		<Include>System.Data.dll</Include>
+		<Include>Microsoft.VisualBasic.dll</Include>
+		<Include>vbWoW.Filebase.dll</Include>
+		<Include>vbWoW.Database.dll</Include>
+		<Include>vbWoW.Logbase.dll</Include>
+	</ScriptsCompiler>
+</WorldServer>

@@ -1,0 +1,18 @@
+0063F7AE   MOV DWORD PTR DS:[EDX+18],WoW.00801474    ASCII "incorrect header check"
+0063F7F8   MOV DWORD PTR DS:[ECX+18],WoW.008014A0    ASCII "unknown compression method" - LOL they have many compression methods
+so maybe we need to add method type to header of Blocks?
+0063F80D   MOV DWORD PTR DS:[EDX+18],WoW.00801458    ASCII "unknown header flags set"
+0063FAFB   MOV DWORD PTR DS:[EDX+18],WoW.00801444    ASCII "header crc mismatch"
+0063FC8E   MOV DWORD PTR DS:[EDX+18],WoW.00801430    ASCII "invalid block type"
+0063FD00   MOV DWORD PTR DS:[ECX+18],WoW.00801410    ASCII "invalid stored block lengths"
+0063FEF8   MOV DWORD PTR DS:[EAX+18],WoW.008013F4    ASCII "invalid code lengths set"
+0063FF0C   MOV DWORD PTR DS:[EDX+18],WoW.008013D0    ASCII "too many length or distance symbols"
+006401A0   MOV DWORD PTR DS:[ECX+18],WoW.008013B4    ASCII "invalid literal/lengths set"
+006401B0   MOV DWORD PTR DS:[ECX+18],WoW.00801398    ASCII "invalid bit length repeat"
+006401C0   MOV DWORD PTR DS:[EDX+18],WoW.00801398    ASCII "invalid bit length repeat"
+0064020C   MOV DWORD PTR DS:[EDX+18],WoW.00801380    ASCII "invalid distances set"
+006403E8   MOV DWORD PTR DS:[EDX+18],WoW.00801364    ASCII "invalid literal/length code"
+00640581   MOV DWORD PTR DS:[ECX+18],WoW.0080134C    ASCII "invalid distance code"
+00640608   MOV DWORD PTR DS:[EDX+18],WoW.0080132C    ASCII "invalid distance too far back"
+006407C0   MOV DWORD PTR DS:[ECX+18],WoW.00801314    ASCII "incorrect data check"
+00640830   MOV DWORD PTR DS:[ECX+18],WoW.008012FC    ASCII "incorrect length check"

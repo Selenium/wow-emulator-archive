@@ -1,0 +1,35 @@
+!PiCaSsO! version Alpha 0.01 Copyright (C) 2006 by !PiCaSsO! Developer team
+08/20/2006 22:23:01: Loading account TEST...
+08/20/2006 22:23:01: Loading account 1+2+3+4+5+6...
+08/20/2006 22:23:01: Loading account 1 2 3 4 5 6...
+08/20/2006 22:23:01: Loading account T E S T...
+08/20/2006 22:23:01: Loaded all accounts from database!
+08/20/2006 22:23:01: Building external C# scripts, please wait...
+08/20/2006 22:23:01: Global scripts successfully loaded!
+08/20/2006 22:23:01: HTTPServer listening on port 8080
+08/20/2006 22:23:02: Worldserver listening on port 8085
+08/20/2006 22:23:02: AuthServer listening on port 1234
+08/20/2006 22:23:02: Waiting for incoming connections...
+08/20/2006 22:23:22: Incoming connection!
+08/20/2006 22:23:22: Recieved Logon Challenge!
+08/20/2006 22:23:22: Cient version accepted: 1.11.2, ID = 22549!
+08/20/2006 22:23:22: Recieved AUTH_CHALLENGE from user: TEST
+08/20/2006 22:23:22: Logon proof!
+08/20/2006 22:23:22: Client requested realmlist!
+08/20/2006 22:23:22: Client Redirected to Worldserver!
+08/20/2006 22:23:22: Challenged client to auth again.
+08/20/2006 22:23:23: Recieved 2nd auth from client!
+08/20/2006 22:23:23: Account found: TEST
+08/20/2006 22:23:23: Temporair message: string account = TEST
+08/20/2006 22:23:23: Temporair message: int ClientSeed = -1501907008
+08/20/2006 22:23:23: Temporair message: int ServerSeed = 3735927486
+08/20/2006 22:23:23: Temporair message: byte[] digest = 106168146170201237210681467852491161671271418323588
+08/20/2006 22:23:27: Client requested realmlist!
+08/20/2006 22:23:27: Client Redirected to Worldserver!
+08/20/2006 22:23:27: Challenged client to auth again.
+08/20/2006 22:23:27: Recieved 2nd auth from client!
+08/20/2006 22:23:27: Account found: TEST
+08/20/2006 22:23:27: Temporair message: string account = TEST
+08/20/2006 22:23:27: Temporair message: int ClientSeed = 544652400
+08/20/2006 22:23:27: Temporair message: int ServerSeed = 3735927486
+08/20/2006 22:23:27: Temporair message: byte[] digest = 152412382482113240127156336433584712619213754187

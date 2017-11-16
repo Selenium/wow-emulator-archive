@@ -1,0 +1,1205 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/norwegianelite/!svn/ver/20/Summit/src/ascent-world
+END
+BattlegroundMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/20/Summit/src/ascent-world/BattlegroundMgr.cpp
+END
+AreaTrigger.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/AreaTrigger.h
+END
+Guild.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Guild.cpp
+END
+WorldSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WorldSocket.h
+END
+Object.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Object.cpp
+END
+ClusterInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ClusterInterface.h
+END
+VoiceChatHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/VoiceChatHandler.h
+END
+WarsongGulch.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WarsongGulch.h
+END
+AuctionHouse.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/AuctionHouse.h
+END
+Creature.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Creature.h
+END
+ScriptMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ScriptMgr.h
+END
+SpellEffects.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/SpellEffects.cpp
+END
+WorldRunnable.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WorldRunnable.h
+END
+WorldStateManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WorldStateManager.cpp
+END
+Chat.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Chat.h
+END
+PlayerPacketWrapper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/PlayerPacketWrapper.cpp
+END
+TransporterHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/TransporterHandler.h
+END
+PetHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/PetHandler.cpp
+END
+MailSystem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/MailSystem.cpp
+END
+HonorHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/HonorHandler.h
+END
+Level1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Level1.cpp
+END
+MovementHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/MovementHandler.cpp
+END
+StdAfx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/StdAfx.cpp
+END
+LogonCommClient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/LogonCommClient.cpp
+END
+Level3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Level3.cpp
+END
+EventMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/EventMgr.h
+END
+ItemHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ItemHandler.cpp
+END
+EyeOfTheStorm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/EyeOfTheStorm.cpp
+END
+Master.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Master.h
+END
+BaseConsole.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/BaseConsole.h
+END
+VoiceChatHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/VoiceChatHandler.cpp
+END
+QueryHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/QueryHandler.cpp
+END
+WarsongGulch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WarsongGulch.cpp
+END
+CConsole.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/CConsole.cpp
+END
+GameObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/GameObject.h
+END
+LfgHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/LfgHandler.cpp
+END
+ChannelHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ChannelHandler.cpp
+END
+AuctionMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/AuctionMgr.cpp
+END
+ConsoleListener.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ConsoleListener.cpp
+END
+TerrainMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/TerrainMgr.cpp
+END
+Object.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Object.h
+END
+SpellHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/SpellHandler.cpp
+END
+SpellFixes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/SpellFixes.cpp
+END
+Chat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Chat.cpp
+END
+TaxiMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/TaxiMgr.h
+END
+HonorHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/HonorHandler.cpp
+END
+EventMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/EventMgr.cpp
+END
+AlteracValley.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/AlteracValley.cpp
+END
+DayWatcherThread.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/DayWatcherThread.h
+END
+Master.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Master.cpp
+END
+EventableObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/EventableObject.cpp
+END
+Corpse.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Corpse.h
+END
+Player.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Player.h
+END
+Group.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Group.h
+END
+SocialHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/SocialHandler.cpp
+END
+TaxiMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/TaxiMgr.cpp
+END
+MapCell.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/MapCell.cpp
+END
+Arenas.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Arenas.h
+END
+TerrainMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/TerrainMgr.h
+END
+DynamicObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/DynamicObject.h
+END
+Map.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Map.h
+END
+DayWatcherThread.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/DayWatcherThread.cpp
+END
+MapScriptInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/MapScriptInterface.h
+END
+MapMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/MapMgr.h
+END
+Corpse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Corpse.cpp
+END
+AreaTrigger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/AreaTrigger.cpp
+END
+TradeHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/TradeHandler.cpp
+END
+Pet.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Pet.h
+END
+WorldSocket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WorldSocket.cpp
+END
+Opcodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Opcodes.h
+END
+UpdateMask.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/UpdateMask.h
+END
+CombatHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/CombatHandler.cpp
+END
+WorkerServerClient.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WorkerServerClient.h
+END
+DynamicObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/DynamicObject.cpp
+END
+QuestMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/QuestMgr.h
+END
+Channel.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Channel.h
+END
+LfgMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/LfgMgr.cpp
+END
+NameTables.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/NameTables.h
+END
+WordFilter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WordFilter.cpp
+END
+Skill.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Skill.h
+END
+MapMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/MapMgr.cpp
+END
+MapScriptInterface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/MapScriptInterface.cpp
+END
+Unit.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Unit.h
+END
+faction.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/faction.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Makefile.am
+END
+ConsoleCommands.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ConsoleCommands.h
+END
+MiscHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/MiscHandler.cpp
+END
+GroupHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/GroupHandler.cpp
+END
+World.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/World.h
+END
+debugcmds.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/debugcmds.cpp
+END
+ArenaTeam.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ArenaTeam.cpp
+END
+LogonCommHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/LogonCommHandler.h
+END
+StdAfx.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/StdAfx.h
+END
+Item.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Item.cpp
+END
+LogonCommClient.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/LogonCommClient.h
+END
+WorkerServerClient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WorkerServerClient.cpp
+END
+WorldSession.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WorldSession.h
+END
+GameObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/GameObject.cpp
+END
+ObjectStorage.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ObjectStorage.h
+END
+Quest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Quest.cpp
+END
+CollideInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/CollideInterface.h
+END
+EyeOfTheStorm.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/EyeOfTheStorm.h
+END
+TaxiHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/TaxiHandler.cpp
+END
+WeatherMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WeatherMgr.cpp
+END
+QuestMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/QuestMgr.cpp
+END
+CConsole.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/CConsole.h
+END
+WorldCreator.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WorldCreator.h
+END
+VoiceChatClientSocket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/VoiceChatClientSocket.cpp
+END
+RaidHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/RaidHandler.cpp
+END
+Unit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Unit.cpp
+END
+SpellAuras.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/SpellAuras.h
+END
+ObjectMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ObjectMgr.h
+END
+faction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/faction.cpp
+END
+QuestCommands.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/QuestCommands.cpp
+END
+ChannelMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ChannelMgr.h
+END
+LfgMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/LfgMgr.h
+END
+Spell.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Spell.h
+END
+ItemInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ItemInterface.h
+END
+ArathiBasin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ArathiBasin.cpp
+END
+World.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/World.cpp
+END
+DuelHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/DuelHandler.cpp
+END
+Level0.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Level0.cpp
+END
+LootMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/LootMgr.h
+END
+ItemPrototype.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ItemPrototype.h
+END
+Level2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Level2.cpp
+END
+SkillNameMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/SkillNameMgr.h
+END
+CharacterHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/CharacterHandler.cpp
+END
+ObjectStorage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ObjectStorage.cpp
+END
+WorldSession.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WorldSession.cpp
+END
+Player.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Player.cpp
+END
+Group.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Group.cpp
+END
+WayPoints.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WayPoints.cpp
+END
+AddonMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/AddonMgr.h
+END
+Item.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Item.h
+END
+BattlegroundMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/BattlegroundMgr.h
+END
+WorldCreator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WorldCreator.cpp
+END
+Guild.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Guild.h
+END
+AIInterface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/AIInterface.cpp
+END
+SpellAuras.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/SpellAuras.cpp
+END
+BattlegroundCommands.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/BattlegroundCommands.cpp
+END
+ChatHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ChatHandler.cpp
+END
+NPCHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/NPCHandler.cpp
+END
+ItemInterface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ItemInterface.cpp
+END
+Spell.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Spell.cpp
+END
+TransporterHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/TransporterHandler.cpp
+END
+MapCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/MapCell.h
+END
+CellHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/CellHandler.h
+END
+Container.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Container.cpp
+END
+LootMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/LootMgr.cpp
+END
+Main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Main.cpp
+END
+SpellTarget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/SpellTarget.cpp
+END
+Pet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Pet.cpp
+END
+BattlegroundHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/BattlegroundHandler.cpp
+END
+AddonMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/AddonMgr.cpp
+END
+Opcodes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Opcodes.cpp
+END
+LocalizationMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/LocalizationMgr.cpp
+END
+Stats.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Stats.cpp
+END
+QuestHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/QuestHandler.cpp
+END
+GMTicket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/GMTicket.cpp
+END
+Channel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Channel.cpp
+END
+AuctionMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/AuctionMgr.h
+END
+UpdateFields.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/UpdateFields.h
+END
+AIInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/AIInterface.h
+END
+WorldStates.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WorldStates.h
+END
+SpellNameHashes.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/SpellNameHashes.h
+END
+NPCHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/NPCHandler.h
+END
+ConsoleCommands.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ConsoleCommands.cpp
+END
+WordFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WordFilter.h
+END
+Container.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Container.h
+END
+LogonCommHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/LogonCommHandler.cpp
+END
+ReputationHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ReputationHandler.cpp
+END
+ScriptSetup.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ScriptSetup.h
+END
+CollideInterface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/CollideInterface.cpp
+END
+AlteracValley.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/AlteracValley.h
+END
+MiscHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/MiscHandler.h
+END
+Packets.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Packets.h
+END
+EventableObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/EventableObject.h
+END
+WorkdSocketCluster.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WorkdSocketCluster.cpp
+END
+GuildHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/GuildHandler.cpp
+END
+ArenaTeam.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ArenaTeam.h
+END
+ClusterInterface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ClusterInterface.cpp
+END
+LocalizationMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/LocalizationMgr.h
+END
+Stats.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Stats.h
+END
+AuctionHouse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/AuctionHouse.cpp
+END
+Quest.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Quest.h
+END
+Arenas.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Arenas.cpp
+END
+Creature.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Creature.cpp
+END
+ScriptMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ScriptMgr.cpp
+END
+WeatherMgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WeatherMgr.h
+END
+ObjectMgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ObjectMgr.cpp
+END
+SkillHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/SkillHandler.cpp
+END
+Map.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/Map.cpp
+END
+MainServerDefines.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/MainServerDefines.h
+END
+WorldRunnable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WorldRunnable.cpp
+END
+VoiceChatClientSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/VoiceChatClientSocket.h
+END
+RecallCommands.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/RecallCommands.cpp
+END
+WorldStateManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/WorldStateManager.h
+END
+ArathiBasin.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/ArathiBasin.h
+END
+MailSystem.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/MailSystem.h
+END
+SpellFailure.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-world/SpellFailure.h
+END

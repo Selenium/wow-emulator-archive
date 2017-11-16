@@ -1,0 +1,2254 @@
+*********************************************************************
+* Original Credits go to:                                           *
+* AlexM, nicoli_s, wantedman, munky, battyone, sticker, raharazod   *
+* pasn, archangel, generin, lax, alita, deanalator                  *
+* tamino, psycho, codemonkey, skull, cain, raharazod                *
+* yellow, shiznat, shane, plutonium, barbaar, wr4ith, teuvo, shadow *
+* dmod, thedamned, zite, zparta, spa, paladin, eggy, Q4N74Q4        *
+* sandman, elarot and Cold Ice.                                     *
+*********************************************************************
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Symbology:
+
++ Add
+- Remove
+* Change
+/ Minor
+. Note
+----------------------------------------------------------------------------------------------------------------------------
+Jan 05 2007 - rz950
+	* updatefields and added some opcodes for 6144 tbc
+	* updatefields for 2.0.1 6180 wow client added
+	. 6144 tbc client can login but move packet and many others have changed...
+	* fixed 2.0 login bug, now you can login and create a character but world loading crashs wow client(A9 probably)
+
+Nov 11 2006 - nneonneo
+	* Crash fixes from RList2
+
+Nov 05 2006 - nneonneo
+	* RealmListServer now errors and quits if it is unable to start.
+
+Nov 05 2006 - nneonneo
+	* more crash fixes (damn spells)
+	/ changed 0 to NULL for all pointers
+
+Nov 02 2006 - nneonneo
+	. BIG LIST OF CHANGES FOLLOWS.
+	/ Reverted rz950's change in DefaultGossip (because -1 makes more sense and 0xFFFFFF != -1: it's a short :P)
+		. changed -1 to GOSSIPTYPE_NONE.
+	* MAJOR CHANGE: data/accounts is now obsolete. The server will now save obj01.thd, obj05.thd and obj06.thd for players, accounts and items respectfully.
+	* No more spawns.sav and GOSpawns.sav: creatures and gameobjects will now be saved as well (obj02.thd and obj13.thd)
+		* Changes to StoringData/LoadingData in all five classes
+	* CPlayer::Data.Items moved to CPlayer::Items (access via pPlayer->Items not pPlayer->Data.Items).
+		. This is because Items are pointers and cannot be properly saved.
+	* OTHER MAJOR CHANGE: I have changed many "unsigned long" types to a new type called "guid_t".
+		. This new type allows for possible future expansion (i.e. to 64-bit guids­).
+		. I have NOT finished the conversion: there is too much. Wherever you see an unsigned long being used as a GUID,
+			please make it guid_t. Also, HIGHGUIDS (i.e. PLAYERGUID_HIGH, etc.) should be made into guidhigh_t.
+		. Both guid_t and guidhigh_t are currently mapped to unsigned long.
+	* time_t --> unsigned long in all saveable data structures (so that it is still possible to analyse them)
+	* Changes to DefStorage.h: now flushes buffers after write to ensure data integrity (in case of crash :P)
+	- DataStorageSize: useless!
+	- Bag.cpp, Bag.h, Container.cpp, Container.h (all useless)
+	- STATICITEMS (Useless!)
+	* Code cleanup, potential crash fixes in a number of places
+	* Quests: a few handlers rewritten to take CQuest * instead of unsigned long [guid_t] so that the number of RetrieveObject calls can be kept minimal
+	* Attempted crash/spinlock fix for using tray menu "Exit Townhall..." command
+	* Reapplied some Gossip fixes to new Creature code
+	. Kolkoo: I love you! xD New Creature code is beautiful.
+	- CreateObject/PreCreateObject - Crash prone, crappy, not even used!
+	- data/itemcache.wdb (not used)
+	- data/olditemcache.wdb, data/obj24.thd, data/oldspawns.sav (all not used)
+	* updated all objXX.thd data files
+	* Renumbered OBJ_QUESTRELATION and OBJ_AUCTION
+	- OBJ_CHANNEL, OBJ_CONTAINER
+	* Modified CEventManager::RemoveTime for efficiency (running a loop is not good)
+	* Format changes in almost all data files (please update); format change in Player (delete data/accounts: you won't be using that anymore)
+	* GameObject spawning enabled and fixed; GOs should now spawn correctly
+	* NPC Text queries, etc. should now work as expected (but we are missing many NPC Texts)
+	/ PartyMembers renamed to PartyData for unity
+	+ StartItems: Defines the starting items for each race and class (see Player.cpp::New).
+		* Changed the way CPlayer::New() spawns items. It no longer uses STATICITEMS, it will use StartItems instead.
+	+ FORCE_PKTLOG in RealmServer.cpp to make packetlogs in release builds (comment that line near the top to disable)
+	* CSpell::TargetMap made into an array of struct {guid_t, guidhigh_t} to conform with recent changes
+	* more bloody crash fixes (especially spells)
+	+ CTownHallDlg::OnOK to handle exit safely
+
+Nov 02 2006 - Rz950
+	+ Added a packet dump of 1.12. (mostly my brother playing in battlegrounds)
+	* Changed Default Gossip from -1 to correct value. 
+
+Oct 30 2006 - nneonneo
+	+ Added GUITHDEdit program (Tools/). Follow the README.tx file!
+
+Oct 30 2006 - kolkoo
+	* All bugs with creature movements were successfully fixed and the creatures are 
+		looking better than they ever did! I have added a distance check so that creatures
+		should give up on chasing cause i figured player would wine about that and i started
+		developinga HateList class to properly handle creatures.
+
+Oct 29 2006 - kolkoo commited creature.cpp and creature.h
+	* Creature movement is waay better now BUT there are still a few bugs i cannot seem to find a fix for them
+		so i would appreciate if anyone could take a look. The most shitty one is: as u attack a wandering monster it appears
+		to be at one point but as the dmg is inflicted it ports to another and then starts running to you :O it is strange
+	+ Mob tagging other player see ur mob grayed out.
+	* Disabled all pet code since there is no support for it anymore. I will create a CPet : CCreature class for
+		handling all pet stuff.
+	. Found a bug where after doing quest objectives more than the required it becomes like Thistle Boar (6/4) (7/4) and so on
+
+Oct 22 2006 - Dameon
+	+ Basic outline for the auction house. Will work on it more later. Committed to prove im doing something....
+
+Oct 22 2006 - nneonneo
+	. !!!No more commits from me until someone does some work!!
+	* Questgivers will immediately show status upon logging in instead of waiting for a creature kill or something
+	/ Use SPIRITHEALER_GUID to detect the SH template number: because we're possibly going to update DB, we must prepare for changes here
+	* Quick failures in DataManager.RetrieveObject implemented to increase speed of function
+	* Spell failure reasons updated
+	* Crash bugs fixed: many in HandleSpellEffects, one in CalculateKillXP, one in MsgCancelTrade, DuelFlee and some other functions
+	* Invisible Dwarf Paladin bug fixed! [it was bad template IDs]
+	* Increased size of PlayerData::AccountData3 to 1300 bytes.
+		. Account format change: please delete all existing data/accounts/* files.
+	* Server will check for facing in dueling now
+
+Oct 20 2006 - nneonneo
+	- Realm List Server/Queue.h (not used)
+	* Fixed many memory leaks in RLS.
+	* Crash fixes from logs at rlist2.lainnet.lv
+	+ "quit"/"exit" and "clear" console commands implemented (clear for Win32 only; used to fix bug where display maxes out and no new data can be displayed); use quit to exit safely
+	* Bugfix: You can no longer make two characters of the same name
+	* Bugfix: On PvP realms, you can no longer make both Horde and Alliance characters
+	/ Debug logging no longer goes to console (status text will though). Changed because we have CDebug.txt to log debug messages, so spamming the console is a bad idea.
+	* linuxmake changes to streamline the Cygwin/Linux/UNIX build process
+		. Usage: ./linuxmake <buildtype> [TBC]
+			Second argument optional; if it is included (as "TBC") then a TBC build will be made.
+			Example:
+				./linuxmake release TBC
+					Makes a TBC Release binary
+				./linuxmake profile-debug
+					Makes a 1.12 (Regular WoW) Profiling and Debugging binary
+	* Updated SMSG_AUTH_RESPONSE and SMSG_CHAR_CREATE response codes (from WoW.exe)
+	* Increased size of PlayerData::AccountData2 to 1250 bytes.
+		. Account format change: please delete all existing data/accounts/* files.
+	- CreateObject(),CreateObjectNotMe(),CreateObjectOnlyMe() in all classes. Not used; buggy; not TBC compatible.
+	/ PLAYER_BYTES_2 fix: Appearance[4] in the wrong slot. Facial hair should now show up.
+
+Oct 18 2006 - nneonneo
+	* TBC SUPPORT
+	* New graveyard locations, from rz950
+	/ Changed Townhall.conf.sample to reflect some changes
+
+Oct 17 2006 - nneonneo
+	* Fixed some compiler warnings about various stuff.
+	* SMSG_LOGIN_VERIFY_WORLD
+
+Oct 16 2006 - nneonneo
+	* Fixed a crash bug that Catvir traced (MsgHandlers:1543 in MsgLootUnit). Fixed a similar bug in MsgGameObjectUse.
+
+Oct 15 2006 - nneonneo
+	. I will investigate Dwarf quest bug.
+	* Cygwin compatibility fixed: stuff should no longer break randomly.
+	* Innkeepers should now have an option for binding.
+	* ~20 functions in ChatManager redone to use minimum number of arguments (many used ARGS when STRING was sufficient; some had incorrect argument type for the declared FUNCTYPE [potential crash!], and some were just wasting arguments when none were needed).
+	* Innkeeper binding fixed
+	* Item Template spells are fixed. "StartQuest" will NOT be sent anymore; it just causes weird behavior.
+		. Incidentally, this fixes the Locked bug as well as many other (minor) Item bugs.
+	* Bounds checking for Set/RemoveAura
+	* Inventory failure codes updated
+	+ GameObject Quest Loot
+	/ Changes for full ISO/C++99 Standard Compliance
+	/ Quests now remove required items on completion
+	* Crash Fix in CPlayer::AddItem
+	- IsOnQuest, GetQuestIndex
+	- GameMechanics::GiveXP (now aliased to CPlayer::AddExp)
+	+ CmdPet [!pet <creature name>] for testing pets
+	* Gnomes and Trolls fixed; they won't crash the client now
+	* Checks for pTemplateData inserted in many functions to preserve safety
+	* DestroyItem fixes; set appropriate fields; strip some dead code
+	* MsgPetNameQuery fixed
+	* Due to database irregularities, checking for previousquests has become more strict. (some previousquests are empty on slot 0 but have data in slot 1)
+	* Pets - some advances in pet handling
+		+ Dismiss
+		* Fixed Attack
+		* Proper Pet Names
+
+Oct 14 2006 - nneonneo
+	* Quest Retake Bug *hopefully* fixed for good (player can't accept quest unless it is truly available)
+	. Crash bug in !sendpkt fixed. I've removed the function though: it serves no useful purpose.
+
+Oct 13 2006 - nneonneo
+	* RealmListServer minor fix for ShowRealm
+	/ Privledged --> Privileged [yeah, spelling, w/e]
+	/ Optimizations in ChatManager
+	* !mount now accepts a model ID or a name
+	* !allquests is now a toggle
+	/ !morphplayer enabled
+	* DataPending size limit increased: fixes a minor "disconnect" bug
+	* Friends and Ignore fixed
+	* FindFreeAuraSlot will return -1 on failure, rather than 0 [because you can have slot 0]
+	* CCreature::ShowQuestHello has been redone to fix a bunch of wacky quest bugs.
+		. NOTE TO KOLKOO: PLEASE INTEGRATE THE NEW ShowQuestHello WITH YOUR NEW CREATURE.CPP FILE.
+			Otherwise we'll regain all of those lovely bugs.
+	* DataManager.QuestIDs map provided to fix some bugs with an "old" QuestID and prevquests.
+	* Item.cpp: some protection added against NULL pTemplateData
+	/ ActiveMover implemented
+	/ Battlefield Status implemented
+	/ Raid Info implemented as a null function
+	* QuestLogSlots - many bugs fixed there (e.g. removal of wrong slot)
+	* Field change: MsgQuestQuery and SMSG_QUEST_QUERY_RESPONSE
+	* Spells: no more #132: packing GUIDs right
+	* QuestLog: Initialize values on player enter (so you can see quests that you have)
+	. Format of PlayerData has changed: none of your existing players will be valid. Clear data/accounts and remake characters.
+	* So many fixes in QuestFunctions.cpp I can't name them all.
+	* Gossip: if an NPC wants to give quests, they will now appear in the gossip menu.
+
+Oct 07 2006 - Rz950
+	* Fixed the ingame name problem(SMSG_NAME_QUERY_RESPONSE)
+		. It was missing a extra zero after Data.Name(thanks to kolkoo for help)
+	* Fixed the npctypes, they are now correct.
+	* Fixed a weird return true found in questfunctions.cpp (I'll be working on quests soon)
+
+Oct 05 2006 - nneonneo
+	* RealmListServer bug fixed - it should work 100% now (no joke). I've tested it. Compile from source.
+		. Incidentally, this one won't crash randomly like the other one: there is no assert to kill it xD
+
+Oct 03 2006 - nneonneo
+	. Facing bug was related to CPlayer::IsFacing, so we've effectively fixed three different facing bugs (Creature facing, Player facing, Creature movement)
+	* Optimized the facing code; changed "151" to "EVENT_CREATURE_FACETARGET"
+	* Reverted CmdBind (I'm assuming you were using it to test; please use CmdTest next time)
+	* Removed the useless FacePlayer function
+	* Fixed TBC support; changed some opcodes; fixed some stuff
+	* DBC Structs updated for TBC [Spell, TaxiNode, WorldMapArea, AreaTable]
+
+Oct 03 2006 - kolkoo
+	* Fixed facing ( For Real ) nneonneo there was nothing wrong with trigger and calculations
+		client just needed to be told to update facing :P
+
+Oct 02 2006 - nneonneo
+	* Fixed facing (again), I thought you meant a different problem, Wesko. It should work now, unless my trig fails me.
+	* Fixed a little oopsie of mine in Opcodes; I'm surprised it hasn't caused any stupid compilation errors.
+	* Added TBC Opcode names to RealmServer.cpp and used the previous opcodes to make a new list (again, it is under #if TBC blocks)
+	* fixed a bug in RealmListServer.cpp relating to the realm list
+
+Oct 01 2006 - Wesko
+	. Facing the wrong way bug stills there nneo, I uploaded this screenshot, hope it helps. http://img244.imageshack.us/my.php?image=bugrk6.jpg
+
+Oct 01 2006 - nneonneo
+	* RealmListServer source updated to work with 1.12 and TBC. Turns out to be a minor fix.
+		. Incidentally, the source we have crashes because of a bad assert in the code. I made sure that that assert was disabled ;)
+	* Townhall updated for TBC. To compile without TBC support, change "#define TBC 1" in stdafx.h to "#define TBC 0".
+	. TBC errors out with some faction error; suspect not enough faction data is being sent [it does not crash]
+	* Spells can now summon pets, but pet support is buggy
+		. Summoning is "incomplete" because it does not fully create the creature [see SpellHandler.cpp:322]
+	* Added some basic data for Blood Elf and Draenei
+		. They start with 20 in every stat and start in Northshire, due to a lack of real information. They also have no items =\
+	* Fixed an emote bug (UNIT_FLAG_SWIM no longer required; it is more like UNIT_FLAG_NOEMOTE)
+	. BUG: Intellect is labelled as being subtracted by 286331154, this is 0x11111112. Some field is incorrect!
+	. Many UNIT_FLAG_ items are WRONG. See defines.h
+	
+Oct 01 2006 - kolkoo
+	* Commited a new UseThese.rar in townhall/data/dbc with a fresh copy of faction.dbc from patch.mpq
+	and reputation works.
+Sep 30 2006 - nneonneo
+	. Map loading is slow because we have more continents. See if it is faster now; I am using a map instead of hash_map to skip the hashing step
+	* hash_map changed to map in HeightMap to increase speed (>>I'm dumb: hash_map is no faster on unsigned long keys :P)
+		. This increases load times a lot, now it should only take ~80 seconds to load depending on your CPU/HDD
+	* hash_map changed to map throughout project; I realize it was pretty stupid (see Mar 15 below) because VS.NET has poor hash_map optimization.
+	* Attempted fix for facing issue; try it
+
+Sep 30 2006 - Rz950
+	* fixed problem with yell and whisper
+ 	* fixed problem with items not stacking
+	. the - next to your name isnt fixed yet, I'll do it later when I have all the packets.
+
+Sep 28 2006 - nneonneo
+	* Added an extra field to SpellRec to make it the right size
+	/ Renamed some fields in SpellRec, added column numbers as comments
+	* Reenabled !showstats and !edit [on creatures]: commented out some functions due to removal of some creature data (data which has been moved to the templates)
+	* fixed crash bug in Packets::SendRegion (pPlayerRegion not checked for null)
+	* fixed armor bug by mapping all the proper item slots in ReqInventoryType4ItemSlot
+	* fixed crash bug in MsgChannelLeave (chn not checked for null in chn->GetNumPlayers())
+	* fixed crash bug in Creature cleanup; InitAEvents wasn't being called from CCreature()
+	* removed a number of odd references and disabled code (courtesy Burlex)
+	* fixed incredibly stupid logging error in RealmListServer which caused the log file to grow to 77MB
+
+Sep 27 2006 - nneonneo
+	* removed stdext:: namespace from all hash_map declarations to allow building in Linux and VS 2002.
+	* changed ULONG to unsigned long in DynamicObject.cpp - undefined identifier
+
+Sep 27 2006 - kolkoo
+	* Added newest dbcs only areatable,faction and factiontemplate are from dbc.mpq
+	* Spells are working for now.
+	* Will fix reputation when i can.
+
+Sep 26 2006 - Dameon
+	* Fixed Speed problems (dying,resurrection,!edit speed - caused the character to become frozen)
+	* Few other minor things fixed.
+	* Changed Pantera to SWemu throughout the project. Also Resource edited the RealmList Server to display SWemu
+
+Sep 25 2006 - Dameon
+	* Changed old 1.9 update fields to new 1.12 ones. Fixed a ton of bugs on the spot.
+
+Mar 25 2006 - higi
+	+ Items are stacking (only store loot now). Player::Items use pointers instead of IDs. It is
+	faster, but there are some bugs yet. Kolkoos UpdateItem included.
+
+Mar 20 2006 - kolkoo
+	+ DynamicObjects workeen :) So that makes spells like blizzard work. Mind u this is a temp way
+	i will work on a apply modifier for these spells(area onez). So for now spell with periodic dmg
+	work and spells like tranquility also work but for now only heal over time but i will work on 
+	these
+	* 3D Distance
+	*some more changes i cant remember :/
+
+Mar 15 2006 - nneonneo
+	* hash_map instead of map in DataManager, RegionManager
+	/ atan2f instead of atan2 for float speed
+	/ auto-formatted all source files to clean up indenting issues
+	. begun "-Wall -pedantic" audit of code to ensure cleanliness and compatibility
+
+Mar 14 2006 - kolkoo
+	+ Combo Points/Spells all working properly
+	+ Spells like sinister strike working
+	+ Resistance/Armor bonuses should display in charinfo properly
+	+ Added ChannelStart and ChannelUpdate  function for channeling support
+	.Started working on area spells + area aura effects+ dynamic objects
+
+Mar 13 2006 - kolkoo
+	+ Added Stat Percent bonus/minus in charinfo dialog.
+	++ Next Attack Spells added ( heroic strike works test it :p )
+	.um they can be buggy though. I am having problems differentiating 
+	Next Attack Spells from Instant spells cause they both use the same spell
+	effect so for now am gonna treat all as next attack...
+
+Mar 13 2006 - kolkoo
+	**Fixed the crash. It Was in FacePlayer/FaceObject function in Creature.cpp- commented it out
+	so now temporarily creatures wont be facing u.
+	.   		-=Presenting Spell System 0.1b=-
+	+Support for auras on creatures
+	+Support for modifiers adding releasing completed.
+	*Fixed Spell::getPower to return proper value.(not always random that is).
+	*Auras fixed. +periodic auras support.
+	+Healingovertime,Damageovertime support as on official.
+	+Basic Shapeshifts working
+	+Ag,Int,Spi,Sta,Str stats bonuses and also minuses properly displayed in charinfo
+	(next step is to make them actually give health,mana blabla)
+	+Normal Speed increase/decrease spell working
+	+Mounts 100% fixed ( now u can release auras and return to normal also speed for mounts work)
+
+	
+Mar 12 2006 - higi
+	+ Added spell delayed, when caster take damage
+	
+Mar 10 2006 - higi
+	* EventManager is using multimap instead of double linked list. Insert and 
+	remove is now in O(log n). Remove is using WoWEvent to identify event instead of EventID.
+	+ Added repeatable events support
+
+Mar 08 2006 - higi
+	/ Fixed minor bug. When canceling spellcast the cPlayer::IsCasting was not updated and server crashed when you left duel.
+
+Mar 07 2006 - kolkoo
+	+ Healing Spells now show healed amount in green on player's portrait.
+	.And yes there is something in the spells that crashes the client (wrath) but i cant find it
+	cause i cant run the builds in debug mode and join at the same time :/ (not nuf ram)
+
+Mar 04 2006 - nneonneo
+	- Removed all CPlayer::emoting stuff (Burlex says we don't need it, it's a waste of some CPU cycles in MsgMove ;)
+	* Reorganized and renamed some spell effect defines.
+	* Fixed talent bug with the "1077936128" talent points after logon. Turns out some initial GetPlayerInfoData was not in proper numerical order
+		(i.e. CritPct was read as TalentPoints and vice-versa)
+	. There is still a crash bug on "Long * (Rank 1)" - warrior spell - that I don't have time to find -- it must be something in the effect handler that crashes though.
+
+Mar 04 2006 - Kolkoo
+	+Added hearthstone to backpack. Fixed binding. Added a function CPlayer::BIndInitiate()
+	that shows the dialog box asking whether you want to make this your home or not. YOu can
+	test it using !bind. Also hearthstone teleport works.
+
+Mar 02 2006 - Kolkoo
+	/ Updated talent.dbc with one from 194
+	*Fixed talent learning(had some calculations bugs). However the bug still remains after
+	logout/login the number of free talent points is smthing like 107923141 and i cant find
+	the mistake now (it is so late :/) SO if someone could fix it for me i would appreciate it
+	+ Talent Unlearn is done. use Player->TalentResetInitiate(); or !resetdlg to test it.
+	*Fixed Duel to be 100% as on official ( i think ). You can test it and report bugs.
+	 There is an issue with duel fleeing when you get out of the area a countdown msgbox
+	 shows up and when you get back it disappears but you have to walk more. Example
+	 when you get  to point X the msgbox shows up but when you get back you have to walk
+	 back more from Point X until the countdown disappears... I dont have time to do find out
+	 what is wrong atm so if anyone could take a look ( would appreciate it).Besides that
+	 it works perfectly fine! Enjoy!
+
+Mar 02 2006 - Burlex
+	. nneo, just set flags to 0x1008 on startup and leave them, don't change them at all. That allows swimming, emoting, 
+	  everything. It'll work fine then.
+
+Feb 28 2006 - Wesko
+
+	. When u Flee away kolkoo a timer must appear and it gives u 10secs of tolerance to get back to the field, also you are not
+	supposed to be able to LOGOUT when u are at duel.
+
+Feb 28 2006 - nneonneo
+	. Setting flags is because it worked last time. UNIT_FLAG_SWIM caused emotes to not show under 1.8.x, so I thought it may
+		work under 1.9.x too. And no, I can't tell what might be wrong, but maybe you could try simply setting UNIT_NPC_EMOTESTATE 
+		on the player and adding an event to strip it off in a few seconds.
+
+Feb 28 2006 - Kolkoo
+	+ Added Duel Fleeing!
+	* Duel emote still doesnt work and on MsgMove the flag was |0x08 instead
+	of |0x1008 so that is fixed too and i dont get it why do we have to
+	update flags every time we emote... This is not right!
+
+Feb 27 2006 - nneonneo
+	* Fixed duel emoting (I think: please test)
+	* Reenabled "->emoting" check in MsgMove
+
+Feb 27 2006 - Kolkoo
+	+ Finally Fixed Duel
+	/Fixed the trigger everything is fine!
+	. Duel Fleeing and also the emote doesnt work... >.< How can i send an emote to all players near?( i dont want textemote)
+	* Reputation system is fixed to work as on official (old but not changelogged before)
+	+ Added a new gameobject.cpp class constructor for easy use...
+	+ Added an update to dynamic fields with a value of 0x10 so player stats are shows with name
+	and info...(it should show creature stats too btw but dunno O.o only players are shown)
+	* Tweaked the background drawing system a little bit
+	.BUG Sometimes when you run towards a direction and stop the other players sees you moving
+	away and away until you move into another direction and appear in front of him like a TP
+
+Feb 28 2006 - Burlex
+	+ Added some official pktlogs, if you need more let me know.
+
+Feb 27 2006 - Burlex
+	. Lots of stuff I've forgotton about
+	+ Spawn editing! xD
+	  !spawn <creature name>, e.g. "!spawn young wolf" will spawn a young wolf at the players current location.
+	  !deletespawn will delete the spawn that is currently selected.
+	  Will take effect immediately until restart of emu, unless worldsave is called (can be done with !worldsave in game or
+	  worldsave from console, will commit to file and set permanantly)
+	. Fixed human start area spawns
+	* If npc only has 1 quest instead of sending quest list it sends details for that quest
+	* Duel is almost complete (me and kolkoo's work.), only needs to figure out why the client isn't sending the function now.
+	* Guilds can be purchased now, will implement charters later on (go talk to guild master, entera  guild name and it will
+	  create it. Although, we have to figure out why guild roster freezes the client though.
+	* New world, Southerns one, with some changes.
+	* New creature templates.
+	+ Waypoints. Imported from wad.
+	+ broadcast command in console. Will broadcast message to all clients. may be handy :p
+	/ Updated prebuilts.
+	. nneonneo we need the min x/y of all the maps, then instances will all be spawned xD
+	/ Other small things I've forgotton about.. maybe I should update the changelog as I'm working :P
+
+Feb 26 2006 - nneonneo
+	* Warning reduction.
+	. Min X/Y provided for most maps, but I don't know how to get remaining data (just look in CDebug to see what maps are missing!)
+	. Should also packetlog a login/out to get the startup flags (we're probably missing SOMETHING)
+	* Prevent RealmServer.cpp from loading non-map files
+	* Ensured that FirstPoint was set to 0 for Taxis and Spirit Healers
+	* AttackStop guids are unpacked, AttackStart guids are packed. Go figure.
+	* Waypoint movement: check for validity.
+	. Please check out CCreature::FacePlayer()
+		(it doesn't work...needs a different combination of packed and unpacked guids:
+		I think player guid should be unpacked but I didn't have enough time to change it)
+
+Feb 25 2006 - nneonneo
+	* Optimizations to UpdateObject, fix to AttackStart, fix to LogGainXP
+	* Server switch, Townhall folder removed
+
+Feb 23 2006 - nneonneo
+	* Update TownHall prebuilts (removed TownHall-1.9.x and TownHallCygwinSSE [please provide commandline used])
+	/ minor fixes to eliminate warnings
+
+Feb 22 2006 - nneonneo
+	* Fixed the guid packing function (had the mask backwards!)
+		Set the #define FULLPACK to 0 (right before the PackGuid function) to get less efficient but slightly faster packing (packing of up to 44%)
+		With FULLPACK set, the guids usually drop from 9 to 3 bytes (4 for most creatures) --> ~66% packing
+	* Changed almost all GUID references to use PackGuid[Buffer]
+	. Bug: breath: after running out of breath, you will lose HP but also gain rage (which shouldn't happen I think)
+	. Bug: quests: can take them more than once (especially in NightElf area)
+	. Using "Long Daze (Rank 1)" while an NPC is selected causes TownHall.exe to crash (start off as a warrior, learn this spell at any warrior trainer for free)
+	. Burlex: Do a search in MsgHandlers.cpp for "BAGSTODO" to find which places should add bag support.
+	* Deleted the std::vector Cached<classname> (e.g. CachedPlayers, CachedItems, etc.) because they are redundant, waste time on cache/uncache and retrieve, and eat memory. Plus they aren't ever really used.
+	
+Feb 22 2006 - Burlex
+	* Fixed spell system all animations play correctly now.
+	+ Heal spells
+	* Re-wrote combat system
+
+Feb 21 2006 - Burlex
+	+ New creature templates, should be a little more accurate, and with more fields.
+	+ NPCs that can do multiple tasks will have a gossip menu now.
+	. Some other stuff...
+	. nneonneo the client still isn't accepting the packed guids. Both on A9 and monster move.
+
+Feb 20 2006 - Burlex
+	* Major cleanup of source
+	- Lots of duplicate fields un-needed in creature.h, this saves around 50MB of ram! TownHall.exe ram usage without maps
+	  under release uses 78MB ram on my computer! Probably less on everyone else's because I use x64.
+	* Fixed deathworld, happy now Wesko? :P
+	. Kolkoo your rep system needs fixing.
+	. nneonneo when you get a chance take a look at mail, you fixed it last time remember :P (same problem, client not
+	  sending CMSG_SEND_MAIL)
+	* Changed all combat code from pPlayer to pObject. This will allow pets and creatures to attack other creatures (no
+	  good having it so only players can deal damage)
+	* Fixed looting and A9s getting sent on creature death.
+	. Coming tomorrow, equipping  for mobs, and sorting out of templates to use entries instead of guids.
+        (we will use a map for conversion probably. Sending guids as entrys seems just to be causing problems (such as
+        the one with elevators not working), the client isn't meant to receive that as the OBJECT_FIELD_ENTRY).
+	. Fixed taxi spawning.
+
+Feb 20 2006 - Fred
+	. I need someone to help me getting each taxi node ( npc ) data from the official server or some other place,
+	  i need npc : name , guild name , model id and location to be able to finish the taxi npcs, in our server,
+	  we do not have all the taxi npcs spawned we lack about 60% of then, so im needing this help thanks.
+
+Feb 19 2006 - nneonneo
+	. Back from Disneyworld xD (hey, my sister wanted to go...)
+	+ Packets::PackGuid and PackGuidBuffer. Function has been tested, but the *real* test is seeing if the client will accept it.
+		. I *highly* recommend that this function be used to pack and send GUIDs, because it can make a huge difference (especially for MOVE packets!)
+		. How-to use:
+			a) Using CPacket:
+				CPacket pkg(SMSG_YOUR_OPCODE);
+				Packets::PackGuid(pkg,guid,SOMETHING_GUID_HIGH); // ex. CREATUREGUID_HIGH or PLAYERGUID_HIGH
+			b) Using a buffer:
+				// assume buffer and c are defined
+				c+=Packets::PackGuidBuffer(&buffer[c],guid,SOMETHING_GUID_HIGH);
+		It's that simple ;)
+	* Packets::ReadGuid cleaned up.
+	* All HIGHGUIDs changed to 0 in Defines.h (because the client doesn't care and the compression is efficient w/ no highguid)
+	/ Minor formatting updates, minor fixes here & there
+
+Feb 19 2006 - Burlex
+	+ Fixed gameobjects.. again
+	+ Elevators
+	+ New trainer templates, you need prereqs and level now.
+	* You can attack nature creatures like wolves now. Also they go red after attacking them on official
+	  (for kolkoo :P)
+	/ Some fixes to AI code it shouldn't get ignored now.
+
+Feb 18 2006 - Burlex
+	+ Underwater Breathing (check it out in SW :D)
+
+Feb 17 2006 - Burlex (includes work from earlier this week)
+	+ Bags
+	+ Basic pet system (buy a cat from that crazy cat lady and try it! :D)
+	+ Some fixes to AI
+	+ Spirit healers
+	* Fixed deathworld for 1.9.x
+	* Other 1.9.x fixes
+	* Addons work on 1.9.x again.
+
+Feb 12 2006 - Fr3DBr
+	* Taxi Fixed for 1.9.x.
+
+Feb 12 2006 - Burlex
+	+ 1.9.x support, tested with 1.9.3. Use code in Pantera-1.9.x
+	+ Update packets still not completely finished, and combat and spells are bugged.. but for the
+	  most part it seems stable.
+	+ Fixed movement packets and create packets.. you don't control other people now :P
+	+ Fixed some other 1.9 stuff
+
+Feb 11 2006 - Burlex
+	+ Item repairing if durability has been lost
+	+ ARMORER npc type
+
+Feb 10 2006 - Burlex
+	+ Modifiers for Auras
+	/ Fix to make trainer come before sell, this will fix warlock trainers until we get gossip fully implemented.
+
+Feb 09 2006 - Burlex	
+	+ Food and drinks work and restore health/mana
+	+ Converted some aura handlers
+	* Converted sell templates to binary files
+	+ Multiple auras apply perfectly now, use FindFreeAuraSlot and SetAura 
+	  (they automatically get applied after using a spell)
+	* Instant cast spells fixed
+	
+Feb 08 2006 - nneonneo
+	* Updated ItemConverter to handle every field except "extra". That I stuck in a Unknown field.
+	/ struct _TrainerItem moved from Defines.h to Structs.h
+	/ minor fixes to MsgTrainerBuySpell (changed the iterator variable name, removed an unnecessary iteration)
+	/ newlines added to the files that needed them to make GCC happier
+	+ EFFECT_DRINK = 100 (should it be EFFECT_ALCOHOL?)
+	+ SpellHandler.cpp - added EFFECT_DRINK handler (should be alcohol drink?) in HandleSpellEffects
+	/ SpellHandler.cpp line 140 - fixed minor fencepost error
+	/ minor formatting changes to make code more readable
+
+Feb 08 2006 - Burlex
+	+ Started re-write of spell system
+	+ Aura handlers started
+		* Mount system adapted to new aura handler
+
+	+ Buff icons work now but code is dodgey.
+	+ Weapon masters, stable masters, etc will teach you proficency in that weapon skill
+	+ Stealth handler added, but still need to get that actionbar to show.
+	* Fixed bug where class would keep getting set to Warrior
+	* Fixed XP bug for map exploring, always use GameMechanics::GiveXP to add XP.
+	. nneonneo, would you be able to knock up an item converter some time? I made up a basic one but not all the fields
+	  converted, you'd probably have a better idea of what's going on.
+	/ Prebuilts updated
+	. Spacey, I'll look into implementing that formula.
+	
+	+ Other stuff that I can't remember to mention here.
+
+Feb 07 2006 - nneonneo
+	. Burlex: I have two suggestions.
+		1) Change "Pantera" class to "GameMechanics" or "GameCalculations" or something. Pantera sounds like server administrative functions.
+		2) Make sure to upload the files.
+	. Burlex: does the GameObject stuff work now?
+	. No work done because the Patera.* files are missing (though I strongly suggest a renaming to avoid some confusion about function)
+	. kolkoo: FactionTemplate.dbc is a list of things to *apply* to the Player's faction. They do not actually factor into
+		the character's faction/reputation system aside from initial values! There *are only* 64 factions.
+		Those are all the nonnegative Display factions. The method employed in the static list is faster and cleaner, I swear!
+		Finally, I'd like to remark that by adding a std::list you will vastly increase memory consumption and open the risk of memleaks, and speed will take a hit.
+
+Feb 07 2006 - Spacey
+	. Burlex, regarding both armour and on-skill-increase during combat there is no valid formula at this time.
+	. So I emailed a real formula pro, he confirmed this and this is kind of a rough guess from him
+	. "Chance_To_Gain_Skill = Some_Modifier * ((Player_Level * 5 - Weapon_Skill) * 100)%"
+	. "Regarding durability, you lose armor durability when you get melee hit, probably based on the damage absorbed by the armor, and you lose weapon durability based on the damage you do."
+
+Feb 07 2006 - Burlex
+	+ Class - Pantera
+	  This will be our class for all different sorts of calculations and things like that. much easier to maintain that way.
+	+ More functions in Packets class - I will be using this a lot to manage different packets, makes it a lot easier to
+	  change something if it is changed in 1 place than a million.
+	/ Some minor changes to loot - removed sparklies after all loot is removed (Thanks Spacey)
+	* Quest logs should be pretty bugless now, but quest code is still very incomplete.
+	. Expect a LOT of revamping of combat and spell handlers/functions from me in the next couple of days, and a lot of
+	  centralisation of code, that's what I'm going to be working on in the next couple of days.
+
+Feb 06 2006 - nneonneo
+	+ MsgGameObjectQuery
+	* Crash Fix for !object 37 0 1 (example) --> turns out pTemplate wasn't being set
+	* Fixed name problem (i.e. mouseover now produces a name)
+		Not sure if this is your problem, Burlex...
+		Any other type issues are due to spawns
+	* Fixes for dueling (untested, but should make the GO appear correctly)
+
+Feb 06 2006 - Burlex
+	+ Added support for addons (they can be turned on and off at the character selection screen), this only works with 1.8.4 though.
+	+ Talent learning.. may be a little bugged though so be warned!
+	+ Basic mob tagging
+	/ Small fixes here and there..
+	. nneonneo would you be able to help me figure out why the hell gameobjects aren't coming up as the right type?
+        (e.g. ore, anvils, etc don't have the right mouseover effect, neither do signpoists....)
+
+Feb 05 2006 - nneonneo
+	* Fixed a few ChatManager commands (!edit size, !edit model, !addscriptcommand, CmdAddWaypoint)
+	- Deleted a "corrupt" script (33598690.txt)
+	* Fixed several scripts by adding linebreaks (chat command was broken in that respect: no line endings)
+	* CClient::ChannelMessage now takes an additional (optional) argument: userhigh (for creatures)
+		. How do you send a creature say or a whisper??
+	* CREATURE_AICMD_SAY handler: added code to say the text (not working because
+		I can't seem to send "CHAT_MONSTER_SAY" or "CHAT_SAY" with a creature
+	/ Linuxmake: fixed some capitalization
+	* Efficiency fix: Template was being loaded twice for each creature. GenerateCreatureNew modified to
+		take a pointer rather than a TemplateID (eliminates the second load, loading times improve by ~10%)
+	/ Cosmetic changes to RealmServer.cpp so that all the loading looks good in Linux
+	* Updated prebuilt: TownHall.exe, TownHallCygwin.exe. Packed (did NOT update) TownHallCygwinSSE.exe.
+		Burlex: add the code you used to compile SSE into the linuxmake build file (under a new entry release-sse)
+	/ Fixed minor bug with WorldDefense channel (wasn't being set "constant" so the first person to join was given owner status)
+
+Feb 05 2006 - Fred
+	* Added all the necessary casting into the warnings of the code like when it says unsigned/signed mismatch to make compilation clear.
+	+ Added Money Checking for Taxi
+	/ Minor Changes to Taxi Dismount Event.
+
+Feb 05 2006 - Burlex
+	+ Skill levelling finished, always updating now
+	+ Gossip, look at files in data/gossipmenus
+	+ SendPOI, sends point on map (little dot), if anyone needs it.
+	/ Prebuilts updated.
+
+Feb 05 2006 - nneonneo
+	* Fixes to Faction system.
+		Major change: static array is now [64] because that is the max # of factions.
+		The index of factionlist is ReputationListID. This makes the lookup process simple (no loops)
+		ID and ReputationListID were removed.
+		LoadFactions became GenerateFactions, and is now only called in CPlayer::New().
+			It loads sequentially from the dbc and applies various flags to it.
+		UpdateFactions now updates only one faction at a time (use -1 to update all, will probably result in weirdness)
+		- LoadReputation
+		- ONBON
+		/ removed several minor chunks of testing code
+	* updated DBCUtil.exe
+
+Feb 05 2006 - Burlex
+	+ Proper skill levelling (max level is 5*current level)
+	* Converted kolkoo's faction system to a static array (so compatible with linux)
+
+Feb 04 2006 - Fred
+	+ Added GetIntValueNoKey and GetFloatValueNoKey before we have only the way to get INT values now we can have FLOAT too.
+	+ Added MsgActivateTaxi (Its working with basic functionallity !!!)
+
+Feb 04 2006 - kolkoo
+	+ Added Reputation system. Using CArray + a field in PlayerData. Modified Player 
+	++ save and load so please delete old accounts.
+	. Saw that spells are kinda broken Oo used to work before Oo
+
+Feb 04 2006 - Spacey
+	. Burlex exactly what data do you need on the umm crit,dodge,parry,evade etc? 
+	. Burlex, you still want me to bump up enovironmental damage?
+
+Feb 04 2006 - Burlex
+	+ Exploration system finished
+	+ Dodge, Parry, Block, etc implemented partially
+	. TODO updated
+	+ Some checks for AI, preparing for different calling system
+	* Faction changes
+	* On attackswing, reach distance is increased if the creature is moving.
+	  This will make hitting a wandering creature easier.
+	+ Handlers for spells like heroic strike. They should work now.
+	
+Feb 03 2006 - nneonneo
+	* Crash fixed somehow.
+	+ bIsTaxi (CCreature field): false if base class is CCreature, true for CTaxiMob.
+		Needed to ensure that taxi code doesn't go and die on a regular creature.
+	* Changes and more optimizations to Taxi code, including precomputed Mask value (loaded as
+		a static array in CTaxiMob, loaded in LoadTaxiPaths)
+	* CCreature::AI_Initialize() - Changed the ifstream stuff to good old FILE * pointers
+		for better speed and compatibility; added checks for file existing too
+	* CCreature::AI_Update() - Fixed logging crash bug
+	* CCreature::Death() - removed testing code, optimization
+	* MsgGossipHello - Crash fix (RetrieveObject ==> true on success, not false!)
+	* MsgTaxiQueryNodes - Major cleanup & optimization
+	- Testing code in some areas.
+	* Optimizations to some areas.
+		These optimizations are of the type:
+			X / n --> X >> (log2 n) where n = 2^k
+			X % n --> X & (n-1) where n = 2^k
+
+Feb 03 2006 - kolkoo
+	* Had some spare time fixed the TransparentStatic class to work in debug mode.
+
+Feb 03 2006 - Burlex
+	* Gossip menus handled by scripting system:
+		addmenuitem 0 0 1 94 0 Doit
+	+ More work on exploration system
+
+Feb 02 2006 - Burlex
+	+ Aggro for NPCs.. disabled by default.
+	+ Unaggro, when they get too far from their spawn they go back
+	* Fixed massive memory issues. TH mem usage should be ~150MB now.
+	. Nice to hear that kolkoo.
+	
+Feb 02 2006 - kolkoo
+	. Been busy this week cause the end of term is Friday. After that we have two more days
+	. vacation + saturday and sunday. I dont have time to commit the reputation system but it
+	. works! Gj guys and Hf :)
+
+Feb 01 2006 - Fred
+	+ Taxi Handler :
+	+++ Taxi NPC Loader Based on DBC.
+	+++ Taxi Path Display when you right click the npc.
+	    Now im putting my brain to rotate the whell again LOL, so its going good as far i know !
+          You can worldport and see a "The Traveler" npc in the taxi points also right click him to see
+	    The possible Taxi Path's you can take. (ill make the taxi system almost blizzlike as possible)
+          Everything right now is just for testing purposes while im coding the stuff so please dont change before i finish.
+	
+Feb 01 2006 - Burlex
+	+ Scripting for NPCs!!!!! xD My own system of doing it, code isn't scripted in any language it's just a bunch of
+	  directives that the parser analyses and uses its own internal handlers. This will cause minimal server lag.
+	+ Commands for scripting (also in scripting for npcs.txt)
+		wait <ms> - Delays the script for x milliseconds.
+		say <saytext> - Makes the npc say that text.
+		emote <emotecode> - Makes the npc emote with that animation (all codes are in Defines.h)
+		sayemote <emotecode> <text> - Says text and emotes
+		moveto <x> <y> <z> - Moves to location
+		repeatemote <emote> <count> <delay> - Repeats emote for count times every delay ms.
+		setmovespeed <x> - Sets move speed to x.
+		settalktext <x> - On talking to this npc it will say <x>
+		settalkemote <x> - On talking to this npc it will emote with code <x>
+		hardagro - Sets npc to be harder to agro
+		noagro - Sets npc to be impossible to agro
+		setagro <x> - Sets agro scale to <x> (valid values are from 0-100)
+		# - Comment
+	. More can be added easily.
+	. Check out the new Northsire peasants :D
+	. crash area.jpg added for nneonneo.. when you get it feel free to ditch it.
+	+ Some scripts added that I did up quickly.. maybe some of you less-coding orientated guys could help out
+	  there a little? :D
+	/ Prebuilts updated.. yay.
+	. Some more stuff I can't remember... this always happens..
+	. TODO updated.. MS2 being finished isn't far away.. I'm gonna work my butt off again. :D
+	. Don't forget to copy the new scripts folder out of the TownHall/Data into your emu data folder!!!
+
+Jan 31 2006 - nneonneo
+	* Merged TaxiHandler into MsgHandlers and RealmServer
+	* FINALLY got around to organizing and adding some labels ( /* ---XXX HANDLERS--- */ ) to the sections. Sould make things a little bit more organized.
+	* Crash bug in GetCreatureInfoData fixed by me and discovered by Fred. Crash bug --> pTemplate not checked for validity.
+	* Fixed GO spawn converting script
+	. On a related note: Burlex: I can have all conversions done easily, so tell me if you need anything converted.
+	. BTW: It's not the rotation tag, it's the GTYPE tag that sets them apart.
+	. Burlex: I need a X,Y,Z of the "back" of Stormwind (before the ramp) in order to test the bug (I can't find it :X)
+
+Jan 31 2006 - Burlex
+	+ Added gameobject spawning, all gameobjects will spawn now.
+	+ Added some fields to gameobjects and templates.
+	/ Minor stability fixes.. looking into crash caused by move packets (walk around the back of SW city and up the ramp to
+	  next to the flight master.. it'll crash the server. MsgMove->SendPacket is what causes it.
+	+ GameObjectconverter.py - Converts gameobject spawns (in worldsave, ROTATION tag)
+	+ Started work on proper sell/train/equip converter
+
+Jan 30 2006 - Spacey
+	/ Changed colour of vote to yellow
+
+Jan 30 2006 - Burlex
+	* Fixed the problem with account data getting corrupted.. turned out there was a std::list in PlayerSaveData
+	* Updated prebuilts.
+	* Quick and dirty fix for kolkoo's faction system.. 288 * 4 * 4 = 4KB per player extra though.. so we'll have
+	  to do something about that.. I'm too tired to do anything more though.
+	+ Modified creature spawning system heavily, now only 1.1MB instead of 11MB, only grabs required info, the rest
+	  is pulled from templates.
+	. Spawning is now a lot faster and more efficient.
+	. Creature equips will have to be moved to creatures, I'll do this tomorrow.
+	/ Code tweaks throughout the program.
+	- Removed half of the un-needed commands. If anyone feels the need to use them feel free to uncomment.
+	* Colour-coding of !commands.
+	* !broadcast works now. Now shows (red)<GM or Admin> (red)Name (white)broadcasts: (yellow)message.
+	+ Water walking in deathworld
+	* Changed some data in creature templates, used new one from Nurris's blizzlike creature templates.
+	. Nurris's world imported. This should work for instances too (I hope).
+	* nneonneo's python converter tools updated to use the new structs.
+	/ Fixed auras, although you can only have one at the moment.
+	. Started re-write of spell effect system.
+	. Memory usage for TH on Windows: ~90MB fully loaded.
+	. Removed some useless stuff from DataManager.
+	. Note: Damn.. we really need to work out factions
+	/ Sell templates are now loaded from the DataManager instead of from pCreature. This will reduce memory
+	  usage a little. (e.g. DataManager.SellTemplates[guid].size(), std::list)
+	. Trainers are also loaded in the same fashion, DataManager.TrainerTemplates[guid].size() for example.
+	+ Started work on Exploration system, DBCs are loaded into memory.
+	+ Exploration System functions started.
+	. Mount system should be operational now. Go buy a mount from the vendor outside lions pride inn,
+	  go !skill 148, !modify level 60, !modify money 2000000 if you have to. Progress bar should work,
+	  and it should mount you with the aura. You can see if dismounting works.. I'll see if I have time to code
+	  it.
+	/ Changed some variable declarations in SpawnSavedCreatures, moved them.. might help leaking a little.. and/or
+	  reduce CPU load.
+	+ New function: GenerateCreatureNew(), takes TemplateGUID and Location as it's arguments. This pulls ALL the info from 
+	  the template, not from the arguments.
+	/ Removed some unreferenced/unused variables.
+	. ...... and all of this in under 6 hours :o
+	- RealmServer::WDBItems removed, as its not being used anymore.
+	. Prebuilts updated again.
+	. Be sure to update your data folder with the new files in data, and the new DBC files.
+	. Found a dbc file called WMOAreaTable.dbc. Contains information on every building/wmo in the game. This will be very useful for
+	  the auto-dismount system (which is already working partially.. auto-dismounts you in some buildings, cities, and water). Anyway
+	  it still has 20000+ entries, we can split this into 2 lists for each continent.. maybe even again for each zone? I'm not sure..
+	  but it's still a lot of data to import. Probably some of it can be cut out though. Anyway, something to consider.
+	- Removed old item import code, and quest import code, as it isn't necessary anymore
+	+ Tomorrow I'll re-do trainer and maybe sell templates from Wowemu data. This will automatically do prereqs for us.
+
+Jan 29 2006 - nneonneo
+	- SetQuestLogSlot: you can simply use pPlayer->Data.QuestLogSlots[logslot]=questinfo
+		Had a bug too, the QuestInfo was never retrievable and wasn't necessary
+	- NewButtons.png - obsolete
+	* ClearQuestLogSlot - use memset instead (much faster), also inlined it
+	- GetQuestSlotInfo - don't need it (this is an accessor function, just use pPlayer->Data.QuestLogSlots[logslot])
+	/ Changed STATICITEMS::HUNTER_ARROW to item 2512 (Rough Arrow) from 2515 (Sharp Arrow); hunters start with rough not sharp
+
+Jan 29 2006 - Burlex
+	* Fixed questgivers again
+	* Fixed questgivers again after the stuffed packet
+	+ Mount system started! Now automatically dismounts you upon entering water or some buildings, and all cities.
+	+ Auras, use pPlayer->FindFreeAuraSlot() and pPlayer->SetAura()
+	* Massive 350MB Townhall is now history. Moved relations back to DataManager, and trainertemplate structs
+	  have been removed from creatures (This is now pulled when the function is called from DM)
+	/ Source cleanup.. a little.
+	/ Some memory clearing functions.
+	/ Started work on removing un-needed data from creatures. This will clear up a lot of memory, even if it's just
+	  1 field since it's in there over 50000 times :)
+	/ New binaries uploaded, SSE for P4s/A64s. (may or may not work on other architectures)
+	* Animation/emote when you say something now works.
+	. BUG: Account/character data gets corrupted on server exit, and causes server to crash on startup. 
+	  We originally thought this may have had something to do with kolkoo's reputation code, but that does not look
+	  like the case. I'm stumpted.. spent the last hour trying to figure out what's wrong with no luck.. maybe there's
+	  some field in there not saving correctly?
+
+Jan 28 2006 - Burlex
+	+ New way of storage quest/involved relations to creatures - pCreature->QuestRelation, pCreature->InvolvedRelation.
+	. This means more room for maps and crap in the datamanager
+	+ Added a field to creaturetemplates, re-imported
+	. Will attempt to make a new world spawns file later...
+	+ Quest mob kill counting and item counting functions done.. however, the quest log packet still seems to be buggered
+	  for some reason.... :S
+	+ Re-did trainer storage system. Result = less load when requesting trainer lists, they actually work right, less mem
+	  usage, and faster loading time.
+	* All text files moved to storage
+	. Quest dialog icons are stuffed for now.. will fix tomorrow.
+
+Jan 28 2006 - Wesko
+        / New php script to create accounts, be sure to edit the path to ur "Accounts" directory.
+
+Jan 27 2006 - nneonneo
+	* Added #define for lineendings in ConsoleInterface.cpp
+	* Check for already started in ConCmdStart; disable buttons in ConCmdStop
+	* Misc fixes to cleanup routines in Creature.*
+	* Fixed TCPSocket::GetHostByName to free the memory and work properly
+	* Updated both Townhall binaries; also copied data/design.bin to prebuilt folder
+	* ConCmdShowPlayers redone; using format strings to align
+	* ConsoleDlg: using Courier 11pt for main display because it looks more like a console (and is easier to read column data)
+	/ iI-->i, unsigned long in place of int in some places
+	* QuestInfo changed sizes of two members (long --> char) to save space
+	* MsgQuestQuery: fixed "fencepost" error before pkg << pQuest->Data.location[i]; (counted to 5 when it should've been 4)
+	* Fixed two minor party bugs
+	/ linuxmake changed (accepts variable arguments now: use "./linuxmake <build>" where build is debug, release, release-svn or profile)
+
+Jan 27 2006 - Burlex
+	. New logs for you nneonneo! Also.. if you want vnc or ssl access to the linux machine so you can do it when needed let me know.
+	. Gonna work more later.
+	+ Item Durability, it sends fields now.. just have to figure out how to send the update packet?
+	+ More console commands :D
+	+ Item templates converted to binary/storage manager.. :) Loading should be faster.
+	+ Fixed item ids again
+	+ Item durability, 10% loss on death
+	. Need to look into durability repair at vendors.. I'll knock up a command in the meantime though.
+
+Jan 26 2006 - nneonneo
+	* Isolated several memory problems totalling about 50 MB of wasted RAM (mostly on exit though)
+	* Fixed some other memory allocation/deallocation problems and uninitialized variable issues.
+	. Burlex: Can you run valgrind again, and also run both the other tools (--tool=massif and --tool=cachegrind)?
+		The three programs put together will isolate a lot of problems or potential problems. Thank you so much Burlex!
+	* Redesigned the buttons using Fireworks (hence the NewButtons.png master image)
+		*Please* do not touch the Btn folder. If you have Fireworks, you may edit the button symbol and change the button appearance
+		(don't change dimensions though, that will offset the transparency effect)
+		Feel free to simply upload new designs in another folder which I will incorporate into the main design, though ^^
+		Details on this method:
+			Using Fireworks, create a symbol button, give it 3 states (stated in the Text object hidden behind the background)
+			Create 9 buttons, align them on top of a backdrop. Make sure each is ~121x32.
+			Name each button and write the correct text (naming is important to give the resulting image files the right names)
+			Export resulting .htm to Townhall, make sure you use an image subdir (Btn/)
+			Compile, check for cracks and misalignment, try it again!
+			As long as nobody moves the buttons in the resource file, the NewButtons.png file will have the right offsets.
+	* Major cleanup of the resources, removed the old BMPs, removed a shitload of dead testing code and ugly MSVC automatic stuff.
+	* Console: Copied and modified the ChatManager interpreter code to extend the Console. Rudimentary demonstration function "echo" included.
+	- Removed the 5 tray animation icons (they won't work)
+	/ Synchronized the three project files; removed the crappy old .dsp/.dsw files (we never update them)
+	* Updated all Prebuilt Binaries (all 4: TownHall/RLS Win32/Cygwin)
+
+Jan 26 2006 - Burlex
+	+ Quest logs working thanks to nneonneo's observation :P
+	+ Console.. cross-platform :D
+	+ Other stuff I can't remember..
+	+ Started honor system
+	+ Some other fixes..
+	. Both windows and cygwin binaries updated.. valgrind report for nneonneo :P
+
+Jan 25 2006 - nneonneo
+	+ Mail.cpp/Mail.h (removed the section from NPCText.h)
+	+ Mail expiry in 30 days (3 after reading it)
+	* Items now save with their original GUIDs to avoid killing the mail item system
+	* All clients get a proper logout on exit
+	+ Fix linux support + fix misc other issues
+	* Efficiency fixes in various quest things
+		FindOpenQuestSlot: Returns actual slot ID instead of UpdateField ID
+		SetQuestSlotInfo: Full one-shot struct copy instead of one-by-one member copy
+	* On starting server, every piece of mail gets the expiry check slapped on it (one hour)
+	* FIXED EMOTES (w00t) never would have w/o the information about mounted emotes ;)
+	* Added wilderness resting to startup code and login check for wilderness resting (currently at 1/4 normal rate)
+	* Swimming = Auto dismount (also: on moving after emoting, MsgMove will restore the SWIM flag)
+	/ Got rid ot '.\' in project files, cleaned up VS2002
+		. Warning: VS2005 copy contains numerous files not present in the other two: someone uploaded a copy with all their testing files on it.
+	. Must implement MsgQuestQuery (CMSG_QUEST_QUERY) before quest log will function!
+	/ English (Australia) and Bulgarian resources were merged into the U.S. resources
+
+Jan 24 2006 - nneonneo
+	* General cleanup/optimization in a few parts (updated the Ignore/Friend add functions to eliminate the need for null markers)
+	. Caveat on the standstates: it would appear that standstates are actually not unsigned long, but 4 unsigned chars!
+		What this means is that the druid forms reside on byte 3 (normal standstates on byte 1).
+		It may mean the use of "or" ('|') in order to ensure that compound states are possible.
+	. Awesome work Burlex and Kolkoo, and the interface is downright cool!
+	. Not out of finals yet, but I have reviewed all the code so I can get right back into coding.
+
+Jan 24 2006 - Burlex
+	+ More standstate enums.. thanks kolkoo!
+	+ Started work on stances
+	+ Rage works 100% now, generates and degenerates. Using formulas from wowwiki.com
+	. I'm back at school again.. so my work will probably slow down a little from now on.. :(
+
+Jan 22 2006 - Burlex
+	+ Quest log struct and fields in player.h, but the log still doesn't work.
+	+ New Creature Templates, family, faction, type, elite
+	* Defaults to faction 2 if faction is 32, this is a temp fix for mobs.
+	* Fixed my own screwup in the creature converter.. hehe
+	+ Gossip flags should be right now! :)
+	+ Taxi dbcs from 1.8.3
+	* FOR WESKO: Killed the character saved line.
+
+Jan 22 2006 - kolkoo
+	. Burlex it is ok the way you commented it. I wasn't using it anyway but
+	. i wouldnt mind if you gave me the errormsg.
+
+Jan 22 2006 - Burlex/Thanos
+	+ Merged all code from me and kolkoo's work
+	. kolkoo: Player.h, line 225, won't compile on VS2003?? :S
+	+ New compiled exes.
+	+ Stats increasing in combat
+
+Jan 21 2006 - kolkoo
+	* Fixed SpellCasting Times
+	+ Added Dbc support for taxis
+	* Changed CancelCast code and added spellfail function in CSpell class as well as
+	a spellfailedreasons enum
+	* Started Adding Small Fixes To Spell system
+	/ Added an ObjectID field to Gameobjects
+	+ Duel partially working
+	+ Added a GDI for the TownHall
+	
+Jan 18 2006 - Burlex
+	+ Sell templates, npcs will only sell stuff that they should
+	+ Trainers partially working, spell buying works perfectly. Although you can't do > level 1 yet.. :P
+	. Trainer code is VERRRRRRY messy. I'll clean it up tomorrow
+	+ Various work on quests
+	+ New item database, all 11k+ items, new loading mechanism.
+	. WHY WON'T THE QUEST LOG WORK!
+
+Jan 17 2006 - Burlex
+	+ Quest Accepting
+	+ Quest storage
+	+ Quest Completion
+	+ Quest Rewards
+	* Only shows appropriate quests now for level/prerequesites
+	. Still for some reason QUEST LOG DOES NOT WORK!
+	. On the emotes issue.. maybe a hint or something.. *** EMOTES WORK IF YOU'RE MOUNTED ***
+
+Jan 16 2006 - rz950
+     * Fixed problem with vs 2005 project files (now it compiles fine with the project files)
+
+Jan 16 2006 - Burlex
+	+ Quest handlers
+	+ Quest relation files
+	+ Questgivers work
+	+ Accepting added.. but doesn't work for some unknown reason
+
+Jan 15 2006 - Burlex
+	+ Quest Info class
+	+ Importing from textfile, nneonneo | as a seperator this time :P
+	. For some reason datamanager won't retreive.. will have to look into this
+	+ !importquests and !questinfo
+
+Jan 10 2006 - Spacey
+	/ Spelling of minimize and minimized of RLS
+
+Jan 09 2006 - nneonneo
+	* Fixed the problem with client sending packet. Required MSG_QUERY_NEXT_MAIL_TIME to be replied to
+		Maybe duel has the same-ish problem?
+	* Replaced all instances of Backpack searching with CPlayer::GetOpenBackpackSlot (we will likely soon have containers...)
+	* Cleanup send code for CClient::Emote - still doesn't fix bug :(
+	* Cleanup EmoteAnim and changed arguments for EmoteAnim and EmoteText to make them more extensible (again, emote bug still there)
+	+ MailResult and MailError enums in Defines.h (I made up the enum contents based on client behaviour :P)
+	* MsgEmote - removed checks for sheath state and stand state (these are redundant due to client already prepping and sending extra packets to change)
+	* CMail::Data - added Unknown and COD fields, removed MAIL_COD (use Data.COD instead)
+	* Some fixes to MsgSendMail to make it work (Burlex: we have only uint32 as guids, that means that each guid needs an extra partner HIGHGUID)
+	* All mail functions now using the MailError and MailResult enums
+	+ MsgMailMarkAsRead, MsgMailTakeMoney, MsgMailTakeItem, MsgMailDelete, MsgQueryNextMailTime
+	* Small changes to the SendMail dialog and function. Enforce lowercase in Sender & Recipient fields.
+	. Was the SendMail dialog for testing or release? You can decide that, but ingame mail is working OK now.
+	. Burlex: GJ on initial SendMail, gave me a lot to work from and was very helpful in decoding the packet when it did manage to be sent ;)
+	
+Jan 09 2006 - Burlex
+	+ MsgSendMail - Handle send button.. but the client wont send the packet!!
+	+ Send Mail... button on TH.
+	+ SendMail Dialog
+
+Jan 08 2006 - nneonneo
+	+ System of Height Determination (a.k.a. HeightMap)
+		Implementation Details
+		+ std::map<unsigned long,float> HeightMap in CContinent
+		+ HeightAt(float X, float Y) determines the closest HeightMap point and extracts the height value from it (0.0f if not found)
+		* Wander set to use this to compute new locations for creatures properly (no more floating creatures)
+		* Files (Data/Maps/map????????.bin) from WowwoW beta0.1
+			Format: Header uint32 Continent, Zone, NumberOfPoints
+			Loop(NumberOfPoints): uint32 mapX,mapY float Z
+			Note that MapX & MapY do not correspond to the normal X and Y coords. See HeightAt for conversion.
+		+ RealmServer.cpp: CRealmServer::Go() loads the maps (*all* of them) after the accounts through LoadMapFile(FILE *f)
+		+ Two new defines:
+			HEIGHTMAP_MASK - Mask applied when loading and using the Map.
+				This zeroes out some of the bits, reducing precision but greatly decresing mem usage.
+				It also ensures that a suitable point can always be found (some map files have less precision than others)
+				Currently set to 0xFFFE (even values only; 2x2 resolution) but can be set to 0xFFFC for 4x4 or 0xFFF4 for 8x8.
+				More bits zeroed = less Mem usage, faster usage of map, but possible side effects of being not fine enough to catch some height differences
+			UNITSIZE - Can't be changed: this is the value in which the MapX and MapY values are measured (12.5 feet / 4.16666 yards)
+		Problems with this implementation
+		. Server loading time goes to ~45 minutes (!!) for Debug release on 850 map files.
+			Release loading time goes to 41 seconds (first load) and 13 seconds for each startup after the first. Increased from 2 seconds.
+		. Mem usage goes to 277MB (fully spawned & loaded) from 170MB.
+		. **No effect on overall CPU consumption or lag times.
+	* Wander: 5 tries to get a valid Z value that isn't a huge jump, to avoid strange effects with cliffs
+	- Wander: MAX_WANDER_DISTANCE (unnecessary check, generated distance must be <= WANDER_DISTANCE anyway)
+	/ AddExp: Added "else Data.Exp=0;" to catch possible infinite loop in !edit exp.
+	* MsgGossipHello: Put fake textID (999999) into packet regardless of success or not
+	/ MsgGossipHello: Modified Echo printout of the TemplateID
+		(previous implementation caused segfault on Linux due to the TemplateID being used as a pointer o_O)
+	+ Linux "progress bars" (Progress: and then numbers that update by using \b)
+		. Of course, if anyone wants to, there's an implementation of the progress bar that has [****======]40% type thing, but I'm too lazy to implement ;)
+		. Progress bars trigger on loading the maps and spawning creatures, the two most time consuming operations
+	. To get the maps, get WowwoW beta 1, and extract the Maps folder (or the whole thing). Place the Maps folder in data/ folder in Pantera.
+	. ~~~Most Recent Performance Testing Results~~~ (maps and spawn)
+		VS2002 Debug:
+			Startup: ~40 minutes: 2260+ seconds
+			Startup w/o maps: 67 seconds
+			Startup w/o maps or spawn: 5 seconds
+			Mem Usage: ~290MB
+			Mem Usage w/o maps: 163604KB
+			Average CPU load after loading: 0.001% estimated
+			Game Lag: 25ms
+		VS2002 Release:
+			Startup: 41 seconds first time, 13 seconds the second time
+			Startup w/o maps: 2 seconds
+			Startup w/o maps or spawn: 1 second
+			Mem Usage: 283668KB
+			Mem Usage w/o maps: 122156KB
+			Average CPU load after loading: Almost Nil (<0.001 seconds of CPU time per minute of operation)
+			Game Lag: 13ms
+		Cygwin "Release":
+			Startup: 34.4 seconds every time
+			Startup w/o maps: 4.5 seconds
+			Startup w/o maps or spawn: 1 second
+			Mem Usage: 236300KB
+			Mem Usage w/o maps: 114616KB
+			Average CPU load after loading: Almost Nil
+			Game Lag: 5ms
+		Analysis: Cygwin takes longer to load but seems to have better performance (+less mem usage) than VS2002 Release. Will need more than one player to tell for sure.
+Jan 07 2006 - nneonneo
+	* Format changes on NPCText
+		Now, only has 1 field for text. Store separate linked texts ({0},{1},etc.) in separate instances but with similar guids.
+		Example: NPCText ID 0x7544 has 3 texts. Load texts from 0x14007544,0x14107544,0x14207544.
+			These GUIDs are achieved with 
+				TextID | (OBJ_NPCTEXT << 24) | (SubtextID << 20)
+				or
+				TextID | (OBJ_NPCTEXT << 24) | TEXTID_0 (and TEXTID_1, TEXTID_2...)
+		Text Length changed to 512 to accomodate longest possible text.
+	+ CPageText and CMail classes to handle text items (stuck them all in NPCText.h/cpp files because they are all similar)
+	+ New obj20.thd, obj21.thd based on Burlex's original files (though the format changed so I got some other data from .tt files)
+	+ ChatManager logging of chat commands ([name] at time : command) into data/chatcmd.log
+	+ New menu items for report.log and chatcmd.log
+	/ New error codes on MsgCreateCharacter
+	* Changes to MsgItemTextQuery to load MailText data
+	+ MsgPageTextQuery for handling inquiries on CMSG_PAGE_TEXT_QUERY
+	+ MsgReadItem for CMSG_READ_ITEM
+	+ std::list<CMail *> Mails in CPlayer class. This list will track all mails w/o limit using a pointer to the loaded Mail class data.
+	* MsgGetMailList updated to use new format.
+	* ResistHoly globally changed to ResistArcane (since ResistHoly doesn't really exist? o_O)
+	+ PreCacheNPCTexts and PreCachePageTexts to ensure that the texts are properly loaded in
+	+ LoadMails function to iterate over every mail and add it to the recipient player
+	/ Some aesthetic changes to loading procedure (more messages and more similar messages)
+	- InitNPCTexts: We've got obj20.thd now, there isn't a need to continue loading in the .pad file every load.
+	* Implemented the log viewing commands in the GUI (Debug Log, Packet Log, Reports, Chat Command Log) using command("start <file>") or command("start write <file>") since notepad sucks ;)
+	. Burlex: thanks for the initial idea, the tt files and the converter: I couldn't have done this without them ;)
+	. Burlex: Mail infrastructure is *ready*. You may implement all of the mail system when you're ready (and I'll help test, debug, etc.)
+
+Jan 06 2006 - nneonneo
+	+ New obj08.thd (format change)
+	- CNPCTextLink and all related changes (obsoleted by Data.TextID rfield in CCreatureTemplate)
+	+ CreatureTemplateData::TextID (stores the associated TextID for the creature; defaults to 0)
+
+Jan 06 2006 - Rz950
+      + Added more fields to Defines.h
+      + Added reference on how dueling works
+
+Jan 06 2006 - nneonneo
+	* Split InitNPCTexts into InitNPCTextLinks
+	* Optimize both InitNPCText* functions to make use of the basic Data struct
+	* Changes to MailInfo (we should be able to use this anytime you wish!)
+	* NPCText: added a general NPCText struct for each text entry, should make things more clear.
+	/ Empty the progress bar after loading because I like it that way :D
+	/ Minor changes to ensure full Linux compatibility
+	. Great job on the new classes, they will really help.
+	. Noticed that Storage will automatically save the NPCText and NPCTextLink classes, thus eliminating the need (I think) for InitNPCText*
+		(only obj20.thd and obj21.thd should be required)
+	/ A few CSVs replaced for readability, a few other minor changes to some refs.
+	. Caveat: using ';' as a separator brings in some very nasty problems with some texts.
+		e.g. "$g lad:lass;" construct (gender selector) will brutally screw up the loader and damage that text.
+		Suggest using some extremely odd character. The following don't exist in the file: '@','#','%','^','{','}','|'.
+		Any of those four would be excellent separators (though they don't look like it). The pipe (|) looks the best.
+
+Jan 06 2006 - Burlex
+	+ Started NPC Gossip storages, loading is finished, all that remains is implementing it into the handler hopefully :)
+	* Modified some TH Dialog code.. now displays more info when starting
+	+ RealmServer::SetStatusText(text)
+		- On Win32, it modifies the loading/status text
+		- On Linux, prints a message to the console
+	* Status messages modified to use SetStatusText
+	* Small change to GUI - Progressbar
+	* Started modifying npctexts
+
+Jan 05 2006 - nneonneo
+	. Kick ass tray system, thanks Burlex and Wesko ;)
+	/ Name changes for clarity
+	* Cleanup of resource.h in both projects (messy and disorganized autogenerated file)
+	* Tuning and minor fixes to most of the functions to make them work perfectly.
+	* Reorganized GUI for TownHall
+		Eliminated about 6 dead and useless controls
+		Reduced memory usage
+		Compacted the interface
+	/ Moved code blocks in *Dlg.cpp to ensure Linux compatibility is preserved (make sure GUI code lies within #ifdef WIN32 section)
+	. Updated all 4 binaries.
+
+Jan 05 2006 - Wesko
+	*/Changed icons for RLS and TH
+	. This still could be changed later if we find or make better ones.
+	. Luv ya all :)
+
+Jan 05 2006 - Burlex
+	+ Tray icon for Townhall! Will do one for realmlist later.
+	. Balloons, menus, everything for the trayicon all done
+	. Townhall Binaries updated
+	+ Tray icon for Realmlist Server.
+	. Realmlist Server binaries updated.
+
+Jan 03 2006 - nneonneo
+	* ChatManager.cpp: Fix several teleport commands, general cleanup	
+	* Fixes to wander to prevent creatures wandering in combat
+	* Errors "Your bag is full" and "You don't have enough money to buy that item" replaced with actual errors (SendInventoryFailure)
+		BAG_FULL and BAG_NOT_ENOUGH_GOLD, including a few other sell/buy/equip errors
+	+ ItemBonding in Defines.h
+	. Need to find "Soulbound" item flag and set it at appropriate times (+ check it in trade!)
+	* Change PLAYER_BYTES_3 to accomodate "Female" flag (affects ingame sounds)
+	- "Your character has been saved...") removed
+	* Changes to RecomputeAllStats
+		+ Added sending of PLAYER_FIELD_POSSTAT/PLAYER_FIELD_NEGSTAT fields
+		+ Added recomputation of HP and Mana
+		. In the future, this function can be used for computing effects of auras too.
+	+ Trial MailInfo struct (Player.h)
+	+ Drunkenness!
+		. Clears on death
+		. Activates on spell effect ID 100 (CPlayer::HandleSpellEffects)
+		. Being drunk is cool! xD
+	+ SetPvPRank, SetDrunkState
+		Each take a BYTE: PvPRank info can be found in the HonorRank enum (Defines.h: HONOR_RANK_*)
+		DrunkState: Unknown yet, seems that 01 = tipsy, 50 (0x32) = drunk, 90 (0x5A) = smashed
+			Varying effects upon movement, speech and appearance
+			(bubbles from mouth, periodic "...hic!" in chat and slurred speech (syllable -> shyllable) and inability to walk straight)
+
+Jan 02 2006 - Rz950
+	+ Added QuestType Fields
+	. All other quest fields are fine for now.....
+
+Jan 02 2006 - nneonneo
+	- Commented out all code relating to Redirector and LoginServer code (useless)
+	* Major changes to the format of several things within Realm List Server and communication between RLS and Townhall
+		These fixes allow the usage of multiple realms with RLS
+	* RestAmount now floating-point value: greater accuracy for division
+	* Rest timer now 4.8 minutes instead of 48 minutes: better granularity
+	* More RLS and TH communication fixes to ensure that servers are listed correctly
+	* Change in !edit exp: now recursively levels up player too (may overload and disconnect clients if you level up more than about 80 times in a row)
+
+Jan 02 2006 - Burlex
+	+ Basic mail system added, need to decide on file format
+	* Gameobject type spawning fixed, !object <model id> <flags, usually 0> <type, 19 for mailbox>
+	. To spawn a mailbox, a good one is "!object 1727 0 19"
+
+Jan 01/02 2006 - nneonneo
+	/ Minor changes to Account.cpp (cosmetic)
+	* Changes to CmdObject (can use 1 or 3 parameters; 1 parameter = ID as defined by gameobjects.scp)
+	/ On logout, activate ClearTradeSettings
+	/ Changed default walk speed to 2.5 and run to 7.0 (3.0 and 9.0 before)
+	/ Minor alterations to CCreature::Move() (check for client before sending in case RegionManager hasn't heard about it yet)
+	* Changes in DataManager to support GameObjects (and their templates) and DynamicObjects (someday...)
+	* Changes to CGameObject and CGameObjectTemplate
+	+ RealmServer.cpp: upon trying to destroy a client, perform CompleteLogout first to cleanup
+	+ LootTable for GameObjectTemplate (as a std::vector holding every item); loads from gameobjloot.dat
+		+ LootTable
+		+ InitGOLoots()
+	* Mass changes to MsgAcceptTrade to handle all possible scenarios properly
+	/ Set trade gold only if you've got the money
+	+ Fixes to Wander system (now works fine except for creatures having wrong Z value and floating/getting buried)
+		Can't fix that w/o maps or something, so I'm going to ignore that...
+	+ GameObject looting
+	/ Rename functions for text query and mail list (should always start with "Msg" to distinguish them)
+	/ Prevent quest items from becoming loot items (someday when we have quests this can be implemented further!)
+
+Jan 01 2006 - Burlex
+	+ Basic gossip system added
+	+ Gameobject template headers added, need data converted and loading functions done
+	/ Some minor changes to trade
+
+Dec 30 2005
+	/ Misc changes everywhere to reduce warnings (usually a sign of not-so-good things anyway)
+	+ Implemented Creature Wander system (not perfect, some weird bugs, but avoids wandering non-gossip NPCs and is extremely effiecient :D)
+
+Dec 30 2005 - Spacey
+	. Linking several THs with one RLS working now?
+
+Dec 29 2005 - nneonneo (second session)
+	+ Areatrigger Teleport
+		+ AreaTriggers.dat (binary file comprising all teleporting triggers)
+		+ CRealmServer::InitAreaTriggerTable
+		+ CRealmServer::AreaTriggers
+	* Minor fixes to trade: trade not completely done yet
+		+ Checks for other player busy, trading, etc.
+		* Use inTrade to track trading status
+		+ MsgClearTradeItem
+	+ CRealmServer::ActiveRegionsCreatureMove in anticipation of creature move system
+	/ Format of Defines (thanks a million, rz950)
+
+Dec 30 2005 - Rz950
+      + Added HonorRank, Factions, FactionStatus and FactionStandings Fields (pain in the ass to get but all of them are 100% fine)
+      + Added Talent Fields
+      . To nneonneo, Factions aren't implented but I'm waiting to sniff everything you said once kolkoo makes the logger.
+
+Dec 29 2005 - nneonneo
+	+ Rest system
+		. Gains every 48 minutes, gain 1/400 of NextLevelXP
+		+ EVENT_PLAYER_REST
+		+ CClient::RestStart and RestStop
+		+ CPlayer::Data.RestAmount
+		* Many changes to XP logging to facilitate proper showing of rest
+		+ MsgAreaTrigger to find inns
+		/ Made Player eligible for events after logout (to gain rest xp out of game)
+		/ Player logs out instantly at a rest location (i.e. major city, or inn)
+		* MsgZone modified to find major cities
+		* Creature XP modified to account for reststate
+		+ SetRestState, SetRestAmount, AddRestAmount
+	/ Maximum speed in !edit speed increased to 250
+	/ 25% increase in XP for parties
+	/ Change pkt --> pkg for unity ;)
+	/ Remove "accessors" for bool values in CPlayer: unnecessary because members are public
+	. Excellent job on trade, Burlex.
+
+Dec 28 2005 - nneonneo
+	* spawns.sav: new version w/o Spirit Healers
+	+ CAccount::Load: Checks for BANNED status, and automatically bans IP if found
+	+ CPlayer::DataObject: Added SetFlag, ClearFlag, ToggleFlag options to modify value of StatusFlags
+	/ Edited multiple instances of SetStatusFlags to use new functions
+	- MsgChat: Removed check for null message (some null messages are OK)
+	+ Support for CHAT_EMOTE (use /e in normal chat), unrelated to SMSG_EMOTE :(
+		Sidenote: UpdateField 166 (UNIT_NPC_EMOTESTATE) can be changed to an animation (10 for dance) and it will cause target to perform that animation.
+		Could substitute for CMSG_EMOTE.
+		Catch: it runs forever!
+	* MsgChat: On AFK and DND messages w/ different reasons than before, the reason will be changed w/o changing AFK/DND status (official behaviour)
+	* Replaced Echos on Friend Online & Offline with actual packets (SMSG_FRIEND_STATUS)
+	/-Removed enum FriendsResult (duplicate in Defines.h)
+	/ Moved CClient::SaveBindPoint (from .cpp to .h)
+	/ Client.h didn't need Index.h, #include removed
+	+*DataManager.cpp/h: Overhaul of several functions.
+		Replaced many repeated switch/case things with #define macros
+		Got rid of the CIndex caches (replaced with std::vector type)
+			This was a result of speed profiling, showing that 50% of time was spent in CIndex related functions!
+		Cleanup(): now uses primary CachedObjects map instead of smaller Cached* caches (efficiency and resolution of other problems)
+		General cleaning up of these files
+	/ ITEMDISPLAYID_REFRESHING_SPRING_WATER changed to correct ID
+	* CPlayer::GetPlayerInfoData: sends PLAYER_FLAGS now
+	+ RealmServer.cpp: Added vector WDBItems to store pointers to all WDB based items. Avoids retrieving WDB items millions of times in SpawnSavedCreatures.
+		Makes loading time about 30% faster, when combined with DataManager fixes, loading time goes from 15 seconds to 2.
+	- SetStatusFlags no longer sends PLAYYER_BYTES_2 (irrelevant field)
+	* IsFacing repaired: needed to compute angle correctly withint range 0 to 360 degrees (to compare to client's angle)
+	* UNIX makefile reorganized, PROFILE build mode added (for use with GProf)
+	+ Added checks to ensure that pClient exists in CClient::SendRegion-type functions. Server could crash otherwise.
+	. I love GProf!!!!
+	. Load times reduced to 2 sec for 47000 creatures, lags down to 15ms
+
+Dec 27 2005 - nneonneo
+	+ accounts_path option in Conf (Settings.accounts_path)
+	- characterdir option (obsoleted)
+	/ model for Refreshing Spring Water in CRealmServer::CreateTestData corrected
+	/ STATUS_GM/AFK/DND fixes in the way the flags are set
+	* Fix on CClient::SendActionButtons(): type & misc in wrong order!
+	+ CCreature::Death(): check for rest state of killer & adjust XP to match
+	* Defines.h: Additions and modifications of RESTEDSTATE_ and STATUS_ definitions
+	* MsgBinderActivate: on successful activate, sends SMSG_PLAYERBOUND triggering a whoosh sound in client
+	+ MsgHelm/MsgCloak (CMSG_TOGGLE_HELM,CMSG_TOGGLE_CLOAK)
+	* TogglePvp: Changes status flag STATUS_PVP as well to trigger message on screen
+	* CPlayer::Data.StatusFlags made into 4 byte data (due to new STATUS fields)
+	+ CPlayer::IsFacing(CCreature *): function returns true if player is within 160 degree (+/- 80) of the target creature. false otherwise
+	+ Check for IsFacing in MsgAttackOn
+	* Fix for out of range in MsgAttackOn (proper error message, doesn't cancel attack)
+	+ Starting Items for all classes (water & cheese) plus quiver and ammo for hunters, added ActionButtons for cheese and water
+	+ DrunkState, RestState, PvPRank added to CPlayer::Data
+	/ Close all ports on unsuccessful load (GUI/Win32 only)
+	* MsgPvp fixed to enable the real message to be shown
+
+Dec 26 2005 - nneonneo
+	+ Checks for Skills and Spells prerequisites in MsgTrainerList
+	- Check for online in CmdGoto: you should be able to go to a non-logged on player anyway
+	- useable field in trainerinfo
+	* prevent BuyItem from being called on taxis (it causes stupid things to happen)
+	* spawns.sav file now implements the MerchantFilter rules, so that vendors will actually sell things. Much more compact than the sell= system, but less control over what's sold.
+	/ Use ItemLevel instead of RequiredLevel to check minlevel/maxlevel requirements in MerchantFilter
+	/ Max of 60 sellable items
+	+ MsgBinderActivate / CMSG_BINDER_ACTIVATE
+	. Still need method of effectively doing trainers!!!
+
+Dec 25 2005 - nneonneo
+	. Merry Christmas, everyone! Hope you got lots of gifts ;)
+	/ All instances of Thanatos --> Pantera
+	* Fixed CCreature::Wander(): there was an errant return placed outside the "if" statement...caused the function to always return.
+	- Removed Wander function from most places; can still be used through !wander command
+	+ nPlayers for RegionManager
+	+ Restored zlib/zlib.h (oops!!) and zlib/zconf.h
+	* Fix for "!morphtarget" on creature (missing ampersand)
+	+ Creature "Equip" data added to CreatureSaveData (invalidates old spawns.sav, new one is already set properly)
+	+ Bunch of new NPCFLAGS in defines.h (fixed some old ones too)
+	+ Player Factions set correctly
+		Still need reputation data provided via SMSG_INITIALIZE_FACTIONS
+	+ Fixes to SpawnSavedCreatures
+	* Fixed some problems in sending the Creature Equipment data
+	/ Creature.cpp: Had trainerinfo.Greeting cleared in the same manner as questinfo for safety reasons
+	. Oh...the agony of not being able to have a proper trainer/sell system due to limitations!
+		Explanation: WoWEmu has some creatures w/ up to 192 spells and 96 items (to train & sell).
+		Unfortunately, the architecture of Townhall means that it's difficult to get the data loaded in some way.
+		MerchantFilter is a good idea, I will look at using it to create my vendors instead (by searching up all the linked items and analyzing their parameters, of course!) in the converter...
+
+Dec 24 2005 - Wesko
+	/ Changed TownHall.rc and Realm List Server.rc to have Pantera instead of Thanatos.
+
+Dec 24 2005 - Spacey
+	/ Changed TODO and CONF to have Pantera instead of Thanatos
+
+Dec 20 2005 - nneonneo
+	+ New zlib (version 1.2.3).
+		- Removed zlib folder in TownHall (obsoleted by new zlib library)
+		* zlib.lib rebuilt by me (ASM Release LIB version: ASM code! yay!), imported into projects
+		+ Ignore MSVCRT library (apparently it interferes with the new library, so it's toast)
+		. New version is about 30% faster on compression than the old version (supposedly anyway)
+		. Change doesn't affect Linux builds, they use the system default zlib (-lz) no matter what.
+		. Didn't update VC6 projects, they appear to already have the necessary changes (??)
+
+Dec 19 2005 - Spacey
+	. Nice going there nneonneo, I think no one appriciates your updates more than I do ^^ GJ!
+
+Dec 19 2005 - nneonneo
+	+ BUYBACK
+		Buyback items vanish upon moving to a diff. zone or logging out (warning: items themselves are not removed)
+	+ Proper Who listing
+		Handles all five options (n,g,z,c,r) and level restriction, like a real Who
+		No options = everyone logged on
+	+ Proper levelup message
+	* Criticals now 150% instead of (2*level)+dmg
+	/ Using "SMSG_BUY_FAILED" instead of Echo("Unable to find the item you want to buy.");
+	+ Stacked items (only somewhat implemented; implemented the storage, purchase and display of stacked items)
+	* Multiple UpdateField corrections, turns out that there are a lot more fields than we had imagined!
+		Mostly Honor and Buyback fields. Warning: I cannot locate UpdateFields for current rank, lifetime rank, dishonorable kills today.
+	+ "Start" button in GUI turns into "Stop" once the server is started, will duly shutdown server, and will revert to "Start" (for easy restart)
+
+Dec 17 2005 - nneonneo
+	* Player fields were in wrong order, they must be in numerical order, rz! Fixed that.
+
+Dec 16 2005 - nneonneo
+	/ Temeplate --> Template (spelling)
+	* Removed *all* #pragma once, replaced all with the more compatible #ifndef, #define, #endif system
+
+Dec 16 2005 - Spacey	+ Added BIG reference about crit,dodge etc etc rates
+
+Dec 16 2005 - rz950 (UPDATED DEC 17)
+	+ Implented Faction.dbc and FactionTemplate.dbc to support Faction
+	/ Some changes to player.cpp (added honor fields into block.Add)
+
+Dec 15 2005 - nneonneo (separate coding session)
+	- CmdPvp (!pvp also commented out)
+	+ MsgPvp (handles CMSG_TOGGLE_PVP activated through /pvp)
+	* Movement stuff fixed; double jump fixed with it
+		Problem: the server assumed fixed MOVE packet of 24 bytes, I changed this to copy the entire move packet instead
+	+ MsgFall: since this is handled separately from MsgMove, the same "broadcast to all" was added
+	/ MsgAttackOn: message about PvP changed from "!pvp" to "/pvp"
+	* MsgAttackOn: SendRegion instead of Send on the SMSG_ATTACKERSTATEUPDATE packet (allows others to see you fighting; fixes problem in PvP where you couldn't see opponents attacks)
+	* CPlayer::sendSpellMsg: Order of "target" and "caster" reversed, I fixed that
+	/ OnBnClickedRehash: now sets the name of the server properly
+
+Dec 15 2005 - nneonneo
+	. Feels good to get back to coding.
+	+ Proper Logout System.
+		* Changed MsgQuit to MsgLogoutRequest
+		+ Added MsgLogout (instant logout w/ '/script ForceLogout();')
+		+ Added MsgLogoutCancel
+		+ EVENT_PLAYER_LOGOUT and handler
+		+ CClient::CompleteLogout()
+		* Moved most of MsgQuit to CClient::CompleteLogout() and added a 20 second event to it
+		* Made logout fail if you have recently attacked (2 seconds) or are being attacked (any time during 20 seconds)
+		+ Used Root and UnRoot to force the player to stand still; used SetStandState to force the player into sitting :D
+	* Moved the reference for properlogout. We're done!
+	/ '!edit speed' error message changed to reflect limit
+	* CChannel::MakeYouJoined changed to fix the blasted numbers. I think it works now.
+	/ MsgEmote: changed the StandStates to the proper ones in Defines.h (as opposed to '0', '1', and '3')
+	/ MsgStoreLoot: fixed loot message
+	+ Reload Settings button in GUI and handlers for it, this is for testing purposes
+	* Send Packet dialog changed slightly, plus it will not close on Send (makes testing a hell of a lot easier :D)
+
+Dec 10 2005 - Spacey
+	- Removed "You sold item for" message, reason: it's not in official
+
+Dec 9 2005 - nneonneo
+	* CmdGive uncommented (it will work now), spelling fixed and the function can now add an item from a specific ItemID (from official DB, same as from items.scp in W@WEmu)
+	* MsgAttackOn: PvP attack fix to prevent crash (now checks to see if there *is* a creature to fight, and adds a check for player too)
+	* Misc fixes in MsgSellItem
+	+ MsgGMTicketSystemStatus
+	* MsgGMTicket: Changes made to enhance the report somewhat
+	/ CSendPDlg: Modified the appearance and prevented window from closing after "Send"
+
+Dec 7 2005 - Spacey
+	. nneonneo, GM Tickets are retrieved via WoW API there is no GM client
+	Look here: http://www.wowwiki.com/index.php/World_of_Warcraft_API#GM_Functions
+
+Dec 7 2005 - nneonneo
+	+ LootTables support, and general Item Looting
+	+ obj08.thd, obj10.thd: these are the CreatureTemplates and LootTables respectively: imported from WoWEmu data for now
+	+ CreatureTemplate loading
+	* Fixed the CmdDemoteAll function
+	* !help will hide the !admin and !gm commands
+	+ bLooted and LootedItems types in CCreature added
+	+ CreatureTemplates are checked by RealmServer::GenerateCreature
+	* ItemTemplates map for DataManager (mapping ItemID to ItemTemplate->guid)
+	+ LootTable.cpp: GenerateLoot(CCreature *) added
+	* MsgLootUnit huge fixes
+	* MsgStoreLoot *completely rewritten* Now Including Wonderful Happy Loot Message XD
+	+ CPlayer::RecalculateAllStats (HP, 5 basic stats, Armor, 4 resistances) recalculates all stats from the equipped items
+	* MsgSwapInvItem: recalculation of armor (x4) replaced by call to RecalculateAllStats
+	+ RealmServer.cpp: CreatureTemplateNames and associated loader from RealmServer::Go
+	/ RealmServer.cpp: Spelling of "Darnassian Bleu"
+	+ RealmServer.cpp: CreateTestData() now populates DataManager::ItemTemplates too
+	+ packets.txt: Added a line for "Server will shutdown in 1 minute!"
+
+Dec 6 2005 - nneonneo
+	+ Realm List Server: New controls for manually adding accounts for testing with any desired username and password
+	+ Realm List Server: Text control for showing how many clients are connected (RELEASE MODE ONLY: crashes on debugso it was removed)
+
+Dec 5 2005 - nneonneo
+	+ Debug log of user logging in (eh, w/e)
+	+ Initialization of everything to 0 in the spell.cpp Clear() function
+	* EventManager.h: Fatal flaw repaired, sometimes the various functions (Object(Fades|Nears|Updates) and Region(Fades|Nears)) could accidentally have their current node deleted on the spot, leading to a condition where the next node would be invalid. Fixed by saving the next node prior to the node call.
+
+Dec 1 2005 - nneonneo
+	+ AccountData for each player - warning! accountdata, even compressed, is over 3KB for each player. However, I think it's necessary anyway.
+	/ More formatting and cleanup
+
+Dec 1  2005 - Chaos
+	+ Added partial support for game objects, you can spawn them through the !object command (!object <modelid>).
+	* Corpses now show on the map.
+
+Nov 30 2005 - Spacey
+	. Chaos, I just noticed that I had uploaded some references about death..
+	Might be of some help for you <- thats not for the changelog :P But I'll look. - Chaos
+
+Nov 29 2005 - Chaos
+	Deathworld: FIRST EDITION
+	+ Ghost form
+	+ Corpse Object
+	+ Teleport to Graveyard
+	+ Ghost world effects
+	+ Reclaim corpse
+
+Nov 28 2005 - nneonneo
+	- CPlayer::GetOtherPlayerInfoData is now gone. Why? It was redundant. PlayerInfoData modified to have "bool Self" as an argument: if true, a few self-only fields get added (e.g. Active Mover, skills and Exploration)
+	+ MsgHandlers: Added Skill, level and "dead" checking to the SwapInvItem handler
+	* MsgHandlers: MsgAutoEquipItem now calles SwapInvItem to do the real swap
+	+ Player.cpp: Added CPlayer::GetSkill(int SkillID)
+	+ Player.cpp/h: Added CritPct and related functions/fields, added (Melee/Ranged)WeaponSkillID for future reference (miss percent?), these are loaded by MsgInvSwapItem
+
+Nov 28 2005 - eLegant
+	+ MsgHandlers.cpp: Added about half the trading packets.
+	. Please test trade. Should be able to ask another player to trade
+		and open up trade window. Other features are on their way ;).
+
+Nov 27 2005 - nneonneo
+	+ ChatManager.cpp: CmdSkill (!skill <SkillID> [cur level] [max level])
+	* ChatManager.cpp: Fix for !edit money (displayed the wrong values to client)
+	* Creature.cpp: updated SMSG_QUESTGIVER_QUEST_DETAILS structure in comment
+	+ MsgHandlers.cpp: Ranged attack power, delay, damage
+	* MsgHandlers.cpp: Fixes for MsgAutoEquipItem
+	* Player.cpp: Changes for AddSkill
+	+ Player.cpp/h: Ranged* data types and functions for all the ranged attack stuff (no ranged attack yet, but the whole infrastructure)
+	/ Player.cpp: Get(Other)PlayerInfoData: Minor fixes here and there
+
+Nov 27 2005 - nneonneo
+	- Account.cpp: no more saving (obj05.thd is actually useless!) --> All loading happens through the data/accounts/ folder anyway
+	* Client.cpp: Packet compression of A9 enabled (it is now the 1F6 packet)
+	/ Creature.cpp: some comments added for the float values
+	* DataManager.cpp/h: Added per-type GUIDs (as it asks in a comment): guid's high-order byte is the object's type (e.g. all guilds have 0Cxxxxxx guids)
+	* DefStorage.h: NextID called for each type
+	* Guild.cpp/h: Max ranks set to 10, Query fixed to force 10 ranks even if some are blank (null strings for blank ranks)
+		Also fixed a bug with the object being nullified on save for no reason, someone uncommented Storage.DeleteObject(*this);
+	* MsgHandlers.cpp: Unarmed damage (when the Main Hand item is moved out)
+		Weapon Speed now made as an update so the client is notified of the speed change
+	+ Player.cpp/h: Added AttackPowerBonus() to compute the damage bonus from attacking; AttackPower() for the actual attackpower
+		Fixed a peculiar calling cycle that killed the calling stack. Removed RegionManager.ObjectRemove(*this); from ObjectFades.
+		Added the death system from WoWD in a comment for reference.
+		Changes to SetDamage(Min/Max): now stores the original unaltered damage but sends the attackpower boosted value.
+	* Townhall.dsp: Updated
+	- UpdateFields.h: Removed PLAYER_FIELD_UNKNOWN180 because it doesn't actually exist. This fixes the stupid assert error about updateMaskBlocks.
+	+ UpdateObject.cpp: A9 Compression
+
+Nov 26 2005 - nneonneo
+	* Graveyard.h file actually compiles now (didn't before due to numerous small issues)
+	* Graveyard.h added to all projects.
+	+ Added Graveyard stuff to CmdKillMe
+	/ Ensured that all files ended with exactly one newline, some Linux compilers hate having no newline at the end
+	/ Formatted every source file to clean them up (they are getting unruly)
+	. Hmm...there is an awful lot of disagreement in some areas about whether it should be "CPacket" style
+		(i.e. pkg << data) or "old-school" (char *buffer[4096]; int c=0; buffer[c++]=....)
+		I prefer the pkg format, though frequently used opcodes (like perhaps the damage counters?) should use the old-school format
+		because it is probably *marginally* faster.
+		I assume that the CPacket class is relatively new. The Spells should eventually all use the CPacket style because it is easier to maintain.
+
+Nov 26 2005 - ubercobo
+	* !waterwalk, !hover and !featherfall
+	* They tell you they are actually being used and how to turn them off
+	. Added the grave yard header file to townhall 2k5 project
+
+Nov 25 2005 - nneonneo
+	. Spacey, Stamina and Intellect do not work, Agility affects armoe, Strength affects attackpower, Spirit affects the rate of regeneration. Health and Mana are statically computed right now.
+
+Nov 25 2005 - Spacey
+	+ Added reference graveyard locs
+	. nneonneo, are all the attributes really working like they should now?
+
+Nov 24 2005 - Chaos
+	+ Useable Items (Havent been able to test this extensively)
+	* Players now start with all zones explored
+	* Swim state now works
+
+Nov 23 2005 - nneonneo
+	+ Channel system (a real hack)
+	* Misc fixes
+		Added a check for the 5 'reserved' channels: General, LocalDefense, WorldDefense, Trade, LookingForGroup
+		Fixed a crash-on-exit guild bug (object cached twice in DataManager)
+		Fixed a crash bug in the Spells: the Player pCurrentSpell pointer was not zeroed prior to use, causing some bad results
+		Moved "IsCasting" to the Player class from the PlayerData struct (only saved data belongs there)
+		Proper XP Gain/Loss messages
+		Proper damage stat in character info (wasn't changed to a float value)
+		AttackPower added to another place (GetOtherPlayerInfo)
+		Updated the SMSG_SPELLNONMELEEDAMAGELOG sent data, this allows the server to show the right data as well as automatically fetch the school and display it along with the damage. Ex. "Your Wrath hits %s for 21 Nature damage."
+		Changed the EventData for EVENT_CREATURE_DOTTED to an 8 byte (instead of 4 byte) data structure. It will hold the damage plus the spell id for reference.
+
+
+Nov 23 2005 - Chaos
+	+ New spell system added, all spells should be instantiated with the CSpell class
+
+Nov 22 2005 - nneonneo
+	* Accounts: load accounts and characters from cache, because they are all loaded at startup
+	* Player: Characters no longer get unique IDs upon being loaded. This way the Guilds maintain the proper IDs.
+	* Clients: nullify guild data if none is actually found
+	* Creature/MsgHandlers: Use CPacket format instead of the buffers, fixed the bug with the damages not being shown in the window.
+	* DBCHandler: fixed all the columns (SPELL_ and DBC_SPELL_ defines) to have the right references!
+		Removed any that weren't in use; the SpellRec struct is recommended.
+	* Guild: misc fixes, cleanup, lastlogin data, nullify notes on leaving ther guild.
+	+ MsgHandlers: GMTicket opcode (writes a report to data/report.log)
+	* RealmServer: final fixes for the account preload
+
+Nov 21 2005 - nneonneo
+	* Dozens of minor changes to almost every file. Can't track them all!
+		Client, Creature, Item: Misc mixes to avoid some warnings
+		Debug: Fix to ensure that we have line endings
+		Defines: removed old guild permissions
+		Guild: Add/Del ranks, remove INITIATE
+		ItemTemplate: renamed and moved a few fields
+		Player: Armor calculations added to every item in ::New. 'double' type used in some parts to evade huge warnings; the storage is minimal for these.
+		RealmServer: unhandled opcode message, InitGuilds and the appropriate initializers
+	+ Sending of the Public and Officer notes
+	+ Proper loading of guilds
+	+ Loading all players at startup
+	* Sending of last logon time
+	* More changes
+		Client: LastLogon
+		Debug: minor fix for line endings again
+		DefStorage: Fixes to ensure the loading works
+		Defines: removed old guild permissions
+		Guild: Add/Del ranks, remove INITIATE
+		ItemTemplate: renamed and moved a few fields
+		Player: Misc fix for Linux
+		TownHall: Misc fix for Linux
+		linuxmake: debug build option added
+		RealmServer: unhandled opcode message, InitGuilds and the appropriate initializers
+	. Note on performance: excellent, aside from Sleep there is nearly 0 activity in the server, even with one client (I still cannot test with too many). The change w/ one client is at MOST 0.01 ms per loop.
+
+
+Nov 20 2005 - nneonneo
+	+ Public and Officer notes for Guild
+	* Roster, Tabard, Info, Query fixed for Guilds
+	+ Three guild related msghandlers
+	+ Defines for the privileges of a guild rank
+	+ Ranks in the guild (plus default ranks)
+	+ Armor calculations and updates when equipping (this also causes the damage reduction to start working)
+	* SpellRec updated with latest 1.8.0 data, it is suggested (Yellow) that you include dbc_structs.h in the spells and use SpellRec to read the Spell.dbc rows. The data will help you a lot.
+	. Performance comparison:
+		WoWEmu 4735.1.9 (newest version): running 0 users: avg 2.5% CPU load
+			running 1 user:  avg ~3.1% load with 5ms lag
+		Thanatos: 0 users: 0.00% load
+			  1 user:  0.02% load 26ms lag
+		Not too bad, eh? Considering we are running with "sleep" 5ms and WoWEmu uses 100ms (time that the programs wait between processing)
+
+Nov 19 2005 - Spacey
+	. Mass added references all for M2 since nneonneo is working on M2 atm
+	+ Added reference "PvP"
+	+ Added reference "Tagging"
+	+ Added reference "Reputation"
+	+ Added reference "Death"
+	+ Added reference "Dueling"
+	+ Added reference "Guilds"
+	+ Added reference "Faction"
+	+ Added reference "Raids"
+	+ Added reference "Breath"
+	+ Added reference "Taxi"
+
+
+Nov 18 2005 - nneonneo
+	* DataManager.cpp had a slight error, every time you created a guild a party would also be created by accident
+		(break statement missing). This caused the party to double free. Go figure.
+		This fixes the shutdown crash bug.
+	+ MsgHandlers.cpp: minor fixes, added three small handlers.
+	+ SHOW_PETITION handler
+	* Defines: wrong NPCTypes; fixed the spawns too
+	* Guild Roster: still in progress (packet logs will help, from guild interactions)
+	. Spacey: you might be able to get on a WoWEmu server and log that. Use the provided logger and patcher, please and thank you!
+	. I need the "8A" SMSG_GUILD_ROSTER packet.
+	* Enabled the saving of the guilds (but not loading apparently :X)
+	* Enabled the !tabard command
+	. Oh, and I'm not working on MS 1 stuff because it is all already taken. MS 2 is more interesting ;)
+
+Nov 18 2005 - Spacey
+	+ Added Talent.dbc as requested / Ver 1.8.0 enGB
+
+Nov 18 2005 - nneonneo
+	* Chat defines: ripped from the WoW Account WTF files (the configurations!) in perfect order.
+	* Chat Handler: updated half a dozen commands with new opcodes, no need for all those "Echos"!
+		Whisper is now echoed back in proper style
+		DND/AFK whisper targets handled correctly
+		Ignore targets handled properly
+	* Spelling and grammar
+	* Cleaned up CmdSpawn: the help message was repeated 6 times, replaced w/ a single define
+	+ Skills
+		Items are not checked for proficiency yet; skills cannot be leveled up and they do not play a role in anything yet.
+			However, they now exist and have a foundation to build from.
+		Relevant functions: CPlayer::AddSkill and CPlayer::LevelUpSkill
+	* Languages in chat
+	+ ChannelMsgF function, to replace Echo in some places
+	+ Spells saving at: CmdSpell and MsgLearnSpell
+	* Player format change to accomodate the proper # of Skills
+	* Misc other changes to clean up code
+	+ Attack power calculations added
+	+ PLAYER_FIELD_MOD_DAMAGE_DONE_POS/NEG/PCT has been added to prevent the idiotic "inf/inf" melee damage display bug
+	+ Save All button added to main GUI to facilitate shutdown (it just does basically the same thing as BroadcastOutPacket but with pAccount->Save())
+	+ Damage Reduction formula added to creature combat (depends on the Armor setting which isn't fully working yet)
+
+Nov 17 2005 - nneonneo
+	. Spacey:
+		Regenerate stats from WoWWiki
+		Starting stats
+		LevelUp Stats
+	* Updated anti-debugger stuff.
+		Townhall checks every 5 milliseconds.
+		RealmList Server checks every 10 milliseconds.
+		These rechecks are designed to keep h4x0rs out.
+			Suggestion: perhaps we should make it not immediately exit, but introduce a memory problem?
+			That way, it should be much more difficult to find.
+	* Reverted EventHandler code back to original, because I cannot fix it properly (neither can Yellow...)
+		Changed the calling convention slightly though, now the CWoWObject::RemoveEvent call doesn't call
+		CEventManager::RemoveEvent if invoked via ProcessReadyEvents (because ProcessReadyEvents does the
+		removal work automatically)
+	* Changed the DisbandNow functions of CParty and CGuild to prevent the shutdown crash.
+	. Still having shutdown crash bugs in:
+		CParty::ClearEvents (double-free)
+		SetWindowTextA (dlg is not set to 0 fast enough, the RealmServer gets to update and crash
+			between the removal of the dialog window and the deletion of dlg)
+	+ Added prebuilt binaries (release mode) for libeay32 and Realm List Server (which is pretty much finished).
+	* Changed the DamageStats thing in CItemTemplate::SentTemplate (it is no longer a float value)
+	* Colorized messages in CClient (just a test so far, the colors I chose are pretty ugly :P)
+
+Nov 17 2005 - ubercobo
+	/ Added Visual Studio 2005 Project Files
+	* Added in the anti-debugger that dream gave us.
+
+Nov 17 2005 - Spacey
+	* Updated structure slightly for TODO list
+	. nneonneo, what exactly are done with concerning the player statS?
+
+Nov 16 2005 - nneonneo
+	* Support for new WDBs, copied in new WDB and renamed the old one. The format has changed slightly!
+	* Updated the WDB handler
+	. Note that of the new WDBs, only the itemcache.wdb file has any use, the other 8 are almost empty.
+	. Still hacking away at the EventHandler.
+
+Nov 16 2005 - nneonneo
+	+ Proper stat gains in CPlayer::Regenerate. Warning: the regen timers are all set to 2 seconds now.
+	* Changed Exp formula thanks to WowWiki and Spacey
+
+Nov 16 2005 - Spacey
+      + Uploaded massive WDB files from an official level 60 account EU/ Ver 1.8.3
+	+ Added XP to next level reference
+	+ Added Vendor-stuff-missing reference
+
+Nov 15 2005 - nneonneo
+	* Cleanup! Cleaned out CPlayer::New, what a mess! The initial stats were copied from Spacey's ref file, but are now in easy-to-digest array form rather than the manual settings.
+		Sure, we sacrifice speed, but how much? The readability is worth it.
+	* Cleanup! Cleaned up Chat command !sendto because it was quite inefficient and just reusing code over and over again.
+	+ Stats in CPlayer::AddExp
+	. Note: CPlayer::AddExp still needs a decent next-level xp required formula.
+
+Nov 15 2005 - nneonneo
+	* Removed already-implemented sections of "Initial race and classes"
+	* Fixed EventHandler double-free bug. Whoever was doing the EventHandlers before *really sucked*
+	. What was wrong? They couldn't figure out why the event wasn't being removed, so they DUPLICATED THE ENTIRE REMOVAL CODE and then it "worked".
+		Needless to say, the events were never truly freed, and this led to all sorts of retarded nonsense.
+		Turns out they were setting the EventMap for the event to 0. That prevented the real removal code from finding the entry and totally cleaning it up.
+
+Nov 15 2005 - nneonneo
+	* Fixed the EventHandler code which was buggy and prevented events from being removed
+	* Fixed the friends notifier to avoid crash bug
+	* Fixed the GUI updaters to avoid another crash bug
+
+Nov 15 2005 - Spacey
+	+ Added reference for "Initial race and classes"
+	+ Added reference for "Combat System Tweaks"
+	+ Added reference for "Player stats/regen"
+
+Nov 15 2005 - nneonneo
+	/ Reorganized the SVN
+	+ Ignore Support
+	+ Reverse Name Lookup (if target is offline)
+		Warning: This will assume a Male Human Warrior because if the player is unretrievable then that data is not available.
+
+Nov 15 2005 - Chaos
+	* Changed chat support. say, whisper, yell, guild, party, emote and broadcast work.
+
+Nov 14 2005 - Chaos
+	* Party fixes: Invite, kick, leave, chat, set leader, share loot, share EXP.
+
+Nov 14 2005 - nneonneo
+	+ Queue System - the message that appears when the server is full.
+	+ Action Buttons - found all the initial action buttons.
+
+Nov 14 2005 - Spacey
+	+ Uploaded sample Hatelist and sample Basic AI from WowwoW
+
+Nov 14 2005 - Spacey
+	/ Corrected some friends list messages
+
+Nov 14 2005 - nneonneo
+	+ Action Buttons (added initial Attack action, todo: more initial actions)
+	+ Friends
+	+ Infrastructure for Ignore
+
+Nov 14 2005 - Chaos
+	* Fixed Emote text
+	+ Added a !wander command. I'm putting wander on hold till we have a better event 	  system for this.
+
+Nov 13 2005 - nneonneo
+	+ Initial Spells (thank you Mr. WAD!) are now implemented.
+	. The spells are added to CPlayer::New so you need to make a new character for changes
+		to be seen. Otherwise you will have no spells!
+	* Trainers are fixed, they now will teach you what you need to know :D
+
+Nov 13 2005 - Spacey
+	* Switched hunter mana type to normal mana
+
+Nov 13 2005 - nneonneo
+	* Made interface elements of the GUI accessible to the RealmServer internals through the dlg global variable.
+		If you ever need to add anything, it must go betweeen
+			#ifdef WIN32
+			if(dlg->m_hWnd)
+			{
+				//your diabolical dialog code
+			}
+			#endif
+		to prevent problems with cleanup and object destruction.
+	. So far, all the text fields (4 of them) are now set to the appropriate values and checked when necessary.
+		Server Name - Shows the name that the realm has been given
+		Realm List Status - Shows the # of realmlist servers that the server has contacted (not necessarily listed on them!)
+		World Status - Appropriately shows "Loading..." and "Running" messages
+		Clients - Shows the current # of clients connected.
+	. I just didn't like the GUI being dull ;)
+
+Nov 13 2005 - Spacey
+	- Deleted "You looted copper" message, reason: Does not exist on official
+	/ Corrected some spelling mistakes in MsgHandler.cpp
+
+Nov 13 2005 - nneonneo
+	* Changed a few files and made the items report real stats.
+	. The fixes will work until we decide to upgrade the .wdb, at which time many of the comments will be uncommented.
+	. We should get a new wdb soon, the current system is excellent for item gathering.
+
+Nov 12 2005 - Spacey
+	* Made alot of lesser tweaks to the player.cpp
+
+Nov 10 2005 - Chaos
+	Fixed:
+	* Combat
+	* Seeing npc's
+	* Seeing other players
+	* Seeing items
+	* Switching items
+	. I added a new field to the setItem function in player.h, this way we'll just have to
+	 reference to one function when items are changed. (now sets visible items aswell).
+
+Nov 09 2005 - Chaos
+	* You can now enter the world. Enjoy!
+
+Nov 01 2005 - Polosatij
+	+ Upload some new info files. Now i'm collecting information. LOL.txt tells me that Blizz have not one compression method.
+
+Oct 31 2005 - nneonneo
+	. Had a look at the memory dumps and gave descriptions of each. That last one is a real gem, good work!
+	+ Also transferred the data to binary files so that they can be easily examined.
+	. (personal reference) conversion regex in MSVC: <<[0-9A-F]+0  +{([0-9A-F][0-9A-F] )+} +.+\n>> --> <<\1>>
+
+Oct 30 2005 - nneonneo
+	* Updated the Starting Positions for each race (RealmServer.h)
+	* Changed the realmserver packet system back to original method (DataBuffer)
+	+ Added a massive A9 log...not sure how much it will help (from official)
+
+Oct 30 2005 - Polosatij
+	+ Upload memory reserves for some fields and structs(dumb)
+
+Oct 30 2005 - nneonneo
+	* Settings.cpp: fixed memory leak again (if Conf file was present, the leak would still occur!) Fixed by causing GMPass and AdminPass to be deleted on exit.
+
+Oct 30 2005 - Polosatij
+	* Discovered and fixed a memory leak, in settings.cpp.
+
+Oct 28 2005 - nneonneo
+	- Removed the directory creation (we all know now; it's not cross-platform compatible and that bugs me a lot)
+	+ Added a check for missing account data, to prevent the RL server from getting crashed again
+	. Landarzar: thanks for noticing the problem, I fixed it in another way. It is preferable to have the user make the accounts folder.
+	* TownHall
+		Compression Enabled on A9 packets (they are sent as 1F6 packets when compressed): this should reduce bandwidth requirements to run the server
+
+		Updates on Item.cpp and ItemTemplate.cpp (added Unknown3 and MaxDurability fields)
+	+ Added wowd_full.pktlog. This file is in ethereal/libpcap capture format, and thus can be opened by most packet capture utilities (Ethereal recommended)
+		All I did was logon, realmlist, create character, enter world (human) and promptly exit to get some base update data. Hope it helps someone.
+
+Oct 28 2005 Landarzar
+	+ Added Account dir creation on startup to Realmlist.
+
+Oct 27 2005 - nneonneo
+	* Fixed linuxmake files to properly compile (use ./linuxmake to build)
+	+ Added my own (Python) account creation system as an example
+
+Oct 27 2005 - Wesko
+	+ Made a layout for the account creation page made by Spacey and Afinda
+
+Oct 27 2005 - Spacey
+	+ Account Creation:
+		Added PHP script for account creation togheter with Afinda
+
+Oct 27 2005 - Afinda
+	* Fixed: Fixed the Default stats for Character Creation in Player.cpp
+	* Fixed: Fixed the Classes Stat's to their Correct ones, Removed Dwarf From Shaman Class
+		can't be Shaman. Removed Dwarf from Mage class, can't be mage - Replaced with Troll wich was missing there.
+	* Fixed: Pointed out a bug in Acccreation.
+
+Oct 26 2005 - nneonneo
+	* Realmlist Server
+		Fixed almost all existing issues by preventing the server from removing the client right after realmlist.
+		The client will now be removed after 30 seconds of inactivity.
+	* TownHall
+		Big fix for the SessionKey system; there was a slight issue that caused a lot\
+			of problems. Note to self: .ShutDown() kills the whole socket!
+
+Oct 25 2005 - Afinda
+	+ Added .dsp and .dsw for both projects.
+
+Oct 25 2005 - nneonneo
+	* TownHall
+		Misc Fixes
+			CHAR_ENUM fix, CHAR_DELETE fix, realmserver fixes, logging fixes
+
+Oct 25 2005 - nneonneo - Original Changes
+	First Publication of Source
+	Realmlist Server
+		Authentication Protocols implemented
+			0x0 and 0x1 opcodes
+		Accounts Database implemented
+			Stores Password and Sessionkey
+		Sessionkey Sending implemented
+			Upon receiving a packet beginning with 0x22, the packet\
+				 is parsed for a username (format: 0x22+name+0x0)
+			Then the sessionkey is sent back over UDP to the source, on port 31416.
+	TownHall (shall we rename this?)
+		Authentication Implemented
+			Sessionkey receiving protocols
+				Contacts every realmlist server it knows in order; the first\
+						 valid response will be used as the sessionkey
+			Storing of Sessionkey in accounts DB
+		OpCodes updated - 1.8.0
+		UpdateBlocks updated - 1.8.0
+		WoWCrypt Package implemented
+			In RealmServer.cpp, the packet headers (4 bytes for SMSG, 6 for CMSG)\
+			   are crypted and send seperately from the data
+			The packet headers are also decrypted by the routines
+
+
+Oct 20 2005 - Wesko
+	+ Formed Thanatos team :).
+
+Apr 18 2004 - Codemonkey
+	+ Created a new update system i would like you all to consider
+	CUpdateObject is the base of this. Hmm well best you take a look at it yourself
+	example how the new update system would work.
+	Data.CurrentStats.HitPoints = 50;
+	pPlayer->AddUpdateVal(UNIT_HEALTH, Data.CurrentStats.HitPoints);
+  	pPlayer->UpdateObject();
+  	it's not as "fast" as the old CUpdateBlock and each updateable object takes
+  	a little more mem (the map UpdateFields) but you can never do anything wrong and
+  	everything that needs to be done is done without any fuss.
+  	if you guys thinks this system is worth continue using then I was considering
+  	making a inline wrapper class for the data values so you would do something like
+  	pPlayer->DataObject.SetHP(50);
+  	pPlayer->UpdateObject();
+  	instead of those 3 lines above. and integret the CUpdateObject class with RegionManager
+  	examples of how CreateObject() would look are in Item.h/Item.cpp,Player.h/Player.cpp
+  	Creature.h/Creature.cpp
+  	(On a side note: I was considering updating my system on my C# server to this one day,
+   	but I figured it might be possible todo on TownHall as well.)
+
+Apr 18 2004 - Codemonkey
+	+ More Beta phase 2 updates. Basicly SendPlayerData is out of the
+  	picture cause it makes the player crash. Which is fine by me. Good thing
+  	I started on making it easier to use UpdateBlock:) I think I have replaced
+ 	all the SendPlayerData() with single value updates except those in GMCommands.cpp
+ 	but GMCommands.cpp is not gonna exist much longer once the last few gm commands are
+  	in the new ChatManager.
+	+ Added cape command. There are more capes than that just added it to test some:)
+
+Apr 17 2004 - Codemonkey
+	+ GM Commands moved to ChatManager.cpp (most of them done) those that aren't uses the old function
+	+ Beta phase 2 update started. Can get ingame don't expect much more:)
+ 	Items are sent after player now(i think i havn't gotten a dump yet but it worked).
+ 	Some new object fields and they removed an op code. Lots of stuff todo yet but I need
+  	a break.
+
+Apr 14 2004 - Codemonkey
+	+ Moved MsgChat to the new ChatManager.cpp
+  	GMCommands are left to change.
+
+Apr 13 2004 - Codemonkey
+	+ Added itemcache.wdb reading in CRealmServer:CreateTestData()
+	+ Added %edit invfilter command
+  	%edit invfilter armour <sub>
+  	type %edit invfilter armour blahaa for a list
+  	or %edit invfitler weapon blada for alist
+  	%edit invfilter minlevel
+  	%edit invfilter maxlevel if either are 0 they are ignored
+  	%edit invfilter reset - to reset the filter
+  	%edit invfilter update - to update the merchants inv
+  	TODO: More filters. like food or something
+	+ Added MerchantFilter to CreatureData
+	+ Added default handlers in CCreature for ListInventory and BuyItem
+	* Fixed a bug in CParty::GetParty() it never returned NULL if chk == false
+	* Fixed an infinite loop in CParty::DisbandNow()/Leave/SendGroupList
+
+Apr 13 2004 - Codemonkey
+	+ Added defines for all the object fields
+	* Changed all the updateblock vals to defines
+	* Fixed flypath mob
+
+Apr 12 2004 - Psycho
+	* Changed Group a lots - Added a Invites list (so invite ppl can queue and dequeue), changed some structures, seem 	good now
+	* Made it so pvp player always get single xp (group cant share xp)
+
+
+Apr 12 2004 - Codemonkey
+	* Combat bug fixed! It was attackspeed in getotherplayerinfo that was missing
+
+Apr 11 2004 - Codemonkey
+	* Fixed the Movement speed on mobs
+	* Updated CUpdateBlock with a few new constructors and funcs to make it easier
+  	to make single value updates. I have implemented this in
+  	CCreature::SendLootablePacket, CCreature::Attack, CPlayer:Regenerate
+  	and CFlyPathMob::BuyItem. In BuyItem I tested 2 updates in 1 which worked fine.
+  	but not with remount for some reason. didn't work with 2 seperate packets either.
+  	gonna have to look into that. but first we need to add all the update values
+  	in defines.h
+	+ Added RegionOut/NotMe(opcode, buf, len, float maxdist) to CClient
+	/ Streamlined the HandleAttack func in msghandlers
+
+Apr 11 2004 - Psycho
+	* Group are working at 95% (Name doesnt display when you set a new leader, and uninvite is buggy)
+	* Group xp sharing and ppl with the most dmg on a mobs get the xp atm
+	- Removed HandleAttack was useless - MsgAttackOn handle everything atm.
+
+Apr 11 2004 - Codemonkey
+	+ Added Autoequip, Swap Item, Swap Inv Item and Destroy Item
+ 	(moving from and to containers is not implemented yet since we don't have any containers:))
+
+Apr 10 2004 - Psycho
+	/ Moved all MsgHandler to Party.cpp and Party.h to reflect the how the guild work. (and some bug fix)
+
+Apr 10 2004 - Codemonkey
+	* I have started on my little Item crusade. All characters have their correct starting items
+	+ Added the full structure of ItemTemplate
+	+ Added weapon/armour/etc item sub types
+	* Fixed charenum. Items are now displayed correctly
+	. On the todo list. Item Management, Containers, Linking item stats to player ie some kind of CalcItemStats func
+  	item vendors. Possibly also add items directly from WDBs our item template struct and it's struct is pretty much the 		same now.This is pretty much done it's just a question of porting code from my C# server to Townhall
+	other todos: fix combat, add the rest of the object types, add support for all
+	abilities/spells and remake/revamp the spell/combat system
+	After that: Fix PathNodes!:) and start making a few different mob ais
+
+Apr 10 2004 - Codemonkey
+	* Aaah the final touch on Guild! /groster a.k.a member list is implemented!
+  	Guild %100 done.
+
+Apr 10 2004 - Psycho
+	+ Added basic structure in Party.cpp Party.h and a lots of related file (I would say like 30%-40% of Group is 	complete atm)
+	/ Changed the Tutorial flag
+
+Apr 10 2004 - Codemonkey
+	* More guild updates. tabard vendor support. %spawn <model> <name> <subtitle>
+  	select the creature %edit vendor tabard and if you don't want ppl to kill it
+  	and make it show up as green type %edit faction 5
+	+ added /o tabardreset command on the officer channel
+	* Initial party object commited Psycho working on that.
+	. I feel guild is pretty much done. atm it has a small tabard update bug so you have log
+  	in and out to update your tabard. updates GM though but not other members.
+  	the command /groster isn't implemented cause i don't know what it's suppose todo
+
+Apr 09 2004 - Codemonkey
+	* Full feature guild update, all /gxxx cmds except /groster, guild channel
+  	and officer channel look in Guild.cpp for more info
+	+ added createguild command. StormCraft guild is reserved and can only be greated by GMs
+	+ added tabard command to get a Guild Tabard Item
+	+ added OBJ_GUILD to DataManager. not saved yet though since players aren't but
+  	the data is definitivly solid and the only change in it as I see it that can happend
+  	is more members which is added at the end of the data. MAX_GUILDMEMBERS is defined
+  	in Guild.h currently at 100. Players will get notified when the guild is full
+  	so they will come and complain when it needs to be increased:)
+
+Apr 09 2004 - Psycho
+	/ MsgHandler.cpp
+	+ Basic /who (show everyone at 100 yards)
+	* Partial group packets implemented (a lots still left)
+	. MsgHandler.cpp + player.h for the define
+	* LFG for /who work (group yes/no) - Have to check to put the crown thing in the icons (atm its Data.LFG)
+	. Player.cpp and Creature.cpp
+	+ combat "flag" added for crit, hit, miss (and more in futur ?)
+
+Apr 09 2004 - Codemonkey
+	* Updated the Npc type flypathmob should work fine now
+
+Apr 07 2004 - Codemonkey
+	* Fixed the Lootable flag update in CCreature::SendLootablePacket
+
+Apr 06 2004 - Psycho
+	+ Added %edit speed
+	/ Tweaked leveling
+
+Apr 06 2004 - Codemonkey
+	* Player.cpp: updated SMSG_ATTACKERSTATEUPDATE in sendSpellMsg
+	* MsgHandlers.cpp: updated SMSG_ATTACKERSTATEUPDATE in HandleAttack
+	* Creature.cpp: updated SMSG_ATTACKERSTATEUPDATE in sendSpellMsg
+			updated SMSG_ATTACKERSTATEUPDATE in MeleeAttack
+
+	.made some comments on all of them. hopefully I didn't miss any.
+
+Apr 06 2004 - Codemonkey
+	* Player.h: changed the speed to float values
+	* Player.cpp: added the speed values on getotherplayerinfodata and cleaned up the packet dumps. Added the default 		speed defines to CPlayer::New
+	+ Client.cpp: Added MSG_MOVE_SET_RUN_SPEED to UpdateRunSpeed
+	* RegionManager.cpp: fixed those stupid warnings
+	+ Defines.h: added DEFAULT_PLAYER_RUN/WALK/SWIM_SPEED
+	* MsgHandlers.cpp: changed mount/dismount speed increase to use the defines
+	and removed speed update on remount
+
+Apr 05 2004 - Psycho
+	+ Added a "working" worldport command
+	- Removed all ancients opcodes, updated all the sources with the real beta one.
+	* Fixed ping bar
+	* Fixed %edit dmg command (if min dmg is 4 and level not 1 then monster hit like player, else monster hit from they 		min/max dmg).
+	* Fixed NPC AI (they should attack if you die and reattack a monster now)
+	/ Partial UpdateRunSpeed added (with data.runspeed / walkspeed / swimspeed), testing with mount / unmount atm.
+
+March 28 2004 - Psycho
+	* Beta updates
+	* Fixed the nasty PVP bug (you cant change your own faction else you can attack anything), also pvp show red now and 		normal blue
+	* Monsters misses now show up
+	* Everyone spawn point at he same spot for now since worldport is disabled
+	+ Added a report command, create a data/report.log with the Name, data and text on the server
+	* Fine tuning since attack speed is fixed, lowered mobs hps, upped the xp, etc
+	* AFK / DND now fixed
+	+ Added 2 new opcodes when you enter world - SendChatBox (0x01FB) and SendKeyBindings (0x01FD), we gonna have to save 	key bindings by char or accounts now, else ppl always get the default atm
+
+March 25 2004 - Codemonkey
+	* Made some beta updates
+	* Fixed some of the new packet ids somewhere between ~0x160 and 0x1CD there's a new one
+	* Fixed the new movement part in object updates
+	* Gone through all the update values in obj update, there are some new ones. I will put em on my server later
+	* Fixed movement packets, not tested yet though.
+	* Fixed some issues with accountless build
+	. EVERY packet needs to be gone through
+
+March 17 2004 - Psycho
+	* Fixed Edit command (to edit player and creature)
+	/ Changed regen a bit - Regen by level (also changed starting mana)
+	+ Added a %help command, fixed a couples of command too and syntax.. updated %mount to give more info etc..
+	+ Added a /AFK and /DND command, doesnt work well thought the <AFK> doesnt appear over the head when i set the flag 		(<GM> doesnt anymore too)
+	* Whisper will display what you said
+	* Modified the %uber command too, reset to a more normal level if needed ;)
+
+March 07 2004 - Codemonkey
+	* Made a rough CFlyPath class (may change "node structure" later)
+	+ Added a CFlyPathMob class which is a vendor that sells tickets to FlyPaths
+	+ Added %spawn flypathmob <model> [name] to gm commands
+	. Lots of work todo on the flypath until it's done.
+
+March 07 2004 - Codemonkey
+	+ Added.. god should write in this more often:)
+	+ A few ItemTemplateData stats
+	+ NPCType to CreatureStats so now we can spawn merchants, trainers etc. Defines in defines.h
+
+Feb 21 2004 - Lax
+	+ Added a few new objects (GameObject.cpp, DynamicObject.cpp, Guild.cpp)
+	* Getting data structures ready for most of the object types (players, items, etc)
+
+Feb 20 2004 - Lax
+	* Working with Tamino on the system for pathing, hashed out a working model.  Began
+  	data storage and structure design, will need to integrate with region manager.
+	/ Commented out Tamino's test code for pathing points to use for helping guidelines,
+  	though PPoints.cpp and .h will be removed from cvs when we're ready.
+	+ PathGroup.cpp added to project
+	. Although the creature template data, etc are not 100% complete, we very soon need to
+  	add our first real creatures, items, spawn points, etc. to advance our project; things
+  	are going as expected if not better.  Keep up the good work.
+
+Feb 19 2004 - Lax
+	* %rehash is in GMCommands.cpp
+	- Removed adminpass/gmpass ;)
+	* Data conversion routines etc being worked on.
+	* WORKING ON OBJECT UPDATES ** NOT READY FOR PUBLIC SERVER
+
+Feb 19 2004 - TheUndying
+	* Fixed Buffer overflow error in CreateLootable packet method.  buffer3 was set to the wrong 0xbyte
+	+ Added MsgHandler commands:   *adminpass <pass>	and  *gmpass <pass>
+  	Admin can setup the gm pass right under where the admin pass exists, then distribute accordingly to users etc.
+	. Wants to know where the %rehash command has went?!
+
+Feb 17 2004 - Psycho
+	+ Added DoT effect on spell - Note: Add SpellDuration.dbc on your data/dbc directory
+
+Feb 14 2004 - TheUndying
+	+ Added CLootTable class, will set it up soon.  Add LootTable.cpp to your projects
+
+Feb 13 2004 - Generin
+	+ Added mount and unmount commands (for riding on  horses)
+	* Fixed %broadcast so that it didnt speak Titan (moved the 9)
+	* Creatures now go thru the loot process.  Need to figure out how to store inv in players
+  	bags and to randomize the loot.
+
+Feb 11 2004 - Generin
+	+ Added %msg <message> command (GM only) to broadcast system messages to everyone
+	+ Added %killspawn command (targeted) to kill a spawn without respawning
+	+ Added %morphtarget <model> command (targeted - GM only) to morph targets (players
+  	or creatures)
+	* Fixed PvP flag bugs when crashed/logging off and coming back on
+
+Feb 07 2004 - Generin
+	* Start work on monster melee combat and monster movement.  Currently using incorrect
+  	packets (B5,B7), but it works a little bit.  Probably will need to investigte using
+  	the DA opcode packet.
+	* Monsters Hp's reduced to 100 hps to allow for more fair fights
+	* Monsters will respawn at their spawn pt after being killed.  60 seconds after corpse
+  	decaying, and monsters will respawn
+
+Feb 04 2004 - Lax
+  	* Account system nearing readiness.  Currently, characters are NOT stored but accounts
+  	are.  This means with a simple account editor we can now assign GM flags, etc.  On a
+  	similar note, added the option in the .conf file for turning on/off new accounts.
+  	Valid accounts info is now required in the wow.ses in the format given by WoWLogin
+  	which is more or less "username\npassword"
+	+ Added routines to the DBCHandler for retrieving strings, floats, and ints (note the
+  	existing routine for int returns -1 for failure, which is sometimes valid data). Also
+  	added plenty of stuff for spells.  (Some of this is earlier than this commit)
+
+----------------------------------------------------------------------------------------------------------------------------

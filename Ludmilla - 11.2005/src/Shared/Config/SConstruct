@@ -1,0 +1,23 @@
+# !!! USE MAIN SCONSTRUCT-FILE FOR COMPILING !!!
+#
+# --> SConstruct for libconfig
+#
+# If you want to compile only this library comment other
+# SConstruct invocations in main SConstruct out
+#
+
+StaticLibrary('../../build/config', [
+		'Config.cpp'
+	],
+	CPPPATH = [
+		'../../src/Game',
+		'../../src/LudMilla',
+		'../../src/RealmList',
+		'../../src/Shared',
+		'../../src/Shared/Config',
+		'../../src/Spells',
+		'../../depnew/Unix_dep/',
+                '/usr/include/python2.4'		
+	],
+	CCFLAGS='-fpermissive -w'
+)

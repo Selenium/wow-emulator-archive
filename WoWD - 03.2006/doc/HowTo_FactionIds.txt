@@ -1,0 +1,73 @@
+How to chose the right Faction Id for you spawns.
+
+First of all, you chose your Faction in faction.dbc
+
+we want some guy of the Syndicate
+
+70,0.000000,"Cenarion Circle",0,0,0,0,0,0.000000,0.000000,-10000,0.000000,0,0,2,0,0,0,0,"Syndicate",0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,8323134,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,2031628,
+
+you Take the Id -> 70 and look for it in the second col of FactionTemplate.dbc
+
+you will find a few entrys.
+
+108,70,64,0,0,0,79,0,0.000000,0.000000,70,0,0,0,
+87,70,1,8,0,1,0,0,0.000000,0.000000,70,0,0,0,
+472,70,65,8,0,1,349,0,0.000000,0.000000,70,0,0,0,
+97,70,64,8,0,0,79,0,0.000000,0.000000,70,0,0,0,
+
+
+im not exactly sure what the cols except the first 2 mean but these are different states/ranks of that faction.
+for example aggresive but you cant attack it cause its used for a script effect and things like that.
+
+anyways you take the number in col 1 and spawn your creature with it.
+
+you prob. need to test around with the numbers you found. in this case check factionId 108, 87, 472, 97 to see which one fits best in your current situation
+
+ NoFaction = 0
+ Darnasus = 1
+ GnomereganExiles = 2
+ IronForge = 3
+ Stormwind = 4
+ DarkspearTrolls = 5
+ Ogrimmar = 6
+ ThunderBluff = 7
+ Undercity = 8
+ SteamWheedleCartel = 9
+ BootyBay = 10
+ Everlook = 11
+ Gadgetzan = 12
+ Ratchet = 13
+ BlacksmithingArmorSmithing = 13
+ BlacksmithingAxeSmithing = 14
+ BlacksmithingHammerSmithing = 15
+ BlacksmithingSwordSmithing = 16
+ BlacksmithingGnomeSmithing = 17
+ BlacksmithingGoblinSmithing = 18
+ BlacksmithingDragonScaleSmithing = 19
+ BlacksmithingElementalSmithing = 20
+ BlacksmithingTribalSmithing = 21
+ ArgentDawn = 22
+ BattlegroundNeutral = 23
+ BloodsailBuccaneers = 24
+ CaerDarrow = 25
+ FrostwolfClan = 26
+ GellisClanCentaur = 27
+ Syndicate = 28
+ MagranClanCentaure = 29
+ MoroGai = 30
+ Prey = 31
+ Ravenholdt = 
+ ShatterspearTrolls = 33
+ Shendralar = 34
+ Friend = 35
+ RavasawrTrainers = 36
+ ThoriumBrotherhood = 37
+ ThundermawFurbolgs = 38
+ WildHammerClan = 39
+ WerSaberTrainers = 40
+ StormpikeGuard = 41
+ HydraxianWaterlords = 42
+ Monster = 60
+ Beast = 61
+ Horde = 67
+ Alliance = 115

@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap
+END
+VMapManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/VMapManager.cpp
+END
+VMapFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/VMapFactory.h
+END
+TileAssembler.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/TileAssembler.h
+END
+BaseModel.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/BaseModel.h
+END
+RayIntersectionIterator.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/RayIntersectionIterator.h
+END
+VMapManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/VMapManager.h
+END
+CoordModelMapping.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/CoordModelMapping.cpp
+END
+ModelContainer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/ModelContainer.cpp
+END
+VMapDefinitions.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/VMapDefinitions.h
+END
+TreeNode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/TreeNode.cpp
+END
+CoordModelMapping.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/CoordModelMapping.h
+END
+ModelContainer.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/ModelContainer.h
+END
+NodeValueAccess.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/NodeValueAccess.h
+END
+TreeNode.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/TreeNode.h
+END
+SubModel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/SubModel.cpp
+END
+DebugCmdLogger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/DebugCmdLogger.cpp
+END
+AABSPTree.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/AABSPTree.h
+END
+IVMapManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/IVMapManager.h
+END
+ShortBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/ShortBox.h
+END
+DebugCmdLogger.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/DebugCmdLogger.h
+END
+SubModel.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/SubModel.h
+END
+ManagedModelContainer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/ManagedModelContainer.cpp
+END
+ManagedModelContainer.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/ManagedModelContainer.h
+END
+ShortVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/ShortVector.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/Makefile.am
+END
+BaseModel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/BaseModel.cpp
+END
+TileAssembler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/TileAssembler.cpp
+END
+VMapFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/norwegianelite/!svn/ver/19/Summit/extras/collision/assembler/vmap/VMapFactory.cpp
+END

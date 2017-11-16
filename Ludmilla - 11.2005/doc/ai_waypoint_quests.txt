@@ -1,0 +1,199 @@
+=======================================================
+==== Needed watpoints for some quests - By TheSelby ===
+=======================================================
+
+[quest 2904]
+name=A Fine Mess
+Escort Kernobee to the Clockwerk Run exit.
+
+[quest 4265]
+name=Escaping the Hive
+Escort Raschal safely out of the Zukk'ash hive.
+
+[quest 2767]
+name=Rescue OOX-22/FE!
+Escort OOX-22/FE to the dock along the Forgotten Coast,
+
+[quest 2845]
+name=Wandering Shay
+Escort Shay Leafrunner to Rockbiter's camp.
+
+[quest 836]
+name=Rescue OOX-09/HL!
+Escort OOX-09/HL to the shoreline beyond Overlook Cliff
+
+[quest 2742]
+name=Rin'ji is Trapped!
+Escort Rin'ji out of the Quel'Danil Lodge
+
+[quest 1393]
+name=Galen's Escape 
+Escort Galen out of danger
+
+[quest 6482]
+name=Freedom to Ruul
+Escort Ruul
+
+[quest 6641]
+name=Vorsha the Lasher
+Keep Muglash safe as he travels to the brazier.
+
+[quest 6544]
+name=Torek's Assault
+Escort Torek on his attack against Silverwing Outpost and Duriel Moonfire
+
+[quest 155]
+name=The Defias Brotherhood (Part 3)
+Escort the Defias Traitor to the secret hideout of the Defias Brotherhood.
+
+[quest 6523]
+name=Protect Kaya 
+Escort Kaya Flathoof to Camp Aparaje
+
+[quest 3525]
+name=Extinguishing the Idol
+Escort Belnistrasz to the Quilboar's idol in Razorfen Downs
+
+[quest 1144]
+name=Willix the Importer
+Escort Willix the Importer out of Razorfen Kraul.
+
+[quest 1560]
+name=Tooga's Quest
+Show Tooga the way back to his wife, Torta.
+
+[quest 648]
+name=Rescue OOX-17/TN!
+Escort OOX-17/TN to Steamwheedle Port
+
+[quest 6403]
+name=The Great Masquerade
+Follow Reginald Windsor through Stormwind. Protect him from harm!
+
+[quest 4966]
+name=Protect Kanati Greycloud
+Protect Kanati Greycloud from the centaur attack.
+
+[quest 4904]
+name=Free at Last
+Escort Lakota Windsong from the Grimtotem Compound
+
+[quest 4770]
+name=Homeward Bound
+Escort Pao'ka Swiftmountain from Highperch
+
+[quest 665]
+name=Sunken Treasure 
+Escort Professor Phizzlethorpe to the cave and back
+
+[quest 667]
+name=Death From Below 
+Protect Shakes O'Breen during the attack.
+
+[quest 660]
+name=Hints of a New Plague? 
+Protect Kinelory until she returns to Quae.
+
+[quest 435]
+name=Escorting Erland
+Escort Erland through the wolves, to Rane Yorick.
+
+[quest 1052]
+name=Down the Scarlet Path
+........ he will escort you to a place of honor in our Scarlet Monastery.
+
+[quest 4245]
+name=Chasing A-Me 01
+Escort A-Me 01 back to Karna Remtravel in Un'Goro Crater.
+
+[quest 4491]
+name=A Little Help From My Friends
+Lead Ringo to Spraggle Frock at Marshal's Refuge.
+
+[quest 309]
+name=Protecting the Shipment
+Ensure Miran and the shipment arrive at the excavation site
+
+[quest 4261]
+name=Ancient Spirit
+Escort Arei to Ashenvale
+
+[quest 5203]
+name=Rescue From Jaedenar
+Escort Arko'narin to where Lightforge and her equipment are being held, and then protect her as you escape Shadow Hold. 
+
+[quest 2078]
+name=Gyromast's Revenge
+Find Gelkak's First Mate, the Threshwackonator 4100, and lead it back to Gelkak.
+
+[quest 5321]
+name=The Sleeper Has Awakened
+Escort Kerlonian Evershade to Liladris Moonriver at Maestra's Post in Ashenvale
+
+[quest 3382]
+name=A Crew Under Fire
+Defend Captain Vanessa Beltis, her crew and the Horizon Scout's passengers against the naga attack. Captain Vanessa Beltis must survive.
+
+[quest 938]
+name=Mist
+Escort Mist to Sentinel Arynia Cloudsbreak at the moon well near the Oracle Tree.
+
+[quest 5821]
+name=Bodyguard for Hire
+Escort the Gizelton Caravan past the Kolkar Centaur village.
+
+[quest 1440]
+name=Return to Vahlarriel
+Escort Dalinda Malem from Thunder Axe Fortress and then return to Vahlarriel Demonslayer in Desolace.
+
+[quest 5943]
+name=Gizelton Caravan
+Escort the Gizelton Caravan through Mannoroc Coven.
+
+[quest 5944]
+name=In Dreams  
+Escort Taelan Fordring out of Hearthglen.
+
+[quest 863]
+name=The Escape
+Protect Wizzlecrank and the stolen goblin shredder on the way to Sputtervalve in Ratchet.
+
+[quest 898]
+name=Free From the Hold
+Safely escort Gilthares Firebough back to Captain Brightsun in Ratchet.
+
+[quest 6132]
+name=Get Me Out of Here!
+Escort Melizza Brimbuzzle
+
+[quest 219]
+name=Missing In Action
+desc=Protect Corporal Keeshan on the journey back to Redridge.
+
+[quest 1270]
+name=Stinky's Escape
+desc=Escort "Stinky" Ignatz,
+
+[quest 1479]
+name=The Bough of the Eternals
+desc=Take the orphan to the bank of Darnassus.
+
+[quest 1651]
+name=The Tome of Valor
+desc=Defend Daphne Stilwell from the Defias attack.
+
+[quest 1687]
+name=Spooky Lighthouse
+desc=Take the orphan to see the lighthouse off the coast of Westfall.
+
+[quest 4121]
+name=Precarious Predicament
+Escort your prisoner, Grark Lorkrub, through Burning Steppes and through Blackrock Mountain to the Searing Gorge.
+
+[quest 910]
+name=Down at the Docks
+desc=Take your ward to the docks of Ratchet in the Barrens.
+
+[quest 911]
+name=Gateway to the Frontier
+desc=Take your ward to the Mor'shan Rampart in the northern part of the Barrens,

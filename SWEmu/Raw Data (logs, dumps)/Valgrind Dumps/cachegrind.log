@@ -1,0 +1,105 @@
+==3473== Cachegrind, an I1/D1/L2 cache profiler.
+==3473== Copyright (C) 2002-2005, and GNU GPL'd, by Nicholas Nethercote et al.
+==3473== Using LibVEX rev 1367, a library for dynamic binary translation.
+==3473== Copyright (C) 2004-2005, and GNU GPL'd, by OpenWorks LLP.
+==3473== Using valgrind-3.0.1, a dynamic binary instrumentation framework.
+==3473== Copyright (C) 2000-2005, and GNU GPL'd, by Julian Seward et al.
+==3473== 
+==3473== My PID = 3473, parent PID = 3282.  Prog and args are:
+==3473==    ./TownHall
+--3473-- 
+--3473-- Valgrind library directory: /usr/lib/valgrind
+--3473-- Command line
+--3473--    ./TownHall
+--3473-- Startup, with flags:
+--3473--    --log-file=/home/burlex/cachegrind.log
+--3473--    -v
+--3473--    --tool=cachegrind
+--3473-- Contents of /proc/version:
+--3473--   Linux version 2.6.15-1.1826.2.10_FC5 (bhcompile@hs20-bc1-1.build.redhat.com) (gcc version 4.1.0 20060106 (Red Hat 4.1.0-0.14)) #1 Wed Jan 11 18:12:42 EST 2006
+==3473== Cache configuration used:
+==3473==   I1: 65536B, 2-way, 64B lines
+==3473==   D1: 65536B, 2-way, 64B lines
+==3473==   L2: 524288B, 8-way, 64B lines
+--3473-- Reading syms from /home/burlex/TownHall/TownHall (0x8048000)
+--3473-- Reading syms from /lib/ld-2.3.90.so (0x3A965000)
+--3473-- Reading syms from /usr/lib/valgrind/stage2 (0xB0000000)
+==3473== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+==3473== 
+--3473-- Reading syms from /usr/lib/valgrind/vg_preload_core.so (0x3A981000)
+==3473== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--3473-- Reading syms from /lib/libssl.so.0.9.8a (0x3A99C000)
+--3473--    object doesn't have a symbol table
+==3473== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--3473-- Reading syms from /usr/lib/libz.so.1.2.3 (0x3A9DF000)
+--3473--    object doesn't have a symbol table
+==3473== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--3473-- Reading syms from /usr/lib/libgthread-2.0.so.0.902.0 (0x3A9F2000)
+--3473--    object doesn't have a symbol table
+--3473-- Reading syms from /usr/lib/libstdc++.so.6.0.7 (0x3A9F7000)
+--3473--    object doesn't have a symbol table
+--3473-- Reading syms from /lib/libm-2.3.90.so (0x3AADA000)
+--3473-- Reading syms from /lib/libgcc_s-4.1.0-20060106.so.1 (0x3AAFF000)
+--3473--    object doesn't have a symbol table
+--3473-- Reading syms from /lib/libc-2.3.90.so (0x3AB0B000)
+--3473-- Reading syms from /lib/libcrypto.so.0.9.8a (0x3AC32000)
+--3473--    object doesn't have a symbol table
+==3473== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--3473-- Reading syms from /lib/libpthread-2.3.90.so (0x3AD57000)
+--3473-- Reading syms from /lib/libdl-2.3.90.so (0x3AD69000)
+--3473-- Reading syms from /usr/lib/libgssapi_krb5.so.2.2 (0x3AD6D000)
+--3473--    object doesn't have a symbol table
+==3473== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--3473-- Reading syms from /usr/lib/libkrb5.so.3.2 (0x3AD85000)
+--3473--    object doesn't have a symbol table
+==3473== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--3473-- Reading syms from /lib/libcom_err.so.2.1 (0x3ADF6000)
+--3473--    object doesn't have a symbol table
+--3473-- Reading syms from /usr/lib/libk5crypto.so.3.0 (0x3ADF9000)
+--3473--    object doesn't have a symbol table
+==3473== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--3473-- Reading syms from /lib/libresolv-2.3.90.so (0x3AE1D000)
+--3473-- Reading syms from /usr/lib/libglib-2.0.so.0.902.0 (0x3AE30000)
+--3473--    object doesn't have a symbol table
+--3473-- Reading syms from /usr/lib/libkrb5support.so.0.0 (0x3AEBE000)
+--3473--    object doesn't have a symbol table
+==3473== Warning: zero-sized CIE/FDE but not at section end in DWARF2 CFI reading
+--3473-- REDIR: 0x3A9657F0 (_dl_sysinfo_int80) redirected to 0xB00226AF (???)
+==3473== 
+==3473== I   refs:      1,344,812,700
+==3473== I1  misses:          807,712
+==3473== L2i misses:           19,682
+==3473== I1  miss rate:          0.02%
+==3473== L2i miss rate:          0.00%
+==3473== 
+==3473== D   refs:        827,439,163  (456,448,139 rd + 370,991,024 wr)
+==3473== D1  misses:        9,399,372  (  7,262,847 rd +   2,136,525 wr)
+==3473== L2d misses:        6,435,912  (  4,553,847 rd +   1,882,065 wr)
+==3473== D1  miss rate:           1.0% (        1.6%   +         0.5%  )
+==3473== L2d miss rate:           0.2% (        0.0%   +         0.5%  )
+==3473== 
+==3473== L2 refs:          10,207,084  (  8,070,559 rd +   2,136,525 wr)
+==3473== L2 misses:         6,455,594  (  4,573,529 rd +   1,882,065 wr)
+==3473== L2 miss rate:            0.0% (        0.0%   +         0.5%  )
+--3473-- 
+--3473-- Distinct files:   60
+--3473-- Distinct fns:     889
+--3473-- Distinct lines:   3891
+--3473-- Distinct instrs:  8638
+--3473-- BB lookups:       58598
+--3473-- With full      debug info: 53% (31286)
+--3473-- With file/line debug info:  0% (2)
+--3473-- With fn name   debug info: 38% (22700)
+--3473-- With no        debug info:  7% (4610)
+--3473-- BBs Retranslated: 1
+--3473--     tt/tc: 140411 tt lookups requiring 151010 probes
+--3473--     tt/tc: 140411 fast-cache updates, 2 flushes
+--3473-- translate: new        8639 (209621 -> 1910082; ratio 91:10) [0 scs]
+--3473-- translate: dumped     0 (0 -> ??)
+--3473-- translate: discarded  0 (0 -> ??)
+--3473-- scheduler: 247318365 jumps (bb entries).
+--3473-- scheduler: 4945/406019 major/minor sched events.
+--3473--    sanity: 4946 cheap, 198 expensive checks.
+--3473--    exectx: 4999 lists, 0 contexts (avg 0 per list)
+--3473--    exectx: 0 searches, 0 full compares (0 per 1000)
+--3473--    exectx: 0 cmp2, 0 cmp4, 0 cmpAll

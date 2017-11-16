@@ -1,0 +1,20 @@
+Some of you know, some (wowemu folks) don't. Weapon skill is capped level based:
+this means the maximum skill you can reach depends on your level - more
+precisely 5 * level. The closer you are to your capped skill the slower the
+skill will go up. The level of the mob doesn't effect skill gain and it doesn't
+matter if you hit or miss. Intelligence speeds up skill gains, also gain is
+based on weapon swings (it's faster to rase skill with fast weapons). Generally
+it will take about 1 swing per skill gain when your skill is less than half of
+your weapon skill cap. After a while it will slow down and take multiple swings
+per skill point and the last 5 points will probably take as long to raise as all
+those before it with the last point taking a very long time compared to those
+before it.
+
+You can judge how often and how hard you will hit a mob by comparing its level
+to your current weapon skill level divided by 5. If your skill is 4 levels or
+lower than the mobs level then you are going to miss a lot, get crits rarely and
+do less damage when you do hit.
+
+P.S. Side-note, since were talking about capping, for some professions skills
+need to be capped in order to be able to purchase the next level (e.g:
+leatherworking), but some don't need that (skinning).

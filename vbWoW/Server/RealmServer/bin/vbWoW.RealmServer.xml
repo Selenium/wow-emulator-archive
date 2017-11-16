@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RealmServer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RSPort>3724</RSPort>
+	<RSHost>0.0.0.0</RSHost>
+
+	<SQLUser>user</SQLUser>
+    <SQLPass>password</SQLPass>
+    <SQLHost>127.0.0.1</SQLHost>
+	<SQLPort>3306</SQLPort>
+    <SQLDBName>vbwowdb</SQLDBName>
+	<SQLDBType>MySQL</SQLDBType>
+	
+	<AutoAccountCreate>false</AutoAccountCreate>
+
+</RealmServer>

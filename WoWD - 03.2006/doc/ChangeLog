@@ -1,0 +1,139 @@
+//// THINGS THAT ARE ADDED/FIXED:
+
++FIXED ADDING GAME OBJECTS (when u add a game object like mail and it save on db the next time u load the server it crashes)
++FIXED GETTING OFF TAXI, currently u have to type .dismount 2 times to get off.
++FIX BANKER.
++INCREASE the monsters speed when runing away from him.
++FIXED, when you sit mana & life should be healing faster, same for when u sleep.
++FIXED, Mana & LIFE are not recovering at the same time.
++FIXED,ADDED new GM command ".itemrmv itemid#" it will remove the ITEM of the selected NPC (still needs some work it freezs the server for 1/2 second.)
++FIXED, RAGE works but needs to regenarate when a creature hits you and stay, currently its not added when you are hit and when u manualy add it it starts to disapear.
++added blizzard like Inventory full to loot and buy items
++Added a auto save every 15 min
++Added Support for banks slots
++Fixed Gameobjects they save /load and don't crash so far
++rogue's energy now regen correctly (20 each time).
++Added a Remove all affect counter & kill Should be removed when we find out what causes the infinate loop
++Added a .gameobject <display_id><type_id><faction>fieldsentry> doesn't work 100% yet still needs work
++ADDED New GM command ".allowmove" makes all NPC's walk around in random waypoints, use it again to stop all npc's.
++FIXED ELEVATORS/ZEPPELIS
++ADD SPELLS ON SPELL BOOK! (THEY DO NOT SHOW.)
++FIXED GAME OBJECTS, they cannot be view in client 1.5.x only in 1.4.2 (need to update opcode).
++FIXED mailing system. (mail's body is missing -- need thet packet (SMSG_MAIL_LIST_RESULT) structure to add it.
++FIXED CPU USAGE it goes 45-50% CPU when attacking mobs for some minutes.
++ADDED START SPELLS ON PLAYERCREATEINFO.sql
++the monster chace time is to short and they should move faster, very close behind you.
++FIXED CREATURES! IF YOU ATTACK THEM AND RUN THEY GET DELETED!! YOU MUST WAIT TILL THEY ATTACK YOU BACK SO THEY DONT GET DELETED.!
++FIX SERVER CHANING ALL NPC'S FLAGS TO 0!!!!!!!!!!!!!!!!!!!!!!
++REFIX SH CANT RIGHT CLICK THEM TO RES YOU.
++ADDED NEW NETWORKE CODE.
++UPDATED NETWORK CODE.
++FIXED creatures are not attacking back when you attack them.
++ADDED ZONEMAPPER.H/.CPP
++FIXED PARTY BUG THAT CRASHED THE SERVER WITH MORE THAN 4 players.
++FIXED ITEM CRASHING SERVER BUG WHEN U DRAGED ITEMS TO THE CHARACTER WINDOW.
++ADDED NEW GM COMMAND: ".infonpc" it will display name_id,guid,flag,faction,skinID of mobs.
++FIXED TRAINERS.
++FIX QUESTS.
++SPRIT HEALERS CAN RES.
++FIXED Vendors.
++CHARACTER LEVELS OF SECURTY ARE NOT WORKING. (all characters created have level 4 securty.)
++FIX WARPING TO GRAVEYARDS.
++FIXED PARTY!
++FIXED CHAT./say /yell /party chat fixes. W00T!!
++"FIXED" GUID.
++FIXED EMOTIONS.
++FIXED TEXT NPC.
++FIXED GM COMMANDS.
++FIXED CLIENT GETTING STUCK ON LOGIN.
++FIXED item visual, you no longer are naked but you cant take off items or put new ones on with out have to 
+relog!
++FIXED item's other ppl see you naked but you dont.!!!!!!!!!!!!
++FIXED range code.
++FIXED DAMAGE ATTACK.
++FIXED all spells. (needs more checking 99% working as of now) ** (skill line still missing hann is working on 
+it)
++FIXED health regeneration.
++FIXED mana regeneration.
++FIXED undead cannot swimm in water! they sink to the ground.
++FIXED creature chaceing you when u attak and run. (monster dont stop chacening you)
++FIXED taxi's (you get stuck when you are going to get off the ride, you have to manualy type .dismount)
++FIXED when creature stops running after and returns to its position it must be fully healed.
++FIXED item still beeing rolled off. (for good?:P)
++FIXED minor group bug that wouldnt let you kick members.
++FIXED PARTY CRASHING SERVER!
++FIXED CHANGE LEADER ON PARTY!
++FIXED CLIENT GETTING STUCK ON CHAR REALMLIST ON LINUX!
++FIXED EXP BUG!
++FIXED spirit healers. (hide from living ppl)
++FIXED SPIRIT HEAELERS not automaticly add in the npc_* tables with the ".addsh" command.
+
+
+////WOWD FEATURES!
++ADDED realm selection, now u can link WoWD server together.
++ADDED banned function on acctoun table.
++ADDED fall damage.
++ADDED DeMorph() function to Unit class.
++When you die as a night elf you turn into WISP!! w00T!
+
+Changelog:
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Current CVS
+++++++++++++++++++++++++++++++++++++++++++++++++++
+* Obejct manager rewrite started - Ignatich
+* We use hash_maps now for objects, should help performance a lot - Ignatich
+* New chat commands - sYkez
+* Spell code rewrite started - Ignatich
+* Improved logging - sYkez
+* Some chat commands fixed - Ignatich
+* Chat fixed and improved support - Munky
+* Worldport fix - Munky, Ignatich and Rguy
+* Changed wowWData to dynamic buffers - Ignatich
+* More Handlers converted to new structure - Ignatich, sYkez, Mooseman
+* Initial work on big handler update  - Ignatich
+* Character screen fixes for 0.9.0 - Munky & RGuy
+* Namechange and general cleanup - sYkez
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Pre 0.9.0.1
+++++++++++++++++++++++++++++++++++++++++++++++++++
+* Timers now use time difference provided by Server class
+* Movement code now interpolates monster movement
+* Commands can be nested now. (ex. !modify hp 100 100)
+* GPS command added
+* CMSG_NAME_QUERY fixed properly this time
+* Database code cleanup
+
+older changees:
+
+Command patch v3:
+
+* More command code cleanup
+* More detailed command responses
+* All command now automatically show help if you enter wrong number of arguments
+* You can call all commands via '.' and '!' (to satisfy '.' addicted users)
+* Fixed GetPlayerNameFromGUID
+
+Command patch v2:
+
+* New commands:
+    !gmlist - who list of active GMs
+    !displayid - change display id of a creature
+    !npcflag - change npcflag of a creature
+    !factionid - change faction of a creature
+* All commands fixed so creature commands no longer work on characters and vice verse. (!delete for example)
+* This patch also includes CMSG_NAME_QUERY CPU hog patch
+* Some db queues are more efficient now
+* Fixes by sYkez included too (should be in cvs already but pserver is down)
+* Combat crash fixed (same here)
+* Fixed identation for DatabaseInterface.cpp (really annoying)
+* Some smaller command code fixes and cleanups
+
+Command patch v1:
+
+* Now each command has it's own function
+* Advanced help system
+* Command completion
+* DB configurable security and help
+* Some fixes for lina's command patch
+* Some other fixes from my dev tree i can't remember

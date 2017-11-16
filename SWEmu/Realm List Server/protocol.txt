@@ -1,0 +1,29 @@
+StormCraft Standard Realm List Server
+
+StormCraft realm list servers allow any public server to send a heartbeat to be listed.  The  heartbeat must be received in less than 150 second intervals for the server to remain listed (every 60 seconds is recommended).
+
+Four pieces of data are required by the realm list server:
+Name - Your server should have a unique name
+IP Address - Your numeric IP address (leave this BLANK to make the realm list determine your IP address)
+Port - The port for the initial connection, usually 9090.
+Number of Players - The current number of players connected
+
+The packet of data sent must be formatted like so:
+Port - 16-bit unsigned in little endian (this means you do not ntohs this on little endian machines)
+Padding - 16-bits of padding.  The structure expected is 4-byte aligned, so there are two bytes following the Port that are unused.
+Name - Null-terminated string, fixed total length is 64 bytes.  Whether your name is 64 bytes including the null terminator or not, it must be 64 bytes in the packet.
+IP Address - Null-terminated string, fixed total length is 16 bytes.  Same as Name but 64 bytes including the null terminator.
+Number Players - 32-bit unsigned in little endian.
+Total size: 88 bytes (2+2+64+16+4)
+
+In C (4-byte aligned):
+struct RealmPacket
+{
+	unsigned short Port;
+	char Name[64];
+	char IPAddr[16];
+	unsigned long nPlayers;
+};
+
+
+This information must be sent via UDP (SO_DGRAM, connectionless, use sendto) to port 9111 of a realm list server.  If the size received is not exactly 88 bytes, it will be ignored. 

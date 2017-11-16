@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/norwegianelite/!svn/ver/19/Summit/sql/world_updates
+END
+330_delete_db_banners.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/sql/world_updates/330_delete_db_banners.sql
+END
+493_news_announcements.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/norwegianelite/!svn/ver/19/Summit/sql/world_updates/493_news_announcements.sql
+END
+328_worldstate_template.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/norwegianelite/!svn/ver/19/Summit/sql/world_updates/328_worldstate_template.sql
+END

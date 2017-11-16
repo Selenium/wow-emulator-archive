@@ -1,0 +1,25 @@
+# !!! USE MAIN SCONSTRUCT-FILE FOR COMPILING !!!
+#
+# --> SConstruct for librealmlist
+#
+# If you want to compile only this library comment other
+# SConstruct invocations in main SConstruct out
+#
+
+StaticLibrary('../../build/realmlist', [
+		'AuthSocket.cpp',
+		'AuthSocketMgr.cpp',
+		'RealmList.cpp',
+		'StdAfx.cpp'
+	],
+	CPPPATH = [
+		'../../src/Game',
+		'../../src/LudMilla',
+		'../../src/RealmList',
+		'../../src/Shared',
+		'../../src/Spells',
+		'../../depnew/Unix_dep/',
+		'/usr/include/python2.4'
+	],
+	CCFLAGS='-fpermissive -w'
+)

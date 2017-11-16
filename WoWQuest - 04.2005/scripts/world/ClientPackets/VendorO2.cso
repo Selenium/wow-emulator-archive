@@ -1,0 +1,257 @@
+using System; 
+using WoWDaemon.Common; 
+using WoWDaemon.Common.Attributes; 
+using WoWDaemon.World;
+using WoWDaemon.Database;
+using WoWDaemon.Database.DataTables;
+
+namespace WorldScripts.VendorsScripts
+{
+	[WorldPacketHandler()]
+	public class Vendors
+	{
+		[WorldPacketDelegate(CMSG.QUESTGIVER_STATUS_QUERY)]
+		static void Hello(WorldClient client, CMSG msgID, BinReader data)
+		{
+
+			ulong quester = data.ReadUInt64();
+
+			ServerPacket pkg = new ServerPacket(SMSG.QUESTGIVER_STATUS);
+			
+			pkg.Write(quester);
+			pkg.Write((int)3);
+			pkg.Finish();
+
+			client.Player.MapTile.Map.Send(pkg, client.Player.Position, 25.0f);
+
+			Chat.System(client, "Quest NPC Stats query working");
+
+		}
+		[WorldPacketDelegate(CMSG.QUESTGIVER_HELLO)]
+		static void Quest(WorldClient client, CMSG msgID, BinReader data)
+		{
+
+			ServerPacket pkg = new ServerPacket(SMSG.QUESTGIVER_QUEST_LIST);
+			
+			string greets = ("Hy, " + client.Player.Name + ", the " + client.Player.Class+ "!");
+			string desc = "WoWCraft Test Quest";
+			
+			pkg.Write(client.Player.Selection.GUID);
+			pkg.Write(greets);
+			pkg.Write((int)5);
+			pkg.Write((int)3);
+			pkg.Write((int)1);
+			pkg.Write((byte)1);
+
+			pkg.Write((int)10);
+			pkg.Write((int)15);
+			pkg.Write((byte)1);
+			pkg.Write(desc);
+
+			pkg.Finish();
+
+			client.Player.MapTile.Map.Send(pkg, client.Player.Position, 25.0f);
+
+			Chat.System(client, "Quest Working");
+			
+			return;
+
+		}
+
+		[WorldPacketDelegate(CMSG.QUESTGIVER_QUERY_QUEST)]
+		static void QuestDetails(WorldClient client, CMSG msgID, BinReader data)
+		{
+
+			ServerPacket q1 = new ServerPacket(SMSG.QUESTGIVER_QUEST_DETAILS);
+			
+			string title = "WoWCraft Test Quest!";
+			string intro = "This is the introdution";
+			string details = "This is a test quest of WoWCraft!";
+			string objectives = "None! This is only a quest";
+			
+			q1.Write((int)1);
+			q1.Write((int)0);
+			q1.Write((int)1);
+			q1.Write((int)12);
+			q1.Write((ulong)0);
+			q1.Write((ulong)0);
+			q1.Write((ulong)0);
+			q1.Write((ulong)0);
+			q1.Write((ulong)0);
+			q1.Write((ulong)0);
+			q1.Write((ulong)1000);
+			q1.Write((ulong)0);
+
+			q1.Write((ulong)1);
+			q1.Write((ulong)1);
+
+			q1.Write((ulong)1);
+			q1.Write((int)1);
+
+			q1.Write((int)0);
+			q1.Write((int)0);
+			q1.Write((int)0);
+			q1.Write((int)0);
+
+			q1.Write(title);
+			q1.Write(intro);
+			q1.Write(details);
+			q1.Write(objectives);
+
+			q1.Write((int)1);
+			q1.Write((int)10);
+			q1.Write((int)0);
+			q1.Write((int)0);
+
+			q1.Write((int)0);
+			q1.Finish();
+
+			client.Player.MapTile.Map.Send(q1, client.Player.Position, 25.0f);
+
+			Chat.System(client, "Quest Details...");
+			
+			return;
+
+		}
+
+
+		[WorldPacketDelegate(CMSG.LIST_INVENTORY)]
+		static void Itens(WorldClient client, CMSG msgID, BinReader data)
+		{
+
+			ServerPacket pkg2 = new ServerPacket(SMSG.LIST_INVENTORY);
+			//string itemname = "Sword";
+			
+			pkg2.Write(client.Player.Selection.GUID);
+			pkg2.Write((int)1);
+			pkg2.Write((int)2); // this is the item counter
+
+			pkg2.Write((byte)1); // item info (dunno the struture)
+			//pkg2.Write((int)100);
+			//pkg2.Write((int)101);
+			//pkg2.Write((int)102);
+			//pkg2.Write((int)103);
+			//pkg2.Write((int)104);
+
+			pkg2.Finish();
+			
+			client.Player.MapTile.Map.Send(pkg2, client.Player.Position, 25.0f);
+			
+			Chat.System(client, "Item Working");
+			
+			return;
+
+		}
+
+		[WorldPacketDelegate(CMSG.TRAINER_LIST)]
+		static void Training(WorldClient client, CMSG msgID, BinReader data)
+		{
+
+			string skillgreets = "Welcome, " +client.Player.Name+ "! Choose your skill :";
+			ServerPacket trainer = new ServerPacket(SMSG.TRAINER_LIST);
+
+			trainer.Write(client.Player.Selection.GUID);
+			trainer.Write((int)0);
+			trainer.Write((uint)2);
+			trainer.Write((uint)1);
+
+			trainer.Write((int)6);
+			trainer.Write((int)1);
+			trainer.Write((ulong)100);
+			trainer.Write((uint)10);
+			trainer.Write((uint)0);
+			trainer.Write((ulong)1);
+			trainer.Write((ulong)0);
+			trainer.Write((ulong)0);
+			trainer.Write((long)0);
+			trainer.Write((long)0);
+			trainer.Write((long)0);
+			trainer.Write((string)skillgreets);
+			trainer.Finish();
+
+			client.Player.MapTile.Map.Send(trainer, client.Player.Position, 25.0f);
+
+			Chat.System(client, "Trainer Working");
+			
+			return;
+
+		}
+		
+		[WorldPacketDelegate(CMSG.TAXINODE_STATUS_QUERY)]
+		static void TaxiQuery(WorldClient client, CMSG msgID, BinReader data)
+		{
+
+			ulong txname = data.ReadUInt64();
+			
+			ServerPacket txstatus = new ServerPacket(SMSG.TAXINODE_STATUS);
+			
+			txstatus.Write(txname);
+			txstatus.Write((int)1);
+			txstatus.Finish();
+
+			client.Player.MapTile.Map.Send(txstatus, client.Player.Position, 25.0f);
+
+
+			Chat.System(client, "Taxi Query Working");
+			
+			return;
+
+		}
+		
+		[WorldPacketDelegate(CMSG.TAXIQUERYAVAILABLENODES)]
+		static void Taxi(WorldClient client, CMSG msgID, BinReader data)
+		{
+
+			ServerPacket tx = new ServerPacket(SMSG.SHOWTAXINODES);
+			
+			tx.Write(client.Player.Selection.GUID);
+			tx.Write((uint)12);
+			tx.Write((long)0);
+			tx.Write((long)1);
+			tx.Finish();
+
+			client.Player.MapTile.Map.Send(tx, client.Player.Position, 25.0f);
+
+			Chat.System(client, "Taxi Working");
+			
+			return;
+
+		}
+
+		[WorldPacketDelegate(CMSG.NPC_HELLO)]
+		static void TextNPC(WorldClient client, CMSG msgID, BinReader data)
+		{
+
+			ServerPacket hello = new ServerPacket(SMSG.NPC_HYPERTEXT);
+
+			string Text = "This is only a Test!";
+			
+			hello.Write(client.Player.Selection.GUID);
+			hello.Write(client.Player.GUID);
+			hello.Write(Text);
+			hello.Finish();
+			
+			Chat.System(client, "Text Working");
+			
+			return;
+		}
+
+		
+		[WorldPacketDelegate(CMSG.TABARDVENDOR_ACTIVATE)]
+		static void TabardNPC(WorldClient client, CMSG msgID, BinReader data)
+		{
+
+			ServerPacket tabard = new ServerPacket(SMSG.TABARDVENDOR_ACTIVATE);
+
+			tabard.Write(client.Player.Selection.GUID);
+			tabard.Write(client.Player.GUID);
+			tabard.Write(0);
+			tabard.Finish();
+			
+			Chat.System(client, "Tabard Working");
+			
+			return;
+		}
+	}
+} 
+

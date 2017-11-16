@@ -1,0 +1,20 @@
+Release notes:
+
+0.8.8
+
+five new commands
+#addmove                 // add move point to npc or mob
+#random <option>   // 1 Set random movement   || 0 set a follow path in orden movement
+#run <option>            //      1 for run  || 0 for walk
+!appear Appear to players location. Only works if they are on the same continent atm.
+!summon Summons a player to your current location. Only works if they are on the same continent atm.
+<Section mising because people dont pay attention to updates>
+0.8.6
+
+NPC's you .spawn may or may not be saved when you restart server
+Trainers show spells you have allready learned
+Quest Item Rewards cause crashes
+.speeds above 50 render a character unusable
+Entering deathworld makes you unable to exit deathworld
+Deathworld is disabled by default, you need to edit the source to turn it on
+Lanhost added - You can set lanhost to your lanip (192.168.x.x or w/e) and then your normal host to your external ip, and people and your lan and internet people can connect to the server!

@@ -1,0 +1,395 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\TownHall.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TownHall.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 227, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About..."
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SWemu Server 1.0 for 1.12.x",IDC_STATIC,40,11,148,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright nneonneo (C) 2005",IDC_STATIC,40,33,119,8
+    DEFPUSHBUTTON   "OK",IDOK,170,7,50,16,WS_GROUP
+    LTEXT           "Based on Stormcraft, (C) 2004",IDC_STATIC,40,22,119,8
+END
+
+IDD_TOWNHALL_DIALOG DIALOGEX 0, 0, 425, 295
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Realm List Server:",IDC_STATIC_RL_STATUS,28,216,90,9
+    LTEXT           "Not Connected",IDC_TEXT_RL_STATUS,115,216,144,10
+    LTEXT           "World Server:",IDC_STATIC_STATUS,27,234,63,10
+    LTEXT           "Not Running",IDC_TEXT_STATUS,115,234,145,10
+    LTEXT           "Server Name:",IDC_STATIC_SERVER_NAME,24,186,77,12
+    CONTROL         "",IDC_FRAME_NAME,"Static",SS_BLACKFRAME,19,181,270,17,
+                    WS_EX_STATICEDGE
+    LTEXT           "Clients:",IDC_STATIC_CLIENT_NUM,27,255,31,9
+    LTEXT           "Server Not Started",IDC_TEXT_SERVER_NAME,115,186,123,12
+    LTEXT           "Not Running",IDC_TEXT_CLIENT_NUM,115,255,144,10
+    CONTROL         "",IDC_LOADPROGRESS,"msctls_progress32",0x1,27,245,152,7,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Send Packet",IDC_BUTTON_SENDPACKET,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_DISABLED | WS_TABSTOP,21,
+                    129,80,19
+    CONTROL         "Send Mail...",IDC_BUTTON_SENDMAIL,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | WS_DISABLED | WS_TABSTOP,21,105,80,19
+    CONTROL         "Reload Settings",IDC_BUTTON_REHASH,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,21,153,80,19
+    CONTROL         "Minimize To Tray",IDC_BUTTON_MINIMIZE,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,110,105,80,19
+    CONTROL         "Start",IDC_BUTTON_STARTSTOP,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | WS_TABSTOP,21,81,80,19,WS_EX_TRANSPARENT
+    CONTROL         "1",IDC_BUTTON_SAVE,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_DISABLED | WS_TABSTOP,110,81,80,19
+    CONTROL         "Exit",IDC_BUTTON_EXIT,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,109,130,80,19
+    CONTROL         "Console...",IDC_BUTTON_CONSOLE,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | WS_TABSTOP,109,153,80,19
+END
+
+IDD_SENDPACKET DIALOGEX 0, 0, 272, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Send Packet"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "&Send",IDC_SENDP_BUTTON_SEND,162,161,50,14
+    PUSHBUTTON      "&Close",IDC_SENDP_BUTTON_CLOSE,215,161,50,14
+    EDITTEXT        IDC_SENDP_EDIT_PACKET,7,26,258,117,ES_MULTILINE | 
+                    ES_UPPERCASE | ES_AUTOVSCROLL | ES_WANTRETURN
+    COMBOBOX        IDC_SENDP_COMBO_PACKET_LIST,7,163,84,109,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Script in packets.txt",IDC_SENDP_STATIC_PACKET_LIST,7,
+                    149,84,10
+    EDITTEXT        IDC_SENDP_OPCODE,123,7,40,14,ES_AUTOHSCROLL
+    LTEXT           "Opcode",IDC_SENDP_STATIC_OPCODE,94,9,26,8
+END
+
+IDD_SENDMAIL DIALOGEX 0, 0, 293, 172
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Send Mail Message"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Send Mail",IDOK,77,151,50,14
+    PUSHBUTTON      "&Close",IDCANCEL,161,151,50,14
+    LTEXT           "Send To: ",IDC_STATIC,14,14,32,8
+    LTEXT           "Mail From: ",IDC_STATIC,14,27,36,8
+    LTEXT           "Subject: ",IDC_STATIC,14,39,37,10
+    EDITTEXT        IDC_MAIL_TEXT_TO,54,13,225,12,ES_LOWERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAIL_TEXT_FROM,54,26,225,12,ES_LOWERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAIL_TEXT_SUBJECT,54,39,225,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAIL_TEXT_BODY,14,53,265,74,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Money: ",IDC_STATIC,18,133,28,13
+    EDITTEXT        IDC_MAIL_TEXT_MONEY,46,131,233,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+END
+
+IDD_CONSOLEDIALOG DIALOGEX 0, 0, 570, 250
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "SWemu Console..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Accept...",IDC_CONSOLE_BUTTON_ACCEPT,471,225,43,14,
+                    BS_FLAT
+    EDITTEXT        IDC_CONSOLE_TEXT_DISPLAY,7,7,556,214,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER | WS_VSCROLL,
+                    WS_EX_DLGMODALFRAME | WS_EX_LEFTSCROLLBAR | 
+                    WS_EX_STATICEDGE
+    LTEXT           "SWemu:",IDC_STATIC,8,227,34,9,0,WS_EX_ACCEPTFILES
+    EDITTEXT        IDC_CONSOLE_TEXT_ENTRY,38,225,427,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Close",IDC_CONSOLE_BUTTON_CLOSE,520,225,43,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "serverpopup"
+    BEGIN
+        MENUITEM "Show Server Window",          ID_SERVERPOPUP_SHOWSERVERWINDOW
+
+        MENUITEM SEPARATOR
+        MENUITEM "View Debug Log File",         ID_SERVERPOPUP_VIEWLOGFILE
+        MENUITEM "View Packet Logs",            ID_SERVERPOPUP_VIEWPACKETLOGS
+
+        MENUITEM "View Report Log",             ID_SERVERPOPUP_VIEWREPORTLOG
+        MENUITEM "View Chat Command Log",       ID_SERVERPOPUP_VIEWCHATCOMMANDLOG
+
+        MENUITEM SEPARATOR
+        MENUITEM "Start Server",                ID_SERVERPOPUP_STARTSERVER
+        MENUITEM "Shutdown Server",             ID_SERVERPOPUP_SHUTDOWNSERVER
+
+        MENUITEM SEPARATOR
+        MENUITEM "Number of connected clients?", 
+                                                ID_SERVERPOPUP_NUMBEROFCONNECTEDCLIENTS
+
+        MENUITEM "Disconnect all players",      ID_SERVERPOPUP_DISCONNECTALLPLAYERS
+
+        MENUITEM "Save all clients",            ID_SERVERPOPUP_SAVEALLCLIENTS
+
+        MENUITEM SEPARATOR
+        MENUITEM "Reload config",               ID_SERVERPOPUP_RELOADCONFIG
+        MENUITEM "Send Mail Message",           ID_SERVERPOPUP_SENDMAILMESSAGE
+
+        MENUITEM "Send Packet",                 ID_SERVERPOPUP_SENDPACKET
+        MENUITEM SEPARATOR
+        MENUITEM "Exit Townhall...",            ID_SERVERPOPUP_EXITTOWNHALL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Based on Stormcraft, (c) 2004."
+            VALUE "CompanyName", "SWemu Development Team"
+            VALUE "FileDescription", "SWemu Realm Server"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "TownHall.exe"
+            VALUE "LegalCopyright", "By nneonneo, (c) 2005.  All rights reserved."
+            VALUE "LegalTrademarks", "Rip us off and we'll kick your ass ;)"
+            VALUE "OriginalFilename", "TownHall.exe"
+            VALUE "PrivateBuild", "5955"
+            VALUE "ProductName", "SWemu RealmServer Application"
+            VALUE "ProductVersion", "1.0.0.0"
+            VALUE "SpecialBuild", "1.12.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 46
+    END
+
+    IDD_TOWNHALL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_SENDPACKET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_SENDMAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_CONSOLEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 563
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_CONSOLE_NORMAL BITMAP                  "Btn\\Console.bmp"
+IDB_BITMAP_CONSOLE_OVER BITMAP                  "Btn\\Console_f1.bmp"
+IDB_BITMAP_CONSOLE_DISABLED BITMAP                  "Btn\\Console_f2.bmp"
+IDB_BITMAP_CONSOLE_PRESSED BITMAP                  "Btn\\Console_f3.bmp"
+IDB_BITMAP_EXIT_NORMAL  BITMAP                  "Btn\\Exit.bmp"
+IDB_BITMAP_EXIT_OVER    BITMAP                  "Btn\\Exit_f1.bmp"
+IDB_BITMAP_EXIT_DISABLED BITMAP                  "Btn\\Exit_f2.bmp"
+IDB_BITMAP_EXIT_PRESSED BITMAP                  "Btn\\Exit_f3.bmp"
+IDB_BITMAP_MINIMIZE_NORMAL BITMAP                  "Btn\\Minimize.bmp"
+IDB_BITMAP_MINIMIZE_OVER BITMAP                  "Btn\\Minimize_f1.bmp"
+IDB_BITMAP_MINIMIZE_DISABLED BITMAP                  "Btn\\Minimize_f2.bmp"
+IDB_BITMAP_MINIMIZE_PRESSED BITMAP                  "Btn\\Minimize_f3.bmp"
+IDB_BITMAP_RELOAD_NORMAL BITMAP                  "Btn\\Reload.bmp"
+IDB_BITMAP_RELOAD_OVER  BITMAP                  "Btn\\Reload_f1.bmp"
+IDB_BITMAP_RELOAD_DISABLED BITMAP                  "Btn\\Reload_f2.bmp"
+IDB_BITMAP_RELOAD_PRESSED BITMAP                  "Btn\\Reload_f3.bmp"
+IDB_BITMAP_SAVE_NORMAL  BITMAP                  "Btn\\Save.bmp"
+IDB_BITMAP_SAVE_OVER    BITMAP                  "Btn\\Save_f1.bmp"
+IDB_BITMAP_SAVE_DISABLED BITMAP                  "Btn\\Save_f2.bmp"
+IDB_BITMAP_SAVE_PRESSED BITMAP                  "Btn\\Save_f3.bmp"
+IDB_BITMAP_SENDMAIL_NORMAL BITMAP                  "Btn\\SendMail.bmp"
+IDB_BITMAP_SENDMAIL_OVER BITMAP                  "Btn\\SendMail_f1.bmp"
+IDB_BITMAP_SENDMAIL_DISABLED BITMAP                  "Btn\\SendMail_f2.bmp"
+IDB_BITMAP_SENDMAIL_PRESSED BITMAP                  "Btn\\SendMail_f3.bmp"
+IDB_BITMAP_SENDPKT_NORMAL BITMAP                  "Btn\\SendPkt.bmp"
+IDB_BITMAP_SENDPKT_OVER BITMAP                  "Btn\\SendPkt_f1.bmp"
+IDB_BITMAP_SENDPKT_DISABLED BITMAP                  "Btn\\SendPkt_f2.bmp"
+IDB_BITMAP_SENDPKT_PRESSED BITMAP                  "Btn\\SendPkt_f3.bmp"
+IDB_BITMAP_START_NORMAL BITMAP                  "Btn\\Start.bmp"
+IDB_BITMAP_START_OVER   BITMAP                  "Btn\\Start_f1.bmp"
+IDB_BITMAP_START_DISABLED BITMAP                  "Btn\\Start_f2.bmp"
+IDB_BITMAP_START_PRESSED BITMAP                  "Btn\\Start_f3.bmp"
+IDB_BITMAP_STOP_NORMAL  BITMAP                  "Btn\\Stop.bmp"
+IDB_BITMAP_STOP_OVER    BITMAP                  "Btn\\Stop_f1.bmp"
+IDB_BITMAP_STOP_DISABLED BITMAP                  "Btn\\Stop_f2.bmp"
+IDB_BITMAP_STOP_PRESSED BITMAP                  "Btn\\Stop_f3.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\TownHall.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

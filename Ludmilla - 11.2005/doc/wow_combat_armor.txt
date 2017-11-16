@@ -1,0 +1,24 @@
+Armor reduces physical damage done against you by a certain percent. It depends
+on the level of the monster (or player) hitting you. Your own level doesn't
+matter. By hovering your mouse over Armor on your Character screen, you can see
+the value of this reduction for monsters that are at your current level.
+
+This percent reduction will actually fall as soon as you gain a level if you're
+still wearing the same armor. You haven't lost anything, it's merely showing you
+that your armor isn't as effective against monsters one level higher than you
+used to be.
+
+Armor = 2 * AGI + objects armor + shield armor. 
+
+%Reduction = (Armor / (Armor+400 + 85*Enemy_Level))*100 
+
+The maximum damage reduction is capped at 75% of the damage.
+
+Therefor, to determine which must be the AC of your character in order to absorb
+the possible maximum of the received damage against an enemy of your lvl or lvl
+lower (=75% of the damage he does), the formula is thus the following one:
+Armor = 1200 + 255 * lvl. 
+
+Sidenote: This formula is confirmed to be a good aproximation in various
+websites. I'd attach the graph, it's a bit more relevant, but your phpBB doesn't
+support attachements.

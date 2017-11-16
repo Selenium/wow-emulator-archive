@@ -1,0 +1,35 @@
+<Combine fileversion="1.0" name="WoWDaemon" description="Converted Visual Studio.NET Solution">
+  <StartMode startupentry="Loader" single="True" />
+  <Entries>
+    <Entry filename=".\Loader\Loader.prjx" />
+    <Entry filename=".\RealmServer\RealmServer.prjx" />
+    <Entry filename=".\WorldServer\WorldServer.prjx" />
+    <Entry filename=".\LoginServer\LoginServer.prjx" />
+    <Entry filename=".\Database\Database.prjx" />
+    <Entry filename=".\Common\Common.prjx" />
+    <Entry filename=".\scripts\world\WorldScripts.prjx" />
+    <Entry filename=".\scripts\login\LoginScripts.prjx" />
+  </Entries>
+  <Configurations active="Debug">
+    <Configuration name="Release">
+      <Entry name="Loader" configurationname="Release" build="False" />
+      <Entry name="RealmServer" configurationname="Release" build="False" />
+      <Entry name="WorldServer" configurationname="Release" build="False" />
+      <Entry name="LoginServer" configurationname="Release" build="False" />
+      <Entry name="Database" configurationname="Release" build="False" />
+      <Entry name="Common" configurationname="Release" build="False" />
+      <Entry name="WorldScripts" configurationname="Release" build="False" />
+      <Entry name="LoginScripts" configurationname="Release" build="False" />
+    </Configuration>
+    <Configuration name="Debug">
+      <Entry name="Loader" configurationname="Debug" build="False" />
+      <Entry name="RealmServer" configurationname="Debug" build="False" />
+      <Entry name="WorldServer" configurationname="Debug" build="False" />
+      <Entry name="LoginServer" configurationname="Debug" build="False" />
+      <Entry name="Database" configurationname="Debug" build="False" />
+      <Entry name="Common" configurationname="Debug" build="False" />
+      <Entry name="WorldScripts" configurationname="Debug" build="False" />
+      <Entry name="LoginScripts" configurationname="Debug" build="False" />
+    </Configuration>
+  </Configurations>
+</Combine>

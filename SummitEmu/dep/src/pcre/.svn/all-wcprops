@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre
+END
+pcre_version.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_version.c
+END
+pcre_refcount.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_refcount.c
+END
+pcre.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre.h
+END
+pcre_compile.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_compile.c
+END
+ucptable.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/ucptable.h
+END
+pcre_info.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_info.c
+END
+pcre_xclass.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_xclass.c
+END
+pcre_dfa_exec.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_dfa_exec.c
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/config.h
+END
+pcre_newline.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_newline.c
+END
+pcre_valid_utf8.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_valid_utf8.c
+END
+pcre_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_config.c
+END
+pcre_study.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_study.c
+END
+pcre_chartables.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_chartables.c
+END
+pcre_maketables.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_maketables.c
+END
+pcre_tables.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_tables.c
+END
+pcre_ucp_searchfuncs.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_ucp_searchfuncs.c
+END
+pcre_ord2utf8.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_ord2utf8.c
+END
+pcre_fullinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_fullinfo.c
+END
+pcre_get.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_get.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/Makefile.am
+END
+ucpinternal.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/ucpinternal.h
+END
+pcre_internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_internal.h
+END
+pcre_try_flipped.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_try_flipped.c
+END
+pcre_globals.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_globals.c
+END
+ucp.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/ucp.h
+END
+pcre_exec.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/norwegianelite/!svn/ver/19/Summit/dep/src/pcre/pcre_exec.c
+END

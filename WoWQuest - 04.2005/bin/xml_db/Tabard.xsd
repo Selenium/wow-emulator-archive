@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="Tabard" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Tabard" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Tabard">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tabard_ID" type="xs:unsignedInt" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" />
+              <xs:element name="Leader" type="xs:string" minOccurs="0" />
+              <xs:element name="Color" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="BorderColor" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Icon" type="xs:unsignedByte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//Tabard" />
+      <xs:field xpath="Name" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

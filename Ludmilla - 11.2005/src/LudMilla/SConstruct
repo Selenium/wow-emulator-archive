@@ -1,0 +1,53 @@
+# !!! USE MAIN SCONSTRUCT-FILE FOR COMPILING !!!
+#
+# --> SConstruct for LudMilla
+#
+# If you want to compile only the executable comment other
+# SConstruct invocations in main SConstruct out
+#
+
+Program('../../build/LudMilla', [
+		'Main.cpp',
+		'Master.cpp',
+		'StdAfx.cpp',
+		'WorldRunnable.cpp'
+	],
+	LIBS = [
+		'game',
+		'realmlist',
+		'spells',
+		'auth',
+		'scripts',
+		'config',
+		'database',
+		'shared',
+		'conscomm',
+		'version',
+		'ZThread',
+		'mysqlclient',
+		'sqlite3',
+		'python2.4',
+		'Sockets',
+		'dotconfpp',
+		'pycxx',
+		'z',
+		'ssl',
+		'pthread'
+	],
+	LIBPATH = [
+		'../',
+		'/usr/lib',
+		'/usr/local/lib',
+		'/usr/lib/mysql'
+	],
+	CPPPATH = [
+		'../../src/Game',
+		'../../src/LudMilla',
+		'../../src/RealmList',
+		'../../src/Shared',
+		'../../src/Spells',
+		'../../depnew/Unix_dep/',
+		'/usr/include/python2.4'
+	],
+	CCFLAGS='-fpermissive -w'
+)

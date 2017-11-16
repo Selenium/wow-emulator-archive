@@ -1,0 +1,6 @@
+authsuccess 1DF "0C"
+charcreatersp 3A "28"
+initialspells 11D "00 01 00 02 08 01 00 00 00"
+buffbar 12A "00 DD 0B 18 00"
+proficiency 11A "02 10 04 08 00"
+shutdown15min 291 "02000000 3135 20 6D696E7574657300"

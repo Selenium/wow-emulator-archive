@@ -1,0 +1,75 @@
+<VisualStudioProject>
+  <CSHARP ProjectType="local" ProjectVersion="7.10.3077" SchemaVersion="2.0" ProjectGuid="3bac12c4-ed27-4cca-a1fb-0fcd0717a130">
+    <Build>
+      <Settings AssemblyName="WorldServer" DefaultClientScript="JScript" DefaultHTMLPageLayout="Grid" DefaultTargetSchema="IE50" DelaySign="false" OutputType="Exe">
+        <Config Name="Debug" AllowUnsafeBlocks="true" DefineConstants="DEBUG;TRACE" DebugSymbols="true" IncrementalBuild="false" NoStdLib="false" Optimize="false" OutputPath="bin\Debug\" WarningLevel="4" />
+        <Config Name="Release" AllowUnsafeBlocks="true" DefineConstants="TRACE" DebugSymbols="false" IncrementalBuild="false" NoStdLib="false" Optimize="true" OutputPath="bin\Release\" WarningLevel="4" />
+      </Settings>
+      <References>
+        <Reference Name="System" AssemblyName="System" />
+        <Reference Name="MySql.Data" AssemblyName="MySql.Data" />
+        <Reference Name="ICSharpCode.SharpZipLib" AssemblyName="ICSharpCode.SharpZipLib" />
+      </References>
+    </Build>
+    <Files>
+      <Include>
+        <File RelPath="AssemblyInfo.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="Global.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\LogoutHandler.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Program.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\EnterWorld.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Utils.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\NetworkConfg.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\ObjectBase.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\UpdateMask.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Item.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\InventoryChangeFailure.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\INVENTORY_TYPES.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\EQUIPMENT_SLOT.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="BigInteger.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Vector.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\MovementHandler.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\ByteArrayBuilderV2.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Network.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\OpCodes.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\AddonHandler.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\ClientConnection.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\ServerBase.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Core.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\CHAR_DELETE_Handler.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\CHAR_CREATE_Handler.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\CHAR_ENUM_Handler.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Account.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\ChatHandler.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Language.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\ChatMsgType.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\StaticCore.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\ZLib.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\CharacterBase.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\DatabaseManager.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Side.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Gender.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Classes.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Races.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\RealmErrorCode.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\CHARRESULT.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Stats.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Powers.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Speeds.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\PlayerFlags.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\UnitFlags.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\ZlibDecompressor.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Endian.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\TimerHandler.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\UpdateFields.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\DatabaseConfig.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\Timer.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\UpdateBuilder.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\TYPE.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\TYPEID.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\UPDATE_TYPE.cs" SubType="Code" BuildAction="Compile" />
+        <File RelPath="WorldServer\ConfigParser.cs" SubType="Code" BuildAction="Compile" />
+      </Include>
+    </Files>
+  </CSHARP>
+</VisualStudioProject>

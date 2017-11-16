@@ -1,0 +1,56 @@
+<Project name="Common" standardNamespace="NewProject" description="" newfilesearch="None" enableviewstate="True" version="1.1" projecttype="C#">
+  <Contents>
+    <File name=".\AssemblyInfo.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\BinaryTree.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\BinReader.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\BinWriter.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ClientBase.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Delegates.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Enums.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\GrowableBitArray.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Hexdump.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\IScriptAssembly.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\LocalClientBase.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Packets.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ScriptManager.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ServerBase.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Vector.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\ZLib.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Attributes\ChatCmdAttribute.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Attributes\ChatCmdHandler.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Attributes\DataElement.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Attributes\DataTable.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Attributes\MemberValueAttribute.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Attributes\PrimaryKey.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Attributes\Relation.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Attributes\ScriptPacketHandler.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Attributes\ServerSerialize.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Attributes\UpdateValueAttribute.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+  </Contents>
+  <References>
+    <Reference type="Assembly" refto="..\ICSharpCode.SharpZipLib.dll" localcopy="True" />
+  </References>
+  <DeploymentInformation target="" script="" strategy="File" />
+  <Configuration runwithwarnings="False" name="Debug">
+    <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+    <Execution commandlineparameters="" consolepause="True" />
+    <Output directory=".\bin\Debug\" assembly="WoWDaemon.Common" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+  </Configuration>
+  <Configurations active="Debug">
+    <Configuration runwithwarnings="False" name="Debug">
+      <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Debug\" assembly="WoWDaemon.Common" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+    <Configuration runwithwarnings="False" name="Release">
+      <CodeGeneration runtime="MsNet" compiler="Csc" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="False" optimize="True" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Release\" assembly="WoWDaemon.Common" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+    <Configuration runwithwarnings="True" name="MonoBuild">
+      <CodeGeneration runtime="Mono" compiler="Mcs" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" mainclass="" target="Library" definesymbols="DEBUG;TRACE" generatexmldocumentation="False" win32Icon="" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Debug\" assembly="WoWDaemon.Common" executeScript="" executeBeforeBuild="" executeAfterBuild="" />
+    </Configuration>
+  </Configurations>
+</Project>

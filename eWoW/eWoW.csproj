@@ -1,0 +1,205 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{164CEC28-7D87-442E-B5E4-9D5A804CA265}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>eWoW</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>eWoW</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>eWoW.eWoWClass</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MySQLDriverCS, Version=3.0.1735.36021, Culture=neutral, PublicKeyToken=172f94dfb0faf263">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MySQLDriverCS.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Channel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Character.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\CharacterHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Combat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Container.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\GMCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Item.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Movement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Obj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\PPoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\QueryHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\script.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\Spawn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Game\unit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lib\Enums.cs" />
+    <Compile Include="Lib\UpdateFields.cs" />
+    <Compile Include="Lib\UpdateMask.cs" />
+    <Compile Include="Log.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Network\GameServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Network\Net.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Network\PlayerConn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Network\RealmList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Network\RealmListConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Startup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lib\BigInteger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lib\Const.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lib\db.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lib\GameDB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lib\Opcodes.cs" />
+    <Compile Include="Lib\Utility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

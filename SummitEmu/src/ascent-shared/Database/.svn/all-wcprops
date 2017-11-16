@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Database
+END
+MySQLDatabase.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Database/MySQLDatabase.h
+END
+DatabaseEnv.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Database/DatabaseEnv.h
+END
+Database.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Database/Database.cpp
+END
+DBC.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Database/DBC.cpp
+END
+DBCStores.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Database/DBCStores.cpp
+END
+Field.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Database/Field.h
+END
+dbcfile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Database/dbcfile.cpp
+END
+Database.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Database/Database.h
+END
+MySQLDatabase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Database/MySQLDatabase.cpp
+END
+DataStore.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Database/DataStore.h
+END
+DBC.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Database/DBC.h
+END
+DBCStores.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Database/DBCStores.h
+END
+dbcfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Database/dbcfile.h
+END

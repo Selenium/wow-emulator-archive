@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Auth
+END
+WowCrypt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Auth/WowCrypt.cpp
+END
+BigNumber.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Auth/BigNumber.h
+END
+Sha1.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Auth/Sha1.h
+END
+WowCrypt.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Auth/WowCrypt.h
+END
+MD5.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Auth/MD5.cpp
+END
+AuthPacketKey.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Auth/AuthPacketKey.h
+END
+BigNumber.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Auth/BigNumber.cpp
+END
+MD5.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Auth/MD5.h
+END
+Sha1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/ascent-shared/Auth/Sha1.cpp
+END

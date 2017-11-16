@@ -1,0 +1,8 @@
+eWoW 0.0.1 - 
+
+* Fix problem wuth compression (enter to world!) - now working, but bad :() - this is reason why i ended. This is more hard for me :/
+* Restructure DB system to MySQL
+* Create some combat system
+* Create some spell system
+* Fix some problems in login part (correct message, max players for servers...)
+* Add filter name to creating char

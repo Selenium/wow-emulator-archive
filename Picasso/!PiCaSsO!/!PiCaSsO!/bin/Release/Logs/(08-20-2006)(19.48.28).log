@@ -1,0 +1,34 @@
+!PiCaSsO! version Alpha 0.01 Copyright (C) 2006 by !PiCaSsO! Developer team
+08/20/2006 19:48:28: Loading account TEST...
+08/20/2006 19:48:28: Loading account 1+2+3+4+5+6...
+08/20/2006 19:48:28: Loading account 1 2 3 4 5 6...
+08/20/2006 19:48:28: Loading account T E S T...
+08/20/2006 19:48:28: Loaded all accounts from database!
+08/20/2006 19:48:28: Building external C# scripts, please wait...
+08/20/2006 19:48:28: Global scripts successfully loaded!
+08/20/2006 19:48:28: HTTPServer listening on port 8080
+08/20/2006 19:48:28: Worldserver listening on port 8085
+08/20/2006 19:48:29: AuthServer listening on port 1234
+08/20/2006 19:48:29: Waiting for incoming connections...
+08/20/2006 19:49:08: Incoming connection!
+08/20/2006 19:49:08: Recieved Logon Challenge!
+08/20/2006 19:49:08: Cient version accepted: 1.11.2, ID = 22549!
+08/20/2006 19:49:08: Recieved AUTH_CHALLENGE from user: TEST
+08/20/2006 19:49:08: Logon proof!
+08/20/2006 19:49:08: Client requested realmlist!
+08/20/2006 19:49:08: Client Redirected to Worldserver!
+08/20/2006 19:49:08: Challenged client to auth again.
+08/20/2006 19:49:08: Recieved 2nd auth from client!
+08/20/2006 19:49:08: Temporair message: string account = TEST
+08/20/2006 19:49:08: Temporair message: int ClientSeed = 1455922161
+08/20/2006 19:49:08: Temporair message: byte[] digest = 00000000000000000000
+08/20/2006 19:49:11: Client requested realmlist!
+08/20/2006 19:49:11: Client Redirected to Worldserver!
+08/20/2006 19:49:11: Challenged client to auth again.
+08/20/2006 19:49:11: Recieved 2nd auth from client!
+08/20/2006 19:49:11: Temporair message: string account = TEST
+08/20/2006 19:49:11: Temporair message: int ClientSeed = 72541788
+08/20/2006 19:49:11: Temporair message: byte[] digest = 00000000000000000000
+08/20/2006 19:49:41: Recieve unknown OPCode: 63
+08/20/2006 19:50:11: Recieve unknown OPCode: 210
+08/20/2006 19:50:41: Recieve unknown OPCode: 22

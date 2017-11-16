@@ -1,0 +1,48 @@
+  Length = 6
+  Opcode = CMSG_CAST_SPELL[0000012c]
+  Data = 
+         
+af 02 00 00  //SpellID
+00 00	     //byte 0x01
+
+  Length = 28
+  Opcode = SMSG_SPELL_START[0000012f]
+  Data = 
+         
+c1 4b 05 00 00 00 00 00 //GUID(player)
+c1 4b 05 00 00 00 00 00 //GUID(mob)
+af 02 00 00 		//SpellID
+02 00 			//May Flags
+00 00 00 00 		//0x03
+00 00			//0x01
+
+  Length = 5
+  Opcode = SMSG_CAST_RESULT[0000012e]
+  Data = 
+         
+af 02 00 00 	//SpellID
+0		//int 0
+
+  Length = 42
+  Opcode = SMSG_SPELL_GO[00000130]
+  Data = 
+         
+c1 4b 05 00 00 00 00 00 //GUID(player)
+c1 4b 05 00 00 00 00 00//GUID(MOB)
+af 02 00 00 		//SpellID
+02 01 01 		//Flags(not sure)
+c1 4b 05 00 00 00 00 00 //Unknown maybe MobGUID again?
+00 02 00 		//May here the Flags
+00 00 00 00 00 00 00 00// 0x08
+
+  Length = 32
+  Opcode = SMSG_SPELLLOGEXECUTE[0000024a]
+  Data = 
+         
+c1 4b 05 00 00 00 00 00 //GUID(MOB)
+af 02 00 00 //SpellID
+02 00 00 00 //Flags
+06 00 00 00 //(Not Sure) Visual Effect on Caster
+00 00 00 00 //Empty Byte(0x03)
+06 00 00 00 //(Not Sure) Visual Effect on Mob
+00 00 00 00//Empty Byte(0x03)

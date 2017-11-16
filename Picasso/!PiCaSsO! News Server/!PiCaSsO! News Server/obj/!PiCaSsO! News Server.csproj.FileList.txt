@@ -1,0 +1,10 @@
+bin\Debug\!PiCaSsO! News Server.exe
+bin\Debug\!PiCaSsO! News Server.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\!PiCaSsO! News Server.exe
+obj\Debug\!PiCaSsO! News Server.pdb
+obj\Release\ResolveAssemblyReference.cache
+bin\Release\!PiCaSsO! News Server.exe
+bin\Release\!PiCaSsO! News Server.pdb
+obj\Release\!PiCaSsO! News Server.exe
+obj\Release\!PiCaSsO! News Server.pdb

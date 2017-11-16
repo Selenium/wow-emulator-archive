@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/WorldPvPScripts
+END
+Setup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/WorldPvPScripts/Setup.cpp
+END
+ZoneHellfirePeninsula.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/WorldPvPScripts/ZoneHellfirePeninsula.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/norwegianelite/!svn/ver/19/Summit/src/scripts/src/WorldPvPScripts/Makefile.am
+END

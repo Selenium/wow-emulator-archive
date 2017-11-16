@@ -1,0 +1,30 @@
+!PiCaSsO! version Alpha 0.01 Copyright (C) 2006 by !PiCaSsO! Developer team
+10/03/2006 21:40:30: Loading account TEST...
+10/03/2006 21:40:30: Loaded all accounts from database!
+10/03/2006 21:40:30: Building external C# scripts, please wait...
+10/03/2006 21:40:30: Global scripts successfully loaded!
+10/03/2006 21:40:30: HTTPServer listening on port 8080
+10/03/2006 21:40:30: Worldserver listening on port 8085
+10/03/2006 21:40:30: AuthServer listening on port 3724
+10/03/2006 21:40:30: Waiting for incoming connections...
+10/03/2006 21:40:39: Incoming connection!
+10/03/2006 21:40:39: Recieved Logon Challenge!
+10/03/2006 21:40:39: Wrong client version 8471. Excpected is 2.0.0, ID = 56085!
+10/03/2006 21:40:39: Recieved AUTH_CHALLENGE from user: TEST
+10/03/2006 21:40:41: Logon proof!
+10/03/2006 21:40:42: Client requested realmlist!
+10/03/2006 21:40:42: Client Redirected to Worldserver!
+10/03/2006 21:40:42: Challenged client to auth again.
+10/03/2006 21:40:42: Recieved 2nd auth from client!
+10/03/2006 21:40:42: Account found: TEST
+10/03/2006 21:40:42: Received CMSG_CHAR_ENUM
+10/03/2006 21:40:47: Recieve unknown OPCode: 862
+10/03/2006 21:40:47: Recieve unknown OPCode: 860
+10/03/2006 21:40:52: Player entered World.
+10/03/2006 21:40:52: Updated account data.
+10/03/2006 21:40:52: Updated account data.
+10/03/2006 21:41:12: Synchronized to Client...
+10/03/2006 21:41:41: Synchronized to Client...
+10/03/2006 21:42:11: Synchronized to Client...
+10/03/2006 21:42:41: Synchronized to Client...
+10/03/2006 21:43:11: Synchronized to Client...

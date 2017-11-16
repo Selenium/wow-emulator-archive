@@ -1,0 +1,126 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="ItemTemplate" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ItemTemplate" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="ItemTemplate">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemTemplate_ID" type="xs:unsignedInt" />
+              <xs:element name="Class" type="xs:int" minOccurs="0" />
+              <xs:element name="SubClass" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Name1" type="xs:string" minOccurs="0" />
+              <xs:element name="Name2" type="xs:string" minOccurs="0" />
+              <xs:element name="Name3" type="xs:string" minOccurs="0" />
+              <xs:element name="DisplayID" type="xs:int" minOccurs="0" />
+              <xs:element name="OverallQuality" type="xs:int" minOccurs="0" />
+              <xs:element name="Flags" type="xs:int" minOccurs="0" />
+              <xs:element name="BuyPrice" type="xs:int" minOccurs="0" />
+              <xs:element name="SellPrice" type="xs:int" minOccurs="0" />
+              <xs:element name="InvType" type="xs:int" minOccurs="0" />
+              <xs:element name="AllowableClass" type="xs:int" minOccurs="0" />
+              <xs:element name="AllowableRace" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemLevel" type="xs:int" minOccurs="0" />
+              <xs:element name="ReqLevel" type="xs:int" minOccurs="0" />
+              <xs:element name="ReqSkill" type="xs:int" minOccurs="0" />
+              <xs:element name="MinReqSkill" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemUnique" type="xs:int" minOccurs="0" />
+              <xs:element name="MaxStack" type="xs:int" minOccurs="0" />
+              <xs:element name="ContainerSlots" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_0.Stat" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_0.Bonus" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_1.Stat" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_1.Bonus" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_2.Stat" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_2.Bonus" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_3.Stat" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_3.Bonus" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_4.Stat" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_4.Bonus" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_5.Stat" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_5.Bonus" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_6.Stat" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_6.Bonus" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_7.Stat" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_7.Bonus" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_8.Stat" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_8.Bonus" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_9.Stat" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemBonus_9.Bonus" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_0.Min" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_0.Max" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_0.Type" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_1.Min" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_1.Max" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_1.Type" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_2.Min" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_2.Max" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_2.Type" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_3.Min" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_3.Max" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_3.Type" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_4.Min" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_4.Max" type="xs:int" minOccurs="0" />
+              <xs:element name="DamageStat_4.Type" type="xs:int" minOccurs="0" />
+              <xs:element name="Resistance.Physical" type="xs:int" minOccurs="0" />
+              <xs:element name="Resistance.Holy" type="xs:int" minOccurs="0" />
+              <xs:element name="Resistance.Fire" type="xs:int" minOccurs="0" />
+              <xs:element name="Resistance.Nature" type="xs:int" minOccurs="0" />
+              <xs:element name="Resistance.Frost" type="xs:int" minOccurs="0" />
+              <xs:element name="Resistance.Shadow" type="xs:int" minOccurs="0" />
+              <xs:element name="WeaponSpeed" type="xs:int" minOccurs="0" />
+              <xs:element name="AmmoType" type="xs:int" minOccurs="0" />
+              <xs:element name="MaxDurability" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_0.ID" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_0.Trigger" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_0.Charges" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_0.Cooldown" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_0.Category" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_0.CategoryCooldown" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_1.ID" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_1.Trigger" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_1.Charges" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_1.Cooldown" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_1.Category" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_1.CategoryCooldown" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_2.ID" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_2.Trigger" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_2.Charges" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_2.Cooldown" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_2.Category" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_2.CategoryCooldown" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_3.ID" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_3.Trigger" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_3.Charges" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_3.Cooldown" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_3.Category" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_3.CategoryCooldown" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_4.ID" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_4.Trigger" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_4.Charges" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_4.Cooldown" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_4.Category" type="xs:int" minOccurs="0" />
+              <xs:element name="SpellStat_4.CategoryCooldown" type="xs:int" minOccurs="0" />
+              <xs:element name="Bonding" type="xs:int" minOccurs="0" />
+              <xs:element name="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="PageText" type="xs:int" minOccurs="0" />
+              <xs:element name="LanguageID" type="xs:int" minOccurs="0" />
+              <xs:element name="PageMaterial" type="xs:int" minOccurs="0" />
+              <xs:element name="StartQuest" type="xs:int" minOccurs="0" />
+              <xs:element name="Lock" type="xs:int" minOccurs="0" />
+              <xs:element name="Material" type="xs:int" minOccurs="0" />
+              <xs:element name="SheatheType" type="xs:int" minOccurs="0" />
+              <xs:element name="Unknown1" type="xs:int" minOccurs="0" />
+              <xs:element name="Unknown2" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//ItemTemplate" />
+      <xs:field xpath="ItemTemplate_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

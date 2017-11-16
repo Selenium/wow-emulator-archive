@@ -1,0 +1,70 @@
+import os
+
+Import('shared_env')
+
+shared_srcs = [
+    'Client.cpp',
+    'ConsoleCommon.cpp',
+    'DebugDump.cpp',    
+    'Log.cpp',
+    'MemoryLeaks.cpp',
+    'Network.cpp',
+    'NetworkInterface.cpp',
+    'Script.cpp',
+    'Server.cpp',
+    'Threads.cpp',
+    'UserAccount.cpp',
+    ]
+
+shared_platform_srcs = [
+    'Console.cpp',
+    'Sleep.cpp',
+    ]
+
+for src in shared_platform_srcs:
+    if shared_env['buildenv'] == 'win32-msvc':
+        shared_srcs.append(os.path.join('win32', src))
+    elif shared_env['buildenv'] == 'linux-gcc':
+        shared_srcs.append(os.path.join('posix', src))
+        pass
+    pass
+
+shared_incs = [
+    'Character.h',
+    'Client.h',
+    'Common.h',
+    'Errors.h',
+    'Log.h',
+    'MemoryLeaks.h',
+    'Network.h',
+    'NetworkInterface.h',
+    'Object.h',
+    'Script.h',
+    'Server.h',
+    'Singleton.h',
+    'Sockets.h',
+    'Spell.h',
+    'Threads.h',
+    'Timer.h',
+    'Unit.h',
+    'UpdateMask.h',
+    'UserAccount.h',
+    'version.h',
+    'WSPackets.h',
+    ]
+
+shared_env.Append(CPPPATH=['.'])
+shared_lib = shared_env.Library('shared', shared_srcs)
+shared_env.Default(shared_lib)
+shared_env.Alias('shared', shared_lib)
+
+if shared_env['buildenv'] == 'win32-msvc':
+    msvsproj = shared_env.MSVSProject(
+        target='shared' + shared_env['MSVSPROJECTSUFFIX'],
+        srcs=shared_srcs,
+        incs=shared_incs,
+        buildtarget=shared_lib,
+        variant='SCons')
+    shared_env.Default(msvsproj)
+    shared_env.Alias('shared', msvsproj)
+    pass

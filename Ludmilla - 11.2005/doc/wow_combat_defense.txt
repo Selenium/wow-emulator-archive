@@ -1,0 +1,22 @@
+Each point of +Defense skill adds 0.04% to Parry, Dodge, and Block. 
+
+This means +25 Defense will grant you an extra 1% Parry, Dodge, and Block. The
+formula has been tested to be the same for both Hunters and Paladins. It's
+probably constant across all classes. Rogues are most likely to have a differing
+formula.
+
+Defense has additional rumored effects: The following four effects of Defense
+were supposedly posted by a CM on WoW's European forums. A link to the official
+post would be nice.
+
+Increases the chance of being missed by an attack. 
+
+Increases the chance to dodge, parry, and block. 
+
+Decreases the chance of being affected by a critical hit. 
+
+Decreases the chance of being affected by a "crushing blow". Creatures that are
+higher level than your character can land crushing blows that deal increased
+melee damage. The chance of a crushing blow increases as the level difference
+between you and the opposing creature increases. Players never deal "crushing
+blows", only creatures

@@ -1,0 +1,52 @@
+Add things here that need to be changed, added, or thought about later.
+
+- Add:
+  * Generic error trapping, recovering from, reporting, and logging.
+
+  * Borland support
+
+  * Scripting
+
+
+- Change:
+  * Server should be split to be potentially built with separate
+    servers in separate binaries, communicating with each other over
+    tcp/ip.
+
+  * Network protocol should be separated from world server
+    functionality.  E.g. getgold(39) as opposed to  crafting a
+    packet whenever one needs to add gold.
+
+  * Dev-cpp project should be altered to use the dev-cpp mysql
+    package (now that there is one) instead of the handbuilt import
+    lib.
+
+
+- Fix:
+  * Bug tracker needs some cleaning out. Smash a bug, earn a feature.
+    http://sourceforge.net/tracker/?group_id=114767&atid=669366
+    
+
+- Thoughts and Concerns:
+  * Code could use some spring cleaning.  Doxygon output, or
+    anything similar, could make life easier for people new to the
+    source.  It would be nice to establish and apply some style
+    standards to things such as variable naming.
+
+  * Code could use some optimization.  Would it be worth it to
+    build in a profiler and some kind of automatic bottleneck
+    logging?  At some point we could use a review of all the code
+    concerning efficiency, consistency, and expandability.
+
+  * How many threads should we have?  Would it make sense to
+    have a separate "functionality" thread from one which
+    handles networking and packet queuing? (imo, Yes) If multiple
+    servers are built into the same binary they should probably
+    only use one networking thread.
+
+  * This could be a lot of work just for a bit of organization,
+    but all the pieces of the code are communicating with each
+    other like an old peer to peer network protocol.  Should
+    appropriate things be centralized around some "core" object?
+
+

@@ -1,0 +1,41 @@
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//Spell.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//EmotesText.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//Faction.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//FactionTemplate.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//SpellDuration.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//SpellItemEnchantment.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//SpellEffectNames.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//SpellAuraNames.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//SpellRadius.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//SkillLineAbility.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//SpellCastTimes.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//TaxiPathNode.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//TaxiPath.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//TaxiNodes.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//WorldMapOverlay.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//WorldMapArea.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//AreaTable.dbc does not exist
+
+2009/03/11 21:02:28: DBCFile::init() - File data/dbc//Talent.dbc does not exist
+
+2009/03/11 21:02:28: Can't open selltemplate
+2009/03/11 21:02:28: Can't open waypoints.bin
+2009/03/11 21:02:28: Can't open trainertemplates.bin
+2009/03/11 21:02:28: Error Loading Taxi Nodes.
+2009/03/11 21:02:28: 0 spirit healers spawned.

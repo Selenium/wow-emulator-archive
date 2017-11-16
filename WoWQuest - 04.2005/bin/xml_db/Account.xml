@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes"?>
+<Account>
+  <Account>
+    <Account_ID>1</Account_ID>
+    <Name>tester</Name>
+    <Password>pass</Password>
+    <SessionKey>53-7B-55-18-D3-C1-F8-80-5F-BF-AF-7B-B4-C4-7A-9A-63-2E-FF-B1-92-F1-1E-06-78-98-32-34-4E-C4-6A-A9-1A-9C-2E-CE-A3-CB-84-77</SessionKey>
+    <CreationDate>2005-03-25T16:20:11.0280934+01:00</CreationDate>
+    <AccessLvl>2</AccessLvl>
+    <LastIP>10.10.10.253</LastIP>
+    <FlagAccess>0</FlagAccess>
+  </Account>
+</Account>

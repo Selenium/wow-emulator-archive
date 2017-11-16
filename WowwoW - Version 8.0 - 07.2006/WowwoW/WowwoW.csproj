@@ -1,0 +1,217 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" xmlns:Conversion="urn:Conversion">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97DE59C8-1DA9-43B7-A07F-F9FDB8678258}</ProjectGuid>
+    <RootNamespace>WowwoW</RootNamespace>
+    <AssemblyName>WowwoW</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <RunPostBuildEvent>OnSuccessfulBuild</RunPostBuildEvent>
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <StartupObject />
+    <NoConfig>false</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <NoStdLib>false</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn />
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE;TESTCONSECUTIF</DefineConstants>
+    <OutputPath>bin\Debug\</OutputPath>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <NoStdLib>false</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn />
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <OutputPath>bin\Release\</OutputPath>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Volhv|AnyCPU' ">
+    <NoStdLib>false</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn />
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE,VOLHV</DefineConstants>
+    <OutputPath>bin\VolhvRelease\</OutputPath>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>C:\Documents and Settings\BlOoDy\Desktop\divi\WoWR\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private />
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Content Include="App.ico" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Const.cs" />
+    <Compile Include="Doc.cs" />
+    <Compile Include="FishingZones.cs" />
+    <Compile Include="MainConsole.cs" />
+    <Compile Include="OpCode.cs" />
+    <Compile Include="Position.cs" />
+    <Compile Include="World.cs" />
+    <Compile Include="Abilities\Abilities.cs" />
+    <Compile Include="Abilities\Ability.cs" />
+    <Compile Include="Abilities\BaseAbility.cs" />
+    <Compile Include="Abilities\ComboSpellTemplate.cs" />
+    <Compile Include="Abilities\CraftTemplate.cs" />
+    <Compile Include="Abilities\CustomSpellHandler.cs" />
+    <Compile Include="Abilities\NextAttackEffect.cs" />
+    <Compile Include="Abilities\Profession.cs" />
+    <Compile Include="Abilities\Skill.cs" />
+    <Compile Include="Abilities\Skills.cs" />
+    <Compile Include="Abilities\SkillTemplate.cs" />
+    <Compile Include="Abilities\SpellsList.cs" />
+    <Compile Include="Abilities\SpellTemplate.cs" />
+    <Compile Include="Abilities\Teach.cs" />
+    <Compile Include="Abilities\Abilities\AbilitySummoning.cs" />
+    <None Include="Abilities\Aura\AreaAura.cs" />
+    <Compile Include="Abilities\Aura\Aura.cs" />
+    <Compile Include="Abilities\Aura\AuraEffect.cs" />
+    <Compile Include="Abilities\Aura\DotAura.cs" />
+    <Compile Include="Abilities\Aura\DrainHealthAura.cs" />
+    <Compile Include="Abilities\Aura\FrostArmorAura.cs" />
+    <Compile Include="Abilities\Aura\HotAura.cs" />
+    <Compile Include="Abilities\Aura\ItemAura.cs" />
+    <Compile Include="Abilities\Aura\MotAura.cs" />
+    <Compile Include="Abilities\Aura\MountAuraEffect.cs" />
+    <Compile Include="Abilities\Aura\NextAttackAura.cs" />
+    <Compile Include="Abilities\Aura\PermanentAura.cs" />
+    <Compile Include="Abilities\SpellHelper\DynamicObject.cs" />
+    <Compile Include="Abilities\SpellHelper\ModifierSpells.cs" />
+    <Compile Include="Abilities\SpellHelper\MultipleTargets.cs" />
+    <Compile Include="Abilities\SpellHelper\SpellTargets.cs" />
+    <Compile Include="Abilities\SpellHelper\TargetingSystem.cs" />
+    <Compile Include="Abilities\Spells\ChannelReleaseTimer.cs" />
+    <Compile Include="Abilities\Spells\SpellSummoning.cs" />
+    <Compile Include="AI\Trajet.cs" />
+    <Compile Include="AI\Trajets.cs" />
+    <Compile Include="AI\Vector.cs" />
+    <Compile Include="AI\MonsterAI\AgressiveAnimalAI.cs" />
+    <Compile Include="AI\MonsterAI\BaseAIType.cs" />
+    <Compile Include="AI\MonsterAI\BerserkerAI.cs" />
+    <Compile Include="AI\MonsterAI\CowardAI.cs" />
+    <Compile Include="AI\MonsterAI\DefensiveAnimalAI.cs" />
+    <Compile Include="AI\MonsterAI\EvilInteligentMonsterAI.cs" />
+    <Compile Include="AI\MonsterAI\GroupInteligentAI.cs" />
+    <Compile Include="AI\MonsterAI\GroupInteligentSpellCasterAI.cs" />
+    <Compile Include="AI\MonsterAI\HealerAI.cs" />
+    <Compile Include="AI\MonsterAI\NonAgressiveAnimalAI.cs" />
+    <Compile Include="AI\MonsterAI\PatrolAI.cs" />
+    <Compile Include="AI\MonsterAI\PredatorAI.cs" />
+    <Compile Include="AI\MonsterAI\SpellCasterAI.cs" />
+    <Compile Include="AI\MonsterAI\StandingGuardAI.cs" />
+    <Compile Include="AI\MonsterAI\StandingNpc.cs" />
+    <Compile Include="AI\MonsterAI\SummonedAI.cs" />
+    <Compile Include="AI\MonsterAI\TravellerSalesmanAI.cs" />
+    <Compile Include="Collections\Accounts.cs" />
+    <Compile Include="Collections\AssemblyList.cs" />
+    <Compile Include="Collections\GameObjects.cs" />
+    <Compile Include="Collections\GameObjectsList.cs" />
+    <Compile Include="Collections\ItemList.cs" />
+    <Compile Include="Collections\MobileList.cs" />
+    <Compile Include="Collections\SpawnerList.cs" />
+    <Compile Include="Core\Group.cs" />
+    <Compile Include="Core\Item.cs" />
+    <Compile Include="Core\Mobile.cs" />
+    <Compile Include="Core\Object.cs" />
+    <Compile Include="DDB\ClassDescriptor.cs" />
+    <Compile Include="DDB\ClassDescriptorList.cs" />
+    <Compile Include="DDB\ClientHandler.cs" />
+    <None Include="DDB\DB.cs" />
+    <Compile Include="DDB\DBConnectoid.cs" />
+    <Compile Include="DDB\DBReader.cs" />
+    <Compile Include="DDB\DBServer.cs" />
+    <None Include="DDB\DBWriter.cs" />
+    <Compile Include="DDB\DDBConstructor.cs" />
+    <Compile Include="DDB\Guid.cs" />
+    <Compile Include="DDB\RemoteSaver.cs" />
+    <Compile Include="GameObject\BaseChest.cs" />
+    <Compile Include="GameObject\BaseHerb.cs" />
+    <Compile Include="GameObject\BaseMine.cs" />
+    <Compile Include="GameObject\GameObject.cs" />
+    <Compile Include="GameObject\GameObjectDescription.cs" />
+    <Compile Include="Helper\Base64Decoder.cs" />
+    <Compile Include="Helper\Base64Encoder.cs" />
+    <Compile Include="Helper\BigInteger.cs" />
+    <Compile Include="Helper\Colors.cs" />
+    <Compile Include="Helper\Rnd.cs" />
+    <Compile Include="Helper\Utility.cs" />
+    <Compile Include="Helper\WowTimer.cs" />
+    <Compile Include="Helper\Zip.cs" />
+    <Compile Include="Loot\BaseTreasure.cs" />
+    <Compile Include="Loot\Loot.cs" />
+    <Compile Include="Map\Area.cs" />
+    <Compile Include="Map\HexaMap.cs" />
+    <Compile Include="Map\MapZones.cs" />
+    <Compile Include="Map\Zone.cs" />
+    <Compile Include="Map\ZoneDelimiters.cs" />
+    <Compile Include="Mobiles\BaseCreature.cs" />
+    <Compile Include="Mobiles\BaseSpawner.cs" />
+    <Compile Include="Mobiles\CachedCharacter.cs" />
+    <Compile Include="Mobiles\Character.cs" />
+    <Compile Include="Mobiles\Corps.cs" />
+    <Compile Include="Mobiles\Creature.cs" />
+    <Compile Include="Mobiles\GameObjectSpawner.cs" />
+    <Compile Include="Mobiles\Honor.cs" />
+    <Compile Include="Mobiles\MobileSpawner.cs" />
+    <Compile Include="Mobiles\RangedCreature.cs" />
+    <Compile Include="Net\AuthServer.cs" />
+    <Compile Include="Net\BaseHttpHandler.cs" />
+    <Compile Include="Net\ClientConnection.cs" />
+    <Compile Include="Net\HttpConnection.cs" />
+    <Compile Include="Net\HttpServer.cs" />
+    <Compile Include="Net\PlayerHandler.cs" />
+    <Compile Include="Net\RealmServer.cs" />
+    <Compile Include="Net\SockClient.cs" />
+    <Compile Include="Net\TcpIPSocketClient.cs" />
+    <Compile Include="Net\TcpIPSocketServer.cs" />
+    <Compile Include="Quest\ActiveQuest.cs" />
+    <Compile Include="Quest\BadIdList.cs" />
+    <Compile Include="Quest\BaseNPC.cs" />
+    <Compile Include="Quest\BaseQuest.cs" />
+    <Compile Include="Quest\KillObjective.cs" />
+    <Compile Include="Quest\NpcMenu.cs" />
+    <Compile Include="Quest\NpcQuestMenu.cs" />
+    <Compile Include="Quest\NPCQuests.cs" />
+    <Compile Include="Serialization\BinaryFileReader.cs" />
+    <Compile Include="Serialization\BinaryFileWriter.cs" />
+    <Compile Include="Serialization\ClassEntry.cs" />
+    <Compile Include="Serialization\GenReader.cs" />
+    <Compile Include="Serialization\GenWriter.cs" />
+    <Compile Include="Serialization\Interface.cs" />
+    <Compile Include="Serialization\Serializator.cs" />
+    <Compile Include="Talents\TalentDescription.cs" />
+    <Compile Include="Talents\TalentHandlers.cs" />
+    <Compile Include="Talents\TalentList.cs" />
+    <Compile Include="Taxi\PathForTaxi.cs" />
+    <Compile Include="Taxi\Taxi.cs" />
+    <Compile Include="Taxi\TaxiNode.cs" />
+    <Compile Include="Taxi\TaxiPath.cs" />
+    <Compile Include="Taxi\TaxiPathNodes.cs" />
+    <Compile Include="Taxi\TaxiVendor.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>

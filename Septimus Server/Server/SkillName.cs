@@ -1,0 +1,62 @@
+namespace Server
+{
+    using System;
+
+    public enum SkillName
+    {
+        // Fields
+        Alchemy = 0,
+        Anatomy = 1,
+        AnimalLore = 2,
+        AnimalTaming = 35,
+        Archery = 31,
+        ArmsLore = 4,
+        Begging = 6,
+        Blacksmith = 7,
+        Camping = 10,
+        Carpentry = 11,
+        Cartography = 12,
+        Chivalry = 51,
+        Cooking = 13,
+        DetectHidden = 14,
+        Discordance = 15,
+        EvalInt = 16,
+        Fencing = 42,
+        Fishing = 18,
+        Fletching = 8,
+        Focus = 50,
+        Forensics = 19,
+        Healing = 17,
+        Herding = 20,
+        Hiding = 21,
+        Inscribe = 23,
+        ItemID = 3,
+        Lockpicking = 24,
+        Lumberjacking = 44,
+        Macing = 41,
+        Magery = 25,
+        MagicResist = 26,
+        Meditation = 46,
+        Mining = 45,
+        Musicianship = 29,
+        Necromancy = 49,
+        Parry = 5,
+        Peacemaking = 9,
+        Poisoning = 30,
+        Provocation = 22,
+        RemoveTrap = 48,
+        Snooping = 28,
+        SpiritSpeak = 32,
+        Stealing = 33,
+        Stealth = 47,
+        Swords = 40,
+        Tactics = 27,
+        Tailoring = 34,
+        TasteID = 36,
+        Tinkering = 37,
+        Tracking = 38,
+        Veterinary = 39,
+        Wrestling = 43
+    }
+}
+

@@ -1,0 +1,49 @@
+!PiCaSsO! version Alpha 0.01 Copyright (C) 2006 by !PiCaSsO! Developer team
+08/23/2006 23:01:09: Loading account TEST...
+08/23/2006 23:01:09: Loading account 1+2+3+4+5+6...
+08/23/2006 23:01:09: Loading account 1 2 3 4 5 6...
+08/23/2006 23:01:09: Loading account T E S T...
+08/23/2006 23:01:09: Loaded all accounts from database!
+08/23/2006 23:01:09: Building external C# scripts, please wait...
+08/23/2006 23:01:10: Global scripts successfully loaded!
+08/23/2006 23:01:10: HTTPServer listening on port 8080
+08/23/2006 23:01:10: Worldserver listening on port 8085
+08/23/2006 23:01:10: AuthServer listening on port 1234
+08/23/2006 23:01:10: Waiting for incoming connections...
+08/23/2006 23:02:44: Incoming connection!
+08/23/2006 23:02:44: Recieved Logon Challenge!
+08/23/2006 23:02:44: Wrong client version 56085. Excpected is 1.11.2, ID = 22549!
+08/23/2006 23:02:44: Recieved AUTH_CHALLENGE from user: TEST
+08/23/2006 23:02:44: Logon proof!
+08/23/2006 23:02:44: Client requested realmlist!
+08/23/2006 23:02:44: Client Redirected to Worldserver!
+08/23/2006 23:02:44: Challenged client to auth again.
+08/23/2006 23:02:44: Recieved 2nd auth from client!
+08/23/2006 23:02:44: Account found: TEST
+08/23/2006 23:02:45: Received CMSG_CHAR_ENUM
+08/23/2006 23:02:47: Client requested realmlist!
+08/23/2006 23:02:52: Received CMSG_CHAR_ENUM
+08/23/2006 23:02:52: Client requested realmlist!
+08/23/2006 23:02:52: Client Redirected to Worldserver!
+08/23/2006 23:02:52: Challenged client to auth again.
+08/23/2006 23:02:52: Eine bestehende Verbindung wurde softwaregesteuert
+durch den Hostcomputer abgebrochen
+08/23/2006 23:03:00: Incoming connection!
+08/23/2006 23:03:00: Recieved Logon Challenge!
+08/23/2006 23:03:00: Wrong client version 56085. Excpected is 1.11.2, ID = 22549!
+08/23/2006 23:03:00: Recieved AUTH_CHALLENGE from user: TEST
+08/23/2006 23:03:00: Logon proof!
+08/23/2006 23:03:00: Client requested realmlist!
+08/23/2006 23:03:00: Client Redirected to Worldserver!
+08/23/2006 23:03:00: Challenged client to auth again.
+08/23/2006 23:03:06: Incoming connection!
+08/23/2006 23:03:06: Recieved Logon Challenge!
+08/23/2006 23:03:06: Wrong client version 56085. Excpected is 1.11.2, ID = 22549!
+08/23/2006 23:03:06: Recieved AUTH_CHALLENGE from user: TEST
+08/23/2006 23:03:06: Logon proof!
+08/23/2006 23:03:06: Client requested realmlist!
+08/23/2006 23:03:06: Client Redirected to Worldserver!
+08/23/2006 23:03:06: Challenged client to auth again.
+08/23/2006 23:03:10: Client requested realmlist!
+08/23/2006 23:03:10: Client Redirected to Worldserver!
+08/23/2006 23:03:10: Challenged client to auth again.

@@ -1,0 +1,288 @@
+2004.04,18 - Codemonkey
+- Created a new update system i would like you all to consider
+  CUpdateObject is the base of this. Hmm well best you take a look at it yourself
+  example how the new update system would work.
+  Data.CurrentStats.HitPoints = 50;
+  pPlayer->AddUpdateVal(UNIT_HEALTH, Data.CurrentStats.HitPoints);
+  pPlayer->UpdateObject();
+  it's not as "fast" as the old CUpdateBlock and each updateable object takes
+  a little more mem (the map UpdateFields) but you can never do anything wrong and
+  everything that needs to be done is done without any fuss.
+  if you guys thinks this system is worth continue using then I was considering
+  making a inline wrapper class for the data values so you would do something like
+  pPlayer->DataObject.SetHP(50);
+  pPlayer->UpdateObject();
+  instead of those 3 lines above. and integret the CUpdateObject class with RegionManager
+  examples of how CreateObject() would look are in Item.h/Item.cpp,Player.h/Player.cpp
+  Creature.h/Creature.cpp
+  (On a side note: I was considering updating my system on my C# server to this one day,
+   but I figured it might be possible todo on TownHall as well.)
+
+2004.04.18 - Codemonkey
+- More Beta phase 2 updates. Basicly SendPlayerData is out of the 
+  picture cause it makes the player crash. Which is fine by me. Good thing
+  I started on making it easier to use UpdateBlock:) I think I have replaced
+  all the SendPlayerData() with single value updates except those in GMCommands.cpp
+  but GMCommands.cpp is not gonna exist much longer once the last few gm commands are
+  in the new ChatManager.
+- Added cape command. There are more capes than that just added it to test some:)
+
+2004.04.17 - Codemonkey
+- GM Commands moved to ChatManager.cpp (most of them done) those that aren't uses the old function
+- Beta phase 2 update started. Can get ingame don't expect much more:)
+  Items are sent after player now(i think i havn't gotten a dump yet but it worked).
+  Some new object fields and they removed an op code. Lots of stuff todo yet but I need
+  a break.
+
+2004.04.14 - Codemonkey
+- Moved MsgChat to the new ChatManager.cpp
+  GMCommands are left to change.
+
+2004.04.13 - Codemonkey
+- Added itemcache.wdb reading in CRealmServer:CreateTestData()
+- Added %edit invfilter command
+  %edit invfilter armour <sub>
+  type %edit invfilter armour blahaa for a list
+  or %edit invfitler weapon blada for alist
+  %edit invfilter minlevel
+  %edit invfilter maxlevel if either are 0 they are ignored
+  %edit invfilter reset - to reset the filter
+  %edit invfilter update - to update the merchants inv
+  TODO: More filters. like food or something
+- Added MerchantFilter to CreatureData
+- Added default handlers in CCreature for ListInventory and BuyItem
+- Fixed a bug in CParty::GetParty() it never returned NULL if chk == false
+- Fixed an infinite loop in CParty::DisbandNow()/Leave/SendGroupList
+
+2004.04.13 - Codemonkey
+- Added defines for all the object fields
+- Changed all the updateblock vals to defines
+- Fixed flypath mob
+
+2004.04.12 - Psycho
+- Changed Group a lots - Added a Invites list (so invite ppl can queue and dequeue), changed some structures, seem good now
+- Made it so pvp player always get single xp (group cant share xp)
+
+2004.04.12 - Codemonkey
+- Combat bug fixed! It was attackspeed in getotherplayerinfo that was missing
+
+2004.04.11 - Codemonkey
+- Fixed the Movement speed on mobs
+- Updated CUpdateBlock with a few new constructors and funcs to make it easier
+  to make single value updates. I have implemented this in
+  CCreature::SendLootablePacket, CCreature::Attack, CPlayer:Regenerate
+  and CFlyPathMob::BuyItem. In BuyItem I tested 2 updates in 1 which worked fine.
+  but not with remount for some reason. didn't work with 2 seperate packets either.
+  gonna have to look into that. but first we need to add all the update values
+  in defines.h
+- Added RegionOut/NotMe(opcode, buf, len, float maxdist) to CClient
+- Streamlined the HandleAttack func in msghandlers
+
+2004.04.11 - Psycho
+- Group are working at 95% (Name doesnt display when you set a new leader, and uninvite is buggy)
+- Group xp sharing and ppl with the most dmg on a mobs get the xp atm
+- Removed HandleAttack was useless - MsgAttackOn handle everything atm.
+
+2004.04,11 - Codemonkey
+- Added Autoequip, Swap Item, Swap Inv Item and Destroy Item 
+ (moving from and to containers is not implemented yet since we don't have any containers:))
+
+2004.04.10 - Psycho
+- Moved all MsgHandler to Party.cpp and Party.h to reflect the how the guild work. (and some bug fix)
+
+2004.04,10 - Codemonkey
+- I have started on my little Item crusade. All characters have their correct starting items
+- Added the full structure of ItemTemplate
+- Added weapon/armour/etc item sub types
+- Fixed charenum. Items are now displayed correctly
+- On the todo list. Item Management, Containers, Linking item stats to player ie some kind of CalcItemStats func
+  item vendors. Possibly also add items directly from WDBs our item template struct and it's struct is pretty much the same now
+  This is pretty much done it's just a question of porting code from my C# server to Townhall
+other todos: fix combat, add the rest of the object types, add support for all 
+	abilities/spells and remake/revamp the spell/combat system
+After that: Fix PathNodes!:) and start making a few different mob ais
+
+2004.04.10 - Codemonkey
+- Aaah the final touch on Guild! /groster a.k.a member list is implemented!
+  Guild %100 done.
+
+2004.04.10 - Psycho
+- Added basic structure in Party.cpp Party.h and a lots of related file (I would say like 30%-40% of Group is complete atm)
+- Changed the Tutorial flag
+
+2004.04.10 - Codemonkey
+- More guild updates. tabard vendor support. %spawn <model> <name> <subtitle>
+  select the creature %edit vendor tabard and if you don't want ppl to kill it
+  and make it show up as green type %edit faction 5
+- added /o tabardreset command on the officer channel
+- Initial party object commited Psycho working on that.
+- I feel guild is pretty much done. atm it has a small tabard update bug so you have log
+  in and out to update your tabard. updates GM though but not other members.
+  the command /groster isn't implemented cause i don't know what it's suppose todo
+
+2004.04.09 - Codemonkey
+- Full feature guild update, all /gxxx cmds except /groster, guild channel 
+  and officer channel look in Guild.cpp for more info
+- added createguild command. StormCraft guild is reserved and can only be greated by GMs
+- added tabard command to get a Guild Tabard Item
+- added OBJ_GUILD to DataManager. not saved yet though since players aren't but
+  the data is definitivly solid and the only change in it as I see it that can happend
+  is more members which is added at the end of the data. MAX_GUILDMEMBERS is defined
+  in Guild.h currently at 100. Players will get notified when the guild is full
+  so they will come and complain when it needs to be increased:)
+
+2004.04.09 - Psycho
+MsgHandler.cpp
+- Basic /who (show everyone at 100 yards)
+- Partial group packets implemented (a lots still left)
+MsgHandler.cpp + player.h for the define
+- LFG for /who work (group yes/no) - Have to check to put the crown thing in the icons (atm its Data.LFG)
+Player.cpp and Creature.cpp
+- combat "flag" added for crit, hit, miss (and more in futur ?)
+
+2004.04.09 - Codemonkey
+- Updated the Npc type flypathmob should work fine now
+
+2004.04.07 - Codemonkey
+- Fixed the Lootable flag update in CCreature::SendLootablePacket
+
+2004.04.06 - Psycho
+- Added %edit speed
+- Tweaked leveling
+
+2004.04.06 - Codemonkey
+- Player.cpp:
+updated SMSG_ATTACKERSTATEUPDATE in sendSpellMsg
+- MsgHandlers.cpp:
+updated SMSG_ATTACKERSTATEUPDATE in HandleAttack
+- Creature.cpp:
+updated SMSG_ATTACKERSTATEUPDATE in sendSpellMsg
+updated SMSG_ATTACKERSTATEUPDATE in MeleeAttack
+
+made some comments on all of them. hopefully I didn't miss any.
+
+2004.04.06 - Codemonkey
+- Player.h:
+changed the speed to float values
+- Player.cpp: 
+added the speed values on getotherplayerinfodata 
+and cleaned up the packet dumps. Added the default speed defines
+to CPlayer::New
+- Client.cpp: 
+Added MSG_MOVE_SET_RUN_SPEED to UpdateRunSpeed 
+- RegionManager.cpp: 
+fixed those stupid warnings
+- Defines.h: 
+added DEFAULT_PLAYER_RUN/WALK/SWIM_SPEED
+- MsgHandlers.cpp:
+changed mount/dismount speed increase to use the defines 
+and removed speed update on remount
+
+2004.04.05 - Psycho
+- Added a "working" worldport command
+- Removed all ancients opcodes, updated all the sources with the real beta one.
+- Fixed ping bar
+- Fixed %edit dmg command (if min dmg is 4 and level not 1 then monster hit like player, else monster hit from they min/max dmg).
+- Fixed NPC AI (they should attack if you die and reattack a monster now)
+- Partial UpdateRunSpeed added (with data.runspeed / walkspeed / swimspeed), testing with mount / unmount atm.
+
+2004.03.28 - Psycho
+- Beta updates
+- Fixed the nasty PVP bug (you cant change your own faction else you can attack anything), also pvp show red now and normal blue
+- Monsters misses now show up
+- Everyone spawn point at he same spot for now since worldport is disabled
+- Added a report command, create a data/report.log with the Name, data and text on the server
+- Fine tuning since attack speed is fixed, lowered mobs hps, upped the xp, etc
+- AFK / DND now fixed
+- Added 2 new opcodes when you enter world - SendChatBox (0x01FB) and SendKeyBindings (0x01FD), we gonna have to save key bindings by char or accounts now, else ppl always get the default atm
+
+2004.03.25 - Codemonkey
+- Made some beta updates
+- Fixed some of the new packet ids somewhere between ~0x160 and 0x1CD there's a new one
+- Fixed the new movement part in object updates
+- Gone through all the update values in obj update, there are some new ones. I will put em on my server later
+- Fixed movement packets, not tested yet though.
+- Fixed some issues with accountless build
+NOTE: EVERY packet needs to be gone through
+
+2004.03.17 - Psycho
+- Fixed Edit command (to edit player and creature)
+- Changed regen a bit - Regen by level (also changed starting mana)
+- Added a %help command, fixed a couples of command too and syntax.. updated %mount to give more info etc..
+- Added a /AFK and /DND command, doesnt work well thought the <AFK> doesnt appear over the head when i set the flag (<GM> doesnt anymore too)
+- Whisper will display what you said
+- Modified the %uber command too, reset to a more normal level if needed ;)
+
+2004.03.07 - Codemonkey
+- Made a rough CFlyPath class (may change "node structure" later)
+- Added a CFlyPathMob class which is a vendor that sells tickets to FlyPaths
+- Added %spawn flypathmob <model> [name] to gm commands
+- Note: Lots of work todo on the flypath until it's done.
+
+2004.03.07 - Codemonkey
+Added.. god should write in this more often:)
+- A few ItemTemplateData stats
+- NPCType to CreatureStats so now we can spawn merchants, trainers etc. Defines in defines.h
+
+2004.02.21 - Lax
+- Added a few new objects (GameObject.cpp, DynamicObject.cpp, Guild.cpp)
+- Getting data structures ready for most of the object types (players, items, etc)
+
+2004.02.20 - Lax
+- Working with Tamino on the system for pathing, hashed out a working model.  Began
+  data storage and structure design, will need to integrate with region manager.
+- Commented out Tamino's test code for pathing points to use for helping guidelines,
+  though PPoints.cpp and .h will be removed from cvs when we're ready.
+- PathGroup.cpp added to project
+- Although the creature template data, etc are not 100% complete, we very soon need to
+  add our first real creatures, items, spawn points, etc. to advance our project; things
+  are going as expected if not better.  Keep up the good work.
+
+2004.02.19 - Lax
+- %rehash is in GMCommands.cpp
+- Removed adminpass/gmpass ;)
+- Data conversion routines etc being worked on.
+- WORKING ON OBJECT UPDATES ** NOT READY FOR PUBLIC SERVER
+
+2004.02.19 - TheUndying
+- Fixed Buffer overflow error in CreateLootable packet method.  buffer3 was set to the wrong 0xbyte
+- Added MsgHandler commands:   *adminpass <pass>    and  *gmpass <pass>
+  Admin can setup the gm pass right under where the admin pass exists, then distribute accordingly to users etc.
+- Wants to know where the %rehash command has went?!
+
+2004.02.17 - Psycho
+- Added DoT effect on spell - Note: Add SpellDuration.dbc on your data/dbc directory
+
+2004.02.14 - Lax
+- Added CLootTable class, will set it up soon.  Add LootTable.cpp to your projects
+
+2004.02.13 - Generin
+- Added mount and unmount commands (for riding on  horses)
+- Fixed %broadcast so that it didnt speak Titan (moved the 9)
+- Creatures now go thru the loot process.  Need to figure out how to store inv in players
+  bags and to randomize the loot.
+
+2004.02.11 - Generin
+- Added %msg <message> command (GM only) to broadcast system messages to everyone
+- Added %killspawn command (targeted) to kill a spawn without respawning
+- Added %morphtarget <model> command (targeted - GM only) to morph targets (players
+  or creatures)
+- Fixed PvP flag bugs when crashed/logging off and coming back on
+
+2004.02.07 - Generin
+- Start work on monster melee combat and monster movement.  Currently using incorrect
+  packets (B5,B7), but it works a little bit.  Probably will need to investigte using
+  the DA opcode packet.
+- Monsters Hp's reduced to 100 hps to allow for more fair fights
+- Monsters will respawn at their spawn pt after being killed.  60 seconds after corpse
+  decaying, and monsters will respawn
+
+2004.02.04 - Lax
+- Account system nearing readiness.  Currently, characters are NOT stored but accounts
+  are.  This means with a simple account editor we can now assign GM flags, etc.  On a
+  similar note, added the option in the .conf file for turning on/off new accounts.
+  Valid accounts info is now required in the wow.ses in the format given by WoWLogin
+  which is more or less "username\npassword"
+- Added routines to the DBCHandler for retrieving strings, floats, and ints (note the
+  existing routine for int returns -1 for failure, which is sometimes valid data). Also
+  added plenty of stuff for spells.  (Some of this is earlier than this commit)

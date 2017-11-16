@@ -1,0 +1,62 @@
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//Spell.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//EmotesText.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//Faction.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//FactionTemplate.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//SpellDuration.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//SpellItemEnchantment.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//SpellEffectNames.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//SpellAuraNames.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//SpellRadius.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//SkillLineAbility.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//SpellCastTimes.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//TaxiPathNode.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//TaxiPath.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//TaxiNodes.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//WorldMapOverlay.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//WorldMapArea.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//AreaTable.dbc does not exist
+2006/12/27 22:48:28: DBCFile::init() - File data/dbc//Talent.dbc does not exist
+2006/12/27 22:48:42: 13617 items at 1001 vendors loaded!
+2006/12/27 22:48:42: 11592 waypoints loaded!
+2006/12/27 22:48:46: 137841 spells at 2207 trainers loaded!
+2006/12/27 22:49:04: Error Loading Taxi Nodes.
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//Spell.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//EmotesText.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//Faction.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//FactionTemplate.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//SpellDuration.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//SpellItemEnchantment.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//SpellEffectNames.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//SpellAuraNames.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//SpellRadius.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//SkillLineAbility.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//SpellCastTimes.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//TaxiPathNode.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//TaxiPath.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//TaxiNodes.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//WorldMapOverlay.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//WorldMapArea.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//AreaTable.dbc does not exist
+2006/12/27 22:50:26: DBCFile::init() - File data/dbc//Talent.dbc does not exist
+2006/12/28 19:30:33: DBCFile::init() - File data/dbc//Spell.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//EmotesText.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//Faction.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//FactionTemplate.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//SpellDuration.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//SpellItemEnchantment.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//SpellEffectNames.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//SpellAuraNames.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//SpellRadius.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//SkillLineAbility.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//SpellCastTimes.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//TaxiPathNode.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//TaxiPath.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//TaxiNodes.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//WorldMapOverlay.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//WorldMapArea.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//AreaTable.dbc does not exist
+2006/12/28 19:30:34: DBCFile::init() - File data/dbc//Talent.dbc does not exist
+2006/12/28 19:31:38: 13617 items at 1001 vendors loaded!
+2006/12/28 19:31:39: 11592 waypoints loaded!
+2006/12/28 19:31:42: 137841 spells at 2207 trainers loaded!
+2006/12/28 19:31:58: Error Loading Taxi Nodes.

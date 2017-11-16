@@ -1,0 +1,11 @@
+Linux instructions
+------------------
+
+1. Configure and build MaNGOS.
+2. cd contrib/map_extractor/libmpq/
+3. make
+4. cd ..
+5. make
+6. run ad
+
+ 
