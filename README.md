@@ -1,5 +1,8 @@
 This Description come from ragezone thread https://forum.ragezone.com/f114/server-run-v1-4-2-a-374821/
 
+You can find some infos here too https://web.archive.org/web/20110730070721/http://www.gotwow.ic.cz
+
+
 !Picasso! Emu - C# - Needs more work to allow players to enter world supports 2.0.0
 
 Team WsD - C++ - Version 0.11.0.5.19 - Supports Beta 3?
